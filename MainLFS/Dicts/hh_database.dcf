@@ -1,0 +1,79 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Hh Database Dictionary
+Name=HH_DATABASE_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=C0E69634C605D68E3800DC3B11328C00232037A4E2D2507506C35752D9D38840
+
+[Level]
+Label=Hh Database Level
+Name=HH_DATABASE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Hh Cluster
+Name=HH_CLUSTER
+Start=1
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Hh Number
+Name=HH_NUMBER
+Start=5
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Hh Database Record
+Name=HH_DATABASE_REC
+RecordTypeValue=''
+RecordLen=143
+
+[Item]
+Label=Hh Head
+Name=HH_HEAD
+Start=7
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Hh Label
+Name=HH_LABEL
+Start=57
+Len=15
+DataType=Alpha
+
+[Item]
+Label=Description
+Name=DESCRIPTION
+Start=72
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Hh Long
+Name=HH_LONG
+Start=122
+Len=11
+DataType=Numeric
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes
+
+[Item]
+Label=Hh Lat
+Name=HH_LAT
+Start=133
+Len=11
+DataType=Numeric
+Decimal=7
+DecimalChar=Yes
+ZeroFill=Yes

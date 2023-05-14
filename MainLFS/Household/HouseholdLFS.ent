@@ -1,0 +1,34 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=HOUSEHOLDLFS
+Name=HOUSEHOLDLFS
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Desktop
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+[External Dictionaries]
+File=..\Dicts\clusters.dcf
+File=..\Dicts\Narrow_field_of_Study.dcf
+File=..\Dicts\Detailed_field_of_study.dcf
+[AppCode]
+File=.\HouseholdLFS.ent.apc
+Include=..\Shared Logic\GPS.apc
+[Message]
+File=.\HouseholdLFS.ent.mgf
+[Help]
+File=.\HouseholdLFS.ent.qsf
+[Forms]
+File=.\HouseholdLFS.fmf
+[Dictionary Types]
+Dict-Type=.\HouseholdLFS.dcf,Input,.\HouseholdLFS.fmf
+Dict-Type=..\Dicts\clusters.dcf,External
+Dict-Type=..\Dicts\Narrow_field_of_Study.dcf,External
+Dict-Type=..\Dicts\Detailed_field_of_study.dcf,External
+[Sync]
+Server=https://csprodata.ilo.org/api
+Direction=Put

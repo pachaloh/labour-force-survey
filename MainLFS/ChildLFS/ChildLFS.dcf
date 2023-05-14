@@ -1,0 +1,1328 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Child Labour
+Name=CHILD_LABOUR_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=FB7A1D104842906B00680D0C0E6C27B1B9CA2DB3C230115143225B97266F7A11
+
+[Languages]
+EN=English
+CHICH=Chichewa
+TUMB=Tumbuka
+YAO=Yao
+
+[Level]
+Label=Child Labour Level
+Name=CHILD_LABOUR_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Cluster number
+Name=CCLUSTER
+Start=2
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer code
+Name=CGHINTID
+Start=6
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Household number
+Name=CGHHHNO
+Start=42
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Child's line number in HH
+Name=CHMPPNO
+Start=44
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Child Labour Record
+Name=CHILD_LABOUR_REC
+RecordTypeValue='1'
+RecordLen=284
+
+[Item]
+Label=A0 Intro
+Name=A0_INTRO
+Start=46
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=A0 Intro
+Name=A0_INTRO_VS1
+Value=1;Continue
+
+[Item]
+Label=A1 Name
+Name=A1
+Start=47
+Len=30
+DataType=Alpha
+
+[Item]
+Label=A2 Relationship
+Name=A2
+Start=77
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=A2 Relationship
+Name=A2_VS1
+Value=1;SON OR DAUGHTER
+Value=2;BROTHER OR SISTER
+Value=3;OTHER RELATIVE
+Value=4;NOT RELATED
+
+[Item]
+Label=A3 Sex
+Name=A3
+Start=78
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=A3 Sex
+Name=A3_VS1
+Value=1;Male
+Value=2;Female
+
+[Item]
+Label=A4. Date of birth
+Name=A4
+Start=79
+Len=8
+DataType=Alpha
+
+[Item]
+Label=A4a Day of Birth
+Name=A4_DOB
+Start=79
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=A4b Month of Birth
+Name=A4_MOB
+Start=81
+Len=2
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=A4c Year of Birth
+Name=A4_YOB
+Start=83
+Len=4
+ItemType=SubItem
+DataType=Numeric
+
+[Item]
+Label=A5 Age
+Name=A5
+Start=87
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=A5 Age
+Name=A5_VS1
+Value=5:17; 5 to 17
+
+[Item]
+Label=A6 Highest Level Completed
+Name=A6A
+Start=89
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=A6 Highest Level Completed
+Name=A6A_VS1
+Value=0;NONE/PRE-SCHOOL
+Value=1;PRIMARY
+Value=2;SECONDARY
+Value=3;TERTIARY
+Value=4;OTHER TERTIARY
+
+[Item]
+Label=A6B Highest class completed
+Name=A6B
+Start=90
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=A6B Highest class completed
+Name=A6B_VS1
+Value=0;None
+Value=1;Standard 1
+Value=2;Standard 2
+Value=3;Standard 3
+Value=4;Standard 4
+Value=5;Standard 5
+Value=6;Standard 6
+Value=7;Standard 7
+Value=8;Standard 8
+
+[ValueSet]
+Label=A6B. Highest class completed-Other Tertiary
+Name=A6B_VS2
+Value=8;Standard 8
+Value=9;Form 1
+Value=10;Form 2
+Value=11;Form 3
+Value=12;Form 4
+Value=13;Form 5
+
+[ValueSet]
+Label=A6B. Highest class completed-Bachelors
+Name=A6B_VS3
+Value=15;Diploma Year 1
+Value=16;Diploma Year 2
+Value=17;Diploma Year 3
+Value=18;Degree -Year 1
+Value=19;Degree -Year 2
+Value=20;Degree -Year 3
+Value=21;Degree -Year 4
+Value=22;Degree -Year 5
+Value=23;Masters-Year 1
+Value=24;Masters-Year 2
+
+[ValueSet]
+Label=A6B. Highest class completed-Secondary
+Name=A6B_VS4
+Value=12;Form 4
+Value=13;Form 5
+Value=14;Form 6
+Value=30;Tertiary - Year 1
+Value=31;Tertiary-Year 2
+Value=32;Tertiary-Year 3
+
+[Item]
+Label=A7 Last week Attending School
+Name=A7
+Start=92
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=A7 Last week Attending School
+Name=A7_VS1
+Value=1;Yes
+Value=2;No
+Value=3;Summer leave
+
+[Item]
+Label=B0 Intro
+Name=B0_INTRO
+Start=93
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B0 Intro
+Name=B0_INTRO_VS1
+Value=1;Continue
+
+[Item]
+Label=B1 Last Week Work for Pay
+Name=B1
+Start=94
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B1 Last Week Work for Pay
+Name=B1_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=B2 Last Week Bussiness Activity
+Name=B2
+Start=95
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B2 Last Week Bussiness Activity
+Name=B2_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=B3 Last Week Help in Bussiness
+Name=B3
+Start=96
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B3 Last Week Help in Bussiness
+Name=B3_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=B4 Last Week Temporary Absent
+Name=B4
+Start=97
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B4 Last Week Temporary Absent
+Name=B4_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=B5 Last Week Any Work
+Name=B5
+Start=98
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=B5 Last Week Any Work
+Name=B5_VS1
+Value='A  ';Farming
+Value='B  ';Rearing animals
+Value='C  ';Fishing or fish farming
+Value='D  ';None of the above
+
+[Item]
+Label=B6 Type Of Work
+Name=B6
+Start=101
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=B6 Type Of Work
+Name=B6_VS1
+Value='A  ';Farming
+Value='B  ';Rearing animals
+Value='C  ';Fishing or fish farming
+Value='D  ';None of the above
+
+[Item]
+Label=B7 Products Intention
+Name=B7
+Start=104
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B7 Products Intention
+Name=B7_VS1
+Value=1;Only for sale
+Value=2;Mainly for sale
+Value=3;Mainly for family use
+Value=4;Only for family use
+
+[Item]
+Label=B8 Hired By Someone
+Name=B8
+Start=105
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=B8 Hired By Someone
+Name=B8_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=B9 Main Activity of Place
+Name=B9
+Start=106
+Len=30
+DataType=Alpha
+
+[Item]
+Label=B10 Kind Of Work Child Does
+Name=B10
+Start=136
+Len=30
+DataType=Alpha
+
+[Item]
+Label=B11 Number Of Work Hours
+Name=B11
+Start=166
+Len=3
+DataType=Numeric
+
+[ValueSet]
+Label=B11 Number Of Work Hours
+Name=B11_VS1
+Value=1:13
+Value=97;Don`t Know
+
+[Item]
+Label=C00 Intro
+Name=C00_INTRO
+Start=169
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C00 Intro
+Name=C00_INTRO_VS1
+Value=1;Continue
+
+[Item]
+Label=C1 Unpaid Apprecenticeship
+Name=C1
+Start=170
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C1 Unpaid Apprecenticeship
+Name=C1_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=C2 Hours Spent On Apprecenticeship
+Name=C2
+Start=171
+Len=3
+DataType=Numeric
+
+[Item]
+Label=C3 Unpaid Work to Produce Goods for Consumption
+Name=C3
+Start=174
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3 Unpaid Work to Produce Goods for Consumption
+Name=C3_VS1
+Value=1;Continue with options
+
+[Item]
+Label=C3_01 Farming Rearing Animals
+Name=C3_01
+Start=175
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_01 Farming Rearing Animals
+Name=C3_01_VS1
+Link=55430896
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=C3_01B
+Name=C3_01B
+Start=176
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_02 Gather Wild Food
+Name=C3_02
+Start=178
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_02 Gather Wild Food
+Name=C3_02_VS1
+Link=55430896
+
+[Item]
+Label=C3_02B
+Name=C3_02B
+Start=179
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_03 Hunting for Consumption
+Name=C3_03
+Start=181
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_03 Hunting for Consumption
+Name=C3_03_VS1
+Link=55430896
+
+[Item]
+Label=C3_03B
+Name=C3_03B
+Start=182
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_04 Preserving Food or Drinks for Storage
+Name=C3_04
+Start=184
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_04 Preserving Food or Drinks for Storage
+Name=C3_04_VS1
+Link=55430896
+
+[Item]
+Label=C3_04B
+Name=C3_04B
+Start=185
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_05 Construction Work
+Name=C3_05
+Start=187
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_05 Construction Work
+Name=C3_05_VS1
+Link=55430896
+
+[Item]
+Label=C3_05B
+Name=C3_05B
+Start=188
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_06 Making of goods for Household Use
+Name=C3_06
+Start=190
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_06 Making of goods for Household Use
+Name=C3_06_VS1
+Link=55430896
+
+[Item]
+Label=C3_06B
+Name=C3_06B
+Start=191
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_07 Fetching Water
+Name=C3_07
+Start=193
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_07 Fetching Water
+Name=C3_07_VS1
+Link=55430896
+
+[Item]
+Label=C3_07B
+Name=C3_07B
+Start=194
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C3_08 Collect Firewood
+Name=C3_08
+Start=196
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=C3_08 Collect Firewood
+Name=C3_08_VS1
+Link=55430896
+
+[Item]
+Label=C3_08B
+Name=C3_08B
+Start=197
+Len=2
+DataType=Numeric
+
+[Item]
+Label=C4 Hours of Work
+Name=C4
+Start=199
+Len=3
+DataType=Numeric
+
+[Item]
+Label=D0 Interviewer Check
+Name=D0
+Start=202
+Len=1
+DataType=Numeric
+
+[Item]
+Label=D1
+Name=D1
+Start=203
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1
+Name=D1_VS1
+Value=1;Continue
+
+[Item]
+Label=D1_01 Carrying or Pushing Heavy Loads
+Name=D1_01
+Start=204
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_01 Carrying or Pushing Heavy Loads
+Name=D1_01_VS1
+Link=14465928
+Value=1;Yes
+Value=2;No
+Value=7;Don't know
+Value=8;Refuse
+
+[Item]
+Label=D1_02 Climbing High Floor
+Name=D1_02
+Start=205
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_02 Climbing High Floor
+Name=D1_02_VS1
+Link=14465928
+
+[Item]
+Label=D1_03 Using Powered Tools
+Name=D1_03
+Start=206
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_03 Using Powered Tools
+Name=D1_03_VS1
+Link=14465928
+
+[Item]
+Label=D1_04 Using Sharp Tools
+Name=D1_04
+Start=207
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_04 Using Sharp Tools
+Name=D1_04_VS1
+Link=14465928
+
+[Item]
+Label=D1_05 Using big or Heavy Machines
+Name=D1_05
+Start=208
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_05 Using big or Heavy Machines
+Name=D1_05_VS1
+Link=14465928
+
+[Item]
+Label=D1_06 Working with Fire
+Name=D1_06
+Start=209
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_06 Working with Fire
+Name=D1_06_VS1
+Link=14465928
+
+[Item]
+Label=D1_07 Working In Noisy Place
+Name=D1_07
+Start=210
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_07 Working In Noisy Place
+Name=D1_07_VS1
+Link=14465928
+
+[Item]
+Label=D1_08 Working in Dusty Place
+Name=D1_08
+Start=211
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_08 Working in Dusty Place
+Name=D1_08_VS1
+Link=14465928
+
+[Item]
+Label=D1_09 Working in Cold/Rainy/Wet Place
+Name=D1_09
+Start=212
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_09 Working in Cold/Rainy/Wet Place
+Name=D1_09_VS1
+Link=14465928
+
+[Item]
+Label=D1_10 Working in Hot Sun
+Name=D1_10
+Start=213
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_10 Working in Hot Sun
+Name=D1_10_VS1
+Link=14465928
+
+[Item]
+Label=D1_11 Working in Ground Mining Wells/Tunnels
+Name=D1_11
+Start=214
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_11 Working in Ground Mining Wells/Tunnels
+Name=D1_11_VS1
+Link=14465928
+
+[Item]
+Label=D1_12 Working Underwater
+Name=D1_12
+Start=215
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_12 Working Underwater
+Name=D1_12_VS1
+Link=14465928
+
+[Item]
+Label=D1-13 Working with Agricultural Chemicals
+Name=D1_13
+Start=216
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1-13 Working with Agricultural Chemicals
+Name=D1_13_VS1
+Link=14465928
+
+[Item]
+Label=D1_14 Working with Chemiclas that Irritate
+Name=D1_14
+Start=217
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_14 Working with Chemiclas that Irritate
+Name=D1_14_VS1
+Link=14465928
+
+[Item]
+Label=D1_15 Working when Dark
+Name=D1_15
+Start=218
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_15 Working when Dark
+Name=D1_15_VS1
+Link=14465928
+
+[Item]
+Label=D1_16 Working in Contact with Animals
+Name=D1_16
+Start=219
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_16 Working in Contact with Animals
+Name=D1_16_VS1
+Link=14465928
+
+[Item]
+Label=D1_17 Doing same Task Over and Over
+Name=D1_17
+Start=220
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_17 Doing same Task Over and Over
+Name=D1_17_VS1
+Link=14465928
+
+[Item]
+Label=D1_18 Feeling Safe at Work
+Name=D1_18
+Start=221
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_18 Feeling Safe at Work
+Name=D1_18_VS1
+Link=14465928
+
+[Item]
+Label=D1_19 Punishment of Mistakes
+Name=D1_19
+Start=222
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_19 Punishment of Mistakes
+Name=D1_19_VS1
+Link=14465928
+
+[Item]
+Label=D1_20 Allowed to leave Work Place
+Name=D1_20
+Start=223
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=D1_20 Allowed to leave Work Place
+Name=D1_20_VS1
+Link=14465928
+
+[Item]
+Label=E00 Intro
+Name=E00_INTRO
+Start=224
+Len=1
+DataType=Numeric
+
+[Item]
+Label=E1 Shopping for Household
+Name=E1
+Start=225
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E1 Shopping for Household
+Name=E1_VS1
+Link=54543936
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=e1a
+Name=E1A
+Start=226
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E2 Carrying Heavy loads while shopping
+Name=E2
+Start=228
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E2 Carrying Heavy loads while shopping
+Name=E2_VS1
+Link=54543936
+
+[Item]
+Label=e2a
+Name=E2A
+Start=229
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E3 Repair of Household Equipment
+Name=E3
+Start=231
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E3 Repair of Household Equipment
+Name=E3_VS1
+Link=54543936
+
+[Item]
+Label=e3a
+Name=E3A
+Start=232
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E4 Cooking for Household
+Name=E4
+Start=234
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E4 Cooking for Household
+Name=E4_VS1
+Link=54543936
+
+[Item]
+Label=e4a
+Name=E4A
+Start=235
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E5 Cooking Using Stove
+Name=E5
+Start=237
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E5 Cooking Using Stove
+Name=E5_VS1
+Link=54543936
+
+[Item]
+Label=e5a
+Name=E5A
+Start=238
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E6 Cutting/Preparing Food with Sharp Knives
+Name=E6
+Start=240
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E6 Cutting/Preparing Food with Sharp Knives
+Name=E6_VS1
+Link=54543936
+
+[Item]
+Label=e6a
+Name=E6A
+Start=241
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E7 Cleaning of the House/Untensils for Household
+Name=E7
+Start=243
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E7 Cleaning of the House/Untensils for Household
+Name=E7_VS1
+Link=54543936
+
+[Item]
+Label=e7a
+Name=E7A
+Start=244
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E8 Cleaning with soaps/bleaches/Liquids that irritate
+Name=E8
+Start=246
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E8 Cleaning with soaps/bleaches/Liquids that irritate
+Name=E8_VS1
+Link=54543936
+
+[Item]
+Label=e8a
+Name=E8A
+Start=247
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E9 Climbing/cleaning Hard to reach places
+Name=E9
+Start=249
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E9 Climbing/cleaning Hard to reach places
+Name=E9_VS1
+Link=54543936
+
+[Item]
+Label=e9a
+Name=E9A
+Start=250
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E10 Sweeping ,Vacuuming or mopping floors
+Name=E10
+Start=252
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E10 Sweeping ,Vacuuming or mopping floors
+Name=E10_VS1
+Link=54543936
+
+[Item]
+Label=e10a
+Name=E10A
+Start=253
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E11 Washing Clothes for Household
+Name=E11
+Start=255
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E11 Washing Clothes for Household
+Name=E11_VS1
+Link=54543936
+
+[Item]
+Label=e11a
+Name=E11A
+Start=256
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E12 Washing Clothes by Hand
+Name=E12
+Start=258
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E12 Washing Clothes by Hand
+Name=E12_VS1
+Link=54543936
+
+[Item]
+Label=e12a
+Name=E12A
+Start=259
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E13 Ironing Clothes
+Name=E13
+Start=261
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E13 Ironing Clothes
+Name=E13_VS1
+Link=54543936
+
+[Item]
+Label=e13a
+Name=E13A
+Start=262
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E14 Carrying Heavy Washing baskets
+Name=E14
+Start=264
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E14 Carrying Heavy Washing baskets
+Name=E14_VS1
+Link=54543936
+
+[Item]
+Label=e14a
+Name=E14A
+Start=265
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E15 Care for Children/Old/Sick
+Name=E15
+Start=267
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E15 Care for Children/Old/Sick
+Name=E15_VS1
+Link=54543936
+
+[Item]
+Label=e15a
+Name=E15A
+Start=268
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E16 Carrying/Lifting and adult/Older Person, Heavy Child
+Name=E16
+Start=270
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E16 Carrying/Lifting and adult/Older Person, Heavy Child
+Name=E16_VS1
+Link=54543936
+
+[Item]
+Label=e16a
+Name=E16A
+Start=271
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E17 Bathing showering or dressing any adults
+Name=E17
+Start=273
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E17 Bathing showering or dressing any adults
+Name=E17_VS1
+Link=54543936
+
+[Item]
+Label=e17a
+Name=E17A
+Start=274
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E18 Caring for a Sick Person
+Name=E18
+Start=276
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E18 Caring for a Sick Person
+Name=E18_VS1
+Link=54543936
+
+[Item]
+Label=e18a
+Name=E18A
+Start=277
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E19 Any Household Task
+Name=E19
+Start=279
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=E19 Any Household Task
+Name=E19_VS1
+Link=54543936
+
+[Item]
+Label=e19a
+Name=E19A
+Start=280
+Len=2
+DataType=Numeric
+
+[Item]
+Label=E20 Hours spent on task
+Name=E20
+Start=282
+Len=3
+DataType=Numeric
+
+[ValueSet]
+Label=E20 Hours spent on task
+Name=E20_VS1
+Value=1:13
+Value=97;Don`t Know
+
+[Record]
+Label=META DATA
+Name=META_DATA
+RecordTypeValue='2'
+RecordLen=141
+
+[Item]
+Label=Region
+Name=REGION
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=District
+Name=DISTRICT
+Start=47
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TA
+Name=CH_TA
+Start=49
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=EA
+Name=CH_EA
+Start=51
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Residence
+Name=CH_RESIDENCE
+Start=54
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer name
+Name=CH_GHINTNAME
+Start=55
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Respondent line number
+Name=RESP_LINE_NO
+Start=105
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Date of (first attempt) interview
+Name=CHILD_INTV_DATE
+Start=107
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Start time
+Name=CHILD_START_TIME
+Start=115
+Len=13
+DataType=Numeric
+
+[Item]
+Label=End time
+Name=CHILD_END_TIME
+Start=128
+Len=13
+DataType=Numeric
+
+[Item]
+Label=End Result
+Name=CHILD_END_RESULT
+Start=141
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=End Result
+Name=CHILD_END_RESULT_VS1
+Value=1;Complete

@@ -1,0 +1,2721 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=IndividualLFS
+Name=INDIVIDUALLFS_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=B1B0344CE441F1DE754385624C074BB7215A2DF88B677098BB0BE3CA217F67AE
+
+[Languages]
+ENG=English
+
+[Level]
+Label=IndividualLFS questionnaire
+Name=INDIVIDUALLFS_QUEST
+
+[IdItems]
+
+[Item]
+Label=Cluster
+Name=XCLUSTER
+Start=2
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer ID
+Name=GHINTCODE
+Start=6
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Household number
+Name=XGHHHNO
+Start=42
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Unique person number
+Name=XHMPPNO
+Start=44
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Household and Geographic Identifiers
+Name=GH_REC
+RecordTypeValue='G'
+RecordLen=164
+
+[Item]
+Label=Type of area
+Name=XGHAREA
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of area
+Name=XGHAREA_VS1
+Value=1;Urban
+Value=2;Peri-urban
+Value=3;Rural
+
+[Item]
+Label=Interview date
+Name=XGHVFDT
+Start=47
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household replacement status
+Name=XGHHRPL
+Start=55
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household replacement status
+Name=XGHHRPL_VS1
+Link=162766440
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Number of household members
+Name=XGHHHSIZE
+Start=56
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Number of eligible household members
+Name=XGHNELIGIBLE
+Start=58
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer Name
+Name=XGHINTNAME
+Note=Added only for the beta testing purpose.
+Start=60
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Line number of eligible member
+Name=LN_ELG
+Start=110
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Name of Eligible member
+Name=NAME_ELG
+Start=112
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Age of eligible member
+Name=AGE_ELG
+Start=162
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Household members
+Name=HM_REC
+RecordTypeValue='M'
+RecordLen=97
+
+[Item]
+Label=Name
+Name=XDEM_NAME
+Start=46
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Additional household members
+Name=XDEM_MORE
+Start=96
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Additional household members
+Name=XDEM_MORE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Additional persons living in this household
+Name=XDEM_OTH
+Start=97
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Additional persons living in this household
+Name=XDEM_OTH_VS1
+Value=1;YES
+Value=2;NO
+
+[Record]
+Label=Demographics
+Name=DEM_REC
+RecordTypeValue='D'
+RecordLen=117
+
+[Item]
+Label=Person number
+Name=XPPNO
+Start=46
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Sex
+Name=XDEM_SEX
+Start=48
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Sex
+Name=XDEM_SEX_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=Relationship to head/reference person
+Name=XDEM_REL
+Note=The different values set of the variable DEM_REL was deleted. We only kept one value set equal to the latest version of
+Note=the questionnaire.\r\n
+Note=\r\n
+Note=It is not necessary to keep one version by gender because the responses categories are not read out loud.
+Start=49
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Relationship to head of household/reference person
+Name=XDEM_REL_VS1
+Value=1;REFERENCE PERSON
+Value=2;SPOUSE/PARTNER
+Value=3;SON/DAUGHTER
+Value=4;MOTHER/FATHER
+Value=5;OTHER RELATIVE
+Value=6;OTHER UNRELATED PERSON
+Value=7;DOMESTIC WORKER
+
+[Item]
+Label=Date of birth
+Name=XDEM_BTH
+Start=50
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Year of birth
+Name=XDEM_BTH_YEAR
+Start=50
+Len=4
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Year of birth
+Name=XDEM_BTH_YEAR_VS1
+Value=1896:2030
+Value=9997;DON'T KNOW
+
+[Item]
+Label=Month of birth
+Name=XDEM_BTH_MONTH
+Start=54
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Month of birth
+Name=XDEM_BTH_MONTH_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=97;DON'T KNOW
+
+[Item]
+Label=Age
+Name=XDEM_AGE
+Start=56
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Marital status
+Name=XDEM_MRT
+Start=59
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Marital status
+Name=XDEM_MRT_VS1
+Value=1;SINGLE/NEVER MARRIED
+Value=2;MARRIED
+Value=3;COHABITING
+Value=4;SEPARATED
+Value=5;DIVORCED
+Value=6;WIDOWED
+
+[Item]
+Label=Highest level of education
+Name=XDEM_EDL
+Start=60
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Highest level of education
+Name=XDEM_EDL_VS1
+Value=1;NEVER ATTENDED SCHOOL
+Value=2;LESS THAN PRIMARY
+Value=3;PRIMARY
+Value=4;LOWER SECONDARY
+Value=5;UPPER SECONDARY
+Value=6;POST SECONDARY NON-TERTIARY
+Value=7;TERTIARY
+
+[Item]
+Label=Field of education
+Name=XDEM_EDF
+Start=61
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Field of highest education - code
+Name=XDEM_EDF_CODE
+Start=111
+Len=2
+DataType=Alpha
+
+[Item]
+Label=Current school attendance
+Name=XDEM_EDC
+Start=113
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Currently in education
+Name=XDEM_EDC_VS1
+Link=162766440
+
+[Item]
+Label=Participation in unpaid trainee work
+Name=XDEM_APP
+Start=114
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Unpaid apprenticeship, internship or work-place training
+Name=XDEM_APP_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Participation in training outside formal education
+Name=XDEM_TRN
+Start=115
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Attend training
+Name=XDEM_TRN_VS1
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=DEM End
+Name=XDEM_END
+Start=117
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Household agriculture and sources of livelihood
+Name=HLL_REC
+RecordTypeValue='H'
+RecordLen=158
+
+[Item]
+Label=All sources of household income in last 12 months
+Name=XHLL_SRC
+Start=46
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=Sources of support
+Name=XHLL_SRC_VS1
+Value='a         ';- Income from household farming or fishing
+Value='b         ';- Income from a household business (other than farming or fishing)
+Value='c         ';- Income from a paid job (held by a household member or yourself)
+Value='d         ';- Foodstuff produced by the household from farming, raising animals or fishing
+Value='e         ';- Money or support from people living abroad
+Value='f         ';- Support from other households in the country
+Value='g         ';- Income from properties, investments or savings
+Value='h         ';- Private or state pension or other Government support
+Value='i         ';- Charity from NGOs or other charitable organisations
+Value='j         ';- OTHER (SPECIFY)
+
+[Item]
+Label=Sources of support - other
+Name=XHLL_SCR_10_OTHER
+Start=56
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Main source of household income in last 12 months
+Name=XHLL_SMN
+Start=106
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=Main source of support
+Name=XHLL_SMN_VS1
+Value='a  ';- Income from household farming or fishing
+Value='b  ';- Income from a household business (other than farming or fishing)
+Value='c  ';- Income from a paid job (held by a household member or yourself)
+Value='d  ';- Foodstuff produced by the household from farming, raising animals or fishing
+Value='e  ';- Money or support from people living abroad
+Value='f  ';- Support from other households in the country
+Value='g  ';- Income from properties, investments or savings
+Value='h  ';- Private or state pension or other Government support
+Value='i  ';- Charity from NGOs or other charitable organisations
+Value='j  ';- OTHER (SPECIFY)
+Value=997;- CANNOT SAY
+
+[Item]
+Label=Main source of support - other
+Name=XHLL_SMN_10_OTHER
+Start=109
+Len=50
+DataType=Alpha
+
+[Record]
+Label=Labor
+Name=LABOR_REC
+RecordTypeValue='L'
+RecordLen=836
+
+[Item]
+Label=Labor module person number
+Name=LBPPNO
+Start=46
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Proxy
+Name=RSP_START
+Start=48
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Availability of selected respondent to participate in interview
+Name=RSP_AVAIL
+Start=49
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Respondent present at interview
+Name=RSP_AVAIL_EN
+Link=162766440
+
+[Item]
+Label=Direct respondent participation
+Name=RSP_DIR
+Start=50
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Proxy status
+Name=RSP_DIR_EN
+Link=162766440
+
+[Item]
+Label=Proxy respondent id
+Name=RSP_PPNO
+Start=51
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Proxy respondent
+Name=RSP_PPNO_EN
+Value=1:20;Valid
+
+[Item]
+Label=Proxy respondent relation to selected respondent
+Name=RSP_REL
+Start=53
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Relationship of proxy respondent
+Name=RSP_REL_EN
+Value=1;SPOUSE OR PARTNER
+Value=2;SON OR DAUGHTER
+Value=3;MOTHER OR FATHER
+Value=4;OTHER RELATIVE
+Value=5;UNRELATED
+
+[Item]
+Label=Module end: Proxy
+Name=RSP_END
+Start=54
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Employed at work
+Name=ATW_START
+Start=55
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Worked for pay
+Name=ATW_PAY
+Start=56
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Did work for pay
+Name=ATW_PAY_EN
+Link=162766440
+
+[Item]
+Label=Worked for profit
+Name=ATW_PFT
+Start=57
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Did work for profit
+Name=ATW_PFT_EN
+Link=162766440
+
+[Item]
+Label=Worked in family business
+Name=ATW_FAM
+Start=58
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Did work in a family business
+Name=ATW_FAM_EN
+Link=162766440
+
+[Item]
+Label=Module end: Employed at work
+Name=ATW_END
+Start=59
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Temporary absence
+Name=ABS_START
+Start=60
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Absent from employment
+Name=ABS_JOB
+Start=61
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Absence from job
+Name=ABS_JOB_EN
+Link=162766440
+
+[Item]
+Label=Reason for absence
+Name=ABS_WHY
+Start=62
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Reason for absence
+Name=ABS_WHY_EN
+Value=1;WAITING TO START NEW JOB OR BUSINESS
+Value=2;LOW OR OFF-SEASON
+Value=3;SHIFT WORK, FLEXI TIME, NATURE OF WORK
+Value=4;VACATION, HOLIDAYS
+Value=5;SICKNESS, ILLNESS, ACCIDENT
+Value=6;MATERNITY, PATERNITY LEAVE
+Value=7;EDUCATION LEAVE OR TRAINING
+Value=8;OTHER PERSONAL LEAVE (CARE FOR FAMILY, CIVIC DUTIES..)
+Value=9;TEMPORARY LAY OFF, NO CLIENTS OR MATERIALS, WORK BREAK
+Value=10;BAD WEATHER, NATURAL DISASTER
+Value=11;STRIKE OR LABOUR DISPUTE
+Value=12;LONG-TERM DISABILITY
+Value=13;OTHER (SPECIFY)
+
+[Item]
+Label=Reason for absence other
+Name=ABS_WHY_13_OTHER
+Start=64
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Continued work during off-season
+Name=ABS_SEA
+Start=114
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Continued work during off season
+Name=ABS_SEA_EN
+Link=162766440
+
+[Item]
+Label=Duration of absence
+Name=ABS_DUR
+Start=115
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Duration of absence
+Name=ABS_DUR_EN
+Link=122033224
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=Continued pay during absence
+Name=ABS_PAY
+Start=117
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Continued pay during absence
+Name=ABS_PAY_EN
+Link=122033224
+
+[Item]
+Label=Module end: Temporary absence
+Name=ABS_END
+Start=119
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Main job - Core job characteristics
+Name=MJJ_START
+Start=120
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Multiple job-holder status
+Name=MJJ_MULT
+Start=121
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Multiple job holder status
+Name=MJJ_MULT_EN
+Value=1;NO, ONLY ONE JOB/BUSINESS
+Value=2;YES, MORE THAN ONE JOB/BUSINESS
+
+[Item]
+Label=Occupation title in main job
+Name=MJJ_OCC_TLE
+Start=122
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Occupation tasks in main job
+Name=MJJ_OCC_MTD
+Start=172
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Employment relationship in main job
+Name=MJJ_EMP_REL
+Start=222
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Form work main job
+Name=MJJ_EMP_REL_EN
+Value=1;As an [employee]
+Value=2;In (your/his/her) own business activity
+Value=3;Helping in a family or household business
+Value=4;As an apprentice, intern
+Value=5;Helping a family member who works for someone else
+
+[Item]
+Label=Family business co-operator
+Name=MJJ_CFW_CHK
+Start=223
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Person in charge of decision about family business
+Name=MJJ_CFW_CHK_EN
+Value=1;(You/NAME)
+Value=2;(You/NAME) together with others
+Value=3;Other family members only
+Value=4;Other (non-related) person(s) only
+
+[Item]
+Label=Hired employees in main job
+Name=MJJ_HIRES
+Start=224
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hires main job
+Name=MJJ_HIRES_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Remuneration type in main job
+Name=MJJ_REM_TYP
+Start=225
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=Additional form of payment
+Name=MJJ_REM_TYP_CH
+Value='a       ';- Malipiro olandira patsiku/pasabata kapena pakutha kwa mwezi
+Value='b       ';- Malipiro olandira pamapeto antchito
+Value='c       ';- Ndalama yapamwamba/Cholowa
+Value='d       ';- Ndalama yokuthokozani
+Value='e       ';- Ndalama yolandira pamapeto antchito yomwe yagwiridwa
+Value='f       ';- Kulandira chakudya kapena malo ogona ngati malipiro
+Value='g       ';- Kulandira zinthu ngati malipiro
+Value='h       ';- MALIPIRO A NDALAMA A NTUNDU WINA (SPECIFY)
+Value='i       ';- PALIBE MALIPIRO
+
+[ValueSet]
+Label=Additional form of payment
+Name=MJJ_REM_TYP_EN
+Value='a       ';- A wage or salary
+Value='b       ';- Payment by piece of work completed
+Value='c       ';- Commissions
+Value='d       ';- Tips
+Value='e       ';- Fees for services provided
+Value='f       ';- Payment with meals  or accommodation
+Value='g       ';- Payment in products
+Value='h       ';- OTHER CASH PAYMENT (SPECIFY)
+Value='i       ';- NOT PAID
+
+[Item]
+Label=Additional form of payment
+Name=MJJ_REM_TYP_6_OTHER
+Start=233
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Module end: Main job - Core job characteristics
+Name=MJJ_END
+Start=283
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Main job - Core characteristics of the economic unit
+Name=MJU_START
+Start=284
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Institutional sector in main job
+Name=MJU_INS
+Start=285
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of organization/ company
+Name=MJU_INS_EN
+Value=1;The government or a state owned enterprise
+Value=2;A farm
+Value=3;A private business (non-farm)
+Value=4;A household(s) as a domestic worker
+Value=5;An NGO, non-profit institution, church
+Value=6;An international organization or a foreign embassy
+
+[Item]
+Label=Unit in main job has a name
+Name=MJU_REF
+Start=286
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Business have a name
+Name=MJU_REF_EN
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=Name of unit in main job
+Name=MJU_NAM
+Start=288
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Main activity of unit in main job
+Name=MJU_MAC
+Start=338
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Size of unit in main job
+Name=MJU_SIZ
+Start=388
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Size of the business
+Name=MJU_SIZ_EN
+Value=1;1
+Value=2;2-4
+Value=3;5-9
+Value=4;10-19
+Value=5;20-49
+Value=6;50+
+
+[Item]
+Label=Type of workplace in main job
+Name=MJU_PLC
+Start=389
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Place usually work
+Name=MJU_PLC_EN
+Value=1;AT (YOUR/NAME'S) OWN HOME
+Value=2;AT THE CLIENT'S OR EMPLOYER'S HOME
+Value=3;AT A FARM, AGRICULTURAL LAND OR FISHING SITE
+Value=4;AT A BUSINESS, OFFICE, FACTORY, FIXED PREMISE OR SITE
+Value=5;ON THE STREET OR ANOTHER PUBLIC SPACE WITHOUT A FIXED STRUCTURE
+Value=6;IN/ON A VEHICLE (WITHOUT DAILY WORK BASE)
+Value=7;DOOR-TO-DOOR
+Value=8;OTHER
+Value=9;CANNOT SAY
+
+[Item]
+Label=Module end: Main job - Core characteristics of the economic unit
+Name=MJU_END
+Start=390
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Main job - Contract characteristics
+Name=MJC_START
+Start=391
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Written or Oral contract in main job
+Name=MJC_CONTRA
+Start=392
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Written or oral contract
+Name=MJC_CONTRA_EN
+Value=1;YES, WRITTEN CONTRACT
+Value=2;YES, ORAL AGREEMENT
+Value=9;DON'T KNOW
+
+[Item]
+Label=Contract type
+Name=MJC_CONOP
+Start=393
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of contract (by duration)
+Name=MJC_CONOP_EN
+Value=1;For a specified period of time
+Value=2;Until the date a task is completed
+Value=3;Permanent or until retirement
+Value=4;Ongoing with no specified end date
+
+[Item]
+Label=Duration of non-permanent contract
+Name=MJC_TEMPDUR
+Start=394
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Total duration contract
+Name=MJC_TEMPDUR_EN
+Value=1;DAILY CONTRACT/AGREEMENT
+Value=2;LESS THAN ONE MONTH
+Value=3;1 TO LESS THAN 3 MONTHS
+Value=4;3 TO LESS THAN 6 MONTHS
+Value=5;6 TO LESS THAN 12 MONTHS
+Value=6;12 TO LESS THAN 24 MONTHS
+Value=7;TWO YEARS OR MORE
+Value=8;NO SPECIFIED DURATION
+
+[Item]
+Label=Module end: Main job - Contract characteristics
+Name=MJC_END
+Start=395
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Second job - Core job characteristics
+Name=SJJ_START
+Start=396
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Occupation title in second job
+Name=SJJ_OCC_TLE
+Start=397
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Occupation tasks in second job
+Name=SJJ_OCC_MTD
+Start=447
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Main activity of unit in second job
+Name=SJJ_IND_MAC
+Start=497
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Employment relationship in second job
+Name=SJJ_EMP_REL
+Start=547
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Form work second job
+Name=SJJ_EMP_REL_EN
+Value=1;As an [employee] for someone else
+Value=2;In (your/his/her) own business activity
+Value=3;Without pay in a household or family business
+Value=4;As an apprentice, intern
+Value=5;Helping a family member who works for someone else
+
+[ValueSet]
+Label=Form work second job
+Name=SJJ_EMP_REL_CH
+Value=1;Monga wolembedwa ntchito
+Value=2;Monga odzilemba nokha ntchito 
+Value=3;Kuthandiza m'bizinezi ya pabanja kapena ya pakhomo
+Value=4;Ngati wogwira ntchito ngati mbali imodzi yamaphunziro 
+Value=5;Kuthandiza munthu wa pabanja amene amene amagwira ntchito 
+
+[Item]
+Label=Hired employees in second job
+Name=SJJ_HIRES
+Start=548
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hires second job
+Name=SJJ_HIRES_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Module end: Second job - Core job characteristics
+Name=SJJ_END
+Start=549
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Working time
+Name=WKT_START
+Start=550
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Usual hours per week in main job
+Name=WKT_MJ_USHRS
+Start=551
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Usually working hours in your main job
+Name=WKT_MJ_USHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Usual days per week in main job
+Name=WKT_MJ_USDAY
+Start=555
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Days per week do you usually work in your main job
+Name=WKT_MJ_USDAY_EN
+Value=1:7
+
+[Item]
+Label=Usual hours per day in main job
+Name=WKT_MJ_USHRDY
+Start=556
+Len=3
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours per day do you usually work in your main job
+Name=WKT_MJ_USHRDY_EN
+Value=0.5:24.0;0.5-24
+
+[Item]
+Label=Absence from main job in reference week
+Name=WKT_MJ_ABS
+Start=559
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Any absences or take time off from main job
+Name=WKT_MJ_ABS_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Overtime in main job in reference week
+Name=WKT_MJ_OVT
+Start=560
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Paid or unpaid for extra worked hours
+Name=WKT_MJ_OVT_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Extra hours worked in main job in reference week
+Name=WKT_MJ_OVHRS
+Start=561
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=How many extra hours
+Name=WKT_MJ_OVHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Same actual hours as usual in main job
+Name=WKT_MJ_SAMEHRS
+Start=565
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Last week did you work the same hours as usual
+Name=WKT_MJ_SAMEHRS_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Absence working time check
+Name=WKT_ABS_CHK1
+Start=566
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Absence working time check
+Name=WKT_ABS_CHK1_VS1
+Value=1;YES, WORKED
+Value=2;NO, DID NOT WORK AT ALL
+
+[Item]
+Label=Actual hours in main job
+Name=WKT_MJ_ACTHRS
+Start=567
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours did you work in total in your main job
+Name=WKT_MJ_ACTHRS_EN
+Value=0.0:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Total number of jobs
+Name=WKT_NUMJBS
+Start=571
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Number of jobs
+Name=WKT_NUMJBS_EN
+Value=1;ONE JOB
+Value=2;TWO JOBS
+Value=3;MORE THAN TWO JOBS
+
+[Item]
+Label=Usual hours per week in second job
+Name=WKT_SJ_USHRS
+Start=572
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Usually work per week in second job
+Name=WKT_SJ_USHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Same actual hours as usual in second job
+Name=WKT_SJ_SAMEHRS
+Start=576
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Is the number of hours worked in your second job
+Name=WKT_SJ_SAMEHRS_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Actual hours in second job
+Name=WKT_SJ_ACTHRS
+Start=577
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours in last week in your second job
+Name=WKT_SJ_ACTHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Usual hours per week in other jobs
+Name=WKT_OJ_USHRS
+Start=581
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours usually work per week in other jobs
+Name=WKT_OJ_USHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Same actual hours as usual in other jobs
+Name=WKT_OJ_SAMEHRS
+Start=585
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Is the number of hours you worked in your other jobs
+Name=WKT_OJ_SAMEHRS_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Actual hours in other jobs
+Name=WKT_OJ_ACTHRS
+Start=586
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours in last week in your other jobs
+Name=WKT_OJ_ACTHRS_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Derived usual hours worked in All jobs
+Name=WKT_USHRSTOT
+Start=590
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=Derived actual hours worked in all jobs
+Name=WKT_ACHRSTOT
+Start=594
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[Item]
+Label=Check for total usual hours per week in all jobs
+Name=WKT_USHRSTOT_CHK
+Start=598
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Is usually work per week correct
+Name=WKT_USHRSTOT_CHK_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Correction for total usual hours per week
+Name=WKT_USHRSTOT1
+Start=599
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Usually hours work per week
+Name=WKT_USHRSTOT1_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Check for total actual hours in reference week in all jobs
+Name=WKT_ACHRSTOT_CHK
+Start=603
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Is actually work per week correct
+Name=WKT_ACHRSTOT_CHK_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Correction for total actual hours in reference week
+Name=WKT_ACHRSTOT1
+Start=604
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Hours did you work in total last week
+Name=WKT_ACHRSTOT1_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Search for other job
+Name=WKT_SRH_OJB
+Start=608
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Look for additional or other paid work
+Name=WKT_SRH_OJB_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Wants to work more hours per week
+Name=WKT_WNT_MRH
+Start=609
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Want to work more hours than usually worked
+Name=WKT_WNT_MRH_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Available to work more hours
+Name=WKT_AVL_MRH
+Start=610
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Could start working more hours within the next two weeks
+Name=WKT_AVL_MRH_EN
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Additional hours available to work
+Name=WKT_NUM_MRH
+Start=611
+Len=4
+DataType=Numeric
+Decimal=1
+ZeroFill=Yes
+
+[ValueSet]
+Label=Additional hours per week could work
+Name=WKT_NUM_MRH_EN
+Value=0.5:168.0
+Value=997.0;DON'T KNOW
+
+[Item]
+Label=Module End: Working time
+Name=WKT_END
+Start=615
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Module start: Job Search
+Name=SRH_START
+Start=616
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Looked for paid job
+Name=SRH_JOB
+Start=617
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Job search activity
+Name=SRH_JOB_EN
+Link=162766440
+
+[Item]
+Label=Looked to start a business
+Name=SRH_BUS
+Start=618
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Tried to start a business
+Name=SRH_BUS_EN
+Link=162766440
+
+[Item]
+Label=Main job search method
+Name=SRH_MTD
+Start=619
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Main search Method
+Name=SRH_MTD_EN
+Value=1;APPLY TO PROSPECTIVE EMPLOYERS
+Value=2;PLACE OR ANSWER JOB ADVERTISEMENTS
+Value=3;STUDY OR READ JOB ADVERTISEMENTS
+Value=4;POST/UPDATE RESUME ON PROFESSIONAL/SOCIAL NETWORKING SITES ONLINE
+Value=5;REGISTER WITH [PUBLIC EMPLOYMENT CENTER]
+Value=6;REGISTER WITH PRIVATE EMPLOYMENT CENTER
+Value=7;TAKE A TEST OR INTERVIEW
+Value=8;SEEK HELP FROM RELATIVES, FRIENDS, OTHERS
+Value=9;CHECK AT FACTORIES, WORK SITES
+Value=10;WAIT ON THE STREET TO BE RECRUITED
+Value=11;SEEK FINANCIAL HELP TO START A BUSINESS
+Value=12;LOOK FOR LAND, BUILDING, EQUIPMENT, MATERIALS TO START A BUSINESS
+Value=13;APPLY FOR PERMIT OR LICENSE TO START A BUSINESS
+Value=14;OTHER (SPECIFY)
+
+[Item]
+Label=Main search method_other
+Name=SRH_MTD_14_OTHER
+Start=621
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Any other method for passive seekers
+Name=SRH_ACT
+Start=671
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Did additional search activity
+Name=SRH_ACT_EN
+Link=162766440
+
+[Item]
+Label=Type of other method for passive seekers
+Name=SRH_OTH
+Start=672
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Additional search method
+Name=SRH_OTH_EN
+Value=1;APPLY TO PROSPECTIVE EMPLOYERS
+Value=2;PLACE OR ANSWER JOB ADVERTISEMENTS
+Value=4;POST/UPDATE RESUME ON PROFESSIONAL/SOCIAL NETWORKING SITES ONLINE
+Value=5;REGISTER WITH [PUBLIC EMPLOYMENT CENTER]
+Value=6;REGISTER WITH PRIVATE EMPLOYMENT CENTER
+Value=7;TAKE A TEST OR INTERVIEW
+Value=8;SEEK HELP FROM RELATIVES, FRIENDS, OTHERS
+Value=9;CHECK AT FACTORIES, WORK SITES
+Value=10;WAIT ON THE STREET TO BE RECRUITED
+Value=11;SEEK FINANCIAL HELP TO START A BUSINESS
+Value=12;LOOK FOR LAND, BUILDING, EQUIPMENT, MATERIALS TO START A BUSINESS
+Value=13;APPLY FOR PERMIT OR LICENSE TO START A BUSINESS
+Value=14;OTHER (SPECIFY)
+
+[Item]
+Label=Additional search method_other
+Name=SRH_OTH_14_OTHER
+Start=674
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Duration of job search
+Name=SRH_DUR
+Start=724
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Duration of search
+Name=SRH_DUR_EN
+Value=1;LESS THAN 1 MONTH
+Value=2;ONE MONTH TO < 3 MONTHS
+Value=3;THREE MONTHS TO < 6 MONTHS
+Value=4;SIX MONTHS TO < 12 MONTHS
+Value=5;ONE YEAR TO < 2 YEARS
+Value=6;TWO YEARS OR MORE
+
+[Item]
+Label=Job search in last 12 mo
+Name=SRH_YER
+Start=725
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Search in last 12 months
+Name=SRH_YER_EN
+Link=162766440
+
+[Item]
+Label=Desire to work
+Name=SRH_DES
+Start=726
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Desire to work
+Name=SRH_DES_EN
+Link=162766440
+
+[Item]
+Label=Main reason for not seeking work
+Name=SRH_DWY
+Start=727
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=Reason for not seeking work
+Name=SRH_DWY_EN
+Value=1;WAITING FOR RESULTS OF A PREVIOUS SEARCH
+Value=2;AWAITING RECALL FROM A PREVIOUS JOB
+Value=3;WAITING FOR THE SEASON TO START
+Value=4;WAITING TO START NEW JOB OR BUSINESS
+Value=5;TIRED OF LOOKING FOR JOBS, NO JOBS IN AREA
+Value=6;NO JOBS MATCHING SKILLS, LACKS EXPERIENCE
+Value=7;CONSIDERED TOO YOUNG/OLD BY EMPLOYERS
+Value=8;IN STUDIES, TRAINING
+Value=9;FAMILY / HOUSEHOLD RESPONSIBILITIES
+Value=10;IN AGRICULTURE / FISHING FOR FAMILY USE
+Value=11;OWN DISABILITY, INJURY, ILLNESS
+Value=12;RETIRED, PENSIONER, OTHER SOURCES OF INCOME
+Value=13;OTHER (SPECIFY)
+
+[Item]
+Label=Reason for not seeking work_other
+Name=SRH_DWY_13_OTHER
+Start=729
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Future starter duration
+Name=SRH_FTR
+Start=779
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Date of future start
+Name=SRH_FTR_EN
+Value=1;ONE MONTH OR LESS
+Value=2;MORE THAN ONE MONTH AND UP TO THREE MONTHS
+Value=3;MORE THAN THREE MONTHS
+
+[Item]
+Label=Future starter available to work in reference week
+Name=SRH_FAN
+Start=780
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Availability for future start
+Name=SRH_FAN_EN
+Link=162766440
+
+[Item]
+Label=Available to work in reference week
+Name=SRH_AVN
+Start=781
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Availability to start last week
+Name=SRH_AVN_EN
+Link=162766440
+
+[Item]
+Label=Available to work in two weeks
+Name=SRH_AVL
+Start=782
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Availability to start in next two weeks
+Name=SRH_AVL_EN
+Link=162766440
+
+[Item]
+Label=Reason for not being available
+Name=SRH_NAR
+Start=783
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Reason for not being available
+Name=SRH_NAR_EN
+Value=1;AWAITING RECALL FROM A PREVIOUS JOB
+Value=2;WAITING FOR THE SEASON TO START
+Value=3;IN STUDIES, TRAINING
+Value=4;FAMILY / HOUSEHOLD RESPONSIBILITIES
+Value=5;IN AGRICULTURE / FISHING FOR FAMILY USE
+Value=6;RETIRED, PENSIONER
+Value=7;OWN DISABILITY, INJURY, ILLNESS
+
+[Item]
+Label=Main activity at present
+Name=SRH_MAC
+Start=784
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Main current activity
+Name=SRH_MAC_EN
+Value=1;Studying or training
+Value=2;Engaged in household or family responsibilities
+Value=3;Farming or fishing to produce food for the family
+Value=4;Retired or pensioner
+Value=5;With a long-term illness, injury or disability
+Value=6;Doing volunteering, community or charity work
+Value=7;Engaged in cultural or leisure activities
+Value=8;OTHER (SPECIFY)
+
+[Item]
+Label=Main current activity_other
+Name=SRH_MAC_8_OTHER
+Start=785
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Module end: Job search
+Name=SRH_END
+Start=835
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=End Individual Interview
+Name=INDIVEND
+Start=836
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=End Individual Interview
+Name=INDIVEND_VS1
+Value=1;Complete
+Value=2;Member not available
+Value=3;Not eligible
+Value=9;Refused
+
+[Record]
+Label=Core Jobs
+Name=JOBS_REC
+RecordTypeValue='1'
+RecordLen=290
+
+[Item]
+Label=AGF_CHK
+Name=AGF_CHK
+Start=46
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=AGF_CHK
+Name=AGF_CHK_VS1
+Value='a   ';Farming
+Value='b   ';Rearing farm animals
+Value='c   ';Fishing or fish farming
+Value='d   ';Another type of job or business
+
+[Item]
+Label=AGF_ANY
+Name=AGF_ANY
+Start=50
+Len=3
+DataType=Alpha
+
+[ValueSet]
+Label=AGF_ANY
+Name=AGF_ANY_VS1
+Value='a  ';Farming
+Value='b  ';Rearing farm animals
+Value='c  ';Fishing or fish farming
+Value='d  ';NONE OF THE ABOVE
+
+[Item]
+Label=AGF_MKT
+Name=AGF_MKT
+Start=53
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=AGF_MKT
+Name=AGF_MKT_VS1
+Value=1;Only for sale
+Value=2;Mainly for sale
+Value=3;Mainly for family use
+Value=4;Only for family use
+Value=5;CANNOT SAY
+
+[Item]
+Label=AGF_HIS
+Name=AGF_HIS
+Start=54
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=AGF_HIS
+Name=AGF_HIS_VS1
+Value=1;ONLY SOLD
+Value=2;MAINLY SOLD
+Value=3;MAINLY KEPT FOR FAMILY USE
+Value=4;ONLY KEPT FOR FAMILY USE
+
+[Item]
+Label=AGF_HIR
+Name=AGF_HIR
+Start=55
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=AGF_HIR
+Name=AGF_HIR_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=AGF_GDS
+Name=AGF_GDS
+Start=56
+Len=30
+DataType=Alpha
+
+[Item]
+Label=AGF_DYS
+Name=AGF_DYS
+Start=86
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=AGF_DYS
+Name=AGF_DYS_VS1
+Value=1:7
+
+[Item]
+Label=AGF_HRS
+Name=AGF_HRS
+Start=87
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=AGF_HRS
+Name=AGF_HRS_VS1
+Value=0:15
+
+[Item]
+Label=MJD_WHO_PAYS
+Name=MJD_WHO_PAYS
+Start=89
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJD_WHO_PAYS
+Name=MJD_WHO_PAYS_VS1
+Value=1;PLACE/UNIT WHERE THEY WORK
+Value=2;ANOTHER AGENCY/AGENT THAT ORGANISES THE WORK
+Value=3;OTHER
+
+[Item]
+Label=MJD_BOSS_TAX
+Name=MJD_BOSS_TAX
+Start=90
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJD_BOSS_TAX
+Name=MJD_BOSS_TAX_VS1
+Value=1;EMPLOYER IS RESPONSIBLE
+Value=2;(YOU ARE/NAME IS) RESPONSIBLE
+Value=3;NOT APPLICABLE
+Value=9;DON'T KNOW
+
+[Item]
+Label=MJT_SYR
+Name=MJT_SYR
+Start=91
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=MJT_SMO
+Name=MJT_SMO
+Start=95
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJT_SMO
+Name=MJT_SMO_VS1
+Value=1;JANUARY
+Value=2;FEBRUARY
+Value=3;MARCH
+Value=4;APRIL
+Value=5;MAY
+Value=6;JUNE
+Value=7;JULY
+Value=8;AUGUST
+Value=9;SEPTEMBER
+Value=10;OCTOBER
+Value=11;NOVEMBER
+Value=12;DECEMBER
+Value=97;DON'T KNOW
+
+[Item]
+Label=MJL_CORP
+Name=MJL_CORP
+Start=97
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJL_CORP
+Name=MJL_CORP_VS1
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=MIS_REGI
+Name=MIS_REGI
+Start=99
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MIS_REGI
+Name=MIS_REGI_VS1
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=MIS_BOOK
+Name=MIS_BOOK
+Start=101
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MIS_BOOK
+Name=MIS_BOOK_VS1
+Value=1;A complete set of written accounts for tax purposes
+Value=2;Simplified written accounts not for tax purposes
+Value=3;Informal records of orders, sales, purchases
+Value=4;No recordes are kept
+Value=97;Don't know
+
+[Item]
+Label=MJI_PRICE_SELF
+Name=MJI_PRICE_SELF
+Start=103
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJI_PRICE_SELF
+Name=MJI_PRICE_SELF_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=MJI_PRICE_OTH
+Name=MJI_PRICE_OTH
+Start=104
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MJI_PRICE_OTH
+Name=MJI_PRICE_OTH_VS1
+Value=1;Another enterprise or agent sets the price
+Value=2;Prices are set by the customer(s)
+Value=3;Government defines the price by law/regulation
+Value=4;Prices are negotiated with the customer
+Value=5;It is the going rate on the market
+Value=6;Other
+
+[Item]
+Label=MCD_TEMPRES
+Name=MCD_TEMPRES
+Start=105
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=MCD_TEMPRES
+Name=MCD_TEMPRES_VS1
+Value='A   ';It covers a particular season
+Value='B   ';It covers a period of training (apprentice, trainee, research assistant, etc)
+Value='C   ';It is part of an employment creation program
+Value='D   ';It is for substitute work
+Value='E   ';NONE OF THE ABOVE
+
+[Item]
+Label=MCD_PERM
+Name=MCD_PERM
+Start=109
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MCD_PERM
+Name=MCD_PERM_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=MCD_TASKSE
+Name=MCD_TASKSE
+Start=110
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MCD_TASKSE
+Name=MCD_TASKSE_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=MCD_CONTHRS
+Name=MCD_CONTHRS
+Start=111
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MCD_CONTHRS
+Name=MCD_CONTHRS_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=MCD_CONTHRS_NUM
+Name=MCD_CONTHRS_NUM
+Start=112
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=MCD_CONMIN
+Name=MCD_CONMIN
+Start=115
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MCD_CONMIN
+Name=MCD_CONMIN_VS1
+Value=1;YES, MINIMUM HOURS OR WORK GUARANTEED
+Value=2;NO, 0-HOUR CONTRACT, CONTACTED WHEN NEEDED
+
+[Item]
+Label=MIE_SOCPRO
+Name=MIE_SOCPRO
+Start=116
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MIE_SOCPRO
+Name=MIE_SOCPRO_VS1
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=MIE_PVACLV
+Name=MIE_PVACLV
+Start=118
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MIE_PVACLV
+Name=MIE_PVACLV_VS1
+Value=1;YES
+Value=2;NO
+Value=97;DON'T KNOW
+
+[Item]
+Label=MIE_PSCKLV
+Name=MIE_PSCKLV
+Start=120
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MIE_PSCKLV
+Name=MIE_PSCKLV_VS1
+Value=1;YES
+Value=2;NO
+Value=7;DON'T KNOW
+
+[Item]
+Label=SJD_REM_TYP
+Name=SJD_REM_TYP
+Start=122
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=SJD_REM_TYP
+Name=SJD_REM_TYP_VS1
+Value='A       ';A wage or salary
+Value='B       ';Payment by piece of work completed
+Value='C       ';Commissions
+Value='D       ';Tips
+Value='E       ';Fee for services provided
+Value='F       ';Payment with meals or accommodation
+Value='G       ';Payment in products
+Value='H       ';OTHER CASH PAYMENT
+Value='I       ';NOT PAID
+
+[Item]
+Label=SJD_BOSS_TAX
+Name=SJD_BOSS_TAX
+Start=130
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SJD_BOSS_TAX
+Name=SJD_BOSS_TAX_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=SJD_PRICE_SELF
+Name=SJD_PRICE_SELF
+Start=131
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SJD_PRICE_SELF
+Name=SJD_PRICE_SELF_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=SJD_PRICE_OTH
+Name=SJD_PRICE_OTH
+Start=132
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SJD_PRICE_OTH
+Name=SJD_PRICE_OTH_VS1
+Value=1;Another enterprise or agent sets the price
+Value=2;Prices are set by the customer(s)
+Value=3;Government defines the price by law/regulation
+Value=4;Prices are negotiated with the customer
+Value=5;It is the going rate on the market
+Value=6;OTHER
+
+[Item]
+Label=WKI_INAD
+Name=WKI_INAD
+Start=133
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WKI_INAD
+Name=WKI_INAD_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=WKI_INAD_RES
+Name=WKI_INAD_RES
+Start=134
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WKI_INAD_RES
+Name=WKI_INAD_RES_VS1
+Value=1;PRESENT JOB(S) IS/ARE TEMPORARY
+Value=2;TO HAVE A BETTER PAID JOB
+Value=3;TO HAVE MORE CLIENTS/BUSINESS
+Value=4;TO WORK MORE HOURS
+Value=5;TO WORK FEWER HOURS
+Value=6;TO BETTER MATCH SKILLS
+Value=7;TO WORK CLOSER TO HOME
+Value=8;TO IMPROVE OTHER WORKING CONDITIONS
+Value=9;OTHER
+
+[Item]
+Label=OPC_INTRO
+Name=OPC_INTRO
+Start=135
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPC_INTRO
+Name=OPC_INTRO_VS1
+Value=1;Continue
+
+[Item]
+Label=OPC_HCROP
+Name=OPC_HCROP
+Start=136
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPC_HCROP
+Name=OPC_HCROP_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=OPC_HPROD
+Name=OPC_HPROD
+Start=137
+Len=50
+DataType=Alpha
+
+[Item]
+Label=OPC_HDAY
+Name=OPC_HDAY
+Start=187
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPC_HDAY
+Name=OPC_HDAY_VS1
+Value=0:7
+
+[Item]
+Label=OPC_HHRS
+Name=OPC_HHRS
+Start=188
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPC_HHRS
+Name=OPC_HHRS_VS1
+Value=0:13
+Value=97;DON'T KNOW
+
+[Item]
+Label=OPF_HFOOD
+Name=OPF_HFOOD
+Start=190
+Len=5
+DataType=Alpha
+
+[Item]
+Label=OPF_HDAY
+Name=OPF_HDAY
+Start=195
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPF_HDAY
+Name=OPF_HDAY_VS1
+Value=0:7
+
+[Item]
+Label=OPF_HHRS
+Name=OPF_HHRS
+Start=196
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPF_HHRS
+Name=OPF_HHRS_VS1
+Value=0:13
+Value=97;DON'T KNOW
+
+[Item]
+Label=BLD_OPG
+Name=BLD_OPG
+Start=198
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=BLD_OPG
+Name=BLD_OPG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=BLD_OPG_HRS
+Name=BLD_OPG_HRS
+Start=199
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=BLD_OPG_HRS
+Name=BLD_OPG_HRS_VS1
+Link=68936104
+Value=0:91
+Value=997;DON'T KNOW
+
+[Item]
+Label=MNF_OPG
+Name=MNF_OPG
+Start=202
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MNF_OPG
+Name=MNF_OPG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=MNF_OPG_HRS
+Name=MNF_OPG_HRS
+Start=203
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=MNF_OPG_HRS
+Name=MNF_OPG_HRS_VS1
+Link=68936104
+
+[Item]
+Label=WTR_OPG
+Name=WTR_OPG
+Start=206
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WTR_OPG
+Name=WTR_OPG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=WTR_OPG_HRS
+Name=WTR_OPG_HRS
+Start=207
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WTR_OPG_HRS
+Name=WTR_OPG_HRS_VS1
+Link=68936104
+
+[Item]
+Label=FIR_OPG
+Name=FIR_OPG
+Start=210
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=FIR_OPG
+Name=FIR_OPG_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=FIR_OPG_HRS
+Name=FIR_OPG_HRS
+Start=211
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=FIR_OPG_HRS
+Name=FIR_OPG_HRS_VS1
+Link=68936104
+
+[Item]
+Label=ELG_DIF
+Name=ELG_DIF
+Start=214
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=ELG_DIF
+Name=ELG_DIF_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=ELG_INTRO
+Name=ELG_INTRO
+Start=215
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=ELG_EMP
+Name=ELG_EMP
+Start=216
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=ELG_EMP
+Name=ELG_EMP_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=EBR_1
+Name=EBR_1
+Start=217
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=EBR_1
+Name=EBR_1_VS1
+Value='a       ';Getting higher qualifications, training, skills, experience
+Value='b       ';Availability of suitable transportation to and from workplace
+Value='c       ';Help in locating appropriate  jobs
+Value='d       ';More positive attitudes towards persons with disabilities
+Value='e       ';Availability of special equipment or assistive devices
+Value='f       ';Availability of more flexible work schedules or work tasks arrangements
+Value='g       ';Availability of a more accommodating workplace
+Value='h       ';Other factors
+
+[Item]
+Label=EBR_2
+Name=EBR_2
+Start=225
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=EBR_2
+Name=EBR_2_VS1
+Value=1;Very supportive
+Value=2;Somewhat supportive
+Value=3;Not supportive
+Value=97;DON'T KNOW
+Value=98;REFUSED
+
+[Item]
+Label=WPA_1
+Name=WPA_1
+Start=227
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WPA_1
+Name=WPA_1_VS1
+Value=1;Yes, fully
+Value=2;Yes, partially
+Value=3;Not at all
+Value=4;I do not have difficulties that require special arrangements
+Value=97;DON'T KNOW
+
+[Item]
+Label=WPA_2
+Name=WPA_2
+Start=229
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=WPA_2
+Name=WPA_2_VS1
+Value=1;Yes, fully
+Value=2;Yes, partially
+Value=3;Not at all
+Value=4;I do not have difficulties that require special accommodation
+Value=97;DON'T KNOW
+
+[Item]
+Label=ATT_1
+Name=ATT_1
+Start=231
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=ATT_1
+Name=ATT_1_VS1
+Value=1;Very willing
+Value=2;Somewhat willing
+Value=3;Unwilling
+Value=97;DON'T KNOW
+
+[Item]
+Label=ATT_2
+Name=ATT_2
+Start=233
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=ATT_2
+Name=ATT_2_VS1
+Value=1;Very willing
+Value=2;Somewhat willing
+Value=3;Unwilling
+Value=97;DON'T KNOW
+
+[Item]
+Label=SPR_1
+Name=SPR_1
+Start=235
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SPR_1
+Name=SPR_1_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=SPR_2
+Name=SPR_2
+Start=236
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SPR_2
+Name=SPR_2_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=SPR_3
+Name=SPR_3
+Start=237
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=SPR_3
+Name=SPR_3_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=X.01
+Name=X01
+Start=238
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=X.01
+Name=X01_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=X.02
+Name=X02
+Start=239
+Len=50
+DataType=Alpha
+
+[Item]
+Label=X.03
+Name=X03
+Start=289
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=X.03
+Name=X03_VS1
+Value=1;Government
+Value=2;Non-governmental
+Value=3;Religious institution
+Value=4;Other
+
+[Item]
+Label=X.04
+Name=X04
+Start=290
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=X.04
+Name=X04_VS1
+Value=1;Dismissal
+Value=2;Retrenchment
+Value=3;Institutional closure
+Value=4;Other
+
+[Record]
+Label=Meta data
+Name=XMETA_DATA
+RecordTypeValue='2'
+RecordLen=67
+
+[Item]
+Label=Region
+Name=XREGION
+Note=All the geo ids are hided and prefilled to facilitate the beta testing. In the furture release, these will be handled
+Note=by the menu program.
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=District
+Name=XDISTRICT
+Start=47
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Traditional Authority
+Name=XTA
+Start=49
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Enumeration Area
+Name=XEA
+Start=52
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Ind End Time
+Name=IND_END_TIME
+Start=55
+Len=13
+DataType=Numeric
+ZeroFill=Yes

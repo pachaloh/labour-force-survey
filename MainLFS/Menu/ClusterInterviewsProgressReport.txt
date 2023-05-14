@@ -1,0 +1,24 @@
+﻿Cluster 0056: Nkhatabay, TA Timbiri (0030)
+-------------------------------------------
+
+Summary Status of Progress for each Staff
+-------------------------------------------
+
+01. PACHALO CHIZALA                                    
+---- --- --- ------------
+01. 005601:Head Name 84-14              (COMPLETED)
+    Individual. 01.KATAMBE                                            (PARTIALLY SAVED)
+    Individual. 02.WIFEY                                              (PARTIALLY SAVED)
+    Individual. 03.SON                                                (NOT INTERVIEWED)
+    Individual. 04.DAUGHTER                                           (NOT INTERVIEWED)
+    Child. 03.SON                                               (17) (NOT INTERVIEWED)
+    Child. 04.DAUGHTER                                          (15) (NOT INTERVIEWED)
+02. 005602:Head Name 56-2                                     (NOT VISITED)
+03. 005603:Head Name 56-3                                     (NOT VISITED)
+----------------------------------------
+
+Cluster Incomplete- 1 of 6 done- (16.67% Complete)
+           Completed  Partial    New     Total
+Household:      1        0        2        3    
+Ind      :      0        2        2        4    
+Child    :      0        0        2        2    

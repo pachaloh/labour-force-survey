@@ -1,0 +1,67 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Field Of Study Dictionary
+Name=FIELD_OF_STUDY_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=7E74F82C4DB3BEF73F1A957C9F75CC6B9D8468F19590E09171F1792B3448F2AD
+
+[Level]
+Label=Field Of Study Level
+Name=FIELD_OF_STUDY_LEVEL
+
+[IdItems]
+
+[Item]
+Label=Broad Field Codes
+Name=BROAD_FIELD_CODES
+Start=1
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Narrow Field Codes
+Name=NARROW_FIELD_CODES
+Start=3
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Detailed Field Codes
+Name=DETAILED_FIELD_CODES
+Start=6
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Field Of Study Record
+Name=FIELD_OF_STUDY_REC
+RecordTypeValue=''
+RecordLen=625
+
+[Item]
+Label=Broad Field
+Name=BROAD_FIELD
+Start=10
+Len=512
+DataType=Alpha
+
+[Item]
+Label=Narrow Field
+Name=NARROW_FIELD
+Start=522
+Len=49
+DataType=Alpha
+
+[Item]
+Label=Detailed Field
+Name=DETAILED_FIELD
+Start=571
+Len=55
+DataType=Alpha

@@ -1,0 +1,31 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=CHILDLFS
+Name=CHILDLFS
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Desktop
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Household\HouseholdLFS.dcf
+File=..\IndividualLFS\IndividualLFS.dcf
+[AppCode]
+File=.\ChildLFS.ent.apc
+[Message]
+File=.\ChildLFS.ent.mgf
+[Help]
+File=.\ChildLFS.ent.qsf
+[Forms]
+File=.\ChildLFS.fmf
+[Dictionary Types]
+Dict-Type=.\ChildLFS.dcf,Input,.\ChildLFS.fmf
+Dict-Type=..\Household\HouseholdLFS.dcf,External
+Dict-Type=..\IndividualLFS\IndividualLFS.dcf,External
