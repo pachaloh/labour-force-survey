@@ -887,6 +887,16 @@ PROC ENUM_CODE
 preproc
 	$ = " ";
 	$ = uuid();
+
+{	
+	forcase TEAMS_DICT where TEAM_ID = TEAMNO do
+		if $ = USER_CODE then
+			errmsg("Use unique codes for different interviewer!");
+			reenter;
+		endif;
+	endfor;	
+}	
+		
 	
 	noinput;
 	
@@ -1047,13 +1057,26 @@ postproc
 	errmsg("Delete %s household from %s",getlabel($,$),getlabel(MANAGE_TASKS,MANAGE_TASKS))
 		select("Confirm",continue,"Cancel",reenter);
 
-	{Under construction
+
+	//Check if the household was opened/started/interviewed
+	if locate(HOUSEHOLDLFS_DICT,=,maketext("%v%v%v",MCLUSTER,MANAGE_TASKS,REM_HH)) then
+		errmsg("Caution! There exist data for household %s! Do you want to continue",getlabel($,$))
+			select("Delete",continue,"Cancel",reenter);
+	else
+		errmsg("Verify with interviewer if %s household is not visited!",getlabel($,$))
+			select("Ok to Delete ",continue,"Sync with interviewer first",TEAM_MGT);
+	endif;
 	
-		ACLUSTER = MCLUSTER;
-		INTERVIEWER_ID = LOGIN;
-		AHH_NO = $;
-		delcase(ASSIGNED_HHS_DICT);
-	}
+	//Deleting a selected household
+	if delcase(ASSIGNED_HHS_DICT,MCLUSTER,MANAGE_TASKS,$) then
+		errmsg("Household deleted");
+	else
+		errmsg("Household not deleted");
+	endif;
+
+
+	reenter;
+
 PROC INTERV_MENU
 
 onfocus
