@@ -1,0 +1,265 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Labour force Listing
+Name=LABOURF_FORCE_LISTING_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=98EF41A932603D76A79156DB38594E6D636972EC4BB9120D4C16695AB1D65825479584C45C52FB2103DBAB0E12C4DD29
+
+[Level]
+Label=Labourf force Listing Level
+Name=LABOURF_FORCE_LISTING_LEVEL
+
+[IdItems]
+
+[Item]
+Label=REGION
+Name=REGION
+Start=2
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=REGION
+Name=REGION_VS1
+Value=1;Northern  region
+Value=2;Central region
+Value=3;Southern region
+
+[Item]
+Label=DISTRICT
+Name=DISTRICT
+Start=3
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=T/A, STA or TOWN
+Name=T_A_STA_OR_TOWN
+Start=5
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=ENUMERATION AREA NO
+Name=ENUMERATION_AREA_NO
+Start=7
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer ID code
+Name=INTERVIEWER_ID_CODE
+Start=10
+Len=36
+DataType=Alpha
+
+[Record]
+Label=HOUSEHOLD
+Name=HOUSEHOLD
+RecordTypeValue='2'
+MaxRecords=500
+RecordLen=302
+
+[Item]
+Label=Structure number
+Name=STRUCTURE_NUMBER
+Start=46
+Len=3
+DataType=Numeric
+
+[Item]
+Label=Structure type
+Name=STRCT_TYP
+Start=49
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Structure type
+Name=STRCT_TYP_VS1
+Value=1;Add a household
+
+[Item]
+Label=Household head name
+Name=PLCAE_HOLDER_NAME
+Start=50
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Common name of the household head
+Name=COMMN_HH_NAME
+Start=80
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Number of members in hh
+Name=HH_MEMBERS_TOTAL
+Start=110
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household member of age  5-17
+Name=HH_MEMBERS_AGE_5_17
+Start=112
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household Discription
+Name=PLACE_DISCR
+Start=114
+Len=50
+DataType=Alpha
+
+[Item]
+Label=GVH
+Name=PLACE_GVH
+Start=164
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Other GVH
+Name=OTHER_GVH
+Start=167
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Village
+Name=PLACE_VLG
+Start=217
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Other VLG
+Name=OTHER_VLG
+Start=220
+Len=50
+DataType=Alpha
+
+[Item]
+Label=GPS
+Name=PLACE_GPS
+Start=270
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=GPS
+Name=PLACE_GPS_VS1
+Value=1;Continue
+
+[Item]
+Label=Latitude
+Name=PLACE_LATITUDE
+Start=271
+Len=10
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Longitude
+Name=PLACE_LONGITUDE
+Start=281
+Len=11
+DataType=Numeric
+Decimal=6
+DecimalChar=Yes
+
+[Item]
+Label=Household label
+Name=HH_DOOR_LABEL
+Start=292
+Len=9
+DataType=Alpha
+
+[Item]
+Label=Anymore Household
+Name=MORE_STRCT
+Start=301
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Anymore Household
+Name=MORE_STRCT_VS1
+Value=1;Yes
+Value=2;No
+
+[Item]
+Label=Close EA
+Name=CLOSE_EA
+Start=302
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=Close EA
+Name=CLOSE_EA_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=META DATA
+Name=META_DATA
+RecordTypeValue='1'
+RecordLen=110
+
+[Item]
+Label=Name of the interviewer
+Name=NAME_OF_THE_INTERVIEWER
+Start=46
+Len=30
+DataType=Alpha
+
+[Item]
+Label=Date  of interview
+Name=DATE_OF_INTERVIEW
+Start=76
+Len=8
+DataType=Numeric
+
+[Item]
+Label=Start time
+Name=START_TIME
+Start=84
+Len=13
+DataType=Numeric
+
+[Item]
+Label=End time
+Name=END_TIME
+Start=97
+Len=13
+DataType=Numeric
+
+[Item]
+Label=RESIDENCE
+Name=RESIDENCE
+Start=110
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=RESIDENCE
+Name=RESIDENCE_VS1
+Value=1;Urban
+Value=2;Rural

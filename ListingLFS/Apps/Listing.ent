@@ -1,0 +1,39 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=LISTING
+Name=LISTING
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Never
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dicts\EA.dcf
+File=..\Dicts\TA.dcf
+File=..\Dicts\GVH.dcf
+File=..\Dicts\Districts.dcf
+File=..\Dicts\VH.dcf
+File=..\Dicts\Staff.dcf
+[AppCode]
+File=.\Listing.ent.apc
+[Message]
+File=.\Listing.ent.mgf
+[Help]
+File=.\Listing.ent.qsf
+[Forms]
+File=.\Listing.fmf
+[Dictionary Types]
+Dict-Type=.\Listing.dcf,Input,.\Listing.fmf
+Dict-Type=..\Dicts\EA.dcf,External
+Dict-Type=..\Dicts\TA.dcf,External
+Dict-Type=..\Dicts\GVH.dcf,External
+Dict-Type=..\Dicts\Districts.dcf,External
+Dict-Type=..\Dicts\VH.dcf,External
+Dict-Type=..\Dicts\Staff.dcf,External

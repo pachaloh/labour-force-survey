@@ -1,0 +1,16 @@
+infix dictionary using "C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat" {
+1 lines
+    int      xcluster    1:   1-4   
+    str      ghintcode    1:   5-40  
+    byte     xghhhno     1:  41-42  
+    byte     xhmppno     1:  43-44  
+    byte     xgharea     1:  45-45  
+    long     xghvfdt     1:  46-53  
+    byte     xghhrpl     1:  54-54  
+    byte     xghhhsize    1:  55-56  
+    byte     xghneligible    1:  57-58  
+    str      xghintname    1:  59-108 
+    byte     ln_elg      1: 109-110 
+    str      name_elg    1: 111-160 
+    int      age_elg     1: 161-163 
+}

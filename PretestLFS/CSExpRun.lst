@@ -1,0 +1,53 @@
+﻿Application     C:\Users\User\AppData\Local\Temp\CSExpRun13260.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.csdb
+<File>          cspro_export_file_var_f=
+
+Date            May 16, 2023
+Start Time      18:22:26
+End Time        18:22:26
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║      1309 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         6 Messages:      0 E      6 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║         187  ║           0  ║         187  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+*** Case [000318e0ac34-aa17-44d1-bfe1-00b02851255d0201] has 6 messages (0 E / 6 W / 0 U)
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+    W   31072 Unable to generate EXPORT' file-name
+              'C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\individual.dat' because of conflicting with
+              another EXPORT command (seq # 1). Only one record type is supported for this model.
+
+System messages:
+
+  Number        Freq         Message Text                                                                               
+  ------        ----         ------------                                                                               
+   31072           6         Unable to generate EXPORT' file-name '%s' because of conflicting with another              
+                             EXPORT command (seq # %d). Only one record type is supported for this model.               
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

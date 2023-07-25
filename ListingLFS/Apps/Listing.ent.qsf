@@ -1,0 +1,152 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-size: 16px;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-size: 14px;color: #0000FF;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: LABOURF_FORCE_LISTING_DICT.STRUCTURE_NUMBER
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24pt; font-family: Arial;"><font color="#0000ff"><i>Structure number</i></font></span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.STRCT_TYP
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><span style="font-size: 24px;">Add a household</span></font>
+  - name: LABOURF_FORCE_LISTING_DICT.PLCAE_HOLDER_NAME
+    conditions:
+      - logic: STRCT_TYP = 1
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of household head</span><p></p>
+      - logic: STRCT_TYP = 2
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of the enterprise</span><p></p>
+      - logic: STRCT_TYP = 3
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of school</span><p></p>
+      - logic: STRCT_TYP = 4
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of the health facility</span><p></p>
+      - logic: STRCT_TYP = 5
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of hotel/lodge</span><p></p>
+      - logic: STRCT_TYP = 6
+        questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter name of facility</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.COMMN_HH_NAME
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">What other name is </span><b><span style="font-size: 24px;">~~PLCAE_HOLDER_NAME~~</span></b><span style="font-size: 24px;"> commonly known with?</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.HH_MEMBERS_TOTAL
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">How many members (usually) live in this household?</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.HH_MEMBERS_AGE_5_17
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 24px;">How many members aged 5 to 17 live in this household?</span></p><p><font color="#0000ff"><i><span style="font-size: 24px;">If none, write "0"</span></i></font></p><p></p><p><br></p><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_GVH
+    conditions:
+      - logic: STRCT_TYP = 1
+        questionText:
+          EN: |
+            <p><span style="font-size: 24px;">Select a Group Village Headman (GVH) the household resides</span></p><p><p><font color="#0000ff"><i><span style="font-size: 24px;">If not available on the list, add GVH</span></i></font></p></p>
+      - questionText:
+          EN: |
+            <p><span style="font-size: 24px;">Select a Group Village Headman (GVH) the structure is located</span></p><p></p><p><font color="#0000ff"><i><span style="font-size: 24px;">If not available on the list, add GVH</span></i></font></p><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.OTHER_GVH
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter Group Village Headman</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_VLG
+    conditions:
+      - logic: STRCT_TYP = 1
+        questionText:
+          EN: |
+            <p><span style="font-size: 24px;">Select aVillage the household resides</span></p><p></p><p><font color="#0000ff"><i><span style="font-size: 24px;">If not available on the list, add village</span></i></font></p><p></p>
+      - questionText:
+          EN: |
+            <p><span style="font-size: 24px;">Select aVillage the structure is located</span></p><p></p><p><font color="#0000ff"><i><span style="font-size: 24px;">If not available on the list, add village</span></i></font></p><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.OTHER_VLG
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">Enter village</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_DISCR
+    conditions:
+      - logic: STRCT_TYP = 1
+        questionText:
+          EN: |
+            <font color="#0000ff"><span style="font-size: 24px;"><i>Observe and write a description of or around the house</i></span></font>
+      - questionText:
+          EN: |
+            <i style="color: rgb(0, 0, 255); font-size: 24px;">Observe and write a description of or around the structure</i><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_GPS
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">Capture GPS</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_LATITUDE
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><span style="font-size: 24px;"><i>Latitude</i></span></font><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.PLACE_LONGITUDE
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><i><span style="font-size: 24px;">Longitude</span></i></font><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.HH_DOOR_LABEL
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">Write <font color="#4a1031"><b>~~hh_label~~</b></font>&nbsp;on the door of the household</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.MORE_STRCT
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 24px;">Add another household?</span><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.CLOSE_EA
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="font-size: 24px;">No more houeholds to add in the EA! </span></p><p><span style="font-size: 24px;">Close the EA?</span></p><p></p><p></p>
+  - name: LABOURF_FORCE_LISTING_DICT.END_TIME
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><i><span style="font-size: 24px;">Closing time</span></i></font><p></p>
+...

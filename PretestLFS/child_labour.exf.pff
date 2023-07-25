@@ -1,0 +1,20 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Export
+
+[Files]
+Application=.\child_labour.exf
+InputData=.\child_labour.csdb
+ExportedData=.\child_labour.dat
+SPSSDescFile=.\child_labour.sps
+SASDescFile=.\child_labour.sas
+STATADescFile=.\child_labour.dct
+STATALabelsFile=.\child_labourdo
+RDescFile=.\child_labour.R
+Listing=.\child_labour.exf.lst
+
+[Parameters]
+Language=EN
+ViewListing=Always
+ViewResults=Yes
+InputOrder=Sequential

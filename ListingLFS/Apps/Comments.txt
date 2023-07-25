@@ -1,0 +1,9 @@
+Comments for household questionnaire
+
+01. Insert valueset for sex
+02. Person on line number 1 must have relationship as head
+03. Consistency- Responses must start with capital letters
+04. Restrict year to current year or less.
+05. Age of head should be atleast 15. Caution/restrict if less
+06. Field for age must have length of 3
+07. No question for literacy question

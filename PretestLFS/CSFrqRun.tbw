@@ -1,0 +1,637 @@
+﻿[TabSpecs]
+Version=CSPro 7.7
+Label=CSPro Frequencies
+Name=CSPRO_FREQUENCIES
+GenerateLogic=Yes
+SpecType=Freq
+[TabSetFormat]
+Name=TabSetFmt, default
+ThousandsSeparator=','
+DecimalSeparator='.'
+ZeroMask='-'
+ZeroRoundMask='*'
+Suppressed='SSS'
+DigitGrouping=Thousands
+ZeroBeforeDecimal=Yes
+ForeignKey='Frequency'
+ForeignKey='and'
+ForeignKey='to'
+ForeignKey='Total'
+ForeignKey='Standard Deviation'
+ForeignKey='by'
+ForeignKey='(Percents)'
+ForeignKey='Mean'
+ForeignKey='Maximum'
+ForeignKey='Table'
+ForeignKey='for'
+ForeignKey='Percentile'
+ForeignKey='Mode'
+ForeignKey='Minimum'
+ForeignKey='Proportion'
+ForeignKey='Median'
+ForeignKey='Variance'
+ForeignKey='Percent'
+ForeignKey='Undefined'
+ForeignKey='(Weighted)'
+ForeignKey='Cumulative'
+ForeignKey='<Value has no label>'
+ForeignKey='Number'
+TitleTemplate='Table %s.'
+Continuation=' (continued)'
+MeasurementSystem=USUnits
+
+[TableFormat]
+Name=TableFmt, default
+BorderLeft=None
+BorderTop=None
+BorderRight=None
+BorderBottom=None
+LeftLeadering=None
+RightLeadering=None
+ReaderBreak=None
+IncludeSubTitle=No
+IncludePageNote=No
+IncludeEndNote=No
+
+
+[TallyFormat]
+Name=RowTallyFmt, default
+IncludeUndefined=No
+DumpUndefined=No
+[TallyStatistic]
+Type=Total
+
+[TallyStatistic]
+Type=Counts
+
+
+[TallyFormat]
+Name=ColumnTallyFmt, default
+IncludeUndefined=No
+DumpUndefined=No
+[TallyStatistic]
+Type=Total
+
+[TallyStatistic]
+Type=Counts
+
+
+
+[TablePrintFormat]
+Name=TblPrintFmt, default
+TableLayout=LeftStandard
+PageBreakBeforeTable=Yes
+TblHorzCenter=No
+TblVertCenter=No
+PaperType=Letter
+PageOrientation=Portrait
+PrinterDevice=Hewlett-Packard HP Color LaserJet M452dn
+PrinterDriver=winspool
+PrinterOutput=USB003
+MarginTop=1.00
+MarginBottom=1.00
+MarginLeft=1.00
+MarginRight=1.00
+HeaderFrequency=TopOfPage
+
+[DataCellFormat]
+Name=SpannerFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Center
+VertAlign=Middle
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=Thin
+LineBottom=Thin
+LineLeft=Thin
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+ExtendLines=Yes
+NumDecimals=NotApplicable
+HideZeroRow=No
+
+[DataCellFormat]
+Name=ColumnHeadFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=Thin
+LineBottom=Thin
+LineLeft=Thin
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+ExtendIndentation=Yes
+NumDecimals=Zero
+HideZeroRow=No
+
+[DataCellFormat]
+Name=CaptionFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Middle
+TextColor=0
+FillColor=16777215
+IndentLeft=0.13
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=No
+NumDecimals=NotApplicable
+HideZeroRow=No
+
+[DataCellFormat]
+Name=StubFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+ExtendFont=Yes
+NumDecimals=Zero
+HideZeroRow=No
+
+[DataCellFormat]
+Name=DataCellFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=NotApplicable
+LineBottom=NotApplicable
+LineLeft=NotApplicable
+LineRight=NotApplicable
+Hidden=NotApplicable
+SpanCells=NotApplicable
+NumDecimals=Zero
+HideZeroRow=No
+
+[DataCellFormat]
+Name=ColumnHeadFmt, 1
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=Thin
+LineBottom=Thin
+LineLeft=Thin
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+ExtendIndentation=Yes
+NumDecimals=One
+HideZeroRow=No
+
+[DataCellFormat]
+Name=DataCellFmt, 1
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=NotApplicable
+LineBottom=NotApplicable
+LineLeft=NotApplicable
+LineRight=NotApplicable
+Hidden=NotApplicable
+SpanCells=NotApplicable
+Custom=
+NumDecimals=Zero
+HideZeroRow=No
+
+[DataCellFormat]
+Name=DataCellFmt, 2
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=NotApplicable
+LineBottom=NotApplicable
+LineLeft=NotApplicable
+LineRight=NotApplicable
+Hidden=NotApplicable
+SpanCells=NotApplicable
+Custom=
+NumDecimals=One
+HideZeroRow=No
+
+[Format]
+Name=TitleFmt, default
+Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+
+[Format]
+Name=SubTitleFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+
+[Format]
+Name=StubHead, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Middle
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=Thin
+LineBottom=Thin
+LineLeft=None
+LineRight=Thin
+Hidden=No
+SpanCells=NotApplicable
+ExtendLines=Yes
+
+[Format]
+Name=SecondaryStubHead, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Middle
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=Thin
+LineBottom=Thin
+LineLeft=Thin
+LineRight=Thin
+Hidden=No
+SpanCells=NotApplicable
+ExtendLines=Yes
+
+[Format]
+Name=HeaderLeftFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=&F
+
+[Format]
+Name=HeaderCenterFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Center
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=
+
+[Format]
+Name=HeaderRightFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=&D
+
+[Format]
+Name=FooterLeftFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=
+
+[Format]
+Name=FooterCenterFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Center
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=- &P -
+
+[Format]
+Name=FooterRightFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Right
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=
+
+[Format]
+Name=PageNoteFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+
+[Format]
+Name=EndNoteFmt, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+
+[Format]
+Name=AreaCaption, default
+Font=-013 0000 0000 0000 0400 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Bottom
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=No
+ExtendLines=Yes
+
+[Format]
+Name=TitleFmt, 1
+Font=-016 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
+HorzAlign=Left
+VertAlign=Top
+TextColor=0
+FillColor=16777215
+IndentLeft=0.00
+IndentRight=0.00
+LineTop=None
+LineBottom=None
+LineLeft=None
+LineRight=None
+Hidden=No
+SpanCells=NotApplicable
+Custom=Item CLUSTER: Cluster
+
+ 
+[Table]
+Name=CLUSTER
+Num=
+ 
+[Title]
+Label=''
+Format=TitleFmt, 1
+GridViewSize=0,29,0,0,0,0
+ 
+[SubTitle]
+Label=''
+ 
+[PageNote]
+Label=''
+ 
+[EndNote]
+Label=''
+ 
+[HeaderLeft]
+Label=''
+ 
+[HeaderCenter]
+Label=''
+ 
+[HeaderRight]
+Label=''
+ 
+[FooterLeft]
+Label=''
+ 
+[FooterCenter]
+Label=''
+ 
+[FooterRight]
+Label=''
+ 
+[StubHead]
+Label=''
+ 
+[SecondaryStubHead]
+Label=''
+ 
+[AreaCaption]
+Label='%AreaName%'
+ 
+[OneRowColTotal]
+Label=''
+ 
+ 
+[Rows]
+ 
+[Variable]
+Name=CLUSTER
+Label=Cluster
+VarType=Custom
+ 
+[Value]
+Label=Total
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Special]
+Panel=1
+OffsetCol=3
+Format=DataCellFmt, 1
+ 
+[Special]
+Panel=1
+OffsetCol=4
+Format=DataCellFmt, 2
+ 
+[Value]
+Label=   1
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=   2
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=   3
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=   4
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=   5
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=   6
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[EndVar]
+ 
+[Cols]
+ 
+[Variable]
+Name=Frequency
+Label=Frequency
+VarType=Custom
+ 
+[Value]
+Label=Total
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=Percent
+TabValueType=VSetValue
+TabValueStatIndex=-1
+Format=ColumnHeadFmt, 1
+ 
+[EndVar]
+ 
+[Variable]
+Name=Cumulative
+Label=Cumulative
+VarType=Custom
+ 
+[Value]
+Label=Total
+TabValueType=VSetValue
+TabValueStatIndex=-1
+ 
+[Value]
+Label=Percent
+TabValueType=VSetValue
+TabValueStatIndex=-1
+Format=ColumnHeadFmt, 1
+ 
+[EndVar]
+ 
+[Data]
+ 
+[Cells]
+TableName=CLUSTER
+Size=7,4
+Row=95.000000000  100.000000000  .000000000  .000000000
+Row=18.000000000  18.947368421  18.000000000  18.947368421
+Row=20.000000000  21.052631579  38.000000000  40.000000000
+Row=19.000000000  20.000000000  57.000000000  60.000000000
+Row=5.000000000  5.263157895  62.000000000  65.263157895
+Row=14.000000000  14.736842105  76.000000000  80.000000000
+Row=19.000000000  20.000000000  95.000000000  100.000000000
+ 
+[Level]
+Table=CLUSTER

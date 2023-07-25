@@ -1,0 +1,25 @@
+﻿Application     C:\Users\User\AppData\Local\Temp\CSFrqRun36436.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\household.csdb
+
+Date            May 14, 2023
+Start Time      17:55:54
+End Time        17:55:54
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║       843 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         0 Messages:      0 E      0 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║          95  ║           0  ║          95  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

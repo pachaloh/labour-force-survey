@@ -1,0 +1,28 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=Labour Force Listing Form
+ShowInApplicationListing=Never
+
+[DataEntryInit]
+Key=101001001                                    
+
+[Files]
+Application=.\Listing.ent
+InputData=..\Data\ListingData.csdb
+Paradata=.\Listing.cslog
+
+[ExternalFiles]
+DISTRICTS_DICT=..\LookupFIles\Districts.csdb
+EA_DICT=..\LookupFIles\EA.csdb
+GVH_DICT=..\LookupFIles\GVH.csdb
+TRADITIONAL_AUTHORITIES_DICT=..\LookupFIles\TA.csdb
+VH_DICT=..\LookupFIles\VH.dat
+
+[Parameters]
+OnExit=..\Menu\ListingMenu.ent
+DISTRICT=01
+ENUMERATION_AREA_NO=001
+NAME_OF_THE_INTERVIEWER=HAPPINESS MANGANI
+REGION=1
+T_A_STA_OR_TOWN=001

@@ -1,0 +1,10 @@
+infix using "C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\teams.dct"
+
+label variable team_id  "TEAM_ID"
+label variable user_code "User Code"
+label variable intrv_name "Interviewer name"
+label variable pass_code "Passcode"
+label variable member_role "Role"
+label variable supvr_id "Supervisor ID"
+label variable date_created "Date created"
+label variable time_created "Time created"

@@ -416,12 +416,44 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 	if syncconnect(Dropbox) then
 	
 		// Sync cases file with server
-		syncdata(BOTH, HOUSEHOLDLFS_DICT);		//Household Cases
+		
+		//Household Cases
+		if syncdata(BOTH, HOUSEHOLDLFS_DICT) then
+			
+		endif;		
 		syncdata(BOTH, INDIVIDUALLFS_DICT);		//Individual 15+ yrs Cases
 		syncdata(BOTH, TEAMS_DICT);				//Teams Cases
-		syncdata(BOTH, CLUSTERS_DICT);			//Clusters Cases
+		//syncdata(BOTH, CLUSTERS_DICT);			//Clusters Cases
 		syncdata(BOTH, ASSIGNED_HHS_DICT);		//Work(Household) Assignment Cases
 		syncdata(BOTH, CHILD_LABOUR_DICT);		//Child labour
+		
+		numeric abortInd = 1;
+		
+		if abortInd = 1 and syncdata(BOTH, HOUSEHOLDLFS_DICT) = 0 then
+			errmsg("Syncing of Household data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(BOTH, INDIVIDUALLFS_DICT) = 0 then
+			errmsg("Syncing of individual data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(PUT, TEAMS_DICT) = 0 then
+			errmsg("Syncing of team file failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+		
+		if abortInd = 1 and syncdata(BOTH, ASSIGNED_HHS_DICT) = 0 then
+			errmsg("Syncing of HH assignments data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(BOTH, CHILD_LABOUR_DICT) = 0 then
+			errmsg("Syncing of child labour data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
 
 {
 		numeric upgradeAppsCentral = accept("Update Applications from Central Office?",

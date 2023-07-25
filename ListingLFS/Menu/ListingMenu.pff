@@ -1,0 +1,24 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=Labour Force Survey Listing Form, 2023
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\ListingMenu.ent
+InputData=|type=None
+Paradata=.\ListingMenu.cslog
+
+[ExternalFiles]
+ASSIGNMENTS_SELECTION_DICT=..\LookupFIles\Assignment.csdb
+DISTRICTS_DICT=..\LookupFIles\Districts.csdb
+EA_ASSIGNMENTS_DICT=..\LookupFIles\EA_Assignments.csdb
+EA_DICT=..\LookupFIles\EA.csdb
+LABOURF_FORCE_LISTING_DICT=..\Data\Household_Listing.csdb
+STAFF_DICT=..\LookupFIles\Staff.csdb
+TRADITIONAL_AUTHORITIES_DICT=..\LookupFIles\TA.csdb
+
+[UserFiles]
+tempFile=

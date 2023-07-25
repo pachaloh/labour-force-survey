@@ -1,0 +1,25 @@
+﻿Application     C:\Users\User\AppData\Local\Temp\CSFrqRun28760.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\User\Dropbox\LabourFourceSurvey\ListingLFS\LookupFIles\EA.csdb
+
+Date            Feb 09, 2023
+Start Time      08:11:32
+End Time        08:11:32
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║       334 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         0 Messages:      0 E      0 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║         334  ║           0  ║         334  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

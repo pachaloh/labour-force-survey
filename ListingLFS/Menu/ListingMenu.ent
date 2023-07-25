@@ -1,0 +1,39 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=LISTINGMENU
+Name=LISTINGMENU
+AppType=DataEntry
+OperatorID=No
+CAPI=Yes
+CaseTree=Desktop
+CreateListing=No
+CreateLog=No
+ShowErrorMessageNumbers=No
+ComboBoxShowOnlyDiscreteValues=Yes
+ParadataCollection=AllEvents
+ParadataDeviceStateMinutes=5
+[External Dictionaries]
+File=..\Dicts\Staff.dcf
+File=..\Dicts\ASSIGNMENT_SELECTION.dcf
+File=..\Dicts\EA_Assignments.dcf
+File=..\Dicts\EA.dcf
+File=..\Dicts\Districts.dcf
+File=..\Dicts\TA.dcf
+File=..\Apps\Listing.dcf
+[AppCode]
+File=.\ListingMenu.ent.apc
+[Message]
+File=.\ListingMenu.ent.mgf
+[Help]
+File=.\ListingMenu.ent.qsf
+[Forms]
+File=.\ListingMenu.fmf
+[Dictionary Types]
+Dict-Type=..\Dicts\ListingMenu.dcf,Input,.\ListingMenu.fmf
+Dict-Type=..\Dicts\Staff.dcf,External
+Dict-Type=..\Dicts\ASSIGNMENT_SELECTION.dcf,External
+Dict-Type=..\Dicts\EA_Assignments.dcf,External
+Dict-Type=..\Dicts\EA.dcf,External
+Dict-Type=..\Dicts\Districts.dcf,External
+Dict-Type=..\Dicts\TA.dcf,External
+Dict-Type=..\Apps\Listing.dcf,External

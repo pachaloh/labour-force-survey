@@ -1,0 +1,26 @@
+﻿Application     C:\Users\User\AppData\Local\Temp\CSExpRun14676.bch
+Type            BATCH
+Input Data      <<CSPro DB>> C:\Users\User\Documents\GitHub\labour-force-survey\PretestLFS\child_labour.csdb
+<File>          cspro_export_file_var_f=
+
+Date            May 16, 2023
+Start Time      18:15:59
+End Time        18:16:00
+
+CSPro Process Summary
+
+      ╔══════════════════════════════════════════════════════╗
+      ║       266 Records Read   100% of input file          ║
+      ║         0 Ignored:       0 Unknown         0 Erased  ║
+      ║         0 Messages:      0 E      0 W      0 User    ║
+      ╠═════════╦══════════════╦══════════════╦══════════════╣
+      ║  Level  ║  Input Case  ║  Bad Struct  ║  Level Post  ║
+      ╠═════════╬══════════════╬══════════════╬══════════════╣
+      ║      1  ║         133  ║           0  ║         133  ║
+      ╚═════════╩══════════════╩══════════════╩══════════════╝
+
+Process Messages
+
+
+CSPro Executor Normal End
+------------------------------------------------------------------------------------------------------------------------

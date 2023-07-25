@@ -1,0 +1,20 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Export
+
+[Files]
+Application=.\individual.exf
+InputData=.\individual.csdb
+ExportedData=.\Individual.dat
+SPSSDescFile=.\Individual.sps
+SASDescFile=.\Individual.sas
+STATADescFile=.\Individual.dct
+STATALabelsFile=.\Individual.do
+RDescFile=.\Individual.R
+Listing=.\individual.exf.lst
+
+[Parameters]
+Language=ENG
+ViewListing=Always
+ViewResults=Yes
+InputOrder=Sequential

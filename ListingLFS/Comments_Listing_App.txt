@@ -1,0 +1,4 @@
+01. You rae logged in as ....... [NO name dispalyed]
+02. Password ikukana for interviewwers apart from 1234
+03. Assignment selection: Northern is cut to Norther [Check length field]
+04: Incorrect Code for EA 10101001  
