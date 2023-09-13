@@ -395,8 +395,9 @@ Name=DEM_10_VS1
 Value=0;PRE-SCHOOL
 Value=1;PRIMARY
 Value=2;SECONDARY
-Value=3;UNIVERSITY
-Value=4;OTHER TERTIARY
+Value=3;TECHNICAL
+Value=4;UNIVERSITY
+Value=5;OTHER TERTIARY
 
 [Item]
 Label=Highest class completed
@@ -578,6 +579,11 @@ Value=6;Degree
 Value=7;Masters
 Value=8;PhD
 
+[ValueSet]
+Label=TEVET qualifications
+Name=DEM_12_VS10
+Value=1;Certificate of compitence
+
 [Item]
 Label=Field of education
 Name=DEM_13
@@ -607,6 +613,28 @@ Value=7;Engineering, manufacturing and construction
 Value=8;Agriculture, forestry, fisheries and veterinary
 Value=9;Health and welfare
 Value=10;Other Area of Study
+
+[ValueSet]
+Label=Field of TEVET
+Name=DEM_13A_VS2
+Value=81;Automobile Mechanics (AMM)
+Value=82;Administrative Studies (AAS) 
+Value=83;Bricklaying (BRL) 
+Value=84;Cosmetology (CMG)
+Value=85;Carpentry and Joinery (CRJ)
+Value=86;Edible Horticulture (EHC)
+Value=87;Electrical Installation and Electronics (EIE) 
+Value=88;Fabrication and Welding (FBW)
+Value=89;Food Production (FPR) 
+Value=90;General Fitting (GFT)
+Value=91;Motorcycle Mechanics (MCM)
+Value=92;Painting and Decoration (PAD)
+Value=93;Plumbing (PLB)
+Value=94;Refrigeration and Air Conditioning Mechanics (RAM) 
+Value=95;Solar Photovoltaic Installation (SPV)
+Value=96;Tailoring and Fashion Designing (TFD)
+Value=97;Tour Guide (TRG)
+Value=98;Wood Work Machining (WWM)
 
 [Item]
 Label=Field of Education Narrow

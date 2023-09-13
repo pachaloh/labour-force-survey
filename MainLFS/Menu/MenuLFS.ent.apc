@@ -299,11 +299,10 @@ function launchHousehold()
     filewrite(dynamic_pff, "InputData=%v", "../Data/Household.csdb"); 
 
     filewrite(dynamic_pff, "[ExternalFiles]"); 
+    filewrite(dynamic_pff, "INDIVIDUALLFS_DICT=%v", "../Data/Individual.csdb"); 
     filewrite(dynamic_pff, "CLUSTERS_DICT=%v", "../Lookups/clusters.csdb"); 
     filewrite(dynamic_pff, "DETAILED_FIELD_CODES_DICT=%v", "../Lookups/Detailed_field_of_study.csdb"); 
-    filewrite(dynamic_pff, "INDIVIDUALLFS_DICT=%v", "../Data/Individual.csdb"); 
     filewrite(dynamic_pff, "NARROW_FIELD_CODES_DICT=%v", "../Lookups/Narrow_field_of_study.csdb"); 
-    filewrite(dynamic_pff, "CLUSTERS_DICT=%v", "../Lookups/clusters.csdb"); 
 
 
     filewrite(dynamic_pff, "[Parameters]");
@@ -569,8 +568,6 @@ preproc
 
 	
 postproc
-
-
 	
 	savesetting("teamno", maketext("%v", TEAMNO));
 PROC LOGIN

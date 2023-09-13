@@ -46,7 +46,7 @@ Name=FORM004
 Label=Labor
 QuestionTextHeight=184
 Level=1
-Size=1218,5623
+Size=1615,5623
   
 Item=RSP_START
 Item=RSP_AVAIL
@@ -217,6 +217,16 @@ Item=X02
 Item=X03
 Item=X04
 Item=IND_END_TIME
+Item=TVT01
+Item=TVT02
+Item=TVT03
+Item=TVT04
+Item=TVT05
+Item=TVT06
+Item=TVT07
+Item=TVT08
+Item=TVT09
+Item=TVT10
   
 [EndForm]
   
@@ -839,54 +849,185 @@ Text=AGF_HRS
  
   
 [Field]
+Name=TVT01
+Position=1323,770,1590,790
+Item=TVT01,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=CheckBox
+Form=3
+  
+[Text]
+Position=1262,773,1301,789
+Text=TVT01
+ 
+  
+[Field]
+Name=TVT02
+Position=1323,800,1485,820
+Item=TVT02,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,803,1301,819
+Text=TVT02
+ 
+  
+[Field]
+Name=TVT03
+Position=1323,830,1338,850
+Item=TVT03,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,833,1301,849
+Text=TVT03
+ 
+  
+[Field]
+Name=TVT04
+Position=1323,860,1338,880
+Item=TVT04,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,863,1301,879
+Text=TVT04
+ 
+  
+[Field]
+Name=TVT05
+Position=1323,890,1338,910
+Item=TVT05,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,893,1301,909
+Text=TVT05
+ 
+  
+[Field]
+Name=TVT06
+Position=1323,920,1338,940
+Item=TVT06,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,923,1301,939
+Text=TVT06
+ 
+  
+[Field]
+Name=TVT07
+Position=1323,950,1338,970
+Item=TVT07,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,953,1301,969
+Text=TVT07
+ 
+  
+[Field]
+Name=TVT08
+Position=1323,980,1338,1000
+Item=TVT08,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,983,1301,999
+Text=TVT08
+ 
+  
+[Field]
+Name=TVT09
+Position=1323,1010,1338,1030
+Item=TVT09,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,1013,1301,1029
+Text=TVT09
+ 
+  
+[Field]
+Name=TVT10
+Position=1323,1040,1338,1060
+Item=TVT10,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=1262,1043,1301,1059
+Text=TVT10
+ 
+  
+[Field]
 Name=X01
-Position=488,1034,503,1054
+Position=484,1071,499,1091
 Item=X01,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=67,1038,90,1054
+Position=63,1075,86,1091
 Text=X01
  
   
 [Field]
 Name=X02
-Position=488,1071,1189,1091
+Position=484,1108,1185,1128
 Item=X02,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
 Form=3
   
 [Text]
-Position=67,1075,90,1091
+Position=63,1112,86,1128
 Text=X02
  
   
 [Field]
 Name=X03
-Position=488,1111,503,1131
+Position=484,1148,499,1168
 Item=X03,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=67,1115,90,1131
+Position=63,1152,86,1168
 Text=X03
  
   
 [Field]
 Name=X04
-Position=489,1148,504,1168
+Position=485,1185,500,1205
 Item=X04,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=68,1152,91,1168
+Position=64,1189,87,1205
 Text=X04
  
   
@@ -2620,7 +2761,7 @@ Text=FIR_OPG_HRS
   
 [Field]
 Name=IND_END_TIME
-Position=488,5539,601,5559
+Position=488,5539,671,5559
 Item=IND_END_TIME,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
@@ -2647,14 +2788,14 @@ Text=End Individual Interview
 Name=BLOCK_MJJ_OCC
 Label=Main Job Work Type
 DisplayTogether=Yes
-Position=38
+Position=48
 Length=2
   
 [Block]
 Name=BLOCK_SJJ_OCC
 Label=Second job type
 DisplayTogether=Yes
-Position=79
+Position=89
 Length=2
   
 [EndGroup]

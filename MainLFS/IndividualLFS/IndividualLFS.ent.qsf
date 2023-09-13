@@ -395,6 +395,11 @@ questions:
             <p><b style="font-family: Arial, sans-serif;">C08.&nbsp;</b>Ni maola ghalinga padazi agho (you/NAME) wakatolanga pakupanga ivi sabata yajumpha?</p><p></p><p><i style="color: rgb(0, 0, 255);">ENTER “0” IF ABSENT LAST WEEK</i><br></p><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">C08.&nbsp;</b><font face="Arial, sans-serif">Ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><font face="Arial, sans-serif">&nbsp;awele ali&nbsp; nkutenda yeleyi kwa ma awala galingwa pa lisiku nlungu upitewu?</font><p></p>
+  - name: INDIVIDUALLFS_DICT.TVT01
+    conditions:
+      - questionText:
+          EN: |
+            
   - name: INDIVIDUALLFS_DICT.X01
     conditions:
       - questionText:

@@ -1045,10 +1045,10 @@ Value=5;Helping a family member who works for someone else
 Label=Form work second job
 Name=SJJ_EMP_REL_CH
 Value=1;Monga wolembedwa ntchito
-Value=2;Monga odzilemba nokha ntchito 
+Value=2;Monga odzilemba nokha ntchito
 Value=3;Kuthandiza m'bizinezi ya pabanja kapena ya pakhomo
-Value=4;Ngati wogwira ntchito ngati mbali imodzi yamaphunziro 
-Value=5;Kuthandiza munthu wa pabanja amene amene amagwira ntchito 
+Value=4;Ngati wogwira ntchito ngati mbali imodzi yamaphunziro
+Value=5;Kuthandiza munthu wa pabanja amene amene amagwira ntchito
 
 [Item]
 Label=Hired employees in second job
@@ -2717,5 +2717,102 @@ Label=Ind End Time
 Name=IND_END_TIME
 Start=55
 Len=13
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Tevet 
+Name=TEVET_REC
+RecordTypeValue='3'
+RecordLen=91
+
+[Item]
+Label=TVT01
+Name=TVT01
+Start=46
+Len=19
+DataType=Alpha
+
+[ValueSet]
+Label=TVT01
+Name=TVT01_VS1
+Value='A                  ';Automobile Mechanics (AMM)
+Value='B                  ';Administrative Studies (AAS) 
+Value='C                  ';Bricklaying (BRL) 
+Value='D                  ';Cosmetology (CMG)
+Value='E                  ';Carpentry and Joinery (CRJ)
+Value='F                  ';Edible Horticulture (EHC)
+Value='G                  ';Electrical Installation and Electronics (EIE) 
+Value='H                  ';Fabrication and Welding (FBW)
+Value='I                  ';Food Production (FPR)
+
+[Item]
+Label=TVT02
+Name=TVT02
+Start=65
+Len=19
+DataType=Alpha
+
+[Item]
+Label=TVT03
+Name=TVT03
+Start=84
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT04
+Name=TVT04
+Start=85
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT05
+Name=TVT05
+Start=86
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT06
+Name=TVT06
+Start=87
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT07
+Name=TVT07
+Start=88
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT08
+Name=TVT08
+Start=89
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT09
+Name=TVT09
+Start=90
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT10
+Name=TVT10
+Start=91
+Len=1
 DataType=Numeric
 ZeroFill=Yes

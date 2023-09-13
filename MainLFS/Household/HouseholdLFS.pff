@@ -4,7 +4,7 @@ AppType=Entry
 ShowInApplicationListing=Never
 
 [DataEntryInit]
-Key=0001cd2960c9-ca13-4d69-84b7-b9e7cfc5f88909
+Key=00012492fe67-f139-4960-b733-a0dfb6811e6c01
 Lock=CaseListing
 
 [Files]
@@ -20,6 +20,6 @@ NARROW_FIELD_CODES_DICT=..\Lookups\Narrow_field_of_study.csdb
 [Parameters]
 OnExit=..\Menu\MenuLFS.pff
 CLUSTER=0001
-GHHHNO=09
-GHINTID=cd2960c9-ca13-4d69-84b7-b9e7cfc5f889
+GHHHNO=01
+GHINTID=2492fe67-f139-4960-b733-a0dfb6811e6c
 GHINTNAME=PACHALO CHIZALA

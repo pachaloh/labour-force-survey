@@ -1230,7 +1230,7 @@ postproc
 				-> 14   ;   // 20+ yrs max is Form 6
 		endrecode;
 
-	elseif DEM_10 = 3 then //University
+	elseif DEM_10 = 4 then //University
 
 		recode DEM_06  -> HighestClassCheck;
 		   17    -> 15;			// 1st Year
@@ -1248,7 +1248,7 @@ postproc
 				 -> 26 ;        // 29+ yrs max is PhD Year 4
 		endrecode;
 
-	elseif DEM_10 = 4 then //other tertiary level
+	elseif DEM_10 = 55 then //other tertiary level
 
 	   recode DEM_06  -> HighestClassCheck;
 		17:18    -> 27;			// Other tertiary 1st Year
@@ -1279,6 +1279,7 @@ postproc
 
 
 PROC DEM_12
+
 preproc
 
 	savepartial();
@@ -1286,6 +1287,8 @@ preproc
 	ask if DEM_10 <> 0;
 	
 	ask if DEM_06>=5;
+
+onfocus
 
 	if DEM_10 = 1 and DEM_11 in 0:5 then
 		setvalueset(DEM_12, DEM_12_VS5);
@@ -1323,14 +1326,18 @@ preproc ask if DEM_10 in 3,4;
 
 ask if DEM_06>=5;
 
-
-
 PROC DEM_13A
 
 
 preproc ask if DEM_10 in 3,4;
 
 ask if DEM_06>=5;
+
+onfocus
+
+if DEM_10 = 3 then
+	setvalueset($,DEM_13A_VS2);
+endif;
 
 
 PROC DEM_13B
@@ -1475,15 +1482,15 @@ errmsg("Please comfirm if this person is really an albino")
 select("Reenter Albinism",DEM_27,
 		"Continue",Continue);
 endif;
+PROC HC01
+
+
 PROC D00_DWELLING_INTRODUCTION
 preproc
 
 	savepartial();
 
 	$ = 1;  // prefill continue
-
-PROC HC01
-
 
 PROC HC15
 
