@@ -212,7 +212,7 @@ questions:
           CH: |
             <p><b><span style="font-family: Arial;">DEM09.</span></b><br></p><p><span style="font-family: Arial;">Kodi </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;">&nbsp;anapitako ku sukulu?</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">DEM09.</span></b><br></p><p><span style="font-family: Arial;">Has </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;"> ever attended&nbsp; &nbsp;school or is currently attending school?&nbsp;</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">DEM09.</span></b><br></p><p><span style="font-family: Arial;">Has </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;"> ever attended school or is currently attending school?&nbsp;</span></p><p></p><p></p>
           TU: |
             <p><b><span style="font-family: Arial;">DEM09.</span></b><br></p><p><span style="font-family: Arial;">Kasi </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;">&nbsp;wali kusambirapo sukulu?</span></p><p></p><p></p>
           YA: |

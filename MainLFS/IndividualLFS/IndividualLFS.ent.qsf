@@ -399,7 +399,47 @@ questions:
     conditions:
       - questionText:
           EN: |
-            
+            Apart from agricultural work, was this work that you mentioned in…?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT02
+    conditions:
+      - questionText:
+          EN: |
+            (Were/Was) (you/NAME) hired by someone else to do this work?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT03
+    conditions:
+      - questionText:
+          EN: |
+            Was the TEVET certificate you possess a requirement for this job?<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT04
+    conditions:
+      - questionText:
+          EN: |
+            What is (your/NAME’s) current average gross monthly earnings?<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT05
+    conditions:
+      - questionText:
+          EN: |
+            In the last seven days, on how many days did (you/NAME) do this work?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT06
+    conditions:
+      - questionText:
+          EN: |
+            How many hours per day did (you/NAME) spend doing this last week?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT07
+    conditions:
+      - questionText:
+          EN: |
+            Are the knowledge and skills you acquired during training utilised in your current employment?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT08
+    conditions:
+      - questionText:
+          EN: |
+            In your opinion, what field of study is most appropriate for your current employment?<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT09
+    conditions:
+      - questionText:
+          EN: |
+            If your job is not closely related to your course of training, why did you choose this employment?&nbsp;<p></p>
   - name: INDIVIDUALLFS_DICT.X01
     conditions:
       - questionText:
