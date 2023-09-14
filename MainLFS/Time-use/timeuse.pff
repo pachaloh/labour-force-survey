@@ -1,0 +1,26 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[DataEntryInit]
+Key=0056e1937992-771f-4195-baf1-c7ecfab38e8d0102
+Lock=CaseListing
+
+[Files]
+Application=.\IndividualLFS.ent
+InputData=..\Data\Individual.csdb
+
+[ExternalFiles]
+CHILD_LABOUR_DICT=..\Data\Child.csdb
+CLUSTERS_DICT=..\Lookups\clusters.csdb
+HOUSEHOLDLFS_DICT=..\Data\Household.csdb
+
+[Parameters]
+OnExit=..\Menu\MenuLFS.pff
+GHINTCODE=e1937992-771f-4195-baf1-c7ecfab38e8d
+XCLUSTER=0056
+XDEM_NAME=WIFEY                     (PARTIAL)
+XGHHHNO=01
+XGHINTNAME=PACHALO CHIZALA
+XHMPPNO=02

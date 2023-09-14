@@ -1,0 +1,33 @@
+﻿[CSPro Application]
+Version=CSPro 7.7
+Label=TIMEUSE
+Name=TIMEUSE
+AppType=DataEntry
+OperatorID=No
+PartialSave=Yes
+CAPI=Yes
+CaseTree=Desktop
+CreateListing=No
+CreateLog=No
+ShowFieldLabels=No
+ShowErrorMessageNumbers=No
+[External Dictionaries]
+File=..\Household\HouseholdLFS.dcf
+File=..\Dicts\clusters.dcf
+File=..\ChildLFS\ChildLFS.dcf
+[AppCode]
+File=.\timeuse.ent.apc
+[Message]
+File=.\timeuse.ent.mgf
+[Help]
+File=.\timeuse.ent.qsf
+[Forms]
+File=.\timeuse.fmf
+[Dictionary Types]
+Dict-Type=.\timeuse.dcf,Input,.\timeuse.fmf
+Dict-Type=..\Household\HouseholdLFS.dcf,External
+Dict-Type=..\Dicts\clusters.dcf,External
+Dict-Type=..\ChildLFS\ChildLFS.dcf,External
+[Sync]
+Server=https://csprodata.ilo.org/api
+Direction=Put

@@ -863,11 +863,10 @@ Text=TVT01
   
 [Field]
 Name=TVT02
-Position=1323,800,1485,820
+Position=1323,800,1338,820
 Item=TVT02,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=3
   
 [Text]
@@ -880,7 +879,7 @@ Name=TVT03
 Position=1323,830,1338,850
 Item=TVT03,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=3
   
 [Text]
@@ -916,7 +915,7 @@ Text=TVT05
   
 [Field]
 Name=TVT06
-Position=1323,920,1338,940
+Position=1323,920,1352,940
 Item=TVT06,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
@@ -932,7 +931,7 @@ Name=TVT07
 Position=1323,950,1338,970
 Item=TVT07,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=3
   
 [Text]
@@ -942,7 +941,7 @@ Text=TVT07
   
 [Field]
 Name=TVT08
-Position=1323,980,1338,1000
+Position=1323,980,1744,1000
 Item=TVT08,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
@@ -955,10 +954,10 @@ Text=TVT08
   
 [Field]
 Name=TVT09
-Position=1323,1010,1338,1030
+Position=1323,1010,1450,1030
 Item=TVT09,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=CheckBox
 Form=3
   
 [Text]
