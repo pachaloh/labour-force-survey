@@ -16,10 +16,10 @@ QuestionTextHeight=136
 Level=1
 Size=532,294
   
-Item=XREGION
-Item=XDISTRICT
-Item=XTA
-Item=XEA
+Item=TREGION
+Item=TDISTRICT
+Item=TTA
+Item=TEA
 Item=TCLUSTER
 Item=TGHHHNO
 Item=THMPPNO
@@ -33,10 +33,10 @@ QuestionTextHeight=152
 Level=1
 Size=1041,394
   
-Item=XGHAREA
-Item=XGHVFDT
+Item=TGHAREA
+Item=TGHVFDT
 Item=TGHINTCODE
-Item=XGHINTNAME
+Item=TGHINTNAME
 Item=TDEM_NAME
   
 [EndForm]
@@ -46,14 +46,26 @@ Name=FORM004
 Label=Labor
 QuestionTextHeight=184
 Level=1
-Size=1615,5623
+Repeat=TIME_USE
+Size=696,5623
   
 Item=TU_END
 Item=TDEM_SEX
 Item=TDEM_BTH_YEAR
 Item=TDEM_BTH_MONTH
 Item=TDEM_AGE
-Item=IND_END_TIME
+Item=TIND_END_TIME
+  
+[EndForm]
+  
+[Form]
+Name=FORM002
+Label=Time-use vars
+QuestionTextHeight=184
+Level=1
+Size=519,198
+  
+Item=TIME_USE000
   
 [EndForm]
   
@@ -72,7 +84,6 @@ Max=1
 Name=TCLUSTER
 Position=209,42,266,62
 Item=TCLUSTER,TIMEUSE_DICT
-Protected=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -83,10 +94,9 @@ Text=Cluster
  
   
 [Field]
-Name=XREGION
+Name=TREGION
 Position=209,69,224,89
-Item=XREGION,TIMEUSE_DICT
-Protected=Yes
+Item=TREGION,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=NumberPad
 Form=1
@@ -97,10 +107,9 @@ Text=Region
  
   
 [Field]
-Name=XDISTRICT
+Name=TDISTRICT
 Position=209,99,238,119
-Item=XDISTRICT,TIMEUSE_DICT
-Protected=Yes
+Item=TDISTRICT,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=NumberPad
 Form=1
@@ -111,10 +120,9 @@ Text=District
  
   
 [Field]
-Name=XTA
+Name=TTA
 Position=209,129,252,149
-Item=XTA,TIMEUSE_DICT
-Protected=Yes
+Item=TTA,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=NumberPad
 Form=1
@@ -125,10 +133,9 @@ Text=Traditional Authority
  
   
 [Field]
-Name=XEA
+Name=TEA
 Position=209,159,252,179
-Item=XEA,TIMEUSE_DICT
-Protected=Yes
+Item=TEA,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=NumberPad
 Form=1
@@ -142,7 +149,6 @@ Text=Enumeration Area
 Name=TGHHHNO
 Position=209,188,238,208
 Item=TGHHHNO,TIMEUSE_DICT
-Protected=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -156,7 +162,6 @@ Text=Household number
 Name=THMPPNO
 Position=209,215,238,235
 Item=THMPPNO,TIMEUSE_DICT
-Protected=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -175,9 +180,9 @@ Form=2
 Max=1
   
 [Field]
-Name=XGHVFDT
+Name=TGHVFDT
 Position=314,57,427,77
-Item=XGHVFDT,TIMEUSE_DICT
+Item=TGHVFDT,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=Date
 CaptureDateFormat=YYYYMMDD
@@ -189,10 +194,9 @@ Text=Interview date
  
   
 [Field]
-Name=XGHAREA
+Name=TGHAREA
 Position=314,27,329,47
-Item=XGHAREA,TIMEUSE_DICT
-Protected=Yes
+Item=TGHAREA,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=DropDown
 Form=2
@@ -206,7 +210,6 @@ Text=Type of area
 Name=TGHINTCODE
 Position=314,99,819,119
 Item=TGHINTCODE,TIMEUSE_DICT
-Protected=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=2
@@ -217,10 +220,9 @@ Text=Interviewer ID
  
   
 [Field]
-Name=XGHINTNAME
+Name=TGHINTNAME
 Position=314,131,724,151
-Item=XGHINTNAME,TIMEUSE_DICT
-Protected=Yes
+Item=TGHINTNAME,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -249,73 +251,75 @@ Required=Yes
 Name=XLABOR_REC_FORM
 Label=Labor
 Form=3
-Max=1
+Type=Record
+TypeName=TIME_USE
+Max=3
   
 [Field]
 Name=TDEM_SEX
-Position=488,202,503,222
+Position=532,32,547,52
 Item=TDEM_SEX,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=55,205,80,221
+Position=99,35,124,51
 Text=Sex
  
   
 [Field]
 Name=TDEM_BTH_YEAR
-Position=488,232,545,252
+Position=532,62,589,82
 Item=TDEM_BTH_YEAR,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=ComboBox
 Form=3
   
 [Text]
-Position=55,235,133,251
+Position=99,65,177,81
 Text=Year of birth
  
   
 [Field]
 Name=TDEM_BTH_MONTH
-Position=487,267,516,287
+Position=531,97,560,117
 Item=TDEM_BTH_MONTH,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=54,270,142,286
+Position=98,100,186,116
 Text=Month of birth
  
   
 [Field]
 Name=TDEM_AGE
-Position=488,306,531,326
+Position=532,136,575,156
 Item=TDEM_AGE,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=3
   
 [Text]
-Position=55,305,80,321
+Position=99,135,124,151
 Text=Age
  
   
   
   
 [Field]
-Name=IND_END_TIME
+Name=TIND_END_TIME
 Position=488,5539,671,5559
-Item=IND_END_TIME,TIMEUSE_DICT
+Item=TIND_END_TIME,TIMEUSE_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
 Form=3
   
 [Text]
-Position=78,5546,171,5562
-Text=IND_END_TIME
+Position=78,5546,179,5562
+Text=TIND_END_TIME
  
   
 [Field]
@@ -344,5 +348,248 @@ DisplayTogether=Yes
 Position=5
 Length=0
   
+[EndGroup]
+  
+[Group]
+Required=Yes
+Name=TIMEUSE_GROUP
+Label=Time-use vars
+Form=4
+Max=1
+  
+[Grid]
+Name=TIME_USE000
+Label=Time use
+Form=4
+Required=Yes
+Type=Record
+TypeName=TIME_USE
+Max=3
+DisplaySize=180,65,494,173
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+UseOccurrenceLabels=Yes
+FreeMovement=No
+ 
+[Text]
+Position=0,4,15,28
+Text=1
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=2
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=3
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T01
+ 
+[Field]
+Name=T01
+Position=7,0,22,20
+Item=T01,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T01
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T02
+ 
+[Field]
+Name=T02
+Position=7,0,22,20
+Item=T02,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T02
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T04
+ 
+[Field]
+Name=T04
+Position=7,0,22,20
+Item=T04,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T04
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T05
+ 
+[Field]
+Name=T05
+Position=7,0,22,20
+Item=T05,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T05
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T06
+ 
+[Field]
+Name=T06
+Position=7,0,22,20
+Item=T06,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T06
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T07
+ 
+[Field]
+Name=T07
+Position=7,0,22,20
+Item=T07,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T07
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T08
+ 
+[Field]
+Name=T08
+Position=7,0,22,20
+Item=T08,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T08
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T09
+ 
+[Field]
+Name=T09
+Position=7,0,22,20
+Item=T09,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T09
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T10
+ 
+[Field]
+Name=T10
+Position=7,0,22,20
+Item=T10,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T10
+ 
+[EndColumn]
+  
+[Column]
+Width=29
+  
+[HeaderText]
+Position=0,0,29,24
+Text=T11
+ 
+[Field]
+Name=T11
+Position=6,0,21,20
+Item=T11,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T11
+ 
+[EndColumn]
+  
+[Column]
+Width=30
+  
+[HeaderText]
+Position=0,0,30,24
+Text=T12
+ 
+[Field]
+Name=T12
+Position=7,0,22,20
+Item=T12,TIMEUSE_DICT
+DataCaptureType=TextBox
+  
+[Text]
+Text=T12
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
 [EndGroup]
   

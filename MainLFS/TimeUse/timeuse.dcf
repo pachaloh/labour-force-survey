@@ -53,11 +53,11 @@ ZeroFill=Yes
 Label=Household and Geographic Identifiers
 Name=GH_REC
 RecordTypeValue='G'
-RecordLen=164
+RecordLen=160
 
 [Item]
 Label=Type of area
-Name=XGHAREA
+Name=TGHAREA
 Start=46
 Len=1
 DataType=Numeric
@@ -65,14 +65,14 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Type of area
-Name=XGHAREA_VS1
+Name=TGHAREA_VS1
 Value=1;Urban
 Value=2;Peri-urban
 Value=3;Rural
 
 [Item]
 Label=Interview date
-Name=XGHVFDT
+Name=TGHVFDT
 Start=47
 Len=8
 DataType=Numeric
@@ -80,7 +80,7 @@ ZeroFill=Yes
 
 [Item]
 Label=Household replacement status
-Name=XGHHRPL
+Name=TGHHRPL
 Start=55
 Len=1
 DataType=Numeric
@@ -88,38 +88,22 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Household replacement status
-Name=XGHHRPL_VS1
+Name=TGHHRPL_VS1
 Value=1;YES
 Value=2;NO
 
 [Item]
-Label=Number of household members
-Name=XGHHHSIZE
-Start=56
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=Number of eligible household members
-Name=XGHNELIGIBLE
-Start=58
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
 Label=Interviewer Name
-Name=XGHINTNAME
+Name=TGHINTNAME
 Note=Added only for the beta testing purpose.
-Start=60
+Start=56
 Len=50
 DataType=Alpha
 
 [Item]
 Label=Line number of eligible member
 Name=LN_ELG
-Start=110
+Start=106
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -127,14 +111,14 @@ ZeroFill=Yes
 [Item]
 Label=Name of Eligible member
 Name=NAME_ELG
-Start=112
+Start=108
 Len=50
 DataType=Alpha
 
 [Item]
 Label=Age of eligible member
 Name=AGE_ELG
-Start=162
+Start=158
 Len=3
 DataType=Numeric
 ZeroFill=Yes
@@ -263,7 +247,8 @@ ZeroFill=Yes
 Label=Time use
 Name=TIME_USE
 RecordTypeValue='T'
-RecordLen=58
+MaxRecords=3
+RecordLen=60
 
 [Item]
 Label=T01
@@ -287,12 +272,13 @@ Name=T03
 Start=48
 Len=1
 DataType=Numeric
+Occurrences=3
 ZeroFill=Yes
 
 [Item]
 Label=T04
 Name=T04
-Start=49
+Start=51
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -300,7 +286,7 @@ ZeroFill=Yes
 [Item]
 Label=T05
 Name=T05
-Start=50
+Start=52
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -308,7 +294,7 @@ ZeroFill=Yes
 [Item]
 Label=T06
 Name=T06
-Start=51
+Start=53
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -316,7 +302,7 @@ ZeroFill=Yes
 [Item]
 Label=T07
 Name=T07
-Start=52
+Start=54
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -324,7 +310,7 @@ ZeroFill=Yes
 [Item]
 Label=T08
 Name=T08
-Start=53
+Start=55
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -332,7 +318,7 @@ ZeroFill=Yes
 [Item]
 Label=T09
 Name=T09
-Start=54
+Start=56
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -340,7 +326,7 @@ ZeroFill=Yes
 [Item]
 Label=T10
 Name=T10
-Start=55
+Start=57
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -348,7 +334,7 @@ ZeroFill=Yes
 [Item]
 Label=T11
 Name=T11
-Start=56
+Start=58
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -356,7 +342,7 @@ ZeroFill=Yes
 [Item]
 Label=T12
 Name=T12
-Start=57
+Start=59
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -364,7 +350,7 @@ ZeroFill=Yes
 [Item]
 Label=End Individual Interview
 Name=TU_END
-Start=58
+Start=60
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -385,7 +371,7 @@ RecordLen=67
 
 [Item]
 Label=Region
-Name=XREGION
+Name=TREGION
 Note=All the geo ids are hided and prefilled to facilitate the beta testing. In the furture release, these will be handled
 Note=by the menu program.
 Start=46
@@ -395,7 +381,7 @@ ZeroFill=Yes
 
 [Item]
 Label=District
-Name=XDISTRICT
+Name=TDISTRICT
 Start=47
 Len=2
 DataType=Numeric
@@ -403,7 +389,7 @@ ZeroFill=Yes
 
 [Item]
 Label=Traditional Authority
-Name=XTA
+Name=TTA
 Start=49
 Len=3
 DataType=Numeric
@@ -411,7 +397,7 @@ ZeroFill=Yes
 
 [Item]
 Label=Enumeration Area
-Name=XEA
+Name=TEA
 Start=52
 Len=3
 DataType=Numeric
@@ -419,7 +405,7 @@ ZeroFill=Yes
 
 [Item]
 Label=Ind End Time
-Name=IND_END_TIME
+Name=TIND_END_TIME
 Start=55
 Len=13
 DataType=Numeric
