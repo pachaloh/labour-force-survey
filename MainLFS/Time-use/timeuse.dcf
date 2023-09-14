@@ -363,7 +363,7 @@ ZeroFill=Yes
 
 [Item]
 Label=End Individual Interview
-Name=INDIVEND
+Name=TU_END
 Start=58
 Len=1
 DataType=Numeric
@@ -371,7 +371,7 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=End Individual Interview
-Name=INDIVEND_VS1
+Name=TU_END_VS1
 Value=1;Complete
 Value=2;Member not available
 Value=3;Not eligible

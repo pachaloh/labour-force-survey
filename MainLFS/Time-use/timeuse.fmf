@@ -48,7 +48,7 @@ QuestionTextHeight=184
 Level=1
 Size=1615,5623
   
-Item=INDIVEND
+Item=TU_END
 Item=TDEM_SEX
 Item=TDEM_BTH_YEAR
 Item=TDEM_BTH_MONTH
@@ -319,9 +319,9 @@ Text=IND_END_TIME
  
   
 [Field]
-Name=INDIVEND
+Name=TU_END
 Position=493,5578,508,5598
-Item=INDIVEND,TIMEUSE_DICT
+Item=TU_END,TIMEUSE_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3

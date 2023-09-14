@@ -2750,12 +2750,12 @@ Value='K                  ';Information and Communication Technology (ICT)
 Value='L                  ';Motorcycle Mechanics (MCM)
 Value='M                  ';Painting and Decoration (PAD)
 Value='N                  ';Plumbing (PLB)
-Value='O                  ';Refrigeration and Air Conditioning Mechanics (RAM) 
+Value='O                  ';Refrigeration and Air Conditioning Mechanics (RAM)
 Value='P                  ';Solar Photovoltaic Installation (SPV)
 Value='Q                  ';Tailoring and Fashion Designing (TFD)
 Value='R                  ';Tour Guide (TRG)
-Value='S                  ';Wood Work Machining (WWM) 
-Value='X                  ';NONE OF THE ABOVE 
+Value='S                  ';Wood Work Machining (WWM)
+Value='X                  ';NONE OF THE ABOVE
 
 [Item]
 Label=TVT02
@@ -2835,14 +2835,14 @@ Len=30
 DataType=Alpha
 
 [Item]
-Label=TVT09
+Label=TVT
 Name=TVT09
 Start=102
 Len=9
 DataType=Alpha
 
 [ValueSet]
-Label=TVT09
+Label=TVT
 Name=TVT09_VS1
 Value='A        ';My current job is only a temporary stepping stone, I am still searching for professional orientation
 Value='B        ';I have not found an appropriate job (yet)
@@ -2855,8 +2855,8 @@ Value='H        ';My current job allows me to take into consideration the intere
 Value='Z        ';Other
 
 [Item]
-Label=TVT10
-Name=TVT10
+Label=TVT11
+Name=TVT11
 Start=111
 Len=1
 DataType=Numeric

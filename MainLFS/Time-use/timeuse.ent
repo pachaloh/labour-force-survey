@@ -11,10 +11,6 @@ CreateListing=No
 CreateLog=No
 ShowFieldLabels=No
 ShowErrorMessageNumbers=No
-[External Dictionaries]
-File=..\Household\HouseholdLFS.dcf
-File=..\Dicts\clusters.dcf
-File=..\ChildLFS\ChildLFS.dcf
 [AppCode]
 File=.\timeuse.ent.apc
 [Message]
@@ -25,9 +21,6 @@ File=.\timeuse.ent.qsf
 File=.\timeuse.fmf
 [Dictionary Types]
 Dict-Type=.\timeuse.dcf,Input,.\timeuse.fmf
-Dict-Type=..\Household\HouseholdLFS.dcf,External
-Dict-Type=..\Dicts\clusters.dcf,External
-Dict-Type=..\ChildLFS\ChildLFS.dcf,External
 [Sync]
 Server=https://csprodata.ilo.org/api
 Direction=Put
