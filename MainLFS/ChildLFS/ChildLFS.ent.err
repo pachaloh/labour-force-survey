@@ -1,9 +1,0 @@
-﻿Application     C:\Users\User\Dropbox\LabourFourceSurvey\MainLFS\ChildLFS\ChildLFS.ent
-Type            Entry
-Date            May 12, 2023
-Time            07:53:02
-
-CSPro Error Summary
-ERROR(, 0): PROC invalid: 'E10' is ambiguous due to multiple variables with that name
-
-Cannot load Application CHILDLFS.ENT (PROC invalid: 'E10' is ambiguous due to multiple variables with that name)

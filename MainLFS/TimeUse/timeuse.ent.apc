@@ -1,1 +1,21 @@
 ﻿
+PROC GLOBAL
+
+PROC TIMEUSE_FF
+
+PROC T01
+
+preproc
+
+	$ = XT01(curocc());
+PROC T02
+
+preproc
+
+	$ = XT02(curocc());
+	
+PROC T03
+
+preproc
+
+	$ = XT03(curocc());

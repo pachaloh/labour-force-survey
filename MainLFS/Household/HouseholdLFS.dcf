@@ -127,7 +127,7 @@ Label=Demographics
 Name=DEM_REC
 RecordTypeValue='D'
 MaxRecords=30
-RecordLen=207
+RecordLen=208
 
 [Item]
 Label=Unique person number
@@ -503,7 +503,7 @@ Value=8;Standard 8
 Label=Highest qualification
 Name=DEM_12
 Start=119
-Len=1
+Len=2
 DataType=Numeric
 ZeroFill=Yes
 
@@ -582,19 +582,22 @@ Value=8;PhD
 [ValueSet]
 Label=TEVET qualifications
 Name=DEM_12_VS10
-Value=1;Certificate of compitence
+Value=10;Certificate of compitence
+Value=11;TEVET Level 1/Trade test grade 3/Malawi craft certificate
+Value=12;TEVET Level 2/Trade test grade 2/Malawi craft Intermediate certificate
+Value=13;TEVET Level 3/Trade test grade 1/Malawi craft advanced certificate
 
 [Item]
 Label=Field of education
 Name=DEM_13
-Start=120
+Start=121
 Len=50
 DataType=Alpha
 
 [Item]
 Label=Field of Education Broad
 Name=DEM_13A
-Start=170
+Start=171
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -618,19 +621,19 @@ Value=10;Other Area of Study
 Label=Field of TEVET
 Name=DEM_13A_VS2
 Value=81;Automobile Mechanics (AMM)
-Value=82;Administrative Studies (AAS) 
-Value=83;Bricklaying (BRL) 
+Value=82;Administrative Studies (AAS)
+Value=83;Bricklaying (BRL)
 Value=84;Cosmetology (CMG)
 Value=85;Carpentry and Joinery (CRJ)
 Value=86;Edible Horticulture (EHC)
-Value=87;Electrical Installation and Electronics (EIE) 
+Value=87;Electrical Installation and Electronics (EIE)
 Value=88;Fabrication and Welding (FBW)
-Value=89;Food Production (FPR) 
+Value=89;Food Production (FPR)
 Value=90;General Fitting (GFT)
 Value=91;Motorcycle Mechanics (MCM)
 Value=92;Painting and Decoration (PAD)
 Value=93;Plumbing (PLB)
-Value=94;Refrigeration and Air Conditioning Mechanics (RAM) 
+Value=94;Refrigeration and Air Conditioning Mechanics (RAM)
 Value=95;Solar Photovoltaic Installation (SPV)
 Value=96;Tailoring and Fashion Designing (TFD)
 Value=97;Tour Guide (TRG)
@@ -639,7 +642,7 @@ Value=98;Wood Work Machining (WWM)
 [Item]
 Label=Field of Education Narrow
 Name=DEM_13B
-Start=172
+Start=173
 Len=3
 DataType=Numeric
 ZeroFill=Yes
@@ -647,7 +650,7 @@ ZeroFill=Yes
 [Item]
 Label=Field of Education Detail
 Name=DEM_13C
-Start=175
+Start=176
 Len=4
 DataType=Numeric
 ZeroFill=Yes
@@ -655,7 +658,7 @@ ZeroFill=Yes
 [Item]
 Label=Country of Birth
 Name=DEM_14
-Start=179
+Start=180
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -669,7 +672,7 @@ Value=2;No
 [Item]
 Label=Born in another country
 Name=DEM_15
-Start=181
+Start=182
 Len=3
 DataType=Numeric
 ZeroFill=Yes
@@ -1173,7 +1176,7 @@ Value=87;Yemen
 [Item]
 Label=Year of Arrival
 Name=DEM_16
-Start=184
+Start=185
 Len=4
 DataType=Numeric
 ZeroFill=Yes
@@ -1188,7 +1191,7 @@ Name=MISSING,Special
 [Item]
 Label=Number of Years Spent in MW
 Name=DEM_17
-Start=188
+Start=189
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -1204,7 +1207,7 @@ Value=4;10 YEARS OR MORE
 [Item]
 Label=Reason of arrival
 Name=DEM_18
-Start=190
+Start=191
 Len=2
 DataType=Numeric
 ZeroFill=Yes
@@ -1226,7 +1229,7 @@ Value=10;OTHER
 [Item]
 Label=Citizen of Malawi
 Name=DEM_19
-Start=192
+Start=193
 Len=3
 DataType=Alpha
 
@@ -1240,7 +1243,7 @@ Value='C  ';STATELESS
 [Item]
 Label=Other Country Citizenship
 Name=DEM_20
-Start=195
+Start=196
 Len=3
 DataType=Numeric
 ZeroFill=Yes
@@ -1498,7 +1501,7 @@ Value=887;Yemen
 [Item]
 Label=Dificulty in seeing
 Name=DEM_21A
-Start=198
+Start=199
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1512,7 +1515,7 @@ Value=2;No
 [Item]
 Label=Difficulty seeing severity
 Name=DEM_21
-Start=199
+Start=200
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1528,7 +1531,7 @@ Value=4;Cannot see at all
 [Item]
 Label=Difficulty in Hearing
 Name=DEM_22A
-Start=200
+Start=201
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1542,7 +1545,7 @@ Value=2;No
 [Item]
 Label=Difficulty hearing aid
 Name=DEM_22
-Start=201
+Start=202
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1558,7 +1561,7 @@ Value=4;Cannot hear at all
 [Item]
 Label=Difficulty walking
 Name=DEM_23
-Start=202
+Start=203
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1574,7 +1577,7 @@ Value=4;Cannot walk at all
 [Item]
 Label=Difficulty speaking
 Name=DEM_24
-Start=203
+Start=204
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1590,7 +1593,7 @@ Value=4;Cannot speak at all
 [Item]
 Label=Difficulty intellectually
 Name=DEM_25
-Start=204
+Start=205
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1606,7 +1609,7 @@ Value=4;Cannot do at all
 [Item]
 Label=Self Care
 Name=DEM_26
-Start=205
+Start=206
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1622,7 +1625,7 @@ Value=4;Cannot do at all
 [Item]
 Label=Albinism
 Name=DEM_27
-Start=206
+Start=207
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -1636,7 +1639,7 @@ Value=2;No
 [Item]
 Label=Population Section: Roster Confirmation
 Name=P_MORE_ROWS
-Start=207
+Start=208
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -2637,14 +2640,14 @@ Value=2;No, delete emigration row
 
 [Item]
 Label=Name of Emigrant
-Name=E01
+Name=XE01
 Start=45
 Len=40
 DataType=Alpha
 
 [Item]
 Label=Sex of Emigrant
-Name=E02
+Name=XE02
 Start=85
 Len=1
 DataType=Numeric
@@ -2652,13 +2655,13 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Sex of Emigrant
-Name=E02_VS1
+Name=XE02_VS1
 Value=1;Male
 Value=2;Female
 
 [Item]
 Label=Age of Emigrant
-Name=E03
+Name=XE03
 Start=86
 Len=3
 DataType=Numeric
@@ -2666,7 +2669,7 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Age of Emigrant
-Name=E03_VS1
+Name=XE03_VS1
 Link=122785736
 Value=0:120;Valid Age
 Value=999;Don't know
@@ -2674,7 +2677,7 @@ Name=MISSING,Special
 
 [Item]
 Label=Destination of Emigrant
-Name=E04
+Name=XE04
 Start=89
 Len=3
 DataType=Numeric
@@ -2682,7 +2685,7 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Destination of Emigrant
-Name=E04_VS1
+Name=XE04_VS1
 Value=894;Zambia
 Value=716;Zimbabwe
 Value=508;Mozambique
@@ -2932,7 +2935,7 @@ Value=887;Yemen
 
 [Item]
 Label=Departure Year of Emigrant
-Name=E05
+Name=XE05
 Start=92
 Len=4
 DataType=Numeric
@@ -2940,12 +2943,12 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Departure Year of Emigrant
-Name=E05_VS1
+Name=XE05_VS1
 Value=2013:2023;Departure Year
 
 [Item]
 Label=Emigration Status
-Name=E05_1
+Name=XE05_1
 Start=96
 Len=1
 DataType=Numeric
@@ -2953,13 +2956,13 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Emigration Status
-Name=E05_1_VS1
+Name=XE05_1_VS1
 Value=1;Yes
 Value=2;No
 
 [Item]
 Label=Activity Abroad of Emigrant
-Name=E06
+Name=XE06
 Start=97
 Len=2
 DataType=Numeric
@@ -2967,7 +2970,7 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Activity Abroad of Emigrant
-Name=E06_VS1
+Name=XE06_VS1
 Value=1;Working in Mines
 Value=2;Working in Farms
 Value=3;Working in other sectors
@@ -3261,7 +3264,7 @@ Value=2;No
 
 [Item]
 Label=Received Cash Remittances
-Name=E07
+Name=XE07
 Start=240
 Len=1
 DataType=Numeric
@@ -3269,14 +3272,14 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Received Cash Remittances
-Name=E07_VS1
+Name=XE07_VS1
 Value=1;Yes
 Value=2;No
 Value=3;Don't know
 
 [Item]
 Label=Value of Cash Remittances
-Name=E08
+Name=XE08
 Start=241
 Len=9
 DataType=Numeric
@@ -3284,14 +3287,14 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Value of Cash Remittances
-Name=E08_VS1
+Name=XE08_VS1
 Value=0:999999997;Cash Remittances
 Value=999999998;Don't Know
 Value=999999999;Refused
 
 [Item]
 Label=Received Goods as Remittances
-Name=E09
+Name=XE09
 Start=250
 Len=1
 DataType=Numeric
@@ -3299,14 +3302,14 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Received Goods as Remittances
-Name=E09_VS1
+Name=XE09_VS1
 Value=1;Yes
 Value=2;No
 Value=3;Don't know
 
 [Item]
 Label=Value of Goods as Remittances
-Name=E10
+Name=XE10
 Start=251
 Len=9
 DataType=Numeric
@@ -3314,7 +3317,7 @@ ZeroFill=Yes
 
 [ValueSet]
 Label=Value of Goods as Remittances
-Name=E10_VS1
+Name=XE10_VS1
 Value=0:999999997;Value of Goods
 Value=999999998;Don't Know
 Value=999999999;Refused

@@ -244,11 +244,76 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Record]
+Label=Day activities
+Name=DAY_ACTIVITY
+RecordTypeValue='A'
+MaxRecords=6
+RecordLen=101
+
+[Item]
+Label=Day activity
+Name=XT01
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Day activity
+Name=XT01_VS1
+Value=1;Monday
+Value=2;Tuesday
+Value=3;Wednesday
+Value=4;Thursday
+Value=5;Friday
+Value=6;Saturday
+Value=7;Sunday
+
+[Item]
+Label=Time period
+Name=XT02
+Start=47
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Time period
+Name=XT02_VS1
+Value=1;1 to 2
+Value=2;2 to 3
+Value=3;3 to 4
+Value=4;4 to 5
+Value=6;5 to 6
+
+[Item]
+Label=Activity record
+Name=XT03_CODE
+Start=48
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Activity 
+Name=XT03
+Start=51
+Len=50
+DataType=Alpha
+
+[Item]
+Label=More activities
+Name=XT03_ADD
+Start=101
+Len=1
+DataType=Numeric
+
+[Record]
 Label=Time use
 Name=TIME_USE
 RecordTypeValue='T'
 MaxRecords=3
-RecordLen=60
+RecordLen=108
 
 [Item]
 Label=T01
@@ -266,75 +331,141 @@ Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=T02
+Name=T02_VS1
+Value=1;1 am and 2 am
+Value=2;2 am to 3 am
+Value=3;3 am to 4 am
+Value=4;4 am to 5 m
+Value=6;5 am to 6 am
+
 [Item]
 Label=T03
 Name=T03
 Start=48
-Len=1
-DataType=Numeric
-Occurrences=3
-ZeroFill=Yes
+Len=50
+DataType=Alpha
 
 [Item]
 Label=T04
 Name=T04
-Start=51
+Start=98
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T04
+Name=T04_VS1
+Value=1;YES
+Value=2;NO
 
 [Item]
 Label=T05
 Name=T05
-Start=52
-Len=1
+Start=99
+Len=2
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T05
+Name=T05_VS1
+Value=1:60;1-60 mins
 
 [Item]
 Label=T06
 Name=T06
-Start=53
+Start=101
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T06
+Name=T06_VS1
+Value=1;Self
+Value=2;Spouse/Partner
+Value=3;Children in the household or part of the family
+Value=4;Other adult in the household/family members
+Value=5;Work/My job/Market
+Value=6;Friends/Other household
+Value=7;Charity
+Value=8;Community
+Value=9;Other
 
 [Item]
 Label=T07
 Name=T07
-Start=54
+Start=102
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T07
+Name=T07_VS1
+Value=1;YES
+Value=2;NO
 
 [Item]
 Label=T08
 Name=T08
-Start=55
+Start=103
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T08
+Name=T08_VS1
+Value=1;Productive paid work
+Value=2;Unpaid productive work for the household/family 
+Value=3;Productive unpaid work outside the household/family
+Value=4;Personal activity
 
 [Item]
 Label=T09
 Name=T09
-Start=56
+Start=104
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=T09
+Name=T09_VS1
+Value=1;Alone/ People I do not know
+Value=2;Children less than 5 years (household family members)
+Value=3;Children 5-17 years (household/family members)
+Value=4;Other household/family members
+Value=5;Friends/Other households
 
 [Item]
 Label=T10
 Name=T10
-Start=57
+Start=105
 Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=T10
+Name=T10_VS1
+Value=1;At home
+Value=2;Other people's home
+Value=3;Workplace/Place of study
+Value=4;Public/Commercial/Service area
+Value=5;Communal/Social places/Places of worship
+Value=6;Travelling (Walking)
+Value=7;Travelling (Public)
+Value=8;Travelling (Private)
+
 [Item]
 Label=T11
 Name=T11
-Start=58
+Start=106
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -342,7 +473,7 @@ ZeroFill=Yes
 [Item]
 Label=T12
 Name=T12
-Start=59
+Start=107
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -350,7 +481,7 @@ ZeroFill=Yes
 [Item]
 Label=End Individual Interview
 Name=TU_END
-Start=60
+Start=108
 Len=1
 DataType=Numeric
 ZeroFill=Yes

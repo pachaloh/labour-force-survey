@@ -1218,7 +1218,13 @@ preproc
 PROC TVT04
 
 preproc
+	
+	ask if TVT02 = 1;
+
+{
+preproc
 	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
+}
 PROC TVT05
 
 preproc
@@ -1240,7 +1246,17 @@ PROC TVT09
 
 preproc
 	
-	ask if TVT07 = 2;
+	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
+PROC TVT10
+
+preproc
+	
+	ask if TVT08 = 2;
+PROC TVT11
+
+preproc
+	
+	ask if TVT08 = 2;
 PROC X01
 
 preproc

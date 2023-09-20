@@ -26,5 +26,69 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
-  []
+  - name: TIMEUSE_DICT.XT01
+    conditions:
+      - questionText:
+          EN: |
+            <b>XT01</b>. <i><font color="#0000ff">Select ACTIVITY Day of the week for which activities are recorded (This is the day before today).</font></i><p></p>
+  - name: TIMEUSE_DICT.XT02
+    conditions:
+      - questionText:
+          EN: |
+            <b>XT02</b>. Time period<p></p>
+  - name: TIMEUSE_DICT.XT03_CODE
+    conditions:
+      - questionText:
+          EN: |
+            <b>T03.&nbsp;</b>What were you doing yesterday morning between ~~getlabel(XT02,XT02)~~?<p></p>
+  - name: TIMEUSE_DICT.T01
+    conditions:
+      - questionText:
+          EN: |
+            <b>XT01</b>.&nbsp;<i><font color="#0000ff">&nbsp;ACTIVITY Day of the week for which activities are recorded (This is the day before today).</font></i><p></p>
+  - name: TIMEUSE_DICT.T02
+    conditions:
+      - questionText:
+          EN: |
+            <b>T02</b>. Time period<p></p>
+  - name: TIMEUSE_DICT.T03
+    conditions:
+      - questionText:
+          EN: |
+            <b>T03. </b>What were you doing yesterday morning between ~~getlabel(T02,T02)~~?<p></p>
+  - name: TIMEUSE_DICT.T04
+    conditions:
+      - questionText:
+          EN: |
+            T04.&nbsp;Did you do the activities at the same time? Did you do anything else?<p></p>
+  - name: TIMEUSE_DICT.T05
+    conditions:
+      - questionText:
+          EN: |
+            <b>T05.</b>&nbsp;How long did the activity (<i><font color="#ff0000">~~T03~~</font></i>) take?<p></p>
+  - name: TIMEUSE_DICT.T06
+    conditions:
+      - questionText:
+          EN: |
+            <b>T06.</b> Whom did you do this (<i><font color="#ff0000">~~T03~~</font></i>)&nbsp;&nbsp;for?<p></p>
+  - name: TIMEUSE_DICT.T07
+    conditions:
+      - questionText:
+          EN: |
+            <b>T07.</b>&nbsp;Did you do this activity (<i><font color="#ff0000">~~T03~~</font></i>)&nbsp;&nbsp;MAINLY for payment or for profit?<p></p>
+  - name: TIMEUSE_DICT.T08
+    conditions:
+      - questionText:
+          EN: |
+            <b>T08.</b>&nbsp;Pease classify the activities described&nbsp; in T03<p></p>
+  - name: TIMEUSE_DICT.T09
+    conditions:
+      - questionText:
+          EN: |
+            T09.&nbsp;Who was with you?<p></p>
+  - name: TIMEUSE_DICT.T10
+    conditions:
+      - questionText:
+          EN: |
+            <b>T10.</b>&nbsp;Where were you when you did the activity (<i><font color="#ff0000">~~T03~~</font></i>)&nbsp;? (Description of activities starting with the main/priority activity.)<p></p>
 ...

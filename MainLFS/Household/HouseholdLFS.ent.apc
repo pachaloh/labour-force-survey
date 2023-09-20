@@ -293,7 +293,7 @@ function ShowHideEmigration()
 
 		if visualvalue(E_KEEP_ROW(ctr)) = 1 then
 			showocc(EMIGRATION_ROSTER(ctr));
-			setocclabel(EMIGRATION_ROSTER(ctr),E01(ctr));
+			setocclabel(EMIGRATION_ROSTER(ctr),XE01(ctr));
 		else
 			hideocc(EMIGRATION_ROSTER(ctr));
 			setocclabel(EMIGRATION_ROSTER(ctr),"<Deleted>");
@@ -1145,22 +1145,19 @@ preproc ask if DEM_06>=3;
 postproc
 		numeric HighestLevelPossible;
 
+	//Pachalo: The minimum age for level of school. 
 	if DEM_09 = 2 then 				//if has ever attended school
 			   recode DEM_06(P_KEEP_ROW)  -> HighestLevelPossible;
-						//4:14    -> 1 ;							// Primary
-						//15:19    -> 2 ;		  					// Secondary
-						
-						4:10    -> 1 ;							// Primary
-						11:19    -> 2 ;		  
+			   
+						4:10     -> 1 ;								// Primary. Pachalo: You don't expect ages between 4 and 10 in the secondary
+						11:19    -> 2 ;		  						// Secondary
 								 -> notappl;						// any value is valid
 
 			   endrecode;
 
 	elseif DEM_09 = 3 then 			//if currently attending school
 			   recode DEM_06(P_KEEP_ROW)   -> HighestLevelPossible;
-						//4:13    -> 1 ;							// Primary
-						//14:17    -> 2 ;		  					// Secondary
-						4:10    -> 1 ;							// Primary
+						4:10     -> 1 ;							// Primary
 						11:17    -> 2 ;		  					// Secondary
 								-> notappl;						// any value is valid
 			   endrecode;
@@ -1202,6 +1199,7 @@ preproc
 
 	ask if DEM_10 <> 0;
 	ask if DEM_06>=3;
+	ask if not DEM_10 = 3;
 
 onfocus
 
@@ -1260,24 +1258,6 @@ postproc
 
 	endif;
 
-	{if DEM_09 = 2 then
-		if $ > HighestClassCheck then
-			warning ("The highest class ever attended (%s) seem high for %s's age (%d years)", getlabel($,$), strip(DEM_NAME(curocc())), DEM_06)
-				select ("Reenter highest class completed", $,
-						"Reenter age", DEM_06,
-						"Continue", continue);
-		endif;
-
-	elseif   DEM_09 = 3 then
-		if $ > HighestClassCheck then
-			warning ("The highest class being attending (%s) seem high for %s's age (%d years)", getlabel($,$), strip(DEM_NAME(curocc())), DEM_06)
-				select ("Reenter highest class completed", $,
-						"Reenter age", DEM_06,
-						"Continue", continue);
-		endif;
-	endif;}
-
-
 PROC DEM_12
 
 preproc
@@ -1305,16 +1285,16 @@ onfocus
 	elseif DEM_10 = 2 and DEM_11 in 11:12 then
 		setvalueset(DEM_12, DEM_12_VS2);
 	
-	elseif DEM_10 = 3 and DEM_11 in 15:17 then
+	elseif DEM_10 = 4 and DEM_11 in 15:17 then
 		setvalueset(DEM_12, DEM_12_VS7);
 		
-	elseif DEM_10 = 3 and DEM_11 in 18:22 then 
+	elseif DEM_10 = 4 and DEM_11 in 18:22 then 
 		setvalueset(DEM_12, DEM_12_VS8);
 		
-	elseif DEM_10 = 3 and DEM_11 in 23:33 then 
+	elseif DEM_10 = 4 and DEM_11 in 23:33 then 
 		setvalueset(DEM_12, DEM_12_VS9);
 	
-	elseif DEM_10 = 4 then
+	elseif DEM_10 = 5 then
 		setvalueset(DEM_12, DEM_12_VS9);
 	
 	endif;
@@ -1342,7 +1322,7 @@ endif;
 
 PROC DEM_13B
 
-preproc ask if DEM_10 in 3,4;
+preproc ask if DEM_10 in 3,4 and DEM_13A < 11 ;
 
 ask if DEM_06>=5;
 
@@ -1357,7 +1337,7 @@ onfocus
 setvalueset($,Narrow_field_ed);
 PROC DEM_13C
 
-preproc ask if DEM_10 in 3,4;
+preproc ask if DEM_10 in 3,4 and DEM_13A < 11;
 
 ask if DEM_06>=5;
 
@@ -1817,7 +1797,7 @@ preproc
 
 PROC E01_EMIGRATION
 	if $ = 2 then
-		skip to E07;
+		skip to XE07;
 	endif;
 
 PROC E_KEEP_ROW
@@ -1848,7 +1828,7 @@ postproc
 	endif;
 
 
-PROC E01
+PROC XE01
 	if $ = "" then
 		errmsg("Please provide the name of the emigrant.");
 		reenter;
@@ -1856,42 +1836,42 @@ PROC E01
 
 	ShowHideEmigration();
 
-PROC E05
+PROC XE05
 
 
 	numeric calculatedYearOfBirth = SurveyYear - DEM_06(curocc());
 	
 	
 	if $ < calculatedYearOfBirth then
-		errmsg("The year of departure (%d) is inconsistent with age (%d) and year of birth (%d) of %d ",$, E05, calculatedYearOfBirth, E04)
+		errmsg("The year of departure (%d) is inconsistent with age (%d) and year of birth (%d) of %d ",$, XE05, calculatedYearOfBirth, XE04)
 		select("Reenter year of departure", $,
-			   "Reenter emigrant's age", E03);
+			   "Reenter emigrant's age", XE03);
 	endif;
 
-PROC E06
+PROC XE06
 
 
 	// TODO: are these checks really needed? what is special about the codes 1-4?
 	if $ in 1:4 then
 
-		if E03 in 5:12 then
-			warning("Confirm that emigrant aged (%d) is involved in %s", E03, getlabel($, $))
-			select("Reenter age of emigrant", E03,
+		if XE03 in 5:12 then
+			warning("Confirm that emigrant aged (%d) is involved in %s", XE03, getlabel($, $))
+			select("Reenter age of emigrant", XE03,
 				   "Reenter type of activity abroad", $,
 				   "Continue", continue);
 
-		elseif E03 < 5 then
-			errmsg("Emigrant aged (%d) cannot be involved in %s", E03, getlabel($, $))
-			select("Reenter age of emigrant ", E03,
+		elseif XE03 < 5 then
+			errmsg("Emigrant aged (%d) cannot be involved in %s", XE03, getlabel($, $))
+			select("Reenter age of emigrant ", XE03,
 				   "Reenter type of activity abroad", $);
 
 		endif;
 		
 	elseif $ in 5,8:9 then
 	
-		if E03 in 0:10 then
-			errmsg("Emigrant aged (%d) is involved in %s", E03, getlabel($, $))
-			select("Reenter age of emigrant ", E03,
+		if XE03 in 0:10 then
+			errmsg("Emigrant aged (%d) is involved in %s", XE03, getlabel($, $))
+			select("Reenter age of emigrant ", XE03,
 				   "Reenter type of activity abroad", $);
 		endif;
 
@@ -1905,7 +1885,7 @@ preproc
 	savepartial();
 
 	// if there are already more rows defined, this value has to be 1...
-	if curocc() < maxocc(EMIGRATION_ROSTER) and E01(curocc() + 1) <> "" then
+	if curocc() < maxocc(EMIGRATION_ROSTER) and XE01(curocc() + 1) <> "" then
 		E_MORE_ROWS = 1;
 		noinput;
 	endif;
@@ -1913,7 +1893,7 @@ preproc
 onfocus
 
 	// and then cannot be modified
-	if curocc() < maxocc(EMIGRATION_ROSTER) and E01(curocc() + 1) <> "" then
+	if curocc() < maxocc(EMIGRATION_ROSTER) and XE01(curocc() + 1) <> "" then
 		setproperty(E_MORE_ROWS,"Protected","Yes");
 	else
 		setproperty(E_MORE_ROWS,"Protected","No");
@@ -1936,17 +1916,17 @@ postproc
 	endif;
 
 
-PROC E08
+PROC XE08
 
 preproc
 
-	ask if E07 = 1;
+	ask if XE07 = 1;
 
-PROC E10
+PROC XE10
 
 preproc
 
-	ask if E09 = 1;
+	ask if XE09 = 1;
 
 PROC HH_CONCLUSION
 

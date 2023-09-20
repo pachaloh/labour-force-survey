@@ -210,10 +210,10 @@ Size=1370,554
 Item=E00_EMIGRATION_INTRODUCTION
 Item=E01_EMIGRATION
 Item=EMIGRATION_ROSTER
-Item=E07
-Item=E08
-Item=E09
-Item=E10
+Item=XE07
+Item=XE08
+Item=XE09
+Item=XE10
 Item=HH_CONCLUSION
   
 Box=100,18,1072,77,Etched
@@ -2371,9 +2371,9 @@ Position=447,32,569,56
 Text=Name of Emigrant
  
 [Field]
-Name=E01
+Name=XE01
 Position=0,0,561,20
-Item=E01,HOUSEHOLDLFS_DICT
+Item=XE01,HOUSEHOLDLFS_DICT
 UpperCase=Yes
 UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
@@ -2391,9 +2391,9 @@ Position=0,16,65,56
 Text=Sex of Emigrant
  
 [Field]
-Name=E02
+Name=XE02
 Position=42,0,57,20
-Item=E02,HOUSEHOLDLFS_DICT
+Item=XE02,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2410,9 +2410,9 @@ Position=0,16,65,56
 Text=Age of Emigrant
  
 [Field]
-Name=E03
+Name=XE03
 Position=14,0,57,20
-Item=E03,HOUSEHOLDLFS_DICT
+Item=XE03,HOUSEHOLDLFS_DICT
 DataCaptureType=ComboBox
   
 [Text]
@@ -2429,9 +2429,9 @@ Position=0,16,99,56
 Text=Destination of Emigrant
  
 [Field]
-Name=E04
+Name=XE04
 Position=48,0,91,20
-Item=E04,HOUSEHOLDLFS_DICT
+Item=XE04,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2447,9 +2447,9 @@ Position=0,0,75,56
 Text=Departure Year of Emigrant
  
 [Field]
-Name=E05
+Name=XE05
 Position=10,0,67,20
-Item=E05,HOUSEHOLDLFS_DICT
+Item=XE05,HOUSEHOLDLFS_DICT
 DataCaptureType=TextBox
   
 [Text]
@@ -2465,9 +2465,9 @@ Position=0,16,81,56
 Text=Emigration Status
  
 [Field]
-Name=E05_1
+Name=XE05_1
 Position=58,0,73,20
-Item=E05_1,HOUSEHOLDLFS_DICT
+Item=XE05_1,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2484,9 +2484,9 @@ Position=0,0,74,56
 Text=Activity Abroad of Emigrant
  
 [Field]
-Name=E06
+Name=XE06
 Position=37,0,66,20
-Item=E06,HOUSEHOLDLFS_DICT
+Item=XE06,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
   
 [Text]
@@ -2516,9 +2516,9 @@ Text=Emigration Section: More Rows?
  
   
 [Field]
-Name=E07
+Name=XE07
 Position=317,471,332,491
-Item=E07,HOUSEHOLDLFS_DICT
+Item=XE07,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
 Form=7
   
@@ -2528,9 +2528,9 @@ Text=Received Cash Remittances
  
   
 [Field]
-Name=E08
+Name=XE08
 Position=590,471,717,491
-Item=E08,HOUSEHOLDLFS_DICT
+Item=XE08,HOUSEHOLDLFS_DICT
 DataCaptureType=ComboBox
 Form=7
   
@@ -2540,9 +2540,9 @@ Text=Value of Cash Remittances
  
   
 [Field]
-Name=E09
+Name=XE09
 Position=988,469,1003,489
-Item=E09,HOUSEHOLDLFS_DICT
+Item=XE09,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
 Form=7
   
@@ -2552,9 +2552,9 @@ Text=Received Goods as Remittances
  
   
 [Field]
-Name=E10
+Name=XE10
 Position=336,502,463,522
-Item=E10,HOUSEHOLDLFS_DICT
+Item=XE10,HOUSEHOLDLFS_DICT
 DataCaptureType=ComboBox
 Form=7
   

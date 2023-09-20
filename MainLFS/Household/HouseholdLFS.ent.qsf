@@ -1185,7 +1185,7 @@ questions:
             <span style="font-family: Arial, sans-serif;">Do you want to keep or delete this row of emigration information?&nbsp;</span><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif;">Do you want to keep or delete this row of emigration information?&nbsp;</span><p></p>
-  - name: HOUSEHOLDLFS_DICT.E01
+  - name: HOUSEHOLDLFS_DICT.XE01
     conditions:
       - questionText:
           CH: |
@@ -1196,72 +1196,72 @@ questions:
             <p><b style="font-family: Arial, sans-serif;">E01.&nbsp;</b></p><p><span style="font-family: Arial, sans-serif;">Kasi zina la munthu uyo wali kuluta kuwalo ni njani?&nbsp;</span><p></p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">E01&nbsp;</b><span style="font-family: Arial, sans-serif;">Ana&nbsp;</span><span style="font-family: Arial, sans-serif;">wiwatyosilewo lina lyawo wani?&nbsp;</span><p></p>
-  - name: HOUSEHOLDLFS_DICT.E02
+  - name: HOUSEHOLDLFS_DICT.XE02
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E02&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;ndi wa mwamuna kapena wa mkazi?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E02&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;ndi wa mwamuna kapena wa mkazi?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">What is the sex of&nbsp;&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">What is the sex of&nbsp;&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span></p><p></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E02&nbsp;</span></b><br></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;ni mwanalume panyakhe mwanakazi?&nbsp;</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">E02&nbsp;</span></b><br></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;ni mwanalume panyakhe mwanakazi?&nbsp;</span></p><p></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;wiwatyosilewo walume kapena wakongwe?&nbsp;</span><br><p></p></p>
-  - name: HOUSEHOLDLFS_DICT.E03
+            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;wiwatyosilewo walume kapena wakongwe?&nbsp;</span><br></p><p></p><p></p>
+  - name: HOUSEHOLDLFS_DICT.XE03
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E03&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;anali ndi zaka zingati pamene ankanyamuka?&nbsp;</span><br><p></p></p>
+            <p><b><span style="font-family: Arial;">E03&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;anali ndi zaka zingati pamene ankanyamuka?&nbsp;</span><br></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E03.</span></b></p><p><span style="font-family: Arial;">How old was&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;during the time he/she was migrating?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E03.</span></b></p><p><span style="font-family: Arial;">How old was&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;during the time he/she was migrating?&nbsp;</span></p><p></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E03&nbsp;</span></b></p><p><span style="font-family: Arial, sans-serif; font-size: 20px;">Kasi&nbsp;</span><span style="font-family: Arial; font-size: 20px;">&nbsp;</span><span style="font-weight: bold; font-family: Arial; font-size: 20px;">~~E01~~</span><span style="font-family: Arial; font-size: 20px;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 20px;">&nbsp;wakawa na vyaka vilinga apo wakalutanga kuwalo?&nbsp;</span><br></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">E03&nbsp;</span></b></p><p><span style="font-family: Arial, sans-serif; font-size: 20px;">Kasi&nbsp;</span><span style="font-family: Arial; font-size: 20px;">&nbsp;</span><span style="font-weight: bold; font-family: Arial; font-size: 20px;">~~XE01~~</span><span style="font-family: Arial; font-size: 20px;">&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 20px;">&nbsp;wakawa na vyaka vilinga apo wakalutanga kuwalo?&nbsp;</span><br></p><p></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E03.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;watyosilewo akwete yaka ilingwa?&nbsp;</span><br><p></p></p>
-  - name: HOUSEHOLDLFS_DICT.E04
+            <p><b><span style="font-family: Arial;">E03.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;watyosilewo akwete yaka ilingwa?&nbsp;</span><br></p><p></p><p></p>
+  - name: HOUSEHOLDLFS_DICT.XE04
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E04.&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;anapita m’dziko lanji?&nbsp;</span><br><p></p></p>
+            <p><b><span style="font-family: Arial;">E04.&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;anapita m’dziko lanji?&nbsp;</span><br></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E04.</span></b></p><p><span style="font-family: Arial;">To which country did&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;emigrate?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E04.</span></b></p><p><span style="font-family: Arial;">To which country did&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;emigrate?&nbsp;</span></p><p></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E04</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial;">&nbsp;wali kuluta ku charo ntchini?</span>&nbsp;</span></p><p><p></p></p>
+            <p><b><span style="font-family: Arial;">E04</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial;">&nbsp;wali kuluta ku charo ntchini?</span>&nbsp;</span></p><p></p><p></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E04.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;watyosilewo wapite chilambo chi?&nbsp;</span><br><p></p></p>
-  - name: HOUSEHOLDLFS_DICT.E05
+            <p><b><span style="font-family: Arial;">E04.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;watyosilewo wapite chilambo chi?&nbsp;</span><br></p><p></p><p></p>
+  - name: HOUSEHOLDLFS_DICT.XE05
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;anachoka m’chaka chanji?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;anachoka m’chaka chanji?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">In what year did&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;emigrate?&nbsp;</span>&nbsp;<p></p></p>
+            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">In what year did&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;emigrate?&nbsp;</span>&nbsp;</p><p></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E05</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;wakafumapo muchaka uli?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E05</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;wakafumapo muchaka uli?&nbsp;</span></p><p></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;watyosile chakachi?&nbsp;</span><p></p></p>
-  - name: HOUSEHOLDLFS_DICT.E05_1
+            <p><b><span style="font-family: Arial;">E05.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;watyosile chakachi?&nbsp;</span></p><p></p><p></p>
+  - name: HOUSEHOLDLFS_DICT.XE05_1
     conditions:
       - questionText:
           CH: |
             <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><br></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Is&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;still in the country of destination?&nbsp;</span></p><p></p>
+            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Is&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;still in the country of destination?&nbsp;</span></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;wachali muchalo icho wakaluta?&nbsp;</span><br></p><p></p>
+            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;wachali muchalo icho wakaluta?&nbsp;</span><br></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p>Ana&nbsp;<span style="font-family: Arial; font-weight: 700;">~~E01~~ </span><span style="font-family: Arial;">ali ku Chilambo ku wapiteko?</span></p><p></p>
-  - name: HOUSEHOLDLFS_DICT.E06
+            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p>Ana&nbsp;<span style="font-family: Arial; font-weight: 700;">~~XE01~~ </span><span style="font-family: Arial;">ali ku Chilambo ku wapiteko?</span></p><p></p>
+  - name: HOUSEHOLDLFS_DICT.XE06
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E06.&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;akupanga/ankapanga chiyani kunjako?&nbsp;</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">E06.&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;akupanga/ankapanga chiyani kunjako?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E06.</span></b></p><p><span style="font-family: Arial;">What activity is/was&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;doing abroad?&nbsp;</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">E06.</span></b></p><p><span style="font-family: Arial;">What activity is/was&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;doing abroad?&nbsp;</span></p><p></p><p></p>
           TU: |
-            <p><b><span style="font-family: Arial;">E06&nbsp;</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;wakuchita vichi kuwalo?&nbsp;</span><p></p></p>
+            <p><b><span style="font-family: Arial;">E06&nbsp;</span></b></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;wakuchita vichi kuwalo?&nbsp;</span></p><p></p><p></p>
           YA: |
-            <p><b><span style="font-family: Arial;">E06.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~E01~~</span><span style="font-family: Arial;">&nbsp;kusako akukamula masengo gachi?&nbsp;</span></p><p>&nbsp;</p><p></p>
+            <p><b><span style="font-family: Arial;">E06.</span></b></p><p><span style="font-family: Arial;">Ana&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;kusako akukamula masengo gachi?&nbsp;</span></p><p>&nbsp;</p><p></p>
   - name: HOUSEHOLDLFS_DICT.E_MORE_ROWS
     conditions:
       - questionText:
@@ -1273,7 +1273,7 @@ questions:
             <span style="font-family: Arial, sans-serif;">Kasi waliposo wanthu wanyakhe wapanyumba pano awo wali kuluta ku vyaro vyakuwalo mu <b>vyaka 10</b> ivyo vyajumpha (kufuma<b> 2013 mupaka 2023</b>)?&nbsp;</span><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif;">Pana wandu wane soni wiwatyosile kuja kusa kwa chilambo <b>chino yaka 10 ipiteyi (kutyochera mu chaka cha 2013-2023)</b>?&nbsp;</span><p></p>
-  - name: HOUSEHOLDLFS_DICT.E07
+  - name: HOUSEHOLDLFS_DICT.XE07
     conditions:
       - questionText:
           CH: |
@@ -1284,7 +1284,7 @@ questions:
             <p><b><span style="font-family: Arial;">E7&nbsp;</span></b></p><p><span style="font-family: Arial, sans-serif;">Kasi panyumba pinu pano mwapokerapo wovwiri wa ndalama mu vyaka 5 ivyo vyajumpha (<b>2018 </b>mupaka <b>2023</b>) kufuma kuvyalo vyakuwalo?&nbsp;</span></p><p></p><p></p>
           YA: |
             <p><b><span style="font-family: Arial; font-size: 20px;">E7.</span></b></p><p><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial; font-size: 20px;">Ana pa nlango pano wapochele chikamuchisyo chili chose chambiya payaka <b>nsano ipiteyi </b>(</span><b><span style="font-family: Arial; font-size: 20px;">2023 </span></b><span style="font-family: Arial; font-size: 20px;">mpaka </span><b><span style="font-family: Arial; font-size: 20px;">2023</span></b><span style="font-family: Arial; font-size: 20px;">) kutyochela kwamundu julijose juwatyosire kuja kusa?&nbsp;</span></span></p><p></p><p></p>
-  - name: HOUSEHOLDLFS_DICT.E08
+  - name: HOUSEHOLDLFS_DICT.XE08
     conditions:
       - questionText:
           CH: |
@@ -1295,7 +1295,7 @@ questions:
             <p><b><span style="font-family: Arial;">E8&nbsp;</span></b></p><p><span style="font-family: Arial, sans-serif;">Kasi ni ndalama zilinga izo mukapokera panyumba pano <b>mu miyezi 12 iyo yajumpha</b>? (in Malawi Kwacha)</span><br></p><p></p><p></p>
           YA: |
             <p><b><span style="font-family: Arial;">E8.</span></b></p><p><span style="font-family: Arial;">Wapochere mbiya silingwa kutyochera kusa kwa chilambo chino <b>myesi likumi ni jiwili jipiteji</b>? (in Malawi Kwacha)&nbsp;</span><span style="font-family: Arial;">&nbsp;juwatyosire kuja kusa?&nbsp;</span></p><p>&nbsp;</p><p></p>
-  - name: HOUSEHOLDLFS_DICT.E09
+  - name: HOUSEHOLDLFS_DICT.XE09
     conditions:
       - questionText:
           CH: |
@@ -1306,7 +1306,7 @@ questions:
             <p><b><span style="font-family: Arial;">E09&nbsp;</span></b></p><p><span style="font-family: Arial;">Kasi panyumba pinu pano mwapokerapo wovwiri wa katundu mu vyaka 5 ivyo vyajumpha&nbsp;</span><span style="font-family: Arial;">(</span><b><span style="font-family: Arial;">2023 </span></b><span style="font-family: Arial;">mupaka </span><b><span style="font-family: Arial;">2023</span></b><span style="font-family: Arial;">)</span><span style="font-family: Arial;">&nbsp;kufuma kuvyalo vyakuwalo?&nbsp;</span><br></p><p></p><p></p>
           YA: |
             <p><b><span style="font-family: Arial; font-size: 20px;">E09</span></b></p><p><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial; font-size: 20px;">Ana pa nlango pano wapochele chikamuchisyo chili chose chakatundu pa <b>yaka nsano ipiteyi </b>(</span><b><span style="font-family: Arial; font-size: 20px;">2018</span></b><span style="font-family: Arial; font-size: 20px;"> to </span><b><span style="font-family: Arial; font-size: 20px;">2023</span></b><span style="font-family: Arial; font-size: 20px;">) kutyochela kwamundu julijose juwa </span></span><span style="font-family: Arial; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family: Arial; font-size: 20px;">tyosire kuja kusa?</span><br></p><p></p><p></p>
-  - name: HOUSEHOLDLFS_DICT.E10
+  - name: HOUSEHOLDLFS_DICT.XE10
     conditions:
       - questionText:
           CH: |

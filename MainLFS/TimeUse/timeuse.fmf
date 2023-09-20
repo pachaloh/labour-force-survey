@@ -42,19 +42,13 @@ Item=TDEM_NAME
 [EndForm]
   
 [Form]
-Name=FORM004
-Label=Labor
+Name=FORM003
+Label=Day Activities
 QuestionTextHeight=184
 Level=1
-Repeat=TIME_USE
-Size=696,5623
+Size=1064,293
   
-Item=TU_END
-Item=TDEM_SEX
-Item=TDEM_BTH_YEAR
-Item=TDEM_BTH_MONTH
-Item=TDEM_AGE
-Item=TIND_END_TIME
+Item=DAY_ACTIVITY_ROSTER
   
 [EndForm]
   
@@ -63,9 +57,9 @@ Name=FORM002
 Label=Time-use vars
 QuestionTextHeight=184
 Level=1
-Size=519,198
+Size=1250,229
   
-Item=TIME_USE000
+Item=TIME_USE_ROSTER
   
 [EndForm]
   
@@ -248,106 +242,159 @@ Text=Name
   
 [Group]
 Required=Yes
-Name=XLABOR_REC_FORM
-Label=Labor
+Name=DAY_ACTIVITIES
+Label=Day Activities
 Form=3
+Max=1
+  
+[Grid]
+Name=DAY_ACTIVITY_ROSTER
+Label=Day activities
+Form=3
+Required=Yes
 Type=Record
-TypeName=TIME_USE
-Max=3
+TypeName=DAY_ACTIVITY
+Max=6
+DisplaySize=72,76,1039,268
+Orientation=Horizontal
+FieldRowHeight=0
+HeadingRowHeight=0
+UseOccurrenceLabels=Yes
+FreeMovement=No
+ 
+[Text]
+Position=0,4,15,28
+Text=1
+ 
   
+[Text]
+Position=0,4,15,28
+Text=2
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=3
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=4
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=5
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=6
+ 
+  
+[Column]
+Width=10
+[EndColumn]
+  
+[Column]
+Width=39
+  
+[HeaderText]
+Position=0,0,39,24
+Text=XT01
+ 
 [Field]
-Name=TDEM_SEX
-Position=532,32,547,52
-Item=TDEM_SEX,TIMEUSE_DICT
-FieldLabelType=DictionaryLabel
+Name=XT01
+Position=16,0,31,20
+Item=XT01,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
-Form=3
   
 [Text]
-Position=99,35,124,51
-Text=Sex
+Position=0,0,33,16
+Text=XT01
  
+[EndColumn]
   
-[Field]
-Name=TDEM_BTH_YEAR
-Position=532,62,589,82
-Item=TDEM_BTH_YEAR,TIMEUSE_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=ComboBox
-Form=3
+[Column]
+Width=39
   
-[Text]
-Position=99,65,177,81
-Text=Year of birth
+[HeaderText]
+Position=0,0,39,24
+Text=XT02
  
-  
 [Field]
-Name=TDEM_BTH_MONTH
-Position=531,97,560,117
-Item=TDEM_BTH_MONTH,TIMEUSE_DICT
-FieldLabelType=DictionaryLabel
+Name=XT02
+Position=0,0,15,20
+Item=XT02,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
-Form=3
   
 [Text]
-Position=98,100,186,116
-Text=Month of birth
+Text=XT02
  
+[EndColumn]
   
-[Field]
-Name=TDEM_AGE
-Position=532,136,575,156
-Item=TDEM_AGE,TIMEUSE_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
-Form=3
+[Column]
+Width=84
   
-[Text]
-Position=99,135,124,151
-Text=Age
+[HeaderText]
+Position=2,0,84,24
+Text=XT03_CODE
  
-  
-  
-  
 [Field]
-Name=TIND_END_TIME
-Position=488,5539,671,5559
-Item=TIND_END_TIME,TIMEUSE_DICT
+Name=XT03_CODE
+Position=0,0,43,20
+Item=XT03_CODE,TIMEUSE_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox
-Form=3
   
 [Text]
-Position=78,5546,179,5562
-Text=TIND_END_TIME
+Text=XT03_CODE
  
+[EndColumn]
   
+[Column]
+Width=709
+  
+[HeaderText]
+Position=670,0,709,24
+Text=XT03
+ 
 [Field]
-Name=TU_END
-Position=493,5578,508,5598
-Item=TU_END,TIMEUSE_DICT
-FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
-Form=3
+Name=XT03
+Position=0,0,701,20
+Item=XT03,TIMEUSE_DICT
+FieldLabelType=DictionaryName
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
   
 [Text]
-Position=64,5581,218,5597
-Text=End Individual Interview
+Text=XT03
  
-[Block]
-Name=BLOCK_MJJ_OCC
-Label=Main Job Work Type
-DisplayTogether=Yes
-Position=4
-Length=0
+[EndColumn]
   
-[Block]
-Name=BLOCK_SJJ_OCC
-Label=Second job type
-DisplayTogether=Yes
-Position=5
-Length=0
+[Column]
+Width=73
   
+[HeaderText]
+Position=0,0,73,24
+Text=XT03_ADD
+ 
+[Field]
+Name=XT03_ADD
+Position=0,0,15,20
+Item=XT03_ADD,TIMEUSE_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=TextBox
+  
+[Text]
+Text=XT03_ADD
+ 
+[EndColumn]
+  
+[EndGrid]
+ 
 [EndGroup]
   
 [Group]
@@ -358,14 +405,14 @@ Form=4
 Max=1
   
 [Grid]
-Name=TIME_USE000
+Name=TIME_USE_ROSTER
 Label=Time use
 Form=4
 Required=Yes
 Type=Record
 TypeName=TIME_USE
 Max=3
-DisplaySize=180,65,494,173
+DisplaySize=159,87,1225,204
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -402,6 +449,7 @@ Text=T01
 Name=T01
 Position=7,0,22,20
 Item=T01,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]
@@ -420,10 +468,31 @@ Text=T02
 Name=T02
 Position=7,0,22,20
 Item=T02,TIMEUSE_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+  
+[Text]
+Position=0,0,24,16
+Text=T02
+ 
+[EndColumn]
+  
+[Column]
+Width=716
+  
+[HeaderText]
+Position=686,0,716,24
+Text=T03
+ 
+[Field]
+Name=T03
+Position=7,0,708,20
+Item=T03,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]
-Text=T02
+Text=T03
  
 [EndColumn]
   
@@ -438,6 +507,7 @@ Text=T04
 Name=T04
 Position=7,0,22,20
 Item=T04,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]
@@ -446,16 +516,17 @@ Text=T04
 [EndColumn]
   
 [Column]
-Width=30
+Width=44
   
 [HeaderText]
-Position=0,0,30,24
+Position=14,0,44,24
 Text=T05
  
 [Field]
 Name=T05
-Position=7,0,22,20
+Position=7,0,36,20
 Item=T05,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]
@@ -474,7 +545,8 @@ Text=T06
 Name=T06
 Position=7,0,22,20
 Item=T06,TIMEUSE_DICT
-DataCaptureType=TextBox
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
   
 [Text]
 Text=T06
@@ -492,7 +564,8 @@ Text=T07
 Name=T07
 Position=7,0,22,20
 Item=T07,TIMEUSE_DICT
-DataCaptureType=TextBox
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
   
 [Text]
 Text=T07
@@ -510,7 +583,8 @@ Text=T08
 Name=T08
 Position=7,0,22,20
 Item=T08,TIMEUSE_DICT
-DataCaptureType=TextBox
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
   
 [Text]
 Text=T08
@@ -528,7 +602,8 @@ Text=T09
 Name=T09
 Position=7,0,22,20
 Item=T09,TIMEUSE_DICT
-DataCaptureType=TextBox
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
   
 [Text]
 Text=T09
@@ -546,7 +621,8 @@ Text=T10
 Name=T10
 Position=7,0,22,20
 Item=T10,TIMEUSE_DICT
-DataCaptureType=TextBox
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
   
 [Text]
 Text=T10
@@ -564,6 +640,7 @@ Text=T11
 Name=T11
 Position=6,0,21,20
 Item=T11,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]
@@ -582,6 +659,7 @@ Text=T12
 Name=T12
 Position=7,0,22,20
 Item=T12,TIMEUSE_DICT
+FieldLabelType=DictionaryName
 DataCaptureType=TextBox
   
 [Text]

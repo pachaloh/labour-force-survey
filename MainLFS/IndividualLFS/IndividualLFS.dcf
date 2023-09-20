@@ -2724,17 +2724,17 @@ ZeroFill=Yes
 Label=Tevet
 Name=TEVET_REC
 RecordTypeValue='3'
-RecordLen=111
+RecordLen=120
 
 [Item]
-Label=TVT01
+Label=TVT01. Was this work that you mentioned in
 Name=TVT01
 Start=46
 Len=19
 DataType=Alpha
 
 [ValueSet]
-Label=TVT01
+Label=TVT01. Was this work that you mentioned in
 Name=TVT01_VS1
 Value='A                  ';Automobile Mechanics (AMM)
 Value='B                  ';Administrative Studies (AAS)
@@ -2758,14 +2758,14 @@ Value='S                  ';Wood Work Machining (WWM)
 Value='X                  ';NONE OF THE ABOVE
 
 [Item]
-Label=TVT02
+Label=TVT02. Hired by someone else to do this work
 Name=TVT02
 Start=65
 Len=1
 DataType=Numeric
 
 [ValueSet]
-Label=TVT02
+Label=TVT02. Hired by someone else to do this work
 Name=TVT02_VS1
 Value=1;Yes
 Value=2;No
@@ -2792,11 +2792,17 @@ Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=TVT04
+Name=TVT04_VS1
+Value=1;YES
+Value=2;NO
+
 [Item]
 Label=TVT05
 Name=TVT05
 Start=68
-Len=1
+Len=9
 DataType=Numeric
 ZeroFill=Yes
 
@@ -2808,16 +2814,16 @@ Value=0:7;Valid
 [Item]
 Label=TVT06
 Name=TVT06
-Start=69
-Len=2
+Start=77
+Len=1
 DataType=Numeric
 ZeroFill=Yes
 
 [Item]
 Label=TVT07
 Name=TVT07
-Start=71
-Len=1
+Start=78
+Len=2
 DataType=Numeric
 ZeroFill=Yes
 
@@ -2830,20 +2836,28 @@ Value=2;No
 [Item]
 Label=TVT08
 Name=TVT08
-Start=72
+Start=80
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TVT09
+Name=TVT09
+Start=81
 Len=30
 DataType=Alpha
 
 [Item]
-Label=TVT
-Name=TVT09
-Start=102
+Label=TVT10
+Name=TVT10
+Start=111
 Len=9
 DataType=Alpha
 
 [ValueSet]
-Label=TVT
-Name=TVT09_VS1
+Label=TVT10
+Name=TVT10_VS1
 Value='A        ';My current job is only a temporary stepping stone, I am still searching for professional orientation
 Value='B        ';I have not found an appropriate job (yet)
 Value='C        ';I receive a higher salary in my current job
@@ -2857,7 +2871,7 @@ Value='Z        ';Other
 [Item]
 Label=TVT11
 Name=TVT11
-Start=111
+Start=120
 Len=1
 DataType=Numeric
 ZeroFill=Yes
