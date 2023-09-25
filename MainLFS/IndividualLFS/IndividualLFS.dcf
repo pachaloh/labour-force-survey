@@ -2806,11 +2806,6 @@ Len=9
 DataType=Numeric
 ZeroFill=Yes
 
-[ValueSet]
-Label=TVT05
-Name=TVT05_VS1
-Value=0:7;Valid
-
 [Item]
 Label=TVT06
 Name=TVT06
@@ -2818,6 +2813,11 @@ Start=77
 Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[ValueSet]
+Label=TVT06
+Name=TVT06_VS1
+Value=0:7;Valid
 
 [Item]
 Label=TVT07

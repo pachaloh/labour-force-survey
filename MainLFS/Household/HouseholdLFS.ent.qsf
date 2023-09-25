@@ -52,8 +52,8 @@ questions:
             <p class="MsoNormal"><span lang="NO-BOK" style="font-size: 16pt; font-family: Arial;" class="normal">Hello,
             my name is&nbsp;</span><span lang="NO-BOK" style="font-size:
             12.0pt"><span style="font-family: Arial; font-size: 16pt;" class="normal"><b>~~MCV_INTERVIEWER_NAME~~</b></span><span class="normal" style="font-size: 16pt; font-family: Arial;"><b>.</b> I am working with&nbsp;</span></span><b><span class="normal" style="font-size: 16pt; font-family: Arial;">National Statistical Office(NSO).</span></b><span class="normal" style="font-size: 16pt; font-family: Arial;"> We are
-            conducting a survey on </span><span lang="EN-GB" style="font-size: 16pt; font-family: Arial;" class="normal">Labour force and working
-            conditions of persons aged 15 to 64 as well as its impact on children between 5
+            conducting a survey on l</span><span lang="EN-GB" style="font-size: 16pt; font-family: Arial;" class="normal">abour force and working
+            conditions of persons aged 15 to 64 and on children between 5
             to 17.&nbsp;</span><span lang="EN-GB" class="normal" style="font-size: 16pt; font-family: Arial;">Your household is among the randomly selected households the survey
             questions will be administered to</span><span lang="NO-BOK" class="normal" style="font-size: 16pt; font-family: Arial;">. This interview usually takes about</span><span lang="NO-BOK" class="normal" style="font-size: 16pt; font-family: Arial;">&nbsp;</span><span class="normal" style="font-size: 16pt; font-family: Arial;">40</span><span class="normal" style="font-size: 16pt; font-family: Arial;">&nbsp;</span><span class="normal" style="font-size: 16pt; font-family: Arial;">minutes. Following this, I may ask to conduct
             additional interviews with you or other individual members of your household.
@@ -79,13 +79,13 @@ questions:
       - logic: curocc() = 1
         questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">DEM01.</span></b><br></p><p><span style="font-family: Arial;">Kodi mungandiuze m'ndandanda wa maina a anthu onse amene amakhalitsa pakhomo pano kuyambila ndi mutu wa pakhomo pano?</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">DEM00.</span></b><br></p><p><span style="font-family: Arial;">Kodi mungandiuze m'ndandanda wa maina a anthu onse amene amakhalitsa pakhomo pano kuyambila ndi mutu wa pakhomo pano?</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">DEM01.</span></b></p><p><span style="font-family: Arial;">Please give me the names of the persons who usually live in your household starting with the head of the household</span><br></p><p></p>
+            <p><b><span style="font-family: Arial;">DEM00.</span></b></p><p><span style="font-family: Arial;">Please give me the names of the persons who usually live in your household starting with the head of the household</span><br></p><p></p>
           TU: |
-            <p><b>DEM01.</b></p><p>Muniphalireko mazina gha wanthu awo wakukhala panyumba pano kwamba na mutu wapanyumba pano.&nbsp;<p></p></p>
+            <p><b><span style="font-family: Arial;">DEM00</span></b><b>.</b></p><p>Muniphalireko mazina gha wanthu awo wakukhala panyumba pano kwamba na mutu wapanyumba pano.&nbsp;</p><p></p><p></p>
           YA: |
-            <p><span style="font-family: Arial;">&nbsp;</span><b><span style="font-family: Arial;">DEM01.</span></b></p><p><span style="font-family: Arial;">Sambano ngusosa asalile mndandanda wa mena ga wandu wosope wasatamilisyaga pa mlango pano kutanda ni mtwe wa pamlango pano?</span></p><p></p><p></p>
+            <p><span style="font-family: Arial;">&nbsp;</span><b><span style="font-family: Arial;">DEM00.</span></b></p><p><span style="font-family: Arial;">Sambano ngusosa asalile mndandanda wa mena ga wandu wosope wasatamilisyaga pa mlango pano kutanda ni mtwe wa pamlango pano?</span></p><p></p><p></p>
       - logic: curocc() in 2:20
         questionText:
           CH: |
@@ -111,13 +111,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Name of respondent</i><p></p>
+            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Select name of respondent</i><br><p></p>
           ENG: |
-            <span style="font-size: 24px; font-family: Arial;" class="instruction"><i>Name of respondent</i></span>
+            <span style="font-size: 24px; font-family: Arial;" class="instruction"><i>Select name of respondent</i></span>
           TU: |
-            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Name of respondent</i><p></p>
+            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Select name of respondent</i><br><p></p>
           YA: |
-            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Name of respondent</i><p></p>
+            <i style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px;">Select name of respondent</i><br><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_01
     conditions:
       - questionText:
@@ -408,9 +408,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto la kuyankhula?&nbsp;</span></p><p>&nbsp;</p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto la ..........?&nbsp;</span></p><p>&nbsp;</p><p></p>
           ENG: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="color: rgb(51, 51, 51); font-weight: 700; font-family: Arial;">&nbsp;</span><span style="font-family: Arial;">have difficulty in speaking?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="color: rgb(51, 51, 51); font-weight: 700; font-family: Arial;">&nbsp;</span><font face="Arial">have difficulty remembering or concentrating?</font></p><p></p><p></p>
           TU: |
             <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial, sans-serif; font-size: 20px;">Kasi&nbsp;</span><b><span style="font-size: 20px;">~~DEM_NAME~~</span></b><span style="font-family: Arial, sans-serif; font-size: 20px;">&nbsp;wali na suzgo pakuyowoya?&nbsp;</span></p><p></p><p></p>
           YA: |
@@ -419,9 +419,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial;">&nbsp;ali ndi vuto lolephera kuphunzira zinthu zatsopano kapena kulongosola zinthu zovuta kapena kukumbukira?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial;">&nbsp;ali ndi vuto ..........................?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.</span><span style="color: rgb(51, 51, 51);"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial;">Does&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="color: rgb(51, 51, 51); font-family: Arial;">&nbsp;have difficulty learning new things or solving problems or remembering?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.</span><span style="color: rgb(51, 51, 51);"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial;">Does&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font color="#333333" face="Arial">&nbsp;have difficulty with (self-care such as) washing all over or dressing?&nbsp;</font></p><p></p><p></p>
           TU: |
             <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b>~~DEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;wali na suzgo pakusambira vinthu vipsya panyakhe kulongosola vinthu panyakhe kukumbukira?&nbsp;</span></p><p></p><p></p>
           YA: |
@@ -430,9 +430,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto (lodzisamalira yekha monga) kudzisambitsa kapena kudziveka?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto .........................................?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;"> have difficulty (with self-care such as) washing all over or dressing?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font face="Arial"> have difficulty communicating, for example understanding or being understood by others??&nbsp;</font></p><p></p><p></p>
           TU: |
             <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 26px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b>~~DEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;wali na suzgo (pakujipwererera yekha nga ni) kujigegiska panyakhe kujivwarika?&nbsp;</span></p><p></p><p></p>
           YA: |
@@ -452,9 +452,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">HC1.</span></b><br></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">&nbsp;ndi wachipembedzo chanji?&nbsp;</span></p><p><br></p><p></p>
+            <p><b><span style="font-family: Arial;">HC1.</span></b><br></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">&nbsp;ndi wa mpingo wanji?&nbsp;</span></p><p><br></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">HC1.</span></b><span style="font-family: Arial;"> </span></p><p><span style="font-family: Arial;">What is the religion of the&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">?</span></p><p></p><p><br></p><p></p>
+            <p><b><span style="font-family: Arial;">HC1.</span></b><span style="font-family: Arial;"> </span></p><p><span style="font-family: Arial;">What is the denomiation of the&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">?</span></p><p></p><p><br></p><p></p>
           TU: |
             <p><b><span style="font-family: Arial;">HC1.</span></b><br></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial, sans-serif;">&nbsp;ngwa mpingo wuli?&nbsp;</span></p><p>&nbsp;</p><p><br></p><p></p>
           YA: |

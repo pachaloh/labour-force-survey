@@ -1197,10 +1197,9 @@ PROC DEM_11
 
 preproc
 
-	ask if DEM_10 <> 0;
+	ask if DEM_10 <> 0 and DEM_10 <> 3;
 	ask if DEM_06>=3;
-	ask if not DEM_10 = 3;
-
+	
 onfocus
 
 	setvalueset($,maketext("DEM_11_VS%d",DEM_10));
@@ -1284,6 +1283,9 @@ onfocus
 	
 	elseif DEM_10 = 2 and DEM_11 in 11:12 then
 		setvalueset(DEM_12, DEM_12_VS2);
+		
+	elseif DEM_10 = 3 then
+		setvalueset(DEM_12, DEM_12_VS10);	
 	
 	elseif DEM_10 = 4 and DEM_11 in 15:17 then
 		setvalueset(DEM_12, DEM_12_VS7);

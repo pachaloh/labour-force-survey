@@ -582,7 +582,12 @@ Value=8;PhD
 [ValueSet]
 Label=TEVET qualifications
 Name=DEM_12_VS10
-Value=10;Certificate of compitence
+Value=0;None
+Value=1;Primary School Leaving Certficate
+Value=2;Junior Cetificate of Education
+Value=3;Malawi School Cettificate of Education/General Certificate of Education
+Value=4;A Level
+Value=10;Certificate of competence
 Value=11;TEVET Level 1/Trade test grade 3/Malawi craft certificate
 Value=12;TEVET Level 2/Trade test grade 2/Malawi craft Intermediate certificate
 Value=13;TEVET Level 3/Trade test grade 1/Malawi craft advanced certificate
