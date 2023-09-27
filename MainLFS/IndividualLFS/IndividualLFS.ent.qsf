@@ -430,6 +430,11 @@ questions:
       - questionText:
           EN: |
             <b>TVT07</b>. How many hours per day did (you/NAME) spend doing this last week?&nbsp;<p></p>
+  - name: INDIVIDUALLFS_DICT.TVT08
+    conditions:
+      - questionText:
+          EN: |
+            <b>TVT08</b>.&nbsp;In your opinion, do you think your field of study is appropriate to your current employment?&nbsp;<p></p>
   - name: INDIVIDUALLFS_DICT.TVT09
     conditions:
       - questionText:

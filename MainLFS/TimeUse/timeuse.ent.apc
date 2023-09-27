@@ -3,19 +3,48 @@ PROC GLOBAL
 
 PROC TIMEUSE_FF
 
+PROC XT01
+
+preproc
+
+if curocc() > 1 then
+	if XT03_ADD(curocc()-1) = 1 then
+		$ = $(curocc()-1);
+		noinput;
+	endif;
+endif;
+PROC XT02
+
+preproc
+
+if curocc() > 1 then
+	if XT03_ADD(curocc()-1) = 1 then
+		$ = $(curocc()-1);
+		noinput;
+	else
+	{	if 
+			$ = $(curocc()) + 1;
+		endif;
+	}
+	endif;
+endif;
+PROC XT03_ADD
+
 PROC T01
 
 preproc
 
 	$ = XT01(curocc());
+	noinput;
 PROC T02
 
 preproc
 
 	$ = XT02(curocc());
-	
+	noinput;
 PROC T03
 
 preproc
 
 	$ = XT03(curocc());
+	noinput;
