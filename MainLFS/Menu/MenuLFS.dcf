@@ -189,7 +189,7 @@ ZeroFill=Yes
 Label=Interviews
 Name=INTERVIEWS
 RecordTypeValue='8'
-RecordLen=132
+RecordLen=176
 
 [Item]
 Label=Interview household
@@ -209,5 +209,12 @@ DataType=Alpha
 Label=Interview child
 Name=INTERVIEW_CHILD
 Start=89
+Len=44
+DataType=Alpha
+
+[Item]
+Label=Time Use 
+Name=TIME_USE_SURVEY
+Start=133
 Len=44
 DataType=Alpha

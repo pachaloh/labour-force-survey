@@ -29,13 +29,19 @@ end;
 
 
 //Funtion to identify eligible members
-function eligibles(valueset string eligible_persons, valueset string eligible_child)
+function eligibles(valueset string eligible_persons, valueset string eligible_child, valueset string eligible_timeuse)
 	//Loop through household data files and identify eligible members
 	forcase HOUSEHOLDLFS_DICT where CLUSTER = MCLUSTER and GHINTID = LOGIN do   //Fix a household
 		do numeric member_index = 1 while member_index <= GHHHSIZE				//Loop through members of the household
 			if DEM_06(member_index) in 15:64 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
 				
 				eligible_persons.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
+				
+			endif;
+			
+			if DEM_06(member_index) in 15:64 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
+				
+				eligible_timeuse.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
 				
 			endif;
 			
@@ -115,10 +121,7 @@ end
 
 
 
-
-
-
-function eligible_members(valueset string eligible_persons, valueset string eligible_child)
+function eligible_members(valueset string eligible_persons, valueset string eligible_child, valueset string eligible_timeuse)
 	numeric counter = 1, sumCheck, index = 1;
 
 	
@@ -150,13 +153,40 @@ function eligible_members(valueset string eligible_persons, valueset string elig
 			endif;
 			
 			
+
+		//eligible_timeuse.add(maketext("%v Household",strip(DEM_NAME(1))),"0");
+					
+			//If an eligible adult is found in household datafile, check if interviewed
+			if DEM_06(counter) in 15:64 {and HH_END in 1:9} then
+			
+				//PersonCaseId = maketext("%v%v%v%v",TCLUSTER,TGHINTCODE,TGHHHNO,edit("99",THMPPNO));
+				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
+
+				
+				if loadcase(TIMEUSE_DICT,PersonCaseId) {and TU_END <> notappl} then	
+					eligible_timeuse.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				elseif loadcase(TIMEUSE_DICT,PersonCaseId) {and TU_END = notappl} then
+				
+					eligible_timeuse.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				else
+
+					eligible_timeuse.add(maketext("%-25v (NOT INTERVIEWED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				endif;
+				
+				index = index + 1; 
+				
+			endif;
+			
+			
 			
 			//If an eligible child is found in household datafile, check if interviewed
 			if DEM_06(counter) in 5:17 {and HH_END in 1:9} then
 				
 				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
-				
-				
+								
 				if loadcase(CHILD_LABOUR_DICT,PersonCaseId) and CHILD_END_RESULT <> notappl then	
 					eligible_child.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
 				
@@ -407,6 +437,82 @@ function launchChild()
     execpff(filename(dynamic_pff), stop); 
 
 end; 
+
+
+function time_use_ind2() 
+
+    // change the following filename to your desired output 
+    string pff_filename = path.concat(Application, "../TimeUse/timeuse.pff"); 
+
+    file dynamic_pff; 
+    setfile(dynamic_pff, pff_filename, create); 
+
+    filewrite(dynamic_pff, "[Run Information]"); 
+    filewrite(dynamic_pff, "Version=CSPro 7.7"); 
+    filewrite(dynamic_pff, "AppType=Entry"); 
+
+    filewrite(dynamic_pff, "[DataEntryInit]"); 
+	filewrite(dynamic_pff, "Key=%s", TIME_USE_SURVEY);
+	filewrite(dynamic_pff, "StartMode=Add");
+	filewrite(dynamic_pff, "Lock=CaseListing");
+	filewrite(dynamic_pff, "ShowInApplicationListing=Never");
+
+
+    filewrite(dynamic_pff, "[Files]"); 
+    filewrite(dynamic_pff, "Application=%v", "./timeuse.ent"); 
+    filewrite(dynamic_pff, "InputData=%v", "../Data/Timeuse.csdb"); 
+
+    filewrite(dynamic_pff, "[Parameters]");
+	filewrite(dynamic_pff, "TCLUSTER=%s", TIME_USE_SURVEY[1:4]);		//Cluster number
+	filewrite(dynamic_pff, "TGHHHNO=%s", TIME_USE_SURVEY[41:2]); 		//Household number
+	filewrite(dynamic_pff, "THMPPNO=%s", TIME_USE_SURVEY[43:2]); 		//Child's line number
+	filewrite(dynamic_pff, "TGHINTCODE=%s", LOGIN); 					//Interviewer ID
+	filewrite(dynamic_pff, "TGHINTNAME=%s", getlabel(LOGIN,LOGIN)); 	//Interviewer name
+    filewrite(dynamic_pff, "OnExit=%v", "../Menu/MenuLFS.pff"); 
+
+    close(dynamic_pff); 
+
+    execpff(filename(dynamic_pff), stop); 
+
+end; 
+
+
+function time_use_ind() 
+
+    // change the following filename to your desired output 
+    string pff_filename = path.concat(Application, "../TimeUse/timeuse.pff"); 
+
+    file dynamic_pff; 
+    setfile(dynamic_pff, pff_filename, create); 
+
+    filewrite(dynamic_pff, "[Run Information]"); 
+    filewrite(dynamic_pff, "Version=CSPro 7.7"); 
+    filewrite(dynamic_pff, "AppType=Entry"); 
+    filewrite(dynamic_pff, "ShowInApplicationListing=Never"); 
+
+    filewrite(dynamic_pff, "[DataEntryInit]"); 
+    filewrite(dynamic_pff, "StartMode=Add"); 
+    filewrite(dynamic_pff, "Key=%v", "0001d72daca0-de5e-44fd-af03-f7a880b313b40301"); 
+    filewrite(dynamic_pff, "Lock=CaseListing"); 
+
+    filewrite(dynamic_pff, "[Files]"); 
+    filewrite(dynamic_pff, "Application=%v", "./timeuse.ent"); 
+    filewrite(dynamic_pff, "InputData=%v", "../Data/Timeuse.csdb"); 
+
+    filewrite(dynamic_pff, "[Parameters]"); 
+    filewrite(dynamic_pff, "TCLUSTER=%v", TIME_USE_SURVEY[1:4]); 
+    filewrite(dynamic_pff, "TGHHHNO=%v", TIME_USE_SURVEY[41:2]); 
+    filewrite(dynamic_pff, "THMPPNO=%v", TIME_USE_SURVEY[43:2]); 
+    filewrite(dynamic_pff, "TGHINTCODE=%v", LOGIN); 
+    filewrite(dynamic_pff, "TGHINTNAME=%v", getlabel(LOGIN,LOGIN)); 
+    filewrite(dynamic_pff, "OnExit=%v", "../Menu/MenuLFS.pff"); 
+
+    close(dynamic_pff); 
+
+    execpff(filename(dynamic_pff),stop); 
+
+end; 
+
 
 
 
@@ -1114,6 +1220,7 @@ onfocus
 	valueset numeric assigned_hhs;
 	valueset string eligible_persons;
 	valueset string eligible_child;
+	valueset string eligible_timeuse;
 
 	
 	//Loop through already assigned households for a specific interviewer
@@ -1123,7 +1230,7 @@ onfocus
 	
 
 
-	eligibles(eligible_persons,eligible_child);
+	eligibles(eligible_persons,eligible_child,eligible_timeuse);
 	
 	if assigned_hhs.length() > 0 then
 		interviewer_menu.add("Interview household",1);
@@ -1136,11 +1243,16 @@ onfocus
 		interviewer_menu.add("Interview Individual",2);
 	endif;
 	
+	
 	if eligible_child.length() > 0 then
 		interviewer_menu.add("Interview Child",3);
 	endif;
 	
-		interviewer_menu.add("Sync data with supervisor",4);
+	if eligible_timeuse.length() > 0 then
+		interviewer_menu.add("Time Use",4);
+	endif;
+	
+		interviewer_menu.add("Sync data with supervisor",5);
 		interviewer_menu.add("View Assigned tasks",5);
 		interviewer_menu.add("Change cluster",6);
 		interviewer_menu.add("Logout",9);
@@ -1154,10 +1266,12 @@ postproc
 		if $ = 1 then		
 			skip to INTERVIEW_HH;
 		elseif $ = 2 then
-			skip to INTERVIEW_IN
+			skip to INTERVIEW_IN;
 		elseif $ = 3 then
-			skip to INTERVIEW_CHILD	
+			skip to INTERVIEW_CHILD	;
 		elseif $ = 4 then
+			skip to TIME_USE_SURVEY;	
+		elseif $ = 5 then
 			syncWithSupervisor();
 			reenter;
 		elseif $ = 5 then
@@ -1266,6 +1380,7 @@ onfocus
 
 	valueset string eligible_persons;
 	valueset string eligible_child;
+	valueset string eligible_timeuse;
 {	
 	eligibles(eligible_persons,eligible_child);
 
@@ -1311,7 +1426,7 @@ onfocus
 }
 
 
-	eligible_members(eligible_persons, eligible_child);
+	eligible_members(eligible_persons, eligible_child, eligible_timeuse);
 	
 	setvalueset($,eligible_persons);
 	
@@ -1331,17 +1446,42 @@ onfocus
 
 	valueset string eligible_persons;
 	valueset string eligible_child;
+	valueset string eligible_timeuse;
 {	
 	eligibles(eligible_persons,eligible_child);
 	
 	setvalueset($,eligible_child);
 }
 
-	eligible_members(eligible_persons,eligible_child);
+	eligible_members(eligible_persons,eligible_child,eligible_timeuse);
 	setvalueset($,eligible_child);
 
 	
 postproc
 	
 	launchChild();
+	reenter;
+PROC TIME_USE_SURVEY
+
+
+onfocus
+
+
+	valueset string eligible_persons;
+	valueset string eligible_child;
+	valueset string eligible_timeuse;
+
+	eligible_members(eligible_persons, eligible_child, eligible_timeuse);
+	
+	setvalueset($,eligible_timeuse);
+	
+postproc
+
+	if $ = "0" then
+		errmsg("Select an individual");
+		reenter;
+	else
+		time_use_ind();
+	endif;
+	
 	reenter;

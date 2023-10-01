@@ -21,6 +21,7 @@ File=..\Dicts\assigned_hhs.dcf
 File=..\IndividualLFS\IndividualLFS.dcf
 File=..\Household\HouseholdLFS.dcf
 File=..\ChildLFS\ChildLFS.dcf
+File=..\TimeUse\timeuse.dcf
 [AppCode]
 File=.\MenuLFS.ent.apc
 Include=..\Shared Logic\ProgressReport.apc
@@ -39,3 +40,4 @@ Dict-Type=..\Dicts\assigned_hhs.dcf,External
 Dict-Type=..\IndividualLFS\IndividualLFS.dcf,External
 Dict-Type=..\Household\HouseholdLFS.dcf,External
 Dict-Type=..\ChildLFS\ChildLFS.dcf,External
+Dict-Type=..\TimeUse\timeuse.dcf,External

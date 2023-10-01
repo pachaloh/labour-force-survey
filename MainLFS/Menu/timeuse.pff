@@ -12,7 +12,7 @@ InputData=../Data/Timeuse.csdb
 [Parameters]
 TCLUSTER=0001
 TGHHHNO=03
-THMPPNO=01
+THMPPNO=02
 TGHINTCODE=d72daca0-de5e-44fd-af03-f7a880b313b4
 TGHINTNAME=BRIAN
 OnExit=../Menu/MenuLFS.pff

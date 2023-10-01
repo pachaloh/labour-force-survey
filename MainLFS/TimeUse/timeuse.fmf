@@ -57,9 +57,9 @@ Name=FORM002
 Label=Time-use vars
 QuestionTextHeight=184
 Level=1
-Size=1250,229
+Size=1169,301
   
-Item=TIME_USE_ROSTER
+Item=TIME_USE000
   
 [EndForm]
   
@@ -263,32 +263,32 @@ UseOccurrenceLabels=Yes
 FreeMovement=No
  
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=1
  
   
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=2
  
   
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=3
  
   
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=4
  
   
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=5
  
   
 [Text]
-Position=0,4,15,28
+Position=0,5,15,29
 Text=6
  
   
@@ -383,12 +383,13 @@ Text=XT03_ADD
  
 [Field]
 Name=XT03_ADD
-Position=0,0,15,20
+Position=0,1,15,21
 Item=XT03_ADD,TIMEUSE_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
   
 [Text]
+Position=0,0,69,16
 Text=XT03_ADD
  
 [EndColumn]
@@ -405,14 +406,14 @@ Form=4
 Max=1
   
 [Grid]
-Name=TIME_USE_ROSTER
+Name=TIME_USE000
 Label=Time use
 Form=4
 Required=Yes
 Type=Record
 TypeName=TIME_USE
-Max=3
-DisplaySize=159,87,1225,204
+Max=6
+DisplaySize=143,67,1144,259
 Orientation=Horizontal
 FieldRowHeight=0
 HeadingRowHeight=0
@@ -432,6 +433,21 @@ Text=2
 [Text]
 Position=0,4,15,28
 Text=3
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=4
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=5
+ 
+  
+[Text]
+Position=0,4,15,28
+Text=6
  
   
 [Column]
@@ -472,23 +488,23 @@ FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
   
 [Text]
-Position=0,0,24,16
 Text=T02
  
 [EndColumn]
   
 [Column]
-Width=716
+Width=709
   
 [HeaderText]
-Position=686,0,716,24
+Position=679,0,709,24
 Text=T03
  
 [Field]
 Name=T03
-Position=7,0,708,20
+Position=0,0,701,20
 Item=T03,TIMEUSE_DICT
 FieldLabelType=DictionaryName
+UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
   
 [Text]
@@ -508,7 +524,7 @@ Name=T04
 Position=7,0,22,20
 Item=T04,TIMEUSE_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
   
 [Text]
 Text=T04
@@ -516,15 +532,15 @@ Text=T04
 [EndColumn]
   
 [Column]
-Width=44
+Width=37
   
 [HeaderText]
-Position=14,0,44,24
+Position=7,0,37,24
 Text=T05
  
 [Field]
 Name=T05
-Position=7,0,36,20
+Position=0,0,29,20
 Item=T05,TIMEUSE_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=TextBox

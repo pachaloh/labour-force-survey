@@ -295,7 +295,7 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=Activity 
+Label=Activity
 Name=XT03
 Start=51
 Len=50
@@ -308,11 +308,17 @@ Start=101
 Len=1
 DataType=Numeric
 
+[ValueSet]
+Label=More activities
+Name=XT03_ADD_VS1
+Value=1;Yes
+Value=2;No
+
 [Record]
 Label=Time use
 Name=TIME_USE
 RecordTypeValue='T'
-MaxRecords=3
+MaxRecords=6
 RecordLen=108
 
 [Item]
@@ -421,7 +427,7 @@ ZeroFill=Yes
 Label=T08
 Name=T08_VS1
 Value=1;Productive paid work
-Value=2;Unpaid productive work for the household/family 
+Value=2;Unpaid productive work for the household/family
 Value=3;Productive unpaid work outside the household/family
 Value=4;Personal activity
 

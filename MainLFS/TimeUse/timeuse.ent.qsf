@@ -41,6 +41,16 @@ questions:
       - questionText:
           EN: |
             <b>T03.&nbsp;</b>What were you doing yesterday morning between ~~getlabel(XT02,XT02)~~?<p></p>
+  - name: TIMEUSE_DICT.XT03
+    conditions:
+      - questionText:
+          EN: |
+            <b>T03.&nbsp;</b>What were you doing yesterday morning between ~~getlabel(XT02,XT02)~~?<p></p>
+  - name: TIMEUSE_DICT.XT03_ADD
+    conditions:
+      - questionText:
+          EN: |
+            Is there another activity you did between ~~getlabel(XT02,XT02)~~?<p></p>
   - name: TIMEUSE_DICT.T01
     conditions:
       - questionText:
@@ -65,7 +75,7 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <b>T05.</b>&nbsp;How long did the activity (<i><font color="#ff0000">~~T03~~</font></i>) take?<p></p>
+            <p><b>T05.</b>&nbsp;How long did the activity (<i><font color="#ff0000">~~T03~~</font></i>) take?</p><p><p><font color="#0000ff"><i>Record duration in minutes</i></font></p></p>
   - name: TIMEUSE_DICT.T06
     conditions:
       - questionText:
@@ -80,12 +90,12 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <b>T08.</b>&nbsp;Pease classify the activities described&nbsp; in T03<p></p>
+            <b>T08.</b>&nbsp;Pease classify the activities described&nbsp; in (<i><font color="#ff0000">~~T03~~</font></i>)<p></p>
   - name: TIMEUSE_DICT.T09
     conditions:
       - questionText:
           EN: |
-            T09.&nbsp;Who was with you?<p></p>
+            T09.&nbsp;Who was with you when doing (<i><font color="#ff0000">~~T03~~</font></i>) ?<p></p>
   - name: TIMEUSE_DICT.T10
     conditions:
       - questionText:

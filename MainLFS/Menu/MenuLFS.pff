@@ -1,7 +1,7 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-Description=Labour Force Survey, 2023 - 25Sept2023
+Description=Labour Force Survey, 2023 - 28Sept2023v2
 
 [DataEntryInit]
 StartMode=Add
@@ -20,6 +20,7 @@ HOUSEHOLDLFS_DICT=..\Data\Household.csdb
 HOUSEHOLDS_DICT=..\Lookups\hh_database.csdb
 INDIVIDUALLFS_DICT=..\Data\Individual.csdb
 TEAMS_DICT=..\Data\teams.csdb
+TIMEUSE_DICT=..\Data\Timeuse.csdb
 
 [UserFiles]
 reportfile=

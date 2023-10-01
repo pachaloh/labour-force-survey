@@ -83,11 +83,12 @@ Item=INTERV_MENU
 Name=FORM005
 Label=Interviews
 Level=1
-Size=677,270
+Size=1181,302
   
 Item=INTERVIEW_HH
 Item=INTERVIEW_IN
 Item=INTERVIEW_CHILD
+Item=TIME_USE_SURVEY
   
 [EndForm]
   
@@ -384,6 +385,19 @@ Form=7
 [Text]
 Position=388,228,482,244
 Text=Interview child
+ 
+  
+[Field]
+Name=TIME_USE_SURVEY
+Position=539,257,1156,277
+Item=TIME_USE_SURVEY,MENULFS_DICT
+FieldLabelType=DictionaryName
+DataCaptureType=RadioButton
+Form=7
+  
+[Text]
+Position=384,260,507,276
+Text=TIME_USE_SURVEY
  
 [EndGroup]
   
