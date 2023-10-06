@@ -972,10 +972,10 @@ endif;
 
 PROC DEM_05
 
-
+	//Pachalo, 05Oct2023, Replaced SurveyDate with sysdate("YYYYMMDD")
 	if DEM_05 > SurveyYear or DEM_05 = SurveyYear and DEM_04 > SurveyMonth and DEM_04 <> 99 then
 		errmsg("Date of birth %04d/%02d is invalid. Date of birth cannot be after survey reference date of %s.",
-			DEM_05, DEM_04, edit("9999/99/99", SurveyDate));
+			DEM_05, DEM_04, edit("9999/99/99", sysdate("YYYYMMDD")));
 		reenter;
 	endif;
 PROC DEM_06
@@ -985,7 +985,7 @@ postproc
 	if DEM_05 <> missing then 
 	
 		numeric birthDate = DEM_05 * 10000 + DEM_04 * 100 + 1;
-		numeric calculatedAgeYears = datediff(birthDate, SurveyDate, "y");
+		numeric calculatedAgeYears = datediff(birthDate, sysdate("YYYYMMDD"), "y");
 		
 	
 		if DEM_04 = SurveyMonth then //if born in survey month
@@ -993,14 +993,14 @@ postproc
 				// If AGE is not in the range of calculated years then it is an error.
 				if calculatedAgeYears - 1 < 0 then
 					errmsg("Age %d is invalid. The age is %d based on the date of birth %04d/%02d and survey reference date of %s.",
-						$, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", SurveyDate))
+						$, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", sysdate("YYYYMMDD")))
 						select("Reenter Month", DEM_04,
 				      		   "Reenter Year of Birth", DEM_05,
 				       	   	   "Reenter the age", DEM_06);	
 				       	   	   			
 				else
 					errmsg("Age %d is invalid. The age is either %d or %d based on the date of birth %04d/%02d and survey reference date of %s.",
-						$, calculatedAgeYears - 1, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", SurveyDate))
+						$, calculatedAgeYears - 1, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", sysdate("YYYYMMDD")))
 						select("Reenter Month", DEM_04,
 				      		   "Reenter Year of Birth", DEM_05,
 				       	   	   "Reenter the age", DEM_06);
@@ -1012,20 +1012,20 @@ postproc
 			if DEM_04 = 99 then //If month born is unknown, then set it to January.
 				numeric unknownMonth = 1;
 				numeric unknownBirthDate = DEM_05 * 10000 + unknownMonth * 100 + 1;							  		 
-				calculatedAgeYears = datediff(unknownBirthDate, SurveyDate, "y");
+				calculatedAgeYears = datediff(unknownBirthDate, sysdate("YYYYMMDD"), "y");
 				
 				if not(DEM_06 in calculatedAgeYears - 1:calculatedAgeYears) then
 					// If Age is not in the range of calculated years then it is an error.
 					if calculatedAgeYears - 1 < 0 then
 						errmsg("Age %d is invalid. The age is %d based on the year of birth %04d and survey reference date of %s.",
-							$, calculatedAgeYears, DEM_05, edit("9999/99/99", SurveyDate))
+							$, calculatedAgeYears, DEM_05, edit("9999/99/99", sysdate("YYYYMMDD")))
 							select("Reenter Month", DEM_04,
 					      		   "Reenter Year of Birth", DEM_05,
 					       	   	   "Reenter the age", DEM_06);
 					       	   	   
 					else
 						errmsg("Age %d is invalid. The age is either %d or %d based on the year of birth %04d and survey reference date of %s.",
-							$, calculatedAgeYears - 1, calculatedAgeYears, DEM_05, edit("9999/99/99", SurveyDate))
+							$, calculatedAgeYears - 1, calculatedAgeYears, DEM_05, edit("9999/99/99", sysdate("YYYYMMDD")))
 							select("Reenter Month", DEM_04,
 					      		   "Reenter Year of Birth", DEM_05,
 					       	   	   "Reenter the age", DEM_06);
@@ -1035,7 +1035,7 @@ postproc
 				
 			elseif DEM_06 <> calculatedAgeYears then
 				errmsg("Age %d is invalid. The age is %d based on the date of birth %04d/%02d and survey reference date of %s.",
-					$, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", SurveyDate))
+					$, calculatedAgeYears, DEM_05, DEM_04, edit("9999/99/99", sysdate("YYYYMMDD")))
 					select("Reenter Month", DEM_04,
 			      		   "Reenter Year of Birth", DEM_05,
 			       		   "Reenter the age", DEM_06);
@@ -1197,7 +1197,7 @@ PROC DEM_11
 
 preproc
 
-	ask if DEM_10 <> 0 and DEM_10 <> 3;
+	ask if DEM_10 <> 0 {and DEM_10 <> 3};
 	ask if DEM_06>=3;
 	
 onfocus
@@ -1226,6 +1226,25 @@ postproc
 			19	-> 14	;	// Form6
 				-> 14   ;   // 20+ yrs max is Form 6
 		endrecode;
+{
+	elseif DEM_10 = 3 then //University
+
+		recode DEM_06  -> HighestClassCheck;
+		   17    -> 15;			// 1st Year
+		   18    -> 16 ; 		// 2nd Year
+		   19    -> 17 ; 		// 3rd Year
+		   20    -> 18 ; 		// 4th Year
+		   21    -> 19 ; 		// 5th Year
+		   22    -> 20 ; 		// 6th Year
+		   23	 -> 21 ;		// Msc
+		   24	 -> 22 ;		// Msc
+		   25	 -> 23 ;	    // PhD Year1
+		   26	 -> 24 ;	    // PhD Year2
+		   27	 -> 25 ;	    // PhD Year3
+		   28	 -> 26 ;	    // PhD Year4
+				 -> 26 ;        // 29+ yrs max is PhD Year 4
+		endrecode;
+}
 
 	elseif DEM_10 = 4 then //University
 
@@ -1245,10 +1264,10 @@ postproc
 				 -> 26 ;        // 29+ yrs max is PhD Year 4
 		endrecode;
 
-	elseif DEM_10 = 55 then //other tertiary level
+	elseif DEM_10 = 5 then //other tertiary level
 
 	   recode DEM_06  -> HighestClassCheck;
-		17:18    -> 27;			// Other tertiary 1st Year
+		17:18    -> 27 ;		// Other tertiary 1st Year
 		   19    -> 28 ; 		// Other tertiary 2nd Year
 		   20    -> 29 ; 		// Other tertiary 3rd Year
 		   21    -> 30 ; 		// Other tertiary 4th Year
@@ -1297,11 +1316,14 @@ onfocus
 		setvalueset(DEM_12, DEM_12_VS9);
 	
 	elseif DEM_10 = 5 then
-		setvalueset(DEM_12, DEM_12_VS9);
+		setvalueset(DEM_12, DEM_12_VS8);
 	
 	endif;
 
-
+//Pachalo: 2 Oct, 2023
+postproc
+	
+	
 PROC DEM_13
 
 preproc ask if DEM_10 in 3,4;
@@ -1351,6 +1373,21 @@ onfocus
 		endfor;
 		
 setvalueset($,Detailed_field_ed);
+PROC DEM_13D
+
+preproc
+	
+	ask if DEM_10 = 3;
+PROC DEM_13E
+
+preproc
+	
+	ask if DEM_13D = 1;
+PROC DEM_13F
+
+preproc
+	
+	ask if DEM_13D = 2;
 PROC DEM_14
 
 	if $ = 1 then
@@ -1365,7 +1402,7 @@ postproc
 
 	if DEM_16 > SurveyYear then
 		errmsg("Year of arrival %04d is invalid. Year of arrival cannot be after survey reference date of %s.",
-			DEM_16, edit("9999/99/99", SurveyDate));
+			DEM_16, edit("9999/99/99", sysdate("YYYYMMDD")));
 		reenter;
 	endif;
 	

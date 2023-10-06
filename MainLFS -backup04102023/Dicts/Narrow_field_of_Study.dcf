@@ -1,0 +1,52 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Narrow Field Codes Dictionary
+Name=NARROW_FIELD_CODES_DICT
+RecordTypeStart=0
+RecordTypeLen=0
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=D0A667AB6C16868D0AFB0B47EFFD8F1A36BD0D1431F83677D28CB5EC64FBD5F405FA406B9710EF4B88B7062B1650E453
+
+[Level]
+Label=Narrow Field Codes Level
+Name=NARROW_FIELD_CODES_LEVEL
+
+[IdItems]
+
+[Item]
+Label=N Broad Field Codes
+Name=N_BROAD_FIELD_CODES
+Start=1
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=N Narrow Field Codes
+Name=N_NARROW_FIELD_CODES
+Start=3
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Narrow Field Codes Record
+Name=NARROW_FIELD_CODES_REC
+RecordTypeValue=''
+RecordLen=566
+
+[Item]
+Label=N Broad Field
+Name=N_BROAD_FIELD
+Start=6
+Len=512
+DataType=Alpha
+
+[Item]
+Label=N Narrow Field
+Name=N_NARROW_FIELD
+Start=518
+Len=49
+DataType=Alpha

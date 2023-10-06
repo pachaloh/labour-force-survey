@@ -1,0 +1,120 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "LabourForceSurvey2023",
+  "description": "Malawi Labour Force Survey",
+  "buildTime": "2023-10-01T12:49:05Z",
+  "files": [
+    {
+      "path": ".\\ChildLFS\\ChildLFS.pen",
+      "signature": "2C739F0932C2581BB0F792A1AF902FC3"
+    },
+    {
+      "path": ".\\ChildLFS\\ChildLFS.pff",
+      "signature": "051B37DBEE2971C1BA8130FE7A549E7D"
+    },
+    {
+      "path": ".\\Household\\HouseholdLFS.pen",
+      "signature": "C34DE9D1F8841A52A2B0524893B4C9D0"
+    },
+    {
+      "path": ".\\Household\\HouseholdLFS.pff",
+      "signature": "3311A0C1C74561514041EE31906FBDB9"
+    },
+    {
+      "path": ".\\IndividualLFS\\IndividualLFS.pen",
+      "signature": "32E20E8BA882E59A07EA8CD83EB9A434"
+    },
+    {
+      "path": ".\\IndividualLFS\\IndividualLFS.pff",
+      "signature": "59863A58AB5A11B1F259D6B75A17C73D"
+    },
+    {
+      "path": ".\\Lookups\\clusters.csdb",
+      "signature": "187B44C0EA104453393E741761B7A82A"
+    },
+    {
+      "path": ".\\Lookups\\Detailed_field_of_study.csdb",
+      "signature": "4E61BD53F1B709DA4E4EA3E96C0134FD"
+    },
+    {
+      "path": ".\\Lookups\\Field_of_Education.csdb",
+      "signature": "7ADB742DC8F11E70A220B6326BF10647"
+    },
+    {
+      "path": ".\\Lookups\\hh_database.csdb",
+      "signature": "AFFD6B815CBF52C52313CB3D3A051C47"
+    },
+    {
+      "path": ".\\Lookups\\Narrow_field_of_study.csdb",
+      "signature": "B2D9D07E9F0A7E199A5AA859E6C3B076"
+    },
+    {
+      "path": ".\\Menu\\MenuLFS.pen",
+      "signature": "2917DCE4D8FBFBB5EE404D2BE67D461A"
+    },
+    {
+      "path": ".\\Menu\\MenuLFS.pff",
+      "signature": "72A29B0286A911F57740E5A42BA4BC9E"
+    },
+    {
+      "path": ".\\Shared Logic\\GPS.apc",
+      "signature": "CB6DF632D4EFB4927B469D5FCF6A54FA"
+    },
+    {
+      "path": ".\\TimeUse\\timeuse.pen",
+      "signature": "D8586C6BFE67C65E7A7EAA084395997A"
+    },
+    {
+      "path": ".\\TimeUse\\timeuse.pff",
+      "signature": "37CFD08AF658FADC942283E7F17ED5CD"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": ".\\ChildLFS\\ChildLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\Dicts\\assigned_hhs.dcf"
+    },
+    {
+      "path": ".\\Dicts\\clusters.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\Dicts\\Detailed_field_of_study.dcf"
+    },
+    {
+      "path": ".\\Dicts\\hh_database.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\Dicts\\Narrow_field_of_Study.dcf"
+    },
+    {
+      "path": ".\\Dicts\\teams.dcf"
+    },
+    {
+      "path": ".\\Household\\HouseholdLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\IndividualLFS\\IndividualLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\Menu\\MenuLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": ".\\TimeUse\\timeuse.dcf"
+    }
+  ],
+  "deployment": {
+    "type": "LocalFolder",
+    "cswebUrl": "http:\/\/",
+    "ftpUrl": "ftp:\/\/",
+    "localFolderPath": "..\\MainLFSdeployed"
+  }
+}

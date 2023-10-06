@@ -45,12 +45,6 @@
     },
     {
       "path": "..\\Shared Logic\\GPS.apc"
-    },
-    {
-      "path": "..\\TimeUse\\timeuse.ent"
-    },
-    {
-      "path": "..\\TimeUse\\timeuse.pff"
     }
   ],
   "dictionaries": [
@@ -95,7 +89,7 @@
     }
   ],
   "deployment": {
-    "type": "LocalFolder",
+    "type": "Dropbox",
     "cswebUrl": "http:\/\/",
     "ftpUrl": "ftp:\/\/",
     "localFolderPath": "..\\..\\MainLFSdeployed"

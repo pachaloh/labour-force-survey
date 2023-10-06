@@ -389,7 +389,7 @@ PROC B1
 
 preproc
 
-if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) then 
+if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) and ATW_PAY <> notappl then 
 	
 	$ = ATW_PAY; 		//Work for pay
 	
@@ -407,7 +407,7 @@ PROC B2
 preproc
 
 
-if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) then 
+if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) and ATW_PFT <> notappl  then 
 	
 	$ = ATW_PFT; 		//Work for pay
 	
@@ -425,7 +425,7 @@ PROC B3
 
 preproc
 
-	if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) then 
+	if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) and ATW_FAM <> notappl then 
 		
 		$ = ATW_FAM; 		//Work for pay
 		
@@ -443,7 +443,7 @@ PROC B4
 
 preproc
 
-	if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) then 
+	if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) and ABS_JOB <> notappl then 
 		
 		$ = ABS_JOB; 		//Work for pay
 		
@@ -463,9 +463,9 @@ PROC B5
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) then 
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_ANY <> ""  then 
 		
-		$ = AGF_ANY; 		//Work for pay
+		$ = toupper(AGF_ANY); 		//Work for pay
 		
 		noinput; 
 	endif;
@@ -493,6 +493,15 @@ postproc
 
 PROC B6
 
+preproc
+
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_CHK <> ""  then 		
+		$ = toupper(AGF_CHK); 		//Work for pay		
+		noinput; 
+	endif;
+	
+postproc
+
 	if (pos("A",B6) >0 or pos("B", B6) > 0 or pos("C",B6)> 0)  and  pos("D", B6) > 0  then
 		errmsg("Invalid Selection");
 		reenter;
@@ -510,10 +519,8 @@ PROC B7
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) then 
-		
-		$ = AGF_MKT; 		
-		
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_MKT <> notappl then 		
+		$ = AGF_MKT; 				
 		noinput; 
 	endif;
 	
@@ -531,10 +538,8 @@ PROC B8
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) then 
-		
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_HIR <> notappl then 		
 		$ = AGF_HIR; 		
-		
 		noinput; 
 	endif;
 	
@@ -554,10 +559,8 @@ PROC B9
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) then 
-		
-		$ = AGF_GDS; 		
-		
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_GDS <> "" then 		
+		$ = AGF_GDS; 			
 		noinput; 
 	endif;
 	
@@ -565,10 +568,8 @@ PROC B11
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) then 
-		
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_DYS <> notappl then 		
 		$ = AGF_DYS; 		
-		
 		noinput; 
 	endif;
 	
@@ -753,12 +754,20 @@ PROC E10
 		skip to E11;
 	endif;
 }	
+PROC E9A
+
+preproc
+	ask if E9 = 1;
 PROC E10
 {
 	if $ = 2 then
 		skip to E11;
 	endif;
 }	
+PROC E10A
+
+preproc
+	ask if E10 = 1;
 PROC E11
 
 	if E11 = 2 then

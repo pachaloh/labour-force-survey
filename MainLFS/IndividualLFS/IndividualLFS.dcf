@@ -2461,6 +2461,11 @@ Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=ELG_INTRO
+Name=ELG_INTRO_VS1
+Value=1;Continue
+
 [Item]
 Label=ELG_EMP
 Name=ELG_EMP
@@ -2724,7 +2729,7 @@ ZeroFill=Yes
 Label=Tevet
 Name=TEVET_REC
 RecordTypeValue='3'
-RecordLen=120
+RecordLen=139
 
 [Item]
 Label=TVT01. Was this work that you mentioned in
@@ -2755,12 +2760,27 @@ Value='P                  ';Solar Photovoltaic Installation (SPV)
 Value='Q                  ';Tailoring and Fashion Designing (TFD)
 Value='R                  ';Tour Guide (TRG)
 Value='S                  ';Wood Work Machining (WWM)
+Value='T                  ';Other TEVET related work
 Value='X                  ';NONE OF THE ABOVE
+
+[Item]
+Label=TVT01a
+Name=TVT01A
+Start=65
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=TVT01a
+Name=TVT01A_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=TVT02. Hired by someone else to do this work
 Name=TVT02
-Start=65
+Start=66
 Len=1
 DataType=Numeric
 
@@ -2773,7 +2793,7 @@ Value=2;No
 [Item]
 Label=TVT03
 Name=TVT03
-Start=66
+Start=67
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -2787,7 +2807,7 @@ Value=2;No
 [Item]
 Label=TVT04
 Name=TVT04
-Start=67
+Start=68
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -2799,17 +2819,32 @@ Value=1;YES
 Value=2;NO
 
 [Item]
-Label=TVT05
-Name=TVT05
-Start=68
-Len=9
+Label=TVT05a
+Name=TVT05A
+Start=69
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=TVT05a
+Name=TVT05A_VS1
+Value=1;Daily
+Value=2;Weekly
+Value=3;Monthly
+
+[Item]
+Label=TVT05b
+Name=TVT05B
+Start=70
+Len=8
 DataType=Numeric
 ZeroFill=Yes
 
 [Item]
 Label=TVT06
 Name=TVT06
-Start=77
+Start=78
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -2822,36 +2857,36 @@ Value=0:7;Valid
 [Item]
 Label=TVT07
 Name=TVT07
-Start=78
+Start=79
 Len=2
 DataType=Numeric
 ZeroFill=Yes
 
-[ValueSet]
-Label=TVT07
-Name=TVT07_VS1
-Value=1;Yes
-Value=2;No
-
 [Item]
 Label=TVT08
 Name=TVT08
-Start=80
+Start=81
 Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=TVT08
+Name=TVT08_VS1
+Value=1;Yes
+Value=2;No
+
 [Item]
 Label=TVT09
 Name=TVT09
-Start=81
+Start=82
 Len=30
 DataType=Alpha
 
 [Item]
 Label=TVT10
 Name=TVT10
-Start=111
+Start=112
 Len=9
 DataType=Alpha
 
@@ -2871,7 +2906,53 @@ Value='Z        ';Other
 [Item]
 Label=TVT11
 Name=TVT11
-Start=120
+Start=121
 Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=D06A
+Name=D06A
+Start=122
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=D06A
+Name=D06A_VS1
+Value=1;Daily
+Value=2;Weekly
+Value=3;Monthly
+
+[Item]
+Label=D06B
+Name=D06B
+Start=123
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=N01A
+Name=N01A
+Start=131
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=N01A
+Name=N01A_VS1
+Value=1;Daily
+Value=2;Weekly
+Value=3;Monthly
+
+[Item]
+Label=N01B
+Name=N01B
+Start=132
+Len=8
 DataType=Numeric
 ZeroFill=Yes

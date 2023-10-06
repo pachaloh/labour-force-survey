@@ -1,0 +1,18 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+[DataEntryInit]
+StartMode=Add
+Key=0001d72daca0-de5e-44fd-af03-f7a880b313b40301
+Lock=CaseListing
+[Files]
+Application=./timeuse.ent
+InputData=../Data/Timeuse.csdb
+[Parameters]
+TCLUSTER=0001
+TGHHHNO=03
+THMPPNO=01
+TGHINTCODE=d72daca0-de5e-44fd-af03-f7a880b313b4
+TGHINTNAME=BRIAN
+OnExit=../Menu/MenuLFS.pff

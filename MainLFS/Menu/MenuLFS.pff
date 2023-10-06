@@ -1,7 +1,7 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-Description=Labour Force Survey, 2023 - 28Sept2023v2
+Description=Labour Force Survey, 2023 - v02
 
 [DataEntryInit]
 StartMode=Add

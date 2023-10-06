@@ -56,6 +56,12 @@ PROC GLOBAL
 	numeric mjd_boss_tax_a;
 	numeric mjd_boss_tax_b;
 	
+	function dem_relationship()
+			loadcase(HOUSEHOLDLFS_DICT,XCLUSTER,GHINTCODE,XGHHHNO);
+			XDEM_REL = DEM_02 (XHMPPNO);
+			dem_relationship = DEM_02 (XHMPPNO);
+	end;
+	
 
 // Menu Cotrolled Variables:
 	numeric MCV_PROVINCE;
@@ -582,14 +588,14 @@ if loadcase(HOUSEHOLDLFS_DICT,XCLUSTER,GHINTCODE,XGHHHNO) then
 endif;
 }
 PROC XDEM_REL
-{
+
 preproc
 
 	loadcase(HOUSEHOLDLFS_DICT,XCLUSTER,GHINTCODE,XGHHHNO);
 		XDEM_REL = DEM_02 (XHMPPNO);
 		
-		noinput;
-}
+		//noinput;
+
 PROC XGHHHSIZE
 
 
@@ -865,6 +871,10 @@ PROC RSP_PPNO
 
 preproc
 	ask if RSP_DIR = 2 or RSP_AVAIL = 2;
+	
+	if RSP_DIR = 1 then
+		noinput;
+	endif;
 
 onfocus 
 
@@ -887,12 +897,17 @@ onfocus
 
 postproc
 
-{	
-	if RSP_AVAIL = 1 and RSP_PPNO = 98 then
-		errmsg("A person cannot be available and away at the same time");
-		reenter;
-	endif;
-}
+
+		
+		if loadcase(HOUSEHOLDLFS_DICT,XCLUSTER,GHINTCODE,XGHHHNO) and $ = HH_RESP_LN then
+			XDEM_SEX 	   = DEM_01(XHMPPNO);
+			XDEM_BTH_YEAR  = DEM_05(XHMPPNO);
+			XDEM_BTH_MONTH = DEM_04(XHMPPNO);
+			XDEM_AGE 	   = DEM_06(XHMPPNO);
+			
+			skip to RSP_END;
+			
+		endif;
 
 
 	if RSP_PPNO in 98,99 then
@@ -939,7 +954,8 @@ postproc
 	endif;
 	
 	if loadcase(HOUSEHOLDLFS_DICT,XCLUSTER,GHINTCODE,XGHHHNO) and XDEM_BTH_YEAR  <> DEM_05(XHMPPNO) then
-		errmsg("Year of birth (%d) for %s different from HH's (%d)",$,XDEM_NAME,DEM_05(XHMPPNO));
+		errmsg("Year of birth (%d) for %s different from HH's (%d)",$,XDEM_NAME,DEM_05(XHMPPNO))
+			select("Reenter",reenter,"Yes, this is correct",continue);
 		
 		//skip to RSP_END;
 			
@@ -1012,37 +1028,24 @@ PROC ATW_PAY
 
 preproc 
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B1 <> notappl then 		
 		$ = B1; 		//Work for pay		
 		noinput; 
 	endif;
-	
+		
+	XDEM_REL = dem_relationship(); //Relationship to head of the household
 	
 	ask if XDEM_REL <> 13;
 	
-	//If individual was already interviewed in another questionnaire
-	//If there exist already data from Individual questionnaire
-	if locate(CHILD_LABOUR_DICT,=,maketext("%v%v%v%v",XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO)) and loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then
-	endif;
-
-
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then
-		ATW_PAY = B1;
-		ATW_PFT = B2;
-		ATW_FAM = B3;
-		//ABS_JOB = 
-	endif;
 PROC ATW_PFT
 
 preproc 
 
-
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B2 <> notappl  then		
 		$ = B2; 		//Work for pay		
 		noinput; 
 	endif;
 	
-
 
 ask if ATW_PAY=2;
 
@@ -1051,7 +1054,7 @@ PROC ATW_FAM
 preproc 
 
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B3 <> notappl then 		
 		$ = B3; 		//Work for pay		
 		noinput; 
 	endif;
@@ -1079,6 +1082,10 @@ set_GLO_ATW();
 
 ask if GLO_EMP = 0;
 
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B4 <> notappl then 		
+		$ = B4; 		//Work for pay		
+		noinput; 
+	endif;
 PROC ABS_WHY
 
 preproc ask if ABS_JOB=1;
@@ -1109,8 +1116,8 @@ PROC AGF_CHK
 preproc
 
 	
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
-		$ = B6; 		//Work for pay		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B6 <> "" then 		
+		$ = tolower(B6); 		//Work for pay		
 		noinput; 
 	endif;
 
@@ -1123,12 +1130,13 @@ postproc
 		errmsg("Select at least one option");
 		reenter;
 	endif;
+
 PROC AGF_ANY
 
 preproc
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
-		$ = B5; 		//Work for pay		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B5 <> "" then 		
+		$ = tolower(B5); 		//Work for pay		
 		noinput; 
 	endif;
 
@@ -1150,7 +1158,7 @@ PROC AGF_MKT
 // Abel, Jones, Pachalo 4/01/2023 	
 preproc
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B7 <> notappl then 		
 		$ = B7; 		//Work for pay		
 		noinput; 
 	endif;
@@ -1170,7 +1178,7 @@ PROC AGF_HIR
 
 preproc
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B8 <> notappl then 		
 		$ = B8; 		//Work for pay		
 		noinput; 
 	endif;
@@ -1180,7 +1188,7 @@ PROC AGF_GDS
 
 preproc 
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) and B9 <> "" then 		
 		$ = B9; 		//Work for pay		
 		noinput; 
 	endif;
@@ -1191,8 +1199,8 @@ PROC AGF_DYS
 
 preproc
 
-	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO) then 		
-		$ = B11; 		//Work for pay		
+	if loadcase(CHILD_LABOUR_DICT,XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO)  and B11 <> notappl then 		
+		$ = B11; 				
 		noinput; 
 	endif;
 
@@ -1201,62 +1209,6 @@ PROC AGF_HRS
 
 preproc 
 	ask if AGF_HIR = 2;
-PROC TVT01
-
-preproc
-	
-	ask if pos("d", AGF_CHK) > 0 or pos("d", AGF_ANY) > 0;
-PROC TVT02
-
-preproc
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-PROC TVT03
-
-preproc
-	
-	ask if TVT02 = 1;
-PROC TVT04
-
-preproc
-	
-	ask if TVT02 = 1;
-
-{
-preproc
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-}
-PROC TVT05
-
-preproc
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-PROC TVT06
-
-preproc
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-PROC TVT07
-
-preproc
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-PROC TVT08
-
-preproc
-	
-	ask if TVT07 = 2;
-PROC TVT09
-
-preproc
-	
-	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
-PROC TVT10
-
-preproc
-	
-	ask if TVT08 = 2;
-PROC TVT11
-
-preproc
-	
-	ask if TVT08 = 2;
 PROC X01
 
 preproc
@@ -1404,6 +1356,14 @@ PROC MJJ_REM_TYP_6_OTHER
 
 preproc ask if (MJJ_EMP_REL in 1,4,5 OR (MJJ_EMP_REL=3 and MJJ_CFW_CHK in 3,4)) and pos("h",MJJ_REM_TYP)>0;
 
+PROC D06A
+
+preproc
+	ask if poschar("ABCDEH",MJJ_REM_TYP) > 0;
+PROC D06B
+
+preproc
+	ask if poschar("ABCDEH",MJJ_REM_TYP) > 0;
 PROC MJJ_END
 
 preproc $ = 1;
@@ -1757,6 +1717,14 @@ PROC SJD_REM_TYP
 
 preproc
 	ask if SJJ_EMP_REL in 1,3,4,5;
+PROC N01A
+
+preproc
+	ask if poschar("ABCDEH",SJD_REM_TYP) > 0;
+PROC N01B
+
+preproc
+	ask if poschar("ABCDEH",SJD_REM_TYP) > 0;
 PROC SJD_BOSS_TAX
 
 preproc
@@ -2343,12 +2311,20 @@ preproc
 postproc
 
 PROC ELG_EMP
-
 	
 preproc
 
+		if GLO_EMP =  1 then
+			$ = 1;
+		else
+			$ = 2;
+		endif;
+
+		noinput;
+{		
+		ask if GLO_EMP <> 1;	
 	
-	
+		{
 		if GLO_EMP =  1 then
 			ELG_EMP = 1;
 			skip to WPA_1;
@@ -2356,12 +2332,20 @@ preproc
 			ELG_EMP = 2;
 			skip to ELG_EMP;
 		endif;
-
+		}
+}
 PROC EBR_1
 
 
 preproc
 	ask if ELG_DIF = 1 & ELG_EMP = 2;
+	
+postproc
+	
+	if poschar("abcdefgh",$) = 0 then
+		errmsg("Select an option");
+		reenter;
+	endif;
 
 PROC EBR_2
 
@@ -2525,6 +2509,73 @@ PROC FIR_OPG_HRS
 
 preproc
 	ask if FIR_OPG = 1;
+PROC TVT01
+
+preproc
+	
+	//ask if pos("d", AGF_CHK) > 0 or pos("d", AGF_ANY) > 0;
+PROC TVT01A
+
+preproc
+	ask if poschar("X",TVT01) > 0;
+	//ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0
+PROC TVT02
+
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT01A = 1;
+PROC TVT03
+
+preproc
+	
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1 ;
+PROC TVT04
+
+preproc
+	
+	ask if TVT02 = 1;
+
+{
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRS",TVT01) > 0;
+}
+PROC TVT05A
+
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1;
+	
+PROC TVT05B
+
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1;
+	
+PROC TVT06
+
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1;
+PROC TVT07
+
+preproc
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1;
+PROC TVT08
+
+preproc
+	
+	ask if TVT07 = 2;
+PROC TVT09
+
+preproc
+	
+	ask if poschar("ABCDEFGHIJKLMNOPQRST",TVT01) > 0 or TVT02 = 1;
+PROC TVT10
+
+preproc
+	
+	ask if TVT08 = 2;
+PROC TVT11
+
+preproc
+	
+	ask if TVT08 = 2;
 PROC IND_END_TIME
 
 preproc

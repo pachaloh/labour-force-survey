@@ -1,0 +1,549 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=TimeUse
+Name=TIMEUSE_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=Yes
+SecurityOptions=0AF790F8550DC66631EDFEB00587AA3F98F5CE0C3DDE3CCF4FA8603847838716
+
+[Languages]
+ENG=English
+
+[Level]
+Label=IndividualLFS questionnaire
+Name=TIMEUSE_QUEST
+
+[IdItems]
+
+[Item]
+Label=Cluster
+Name=TCLUSTER
+Start=2
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Interviewer ID
+Name=TGHINTCODE
+Start=6
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Household number
+Name=TGHHHNO
+Start=42
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Unique person number
+Name=THMPPNO
+Start=44
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Household and Geographic Identifiers
+Name=GH_REC
+RecordTypeValue='G'
+RecordLen=160
+
+[Item]
+Label=Type of area
+Name=TGHAREA
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Type of area
+Name=TGHAREA_VS1
+Value=1;Urban
+Value=2;Peri-urban
+Value=3;Rural
+
+[Item]
+Label=Interview date
+Name=TGHVFDT
+Start=47
+Len=8
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Household replacement status
+Name=TGHHRPL
+Start=55
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Household replacement status
+Name=TGHHRPL_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=Interviewer Name
+Name=TGHINTNAME
+Note=Added only for the beta testing purpose.
+Start=56
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Line number of eligible member
+Name=LN_ELG
+Start=106
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Name of Eligible member
+Name=NAME_ELG
+Start=108
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Age of eligible member
+Name=AGE_ELG
+Start=158
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Household members
+Name=HM_REC
+RecordTypeValue='M'
+RecordLen=45
+
+[Record]
+Label=Demographics
+Name=DEM_REC
+RecordTypeValue='D'
+RecordLen=108
+
+[Item]
+Label=Person number
+Name=TPPNO
+Start=46
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Name
+Name=TDEM_NAME
+Start=48
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Sex
+Name=TDEM_SEX
+Start=98
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Sex
+Name=TDEM_SEX_VS1
+Value=1;MALE
+Value=2;FEMALE
+
+[Item]
+Label=Relationship to head/reference person
+Name=TDEM_REL
+Note=The different values set of the variable DEM_REL was deleted. We only kept one value set equal to the latest version of
+Note=the questionnaire.\r\n
+Note=\r\n
+Note=It is not necessary to keep one version by gender because the responses categories are not read out loud.
+Start=99
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Relationship to head of household/reference person
+Name=TDEM_REL_VS1
+Value=1;REFERENCE PERSON
+Value=2;SPOUSE/PARTNER
+Value=3;SON/DAUGHTER
+Value=4;MOTHER/FATHER
+Value=5;OTHER RELATIVE
+Value=6;OTHER UNRELATED PERSON
+Value=7;DOMESTIC WORKER
+
+[Item]
+Label=Date of birth
+Name=TDEM_BTH
+Start=100
+Len=6
+DataType=Alpha
+
+[Item]
+Label=Year of birth
+Name=TDEM_BTH_YEAR
+Start=100
+Len=4
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Year of birth
+Name=TDEM_BTH_YEAR_VS1
+Value=1896:2030
+Value=9997;DON'T KNOW
+
+[Item]
+Label=Month of birth
+Name=TDEM_BTH_MONTH
+Start=104
+Len=2
+ItemType=SubItem
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Month of birth
+Name=TDEM_BTH_MONTH_VS1
+Value=1;January
+Value=2;February
+Value=3;March
+Value=4;April
+Value=5;May
+Value=6;June
+Value=7;July
+Value=8;August
+Value=9;September
+Value=10;October
+Value=11;November
+Value=12;December
+Value=97;DON'T KNOW
+
+[Item]
+Label=Age
+Name=TDEM_AGE
+Start=106
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Day activities
+Name=DAY_ACTIVITY
+RecordTypeValue='A'
+MaxRecords=6
+RecordLen=101
+
+[Item]
+Label=Day activity
+Name=XT01
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Day activity
+Name=XT01_VS1
+Value=1;Monday
+Value=2;Tuesday
+Value=3;Wednesday
+Value=4;Thursday
+Value=5;Friday
+Value=6;Saturday
+Value=7;Sunday
+
+[Item]
+Label=Time period
+Name=XT02
+Start=47
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Time period
+Name=XT02_VS1
+Value=1;1 to 2
+Value=2;2 to 3
+Value=3;3 to 4
+Value=4;4 to 5
+Value=6;5 to 6
+
+[Item]
+Label=Activity record
+Name=XT03_CODE
+Start=48
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Activity
+Name=XT03
+Start=51
+Len=50
+DataType=Alpha
+
+[Item]
+Label=More activities
+Name=XT03_ADD
+Start=101
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=More activities
+Name=XT03_ADD_VS1
+Value=1;Yes
+Value=2;No
+
+[Record]
+Label=Time use
+Name=TIME_USE
+RecordTypeValue='T'
+MaxRecords=6
+RecordLen=108
+
+[Item]
+Label=T01
+Name=T01
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=T02
+Name=T02
+Start=47
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T02
+Name=T02_VS1
+Value=1;1 am and 2 am
+Value=2;2 am to 3 am
+Value=3;3 am to 4 am
+Value=4;4 am to 5 m
+Value=6;5 am to 6 am
+
+[Item]
+Label=T03
+Name=T03
+Start=48
+Len=50
+DataType=Alpha
+
+[Item]
+Label=T04
+Name=T04
+Start=98
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T04
+Name=T04_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=T05
+Name=T05
+Start=99
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T05
+Name=T05_VS1
+Value=1:60;1-60 mins
+
+[Item]
+Label=T06
+Name=T06
+Start=101
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T06
+Name=T06_VS1
+Value=1;Self
+Value=2;Spouse/Partner
+Value=3;Children in the household or part of the family
+Value=4;Other adult in the household/family members
+Value=5;Work/My job/Market
+Value=6;Friends/Other household
+Value=7;Charity
+Value=8;Community
+Value=9;Other
+
+[Item]
+Label=T07
+Name=T07
+Start=102
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T07
+Name=T07_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=T08
+Name=T08
+Start=103
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T08
+Name=T08_VS1
+Value=1;Productive paid work
+Value=2;Unpaid productive work for the household/family
+Value=3;Productive unpaid work outside the household/family
+Value=4;Personal activity
+
+[Item]
+Label=T09
+Name=T09
+Start=104
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T09
+Name=T09_VS1
+Value=1;Alone/ People I do not know
+Value=2;Children less than 5 years (household family members)
+Value=3;Children 5-17 years (household/family members)
+Value=4;Other household/family members
+Value=5;Friends/Other households
+
+[Item]
+Label=T10
+Name=T10
+Start=105
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=T10
+Name=T10_VS1
+Value=1;At home
+Value=2;Other people's home
+Value=3;Workplace/Place of study
+Value=4;Public/Commercial/Service area
+Value=5;Communal/Social places/Places of worship
+Value=6;Travelling (Walking)
+Value=7;Travelling (Public)
+Value=8;Travelling (Private)
+
+[Item]
+Label=T11
+Name=T11
+Start=106
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=T12
+Name=T12
+Start=107
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=End Individual Interview
+Name=TU_END
+Start=108
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=End Individual Interview
+Name=TU_END_VS1
+Value=1;Complete
+Value=2;Member not available
+Value=3;Not eligible
+Value=9;Refused
+
+[Record]
+Label=Meta data
+Name=TMETA_DATA
+RecordTypeValue='2'
+RecordLen=67
+
+[Item]
+Label=Region
+Name=TREGION
+Note=All the geo ids are hided and prefilled to facilitate the beta testing. In the furture release, these will be handled
+Note=by the menu program.
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=District
+Name=TDISTRICT
+Start=47
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Traditional Authority
+Name=TTA
+Start=49
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Enumeration Area
+Name=TEA
+Start=52
+Len=3
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Ind End Time
+Name=TIND_END_TIME
+Start=55
+Len=13
+DataType=Numeric
+ZeroFill=Yes

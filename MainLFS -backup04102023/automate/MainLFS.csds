@@ -1,0 +1,103 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "LabourForceSurvey2023",
+  "description": "Malawi Labour Force Survey",
+  "files": [
+    {
+      "path": "..\\ChildLFS\\ChildLFS.ent"
+    },
+    {
+      "path": "..\\ChildLFS\\ChildLFS.pff"
+    },
+    {
+      "path": "..\\Household\\HouseholdLFS.ent"
+    },
+    {
+      "path": "..\\Household\\HouseholdLFS.pff"
+    },
+    {
+      "path": "..\\IndividualLFS\\IndividualLFS.ent"
+    },
+    {
+      "path": "..\\IndividualLFS\\IndividualLFS.pff"
+    },
+    {
+      "path": "..\\Lookups\\clusters.csdb"
+    },
+    {
+      "path": "..\\Lookups\\Detailed_field_of_study.csdb"
+    },
+    {
+      "path": "..\\Lookups\\Field_of_Education.csdb"
+    },
+    {
+      "path": "..\\Lookups\\hh_database.csdb"
+    },
+    {
+      "path": "..\\Lookups\\Narrow_field_of_study.csdb"
+    },
+    {
+      "path": "..\\Menu\\MenuLFS.ent"
+    },
+    {
+      "path": "..\\Menu\\MenuLFS.pff"
+    },
+    {
+      "path": "..\\Shared Logic\\GPS.apc"
+    },
+    {
+      "path": "..\\TimeUse\\timeuse.ent"
+    },
+    {
+      "path": "..\\TimeUse\\timeuse.pff"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": "..\\ChildLFS\\ChildLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\Dicts\\assigned_hhs.dcf"
+    },
+    {
+      "path": "..\\Dicts\\clusters.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\Dicts\\Detailed_field_of_study.dcf"
+    },
+    {
+      "path": "..\\Dicts\\hh_database.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\Dicts\\Narrow_field_of_Study.dcf"
+    },
+    {
+      "path": "..\\Dicts\\teams.dcf"
+    },
+    {
+      "path": "..\\Household\\HouseholdLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\IndividualLFS\\IndividualLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\Menu\\MenuLFS.dcf",
+      "uploadForSync": true
+    },
+    {
+      "path": "..\\TimeUse\\timeuse.dcf"
+    }
+  ],
+  "deployment": {
+    "type": "LocalFolder",
+    "cswebUrl": "http:\/\/",
+    "ftpUrl": "ftp:\/\/",
+    "localFolderPath": "..\\..\\MainLFSdeployed"
+  }
+}
