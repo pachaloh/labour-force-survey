@@ -1864,6 +1864,7 @@ Value=4;Cement blocks
 Value=5;Mud/Wattle/Dung
 Value=6;Reeds/Straw
 Value=7;Wood/Planks
+Value=9;Adobe
 Value=8;Other
 
 [Item]

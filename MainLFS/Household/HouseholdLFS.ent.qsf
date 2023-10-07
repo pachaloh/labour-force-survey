@@ -423,11 +423,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto la ..........?&nbsp;</span></p><p>&nbsp;</p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;</span><font face="Arial">amavutika kukumbukira kapena kukhala ndi chidwi pa chinthu?&nbsp;</font></p><p>&nbsp;</p><p></p>
           ENG: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="color: rgb(51, 51, 51); font-weight: 700; font-family: Arial;">&nbsp;</span><font face="Arial">have difficulty remembering or concentrating?</font></p><p></p><p></p>
           TU: |
-            <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial, sans-serif; font-size: 20px;">Kasi&nbsp;</span><b><span style="font-size: 20px;">~~DEM_NAME~~</span></b><span style="font-family: Arial, sans-serif; font-size: 20px;">&nbsp;wali na suzgo pakuyowoya?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kasi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME~~</span></b><font face="Arial">&nbsp;muli na suzgo pakukumbukira panyakhe kulondezga vinthu??&nbsp;</font></p><p></p><p></p>
           YA: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM24.</span></p><p><span style="font-family: Arial;">Ana&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;">&nbsp;wana vuto jakulepera kuwecheta?&nbsp;</span></p><p></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_25
@@ -436,20 +436,20 @@ questions:
           CH: |
             <p><span style="font-family: Arial; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial;">&nbsp;ali ndi vuto ..........................?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.</span><span style="color: rgb(51, 51, 51);"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial;">Does&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font color="#333333" face="Arial">&nbsp;have difficulty with (self-care such as) washing all over or dressing?&nbsp;</font></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.&nbsp;</span><span style="color: rgb(51, 51, 51);"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial;">Does&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font color="#333333" face="Arial">&nbsp;have difficulty with (self-care such as) washing all over or dressing?&nbsp;</font></p><p></p><p></p>
           TU: |
-            <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b>~~DEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;wali na suzgo pakusambira vinthu vipsya panyakhe kulongosola vinthu panyakhe kukumbukira?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.&nbsp;</span></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial;">&nbsp;wali na suzgo (pakujipwererera yekha nga ni) kujigegiska panyakhe kujivwarika?</span></p><p></p><p></p>
           YA: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial; font-size: 20px;">Ana&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;wana vuto jakulepera kulijiganya indu yachilendo kapena kwanga iusyo yamavuto gane kapena kuliwaliraliwalira?&nbsp;</span></p><p></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_26
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial; font-size: 20px;">&nbsp;ali ndi vuto .........................................?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial; font-size: 20px;">Kodi&nbsp;</span><b><span style="font-size: 20px; font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><font face="Arial">&nbsp;amavutika kuti alumikizane ndi anthu, mwachitsanzo kuti amvetsetse kapena kumvetsetsedwa ndi anthu ena?</font><span style="font-family: Arial;">&nbsp;</span></p><p></p><p></p>
           ENG: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span><br></p><p><span style="font-family: Arial;">Does </span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font face="Arial"> have difficulty communicating, for example understanding or being understood by others??&nbsp;</font></p><p></p><p></p>
           TU: |
-            <p><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 26px; font-weight: 700;">DEM26.</span></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b>~~DEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;wali na suzgo (pakujipwererera yekha nga ni) kujigegiska panyakhe kujivwarika?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.&nbsp;</span></p><p><span style="font-family: Arial; font-size: 20px;">Kasi&nbsp;</span><span style="font-family: Arial; font-size: 20px;">~~DEM_NAME~~</span><span style="font-family: Arial; font-size: 20px;">&nbsp;wali na suzgo pakusambira vinthu vipsya panyakhe kulongosola vinthu panyakhe kukumbukira?&nbsp;</span></p><p><br></p><p></p><p></p>
           YA: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM26.</span><span style="font-family: Arial, sans-serif;"><br></span></p><p><span style="font-family: Arial;">Ana&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><span style="font-family: Arial, sans-serif;"><span style="font-family: Arial;">&nbsp;akusalepelaga kulisamalira mpera koga kapena kuwala jika?</span>&nbsp;</span></p><p></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_27

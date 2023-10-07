@@ -113,6 +113,8 @@ questions:
             <p style="text-align: justify; margin-bottom: 8pt;"><i style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">IS&nbsp;<b>~~XDEM_NAME~~&nbsp;</b>&nbsp;RESPONDING TO THE QUESTIONS?&nbsp;</i><br></p><p></p>
           EN: |
             <p style="text-align:justify;margin-bottom:8pt;"><i style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">IS <b>~~XDEM_NAME~~ </b>&nbsp;RESPONDING TO THE QUESTIONS?&nbsp;</i><br></p>
+          TU: |
+            <i style="text-align: justify; color: rgb(0, 0, 255); font-family: Arial, sans-serif;">IS&nbsp;<b>~~XDEM_NAME~~&nbsp;</b>&nbsp;RESPONDING TO THE QUESTIONS?&nbsp;</i><p></p>
         helpText:
           EN: |
             
@@ -268,6 +270,10 @@ questions:
             <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">ENTER OTHER REASON FOR ABSENCE&nbsp;</span><p></p>
           EN: |
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER OTHER REASON FOR ABSENCE&nbsp;</font></span></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">ENTER OTHER REASON FOR ABSENCE&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">ENTER OTHER REASON FOR ABSENCE&nbsp;</span><p></p>
         helpText:
           EN: |
             
@@ -289,7 +295,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">B04.&nbsp;</b>Kuphatikiza nthawi imene&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;wakhala asakupita ku ntchito, kodi inu/iye/iwo adzabwerera ku ntchito kapena bizinezi yomweyi m'miyezi itatu kapena kuchepera apo?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">B04.&nbsp;</b>Kuphatikiza nthawi imene&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;wakhala asakupita ku ntchito, kodi inu/iye/iwo adzabwerera ku ntchito kapena bizinezi yomweyi m'miyezi itatu kapena kuchepera apo?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">B04.&nbsp;</b>I<span style="font-family: Arial, sans-serif;">ncluding the time that ~~get_you_name()~~ ~~get_have_has()~~ been absent, will ~~get_you_he_she()~~ return to that same job or business in 3 months or less?&nbsp;</span><br></p>
           TU: |
@@ -303,7 +309,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">B05.&nbsp;</b>Kodi&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;mumalandirabe malipiro kuntchito kapena bizinezi (yanu/yake) panthawi imene simukupita ku ntchito?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">B05.&nbsp;</b>Kodi&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mumalandirabe malipiro kuntchito kapena bizinezi (yanu/yake) panthawi imene simukupita ku ntchito?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">B05.&nbsp;</b><span style="font-family: Arial, sans-serif;">~~get_c_do_does()~~ ~~get_you_name()~~ continue to receive an income from ~~get_your_his_her()~~ job or business during this absence?&nbsp;</span><br></p>
           TU: |
@@ -383,7 +389,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>M'sabata yapitayi, kodi ndi masiku angati amene&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;anagwira ntchito imeneyi?</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>M'sabata yapitayi, kodi ndi masiku angati amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwira ntchito imeneyi?</p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>Last week, on how many days did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;do this work?<br></p><p><i><font color="#0000ff">ENTER “0” IF ABSENT LAST WEEK</font></i></p><p></p>
           TU: |
@@ -394,7 +400,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">C08.&nbsp;</b>Kodi ndi maola angati patsiku amene&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;anagwira ntchito imeneyi m'sabata yapitayi?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C08.&nbsp;</b>Kodi ndi maola angati patsiku amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;anagwira ntchito imeneyi m'sabata yapitayi?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">C08.&nbsp;</b>How many hours per day did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~&nbsp;</span>spend doing this last week?<br></p><p><i style="color: rgb(0, 0, 255);"><span class="instruction" style="font-size: 18px; font-family: Arial;">ENTER “0” IF ABSENT LAST WEEK</span></i></p><p></p>
           TU: |
@@ -520,11 +526,11 @@ questions:
       - logic: MJJ_MULT=1
         questionText:
           CH: |
-            <div><i><font color="#0000ff">READ</font></i>&nbsp;</div><div><br></div><div><b>D00.</b> Tsopano ndikufunsani mafunso okhudzana ndi ~~XDEM_NAME~~&nbsp; ntchito zopezera ndalama ~~XDEM_NAME~~.....</div>
+            <div><b>D00.</b>&nbsp;<i><font color="#0000ff">READ:&nbsp;</font></i>Tsopano ndikufunsani mafunso okhudzana ndi ~~XDEM_NAME~~&nbsp; ntchito zopezera ndalama ~~XDEM_NAME~~.....</div>
           EN: |
             <div><i><font color="#0000ff">READ</font></i>&nbsp;</div><div><br></div><div><b>D00.</b> Now, I am going to ask you some questions about ~~get_your_names()~~`s income-generating activity...&nbsp;</div><div><br></div><div>In ~~get_this_names()~~`s job, what kind of work ~~get_do_does()~~ ~~get_you_he_she()~~ do?&nbsp;</div>
           TU: |
-            <p><b>MJJ_INTRO</b><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff"><br></font></span></p><p><span style="font-style: italic; font-family: Arial, sans-serif;"><font color="#0000ff">READ&nbsp;</font></span></p><p><font face="Arial, sans-serif"><i>Sono nimufumbaninge mafumbo ghanyakhe&nbsp; ghakukhwaskana na&nbsp;</i></font><span style="font-family: Arial, sans-serif;">~~get_your_names()~~</span><font face="Arial, sans-serif"><i>&nbsp;pa chakuchita chakumwiziskirani ndalama.</i></font></p><p><font face="Arial, sans-serif"><i>Mu ntchito ya (this/NAME’s) iyi, kasi ni ntchito ya mtundu wuli iyo (you/he/she) wakugwira?<br></i></font></p><p></p>
+            <p><b>D00.</b>&nbsp;<span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">READ:&nbsp;&nbsp;</span><font face="Arial, sans-serif"><i>Sono nimufumbaninge mafumbo ghanyakhe&nbsp; ghakukhwaskana na&nbsp;</i></font><span style="font-family: Arial, sans-serif;">~~get_your_names()~~</span><font face="Arial, sans-serif"><i>&nbsp;pa chakuchita chakumwiziskirani ndalama.</i></font></p><p><font face="Arial, sans-serif"><i>Mu ntchito ya (this/NAME’s) iyi, kasi ni ntchito ya mtundu wuli iyo (you/he/she) wakugwira?<br></i></font></p><p></p>
           YA: |
             <p><b>D00.&nbsp;</b>Sambano tinausye mausyo gane gakwayana ni yakutendekwa ine yakwapatisya mbiya&nbsp;<span style="font-family: Arial, sans-serif;">~~get_your_names()~~ .</span></p><p><font face="Arial, sans-serif">Mu masengo gerega ga&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~get_this_names()~~</span><font face="Arial, sans-serif">, ana asatendaga masengo gachi?</font><br></p><p></p>
         helpText:
@@ -537,7 +543,7 @@ questions:
             <p><span style="font-size:16px;color:#000000;font-family:'Arial', sans-serif;"><span style="font-size: 24px;"><b>D00.&nbsp;</b>I am now going to ask you some questions about the income-generating activity in which </span><span style="color: rgb(0, 0, 0); font-size: 24px;"><b>~~get_you_name()~~</b></span><span style="font-size: 24px;"> usually work the most hours.&nbsp;</span></span></p><span style="font-size: 24px;">
             </span><p><span style="font-family: Arial, sans-serif;">In ~~get_this_names()~~ job, what kind of work ~~get_do_does()~~ ~~get_you_he_she()~~ do?&nbsp;</span></p>
           TU: |
-            <p><span style="font-family: Arial, sans-serif; font-size: 16px; font-style: italic;"><font color="#0000ff">READ&nbsp;</font></span>&nbsp;</p><p><b style="font-family: Arial, sans-serif;">D00.&nbsp;&nbsp;</b>Sono nimufumbaninge mafumbo ghanyakhe&nbsp; ghakukhwaskana na&nbsp; chakuchita chakumwiziskirani ndalama icho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;kanandi mukugwira maola ghanandi.</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">D00.&nbsp;</b><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">READ:</span><b style="font-family: Arial, sans-serif;">&nbsp;&nbsp;</b>Sono nimufumbaninge mafumbo ghanyakhe&nbsp; ghakukhwaskana na&nbsp; chakuchita chakumwiziskirani ndalama icho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;kanandi mukugwira maola ghanandi.</p><p></p><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif;">D00.&nbsp;</b><font face="Arial, sans-serif">Sambano tinausye mausyo gakwayana ni yakutendekwa ine yakupatisya mbiya yomwe&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;asakamulaga ndawi syejinji.</font></p><p><font face="Arial, sans-serif">Mu masengo gerega ga&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~get_this_names()~~&nbsp;</span><font face="Arial, sans-serif">, ana asatendaga masengo gachi?<br></font><p></p></p>
         helpText:
@@ -583,7 +589,7 @@ questions:
           EN: |
             <div><font face="Arial, sans-serif"><b>D03. </b>~~get_c_do_does()~~ ~~get_you_he_she()~~ work…?&nbsp;</font></div><div><font face="Arial, sans-serif"><b><br></b></font></div><div><font face="Arial, sans-serif" color="#0000ff"><i>&nbsp;READ&nbsp;</i></font></div>
           TU: |
-            <b style="font-family: Arial, sans-serif;">D03.&nbsp;</b>Kasi (you/he/she) mukugwira nga ni&nbsp;<p></p>
+            <b style="font-family: Arial, sans-serif;">D03.&nbsp;</b>Kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukugwira nga ni...?&nbsp;<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">D03.&nbsp;</b><font face="Arial, sans-serif">Ana (you/he/she) asakamula masengo mpela....?</font><p></p>
         helpText:
@@ -597,7 +603,7 @@ questions:
           EN: |
             <div><font face="Arial, sans-serif"><b>D04. </b>Who usually makes the decisions about the running of the family business…?&nbsp;</font></div><div><font face="Arial, sans-serif"><br></font></div><div><font face="Arial, sans-serif" color="#0000ff"><i>&nbsp;READ&nbsp;</i></font></div>
           TU: |
-            <p><b style="font-family: Arial, sans-serif;">D04.&nbsp;</b><font face="Arial, sans-serif">Kasi nyengo zinandi ni njani uyo wakuwa na mazaza pa kendeskero ka bizinesi ya pabanja linu?&nbsp; &nbsp;<b> &nbsp;</b></font></p><p><font face="Arial, sans-serif"><b>&nbsp;&nbsp;</b></font><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ</span><b style="font-family: Arial, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</b></p><p><p></p></p>
+            <p><b style="font-family: Arial, sans-serif;">D04.&nbsp;</b><font face="Arial, sans-serif">Kasi nyengo zinandi ni njani uyo wakuwa na mazaza pa kendeskero ka bizinesi ya pabanja linu?&nbsp; &nbsp;<b> &nbsp;</b></font></p><p><i style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">READ</i><b style="font-family: Arial, sans-serif;">&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b></p><p></p><p></p><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">D04.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">&nbsp;Ana mnopemnope wani wasatendaga iganisyo yakwendesya buzinesi ja pe wasa pano?</font><p></p>
         helpText:
@@ -638,7 +644,7 @@ questions:
           EN: |
             <b style="font-family: Arial, sans-serif;">D05a.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><span style="font-family: Arial, sans-serif;">&nbsp;~~get_c_do_does()~~ ~~get_you_name()~~ hire any</span>&nbsp;paid&nbsp;<span style="font-family: Arial, sans-serif;">employ</span><span style="font-family: Arial, sans-serif;">ees on a regular basis?&nbsp;</span>
           TU: |
-            <b style="font-family: Arial, sans-serif;">D05a.&nbsp;</b>Kasi (You/NAME) mukulemberapo wanthu wanyakhe wakugwira ntchito mwakulipilika pafupipafupi?<p></p>
+            <b style="font-family: Arial, sans-serif;">D05a.&nbsp;</b>Kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukulemberapo wanthu wanyakhe wakugwira ntchito mwakulipilika pafupipafupi?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">D05a.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">asalembaga wandu wakamula masengo mwakutotoganya?</font><p></p>
         helpText:
@@ -654,7 +660,7 @@ questions:
             <p>&nbsp;</p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">READ AND MARK ALL THAT APPLY&nbsp;</font></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">D06.&nbsp;</b>Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp; (you/NAME) mukupokera pa ntchito iyi?<p></p>
+            <b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp; ~~XDEM_NAME~~ mukupokera pa ntchito iyi?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Pa mtundu wa malipilo aga ana</font>&nbsp;~~XDEM_NAME~~&nbsp;<font face="Arial, sans-serif">&nbsp;asapochera malipilo ga mtundu wachi pa masengoga?</font><p></p>
         helpText:
@@ -693,11 +699,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">E01.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><font face="Arial, sans-serif">Kodi ndi ndani amene amalipira&nbsp;</font><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><font face="Arial, sans-serif">&nbsp;pa ntchitoyi?&nbsp;</font><br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">E01.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><font face="Arial, sans-serif">Kodi ndi ndani amene amalipira&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;pa ntchitoyi?&nbsp;</font><br></p><p></p><p></p>
           EN: |
             <p></p><table class="NormalTable"><tbody></tbody></table><p><b style="font-family: Arial, sans-serif;">E01.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Who pays ~~get_you_name()~~ for that work?</p><p></p><p></p><p></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">E01.&nbsp;</b><font face="Arial, sans-serif">Ninjani uyo wakumulipira (you/NAME) pa ntchito iyo?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">E01.&nbsp;</b><font face="Arial, sans-serif">Ninjani uyo wakumulipira&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;pa ntchito iyo?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">E01.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Ana wani wasiwalipiraga ~~XDEM_NAME~~&nbsp;pa masengo gelega?<p></p>
   - name: INDIVIDUALLFS_DICT.MJD_BOSS_TAX
@@ -705,7 +711,7 @@ questions:
       - logic: mjd_boss_tax_a = 1
         questionText:
           CH: |
-            <p></p><p><span class="fontstyle0"></span></p><p><b style="font-family: Arial, sans-serif;">E02a.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Kodi olemba ntchito&nbsp;&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;ndi amene amadula msonkho kumalipiro ake kapena kuti ndi udindo wa&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Rephrased: Kodi okulembani ntchito amadula msonkho ku malipiro anu?<br></p><p></p><p></p><p></p>
+            <p></p><p><span class="fontstyle0"></span></p><p><b style="font-family: Arial, sans-serif;">E02a.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Kodi olemba ntchito&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;ndi amene amadula msonkho kumalipiro ake kapena kuti ndi udindo wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>?&nbsp;</p><p>&nbsp;<font color="#0000ff">Rephrased</font>: Kodi okulembani ntchito amadula msonkho ku malipiro anu?<br></p><p></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">E02a.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Is&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~'s</span>&nbsp;employer responsible for deducting any taxes on (your/his/her) pay or is that&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~'s</span>&nbsp;responsibility?</p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">Rephrased:</span><font color="#0000ff" face="Arial, sans-serif">&nbsp;</font><font face="Arial, sans-serif">Does your employer deduct income tax from your salary/wage?</font><br></p>
           TU: |
@@ -715,7 +721,7 @@ questions:
       - logic: mjd_boss_tax_b = 1
         questionText:
           CH: |
-            <b style="font-family: Arial, sans-serif;">E02b.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Kodi bizinezi yomwe&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito amadula msonkho wina uliwonse kumalipiro (anu/ake) kapena ndi udindo wa&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;kupereka msonkho?<p></p>
+            <b style="font-family: Arial, sans-serif;">E02b.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Kodi bizinezi yomwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito amadula msonkho wina uliwonse kumalipiro (anu/ake) kapena ndi udindo wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;kupereka msonkho?<p></p>
           EN: |
             <p><span class="fontstyle2"><b style="font-family: Arial, sans-serif;">E02b.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b>Is the business ~~XDEM_NAME~~&nbsp;(work/works) for responsible for deducting any taxes on&nbsp;(your/his/her) pay or is that ~~get_you_name()~~'s responsibility?</span></p><p></p>
           TU: |
@@ -726,12 +732,12 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <div><b>F01.</b> Mu ntchito imeneyi, kodi <b>~~XDEM_NAME~~</b> amagwira mu......&nbsp;</div><div><br></div><div><font color="#0000ff"><i>READ</i></font></div>
+            <div><b>F01.</b> Mu ntchito imeneyi, kodi ~~XDEM_NAME~~ amagwira mu......&nbsp;</div><div><br></div><div><font color="#0000ff"><i>READ</i></font></div>
           EN: |
             <p><font face="Arial, sans-serif"><b><span style="font-size: 24px;">F01.&nbsp;</span></b></font><span style="font-family: Arial, sans-serif; font-size: 24px;">In this job, ~~get_are_is()~~ ~~get_you_he_she()~~</span><span style="font-family: Arial, sans-serif; font-size: 24px;"> working in….&nbsp;</span></p><span style="font-size: 24px;">
             </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">READ&nbsp;</font></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F01.&nbsp;</b>Mu ntchito iyi, kasi (you/he/she) mukugwira mu...<p></p>
+            <p><b style="font-family: Arial, sans-serif;">F01.&nbsp;</b>Mu ntchito iyi, kasi ~~XDEM_NAME~~&nbsp;mukugwira mu...</p><p><p><i style="color: rgb(0, 0, 255);">READ</i><br></p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif;">F01.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana masengoga&nbsp; (you/he/she) akukamula ku......</font></p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ&nbsp;</span><font face="Arial, sans-serif"><br></font><div><br></div><p></p></p>
         helpText:
@@ -742,11 +748,11 @@ questions:
       - logic: MJJ_EMP_REL<>2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F02a.&nbsp;</b>Kodi kumalo kapena ku bizinezi komwe&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito kuli ndi dzina?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F02a.&nbsp;</b>Kodi kumalo kapena ku bizinezi komwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito kuli ndi dzina?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F02a.&nbsp;</b><span style="font-family: Arial, sans-serif;">Does the place or business where ~~get_you_name()~~ ~~get_work_s()~~ have a name?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F02a.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Kasi malo panyakhe bizinesi iyo (you/NAME) wakugwirako ntchito yili na zina?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">F02a.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Kasi malo panyakhe bizinesi iyo&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-weight: bold; font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">wakugwirako ntchito yili na zina?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F02a.&nbsp;</b>Ana malo kapena bizinezi jakukamula/jasakamula masengo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;jana lina?<p></p>
         helpText:
@@ -759,7 +765,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F02b.&nbsp;</b><span style="font-family: Arial, sans-serif;">Does ~~get_your_names()~~ business have a name?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F02b.&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi (you/NAME) yili na zina?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">F02b.&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;yili na zina?</font><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif;">F02b.&nbsp;&nbsp;</b>Ana bizinezi ja&nbsp; (your/NAME’s) jana lina?&nbsp;</p><div><br></div><p></p>
         helpText:
@@ -770,11 +776,11 @@ questions:
       - logic: MJJ_EMP_REL <> 2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b>Kodi kumalo kapena ku bizinezi komwe&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito kuli ndi dzina?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b>Kodi kumalo kapena ku bizinezi komwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwirako ntchito kuli ndi dzina?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b><span style="font-family: Arial, sans-serif;">What is the name of the place or business where ~~get_you_name()~~ work?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b><font face="Arial, sans-serif">Kasi malo panyakhe bizinesi uko&nbsp; (you/NAME) mukugwirako ntchito ghakuchemeka na zina uli?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b><font face="Arial, sans-serif">Kasi malo panyakhe bizinesi uko&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;mukugwirako ntchito ghakuchemeka na zina uli?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F03a.&nbsp;</b>Ana malo kapena bizinezi jakukamula masengo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;lina lyakwe chi?<p></p>
         helpText:
@@ -783,11 +789,11 @@ questions:
       - logic: MJJ_EMP_REL = 2
         questionText:
           CH: |
-            <b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b>Kodi dzina la bizinezi ya&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;ndi chiyani?<p></p>
+            <b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b>Kodi dzina la bizinezi ya&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;ndi chiyani?<p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b><span style="font-family: Arial, sans-serif;">What is the name of ~~get_your_names()~~`s&nbsp; business?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi ya&nbsp; (you/NAME) yikuchemeka na zina uli?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi ya&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;yikuchemeka na zina uli?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F03b.&nbsp;</b><font face="Arial, sans-serif">Ana bizinezi ja&nbsp; (your/NAME’s) lina lyakwe chi?</font><p></p>
         helpText:
@@ -798,7 +804,7 @@ questions:
       - logic: MJJ_EMP_REL<>2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b>Kodi kwenikweni kumalo kumene&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwira ntchito kumachitika chiyani?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b>Kodi kwenikweni kumalo kumene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwira ntchito kumachitika chiyani?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b><span style="font-family: Arial, sans-serif;">What is the main activity of the place where ~~get_you_name()~~ ~~get_work_s()~~?&nbsp;</span><br></p>
             <p>&nbsp;</p>
@@ -807,7 +813,7 @@ questions:
             <p>&nbsp;</p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b><font face="Arial, sans-serif">Kasi ni ntchito wuli yenecho iyo yikuchitika kumalo agho&nbsp; (you/NAME) mukugwirako ntchito?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b><font face="Arial, sans-serif">Kasi ni ntchito wuli yenecho iyo yikuchitika kumalo agho&nbsp; ~~XDEM_NAME~~ mukugwirako ntchito?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F04a.&nbsp;&nbsp;</b>Ana chakutendekwa kusyesyene ku malo gerega kwasakamula masengo (you/NAME) ni chichi?<p></p>
         helpText:
@@ -816,7 +822,7 @@ questions:
       - logic: MJJ_EMP_REL=2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b>Kodi chenicheni chimene chimachitika mu bizinezi ya&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;ndi chiyani?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b>Kodi chenicheni chimene chimachitika mu bizinezi ya&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;ndi chiyani?</p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">(e.g.: [Police Department - public safety; Restaurant - preparing and serving meals; Transport Company - long distance transport of goods]) Mwachiyerezgero: [Ofesi ya polisi- chivikiliro cha wanthu, Restaurant -kunozga na kuperekera chakurya,&nbsp; company - yakunyamula katundu maulendo ghatali]&nbsp;</span><br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b><span style="font-family: Arial, sans-serif;">What is the main activity of ~~get_your_names()~~ business?&nbsp;</span><br></p>
             <p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic; text-align: justify;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p>
@@ -824,7 +830,7 @@ questions:
             <p>&nbsp;</p>
             <p><span style="font-style:italic;font-size:16px;color:#c0c0c0;font-family:'Arial', sans-serif;">ENTER 997 FOR DON'T KNOW&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b><font face="Arial, sans-serif">Kasi ni ntchito wuli yenecho iyo yikuchitika ku bizinesi ya&nbsp; (you/NAME)?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</font><div><font face="Arial, sans-serif">(e.g.: [Police Department - public safety; Restaurant - preparing and serving meals; Transport Company - long distance transport of goods]) Mwachiyerezgero: [Ofesi ya polisi- chivikiliro cha wanthu, Restaurant -kunozga na kuperekera chakurya,&nbsp; company - yakunyamula katundu maulendo ghatali]&nbsp;</font></div><p></p>
+            <b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b><font face="Arial, sans-serif">Kasi ni ntchito wuli yenecho iyo yikuchitika ku bizinesi ya&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</font><div><font face="Arial, sans-serif" color="#0000ff">(e.g.: [Police Department - public safety; Restaurant - preparing and serving meals; Transport Company - long distance transport of goods]) Mwachiyerezgero: [Ofesi ya polisi- chivikiliro cha wanthu, Restaurant -kunozga na kuperekera chakurya,&nbsp; company - yakunyamula katundu maulendo ghatali]&nbsp;</font></div><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif;">F04b.&nbsp;</b><font face="Arial, sans-serif">Ana chakutendekwa kusyesyene ku bizinezi ja&nbsp; (you/NAME) ni chichi?&nbsp;</font></p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic; text-align: justify;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p>&nbsp;</p><p><span style="font-style: italic; font-size: 16px; color: rgb(192, 192, 192); font-family: Arial, sans-serif;">ENTER 997 FOR DON'T KNOW&nbsp;</span></p><p></p><p></p><p></p>
         helpText:
@@ -838,7 +844,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F05a.&nbsp;</b><span style="font-family: Arial, sans-serif;">How many persons including ~~get_you_name()~~ work at ~~get_your_names()~~`s place of work?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F05a.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;awo wakugwira ntchito ku malo gha ntchito gha&nbsp;<span style="font-family: Arial, sans-serif;">~~get_your_names()~~</span>&nbsp;?<p></p>
+            <b style="font-family: Arial, sans-serif;">F05a.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;awo wakugwira ntchito ku malo gha ntchito gha&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F05a.&nbsp;</b>Ana wandu waligwa kupwatika&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>wakukamula masengo pa malo pano?<p></p>
         helpText:
@@ -847,11 +853,11 @@ questions:
       - logic: MJJ_EMP_REL=2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amene amagwira kapena kuthandizira ku bizinezi (yanu/yake)? Chonde muphatikize anthu ogwira ntchito onse, anthu apabanja, opanga nawo bizinezi ndi ena otero.<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amene amagwira kapena kuthandizira ku bizinezi (yanu/yake)? Chonde muphatikize anthu ogwira ntchito onse, anthu apabanja, opanga nawo bizinezi ndi ena otero.<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b><span style="font-family: Arial, sans-serif;">How many persons including </span><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><span style="font-family: Arial, sans-serif;"> work or help in </span><span style="font-family: Arial, sans-serif;">~~get_your_his_her()~~</span><span style="font-family: Arial, sans-serif;"> business? Please include any employees, family members, business partners, etc.&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo (you/NAME) awo wakugwira ntchito panyakhe kuwovwira mu bizinesi ya (your/his/her) Chonde sazgilanipo wantchito wose, wa pabanja pinu wose, wanyinu wakupanga nawo bizinesi na wanyakhe?<p></p>
+            <b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;awo wakugwira ntchito panyakhe kuwovwira mu bizinesi ya (your/his/her) Chonde sazgilanipo wantchito wose, wa pabanja pinu wose, wanyinu wakupanga nawo bizinesi na wanyakhe?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F05b.&nbsp;</b><font face="Arial, sans-serif">Ana wandu walingwa kupwatika&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;wakukamula kapena kamuchisya&nbsp; (your/his/her) mu bizineziji? Chonde apwatikanye wakulembedwa masengo osope, wa pewasa, wakutenda nawo yalumo bizinezi, ni wane)</font><p></p>
         helpText:
@@ -860,7 +866,7 @@ questions:
       - logic: MJJ_EMP_REL=3
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F05c.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>amene amagwira ntchito kapena kuthandizira mu bizinezi ya pabanja?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F05c.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>amene amagwira ntchito kapena kuthandizira mu bizinezi ya pabanja?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F05c.&nbsp;</b><span style="font-family: Arial, sans-serif;">How many persons including </span><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><span style="font-family: Arial, sans-serif;"> work or help in the family business?&nbsp;</span><br></p>
           TU: |
@@ -873,11 +879,11 @@ questions:
       - logic: MJU_INS=4
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F05d.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amene analembedwa ntchito pa khomo pano?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F05d.&nbsp;</b>Kodi ndi anthu angati kuphatikiza&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amene analembedwa ntchito pa khomo pano?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F05d.&nbsp;</b><span style="font-family: Arial, sans-serif;">How many persons including </span><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><span style="font-family: Arial, sans-serif;"> are employed by the household?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F05d.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo (you/NAME) awo wali kulembeka ntchito panyumba pinu?<p></p>
+            <b style="font-family: Arial, sans-serif;">F05d.&nbsp;</b>Kasi ni wanthu walinga kusazgirapo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;awo wali kulembeka ntchito panyumba pinu?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F05d.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana wandui walingwa kupwatika&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;walembedwe masengo ni pa nlango pano?</font><p></p>
         helpText:
@@ -887,11 +893,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F06.&nbsp;</b>Kodi nthawi zambiri ndi m'malo a mtundu wanji amene&nbsp;<span style="font-family: Arial, sans-serif;"><b>~~XDEM_NAME~~</b>&nbsp;</span>amagwirako ntchito?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F06.&nbsp;</b><font face="Arial, sans-serif">Kodi nthawi zambiri ndi m'malo a mtundu wanji amene ~~XDEM_NAME~~ amagwirako ntchito?</font><br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F06.&nbsp;</b><span style="font-family: Arial, sans-serif;">In what kind of place ~~get_do_does()~~ ~~get_you_name()~~ typically work?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">F06.&nbsp;</b>Kasi ni malo gha mtundu wuli agho (you/NAME) mukugwirirako ntchito nyengo zose?<p></p>
+            <b style="font-family: Arial, sans-serif;">F06.&nbsp;</b>Kasi ni malo gha mtundu wuli agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukugwirirako ntchito nyengo zose?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">F06.&nbsp;</b><font face="Arial, sans-serif">Ana&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;ndawi syejinji asakamula masengo ku malo ga mtunduchi?</font><p></p>
         helpText:
@@ -902,7 +908,7 @@ questions:
       - logic: MJJ_EMP_REL in 1,3,4,5
         questionText:
           CH: |
-            <font face="Arial, sans-serif"><b>G01a. </b>Kodi ndi chaka chanji chimene <b>~~XDEM_NAME~~</b> anayamba kugwira ntchito m'bizinezi kapena kumalo amenewa?</font><p></p>
+            <font face="Arial, sans-serif"><b>G01a. </b>Kodi ndi chaka chanji chimene ~~XDEM_NAME~~ anayamba kugwira ntchito m'bizinezi kapena kumalo amenewa?</font><p></p>
           EN: |
             <b style="font-family: Arial, sans-serif;">G01a.&nbsp;</b>Which year did ~~get_you_name()~~&nbsp;begin working in this business or place?<table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><br><br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
@@ -913,11 +919,11 @@ questions:
       - logic: MJJ_EMP_REL=2
         questionText:
           CH: |
-            <font face="Arial, sans-serif"><b>G01b. </b>Kodi ndi chaka chanji chimene <b>~~XDEM_NAME~~</b> anayamba kugwira ntchito m'bizinezi imeneyi?</font><p></p>
+            <font face="Arial, sans-serif"><b>G01b. </b>Kodi ndi chaka chanji chimene ~~XDEM_NAME~~ anayamba kugwira ntchito m'bizinezi imeneyi?</font><p></p>
           EN: |
             <b style="font-family: Arial, sans-serif;">G01b.&nbsp;</b><span class="fontstyle2">Which year did ~~get_you_name()~~&nbsp;start working in this business?</span><b style="font-family: Arial, sans-serif;">&nbsp;</b><br><p></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">G01b.&nbsp;</b><font face="Arial, sans-serif">Ni chaka uli icho (you/NAME) mukamba kugwira ntchito mu bizinesi iyi?</font><p></p>
+            <b style="font-family: Arial, sans-serif;">G01b.&nbsp;</b><font face="Arial, sans-serif">Ni chaka uli icho&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;mukamba kugwira ntchito mu bizinesi iyi?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">G01b.&nbsp;</b><font face="Arial, sans-serif">Ana chaka chi chiwatandite&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;kamula masengo mu bizinezi jeleji?</font><p></p>
   - name: INDIVIDUALLFS_DICT.MJT_SMO
@@ -936,7 +942,7 @@ questions:
       - logic: MJJ_EMP_REL=2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">G03a.</b><b>&nbsp;</b>Kodi bizinezi ya&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;inalembetsedwa mwa lamulo? Mwachitsanzo [kuipanga kukhala kampani kapena kukhala ndi anthu ena opanga nawo bizinezi]?&nbsp;&nbsp;</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">G03a.</b><b>&nbsp;</b>Kodi bizinezi ya&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;inalembetsedwa mwa lamulo? Mwachitsanzo [kuipanga kukhala kampani kapena kukhala ndi anthu ena opanga nawo bizinezi]?&nbsp;&nbsp;</p><p></p><p></p>
           EN: |
             <b style="font-family: Arial, sans-serif;">G03a.&nbsp;</b><span class="fontstyle2">Is ~~get_you_name()~~'s business incorporated? For example as a&nbsp;</span><span class="fontstyle2" style="color: rgb(0, 112, 192);">[limited company or partnership]</span><span class="fontstyle2">?</span><b style="font-family: Arial, sans-serif;">&nbsp;</b><br><br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
@@ -946,7 +952,7 @@ questions:
       - logic: ((MJJ_EMP_REL in 1,4,5) and (MJU_INS in 2,3))
         questionText:
           CH: |
-            <b style="font-family: Arial, sans-serif;">G03b.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Kodi bizinezi/famu imene&nbsp;&nbsp;</font><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><font face="Arial, sans-serif">&nbsp;amagwirako ntchito inalembetsedwa mwa lamulo? Mwachitsanzo [kuipanga kukhala kampani kapena kukhala ndi anthu ena opanga nawo bizinezi]?&nbsp;</font><br><p></p>
+            <b style="font-family: Arial, sans-serif;">G03b.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Kodi bizinezi/famu imene&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;amagwirako ntchito inalembetsedwa mwa lamulo? Mwachitsanzo [kuipanga kukhala kampani kapena kukhala ndi anthu ena opanga nawo bizinezi]?&nbsp;</font><br><p></p>
           EN: |
             <b style="font-family: Arial, sans-serif;">G03b.&nbsp;</b><font face="Arial, sans-serif">Is the (business/farm) ~~get_you_name()~~ (work/works) for incorporated? For example as a [limited company or partnership]?</font><br><p></p>
           TU: |
@@ -979,7 +985,7 @@ questions:
       - logic: (MJJ_EMP_REL in 1,4,5) and (MJU_INS in 2,3) and (MJL_CORP in 2,97)
         questionText:
           CH: |
-            <b>H01b. </b>Kodi bizinezi/famu yomwe <b>~~XDEM_NAME~~</b> amagwirako ntchito inalembetsedwa [m'kaundula wa ma bizinezi]?<br><p></p><p></p>
+            <b>H01b. </b>Kodi bizinezi/famu yomwe ~~XDEM_NAME~~ amagwirako ntchito inalembetsedwa [m'kaundula wa ma bizinezi]?<br><p></p><p></p>
           EN: |
             <b>H01b.</b> Is the (business/farm) ~~get_you_name()~~ (work/works) for registered in the [National Business Register]?<br><p></p>
           TU: |
@@ -989,7 +995,7 @@ questions:
       - logic: (MJJ_EMP_REL = 3) and (MJL_CORP in 2,97)
         questionText:
           CH: |
-            <table class="NormalTable" style="width: 603.624px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle2"><b>H01c.&nbsp;</b></span>Kodi bizinezi ya pabanja kapena famu inalembetsedwa [m'kaundula wa ma bizinezi]?</td></tr></tbody></table><p><br></p><p></p><p></p>
+            <b>H01c.</b> Kodi bizinezi ya pabanja kapena famu inalembetsedwa [m'kaundula wa ma bizinezi]?
           EN: |
             <span class="fontstyle2"><span class="fontstyle2"><b><br>H01c.&nbsp;</b>Is the family business or farm registered in the&nbsp;</span><span class="fontstyle2" style="color: rgb(0, 112, 192);">[National Business Register]</span><span class="fontstyle2">?</span></span><table class="NormalTable" style="width: 1235px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle2"><br><br></span></td></tr></tbody></table><p></p>
           TU: |
@@ -1012,16 +1018,16 @@ questions:
       - logic: (MJJ_EMP_REL=2) and (MJJ_HIRES=2) and (MJL_CORP in 2,97)
         questionText:
           CH: |
-            <b>I01a.</b> Kodi <b>~~XDEM_NAME~~</b>&nbsp; angathe kupanga mtengo wa katundu kapena ntchito yomwe <b>~~XDEM_NAME~~</b> anapereka (panokha/payekha)?<p></p>
+            <b>I01a.</b> Kodi ~~XDEM_NAME~~&nbsp; angathe kupanga mtengo wa katundu kapena ntchito yomwe ~~XDEM_NAME~~ anapereka (panokha/payekha)?<p></p>
           EN: |
             <div><b>I01a.</b>&nbsp; Can <b>~~get_you_name()~~</b> set the price of the products or services that <b>~~get_you_name()~~</b> offer(s) (yourself/himself/herself)?</div><div><br></div><p></p>
           TU: |
-            <b>I01a.&nbsp;</b>Kasi <b>~~XDEM_NAME~~</b>&nbsp;mungapanga mitengo ya katundu panyakhe ntchito&nbsp; izo (you/NAME) mukupereka (yourself/himself/herself)?&nbsp;<p></p>
+            <b>I01a.&nbsp;</b>Kasi ~~XDEM_NAME~~&nbsp;mungapanga mitengo ya katundu panyakhe ntchito&nbsp; izo ~~XDEM_NAME~~&nbsp;mukupereka (yourself/himself/herself)?&nbsp;<p></p>
           YA: |
             <b>I01a.</b>&nbsp;Ana ~~XDEM_NAME~~&nbsp;atakombola kuika mitengo ja indu pajika kapena masengo gakutendekwa ni ~~XDEM_NAME~~&nbsp;ga kwatendera wane?&nbsp;&nbsp;<p></p>
       - questionText:
           CH: |
-            <table class="NormalTable" style="width: 603.624px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b>I01b.&nbsp;</b></span></td></tr></tbody></table>Kodi banja lingathe kupanga mtengo wa katundu kapena ntchito yomwe bizinezi yapereka?<p></p>
+            <b>I01b. </b>Kodi banja lingathe kupanga mtengo wa katundu kapena ntchito yomwe bizinezi yapereka?<p></p>
           EN: |
             <br><table class="NormalTable" style="width: 1406px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle2"><b>I01b.&nbsp;</b>Can the family set the price of the products or services that the business offers?</span></td></tr></tbody></table><p></p>
           TU: |
@@ -1071,12 +1077,12 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">J02.&nbsp;</b>Kodi mgwirizano wa&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndi.......?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">J02.&nbsp;</b>Kodi mgwirizano wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndi.......?<br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">J02.&nbsp;</span></b><span style="font-size: 24px;">Is</span><span style="font-size: 16px; font-family: Arial, sans-serif;"><span style="font-size: 24px;"> ~~get_your_names()~~ </span><span style="font-family: Arial;"><span style="font-size: 24px;">contract or agreement</span><span style="font-family: Arial, sans-serif; font-size: 24px;"> …</span><span style="font-size: 24px;">?&nbsp;</span></span></span><br></p>
             <p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">J02.&nbsp;</b><font face="Arial, sans-serif">Kasi kukorerana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~get_your_names()~~</span><font face="Arial, sans-serif">&nbsp;uku</font><p></p>
+            <b style="font-family: Arial, sans-serif;">J02.&nbsp;</b><font face="Arial, sans-serif">Kasi kukorerana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;uku....?</font><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif;">J02.&nbsp;</b><font face="Arial, sans-serif">Ana nkamulano wa&nbsp;</font>~~get_your_names()~~ ..?</p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ&nbsp;</span></p><p></p><p></p>
         helpText:
@@ -1086,11 +1092,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">J03.&nbsp;</b><font face="Arial, sans-serif">Kodi mgwirizano wa ntchito ya&nbsp;</font><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><font face="Arial, sans-serif">&nbsp;&nbsp;ndi otalika bwanji yonse pamodzi pakadali pano?</font><br></p>
+            <p><b style="font-family: Arial, sans-serif;">J03.&nbsp;</b><font face="Arial, sans-serif">Kodi mgwirizano wa ntchito ya&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;&nbsp;ndi otalika bwanji yonse pamodzi pakadali pano?</font><br></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">J03.&nbsp;</span></b><span style="font-size: 24px;">How long in total is ~~get_your_names()~~ current agreement?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">J03.&nbsp;</b>Kasi ni nyengo yitali uli yose pamoza ya mgwirizano wa&nbsp;&nbsp;~~get_your_names()~~&nbsp;wasono?<p></p>
+            <b style="font-family: Arial, sans-serif;">J03.&nbsp;</b>Kasi ni nyengo yitali uli yose pamoza ya mgwirizano wa&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wasono?<p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">J03.&nbsp;</b><font face="Arial, sans-serif">Ana nkamulano wapanopanowu ni&nbsp;</font>~~get_your_names()~~&nbsp;<font face="Arial, sans-serif">&nbsp;pamo wa ndawi jajilewu uli ?</font><p></p>
         helpText:
@@ -1100,7 +1106,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>K01.&nbsp;</b>Ndi ziti mwa zinthu izi zimene zikugwirizana ndi mgwirizano wa&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;watsopano pakadali pano?<br></p><p></p><p></p>
+            <p><b>K01.&nbsp;</b>Ndi ziti mwa zinthu izi zimene zikugwirizana ndi mgwirizano wa ~~XDEM_NAME~~ watsopano pakadali pano?</p><p><span style="color: rgb(0, 0, 255);">READ AND MARK ALL THAT APPLY</span><br></p><p></p><p></p>
           EN: |
             <div><b>K01. </b>Which of the following applies to ~~get_you_name()~~'s current agreement?</div><div><br></div><div><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></div><p></p>
           TU: |
@@ -1111,18 +1117,18 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>K02.&nbsp;</b>Kodi mgwirizano wa&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;wapano ndi imodzi mwa njira yoti mutengere mgwirizano wa ntchito wokhazikika?<br></p><p></p><p></p>
+            <p><b>K02.&nbsp;</b>Kodi mgwirizano wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wapano ndi imodzi mwa njira yoti mutengere mgwirizano wa ntchito wokhazikika?<br></p><p></p><p></p>
           EN: |
             <b>K02.&nbsp;</b>Is&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~'s</span>&nbsp;current contract a step in a process to get a permanent contract?<b>&nbsp;</b><br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <b>K02.&nbsp;</b>Kasi mgwirizano wa (your/NAME’s) wasono uli mu nthowa yakuti uwe wakukhazikika?<p></p>
+            <b>K02.&nbsp;</b>Kasi mgwirizano wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wasono uli mu nthowa yakuti uwe wakukhazikika?<p></p>
           YA: |
             <b>K02.</b>&nbsp;Ana nkamulano wa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wapanopanowu chiwere chiyambi chakuti&nbsp; tachilembedwa masengo gakutamilichika?<p></p>
   - name: INDIVIDUALLFS_DICT.MCD_TASKSE
     conditions:
       - questionText:
           CH: |
-            <p><b>K03.&nbsp;</b>Kodi ntchito ya&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndiyoyendera nyengo?<br></p><p></p><p></p>
+            <p><b>K03.&nbsp;</b>Kodi ntchito ya&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndiyoyendera nyengo?<br></p><p></p><p></p>
           EN: |
             <b>K03.</b> Is ~~get_you_name()~~'s work seasonal?<p></p>
           TU: |
@@ -1167,7 +1173,7 @@ questions:
       - logic: MJC_CONTRA = 1 and MCD_CONTHRS = 2
         questionText:
           CH: |
-            <p><b>K06a.&nbsp;</b>Kodi mgwirizano wa ntchitowu umatsimikizira poyambira pa kachulukidwe ka maola ogwilira ntchito&nbsp; a&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>?<br></p><p></p><p></p>
+            <p><b>K06a.&nbsp;</b>Kodi mgwirizano wa ntchitowu umatsimikizira poyambira pa kachulukidwe ka maola ogwilira ntchito&nbsp; a&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>?<br></p><p></p><p></p>
           EN: |
             <b>K06a.&nbsp;</b>Does the contract guarantee a minimum amount of hours or work for&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>?<b>&nbsp;</b><br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
@@ -1189,7 +1195,7 @@ questions:
       - logic: MJJ_EMP_REL= 1 or MJJ_EMP_REL=  4
         questionText:
           CH: |
-            <b>L01a.</b> Kodi olemba ntchito ~~XDEM_NAME~~ mapereka ndalama yosokha ya [penshoni/ zaumoyo/ inshulansi ya omwe sali pa ntchito] ya&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>?<br><p></p>
+            <b>L01a.</b> Kodi olemba ntchito ~~XDEM_NAME~~ mapereka ndalama yosokha ya [penshoni/ zaumoyo/ inshulansi ya omwe sali pa ntchito] ya&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>?<br><p></p>
           EN: |
             <b>L01a.</b> Does ~~get_you_name()~~'s employer pay contributions to the [Pension Fund/Health/Unemployment Insurance] for ~~get_you_name()~~?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
@@ -1231,7 +1237,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><i><font color="#0000ff">READ</font></i>&nbsp;<b><br></b></p><p><b>M00.</b><b>&nbsp;</b><font face="Arial, sans-serif">Sopano ndikufunsani zokhuza ntchito kapena bizinezi yachiwiri ya&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>.</p><p></p><p></p>
+            <p><b>M00.</b><b>&nbsp;</b><i><font color="#0000ff">READ:&nbsp;</font></i><font face="Arial, sans-serif">Sopano ndikufunsani zokhuza ntchito kapena bizinezi yachiwiri ya&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>.</p><p></p><p></p>
           EN: |
             <p><i><font color="#0000ff">READ</font></i>&nbsp;</p><p><b>M00. </b>I am now going to ask you some questions about ~~get_you_name()~~&nbsp; second job or business activity.<br></p><p></p><p></p>
           TU: |
@@ -1308,12 +1314,12 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>M03.&nbsp;</b>Mu ntchito ya chiwiri imeneyi, kodi&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;amagwira ntchito ngati.....?<br></p><p></p><p></p>
+            <p><b>M03.&nbsp;</b>Mu ntchito ya chiwiri imeneyi, kodi&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;amagwira ntchito ngati.....?<br></p><p></p><p></p>
           EN: |
             <p><b>M03.&nbsp;</b><span style="font-family: Arial, sans-serif;">In this second job, ~~get_do_does()~~ ~~get_you_name() ~~ work…?&nbsp;</span>&nbsp;<br></p><span style="font-size: 24px;">
             </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">READ&nbsp;</font></span></p>
           TU: |
-            <p><b>M03.&nbsp;&nbsp;</b>Muntchito yinu ya chiwiri, kasi imwe&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name() ~~</span>&nbsp;mukulemba ntchito wanthu awo mukuwalipira mwapafupipafupi<br></p><p></p><p></p>
+            <p><b>M03.&nbsp;&nbsp;</b>Muntchito yinu ya chiwiri, kasi imwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukulemba ntchito wanthu awo mukuwalipira mwapafupipafupi<br></p><p></p><p></p>
           YA: |
             <b>M03.</b><p></p>
         helpText:
@@ -1335,11 +1341,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>N01.&nbsp;</b>Kodi ndi ntundu wanji wamalipilo awa umene&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;amalandira pa ntchitoyi?&nbsp; &nbsp; &nbsp; &nbsp;<br></p><p></p><p></p>
+            <p><b>N01.&nbsp;</b>Kodi ndi ntundu wanji wamalipilo awa umene&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;amalandira pa ntchitoyi?&nbsp; &nbsp; &nbsp; &nbsp;<br></p><p></p><p></p>
           EN: |
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle1"><b>N01. </b>Which of the following types of pay&nbsp;<span style="font-family: Arial, sans-serif;">~~get_c_do_does()~~</span>&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;receive for this work?</span></p><p><span class="fontstyle3"><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i></span></p></td></tr></tbody></table><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle1"><b>N01.&nbsp;</b></span>Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp; (you/NAME) mukupokera pa ntchito iyi?&nbsp;&nbsp;</p></td></tr></tbody></table><p></p>
+            <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle1"><b>N01.&nbsp;</b></span>Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukupokera pa ntchito iyi?&nbsp;&nbsp;</p></td></tr></tbody></table><p></p>
           YA: |
             <b>N01.&nbsp;&nbsp;</b>Pa mndandanda wa malipiro awu, ana&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;asapochera malipiro ga mtundu wachi?<p></p>
   - name: INDIVIDUALLFS_DICT.N01A
@@ -1356,12 +1362,12 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>N02.&nbsp;</b>Kodi abwana a&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndi amene amachotsa ndalama ya msokho pa ndalama yomwe<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;amalandira kapena umenewo ndi udindo wa&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>?<br></p><p></p><p></p>
+            <p><b>N02.&nbsp;</b>Kodi abwana a&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>ndi amene amachotsa ndalama ya msokho pa ndalama yomwe<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;amalandira kapena umenewo ndi udindo wa&nbsp;<span style="font-family: Arial, sans-serif;">&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>?<br></p><p></p><p></p>
           EN: |
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle1"><b>N02. </b>Is&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~'s</span>&nbsp;employer responsible for deducting any taxes on&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~'s</span>&nbsp;income or is that (your/NAME’s) responsibility?</span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <b>N02.&nbsp;</b>Kasi wakumulemba ntchito&nbsp; (you/NAME) wali na mazaza ghakudumula msonkho pa malipiro gha (your/his/her) panyakhe ni udindo (your/NAME’s) ?<p></p>
+            <b>N02.&nbsp;</b>Kasi wakumulemba ntchito&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wali na mazaza ghakudumula msonkho pa malipiro gha (your/his/her) panyakhe ni udindo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;?<p></p>
           YA: |
             <b>N02.&nbsp;&nbsp;</b>Ana wakwalemba masengo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>asakola machili gakata msongo kutyochela ku malipilo ga&nbsp; (your/his/her) kapena ayi isawaga mu ukumu wa&nbsp;<p></p>
   - name: INDIVIDUALLFS_DICT.SJD_PRICE_SELF
@@ -1392,7 +1398,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>O01</b></p><p>Tsopano ndikufunsani mafunso okhudzana ndi maola amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwira, kuyambira ndi ntchito (yanu/yake) yeniyeni yomwe (Inu/Iye) anagwira ngati ~~MJJ_OCC_TLE~~<br></p><p></p><p></p>
+            <p><b>O01&nbsp;</b>Tsopano ndikufunsani mafunso okhudzana ndi maola amene ~~XDEM_NAME~~ anagwira, kuyambira ndi ntchito (yanu/yake) yeniyeni yomwe (Inu/Iye) anagwira ngati ~~MJJ_OCC_TLE~~</p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">O01.</b><br></p><p><font color="#0000ff"><i>READ</i></font></p><p>Now, I would like to ask some questions about the hours that&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;work(s), starting with (your/his/her) main job as ~~MJJ_OCC_TLE~~&nbsp;…</p><p></p>
           TU: |
@@ -1570,7 +1576,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">O11.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">You said previously that </span><span style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">~~get_you_name()~~</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;"> had more than one job or business activity last week. How many jobs did ~~get_you_he_she()~~ have in total, even if absent?&nbsp;</span></p>
           TU: |
-            <b><span style="font-size: 16px;">O11.&nbsp;</span></b><span style="font-size: 16px;">Mwanguyowoya kuti&nbsp;</span><b style="font-family: Arial, sans-serif;"><span style="font-size: 16px;">~~XDEM_NAME~~</span></b><span style="font-size: 16px;">&nbsp;mukawa na ntchito panyakhe bizinesi yakujumpha imoza sabata yajumpha. Kasi ni ntchito zilinga izo (you/he/she) muli nazo zose pamoza, nangauli mukalutako yayi?</span><p></p>
+            <b><span style="font-size: 24px;">O11.&nbsp;</span></b><span style="font-size: 24px;">Mwanguyowoya kuti&nbsp;</span><span style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">~~XDEM_NAME~~</span></span><span style="font-size: 24px;">&nbsp;mukawa na ntchito panyakhe bizinesi yakujumpha imoza sabata yajumpha. Kasi ni ntchito zilinga izo (you/he/she) muli nazo zose pamoza, nangauli mukalutako yayi?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">O11.&nbsp;</b><font face="Arial, sans-serif">Asalile pandanda kuti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">&nbsp;wakwete masengo gakupitilila gamo kapena bizinezi mlungu umasile.&nbsp;</font><span style="font-family: Arial, sans-serif;">Ana masengo galingwa gosope giwakwete (you/he/she) ata kuti kwine nganajaula?&nbsp;</span><p></p>
         helpText:
@@ -1586,7 +1592,7 @@ questions:
             <p>&nbsp;</p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER HOURS PER WEEK;<span style="font-family: Arial;"> </span>ENTER 997 FOR DON’T KNOW&nbsp;</font></span></p>
           TU: |
-            <b><span style="font-size: 16px;">O12.</span></b><span style="font-size: 16px;">&nbsp;Kasi ni maola ghalinga agho kanandi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mukugwira mu ntchito yinu yachiwiri pa sabata?&nbsp;</span><p></p>
+            <b><span style="font-size: 24px;">O12.</span></b><span style="font-size: 24px;">&nbsp;Kasi ni maola ghalinga agho kanandi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukugwira mu ntchito yinu yachiwiri pa sabata?&nbsp;</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O12.&nbsp;</span></b>Ana ma awala galingwa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>&nbsp;mwamnopemnope asakamula masengo pa mlungu (your/his/her) mu masengo gawo gawiili?<p></p>
         helpText:
@@ -1600,7 +1606,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O13.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">Is that the number of hours ~~get_you_name()~~ worked last week in ~~get_your_his_her()~~ second job?&nbsp;</span></p>
           TU: |
-            <span style="font-size: 16px;"><b>O13</b>.&nbsp;Kasi agho ni maola agho&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 16px;">&nbsp;mukagwira sabata yajumpha mu (your/his/her) ntchito yachiwiri?</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O13</span></b><span style="font-size: 24px;">.&nbsp;Kasi agho ni maola agho&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 24px;">&nbsp;mukagwira sabata yajumpha mu (your/his/her) ntchito yachiwiri?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O13.&nbsp;</span></b><font face="Arial, sans-serif">Ana gelega ni ma awala&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;wakamwile masengo mlungu umasilewu (your/his/her) pa masengo gawo gawiili?&nbsp;</font><p></p>
         helpText:
@@ -1616,7 +1622,7 @@ questions:
             </span><p><span style="font-size: 24px;">&nbsp;</span></p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER HOURS IN REF. WEEK; ENTER 997 FOR DON’T KNOW&nbsp;</font></span></p>
           TU: |
-            <span style="font-size: 16px;"><b>O14.&nbsp;</b>Kasi ni maola ghalinga agho&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mukugwira mu ntchito yinu yachiwiri musabata yajumpha?</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O14.&nbsp;</span></b><span style="font-size: 24px;">Kasi ni maola ghalinga agho&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukugwira mu ntchito yinu yachiwiri musabata yajumpha?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O14.&nbsp;</span></b><font face="Arial, sans-serif">Ana ma awala galingwa&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">&nbsp;wakamwile masengo mlungu umasilewu (your/his/her) pa masengo gawo gawiili?</font><p></p>
         helpText:
@@ -1626,13 +1632,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">O15.&nbsp;&nbsp;</b>Kodi ndi maola angati amene<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>&nbsp;amagwira ntchito muntchito (zanu/zake) zina zoonjezera m'sabata yapitayi?</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O15.&nbsp;&nbsp;</b>Kodi ndi maola angati amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>&nbsp;amagwira ntchito muntchito (zanu/zake) zina zoonjezera m'sabata yapitayi?</p><p></p><p></p>
           EN: |
             <p><span style="font-size: 24px;">﻿</span><span style="font-family: Arial, sans-serif; font-size: 24px;"><b>O15.&nbsp;</b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">How many hours ~~get_do_does()~~ ~~get_you_name()~~ usually work per week in ~~get_your_his_her()~~ other job(s)?&nbsp;</span></p><span style="font-size: 24px;">
             </span><p><span style="font-size: 24px;">&nbsp;</span></p><span style="font-size: 24px;">
             </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER HOURS PER WEEK; ENTER 997 FOR DON’T KNOW&nbsp;</font></span></p>
           TU: |
-            <b><span style="font-size: 24px;">O15.</span></b><span style="font-size: 24px;">&nbsp;Kasi ni maola ghalinga agho kanandi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_your_his_her()~~</span><span style="font-size: 24px;">&nbsp;mukugwira mu ntchito zinu zinyakhe pa sabata?</span><p></p>
+            <b><span style="font-size: 24px;">O15.</span></b><span style="font-size: 24px;">&nbsp;Kasi ni maola ghalinga agho kanandi&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukugwira mu ntchito zinu zinyakhe pa sabata?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">O15.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana ma awala galingwa&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;asakamula masengo mwamnopemnope&nbsp; pa mlungu (your/his/her) pa masengo&nbsp; gawo gane galigose?</font><p></p>
         helpText:
@@ -1646,7 +1652,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O16.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">Is that the number of hours ~~get_you_name()~~ worked last week in ~~get_your_his_her()~~ other job(s)?&nbsp;</span><br></p>
           TU: |
-            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O16.&nbsp;</span></b><span style="font-size: 24px;">Kasi ni maola ghalinga agho kanandi (you/NAME) mukugwira mu ntchito zinu zinyakhe pa sabata?</span></span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O16.&nbsp;</span></b><span style="font-size: 24px;">Kasi ni maola ghalinga agho kanandi&nbsp;</span></span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;mukugwira mu ntchito zinu zinyakhe pa sabata?</span></span><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>O16.</b>&nbsp;</span></span><font face="Arial, sans-serif">Ana gerega ni ma awala giwakamwile&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;mlungu umasilewu&nbsp; mu masengo gawo gane galigose?</font><p></p>
         helpText:
@@ -1709,11 +1715,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Motero kuphatikiza zonse, zikutanthauza kuti nthawi zambiri ~~XDEM_NAME~~&nbsp; amagwira maola ~~WKT_ACHRSTOT~~pasabata, kodi ndimomwemo?</font></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Motero kuphatikiza zonse, zikutanthauza kuti nthawi zambiri ~~XDEM_NAME~~&nbsp; amagwira maola ~~WKT_ACHRSTOT~~ pasabata, kodi ndimomwemo?</font></p><p></p><p></p>
           EN: |
             <p><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">O22.</span><span style="font-size: 24px;">&nbsp;</span></b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">And in total, last week, is it correct that ~~get_you_name()~~ worked </span><span style="font-size: 24px;">~~WKT_ACHRSTOT~~ </span><span style="font-family: Arial, sans-serif; font-size: 24px;">hours?&nbsp;</span></p>
           TU: |
-            <span style="font-size: 16px;"><b>O22.&nbsp;</b>Ndipo wose pamoza, sabata yajumpha kasi nintheura kuti&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mukagwira maola [WKT_ACHRSTOT]?&nbsp;</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O22.&nbsp;</span></b><span style="font-size: 24px;">Ndipo wose pamoza, sabata yajumpha kasi nintheura kuti&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukagwira maola&nbsp;</span><span style="font-family: Arial, sans-serif;">~~WKT_ACHRSTOT~~</span><span style="font-size: 24px;">?&nbsp;</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Kupwatikanya pamo , mlungu umasile, ana yakuona kuti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;wakamwile masengo ma awala&nbsp;</font>~~WKT_ACHRSTOT~~<font face="Arial, sans-serif">?&nbsp;</font><p></p>
         helpText:
@@ -1729,7 +1735,7 @@ questions:
             </span><p><span style="font-size: 24px;">&nbsp;</span></p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER HOURS IN REF. WEEK; ENTER 997 FOR DON’T KNOW&nbsp;</font></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">O23.</b><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 16px;">Ni maola ghalinga wose pamoza agho&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 16px;">mukagwira sabata yajumpha?&nbsp;&nbsp;</span></font><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O23.</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 24px;">Ni maola ghalinga wose pamoza agho&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 24px;">mukagwira sabata yajumpha?&nbsp;&nbsp;</span></font><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>O23.</b>&nbsp;</span></span><font face="Arial, sans-serif">Ana ma awala galingwa pamo&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;wakamwile masengo mlungu umasile?</font><p></p>
         helpText:
@@ -1743,7 +1749,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">During the last four weeks, that is from ~~last_4weeks_start_date~~ up to ~~last_week_end_date~~, did ~~get_you_name()~~ look for additional or other paid work?&nbsp;</span></p><p><font color="#0080ff" style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</span><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 16px;">O24.&nbsp;</span></b><span style="font-size: 16px;">Mu masabata ghanayi agho ghajumpha, apo ni kufuma pa ~~last_4weeks_start_date~~&nbsp; mpaka&nbsp; ~~last_week_end_date~~ kasi ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe yakulipirika?&nbsp;</span><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-size: 24px;">Mu masabata ghanayi agho ghajumpha, apo ni kufuma pa ~~last_4weeks_start_date~~&nbsp; mpaka&nbsp; ~~last_week_end_date~~ kasi ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe yakulipirika?&nbsp;</span><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><font face="Arial, sans-serif">Mu milungu ncheche perepa kutadiraga&nbsp; [START_DATE] mpaka [last END_DAY/liso] ana (you/NAME) waliji nkusosa masengo gane gakonjechesya kapena gane gakulipidwa?</font></p><p><font face="Arial, sans-serif"><font color="#0080ff">NOTE:</font> The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</font><p></p></p>
         helpText:
@@ -1757,7 +1763,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">Would ~~get_you_name()~~ want to work more hours per week than usually worked, provided the extra hours are paid?&nbsp;</span></p><p><font color="#0080ff" style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;<i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></span><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
           TU: |
-            <b><span style="font-size: 16px;">O25.&nbsp;</span></b><span style="font-size: 16px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 16px;">mungakhumba kugwira maola ghanandi pasabata kuluska umo mukugwirira nyengo zose, pala maola ghakusazgirapo ghangawa ghakulipirika?&nbsp;<b> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</b></span><p></p>
+            <b><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 16px;"><span style="font-size: 24px;">mungakhumba kugwira maola ghanandi pasabata kuluska umo mukugwirira nyengo zose, pala maola ghakusazgirapo ghangawa ghakulipirika?&nbsp;</span><b><span style="font-size: 24px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></b></span><p></p>
           YA: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><font face="Arial, sans-serif">Ana&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">&nbsp;atakusaka kamulaga masengo ma awala gejinji pa mlungu kulekagana ni mowa gosope bola kuti ndawi jakonjechesyajo tiwalipileje?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </font></p><p><font face="Arial, sans-serif"><font color="#0080ff">NOTE:</font> <i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></font><p></p></p>
         helpText:
@@ -1771,7 +1777,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif; font-size: 24px;"><b>O26.&nbsp;</b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">Could ~~get_you_name()~~ start working more hours within the next two weeks?&nbsp;</span></p>
           TU: |
-            <span style="font-size: 16px;"><b>O26.&nbsp;</b>Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 16px;">&nbsp;mungazakayamba kugwira maola ghanandi mukatikati mwa sabata ziwiri izo zikwiza?</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">O26.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 24px;">&nbsp;mungazakayamba kugwira maola ghanandi mukatikati mwa sabata ziwiri izo zikwiza?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">O26.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;ata komboleka kutanda kamula masengo ma awala gejinji mkati mwa milungu jiwiri jikwisaji?</font><p></p>
         helpText:
@@ -1787,7 +1793,7 @@ questions:
             </span><p><span style="font-size: 24px;">&nbsp;</span></p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER HOURS PER WEEK; ENTER  997 FOR DON’T KNOW&nbsp;</font></span></p>
           TU: |
-            <b><span style="font-size: 16px;">O27.&nbsp;</span></b><span style="font-size: 16px;">Kasi ni maola ghalinga ghakusazgirapo pa sabata agho&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mungagwira?</span><p></p>
+            <span style="font-weight: bold; font-size: 24px;">O27.&nbsp;</span>Kasi ni maola ghalinga ghakusazgirapo pa sabata agho ~~XDEM_NAME~~ mungagwira?<p></p>
           YA: |
             <span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>O27.</b>&nbsp;</span></span><font face="Arial, sans-serif">Ana ma awala galingwa gakonjechesya pa mlungu&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">atakamula masengo?&nbsp;</font><p></p>
         helpText:
@@ -1802,7 +1808,7 @@ questions:
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b><span style="font-size: 24px;">P01.&nbsp;</span></b><span style="font-size: 24px;">(Do/Does)&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="font-size: 24px;">&nbsp;want to change (your/his/her) current employment situation?</span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <b><span style="font-size: 24px;">P01.&nbsp;&nbsp;</span></b><span style="font-size: 24px;">Kasi (you/NAME) mukukhumba kusintha ntchito yinu yasono?</span><p></p>
+            <b><span style="font-size: 24px;">P01.&nbsp;&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukukhumba kusintha ntchito yinu yasono?</span><p></p>
           YA: |
             <b>P01.</b>&nbsp;Ana&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;&nbsp;akusosa kuchenga (your/his/her) masengo gawo gakukamula pakali pano?&nbsp;<p></p>
   - name: INDIVIDUALLFS_DICT.WKI_INAD_RES
@@ -1826,7 +1832,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q01a.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">During the last four weeks,</span><span style="font-size: 24px;"> did</span><span style="font-family: Arial, sans-serif; font-size: 24px;"> ~~get_you_name()~~ do anything to find a paid job?&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q01a.</b><span style="font-size: 16px;">&nbsp;&nbsp;</span><span style="font-size: 16px;">Mu masabata ghanayi agho ghajumpha, kasi&nbsp; ~~XDEM_NAME~~&nbsp; mukachitapo chilichose kuti musange ntchito ya malipiro?</span><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q01a.</span></b><span style="font-size: 24px;">&nbsp;&nbsp;</span><span style="font-size: 24px;">Mu masabata ghanayi agho ghajumpha, kasi&nbsp; ~~XDEM_NAME~~&nbsp; mukachitapo chilichose kuti musange ntchito ya malipiro?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q01a.&nbsp;</span></b><font face="Arial, sans-serif">Pa milungu mcheche jipiteji ana ~~XDEM_NAME~~ watesile chine chilichose kuti apate masengo gakupochela malipilo?</font><p></p>
         helpText:
@@ -1839,7 +1845,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q01b.</span></b><span style="font-size: 16px; font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">&nbsp;</span></b><span style="font-size: 24px;">During the last four weeks, did ~~get_you_name()~~ look for additional or other paid work?&nbsp;</span></span></p>
           TU: |
-            <span style="font-family: Arial, sans-serif; font-size: 16px;"><b>Q01b.&nbsp;&nbsp;</b></span><font face="Arial, sans-serif"><span style="font-size: 16px;">Mu masabata ghanayi agho ghajumpha, kasi&nbsp; ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe ya malipiro?</span></font><p></p>
+            <span style="font-family: Arial, sans-serif; font-size: 24px;"><b>Q01b.&nbsp;&nbsp;</b></span><font face="Arial, sans-serif"><span style="font-size: 24px;">Mu masabata ghanayi agho ghajumpha, kasi&nbsp; ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe ya malipiro?</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q01b.</span></b><span style="font-size: 16px; font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">&nbsp;</span></b></span><font face="Arial, sans-serif">Pa milungu mcheche jipiteji&nbsp; ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;walinje kulolesya masengo gane kapena ine yakutenda yakupatila malipilo?</font><p></p>
         helpText:
@@ -1854,7 +1860,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q02a.</span></b><span style="font-size: 16px; font-family: Arial, sans-serif;"><span style="font-size: 24px;"><span style="font-size: 24px;">Or did ~~get_you_name()~~ try to start a business?</span><span style="font-size: 24px;">&nbsp;</span></span></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q02a.&nbsp;</b><span style="font-size: 16px;">Panyakhe&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;~~XDEM_NAME~~&nbsp;</span><span style="font-size: 16px;">&nbsp;mukayezgapo kwamba bizinesi?</span><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q02a.&nbsp;</span></b><span style="font-size: 24px;">Panyakhe&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">&nbsp;~~XDEM_NAME~~&nbsp;</span><span style="font-size: 24px;">&nbsp;mukayezgapo kwamba bizinesi?</span><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>Q02a.</b>&nbsp;</span></span><font face="Arial, sans-serif">Kapena&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;walinjile kuti atande bizinesi?</font><p></p>
         helpText:
@@ -1903,7 +1909,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif; font-size: 16px;"><b><span style="font-size: 24px;">Q04.&nbsp;</span></b><span style="font-size: 24px;">In addition to reading job advertisements, did ~~get_you_name()~~ do anything else in the last four weeks to </span></span><span style="font-size: 24px;">~~get_find_paid_job_start_business()~~</span><span style="font-family: Arial, sans-serif; font-size: 24px;">?&nbsp;</span><br></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q04.&nbsp;</b><span style="font-size: 16px;">Kusazgilapo kuwerenga mauthenga ghakukhwaskana nakulemba ntchito, kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mwapangaposo chinyakhe mu masabata ghanayi agho ghajumpha kuti (musange ntchito ya malipira / kwamba bizinesi)?</span><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q04.&nbsp;</span></b><span style="font-size: 24px;">Kusazgilapo kuwerenga mauthenga ghakukhwaskana nakulemba ntchito, kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mwapangaposo chinyakhe mu masabata ghanayi agho ghajumpha kuti (musange ntchito ya malipira / kwamba bizinesi)?</span><p></p>
           YA: |
             <span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>Q04.</b>&nbsp;</span></span><font face="Arial, sans-serif">Pakonjechesya kuwalanga ma utenga gakulolesya wakwalemba masengo,ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;watesile chine chilichose chakomboleka mu milungu mcheche jipiteji kuti (apate masengo gakupochela malipilo/kapena kutanda bizinesi)?</font><p></p>
         helpText:
@@ -1917,7 +1923,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif; font-size: 16px;"><b><span style="font-size: 24px;">Q05.&nbsp;</span></b><span style="font-size: 24px;">What else did ~~get_you_name()~~ do?&nbsp;</span></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q05.&nbsp;</b><font face="Arial, sans-serif"><span style="font-size: 16px;"><b>&nbsp;</b>Kasi&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 16px;">&nbsp;mukachitaposo chivichi?</span></font><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q05.&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 16px;"><b><span style="font-size: 24px;">&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span></span></font><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 24px;">&nbsp;mukachitaposo chivichi?</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q05.&nbsp;</span></b><font face="Arial, sans-serif"><b>&nbsp;</b>Ana chine chichi chiwatesile&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">?&nbsp;</font><p></p>
         helpText:
@@ -1939,7 +1945,7 @@ questions:
           EN: |
             <p><b><span style="font-size: 24px;">Q06.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">For how long ~~get_have_has()~~ ~~get_you_name()~~ been without work and trying to find a paid job or start a business?&nbsp;</span></p>
           TU: |
-            <b><span style="font-size: 16px;">Q06.&nbsp;</span></b><span style="font-size: 16px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mwakhala nyengo yitali uli kwambula ntchito na kwambula kupenja ntchito yakulipirika panyakhe kwamba bizinesi?&nbsp;</span><p></p>
+            <b><span style="font-size: 24px;">Q06.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mwakhala nyengo yitali uli kwambula ntchito na kwambula kupenja ntchito yakulipirika panyakhe kwamba bizinesi?&nbsp;</span><p></p>
           YA: |
             <b>Q06.</b>&nbsp;Ana kwa ndawi jajilewu uii&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;watemi ali wangali masengo soni waliji nkulinga kuti apate masengo gakupochela malipilo kapena kutanda bizinesi?<p></p>
         helpText:
@@ -1953,7 +1959,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif;"><span style="font-size: 24px;"><b>Q07.</b></span><span style="font-size: 24px;">&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">At any time in the last 12 months, that is since ~~last_12_months~~ up to last month did ~~get_you_name()~~ look for a paid job or try to start a business?&nbsp;</span></p>
           TU: |
-            <span style="font-family: Arial, sans-serif; font-size: 16px;"><b>Q07.</b></span><font face="Arial, sans-serif"><span style="font-size: 16px;"><b>&nbsp;</b>Panyengo yiliyose mu miyezi 12 iyo yajumpha, kwamba [CURRENT MONTH -12, YY] mpaka mwezi waumaliro kasi ~~XDEM_NAME~~&nbsp; mwapenjako ntchito yamalipiro panyakhe kuyezga kwamba bizinesi?</span></font><p></p>
+            <span style="font-family: Arial, sans-serif; font-size: 24px;"><b>Q07.</b></span><font face="Arial, sans-serif"><span style="font-size: 16px;"><b><span style="font-size: 24px;">&nbsp;</span></b><span style="font-size: 24px;">Panyengo yiliyose mu miyezi 12 iyo yajumpha, kasi ~~XDEM_NAME~~&nbsp; mwapenjako ntchito yamalipiro panyakhe kuyezga kwamba bizinesi?</span></span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">Q07.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Mu ndawi jine jili jose mwesi likumi ni jiwili jipiteji pelepa ni kutandilaga ~~last_12_months~~ mpaka mwesi umasile ana ~~XDEM_NAME~~ waliji nkulolesya masengo gakupochera malipilo kapena kulinga kutanda bizinezi?&nbsp;</font><p></p>
         helpText:
@@ -1967,7 +1973,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">Q08.</span></b><span style="font-size: 24px;">&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">At present, ~~get_do_does()~~ ~~get_you_name()~~ want to work?&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;"><span style="font-size: 16px;">Q08.&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 16px;">Pasono pano, kasi&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 16px;">~~get_you_name()~~</span><font face="Arial, sans-serif"><span style="font-size: 16px;">&nbsp;mungakhumba kugwira ntchito?</span></font><p></p>
+            <b style="font-family: Arial, sans-serif;"><span style="font-size: 24px;">Q08.&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 24px;">Pasono pano, kasi&nbsp;</span></font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 24px;">&nbsp;mungakhumba kugwira ntchito?</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">Q08</b><span style="font-family: Arial, sans-serif;">.</span><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana pakali pano&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;akusosa kamula masengo?</font><p></p>
         helpText:
@@ -1981,7 +1987,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif; font-size: 24px;"><b>QO9.&nbsp;</b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">What is the main reason why ~~get_you_name()~~ did not try to find a paid job or start a business in the last four weeks?&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">QO9.&nbsp;</b><font face="Arial, sans-serif"><span style="font-size: 16px;">Ntchifukwa uli chenecho icho&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 16px;">&nbsp;mukatondekera kusanga ntchito yamalipiro panyakhe kwamba biziness mu masabata ghanayi agho ghajumpha?&nbsp;</span></font><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">QO9.&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 24px;">Ntchifukwa uli chenecho icho&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif"><span style="font-size: 24px;">&nbsp;mukatondekera kusanga ntchito yamalipiro panyakhe kwamba biziness mu masabata ghanayi agho ghajumpha?&nbsp;</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">QO9.&nbsp;</b><font face="Arial, sans-serif">Ana<b> </b>ligongo lisyesyene</font><span style="font-family: Arial, sans-serif;">&nbsp;~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;nganalinga kusosa masengo gakulipidwa kapena kutanda buzinezi mu milungu ncheche jimasileji nichichi?</font><p></p>
         helpText:
@@ -2006,7 +2012,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10a</span></b><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">You told me earlier that ~~get_you_name()~~ ~~get_expect_s()~~ to start working in a new job or business. How soon ~~get_do_does()~~ ~~get_you_name()~~ expect to start working in this new job or business?&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q10a.&nbsp;&nbsp;</b><font face="Arial, sans-serif"><span style="font-size: 16px;">Mwanguyowoya kuti&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 16px;">&nbsp;mukulindilira kuti mwambenge kugwira ntchito panyakhe bizinesi yipsya. Kasi mulindizgenge nyengo yitali uli kuti mwambe ntchito panyakhe bizinesi yipsya?</span></font><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10a.&nbsp;&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 24px;">Mwanguyowoya kuti&nbsp;</span></font><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><font face="Arial, sans-serif"><span style="font-size: 24px;">&nbsp;mukulindilira kuti mwambenge kugwira ntchito panyakhe bizinesi yipsya. Kasi mulindizgenge nyengo yitali uli kuti mwambe ntchito panyakhe bizinesi yipsya?</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10a</span></b><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">.&nbsp;</span></b><font face="Arial, sans-serif">Monga asalile kala kuti&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;akwembechera kutanda masengo gasambanoga kapena bizinezi . Ana akwembecheya kuti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">tatande kamula lyuwachi masengogo kapena bizinezijo?&nbsp;</font><p></p>
         helpText:
@@ -2019,7 +2025,7 @@ questions:
           EN: |
             <p><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10b</span></b><b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">How soon ~~get_do_does()~~ ~~get_you_name()~~ expect to start working in this new job or business?&nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 16px;">Q10b.&nbsp;</b><font face="Arial, sans-serif"><span style="font-size: 16px;">Kasi mulindizgenge nyengo yitali uli kuti mwambe ntchito panyakhe bizinesi yipsya?</span></font><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10b.&nbsp;</span></b><font face="Arial, sans-serif"><span style="font-size: 24px;">Kasi mulindizgenge nyengo yitali uli kuti mwambe ntchito panyakhe bizinesi yipsya?</span></font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;">Q10b</span></b><span style="font-family: Arial, sans-serif; font-size: 16px;"><span style="font-size: 24px;"><b>.</b>&nbsp;</span></span><font face="Arial, sans-serif">Ana akwembecheya kuti tipajigale ndawi jajilewu uli kuti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">&nbsp;atande kamula masengo gelega ganyuwaniga kapena bizinesi?&nbsp;</font><p></p>
         helpText:
@@ -2033,7 +2039,7 @@ questions:
           EN: |
             <p><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">Q11.&nbsp;</span></b><span style="font-size: 24px;">If it depended on ~~get_you_name()~~, could ~~get_you_name()~~ have started working last week in this new job or business?&nbsp;</span></span></p>
           TU: |
-            <span style="font-size: 16px;"><b>Q11.&nbsp;</b>&nbsp;Viwenge kuti vikatoleranga (you/NAME),mphanyi (you/NAME) mukayambapo kugwira ntchito sabata yajumpha mu ntchito yinu yasono panyakhe bizinesi</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">Q11.&nbsp;</span></b><span style="font-size: 24px;">&nbsp;Viwenge kuti vikatoleranga (you/NAME),mphanyi (you/NAME) mukayambapo kugwira ntchito sabata yajumpha mu ntchito yinu yasono panyakhe bizinesi</span></span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">Q11.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">&nbsp;Ikawe kuti ikujigalira kusaka kwa&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;~~XDEM_NAME~~</span><font face="Arial, sans-serif">,ana mlungu umasile&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;akaliji ali atandite kamula masengo ga sambanoga kapena bizinezijo?&nbsp;</font><p></p>
         helpText:
@@ -2048,7 +2054,7 @@ questions:
             <p style="margin-bottom:8pt;"><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">Q12.&nbsp;</span></b><span style="font-size: 24px;">If a job or business opportunity had been available, could ~~get_you_name()~~ have started working last week?&nbsp;</span></span></p><span style="font-size: 24px;">
             </span><p><span style="font-size: 24px;">&nbsp;</span></p>
           TU: |
-            <span style="font-size: 16px;"><b>Q12.</b>&nbsp;Kuwenge kuti mwawi wa ntchito panyakhe bizinesi ukawapo, kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 16px;">~~XDEM_NAME~~</span><span style="font-size: 16px;">&nbsp;mphanyi mukayambapo kugwira ntchito sabata yajumpha?</span><p></p>
+            <span style="font-size: 16px;"><b><span style="font-size: 24px;">Q12.</span></b><span style="font-size: 24px;">&nbsp;Kuwenge kuti mwawi wa ntchito panyakhe bizinesi ukawapo, kasi&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mphanyi mukayambapo kugwira ntchito sabata yajumpha?</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">Q12.&nbsp;</b><font face="Arial, sans-serif">&nbsp;Pakawe kuti pana upile wa nasengo kapena bizinezi ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;&nbsp;</span><font face="Arial, sans-serif">akaliji ali atandite kamula masengo mlungu umasilewu?</font><p></p>
         helpText:
@@ -2207,7 +2213,7 @@ questions:
           EN: |
             <b>SPR_1.&nbsp;</b>Have the difficulties&nbsp;<span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span>&nbsp;have been officially recognized (certified) as a disability?&nbsp;<p></p>
           TU: |
-            <b>SPR_1.</b>&nbsp;Kasi masuzgo ghinu&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</b>ghali kuzomerezgeka kuti ni ulumali /khupendera?<p></p>
+            <b>SPR_1.</b>&nbsp;Kasi masuzgo ghinu&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><b style="font-family: Arial, sans-serif;">&nbsp;</b>ghali kuzomerezgeka kuti ni ulumali /khupendera?<p></p>
           YA: |
             <b>SPR_1.&nbsp;</b>Ana kulumala komwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;akwete kwalembesyedwe ( kukumanyika) mpera ulumali?<p></p>
   - name: INDIVIDUALLFS_DICT.SPR_2
@@ -2247,12 +2253,12 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>R02.</b> M'sabata yapitayi, kuyambira&nbsp; ~~nav_week_start_day~~ mpakana [last ~~nav_week_end_day_yesterday~~&nbsp; kodi&nbsp; &nbsp;~~XDEM_NAME~~ anadzala, kusamalira kapena kukolola mbewu zina zilizonse monga masamba kapena zipatso?&nbsp;<br><p></p><p></p>
+            <b>R02.</b> M'sabata yapitayi, kuyambira,&nbsp; kodi&nbsp; ~~XDEM_NAME~~ anadzala, kusamalira kapena kukolola mbewu zina zilizonse monga masamba kapena zipatso?&nbsp;<br><p></p><p></p>
           EN: |
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>R02.&nbsp;</b>Last week, from&nbsp;~~nav_week_start_day~~ up to&nbsp;<span style="font-family: Arial, sans-serif;">~~nav_week_end_day_yesterday~~</span>&nbsp;, did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;plant, maintain or harvest any crops, vegetables or fruits?</p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <b>R02.&nbsp;&nbsp;</b>Sabata yajumpha, kwamba ~~nav_week_start_day~~ mpaka pa ~~nav_week_end_day_yesterday~~ , kasi ~~XDEM_NAME~~&nbsp;mukapanda, kupwererera panyakhe kuvuna mbuto yiliyose, mphangwe panyakhe vipaso?<p></p>
+            <b>R02.&nbsp;&nbsp;</b>Sabata yajumpha, kwamba , kasi ~~XDEM_NAME~~&nbsp;mukapanda, kupwererera panyakhe kuvuna mbuto yiliyose, mphangwe panyakhe vipaso?<p></p>
           YA: |
             <b>R02.&nbsp;</b>Mlungu umasile kutandira ~~nav_week_start_day~~ mpaka&nbsp; ~~nav_week_end_day_yesterday~~, ana&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wapandile, kusamalira kapena gowola mbeju silisyose, maponda kapena ipaso?<p></p>
   - name: INDIVIDUALLFS_DICT.OPC_HPROD
@@ -2294,22 +2300,22 @@ questions:
       - logic: GLO_OPF=0
         questionText:
           CH: |
-            <p><b>S01a.</b> Kodi ~~XDEM_NAME~~&nbsp; anagwira&nbsp; zina mwa ntchito izi popanga chakudya cha banja m'sabata yapitayi monga...?&nbsp; &nbsp;</p><p><i><font color="#0000ff">Read and mark all that apply</font></i></p>
+            <p><b>S01a.</b> Kodi ~~XDEM_NAME~~ anagwira&nbsp; zina mwa ntchito izi popanga chakudya cha banja m'sabata yapitayi monga...?&nbsp; &nbsp;</p><p><i><font color="#0000ff">Read and mark all that apply</font></i></p>
           EN: |
             <div><b>S01a.</b> (And/Or) did ~~get_you_name()~~ do any of the following to produce food for the family, last week, such as..?</div><div><br></div><div><i><font color="#0000ff">Read and mark all that apply</font></i></div><p></p>
           TU: |
-            <b>S01a.&nbsp;</b>Kasi (you/NAME) mukachitapo chinyakhe mwa vinthu ivi kuti mupange chakurya cha pabanja, sabata yajumpha, nga ni...?&nbsp; &nbsp; &nbsp; &nbsp;<b> &nbsp; &nbsp;&nbsp;</b><p></p>
+            <p><b>S01a.&nbsp;</b>Kasi ~~XDEM_NAME~~&nbsp;mukachitapo chinyakhe mwa vinthu ivi kuti mupange chakurya cha pabanja, sabata yajumpha, nga ni...?&nbsp; &nbsp; &nbsp;</p><p><i><font color="#0000ff">Read and mark all that apply</font></i>&nbsp;<b> &nbsp; &nbsp;&nbsp;</b></p><p></p><p></p>
           YA: |
             <b>S01a.</b>&nbsp; Ana/Kapena&nbsp; ~~XDEM_NAME~~ wakamwile gane ga masengo aga kuti apate yakulya ya pewasa pano, mlungu umasilewu, mpelaga......?<p></p>
       - logic: GLO_OPF=1
         questionText:
           CH: |
-            <p><b>S01b.</b> Powonjezera pa zomwe mwandiuza kale,m'sabata yapitayi kuyambira ~~nav_week_start_day~~ mpakana ~~nav_week_end_day_yesterday~~, kodi~~XDEM_NAME~~ anagwirako zina mwa ntchito izi popanga zakudya zimene kwenikweni ndi zogwiritsa ntchito ngati chakudya cha pakhomo kapena banja...?</p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><br></p>
+            <p><b>S01b.</b> Powonjezera pa zomwe mwandiuza kale, m'sabata yapitayi, kodi~~XDEM_NAME~~ anagwirako zina mwa ntchito izi popanga zakudya zimene kwenikweni ndi zogwiritsa ntchito ngati chakudya cha pakhomo kapena banja...?</p><p><i><font color="#0000ff">Read and mark all that apply</font></i>&nbsp;<b>&nbsp;</b><br></p>
           EN: |
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><b>S01b.</b>&nbsp;</span><span class="fontstyle2">In addition to what you have told me, last week, from ~~nav_week_start_day~~&nbsp;up to&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~nav_week_end_day_yesterday~~</span>&nbsp;&nbsp;did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;do any of the following activities to produce food mainly for consumption by the household or family...?</span></p><p><span class="fontstyle3"><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i></span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><b>S01b.&nbsp;</b></span>Kusazgirapo pa ivyo mwaniphalira, sabata yajumpha, kufuma&nbsp; [START_DAY] mpaka pa&nbsp; END_DAY/yesterday], kasi (you/NAME) mukachitapo chinyakhe mwa vinthu ivi kuti chomenechomene mupange chakurya cha panyumba pinu panyakhe cha pabanja...?&nbsp;</p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p></td></tr></tbody></table><p></p>
+            <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><b>S01b.&nbsp;</b></span>Kusazgirapo pa ivyo mwaniphalira, sabata yajumpha, kufuma&nbsp; [START_DAY] mpaka pa&nbsp; END_DAY/yesterday], kasi ~~XDEM_NAME~~&nbsp;mukachitapo chinyakhe mwa vinthu ivi kuti chomenechomene mupange chakurya cha panyumba pinu panyakhe cha pabanja...?&nbsp;</p><p><i><font color="#0000ff">Read and mark all that apply</font></i>&nbsp;<b>&nbsp;</b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p></td></tr></tbody></table><p></p>
           YA: |
             <b>S01b. </b>Konjechesya yasalile kala, mlungu umasilewu, kutandila&nbsp; ~~nav_week_start_day~~ mpaka ~~nav_week_end_day_yesterday~~ ana ~~XDEM_NAME~~&nbsp; wakamwile gane mwa masengo aga kuti apate yakulya kusyesyene yakamulisya masengo panlango kapena pewasa pano?<p></p>
   - name: INDIVIDUALLFS_DICT.OPF_HDAY
@@ -2446,11 +2452,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><i>Lastly, we would like to understand specifically on what type of vocational skills people are involved in.&nbsp;</i></p><p><b>TVT01.</b>&nbsp;In the last seven days, did you do any of the following…?&nbsp;</p><p></p>
+            <p><i>Pamapeto, tikufuna tikambirane zinthu zokhudzana ndi ntchito zina zimene anthu akugwira kapena kupanga m'dziko mmuno. Kwenikweni tikufuna tiwone za luso limene anthu ali nawo, komwe anapeza lusolo ndi zinthu zina zokhudzana ndi ntchito za manja.</i></p><p><b>TVT01.</b>&nbsp;M'masiku asanu ndi awiri apitawa, kodi mwapangapo ntchito izi kuli mulandire malipilo kapenda kupindulapo?&nbsp;</p><p></p>
           EN: |
-            <p><i>Lastly, we would like to understand specifically on what type of vocational skills people are involved in.&nbsp;</i></p><p><b>TVT01.</b> In the last seven days, did you do any of the following…?&nbsp;</p><p></p><p></p>
+            <p><i>Lastly, I would like us to talk about other jobs/work people are doing in this country. Specifically we want to understand the type of vocational skills people have, where they acquired them and other issues related to that.&nbsp;</i></p><p><b>TVT01.</b> In the last seven days, did you do any of the following work for pay/gain…?&nbsp;</p><p></p><p></p>
           TU: |
-            <p><i>Lastly, we would like to understand specifically on what type of vocational skills people are involved in.&nbsp;</i></p><p><b>TVT01.</b>&nbsp;In the last seven days, did you do any of the following…?&nbsp;</p><p></p>
+            <p><i>Paumalilo, nkhukhumba tidumbirane vinthu vinyake vyakhukhwasyana na ntchito zinyake izo wanthu wakugwira panyake kuchita m'chalo chino.&nbsp; Chomenechomene tiwonenge za luso ilo wanthu ali nalo na uko wakasanga luso ili, na vinthu vinyake vyakukhwasyana na ntchito za mawoko.&nbsp;</i></p><p><b>TVT01.</b>&nbsp;M'madazi ghankhonde na ghawiri awo ghajumpha, kasi mwachitapo chilichose mwa ntchito izi kuti mulipilike panyakhe kuti musange phindu?</p><p></p>
   - name: INDIVIDUALLFS_DICT.TVT01A
     conditions:
       - questionText:
@@ -2464,7 +2470,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>TVT02.&nbsp;</b>Kodi&nbsp; ~~XDEM_NAME~~ , munalembedwa ndi&nbsp; munthu wina aliyense kuti mugwire ntchito imeneyi?<p></p>
+            <b>TVT02.&nbsp;</b>Kodi&nbsp; ~~XDEM_NAME~~, munalembedwa ndi&nbsp; munthu wina aliyense kuti mugwire ntchito imeneyi?<p></p>
           EN: |
             <b>TVT02.&nbsp;</b>~~get_c_were_was()~~&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;hired by someone else to do this work?&nbsp;<p></p>
           TU: |
@@ -2493,16 +2499,16 @@ questions:
           CH: |
             <p><b>TVT05A.</b>&nbsp;What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           EN: |
-            <p><b>TVT05A.</b> What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i><br></p><p></p>
+            <p><b>TVT05A.</b> What is&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i><br></p><p></p>
           TU: |
-            <p><b>TVT05A.</b>&nbsp;What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>TVT05A.</b>&nbsp;What is ~~XDEM_NAME~~&nbsp;current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.TVT05B
     conditions:
       - questionText:
           CH: |
             <p><b>TVT05A.</b>&nbsp;What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           EN: |
-            <p><b>TVT05A.</b>&nbsp;What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i><br></p><p></p>
+            <p><b>TVT05A.</b>&nbsp;What is&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i><br></p><p></p>
           TU: |
             <p><b>TVT05A.</b>&nbsp;What is (your/NAME’s) current average gross monthly earnings?</p><p></p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.TVT06
@@ -2511,7 +2517,7 @@ questions:
           CH: |
             <b>TVT06.</b> M’sabata yapitayi, Kodi ndi masiku angati amene ~~XDEM_NAME~~ anagwira ntchito imeneyi?<p></p>
           EN: |
-            <b>TVT06</b>. In the last seven days, on how many days did (you/NAME) do this work?&nbsp;<p></p>
+            <b>TVT06</b>. In the last seven days, on how many days did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;do this work?&nbsp;<p></p>
           TU: |
             <b>TVT06.</b> Mu madazi ghankhonde na ghawiri agho ghajumpha, mwachiyezgerero, kasi ~~XDEM_NAME~~ mukagwira ntchito iyi madazi ghalinga?<p></p>
   - name: INDIVIDUALLFS_DICT.TVT07
@@ -2520,7 +2526,7 @@ questions:
           CH: |
             <b>TVT07.</b> Mongoyerekeza,&nbsp; kodi&nbsp; &nbsp;~~XDEM_NAME~~ munatenga&nbsp; maola angati patsiku&nbsp; kupanga zimenezi m’sabata yatha?<p></p>
           EN: |
-            <b>TVT07</b>. How many hours per day did (you/NAME) spend doing this work last week?&nbsp;<p></p>
+            <b>TVT07</b>. How many hours per day did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend doing this work last week?&nbsp;<p></p>
           TU: |
             <b>TVT07.</b> Mwachiyerezgero, kasi ni maola ghalinga agho ~~XDEM_NAME~~ mukatola pa kugwira ntchito iyi sabata yamala?<p></p>
   - name: INDIVIDUALLFS_DICT.TVT08
@@ -2565,6 +2571,10 @@ questions:
           CH: |
             <p></p><div><i><font color="#0000ff">Result of interview</font></i><br></div>
           EN: |
+            <i><font color="#0000ff">Result of interview</font></i><p></p>
+          TU: |
+            <i><font color="#0000ff">Result of interview</font></i><p></p>
+          YA: |
             <i><font color="#0000ff">Result of interview</font></i><p></p>
   - name: BLOCK_DEM_BTH
     conditions:

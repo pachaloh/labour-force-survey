@@ -1000,14 +1000,14 @@ Text=D1_11
   
 [Field]
 Name=D1_12
-Position=374,1699,389,1719
+Position=374,1700,389,1720
 Item=D1_12,CHILD_LABOUR_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
 Form=2
   
 [Text]
-Position=282,1702,319,1718
+Position=282,1703,319,1719
 Text=D1_12
  
   

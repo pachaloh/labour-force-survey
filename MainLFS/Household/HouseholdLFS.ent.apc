@@ -516,10 +516,6 @@ preproc
 
 
 
-PROC IDS0_FORM
-
-
-
 PROC CLUSTER
 
 preproc
@@ -973,7 +969,7 @@ endif;
 PROC DEM_05
 
 	//Pachalo, 05Oct2023, Replaced SurveyDate with sysdate("YYYYMMDD")
-	if DEM_05 > SurveyYear or DEM_05 = SurveyYear and DEM_04 > SurveyMonth and DEM_04 <> 99 then
+	if DEM_05 > SurveyYear and DEM_04 > SurveyMonth and DEM_04 <> 99 then
 		errmsg("Date of birth %04d/%02d is invalid. Date of birth cannot be after survey reference date of %s.",
 			DEM_05, DEM_04, edit("9999/99/99", sysdate("YYYYMMDD")));
 		reenter;
@@ -1111,7 +1107,7 @@ postproc
 PROC DEM_08
 
 
-preproc ask if DEM_06>=3;
+preproc ask if DEM_06 >= 3;
 PROC DEM_09
 
 
@@ -1657,7 +1653,15 @@ postproc
    //	 skip to WS5
   endif;
 }
+PROC WS4
+
+preproc
+	ask if WS3 <> 95;
 PROC WS5
+
+preproc
+	ask if WS3 <> 95;
+
 {
 
 onfocus

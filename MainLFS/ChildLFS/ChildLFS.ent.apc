@@ -257,22 +257,27 @@ postproc
 	
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then			
 		
-			A1 	   = DEM_NAME(CHMPPNO); 		//Copy name of child from the household	
-			A2     = DEM_02(CHMPPNO); 		    //Copy relationship to household head from the household	
-			A3     = DEM_01(CHMPPNO); 
+			A1 	   = DEM_NAME(CHMPPNO); 	//Copy name of child from the household	
+			A2     = DEM_02(CHMPPNO); 		//Copy relationship to household head from the household	
+			A3     = DEM_01(CHMPPNO); 		//Sex
+			A4_DOB = DEM_03(CHMPPNO); 		//Month of birth
 			A4_MOB = DEM_04(CHMPPNO); 		//Month of birth
 			A4_YOB = DEM_05(CHMPPNO);		//Year of birth 
-			A5     = DEM_06(CHMPPNO); 			//Relationship to household head
+			A5     = DEM_06(CHMPPNO); 		//Relationship to household head
+			
+			skip to A7;
 	else
 			A1 = DEM_NAME(CHMPPNO); 		//Copy name of child from the household	
+			skip to A2;
 		
 	endif;
 PROC A1
-	
+preproc
+	noinput;	
 
 postproc
 	
-		
+{		
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 	
 		A2 	   = DEM_02(CHMPPNO); 	//Copy relationship to head from the household data
@@ -288,15 +293,14 @@ postproc
 
 		
 	endif;
-PROC A3
+}
+PROC A2
 
 preproc
-{
-	loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO);
 
-		$ = DEM_01(CHMPPNO); 		
+		loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO);	
+		A2 	= DEM_02(CHMPPNO); 	//Copy relationship to head from the household data
 		noinput;
-}
 PROC A4_DOB
 
 preproc 
@@ -385,6 +389,16 @@ onfocus
 	elseif A6A = 4 then
 		setvalueset($,A6B_VS4);	
 	endif;
+PROC B0_INTRO
+
+preproc
+
+	if locate(INDIVIDUALLFS_DICT,=,maketext("%v%v%v%v",CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO)) and loadcase(INDIVIDUALLFS_DICT) and ATW_PAY <> notappl then 
+	
+		$ = 1; 	
+	
+	noinput; 
+	endif;
 PROC B1
 
 preproc
@@ -463,10 +477,8 @@ PROC B5
 
 preproc
 
-	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_ANY <> ""  then 
-		
-		$ = toupper(AGF_ANY); 		//Work for pay
-		
+	if loadcase(INDIVIDUALLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO,CHMPPNO) and AGF_ANY <> ""  then 		
+		$ = toupper(AGF_ANY); 		//		
 		noinput; 
 	endif;
 	
@@ -690,39 +702,41 @@ preproc
 	if D0=0 then
 		skip to E1;
 	endif;
-PROC E1
-
-	if $ = 2 then
-		skip to E2
-	endif;
-
-
 PROC E1A
 
-PROC E2
+preproc
+	ask if E1 = 1;
+PROC E2A
 
+preproc
+	ask if E2 = 1;
+PROC E3A
 
-	if $ = 2 then
-		skip to E3
-	endif;
-PROC E3
-
-	if $ = 2 then
-		skip to E4;
-	endif;
+preproc
+	ask if E3 = 1;
 PROC E4
 
-	if E4 = 2 then
-		skip to E7
-	endif;
+preproc
 
+PROC E4A
 
+preproc
+	ask if E4 = 1;
+	
 PROC E5
 
-
+preproc
+	ask if E4 = 1;
+	
+{
 	if $ = 2 then
 		skip to E6;
 	endif;
+}
+PROC E5A
+
+preproc
+	ask if E5 = 1;
 PROC E6
 
 
@@ -744,30 +758,19 @@ PROC E8
 	endif;
 PROC E9
 
-	if $ = 2 then
-//		skip to E10;
-	endif;
-{	
-PROC E10
 
-	if $ = 2 then
-		skip to E11;
-	endif;
-}	
 PROC E9A
 
 preproc
 	ask if E9 = 1;
+	
 PROC E10
-{
-	if $ = 2 then
-		skip to E11;
-	endif;
-}	
+	
 PROC E10A
 
 preproc
 	ask if E10 = 1;
+	
 PROC E11
 
 	if E11 = 2 then

@@ -87,10 +87,20 @@ DataType=Numeric
 [ValueSet]
 Label=A2 Relationship
 Name=A2_VS1
-Value=1;SON OR DAUGHTER
-Value=2;BROTHER OR SISTER
-Value=3;OTHER RELATIVE
-Value=4;NOT RELATED
+Value=1;Head
+Value=2;Wife or husband
+Value=3;Son or daughter
+Value=4;Son-in-law or daughter-in-law
+Value=5;Grandchild
+Value=6;Parent
+Value=7;Parent-in-law
+Value=8;Brother or sister
+Value=9;Niece or nephew
+Value=0;Co-wife
+Value=2;Grandparent
+Value=3;Step-son or Step-daughter
+Value=4;Domestic worker
+Value=5;Not related
 
 [Item]
 Label=A3 Sex

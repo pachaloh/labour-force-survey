@@ -55,29 +55,43 @@ questions:
   - name: CHILD_LABOUR_DICT.A0_INTRO
     conditions:
       - questionText:
+          CH: |
+            <b style="font-size: 24px;"><u>Demographic section:</u></b><p></p>
           EN: |
             <p><span style="font-size: 24px;"><b><u>Demographic section:</u></b></span></p><p><span style="font-size: 24px;"><br></span></p>
+          TU: |
+            <b style="font-size: 24px;"><u>Demographic section:</u></b><p></p>
+          YAO: |
+            <b style="font-size: 24px;"><u>Demographic section:</u></b><p></p>
   - name: CHILD_LABOUR_DICT.RESP_LINE_NO
     conditions:
       - questionText:
           EN: |
-            <span style="font-size: 24px;">Name of resopondent</span><p></p>
+            <span style="font-size: 24px;"><font color="#0000ff">Name of resopondent</font></span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 24px;">Name of resopondent</span><p></p>
+          YAO: |
+            <span style="font-size: 24px;"><font color="#0000ff">Name of resopondent</font></span><p></p>
   - name: CHILD_LABOUR_DICT.A1
     conditions:
       - questionText:
           CH: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><span style="font-size: 24px;"><b>A1 . </b>Dzina la mwana</span></span><table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><br></td></tr></tbody></table></td></tr></tbody></table></td></tr></tbody></table><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">A1 .&nbsp;</span></b><span style="font-size: 24px;">Name of child</span></span></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <span style="font-size: 24px;"><b>A1. </b>Name of child</span><br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+          YAO: |
+            <b><span style="font-size: 24px;">A1.</span></b><span style="font-size: 24px;"> Name of child</span><p></p>
   - name: CHILD_LABOUR_DICT.A2
     conditions:
       - questionText:
           CH: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><span style="font-size: 24px;"><b>A2. </b>Kodi pali ubale wanji pakati pa&nbsp;</span></span><span style="font-size: 24px;"><b>~~A1~~</b>&nbsp;ndi mutu wa banja?</span></td></tr></tbody></table><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">A2.&nbsp;</span></b><span style="font-size: 24px;">What is </span><b><span style="font-size: 24px;">~~A1~~</span></b><span style="font-size: 24px;">`s relationship to the househol<span style="font-size: 24px;">d head</span></span><span style="font-size: 24px;">?</span><span style="font-size: 24px;"><br></span></span></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <span style="font-size: 24px;"><b>A2.</b> What is ~~A1~~`s relationship to the household head?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+          TU: |
+            <b style="font-size: 24px;">A2.</b><span style="font-size: 24px;">&nbsp;What is ~~A1~~`s relationship to the household head?</span><p></p>
+          YAO: |
+            <b style="font-size: 24px;">A2.</b><span style="font-size: 24px;">&nbsp;What is ~~A1~~`s relationship to the household head?</span><p></p>
   - name: CHILD_LABOUR_DICT.A3
     conditions:
       - questionText:
@@ -85,6 +99,10 @@ questions:
             <b><span style="font-size: 24px;">A3.</span></b><span style="font-size: 24px;">&nbsp;Kodi&nbsp;</span><b><span style="font-size: 24px;">&nbsp;~~A1~~</span></b><span style="font-size: 24px;"> ndi wamamuna kapena mkazi?</span><p></p>
           EN: |
             <b><span style="font-size: 24px;">A3.</span></b><span style="font-size: 24px;"> Is </span><b><span style="font-size: 24px;">~~A1~~</span></b><span style="font-size: 24px;"> male or female?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+          TU: |
+            <b><span style="font-size: 24px;">A3.</span></b><span style="font-size: 24px;">&nbsp;Is&nbsp;</span><b><span style="font-size: 24px;">~~A1~~</span></b><span style="font-size: 24px;">&nbsp;male or female?</span><p></p>
+          YAO: |
+            <b><span style="font-size: 24px;">A3.</span></b><span style="font-size: 24px;">&nbsp;Is&nbsp;</span><b><span style="font-size: 24px;">~~A1~~</span></b><span style="font-size: 24px;">&nbsp;male or female?</span><p></p>
   - name: CHILD_LABOUR_DICT.A4_DOB
     conditions:
       - questionText:
@@ -157,11 +175,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-size: 24px;"><b>B1. </b>M'sabata yapitayi, kuyambira&nbsp; ~~nav_week_start_day~~ mpakana ~~nav_week_end_day_yesterday~~, kodi ~~A1~~ anagwira ntchito yamalipiro kwa munthu wina aliyense kwa ola kapena kuputilira apo?&nbsp;</span><br></p><p></p><div><font color="#0000ff"><span style="font-size: 24px;"><i>(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)&nbsp;</i> &nbsp;</span></font><br></div><p></p><p></p>
+            <p><span style="font-size: 24px;"><b>B1. </b>M'masiku seveni apitawa, kodi ~~A1~~ anagwira ntchito yamalipiro kwa munthu wina aliyense kwa ola kapena kuputilira apo?&nbsp;</span><br></p><p></p><div><font color="#0000ff"><span style="font-size: 24px;"><i>(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)&nbsp;</i> &nbsp;</span></font><br></div><p></p><p></p>
           EN: |
-            <div><span style="font-size: 24px;"><b>B1.</b></span><span style="font-size: 24px;"> Last week, that is from ~~nav_week_start_day~~ to ~~nav_week_end_day_yesterday~~, did <b>~~A1~~</b> work for someone else for pay for one or more hours?</span></div><div><br></div><div><span class="instruction" style="font-size: 24px;"><i>(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)</i></span></div><p></p>
+            <div><span style="font-size: 24px;"><b>B1.</b></span><span style="font-size: 24px;"> In the last seven days, did <b>~~A1~~</b> work for someone else for pay for one or more hours?</span></div><div><br></div><div><span class="instruction" style="font-size: 24px;"><i>(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)</i></span></div><p></p>
           TU: |
-            <p><b><span style="font-size: 24px;">B1.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kwamba pa&nbsp;</span><span style="font-size: 24px;">~~nav_week_start_day~~</span><span style="font-size: 24px;">&nbsp;mpaka pa&nbsp;</span><span style="font-size: 24px;">&nbsp;~~nav_week_end_day_yesterday~~</span><span style="font-size: 24px;">, kasi&nbsp;</span><span style="font-size: 24px;">~~A1~~</span><span style="font-size: 24px;">&nbsp;mwagwirapo ntchito ya malipiro kwa munthu waliyose kwa ola limoza panyakhe kujumpha apo?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><i style="color: rgb(0, 0, 255); font-size: 24px;">(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)</i><span style="font-size: 24px;">&nbsp;&nbsp;</span></p><p></p><p></p><p></p>
+            <p><span style="font-size: 24px;"><b>B1. </b>M'm</span><span style="font-size: 24px;">adazi ghakhonde na ghawiri ghajumpha</span><span style="font-size: 24px;">, kasi&nbsp;</span><span style="font-size: 24px;">~~A1~~</span><span style="font-size: 24px;">&nbsp;mwagwirapo ntchito ya malipiro kwa munthu waliyose kwa ola limoza panyakhe kujumpha apo?&nbsp;</span></p><p><i style="color: rgb(0, 0, 255); font-size: 24px;">(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)</i><span style="font-size: 24px;">&nbsp;&nbsp;</span></p><p></p><p></p><p></p>
           YAO: |
             <p><b><span style="font-size: 24px;">B1.&nbsp;</span></b><span style="font-size: 24px;">Nlungu upitewu, kutandilaga&nbsp;</span><span style="font-size: 24px;">~~nav_week_start_day~~</span><span style="font-size: 24px;">&nbsp;mpaka&nbsp;</span><span style="font-size: 24px;">~~nav_week_end_day_yesterday~~</span><span style="font-size: 24px;">, ana&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;wakamwilepo masengo kwa mundu jwine julijose gakulipidwa kwa awala jimo kapena kupitilila pele?&nbsp; </span></p><p><i style="color: rgb(0, 0, 255); font-size: 24px;">(Including casual or piece work for cash payment, or in-kind payment or in exchange for food or housing)</i><span style="font-size: 24px;">&nbsp; &nbsp; &nbsp;&nbsp;</span><p></p></p>
   - name: CHILD_LABOUR_DICT.B2
@@ -170,7 +188,7 @@ questions:
           CH: |
             <p><b><span style="font-size: 24px;">B2.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi ~~A1~~&nbsp;&nbsp;anagwirako ntchito ina iliyonse ya bizinezi, ulimi kapena ntchito ina iliyonse yopezera ndalama?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></p><p><span style="font-size: 24px;"><font color="#0000ff"><i>READ IF NEEDED</i></font></span></p><p><span style="font-size: 24px;">(Don’t count normal housework)&nbsp;</span></p><p><font color="#0000ff"><span style="font-size: 24px;">(e.g. Producing farm products for sale or exchange; Making or repairing things for sale; Selling things in the street, local market, or in a shop; Shining shoes, guarding cars or similar&nbsp;</span></font><span style="color: rgb(0, 0, 255); font-size: 24px;">activities for tips; Any other activity to generate income; etc.)</span></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><b style=""><span style="font-size: 24px;">B2.&nbsp;</span></b><span style="font-size: 24px;">Last week, did&nbsp;</span></span><span style="font-size: 24px;"><b>~~A1~~</b> do any kind of business activity, farming or other activity to generate income?</span></p><p><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED</span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(Don’t count normal housework) </span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(e.g. Producing farm products for sale or exchange; Making or repairing things for sale; Selling things in the street, local market, or in a shop; Shining shoes, guarding cars or similaractivities for tips; Any other activity to generate income; etc.)</span></i></font></p><div><br></div></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><b style=""><span style="font-size: 24px;">B2.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp;</span></span><span style="font-size: 24px;"><b>~~A1~~</b> do any kind of business activity, farming or other activity to generate income?</span></p><p><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED</span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(Don’t count normal housework) </span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(e.g. Producing farm products for sale or exchange; Making or repairing things for sale; Selling things in the street, local market, or in a shop; Shining shoes, guarding cars or similaractivities for tips; Any other activity to generate income; etc.)</span></i></font></p><div><br></div></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><b><span style="font-size: 24px;">B2.&nbsp;</span></b></span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><span style="font-size: 24px;">~~A1~~&nbsp;</span><span style="font-size: 24px;">&nbsp;mwapangapo bizinesi ya mtundu wuliwose, ulimi panyakhe chakuchita chilichose chakusangira ndalama?</span></p><table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED</span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(Don’t count normal housework)</span></i></font></p><p><font color="#0000ff"><i><span style="font-size: 24px;">(e.g. Producing farm products for sale or exchange; Making or repairing things for sale; Selling things in the street, local market, or in a shop; Shining shoes, guarding cars or similaractivities for tips; Any other activity to generate income; etc.)</span></i></font></p><div><br></div></td></tr></tbody></table></td></tr></tbody></table><br><p></p>
@@ -182,7 +200,7 @@ questions:
           CH: |
             <p><b><span style="font-size: 24px;">B3.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi ~~A1~~&nbsp;anathandizako m'bizinezi kapena kufamu?</span></p><p><font color="#0000ff"><span style="font-size: 24px;">READ IF NEEDED:&nbsp;&nbsp;</span></font><span style="font-size: 24px; color: rgb(0, 0, 255);">(e.g. Help a family member engaged in an activity to generate income for the family; Help to produce farm products for sale or exchange; Help to make or sell things for sale or exchange; Guarding or cleaning the family business; etc.)</span></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><b><span style="font-size: 24px;">B3.&nbsp;</span></b><span style="font-size: 24px;">Last week did&nbsp;</span></span><span style="font-size: 24px;"><b>~~A1~~</b>&nbsp; help in a business or farm?</span></p><p><span class="fontstyle0"><br><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED:&nbsp; &nbsp;</span></i></font></span><span class="fontstyle0" style="font-size: 24px;"><i style=""><font color="#0000ff">(e.g. Help a family member engaged in an activity to generate income for the family; Help to produce farm products for sale or exchange; Help to make or sell things for sale or exchange; Guarding or cleaning the family business; etc.)</font></i></span></p></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><b><span style="font-size: 24px;">B3.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp;</span></span><span style="font-size: 24px;"><b>~~A1~~</b>&nbsp; help in a business or farm?</span></p><p><span class="fontstyle0"><br><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED:&nbsp; &nbsp;</span></i></font></span><span class="fontstyle0" style="font-size: 24px;"><i style=""><font color="#0000ff">(e.g. Help a family member engaged in an activity to generate income for the family; Help to produce farm products for sale or exchange; Help to make or sell things for sale or exchange; Guarding or cleaning the family business; etc.)</font></i></span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><b><span style="font-size: 24px;">B3.&nbsp;</span></b></span><span style="font-size: 24px;">Sabata yajumpha kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwawovwirako pa bizinesi panyakhe pa famu?</span></p><table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><font color="#0000ff"><i><span style="font-size: 24px;">READ IF NEEDED:&nbsp; &nbsp;</span></i></font></span><span class="fontstyle0" style="font-size: 24px;"><i><font color="#0000ff">(e.g. Help a family member engaged in an activity to generate income for the family; Help to produce farm products for sale or exchange; Help to make or sell things for sale or exchange; Guarding or cleaning the family business; etc.)</font></i></span></p></td></tr></tbody></table><p><span style="font-size: 24px;">&nbsp;&nbsp; &nbsp; &nbsp;</span></p></td></tr></tbody></table><p></p>
@@ -194,7 +212,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">B4.&nbsp;</span></b><span style="font-size: 24px;">Ngakhale&nbsp;&nbsp;~~A1~~sanagwire ntchito m'sabata yapitayi, kodi ali ndi ntchito yomwe anangojomba ndipo abwererakonso?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">B4.&nbsp;</span></b><span style="font-size: 24px;">Although&nbsp;<b>~~A1~~</b>&nbsp;did not work last week, did <b>~~A1~~</b>&nbsp; have a work activity from which <b>~~A1~~</b>&nbsp;(were/was) temporarily absent?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">B4.&nbsp;</span></b><span style="font-size: 24px;">Although&nbsp;<b>~~A1~~</b>&nbsp;did not work in the last seven days, did <b>~~A1~~</b>&nbsp; have a work activity from which <b>~~A1~~</b>&nbsp;(were/was) temporarily absent?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">B4.&nbsp;</span></b><span style="font-size: 24px;">Nanga uli&nbsp;</span><span style="font-size: 24px;"><b>~~A1~~</b>&nbsp;</span><span style="font-size: 24px;">mukagwira ntchito yayi sabata yajumpha, kasi&nbsp;</span><span style="font-size: 24px;"><b>~~A1~~</b></span><span style="font-size: 24px;">&nbsp;muli na ntchito iyo&nbsp;</span><span style="font-size: 24px;"><b>~~A1~~</b></span><span style="font-size: 24px;">&nbsp;mukalutako yayi.</span><p></p>
@@ -206,7 +224,7 @@ questions:
           CH: |
             <p><b><span style="font-size: 24px;">B5.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi ~~A1~~ anagwirako ntchito yokhudzana ndi…?</span></p><p><font color="#0000ff"><span style="font-size: 24px;">Read and mark all that apply</span></font></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><span style="font-size: 24px;"><b>B5.&nbsp;</b></span><span style="font-size: 24px;">Last week, did&nbsp;</span></span><span style="font-size: 24px;">~~A1~~&nbsp; do any work in…?</span></p><p><span class="fontstyle2" style="font-size: 24px;"><i><font color="#0000ff">Read and mark all that apply</font></i></span></p></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle0"><span style="font-size: 24px;"><b>B5.&nbsp;</b></span><span style="font-size: 24px;">In the last seven days, did&nbsp;</span></span><span style="font-size: 24px;">~~A1~~&nbsp; do any work in…?</span></p><p><span class="fontstyle2" style="font-size: 24px;"><i><font color="#0000ff">Read and mark all that apply</font></i></span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;">
           TU: |
             <p><b><span style="font-size: 24px;">B5.&nbsp;&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kasi (you/NAME) mukagwirapo ntchito yiliyose mu....?</span></p><table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle2" style="font-size: 24px;"><i><font color="#0000ff">Read and mark all that apply</font></i></span></p><div><span class="fontstyle2" style="font-size: 24px;"><i><font color="#0000ff"><br></font></i></span></div></td></tr></tbody></table>
@@ -233,7 +251,7 @@ questions:
             <table class="NormalTable"><tbody><tr></tr></tbody></table><b> 
             <span style="font-size: 24px;">B7.</span></b><span style="font-size: 24px;"> In general, were the products intended …?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <span style="font-size: 24px;"><b>B7.</b>&nbsp;</span><span style="font-size: 24px;">chakulata cha vinthu ivi chikawa cha....?</span><p></p>
+            <span style="font-size: 24px;"><b>B7.</b>&nbsp;C</span><span style="font-size: 24px;">hakulata cha vinthu ivi chikawa cha....?</span><p></p>
           YAO: |
             <span style="font-size: 24px;"><b>B7.</b>&nbsp;Mu yosope, ana yakutyochela mu&nbsp; gere masengoga yaliji ya….?</span><p></p>
   - name: CHILD_LABOUR_DICT.B8
@@ -277,7 +295,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">B11.&nbsp;</span></b><span style="font-size: 24px;">Kuphatikiza onse pamodzi, kodi kwenikweni ndi maola angati amene ~~A1~~&nbsp;anagwira mu ntchito yake/zake m'sabata yapitayi?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">B11.&nbsp;</span></b><span style="font-size: 24px;">In total, how many hours did<b>&nbsp;~~A1~~</b>&nbsp;actually worked in his/her job(s) last week?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">B11.&nbsp;</span></b><span style="font-size: 24px;">In total, how many hours did<b>&nbsp;~~A1~~</b>&nbsp;actually worked in his/her job(s) in the last seven days?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">B11.&nbsp;</span></b><span style="font-size: 24px;">Wose pamoza, ni maola ghalinga agho&nbsp;</span><span style="font-size: 24px;">~~A1~~</span><span style="font-size: 24px;">&nbsp;wakagwira mu ntchito yake/zake mu&nbsp; sabata yajumpha?</span><p></p>
@@ -463,17 +481,6 @@ questions:
             <b style="font-size: 24px;">C3_06B.&nbsp;&nbsp;</b><span style="font-size: 24px;">Ni maola ghalinga agho&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;wakatola pakupanga ivi sabata yajumpha?</span><p></p>
           YAO: |
             <b style="font-size: 24px;">C3_06B.&nbsp;</b><span style="font-size: 24px;">Ana&nbsp; ma awala galingwa gomwe&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">wajigele pakamula gele masengoga nlungu upitewu?</span><p></p>
-  - name: CHILD_LABOUR_DICT.C3_08B
-    conditions:
-      - questionText:
-          CH: |
-            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; adagwira ntchito imeneyi kwa&nbsp;</span><span style="font-size: 24px;">amaola angati?</span><p></p>
-          EN: |
-            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">How many hours did&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; spend on this activity last week?</span><p></p>
-          TU: |
-            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Ni maola ghalinga agho&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;wakatola pakupanga ivi sabata yajumpha?</span><p></p>
-          YAO: |
-            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Ana&nbsp; ma awala galingwa gomwe&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">wajigele pakamula gele masengoga nlungu upitewu?</span><p></p>
   - name: CHILD_LABOUR_DICT.C3_07
     conditions:
       - questionText:
@@ -509,6 +516,17 @@ questions:
             <span style="font-size: 24px;"><b>C3_08.</b>&nbsp;</span><span style="font-size: 24px;">Kutheza nkhuni [panyakhe vinthu vilivyose vyachilengiwa] vya kugwiriska ntchito pakuphikira panyumba pinu panyakhe pa banja linu?</span><p></p>
           YAO: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;">C3_08.&nbsp;&nbsp;</span></b></span><span style="font-size: 24px;">Kulokota sasu silisosye [kapena ine&nbsp; iliyose yachilengedwe] yakamulisya masengo pakuteleka pa nlango kapena pewasa pano?</span></td></tr></tbody></table><p></p>
+  - name: CHILD_LABOUR_DICT.C3_08B
+    conditions:
+      - questionText:
+          CH: |
+            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; adagwira ntchito imeneyi kwa&nbsp;</span><span style="font-size: 24px;">amaola angati?</span><p></p>
+          EN: |
+            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">How many hours did&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; spend on this activity last week?</span><p></p>
+          TU: |
+            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Ni maola ghalinga agho&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;wakatola pakupanga ivi sabata yajumpha?</span><p></p>
+          YAO: |
+            <b style="font-size: 24px;">C3_08B.&nbsp;</b><span style="font-size: 24px;">Ana&nbsp; ma awala galingwa gomwe&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">wajigele pakamula gele masengoga nlungu upitewu?</span><p></p>
   - name: CHILD_LABOUR_DICT.C4
     conditions:
       - questionText:
@@ -786,7 +804,7 @@ questions:
           CH: |
             <div><b><span style="font-size: 24px;">E1</span></b><span style="font-size: 24px;">. M'sabata yapitayi, kuyambira&nbsp; ~~nav_week_start_day~~ mpaka ~~nav_week_end_day_yesterday~~, kodi ~~A1~~ anathandiza kapena anakagulako zinthu za pakhomo pano?</span></div><div><br></div><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E1.&nbsp;</span></b><span style="font-size: 24px;">Last week, from&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">~~nav_week_start_day~~&nbsp;</span><span style="font-size: 24px;">&nbsp;to&nbsp;</span><span style="font-size: 24px;">~~nav_week_end_day_yesterday~~</span><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;"><span style="font-size: 24px;">, did</span><b><span style="font-size: 24px;">&nbsp;</span></b></span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;"><span style="font-size: 24px;">~~A1~~&nbsp;&nbsp;</span></b><span style="font-size: 24px;">help with or do any shopping for this household?</span><span style="font-size: 24px;"><br></span></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><span style="font-size: 24px;"><b>E1. </b>In the last seven days</span><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;"><span style="font-size: 24px;">, did</span><b><span style="font-size: 24px;">&nbsp;</span></b></span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;"><span style="font-size: 24px;">~~A1~~&nbsp;&nbsp;</span></b><span style="font-size: 24px;">help with or do any shopping for this household?</span><span style="font-size: 24px;"><br></span></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E1.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kwamba pa&nbsp;</span><span style="font-size: 24px;">~~nav_week_start_day~~&nbsp;</span><span style="font-size: 24px;">mpaka&nbsp;</span><span style="font-size: 24px;">~~nav_week_end_day_yesterday~~</span><span style="font-size: 24px;">, kasi (you/NAME) mwawovwirapo panyakhe mwakagulako vinthu vilivyose vya panyumba pano?</span><p></p>
@@ -809,7 +827,7 @@ questions:
           CH: |
             <div><span style="font-size: 24px;"><b>E2.</b> M'sabata yapitayi, kodi <b>~~A1~~</b> anathandizapo kunyamula zinthu zolemera pamene anakagula?</span></div><div><br></div>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E2.&nbsp;</span></b><span style="font-size: 24px;">Last week, did <b>~~A1~~</b> carry heavy loads while shopping?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E2.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did <b>~~A1~~</b> carry heavy loads while shopping?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E2.&nbsp;</span></b></span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwayeyapo vinthu vizito panyengo yakugula vinthu.</span></td></tr></tbody></table><p></p>
@@ -832,7 +850,7 @@ questions:
           CH: |
             <div><span style="font-size: 24px;"><b><span style="font-size: 24px;">E3. </span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp; ~~A1~~ anathandiza kapena kukonzapo zipangizo za pakhomo pano?</span></span></div><div><br></div><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E3.&nbsp;</span></b><span style="font-size: 24px;"><span style="font-size: 24px;">Last week, did&nbsp;</span><b><span style="font-size: 24px;"> ~~A1~~</span></b><span style="font-size: 24px;">&nbsp; help with or do any repair of household equipment for this household?</span></span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E3.&nbsp;</span></b><span style="font-size: 24px;"><span style="font-size: 24px;">In the last seven days, did&nbsp;</span><b><span style="font-size: 24px;"> ~~A1~~</span></b><span style="font-size: 24px;">&nbsp; help with or do any repair of household equipment for this household?</span></span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><span style="font-size: 24px;"><b>E3.</b>&nbsp;</span></span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">&nbsp;~~A1~~</b><span style="font-size: 24px;">&nbsp;mwawovwirapo panyakhe mwanozgapo katundu wapanyumba pano.</span></td></tr></tbody></table><p></p>
@@ -855,7 +873,7 @@ questions:
           CH: |
             <div><span style="font-size: 24px;"><b>E4. </b>M'sabata yapitayi, kodi ~~A1~~ anathandiza kapena kuphikako zakudya za pakhomo pano?</span></div><div><br></div><p></p>
           EN: |
-            <br><table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E4.&nbsp;</span></b><span style="font-size: 24px;">Last week, did&nbsp; <b>~~A1~~</b>&nbsp; help with or do any cooking for this household?</span><br></span></td></tr></tbody></table> 
+            <br><table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E4.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp; ~~A1~~&nbsp; help with or do any cooking for this household?</span><br></span></td></tr></tbody></table> 
             <span style="font-size: 24px;">&nbsp;</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E4.&nbsp;</span></b><span style="font-size: 24px;"><b>&nbsp;</b>Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;mwawovwirapo panyakhe mwaphikapo chakurya panyumba pano<b>.</b></span><p></p>
@@ -878,7 +896,7 @@ questions:
           CH: |
             <div><span style="font-size: 24px;"><b>E5. </b>M'sabata yapitayi, kodi ~~A1~~ anaphika pogwiritsa ntchito mbaula yotentha (ndi moto, gasi kapena malawi a moto)?</span></div><div><br></div><p></p>
           EN: |
-            <p></p><div><span style="font-size: 24px;"><b>E5.</b> Last week (were/was) ~~A1~~ cooking using a hot stove (with fire, gas or flames)?</span></div><div><br></div><p></p><p></p>
+            <p></p><div><span style="font-size: 24px;"><b>E5.</b>&nbsp;</span><span style="font-size: 24px;">In the last seven days</span><span style="font-size: 24px;">&nbsp;(were/was) ~~A1~~ cooking using a hot stove (with fire, gas or flames)?</span></div><div><br></div><p></p><p></p>
           TU: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E5.&nbsp;</span></b></span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mukaphikanga pakugwiriska ntchito mbaula yakotcha chomene ( moto&nbsp; wa nkhuni, gasi panyakhe malawi gha moto)</span></td></tr></tbody></table><p></p>
           YAO: |
@@ -900,7 +918,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E6.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><span style="font-size: 24px;"><b>~~A1~~</b>&nbsp;</span><span style="font-size: 24px;">&nbsp;anadula kapena kukonza chakudya ndi mipeni wakuthwa?&nbsp;</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E6.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp; <b>~~A1~~</b>&nbsp; cutting or preparing food with sharp knives?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E6.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; cutting or preparing food with sharp knives?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <span style="font-size: 24px;"><b>E6.</b>&nbsp;</span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mukadumula panyakhe kunozga chakurya pakugwiriska ntchito vimai vakuthwa chomene.</span><p></p>
@@ -923,7 +941,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E7.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;anathandiza kusamala panyumba/kutsuka ziwiya za pakhomo pano?</span><p></p>
           EN: |
-            <br><table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E7.&nbsp;</span></b><span style="font-size: 24px;">Last week, did&nbsp; <b>~~A1~~</b>&nbsp; &nbsp;help with or do any cleaning of the house/utensils for this household?</span><br></span></td></tr></tbody></table> 
+            <br><table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E7.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; &nbsp;help with or do any cleaning of the house/utensils for this household?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E7.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;mwawovwirapo panyakhe kunozga munyumba/viwiya vya panyumba pano?</span><p></p>
@@ -946,7 +964,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E8.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">&nbsp;~~A1~~&nbsp;</b><span style="font-size: 24px;">&nbsp;anatsuka ndi sopo kapena mankhwala otsukira amadzi amene amatha kubweretsa mavuto kapena kuotcha khungu lanu, maso kapena mphuno?<b>&nbsp;&nbsp;</b></span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E8.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp;<b> ~~A1~~&nbsp;</b> cleaning with soaps or chemicals/bleaches/liquids that irritate or burn your skin, eyes or nose?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E8.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp;</span><b style="font-size: 24px;"> ~~A1~~&nbsp;</b><span style="font-size: 24px;"> cleaning with soaps or chemicals/bleaches/liquids that irritate or burn your skin, eyes or nose?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E8.&nbsp;</span></b><span style="font-size: 24px;">Sabata&nbsp; yajumpha kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwachapako na sopo panyakhe mankhwala gha maji agho ghakunyenyera panyakhe kuwotcha pathupi, mmaso panyakhe mumphuno.</span><p></p>
@@ -969,7 +987,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E9.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi </span><b style="font-size: 24px;">~~A1~~&nbsp;&nbsp;</b><span style="font-size: 24px;">&nbsp;anakwera kapena kukonza malo ovuta kufikira omwe mutagwa mungathe kuvulala?&nbsp;</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E9.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp; <b>~~A1~~&nbsp; </b>&nbsp;climbing or cleaning hard to reach places from where if you fell, you might get injured?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E9.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~&nbsp; </b><span style="font-size: 24px;">&nbsp;climbing or cleaning hard to reach places from where if you fell, you might get injured?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E9.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">&nbsp;mukakweranga panyakhe kunozga malo ghakusuzga kufikapo ghakuti usange mungawa mungapwetekeka?</span><p></p>
@@ -1015,7 +1033,7 @@ questions:
           CH: |
             <b style="font-size: 24px;">E11.&nbsp;</b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;anathandiza kapena anachapako zovala za pakhomo pano?</span><p></p>
           EN: |
-            <span style="font-size: 24px;"><b>E11.</b> Last week, did <b>~~A1~~</b> help with or do any washing of the clothes for this household?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b style="font-size: 24px;">E11.</b><span style="font-size: 24px;">&nbsp;In the last seven days, did </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;"> help with or do any washing of the clothes for this household?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b style="font-size: 24px;">E11.&nbsp;</b><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;mwawovwirapo panyakhe mwachapako vyakuvwara vya panyumba pano.</span><p></p>
           YAO: |
@@ -1037,7 +1055,7 @@ questions:
           CH: |
             <b style="font-size: 24px;">E12.&nbsp;</b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">&nbsp;anachapa zovala pa manja?</span><p></p>
           EN: |
-            <span style="font-size: 24px;"><b>E12.</b> In the past week, (were/was)&nbsp; <b>~~A1~~&nbsp;</b> washing clothes by hand?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b style="font-size: 24px;">E12.</b><span style="font-size: 24px;">&nbsp;In the last seven days, (were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;"> washing clothes by hand?</span><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b style="font-size: 24px;">E12.&nbsp;</b><span style="font-size: 24px;">Mu sabata iyo yajumpha, kasi&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">mwachapako vyakuvwara na mawoko</span><p></p>
           YAO: |
@@ -1059,7 +1077,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E13.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;&nbsp;</span><span style="font-size: 24px;">&nbsp;anasitapo zovala?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E13.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp; <b>~~A1~~</b>&nbsp; ironing clothes?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E13.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; ironing clothes?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><span style="font-size: 24px;"><b>E13.</b>&nbsp;</span></span><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;mwasitako vyakuvwara?</span></td></tr></tbody></table><p></p>
@@ -1080,7 +1098,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E14.&nbsp;</span></b></span><span style="font-size: 24px;">Kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;ananyamula mabasiketi oyika zovala wolemera?</span></td></tr></tbody></table><p></p>
+            <b><span style="font-size: 24px;">E14.</span></b><span style="font-size: 24px;"> Kodi ~~A1~~ ananyamula mabasiketi oyika zovala wolemera?</span><p></p>
           EN: |
             <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E14.&nbsp;</span></b><span style="font-size: 24px;">(Were/Was)&nbsp; <b>~~A1~~</b>&nbsp; carrying heavy washing&nbsp;</span><span style="font-size: 24px;">baskets?</span></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
@@ -1105,7 +1123,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E15.&nbsp;&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;anathandiza kusamalira ana/okalamba/wodwala pakhomo pano?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E15.&nbsp;</span></b><span style="font-size: 24px;">Last week, did&nbsp; <b>~~A1~~</b>&nbsp; help with or care for&nbsp;</span><span style="font-size: 24px;">children/old/sick for this household?</span></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E15.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; help with or care for&nbsp;children/old/sick for this household?</span></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E15.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwawovwirapo kanyakhe kupwererera wana/wachekuru panyakhe warwali wapanyumba pano?</span><p></p>
@@ -1128,7 +1146,7 @@ questions:
           CH: |
             <b><span style="font-size: 24px;">E16.&nbsp;</span></b><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;ananyamula kapena kutukula munthu wamkulu/okalamba kapena mwana wa sikelo yayikulu?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E16.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp; <b>~~A1~~</b>&nbsp; carrying or lifting an adult/older person or a heavy child?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E16.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; carrying or lifting an adult/older person or a heavy child?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E16.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha kasi&nbsp;</span><span style="font-size: 24px;">&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwayeyako panyakhe kunyamulako munthu mulala panyakhe mwana wa sikelo yizito.</span><p></p>
@@ -1151,7 +1169,7 @@ questions:
           CH: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E17.&nbsp;</span></b></span><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;anasambitsa kapena kumveka munthu wamkulu wina aliyense?</span></td></tr></tbody></table><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E17.&nbsp;</span></b><span style="font-size: 24px;">Last week (were/was)&nbsp;<b>~~A1~~</b> bathing, showering or dressing any adults?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E17.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days&nbsp;(were/was)&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;"> bathing, showering or dressing any adults?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E17.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;mwagegiskako panyakhe kuvwalika munthu waliyose mulala.</span><p></p>
@@ -1174,7 +1192,7 @@ questions:
           CH: |
             <span style="font-size: 24px;"><b>E18.&nbsp;</b>&nbsp;</span><span style="font-size: 24px;">M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;anasamalira munthu wodwala?</span><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E18.&nbsp;</span></b><span style="font-size: 24px;">In the past week, (were/was)&nbsp; <b>~~A1~~</b>&nbsp; caring for a sick person?</span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E18.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, (were/was)&nbsp; </span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp; caring for a sick person?</span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1040px;"><tbody><tr><td width="200" style="border-style: none;"><span class="fontstyle0"><b><span style="font-size: 24px;"><span style="font-size: 24px;">E18.</span><span style="font-size: 24px;">&nbsp;</span></span></b></span><span style="font-size: 24px;">Mu sabata iyo yajumpha, kasi</span>&nbsp;&nbsp;<b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;</span><span style="font-size: 24px;">&nbsp;mwapwerererako munthu murwali.</span></td></tr></tbody></table><p></p>
@@ -1197,7 +1215,7 @@ questions:
           CH: |
             <div><span style="font-size: 24px;"><b>E19. </b>M'sabata yapitayi, kodi&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">&nbsp;anathandiza kapena kugwira ntchito ina iliyonse yapakhomo pano?<font color="#0000ff"><span style="white-space: pre;">	</span>(e.g. washingdishes, throwing garbage in the trash bin, etc.)</font></span></div><div><br></div><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E19.&nbsp;</span></b><span style="font-size: 24px;">Last week, did&nbsp;<b> ~~A1~~&nbsp; </b>help with or do any other household tasks for this household? (</span><span class="fontstyle0" style="color: rgb(47, 84, 150); font-size: 24px;"><i>e.g. washing dishes, throwing garbage in the trash bin, etc.</i></span><br></span></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><span class="fontstyle0"><b><span style="font-size: 24px;">E19.&nbsp;</span></b><span style="font-size: 24px;">In the last seven days, did&nbsp;</span><b style="font-size: 24px;"> ~~A1~~&nbsp; </b><span style="font-size: 24px;">help with or do any other household tasks for this household? (</span><span class="fontstyle0" style="color: rgb(47, 84, 150); font-size: 24px;"><i>e.g. washing dishes, throwing garbage in the trash bin, etc.</i></span><br></span></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b><span style="font-size: 24px;">E19.&nbsp;</span></b><span style="font-size: 24px;">Sabata yajumpha, kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~&nbsp;</b><span style="font-size: 24px;">&nbsp;mwawovwirako panyakhe kugwira ntchito yiliyose yapanyumba pano.&nbsp;</span><p></p>

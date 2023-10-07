@@ -1359,11 +1359,11 @@ preproc ask if (MJJ_EMP_REL in 1,4,5 OR (MJJ_EMP_REL=3 and MJJ_CFW_CHK in 3,4)) 
 PROC D06A
 
 preproc
-	ask if poschar("ABCDEH",MJJ_REM_TYP) > 0;
+	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
 PROC D06B
 
 preproc
-	ask if poschar("ABCDEH",MJJ_REM_TYP) > 0;
+	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
 PROC MJJ_END
 
 preproc $ = 1;
@@ -1583,6 +1583,12 @@ PROC MCD_TEMPRES
 
 preproc
 	ask if MJC_CONOP in 1,2;
+
+postproc
+	if poschar("ABCD",$) > 0 and pos("E",$) > 0 then
+		errmsg("Invalid selection");
+		reenter;
+	endif;
 PROC MCD_PERM
 
 preproc
@@ -1720,11 +1726,11 @@ preproc
 PROC N01A
 
 preproc
-	ask if poschar("ABCDEH",SJD_REM_TYP) > 0;
+	ask if poschar("abcdeh",SJD_REM_TYP) > 0;
 PROC N01B
 
 preproc
-	ask if poschar("ABCDEH",SJD_REM_TYP) > 0;
+	ask if poschar("abcdeh",SJD_REM_TYP) > 0;
 PROC SJD_BOSS_TAX
 
 preproc
