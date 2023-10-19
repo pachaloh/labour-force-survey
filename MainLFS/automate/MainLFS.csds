@@ -45,6 +45,12 @@
     },
     {
       "path": "..\\Shared Logic\\GPS.apc"
+    },
+    {
+      "path": "..\\TimeUse\\TimeUse.ent"
+    },
+    {
+      "path": "..\\TimeUse\\TimeUse.pff"
     }
   ],
   "dictionaries": [
@@ -86,6 +92,10 @@
     },
     {
       "path": "..\\TimeUse\\timeuse.dcf"
+    },
+    {
+      "path": "..\\TimeUse\\TimeUse.dcf",
+      "uploadForSync": true
     }
   ],
   "deployment": {

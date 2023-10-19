@@ -39,7 +39,7 @@ function eligibles(valueset string eligible_persons, valueset string eligible_ch
 				
 			endif;
 			
-			if DEM_06(member_index) in 15:64 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
+			if DEM_06(member_index) in 15:120 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
 				
 				eligible_timeuse.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
 				
@@ -163,10 +163,10 @@ function eligible_members(valueset string eligible_persons, valueset string elig
 				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
 
 				
-				if loadcase(TIMEUSE_DICT,PersonCaseId) {and TU_END <> notappl} then	
+				if loadcase(TIMEUSE_DICT_B,PersonCaseId) and TUS_END <> notappl then	
 					eligible_timeuse.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
 				
-				elseif loadcase(TIMEUSE_DICT,PersonCaseId) {and TU_END = notappl} then
+				elseif loadcase(TIMEUSE_DICT_B,PersonCaseId) and TUS_END = notappl then
 				
 					eligible_timeuse.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
 				
@@ -480,7 +480,7 @@ end;
 function time_use_ind() 
 
     // change the following filename to your desired output 
-    string pff_filename = path.concat(Application, "../TimeUse/timeuse.pff"); 
+    string pff_filename = path.concat(Application, "../TimeUse/TimeUse.pff"); 
 
     file dynamic_pff; 
     setfile(dynamic_pff, pff_filename, create); 
@@ -492,11 +492,11 @@ function time_use_ind()
 
     filewrite(dynamic_pff, "[DataEntryInit]"); 
     filewrite(dynamic_pff, "StartMode=Add"); 
-    filewrite(dynamic_pff, "Key=%v", "0001d72daca0-de5e-44fd-af03-f7a880b313b40301"); 
+    filewrite(dynamic_pff, "Key=%s", TIME_USE_SURVEY); 
     filewrite(dynamic_pff, "Lock=CaseListing"); 
 
     filewrite(dynamic_pff, "[Files]"); 
-    filewrite(dynamic_pff, "Application=%v", "./timeuse.ent"); 
+    filewrite(dynamic_pff, "Application=%v", "./TimeUse.ent"); 
     filewrite(dynamic_pff, "InputData=%v", "../Data/Timeuse.csdb"); 
 
     filewrite(dynamic_pff, "[Parameters]"); 

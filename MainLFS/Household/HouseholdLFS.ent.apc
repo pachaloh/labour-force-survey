@@ -1335,7 +1335,9 @@ ask if DEM_06>=5;
 
 onfocus
 
-if DEM_10 = 3 then
+if DEM_10 = 3 and DEM_12 = 10 then
+	setvalueset($,DEM_13A_VS3);
+elseif DEM_10 = 3 and DEM_12 <> 10 then
 	setvalueset($,DEM_13A_VS2);
 endif;
 

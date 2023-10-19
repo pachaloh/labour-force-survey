@@ -1,25 +1,22 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=TimeUse
-Name=TIMEUSE_DICT
+Label=TimeUseApproachB
+Name=TIMEUSE_DICT_B
 RecordTypeStart=1
 RecordTypeLen=1
 Positions=Relative
 ZeroFill=Yes
-DecimalChar=Yes
-SecurityOptions=0AF790F8550DC66631EDFEB00587AA3F98F5CE0C3DDE3CCF4FA8603847838716
-
-[Languages]
-ENG=English
+DecimalChar=No
+SecurityOptions=A693D630C4E2A5D774EB7325419DAFC0CFF096E00937F60BDCAEDDC64540C59C
 
 [Level]
-Label=IndividualLFS questionnaire
-Name=TIMEUSE_QUEST
+Label=TimeUse Level
+Name=TIMEUSE_LEVEL
 
 [IdItems]
 
 [Item]
-Label=Cluster
+Label=TCLUSTER
 Name=TCLUSTER
 Start=2
 Len=4
@@ -27,14 +24,14 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=Interviewer ID
+Label=TGHINTCODE
 Name=TGHINTCODE
 Start=6
 Len=36
 DataType=Alpha
 
 [Item]
-Label=Household number
+Label=TGHHHNO
 Name=TGHHHNO
 Start=42
 Len=2
@@ -42,7 +39,7 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=Unique person number
+Label=THMPPNO
 Name=THMPPNO
 Start=44
 Len=2
@@ -50,467 +47,1013 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Record]
-Label=Household and Geographic Identifiers
-Name=GH_REC
-RecordTypeValue='G'
-RecordLen=160
+Label=TimeUse Identifier
+Name=TIMEUSE_IDENTIFIER
+RecordTypeValue='3'
+RecordLen=47
 
 [Item]
-Label=Type of area
-Name=TGHAREA
-Start=46
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Type of area
-Name=TGHAREA_VS1
-Value=1;Urban
-Value=2;Peri-urban
-Value=3;Rural
-
-[Item]
-Label=Interview date
-Name=TGHVFDT
-Start=47
-Len=8
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=Household replacement status
-Name=TGHHRPL
-Start=55
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Household replacement status
-Name=TGHHRPL_VS1
-Value=1;YES
-Value=2;NO
-
-[Item]
-Label=Interviewer Name
-Name=TGHINTNAME
-Note=Added only for the beta testing purpose.
-Start=56
-Len=50
-DataType=Alpha
-
-[Item]
-Label=Line number of eligible member
-Name=LN_ELG
-Start=106
-Len=2
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=Name of Eligible member
-Name=NAME_ELG
-Start=108
-Len=50
-DataType=Alpha
-
-[Item]
-Label=Age of eligible member
-Name=AGE_ELG
-Start=158
-Len=3
-DataType=Numeric
-ZeroFill=Yes
-
-[Record]
-Label=Household members
-Name=HM_REC
-RecordTypeValue='M'
-RecordLen=45
-
-[Record]
-Label=Demographics
-Name=DEM_REC
-RecordTypeValue='D'
-RecordLen=108
-
-[Item]
-Label=Person number
-Name=TPPNO
+Label=TU_PPNO
+Name=TU_PPNO
 Start=46
 Len=2
 DataType=Numeric
 ZeroFill=Yes
 
-[Item]
-Label=Name
-Name=TDEM_NAME
-Start=48
-Len=50
-DataType=Alpha
-
-[Item]
-Label=Sex
-Name=TDEM_SEX
-Start=98
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Sex
-Name=TDEM_SEX_VS1
-Value=1;MALE
-Value=2;FEMALE
-
-[Item]
-Label=Relationship to head/reference person
-Name=TDEM_REL
-Note=The different values set of the variable DEM_REL was deleted. We only kept one value set equal to the latest version of
-Note=the questionnaire.\r\n
-Note=\r\n
-Note=It is not necessary to keep one version by gender because the responses categories are not read out loud.
-Start=99
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Relationship to head of household/reference person
-Name=TDEM_REL_VS1
-Value=1;REFERENCE PERSON
-Value=2;SPOUSE/PARTNER
-Value=3;SON/DAUGHTER
-Value=4;MOTHER/FATHER
-Value=5;OTHER RELATIVE
-Value=6;OTHER UNRELATED PERSON
-Value=7;DOMESTIC WORKER
-
-[Item]
-Label=Date of birth
-Name=TDEM_BTH
-Start=100
-Len=6
-DataType=Alpha
-
-[Item]
-Label=Year of birth
-Name=TDEM_BTH_YEAR
-Start=100
-Len=4
-ItemType=SubItem
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Year of birth
-Name=TDEM_BTH_YEAR_VS1
-Value=1896:2030
-Value=9997;DON'T KNOW
-
-[Item]
-Label=Month of birth
-Name=TDEM_BTH_MONTH
-Start=104
-Len=2
-ItemType=SubItem
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Month of birth
-Name=TDEM_BTH_MONTH_VS1
-Value=1;January
-Value=2;February
-Value=3;March
-Value=4;April
-Value=5;May
-Value=6;June
-Value=7;July
-Value=8;August
-Value=9;September
-Value=10;October
-Value=11;November
-Value=12;December
-Value=97;DON'T KNOW
-
-[Item]
-Label=Age
-Name=TDEM_AGE
-Start=106
-Len=3
-DataType=Numeric
-ZeroFill=Yes
-
 [Record]
-Label=Day activities
-Name=DAY_ACTIVITY
-RecordTypeValue='A'
-MaxRecords=6
-RecordLen=101
-
-[Item]
-Label=Day activity
-Name=XT01
-Start=46
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Day activity
-Name=XT01_VS1
-Value=1;Monday
-Value=2;Tuesday
-Value=3;Wednesday
-Value=4;Thursday
-Value=5;Friday
-Value=6;Saturday
-Value=7;Sunday
-
-[Item]
-Label=Time period
-Name=XT02
-Start=47
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=Time period
-Name=XT02_VS1
-Value=1;1 to 2
-Value=2;2 to 3
-Value=3;3 to 4
-Value=4;4 to 5
-Value=6;5 to 6
-
-[Item]
-Label=Activity record
-Name=XT03_CODE
-Start=48
-Len=3
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=Activity
-Name=XT03
-Start=51
-Len=50
-DataType=Alpha
-
-[Item]
-Label=More activities
-Name=XT03_ADD
-Start=101
-Len=1
-DataType=Numeric
-
-[ValueSet]
-Label=More activities
-Name=XT03_ADD_VS1
-Value=1;Yes
-Value=2;No
-
-[Record]
-Label=Time use
-Name=TIME_USE
+Label=TimeUse Record
+Name=TIMEUSE_REC
 RecordTypeValue='T'
-MaxRecords=6
-RecordLen=108
+MaxRecords=96
+RecordLen=8661
 
 [Item]
-Label=T01
-Name=T01
+Label=LDB_TSS
+Name=LDB_TSS
 Start=46
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=T02
-Name=T02
-Start=47
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=T02
-Name=T02_VS1
-Value=1;1 am and 2 am
-Value=2;2 am to 3 am
-Value=3;3 am to 4 am
-Value=4;4 am to 5 m
-Value=6;5 am to 6 am
-
-[Item]
-Label=T03
-Name=T03
-Start=48
-Len=50
-DataType=Alpha
-
-[Item]
-Label=T04
-Name=T04
-Start=98
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=T04
-Name=T04_VS1
-Value=1;YES
-Value=2;NO
-
-[Item]
-Label=T05
-Name=T05
-Start=99
 Len=2
 DataType=Numeric
 ZeroFill=Yes
 
 [ValueSet]
-Label=T05
-Name=T05_VS1
-Value=1:60;1-60 mins
+Label=LDB_TSS
+Name=LDB_TSS_VS1
+Link=147628872
+Value=1;4:00
+Value=2;4:15
+Value=3;4:30
+Value=4;4:45
+Value=5;5:00
+Value=6;5:15
+Value=7;5:30
+Value=8;5:45
+Value=9;6:00
+Value=10;6:15
+Value=11;6:30
+Value=12;6:45
+Value=13;7:00
+Value=14;7:15
+Value=15;7:30
+Value=16;7:45
+Value=17;8:00
+Value=18;8:15
+Value=19;8:30
+Value=20;8:45
+Value=21;9:00
+Value=22;9:15
+Value=23;9:30
+Value=24;9:45
+Value=25;10:00
+Value=26;10:15
+Value=27;10:30
+Value=28;10:45
+Value=29;11:00
+Value=30;11:15
+Value=31;11:30
+Value=32;11:45
+Value=33;12:00
+Value=34;12:15
+Value=35;12:30
+Value=36;12:45
+Value=37;13:00
+Value=38;13:15
+Value=39;13:30
+Value=40;13:45
+Value=41;14:00
+Value=42;14:15
+Value=43;14:30
+Value=44;14:45
+Value=45;15:00
+Value=46;15:15
+Value=47;15:30
+Value=48;15:45
+Value=49;16:00
+Value=50;16:15
+Value=51;16:30
+Value=52;16:45
+Value=53;17:00
+Value=54;17:15
+Value=55;17:30
+Value=56;17:45
+Value=57;18:00
+Value=58;18:15
+Value=59;18:30
+Value=60;18:45
+Value=61;19:00
+Value=62;19:15
+Value=63;19:30
+Value=64;19:45
+Value=65;20:00
+Value=66;20:15
+Value=67;20:30
+Value=68;20:45
+Value=69;21:00
+Value=70;21:15
+Value=71;21:30
+Value=72;21:45
+Value=73;22:00
+Value=74;22:15
+Value=75;22:30
+Value=76;22:45
+Value=77;23:00
+Value=78;23:15
+Value=79;23:30
+Value=80;23:45
+Value=81;0:00
+Value=82;0:15
+Value=83;0:30
+Value=84;0:45
+Value=85;1:00
+Value=86;1:15
+Value=87;1:30
+Value=88;1:45
+Value=89;2:00
+Value=90;2:15
+Value=91;2:30
+Value=92;2:45
+Value=93;3:00
+Value=94;3:15
+Value=95;3:30
+Value=96;3:45
 
 [Item]
-Label=T06
-Name=T06
-Start=101
-Len=1
+Label=LDB_TSE
+Name=LDB_TSE
+Start=48
+Len=2
 DataType=Numeric
 ZeroFill=Yes
 
 [ValueSet]
-Label=T06
-Name=T06_VS1
-Value=1;Self
-Value=2;Spouse/Partner
-Value=3;Children in the household or part of the family
-Value=4;Other adult in the household/family members
-Value=5;Work/My job/Market
-Value=6;Friends/Other household
-Value=7;Charity
-Value=8;Community
-Value=9;Other
+Label=LDB_TSE
+Name=LDB_TSE_VS1
+Link=153905152
+Value=1;4:15
+Value=2;4:30
+Value=3;4:45
+Value=4;5:00
+Value=5;5:15
+Value=6;5:30
+Value=7;5:45
+Value=8;6:00
+Value=9;6:15
+Value=10;6:30
+Value=11;6:45
+Value=12;7:00
+Value=13;7:15
+Value=14;7:30
+Value=15;7:45
+Value=16;8:00
+Value=17;8:15
+Value=18;8:30
+Value=19;8:45
+Value=20;9:00
+Value=21;9:15
+Value=22;9:30
+Value=23;9:45
+Value=24;10:00
+Value=25;10:15
+Value=26;10:30
+Value=27;10:45
+Value=28;11:00
+Value=29;11:15
+Value=30;11:30
+Value=31;11:45
+Value=32;12:00
+Value=33;12:15
+Value=34;12:30
+Value=35;12:45
+Value=36;13:00
+Value=37;13:15
+Value=38;13:30
+Value=39;13:45
+Value=40;14:00
+Value=41;14:15
+Value=42;14:30
+Value=43;14:45
+Value=44;15:00
+Value=45;15:15
+Value=46;15:30
+Value=47;15:45
+Value=48;16:00
+Value=49;16:15
+Value=50;16:30
+Value=51;16:45
+Value=52;17:00
+Value=53;17:15
+Value=54;17:30
+Value=55;17:45
+Value=56;18:00
+Value=57;18:15
+Value=58;18:30
+Value=59;18:45
+Value=60;19:00
+Value=61;19:15
+Value=62;19:30
+Value=63;19:45
+Value=64;20:00
+Value=65;20:15
+Value=66;20:30
+Value=67;20:45
+Value=68;21:00
+Value=69;21:15
+Value=70;21:30
+Value=71;21:45
+Value=72;22:00
+Value=73;22:15
+Value=74;22:30
+Value=75;22:45
+Value=76;23:00
+Value=77;23:15
+Value=78;23:30
+Value=79;23:45
+Value=80;0:00
+Value=81;0:15
+Value=82;0:30
+Value=83;0:45
+Value=84;1:00
+Value=85;1:15
+Value=86;1:30
+Value=87;1:45
+Value=88;2:00
+Value=89;2:15
+Value=90;2:30
+Value=91;2:45
+Value=92;3:00
+Value=93;3:15
+Value=94;3:30
+Value=95;3:45
+Value=96;4:00
 
 [Item]
-Label=T07
-Name=T07
+Label=LDB_1
+Name=LDB_1
+Start=50
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_1
+Name=LDB_1_EN
+Link=231195664
+Value=1;01. Sleeping or napping
+Value=2;02. Personal hygiene and health
+Value=3;03. Eating or drinking
+Value=4;04. Cooking / baking / preparing / serving meals, snacks, beverages + related tasks (cleaning dishes, storing food and drinks…)
+Value=5;05. Manufacturing / processing foods, beverages, herbs, medicines, tobacco
+Value=6;06. Cleaning and tidying indoors
+Value=7;07. Outdoor cleaning and upkeep
+Value=8;08. Pet care (includes feeding, exercising, cleaning, grooming, taking to vet)
+Value=9;09. Decorating or minor repairs, maintenance of buildings, durable goods, vehicles, machinery
+Value=10;10. Laundry / repair or maintenance of clothes, textiles, shoes
+Value=11;11. Shopping for/purchasing goods
+Value=12;12. Paying bills, budgeting, administration, planning, organising
+Value=13;13. Providing physical care or comforting children (feeding, cleaning, bathing, giving medical care, soothing…)
+Value=14;14. Teaching, training, helping, talking with, or reading to children
+Value=15;15. Playing games and sports with children
+Value=16;16. Attending children’s sports or games match, play, dance or talent show, or similar (includes training, practice, rehearsals)
+Value=17;17. [Supervising / minding / watching over / keeping an eye on] children
+Value=18;18. Providing physical care, practical assistance, or emotional support to adults
+Value=19;19. [Supervising / minding / watching over / keeping an eye on]  ill, injured, frail, or disabled adults who require assistance
+Value=20;20. Waged or salaried employment / self-employment / paid traineeship
+Value=21;21. Helping without pay in a farm or business enterprise
+Value=22;22. Looking for paid work or setting up a new business
+Value=23;23. Unpaid traineeship or internship
+Value=24;24. Volunteering / community or social organising/ environmental / nature conservation / protection of wild or street animals
+Value=25;25. Studying, learning
+Value=26;26. Growing crops, including kitchen garden, (clearing, planting, fertilising, irrigating, weeding, picking / harvesting)
+Value=27;27. Tending to livestock (accompanying while grazing, milking, gathering wool / eggs / dung / other animal products)
+Value=28;28. Gathering / processing firewood, straw
+Value=29;29. Fetching water from natural and other source
+Value=30;30. Fishing / Aquaculture / Forestry / Logging / Gathering wild products / [hunting or trapping animals]
+Value=31;31. Mining, quarrying / construction, major renovations, or major repairs
+Value=32;32. Weaving, knitting, sewing, embroidering, tanning, bead work, textile- / leather- / metal-, wood- / stone- / brickwork
+Value=33;33. Socializing, visiting with, talking to friends / family / neighbours
+Value=34;34. Religious practice (individual or collective)
+Value=35;35. Participating in community festivals, celebrations
+Value=36;36. Attending cultural / entertainment / sports events
+Value=37;37. Playing sports or doing exercise
+Value=38;38. Watching tv shows, movies, online visual media / Reading for leisure / Listening to music, radio, podcasts, online audio media
+Value=39;39. Hobbies, games, pass-times (includes resting / relaxing, “doing nothing”)
+Value=40;40. Travelling or commuting / Transporting or accompanying people or goods
+Value=41;41. Other: Specify
+Value=97;97. DON’T KNOW
+
+[Item]
+Label=LDB_1_OTH
+Name=LDB_1_OTH
+Start=52
+Len=50
+DataType=Alpha
+
+[Item]
+Label=LDB_TSS_C
+Name=LDB_TSS_C
 Start=102
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_TSS_C
+Name=LDB_TSS_C_VS1
+Link=147628872
+
+[Item]
+Label=LDB_TSE_C
+Name=LDB_TSE_C
+Start=104
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_TSE_C
+Name=LDB_TSE_C_VS1
+Link=153905152
+
+[Item]
+Label=LDB_TT
+Name=LDB_TT
+Start=106
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=LDB_CHK
+Name=LDB_CHK
+Start=110
+Len=5
+DataType=Alpha
+
+[Item]
+Label=LDB_1B
+Name=LDB_1B
+Start=115
+Len=88
+DataType=Alpha
+
+[ValueSet]
+Label=LDB_1B
+Name=LDB_1B_VS1
+Value='02                                                                                      ';02. Personal hygiene and health
+Value='03                                                                                      ';03. Eating or drinking
+Value='04                                                                                      ';04. Cooking / baking / preparing / serving meals, snacks, beverages + related tasks (cleaning dishes, storing food and drinks…)
+Value='05                                                                                      ';05. Manufacturing / processing foods, beverages, herbs, medicines, tobacco
+Value='06                                                                                      ';06. Cleaning and tidying indoors
+Value='07                                                                                      ';07. Outdoor cleaning and upkeep
+Value='08                                                                                      ';08. Pet care (includes feeding, exercising, cleaning, grooming, taking to vet)
+Value='09                                                                                      ';09. Decorating or minor repairs, maintenance of buildings, durable goods, vehicles, machinery
+Value='10                                                                                      ';10. Laundry / repair or maintenance of clothes, textiles, shoes
+Value='11                                                                                      ';11. Shopping for/purchasing goods
+Value='12                                                                                      ';12. Paying bills, budgeting, administration, planning, organising
+Value='13                                                                                      ';13. Providing physical care or comforting children (feeding, cleaning, bathing, giving medical care, soothing…)
+Value='14                                                                                      ';14. Teaching, training, helping, talking with, or reading to children
+Value='15                                                                                      ';15. Playing games and sports with children
+Value='16                                                                                      ';16. Attending children’s sports or games match, play, dance or talent show, or similar (includes training, practice, rehearsals)
+Value='17                                                                                      ';17. [Supervising / minding / watching over / keeping an eye on] children
+Value='18                                                                                      ';18. Providing physical care, practical assistance, or emotional support to adults
+Value='19                                                                                      ';19. [Supervising / minding / watching over / keeping an eye on]  ill, injured, frail, or disabled adults who require assistance
+Value='20                                                                                      ';20. Waged or salaried employment / self-employment / paid traineeship
+Value='21                                                                                      ';21. Helping without pay in a farm or business enterprise
+Value='22                                                                                      ';22. Looking for paid work or setting up a new business
+Value='23                                                                                      ';23. Unpaid traineeship or internship
+Value='24                                                                                      ';24. Volunteering / community or social organising/ environmental / nature conservation / protection of wild or street animals
+Value='25                                                                                      ';25. Studying, learning
+Value='26                                                                                      ';26. Growing crops, including kitchen garden, (clearing, planting, fertilising, irrigating, weeding, picking / harvesting)
+Value='27                                                                                      ';27. Tending to livestock (accompanying while grazing, milking, gathering wool / eggs / dung / other animal products)
+Value='28                                                                                      ';28. Gathering / processing firewood, straw
+Value='29                                                                                      ';29. Fetching water from natural and other source
+Value='30                                                                                      ';30. Fishing / Aquaculture / Forestry / Logging / Gathering wild products / [hunting or trapping animals]
+Value='31                                                                                      ';31. Mining, quarrying / construction, major renovations, or major repairs
+Value='32                                                                                      ';32. Weaving, knitting, sewing, embroidering, tanning, bead work, textile- / leather- / metal-, wood- / stone- / brickwork
+Value='33                                                                                      ';33. Socializing, visiting with, talking to friends / family / neighbours
+Value='34                                                                                      ';34. Religious practice (individual or collective)
+Value='35                                                                                      ';35. Participating in community festivals, celebrations
+Value='36                                                                                      ';36. Attending cultural / entertainment / sports events
+Value='37                                                                                      ';37. Playing sports or doing exercise
+Value='38                                                                                      ';38. Watching tv shows, movies, online visual media / Reading for leisure / Listening to music, radio, podcasts, online audio media
+Value='39                                                                                      ';39. Hobbies, games, pass-times (includes resting / relaxing, “doing nothing”)
+Value='41                                                                                      ';41. Other: Specify
+Value='42                                                                                      ';42. NOTHING ELSE
+Value='97                                                                                      ';97. DON’T KNOW
+
+[Item]
+Label=LDB_1B_OTH
+Name=LDB_1B_OTH
+Start=203
+Len=50
+DataType=Alpha
+
+[Item]
+Label=LDB_1B_T
+Name=LDB_1B_T
+Start=253
+Len=192
+DataType=Alpha
+Occurrences=40
+
+[Item]
+Label=LDB_2
+Name=LDB_2
+Start=7933
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_2
+Name=LDB_2_VS1
+Value=1;01. OWN HOME (OWN DWELLING OR IMMEDIATE SURROUNDS)
+Value=2;02. OTHER PERSONS' HOME (DWELLING OR IMMEDIATE SURROUNDS)
+Value=3;03. WORKPLACE
+Value=4;04. SCHOOL OR OTHER EDUCATIONAL ESTABLISHMENT
+Value=5;05. RELIGIOUS SITE / PLACE OF WORSHIP (CHURCH, MOSQUE, TEMPLE, SPIRIT HOUSE…)
+Value=6;06. OTHER OUTDOOR PUBLIC OR COMMERCIAL SITE (STREET, MARKET, PARK, FIELD, FOREST, POND, LAKE…)
+Value=7;07. OTHER INDOOR PUBLIC OR COMMERCIAL SITE (SHOP, BANK, RESTAURANT, CAFÉ, BAR, CINEMA, MUSEUM, HOSPITAL…)
+Value=8;08. IN TRANSIT
+
+[ValueSet]
+Label=LDB_2
+Name=LDB_2_VS2
+Value=99;99. NO CHANGE IN LOCATION SINCE PRIOR ACTIVITY
+Value=1;01. OWN HOME (OWN DWELLING OR IMMEDIATE SURROUNDS)
+Value=2;02. OTHER PERSONS' HOME (DWELLING OR IMMEDIATE SURROUNDS)
+Value=3;03. WORKPLACE
+Value=4;04. SCHOOL OR OTHER EDUCATIONAL ESTABLISHMENT
+Value=5;05. RELIGIOUS SITE / PLACE OF WORSHIP (CHURCH, MOSQUE, TEMPLE, SPIRIT HOUSE…)
+Value=6;06. OTHER OUTDOOR PUBLIC OR COMMERCIAL SITE (STREET, MARKET, PARK, FIELD, FOREST, POND, LAKE…)
+Value=7;07. OTHER INDOOR PUBLIC OR COMMERCIAL SITE (SHOP, BANK, RESTAURANT, CAFÉ, BAR, CINEMA, MUSEUM, HOSPITAL…)
+Value=8;08. IN TRANSIT
+Value=9;09. OTHER (SPECIFY)
+
+[Item]
+Label=LDB_2_OTH
+Name=LDB_2_OTH
+Start=7935
+Len=50
+DataType=Alpha
+
+[Item]
+Label=LDB_2A
+Name=LDB_2A
+Start=7985
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_2A
+Name=LDB_2A_VS1
+Value=1;01. COMMUTING FOR WAGED OR SALARIED JOB, OWN/HOUSEHOLD BUSINESS, TRAINEESHIP, VOLUNTEER WORK, STUDIES
+Value=2;02. OTHER TRAVEL FOR WAGED OR SALARIED JOB, OWN/HOUSEHOLD BUSINESS, TRAINEESHIP, VOLUNTEER WORK, STUDIES
+Value=3;03. PRODUCTION OF GOODS (GROWING CROPS/RAISING ANIMALS/GATHERING FIREWOOD/FETCHING WATER…)
+Value=4;04. PROVISION OF SERVICES (SHOPPING, DOING LAUNDRY, PAYING BILLS, RUNNING ERRANDS…)
+Value=5;05. SOCIALISING / COMMUNITY PARTICIPATION / RELIGIOUS PRACTICE
+Value=6;06. CULTURE / LEISURE / SPORTS OR EXERCISE
+Value=7;07. SELF-CARE & MAINTENANCE (MEDICAL APPOINTMENTS, HAIRDRESSER / SALON VISITS, SPA TREATMENTS…)
+Value=8;08. DROPPING OFF / COLLECTING / ACCOMPANYING HOUSEHOLD OR FAMILY CHILDREN
+Value=9;09. DROPPING OFF / COLLECTING / ACCOMPANYING ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value=10;10. DROPPING OFF / COLLECTING / ACCOMPANYING OTHER CHILDREN OR ADULTS
+Value=11;11. OTHER
+
+[Item]
+Label=LDB_2A_OTH
+Name=LDB_2A_OTH
+Start=7987
+Len=50
+DataType=Alpha
+
+[Item]
+Label=LDB_3
+Name=LDB_3
+Start=8037
+Len=32
+DataType=Alpha
+
+[ValueSet]
+Label=LDB_3
+Name=LDB_3_VS1
+Value='01                              ';01. ALONE (INCLUDES WITH STRANGERS IN PUBLIC SETTING)
+Value='02                              ';02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value='03                              ';03. SPOUSE
+Value='04                              ';04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='05                              ';05. OTHER ADULTS KNOWN TO RESPONDENT (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES)
+Value='06                              ';06. OWN CHILD(REN)
+Value='07                              ';07. GRANDCHILD(REN)
+Value='08                              ';08. OTHER FAMILY CHILDREN
+
+[ValueSet]
+Label=LDB_3
+Name=LDB_3_VS2
+Value='99                              ';99. NO CHANGE IN PERSONS PRESENT SINCE PRIOR ACTIVITY
+Value='01                              ';01. ALONE (INCLUDES WITH STRANGERS IN PUBLIC SETTING)
+Value='02                              ';02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value='03                              ';03. SPOUSE
+Value='04                              ';04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='05                              ';05. OTHER ADULTS KNOWN TO RESPONDENT (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES)
+Value='06                              ';06. OWN CHILD(REN)
+Value='07                              ';07. GRANDCHILD(REN)
+Value='08                              ';08. OTHER FAMILY CHILDREN
+Value='09                              ';09. OTHER CHILDREN
+
+[Item]
+Label=LDB_3A
+Name=LDB_3A
+Start=8069
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=LDB_3A
+Name=LDB_3A_VS1
+Value='01        ';01. UNDER 3 YEARS OLD
+Value='02        ';02. 3 YEARS OLD TO 6 YEARS OLD
+Value='03        ';03. 7 YEARS OLD TO 12 YEARS OLD
+Value='04        ';04. 13 YEARS OLD TO 17 YEARS OLD
+Value='05        ';05. 18 YEARS OR OLDER
+
+[Item]
+Label=LDB_4
+Name=LDB_4
+Start=8079
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=LDB_4
+Name=LDB_4_VS1
+Link=154311976
+Value=1;01. SELF
+Value=2;02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value=3;03. SPOUSE
+Value=4;04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value=5;05. OTHER ADULTS (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES / STRANGERS)
+Value=6;06. OWN CHILD(REN)
+Value=7;07. GRANDCHILD(REN)
+Value=8;08. OTHER FAMILY CHILDREN
+Value=9;09. OTHER CHILDREN
+Value=10;10. WAGED OR SALARIED JOB
+Value=11;11. OWN-BUSINESS OR HOUSEHOLD/FAMILY BUSINESS OR OTHER INCOME GENERATION
+Value=12;12. FOR A CHARITY, COMMUNITY GROUP, OR ORGANISATION
+Value=13;13. HOUSEHOLD OR FAMILY LIVESTOCK
+Value=14;14. HOUSEHOLD OR FAMILY PET
+Value=15;15. WILD OR STREET ANIMALS / NATURAL ENVIRONMENT
+
+[ValueSet]
+Label=LDB_4
+Name=LDB_4_VS2
+Link=154309400
+Value=99;99. NO CHANGE SINCE PRIOR ACTIVITY
+Value=1;01. SELF
+Value=2;02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value=3;03. SPOUSE
+Value=4;04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value=5;05. OTHER ADULTS (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES / STRANGERS)
+Value=6;06. OWN CHILD(REN)
+Value=7;07. GRANDCHILD(REN)
+Value=8;08. OTHER FAMILY CHILDREN
+Value=9;09. OTHER CHILDREN
+Value=10;10. WAGED OR SALARIED JOB
+Value=11;11. OWN-BUSINESS OR HOUSEHOLD/FAMILY BUSINESS OR OTHER INCOME GENERATION
+Value=12;12. FOR A CHARITY, COMMUNITY GROUP, OR ORGANISATION
+Value=13;13. HOUSEHOLD OR FAMILY LIVESTOCK
+Value=14;14. HOUSEHOLD OR FAMILY PET
+Value=15;15. WILD OR STREET ANIMALS / NATURAL ENVIRONMENT
+Value=16;16. OTHER: SPECIFY
+
+[Item]
+Label=LDB_4_OTH
+Name=LDB_4_OTH
+Start=8081
+Len=50
+DataType=Alpha
+
+[Item]
+Label=LDB_4A
+Name=LDB_4A
+Start=8131
+Len=10
+DataType=Alpha
+
+[ValueSet]
+Label=LDB_4A
+Name=LDB_4A_VS1
+Value='01        ';01. UNDER 3 YEARS OLD
+Value='02        ';02. 3 YEARS OLD TO 6 YEARS OLD
+Value='03        ';03. 7 YEARS OLD TO 12 YEARS OLD
+Value='04        ';04. 13 YEARS OLD TO 17 YEARS OLD
+Value='05        ';05. 18 YEARS OR OLDER
+
+[Item]
+Label=LDB_5
+Name=LDB_5
+Start=8141
 Len=1
 DataType=Numeric
 ZeroFill=Yes
 
 [ValueSet]
-Label=T07
-Name=T07_VS1
+Label=LDB_5
+Name=LDB_5_VS1
+Link=154313992
+Value=1;01. …only for sale
+Value=2;02. …mainly for sale
+Value=3;03. …mainly for family use
+Value=4;04. …only for family use
+
+[Item]
+Label=LDB_6
+Name=LDB_6
+Start=8142
+Len=2
+DataType=Numeric
+Occurrences=40
+ZeroFill=Yes
+
+[ValueSet]
+Label=LDB_6
+Name=LDB_6_VS1
+Link=154311976
+
+[ValueSet]
+Label=LDB_6
+Name=LDB_6_VS2
+Link=154309400
+
+[Item]
+Label=LDB_6A
+Name=LDB_6A
+Start=8222
+Len=10
+DataType=Alpha
+Occurrences=40
+
+[ValueSet]
+Label=LDB_6A
+Name=LDB_6A_VS1
+Value='01        ';01. UNDER 3 YEARS OLD
+Value='02        ';02. 3 YEARS OLD TO 6 YEARS OLD
+Value='03        ';03. 7 YEARS OLD TO 12 YEARS OLD
+Value='04        ';04. 13 YEARS OLD TO 17 YEARS OLD
+Value='05        ';05. 18 YEARS OR OLDER
+
+[Item]
+Label=LDB_7
+Name=LDB_7
+Start=8622
+Len=1
+DataType=Numeric
+Occurrences=40
+
+[ValueSet]
+Label=LDB_7
+Name=LDB_7_VS1
+Link=154313992
+
+[Record]
+Label=TimeUse Recovery
+Name=TIMEUSE_RECOVERY
+RecordTypeValue='R'
+RecordLen=431
+
+[Item]
+Label=RSB_1
+Name=RSB_1
+Start=46
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1
+Name=RSB_1_VS1
 Value=1;YES
 Value=2;NO
 
 [Item]
-Label=T08
-Name=T08
-Start=103
+Label=RSB_2
+Name=RSB_2
+Start=47
+Len=192
+DataType=Alpha
+
+[Item]
+Label=RSB_4
+Name=RSB_4
+Start=239
 Len=1
 DataType=Numeric
 ZeroFill=Yes
 
 [ValueSet]
-Label=T08
-Name=T08_VS1
-Value=1;Productive paid work
-Value=2;Unpaid productive work for the household/family
-Value=3;Productive unpaid work outside the household/family
-Value=4;Personal activity
+Label=RSB_4
+Name=RSB_4_VS1
+Value=1;YES
+Value=2;NO
 
 [Item]
-Label=T09
-Name=T09
-Start=104
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=T09
-Name=T09_VS1
-Value=1;Alone/ People I do not know
-Value=2;Children less than 5 years (household family members)
-Value=3;Children 5-17 years (household/family members)
-Value=4;Other household/family members
-Value=5;Friends/Other households
-
-[Item]
-Label=T10
-Name=T10
-Start=105
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=T10
-Name=T10_VS1
-Value=1;At home
-Value=2;Other people's home
-Value=3;Workplace/Place of study
-Value=4;Public/Commercial/Service area
-Value=5;Communal/Social places/Places of worship
-Value=6;Travelling (Walking)
-Value=7;Travelling (Public)
-Value=8;Travelling (Private)
-
-[Item]
-Label=T11
-Name=T11
-Start=106
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=T12
-Name=T12
-Start=107
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=End Individual Interview
-Name=TU_END
-Start=108
-Len=1
-DataType=Numeric
-ZeroFill=Yes
-
-[ValueSet]
-Label=End Individual Interview
-Name=TU_END_VS1
-Value=1;Complete
-Value=2;Member not available
-Value=3;Not eligible
-Value=9;Refused
+Label=RSB_5
+Name=RSB_5
+Start=240
+Len=192
+DataType=Alpha
 
 [Record]
-Label=Meta data
-Name=TMETA_DATA
+Label=Recovery Roster 1 (Age < 18)
+Name=RECOVERY_ROSTER_1
+RecordTypeValue='1'
+MaxRecords=96
+RecordLen=259
+
+[Item]
+Label=RSB_1A
+Name=RSB_1A
+Start=46
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1A
+Name=RSB_1A_VS1
+Link=231195664
+
+[Item]
+Label=RSB_1A_TSS
+Name=RSB_1A_TSS
+Start=48
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1A_TSS
+Name=RSB_1A_TSS_VS1
+Link=147628872
+
+[Item]
+Label=RSB_1A_TSE
+Name=RSB_1A_TSE
+Start=50
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1A_TSE
+Name=RSB_1A_TSE_VS1
+Link=153905152
+
+[Item]
+Label=RSB_2A
+Name=RSB_2A
+Start=52
+Len=192
+DataType=Alpha
+
+[Item]
+Label=RSB_3
+Name=RSB_3
+Start=244
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=RSB_3
+Name=RSB_3_VS1
+Value='01      ';01. OWN CHILD(REN)
+Value='02      ';02. GRANDCHILD(REN)
+Value='03      ';03. OTHER FAMILY CHILDREN
+Value='04      ';04. OTHER CHILDREN
+
+[ValueSet]
+Label=RSB_3
+Name=RSB_3_VS2
+Value='99      ';99. NO CHANGE SINCE PRIOR RESPONSE
+Value='01      ';01. OWN CHILD(REN)
+Value='02      ';02. GRANDCHILD(REN)
+Value='03      ';03. OTHER FAMILY CHILDREN
+Value='04      ';04. OTHER CHILDREN
+
+[Item]
+Label=RSB_3A
+Name=RSB_3A
+Start=252
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=RSB_3A
+Name=RSB_3A_VS1
+Value='01      ';01. UNDER 3 YEARS OLD
+Value='02      ';02. 3 YEARS OLD TO 6 YEARS OLD
+Value='03      ';03. 7 YEARS OLD TO 12 YEARS OLD
+Value='04      ';04. 13 YEARS OLD TO 17 YEARS OLD
+
+[Record]
+Label=Recovery Roster 2 (Age >= 18)
+Name=RECOVERY_ROSTER_2
 RecordTypeValue='2'
-RecordLen=67
+MaxRecords=96
+RecordLen=247
+
+[Item]
+Label=RSB_1B
+Name=RSB_1B
+Start=46
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1B
+Name=RSB_1B_VS1
+Link=231195664
+
+[Item]
+Label=RSB_1B_TSS
+Name=RSB_1B_TSS
+Start=48
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1B_TSS
+Name=RSB_1B_TSS_VS1
+Link=147628872
+
+[Item]
+Label=RSB_1B_TSE
+Name=RSB_1B_TSE
+Start=50
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSB_1B_TSE
+Name=RSB_1B_TSE_VS1
+Link=153905152
+
+[Item]
+Label=RSB_5A
+Name=RSB_5A
+Start=52
+Len=192
+DataType=Alpha
+
+[Item]
+Label=RSB_6
+Name=RSB_6
+Start=244
+Len=4
+DataType=Alpha
+
+[ValueSet]
+Label=RSB_6
+Name=RSB_6_VS1
+Value='01  ';HOUSEHOLD MEMBER(S)
+Value='02  ';FAMILY MEMBER(S) LIVING IN A SEPERATE HOUSEHOLD
+Value='03  ';EMPLOYER / LANDLORD
+Value='04  ';OTHER INDIVIDUALS / HOUSEHOLDS (FRIENDS / NEIGHBOURS / ACQUAINTENCES / STRANGERS)
+
+[ValueSet]
+Label=RSB_6
+Name=RSB_6_VS2
+Value='99  ';NO CHANGE SINCE PRIOR RESPONSE
+Value='01  ';HOUSEHOLD MEMBER(S)
+Value='02  ';FAMILY MEMBER(S) LIVING IN A SEPERATE HOUSEHOLD
+Value='03  ';EMPLOYER / LANDLORD
+Value='04  ';OTHER INDIVIDUALS / HOUSEHOLDS (FRIENDS / NEIGHBOURS / ACQUAINTENCES / STRANGERS)
+
+[Record]
+Label=Typical Day
+Name=TYPICAL_DAY
+RecordTypeValue='D'
+RecordLen=122
+
+[Item]
+Label=TPL_1A
+Name=TPL_1A
+Start=46
+Len=22
+DataType=Alpha
+
+[ValueSet]
+Label=TPL_1A
+Name=TPL_1A_VS1
+Value='01                    ';01. You worked more hours than normal in your paid job(s)
+Value='02                    ';02. You worked fewer hours than normal in your paid job(s)
+Value='03                    ';03. It was a festival day or the day of an event (e.g., public holiday, religious festival, wedding, christening, funeral)
+Value='04                    ';04. It was a leave day / holiday from paid work (day-off / annual leave / other leave entitlement)
+Value='05                    ';05. It was a school holiday for children in your care (EXCLUDE WEEKEND)
+Value='06                    ';06. You were sick / unwell / injured
+Value='07                    ';07. A household or family member was sick / unwell / injured
+Value='08                    ';08. You experienced travel disruptions
+Value='10                    ';10. OTHER: SPECIFY
+Value='11                    ';11. NO
+
+[Item]
+Label=TPL_1A_OTH
+Name=TPL_1A_OTH
+Start=68
+Len=50
+DataType=Alpha
+
+[Item]
+Label=TPL_1B
+Name=TPL_1B
+Start=118
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TPL_1B
+Name=TPL_1B_VS1
+Value='1    ';SPOUSE
+Value='2    ';OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='3    ';CHILDREN AGED <=5 YEARS OLD
+Value='4    ';CHILDREN AGED 6 - 11 YEARS OLD
+Value='5    ';CHILDREN AGED 12 - 17 YEARS OLD
+
+[Record]
+Label=Time Awareness
+Name=TIME_AWARENESS
+RecordTypeValue='A'
+RecordLen=111
+
+[Item]
+Label=TAW_1
+Name=TAW_1
+Start=46
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TAW_1
+Name=TAW_1_VS1
+Value='     '
+Value='97   ';DON'T KNOW
+
+[Item]
+Label=TAW_1_ACTUAL
+Name=TAW_1_ACTUAL
+Start=51
+Len=5
+DataType=Alpha
+
+[Item]
+Label=TAW_2
+Name=TAW_2
+Start=56
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TAW_2
+Name=TAW_2_VS1
+Value='     '
+Value='97   ';DON'T KNOW
+
+[Item]
+Label=TAW_3
+Name=TAW_3
+Start=61
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=TAW_3
+Name=TAW_3_VS1
+Value=1;01. RESPONDENT CONSULTED WRISTWATCH OR POCKET WATCH
+Value=2;02. RESPONDENT CONSULTED MOBILE PHONE / TABLET / COMPUTER
+Value=3;03. RESPONDENT CONSULTED CLOCK
+Value=4;04. RESPONDENT ASKED SOMEONE
+Value=5;05. RESPONDENT ESTIMATED WITH REFERENCE TO WORK / SCHOOL / TEMPLE / TRANSPORT / RADIO/TV SCHEDULE, ETC.,
+Value=6;06. RESPONDENT ESTIMATED BY POSITION OF SUN / DAYLIGHT, ETC.,
+Value=7;07. OTHER, SPECIFY
+
+[Item]
+Label=TAW_3_OTH
+Name=TAW_3_OTH
+Start=62
+Len=50
+DataType=Alpha
+
+[Record]
+Label=Metadata 
+Name=META_DATA
+RecordTypeValue='4'
+RecordLen=102
 
 [Item]
 Label=Region
 Name=TREGION
-Note=All the geo ids are hided and prefilled to facilitate the beta testing. In the furture release, these will be handled
-Note=by the menu program.
 Start=46
 Len=1
 DataType=Numeric
@@ -520,30 +1063,53 @@ ZeroFill=Yes
 Label=District
 Name=TDISTRICT
 Start=47
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=TA
+Name=TTA
+Start=48
 Len=2
 DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=Traditional Authority
-Name=TTA
-Start=49
-Len=3
-DataType=Numeric
-ZeroFill=Yes
-
-[Item]
-Label=Enumeration Area
+Label=EA
 Name=TEA
-Start=52
-Len=3
+Start=50
+Len=1
 DataType=Numeric
 ZeroFill=Yes
 
 [Item]
-Label=Ind End Time
-Name=TIND_END_TIME
-Start=55
-Len=13
+Label=Date of interview
+Name=TINTERV_DATE
+Start=51
+Len=1
 DataType=Numeric
 ZeroFill=Yes
+
+[Item]
+Label=Name of interviewer
+Name=TGHINTNAME
+Start=52
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Result of Interview
+Name=TUS_END
+Start=102
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=Result of Interview
+Name=TUS_END_VS1
+Value=1;Cmpleted
+Value=2;Partial
+Value=3;Not available
+Value=4;Refused

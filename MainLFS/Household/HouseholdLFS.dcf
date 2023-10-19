@@ -666,6 +666,10 @@ Value=95;Solar Photovoltaic Installation (SPV)
 Value=96;Tailoring and Fashion Designing (TFD)
 Value=97;Tour Guide (TRG)
 Value=98;Wood Work Machining (WWM)
+
+[ValueSet]
+Label=Informal TEVET programmes
+Name=DEM_13A_VS3
 Value=11; Bakery
 Value=12; Basic Electronics
 Value=13; Bicycle Repair
