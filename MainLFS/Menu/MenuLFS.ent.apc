@@ -522,16 +522,7 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 	
 		// Sync cases file with server
 		
-		//Household Cases
-		if syncdata(BOTH, HOUSEHOLDLFS_DICT) then
-			
-		endif;		
-		syncdata(BOTH, INDIVIDUALLFS_DICT);		//Individual 15+ yrs Cases
-		syncdata(BOTH, TEAMS_DICT);				//Teams Cases
-		//syncdata(BOTH, CLUSTERS_DICT);			//Clusters Cases
-		syncdata(BOTH, ASSIGNED_HHS_DICT);		//Work(Household) Assignment Cases
-		syncdata(BOTH, CHILD_LABOUR_DICT);		//Child labour
-		
+	
 		numeric abortInd = 1;
 		
 		if abortInd = 1 and syncdata(BOTH, HOUSEHOLDLFS_DICT) = 0 then
@@ -541,6 +532,11 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 
 		if abortInd = 1 and syncdata(BOTH, INDIVIDUALLFS_DICT) = 0 then
 			errmsg("Syncing of individual data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+		
+		if abortInd = 1 and syncdata(BOTH, TIMEUSE_DICT_B) = 0 then
+			errmsg("Syncing of time use data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
 
@@ -620,6 +616,11 @@ function syncWithSupervisor() //Funtion to transfer from interviewer to supervis
 		if syncdata(BOTH, CHILD_LABOUR_DICT) = 0 then		//5-17 Child Cases
 			errmsg("Failed to transfer child labour data");
 		endif;
+
+		if syncdata(BOTH, TIMEUSE_DICT_B) = 0 then			//Time use Cases
+			errmsg("Failed to transfer Time Use data");
+		endif;
+
 		
 		if syncdata(BOTH, TEAMS_DICT) = 0 then				//Teams Cases
 			errmsg("Failed to transfer Teams data");
@@ -632,6 +633,7 @@ function syncWithSupervisor() //Funtion to transfer from interviewer to supervis
 		if syncdata(BOTH, ASSIGNED_HHS_DICT) = 0 then		//Work (Household) Assignment Cases
 			errmsg("Failed to transfer Assignments data");
 		endif;
+		
 		
 {		numeric upgradeApps = accept("Update Applications from Supervisor?",
 									 "Yes, update",
@@ -695,6 +697,7 @@ onfocus
 	team_members.add("Begin work as supervisor","1");
 	
 	setvalueset($,team_members);
+
 
 	
 	
@@ -842,6 +845,10 @@ PROC TEAM_MGT
 
 onfocus
 	valueset numeric team_mgnt;
+	
+		valueset string team_members; //Dynamic valueset to hold members per each team
+
+	team_members_list(team_members);  //List team members
 	
 	team_mgnt.add("Manage team",1);
 	team_mgnt.add("Assign tasks",2);

@@ -121,7 +121,7 @@ Name=LOGIN
 Position=383,121,888,141
 Item=LOGIN,MENULFS_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=RadioButton
+DataCaptureType=DropDown
 Form=1
   
 [Text]

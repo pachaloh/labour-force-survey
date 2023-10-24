@@ -45,7 +45,7 @@ preproc
 		// Make field protected so that it cannot be modified by interviewer
 		setproperty($, "Protected", "Yes");
 		noinput;
-	endif;
+	endif;	
 PROC TU_PPNO
 
 preproc
@@ -84,6 +84,14 @@ preproc
 		// Make field protected so that it cannot be modified by interviewer
 		setproperty($, "Protected", "Yes");
 		noinput;
+	endif;
+	
+	if TU_START_TIME = notappl then
+		TU_START_TIME = timestamp();
+	endif;
+	
+	if TINTERV_DATE = notappl then
+		TINTERV_DATE = sysdate();
 	endif;
 PROC TIMEUSE_REC000
 
@@ -839,3 +847,8 @@ postproc
 
 // Validate that field is not blank
 NotAllowBlankOtherSpecify($);
+PROC TUS_END
+
+	if TU_ENDTIME = notappl then
+		TU_ENDTIME = timestamp();
+	endif;

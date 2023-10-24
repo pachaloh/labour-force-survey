@@ -13,6 +13,89 @@ PROC GLOBAL
 }
 
 
+
+function time_use_ind() 
+
+    // change the following filename to your desired output 
+    string pff_filename = path.concat(Application, "../TimeUse/TimeUse.pff"); 
+
+    file dynamic_pff; 
+    setfile(dynamic_pff, pff_filename, create); 
+
+    filewrite(dynamic_pff, "[Run Information]"); 
+    filewrite(dynamic_pff, "Version=CSPro 7.7"); 
+    filewrite(dynamic_pff, "AppType=Entry"); 
+    filewrite(dynamic_pff, "ShowInApplicationListing=Never"); 
+
+    filewrite(dynamic_pff, "[DataEntryInit]"); 
+    filewrite(dynamic_pff, "StartMode=Add"); 
+    filewrite(dynamic_pff, "Key=%s", maketext("%v%v%v%v",XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO)); 
+    filewrite(dynamic_pff, "Lock=CaseListing"); 
+
+    filewrite(dynamic_pff, "[Files]"); 
+    filewrite(dynamic_pff, "Application=%v", "./TimeUse.ent"); 
+    filewrite(dynamic_pff, "InputData=%v", "../Data/Timeuse.csdb"); 
+
+    filewrite(dynamic_pff, "[Parameters]"); 
+    filewrite(dynamic_pff, "TCLUSTER=%v", XCLUSTER); 
+    filewrite(dynamic_pff, "TGHHHNO=%v", XGHHHNO); 
+    filewrite(dynamic_pff, "THMPPNO=%v", XHMPPNO); 
+    filewrite(dynamic_pff, "TGHINTCODE=%v", GHINTCODE); 
+    filewrite(dynamic_pff, "TGHINTNAME=%v", CH_GHINTNAME); 
+    filewrite(dynamic_pff, "OnExit=%v", "../Menu/MenuLFS.pff"); 
+
+    close(dynamic_pff); 
+
+    execpff(filename(dynamic_pff),stop); 
+
+end; 
+
+
+function launchChild() 
+
+    // change the following filename to your desired output 
+    string pff_filename = path.concat(Application, "../ChildLFS/ChildLFS.pff"); 
+
+    file dynamic_pff; 
+    setfile(dynamic_pff, pff_filename, create); 
+
+    filewrite(dynamic_pff, "[Run Information]"); 
+    filewrite(dynamic_pff, "Version=CSPro 7.7"); 
+    filewrite(dynamic_pff, "AppType=Entry"); 
+
+    filewrite(dynamic_pff, "[DataEntryInit]"); 
+	filewrite(dynamic_pff, "Key=%s", maketext("%v%v%v%v",XCLUSTER,GHINTCODE,XGHHHNO,XHMPPNO));
+	filewrite(dynamic_pff, "StartMode=Add");
+	filewrite(dynamic_pff,"Lock=CaseListing");
+	filewrite(dynamic_pff,"ShowInApplicationListing=Never");
+
+
+    filewrite(dynamic_pff, "[Files]"); 
+    filewrite(dynamic_pff, "Application=%v", "./ChildLFS.ent"); 
+    filewrite(dynamic_pff, "InputData=%v", "../Data/Child.csdb"); 
+
+    filewrite(dynamic_pff, "[ExternalFiles]"); 
+    filewrite(dynamic_pff, "CLUSTERS_DICT=%v", "../Lookups/clusters.csdb"); 
+    filewrite(dynamic_pff, "HOUSEHOLDLFS_DICT=%v", "../Data/Household.csdb"); 
+    filewrite(dynamic_pff, "INDIVIDUALLFS_DICT=%v", "../Data/Individual.csdb"); 
+
+    filewrite(dynamic_pff, "[Parameters]");
+	filewrite(dynamic_pff, "CCLUSTER=%v", XCLUSTER);	//Cluster number
+	filewrite(dynamic_pff, "CGHHHNO=%v", XGHHHNO); 		//Household number
+	filewrite(dynamic_pff, "CHMPPNO=%v", XHMPPNO); 		//Child's line number
+	//filewrite(dynamic_pff, "A1=%s", getlabel(INTERVIEW_CHILD,INTERVIEW_CHILD)); 	//Child's name	
+	filewrite(dynamic_pff, "GHINTID=%s", GHINTCODE); 					//Interviewer ID
+	filewrite(dynamic_pff, "GHINTNAME=%s", CH_GHINTNAME); 	//Interviewer name
+    filewrite(dynamic_pff, "OnExit=%v", "../Menu/MenuLFS.pff"); 
+
+    close(dynamic_pff); 
+
+    execpff(filename(dynamic_pff), stop); 
+
+end; 
+
+
+
 //National Adaptation Variables that are controlled from the National Adaptation Tool (NAT):
 	string nav_country = "Malawi";
 	numeric NWAP = 15;
@@ -2593,6 +2676,13 @@ preproc
 	setproperty($, "Protected", "Yes");
 PROC INDIVEND
 
+onfocus
+	if XDEM_AGE in 15:17 then
+		setvalueset($,INDIVEND_VS3);
+	endif;
+
+postproc
+
 	if RSP_PPNO in 98, 99 and INDIVEND = 1 then
 		errmsg("Invalid option");
 		reenter;
@@ -2608,3 +2698,12 @@ PROC INDIVEND
 	endif;
 	
 	
+	
+	if $ = 7 then
+		time_use_ind();
+	endif;
+
+
+	if $ = 8 then
+		launchChild();
+	endif;

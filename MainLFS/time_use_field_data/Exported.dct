@@ -1,0 +1,30 @@
+infix dictionary using "C:\Users\User\Documents\GitHub\labour-force-survey\MainLFS\time_use_field_data\Exported.dat" {
+1 lines
+    int      tcluster    1:   1-4   
+    str      tghintcode    1:   5-40  
+    byte     tghhhno     1:  41-42  
+    byte     thmppno     1:  43-44  
+    byte     tu_ppno     1:  45-46  
+    byte     rsb_1       1:  47-47  
+    str      rsb_2       1:  48-239 
+    byte     rsb_4       1: 240-240 
+    str      rsb_5       1: 241-432 
+    str      tpl_1a      1: 433-454 
+    str      tpl_1a_oth    1: 455-504 
+    str      tpl_1b      1: 505-509 
+    str      taw_1       1: 510-514 
+    str      taw_1_actual    1: 515-519 
+    str      taw_2       1: 520-524 
+    byte     taw_3       1: 525-525 
+    str      taw_3_oth    1: 526-575 
+    byte     tregion     1: 576-576 
+    byte     tdistrict    1: 577-577 
+    byte     tta         1: 578-579 
+    byte     tea         1: 580-580 
+    byte     tinterv_date    1: 581-581 
+    str      tghintname    1: 582-631 
+    byte     tus_end     1: 632-632 
+    double   tu_start_time    1: 633-642 
+    double   tu_endtime    1: 643-652 
+    str      ldb_1b_t    1: 653-844 
+}

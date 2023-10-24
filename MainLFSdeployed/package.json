@@ -3,31 +3,31 @@
   "version": "7.7",
   "name": "LabourForceSurvey2023",
   "description": "Malawi Labour Force Survey",
-  "buildTime": "2023-10-01T12:49:05Z",
+  "buildTime": "2023-10-19T08:48:31Z",
   "files": [
     {
       "path": ".\\ChildLFS\\ChildLFS.pen",
-      "signature": "2C739F0932C2581BB0F792A1AF902FC3"
+      "signature": "AB32235C88C5D10EBBEA15500820043A"
     },
     {
       "path": ".\\ChildLFS\\ChildLFS.pff",
-      "signature": "051B37DBEE2971C1BA8130FE7A549E7D"
+      "signature": "7D647556ACEDE685C2A5519035DD6453"
     },
     {
       "path": ".\\Household\\HouseholdLFS.pen",
-      "signature": "C34DE9D1F8841A52A2B0524893B4C9D0"
+      "signature": "FD261B23F6BEB46DEC9D16C9E44D467F"
     },
     {
       "path": ".\\Household\\HouseholdLFS.pff",
-      "signature": "3311A0C1C74561514041EE31906FBDB9"
+      "signature": "E7C1508FE722369BB06235204B67CF1E"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pen",
-      "signature": "32E20E8BA882E59A07EA8CD83EB9A434"
+      "signature": "BA959EF808A2DF1D3AAF91D9EB2CFFEE"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pff",
-      "signature": "59863A58AB5A11B1F259D6B75A17C73D"
+      "signature": "454F6BAC9C818FFD8CB1352AF6ED8579"
     },
     {
       "path": ".\\Lookups\\clusters.csdb",
@@ -51,23 +51,23 @@
     },
     {
       "path": ".\\Menu\\MenuLFS.pen",
-      "signature": "2917DCE4D8FBFBB5EE404D2BE67D461A"
+      "signature": "A4574E8425495531AAB0A0292D95F4CA"
     },
     {
       "path": ".\\Menu\\MenuLFS.pff",
-      "signature": "72A29B0286A911F57740E5A42BA4BC9E"
+      "signature": "3754E490B601E1602574F0456E5A306F"
     },
     {
       "path": ".\\Shared Logic\\GPS.apc",
       "signature": "CB6DF632D4EFB4927B469D5FCF6A54FA"
     },
     {
-      "path": ".\\TimeUse\\timeuse.pen",
-      "signature": "D8586C6BFE67C65E7A7EAA084395997A"
+      "path": ".\\TimeUse\\TimeUse.pen",
+      "signature": "AA78CC7D7A12C7A96A9221459506CDEE"
     },
     {
-      "path": ".\\TimeUse\\timeuse.pff",
-      "signature": "37CFD08AF658FADC942283E7F17ED5CD"
+      "path": ".\\TimeUse\\TimeUse.pff",
+      "signature": "54339786AEBBEACC4B1089062FFD15DF"
     }
   ],
   "dictionaries": [
@@ -109,6 +109,10 @@
     },
     {
       "path": ".\\TimeUse\\timeuse.dcf"
+    },
+    {
+      "path": ".\\TimeUse\\TimeUse.dcf",
+      "uploadForSync": true
     }
   ],
   "deployment": {

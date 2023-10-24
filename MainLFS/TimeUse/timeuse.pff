@@ -4,7 +4,7 @@ AppType=Entry
 ShowInApplicationListing=Never
 
 [DataEntryInit]
-Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0105
+Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0203
 Lock=CaseListing
 
 [Files]
@@ -14,7 +14,7 @@ InputData=..\Data\Timeuse.csdb
 [Parameters]
 OnExit=..\Menu\MenuLFS.pff
 TCLUSTER=0001
-TGHHHNO=01
+TGHHHNO=02
 TGHINTCODE=2492fe67-f139-4960-b733-a0dfb6811e6c
-TGHINTNAME=PACHALO CHIZALA
-THMPPNO=01
+TGHINTNAME=
+THMPPNO=03

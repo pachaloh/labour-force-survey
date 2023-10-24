@@ -2,17 +2,19 @@
 Version=CSPro 7.7
 AppType=Entry
 ShowInApplicationListing=Never
+
 [DataEntryInit]
-StartMode=Add
-Key=0001d72daca0-de5e-44fd-af03-f7a880b313b40301
+Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0105
 Lock=CaseListing
+
 [Files]
-Application=./timeuse.ent
-InputData=../Data/Timeuse.csdb
+Application=.\TimeUse.ent
+InputData=..\Data\Timeuse.csdb
+
 [Parameters]
+OnExit=..\Menu\MenuLFS.pff
 TCLUSTER=0001
-TGHHHNO=03
+TGHHHNO=01
+TGHINTCODE=2492fe67-f139-4960-b733-a0dfb6811e6c
+TGHINTNAME=PACHALO CHIZALA
 THMPPNO=01
-TGHINTCODE=d72daca0-de5e-44fd-af03-f7a880b313b4
-TGHINTNAME=BRIAN
-OnExit=../Menu/MenuLFS.pff
