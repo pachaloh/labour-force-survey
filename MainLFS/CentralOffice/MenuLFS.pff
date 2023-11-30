@@ -1,0 +1,27 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=Labour Force Survey, 2023 - v05
+
+[DataEntryInit]
+StartMode=Add
+
+[Files]
+Application=.\MenuLFS.ent
+InputData=|type=None
+Paradata=.\MenuLFS.cslog
+
+[ExternalFiles]
+ASSIGNED_HHS_DICT=..\Data\assigned_hh_databse.csdb
+CHILD_LABOUR_DICT=..\Data\Child.csdb
+CLUSTERS_DICT=..\Lookups\clusters.csdb
+HH_DATABASE_DICT=..\Lookups\hh_database.csdb
+HOUSEHOLDLFS_DICT=..\Data\Household.csdb
+HOUSEHOLDS_DICT=..\Lookups\hh_database.csdb
+INDIVIDUALLFS_DICT=..\Data\Individual.csdb
+TEAMS_DICT=..\Data\teams.csdb
+TIMEUSE_DICT=..\Data\Timeuse.csdb
+TIMEUSE_DICT_B=..\Data\TimeUse.csdb
+
+[UserFiles]
+reportfile=
