@@ -47,7 +47,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <span style="font-family: Arial; font-size: 20px;">Muli bwanji? Dzina langa ndi<b>&nbsp;</b></span><span style="font-family: Arial; font-size: 20px;"><b>~~MCV_INTERVIEWER_NAME~~.</b> Ndimagwira ntchito ndi&nbsp;</span><b><span class="normal" style="font-family: Arial; font-size: 16pt;">National Statistical Office(NSO)</span></b><span style="font-family: Arial; font-size: 20px;"><b>.</b> Ndingayankhuleko ndi munthu wamkulu wapankhomo pano yemwe angathe kofotokoza zina zokhuzana ndi khomo lino komaso anthu apakhomo pano?</span><p></p>
+            <br><p></p>
           ENG: |
             <p class="MsoNormal"><span lang="NO-BOK" style="font-size: 16pt; font-family: Arial;" class="normal">Hello,
             my name is&nbsp;</span><span lang="NO-BOK" style="font-size:
