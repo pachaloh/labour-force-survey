@@ -1751,6 +1751,153 @@ PROC SJJ_OCC_MTD
 
 postproc NotAllowBlankOtherSpecify($);
 
+PROC P25_OCCUPATION_LEVEL_1
+
+preproc
+
+	savepartial();
+
+	ask if MJJ_MULT=2;
+
+	// if entering a new occupation and the interviewer previously viewed all occupations, start on that screen
+	if visualvalue(P25_OCCUPATION_LEVEL_1) = notappl and loadsetting(ViewAllOccupationsSettingKey) = "1" then
+		P25_OCCUPATION_LEVEL_1 = 10;
+		noinput;
+	endif;
+
+postproc
+
+	if P25_OCCUPATION_LEVEL_1 = 10 then // view all occupations
+		savesetting(ViewAllOccupationsSettingKey,"1");
+		skip to P25_OCCUPATION_LEVEL_4;
+
+	else
+		savesetting(ViewAllOccupationsSettingKey,"0");
+
+		if P25_OCCUPATION_LEVEL_1 = 0 then // armed services occupations don't have sub major or minor groups
+			P25_OCCUPATION_LEVEL_2 = 0;
+			P25_OCCUPATION_LEVEL_3 = 0;
+			advance to P25_OCCUPATION_LEVEL_4;
+		endif;
+
+	endif;
+
+
+PROC P25_OCCUPATION_LEVEL_2
+
+
+preproc
+
+	ask if P25_OCCUPATION_LEVEL_1 <> notappl and MJJ_MULT=2;
+
+onfocus
+
+	StartVS();
+
+	numeric firstOccupation = P25_OCCUPATION_LEVEL_1 * 10;
+	numeric lastOccupation = firstOccupation + 9;
+
+	do numeric ctr = firstOccupation while ctr <= lastOccupation
+
+		if invalueset(ctr,P25_OCCUPATION_LEVEL_2_VS1) then
+			AddNumericVS(ctr,getlabel(P25_OCCUPATION_LEVEL_2_VS1,ctr));
+		endif;
+
+	enddo;
+
+	EndVS();
+
+	setvalueset(P25_OCCUPATION_LEVEL_2,vsCodes,vsLabels);
+
+	// this field does not need to be filled for armed services occupations
+	if P25_OCCUPATION_LEVEL_1 = 0 then
+		setproperty(P25_OCCUPATION_LEVEL_2,"Protected","Yes");
+	else
+		setproperty(P25_OCCUPATION_LEVEL_2,"Protected","No");
+	endif;
+
+
+PROC P25_OCCUPATION_LEVEL_3
+
+
+preproc
+
+	ask if P25_OCCUPATION_LEVEL_1 <> notappl and MJJ_MULT=2;
+
+onfocus
+
+	StartVS();
+
+	numeric firstOccupation = P25_OCCUPATION_LEVEL_2 * 10;
+	numeric lastOccupation = firstOccupation + 9;
+
+	do numeric ctr = firstOccupation while ctr <= lastOccupation
+
+		if invalueset(ctr,P25_OCCUPATION_LEVEL_3_VS1) then
+			AddNumericVS(ctr,getlabel(P25_OCCUPATION_LEVEL_3_VS1,ctr));
+		endif;
+
+	enddo;
+
+	EndVS();
+
+	setvalueset(P25_OCCUPATION_LEVEL_3,vsCodes,vsLabels);
+
+	// this field does not need to be filled for armed services occupations
+	if P25_OCCUPATION_LEVEL_1 = 0 then
+		setproperty(P25_OCCUPATION_LEVEL_3,"Protected","Yes");
+	else
+		setproperty(P25_OCCUPATION_LEVEL_3,"Protected","No");
+	endif;
+
+
+PROC P25_OCCUPATION_LEVEL_4
+
+
+preproc
+
+	ask if P25_OCCUPATION_LEVEL_1 <> notappl and P05_AGE >= 10;
+
+onfocus
+
+	if P25_OCCUPATION_LEVEL_1 = 10 then // view all occupations
+		setvalueset(P25_OCCUPATION_LEVEL_4,P25_OCCUPATION_LEVEL_4_VS1);
+
+	else
+		StartVS();
+
+		numeric firstOccupation = P25_OCCUPATION_LEVEL_3 * 10;
+		numeric lastOccupation = firstOccupation + 9;
+
+		do numeric ctr = firstOccupation while ctr <= lastOccupation
+
+			if invalueset(ctr,P25_OCCUPATION_LEVEL_4_VS1) then
+				AddNumericVS(ctr,getlabel(P25_OCCUPATION_LEVEL_4_VS1,ctr));
+			endif;
+
+		enddo;
+
+		EndVS();
+
+		setvalueset(P25_OCCUPATION_LEVEL_4,vsCodes,vsLabels);
+
+	endif;
+
+postproc
+
+	if P25_OCCUPATION_LEVEL_4 = -999 then
+		reenter P25_OCCUPATION_LEVEL_1;
+	endif;
+
+
+PROC P26_OCCUPATION_STATUS
+
+
+preproc
+
+	ask if P05_AGE >= 10;
+
+
 PROC SJJ_IND_MAC
 
 preproc ask if MJJ_MULT=2;

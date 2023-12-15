@@ -1,0 +1,23 @@
+﻿Application     C:\Users\pacha\Documents\GitHub\labour-force-survey\MainLFS\IndividualLFS\IndividualLFS.ent
+Type            Entry
+Date            Dec 13, 2023
+Time            13:59:12
+
+CSPro Error Summary
+
+ERROR(P25_OCCUPATION_LEVEL_1, 1763): 'ViewAllOccupationsSettingKey' is not a declared variable or is a misspelled dictionary entry
+ERROR(P25_OCCUPATION_LEVEL_1, 1766): PostProc clause expected
+
+ERROR(P25_OCCUPATION_LEVEL_2, 1795): 'StartVS' is not a declared variable or is a misspelled dictionary entry
+
+ERROR(P25_OCCUPATION_LEVEL_3, 1829): 'StartVS' is not a declared variable or is a misspelled dictionary entry
+
+ERROR(P25_OCCUPATION_LEVEL_4, 1859): 'P05_AGE' is not a declared variable or is a misspelled dictionary entry
+ERROR(P25_OCCUPATION_LEVEL_4, 1867): 'StartVS' is not a declared variable or is a misspelled dictionary entry
+ERROR(P25_OCCUPATION_LEVEL_4, 1875): 'AddNumericVS' is not a declared variable or is a misspelled dictionary entry
+ERROR(P25_OCCUPATION_LEVEL_4, 1876): Expecting ENDDO
+ERROR(P25_OCCUPATION_LEVEL_4, 1878): PostProc clause expected
+
+ERROR(P26_OCCUPATION_STATUS, 1898): 'P05_AGE' is not a declared variable or is a misspelled dictionary entry
+
+108 syntax errors detected

@@ -46,7 +46,7 @@ Name=FORM004
 Label=Labor
 QuestionTextHeight=184
 Level=1
-Size=1218,5623
+Size=1249,5623
   
 Item=RSP_START
 Item=RSP_AVAIL
@@ -234,6 +234,11 @@ Item=N01A
 Item=N01B
 Item=TVT01A
 Item=TVT05B
+Item=P25_OCCUPATION_LEVEL_1
+Item=P25_OCCUPATION_LEVEL_2
+Item=P25_OCCUPATION_LEVEL_3
+Item=P25_OCCUPATION_LEVEL_4
+Item=P26_OCCUPATION_STATUS
   
 [EndForm]
   
@@ -1518,6 +1523,66 @@ Form=3
 [Text]
 Position=64,2577,260,2593
 Text=Occupation tasks in second job
+ 
+  
+[Field]
+Name=P25_OCCUPATION_LEVEL_1
+Position=1172,2570,1201,2590
+Item=P25_OCCUPATION_LEVEL_1,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=952,2573,1145,2589
+Text=P25. Occupation (major group)
+ 
+  
+[Field]
+Name=P25_OCCUPATION_LEVEL_2
+Position=1195,2594,1224,2614
+Item=P25_OCCUPATION_LEVEL_2,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=947,2597,1166,2613
+Text=P25. Occupation (sub major group)
+ 
+  
+[Field]
+Name=P25_OCCUPATION_LEVEL_3
+Position=1172,2622,1215,2642
+Item=P25_OCCUPATION_LEVEL_3,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=952,2625,1145,2641
+Text=P25. Occupation (minor group)
+ 
+  
+[Field]
+Name=P25_OCCUPATION_LEVEL_4
+Position=1142,2646,1199,2666
+Item=P25_OCCUPATION_LEVEL_4,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=935,2649,1115,2665
+Text=P25. Occupation (unit group)
+ 
+  
+[Field]
+Name=P26_OCCUPATION_STATUS
+Position=1150,2677,1165,2697
+Item=P26_OCCUPATION_STATUS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=937,2680,1121,2696
+Text=P26. Status in the occupation
  
   
 [Field]
