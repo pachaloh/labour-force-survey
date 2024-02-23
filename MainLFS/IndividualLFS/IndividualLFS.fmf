@@ -46,7 +46,7 @@ Name=FORM004
 Label=Labor
 QuestionTextHeight=184
 Level=1
-Size=1249,5623
+Size=1493,5623
   
 Item=RSP_START
 Item=RSP_AVAIL
@@ -234,11 +234,22 @@ Item=N01A
 Item=N01B
 Item=TVT01A
 Item=TVT05B
-Item=P25_OCCUPATION_LEVEL_1
-Item=P25_OCCUPATION_LEVEL_2
-Item=P25_OCCUPATION_LEVEL_3
-Item=P25_OCCUPATION_LEVEL_4
-Item=P26_OCCUPATION_STATUS
+Item=SEC_JOB_OCC_LEVEL_1
+Item=SEC_JOB_OCC_LEVEL_2
+Item=SEC_JOB_OCC_LEVEL_3
+Item=SEC_JOB_OCC_LEVEL_4
+Item=MAIN_JOB_OCC_LEVEL_1
+Item=MAIN_JOB_OCC_LEVEL_2
+Item=MAIN_JOB_OCC_LEVEL_3
+Item=MAIN_JOB_OCC_LEVEL_4
+Item=MAIN_JOB_SECTION
+Item=MAIN_JOB_DIVISIONS
+Item=MAIN_JOB_GROUPS
+Item=MAIN_JOB_CLASS
+Item=SEC_JOB_SECTION
+Item=SEC_JOB_DIVISIONS
+Item=SEC_JOB_GROUPS
+Item=SEC_JOB_CLASS
   
 [EndForm]
   
@@ -1115,6 +1126,102 @@ Text=Module start: Main job - Core characteristics of the economic unit
  
   
 [Field]
+Name=MAIN_JOB_OCC_LEVEL_1
+Position=817,1601,846,1621
+Item=MAIN_JOB_OCC_LEVEL_1,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=566,1604,791,1620
+Text=Main job- Occupation (major group)
+ 
+  
+[Field]
+Name=MAIN_JOB_OCC_LEVEL_2
+Position=853,1626,882,1646
+Item=MAIN_JOB_OCC_LEVEL_2,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=574,1629,825,1645
+Text=Main job- Occupation (sub major group)
+ 
+  
+[Field]
+Name=MAIN_JOB_OCC_LEVEL_3
+Position=828,1647,871,1667
+Item=MAIN_JOB_OCC_LEVEL_3,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=577,1650,802,1666
+Text=Main job- Occupation (minor group)
+ 
+  
+[Field]
+Name=MAIN_JOB_OCC_LEVEL_4
+Position=819,1670,876,1690
+Item=MAIN_JOB_OCC_LEVEL_4,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=581,1673,793,1689
+Text=Main job- Occupation (unit group)
+ 
+  
+[Field]
+Name=MAIN_JOB_SECTION
+Position=1127,1596,1156,1616
+Item=MAIN_JOB_SECTION,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=953,1599,1064,1615
+Text=Main job. Section
+ 
+  
+[Field]
+Name=MAIN_JOB_DIVISIONS
+Position=1135,1625,1164,1645
+Item=MAIN_JOB_DIVISIONS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=961,1628,1080,1644
+Text=Main job. Divisions
+ 
+  
+[Field]
+Name=MAIN_JOB_GROUPS
+Position=1127,1652,1170,1672
+Item=MAIN_JOB_GROUPS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=961,1655,1069,1671
+Text=Main job. Groups
+ 
+  
+[Field]
+Name=MAIN_JOB_CLASS
+Position=1114,1679,1171,1699
+Item=MAIN_JOB_CLASS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=956,1682,1052,1698
+Text=Main job. Class
+ 
+  
+[Field]
 Name=MJU_INS
 Position=487,1634,502,1654
 Item=MJU_INS,INDIVIDUALLFS_DICT
@@ -1526,9 +1633,9 @@ Text=Occupation tasks in second job
  
   
 [Field]
-Name=P25_OCCUPATION_LEVEL_1
+Name=SEC_JOB_OCC_LEVEL_1
 Position=1172,2570,1201,2590
-Item=P25_OCCUPATION_LEVEL_1,INDIVIDUALLFS_DICT
+Item=SEC_JOB_OCC_LEVEL_1,INDIVIDUALLFS_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -1538,9 +1645,9 @@ Text=P25. Occupation (major group)
  
   
 [Field]
-Name=P25_OCCUPATION_LEVEL_2
+Name=SEC_JOB_OCC_LEVEL_2
 Position=1195,2594,1224,2614
-Item=P25_OCCUPATION_LEVEL_2,INDIVIDUALLFS_DICT
+Item=SEC_JOB_OCC_LEVEL_2,INDIVIDUALLFS_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -1550,9 +1657,9 @@ Text=P25. Occupation (sub major group)
  
   
 [Field]
-Name=P25_OCCUPATION_LEVEL_3
+Name=SEC_JOB_OCC_LEVEL_3
 Position=1172,2622,1215,2642
-Item=P25_OCCUPATION_LEVEL_3,INDIVIDUALLFS_DICT
+Item=SEC_JOB_OCC_LEVEL_3,INDIVIDUALLFS_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -1562,9 +1669,9 @@ Text=P25. Occupation (minor group)
  
   
 [Field]
-Name=P25_OCCUPATION_LEVEL_4
+Name=SEC_JOB_OCC_LEVEL_4
 Position=1142,2646,1199,2666
-Item=P25_OCCUPATION_LEVEL_4,INDIVIDUALLFS_DICT
+Item=SEC_JOB_OCC_LEVEL_4,INDIVIDUALLFS_DICT
 DataCaptureType=RadioButton
 Form=3
   
@@ -1574,15 +1681,51 @@ Text=P25. Occupation (unit group)
  
   
 [Field]
-Name=P26_OCCUPATION_STATUS
-Position=1150,2677,1165,2697
-Item=P26_OCCUPATION_STATUS,INDIVIDUALLFS_DICT
+Name=SEC_JOB_SECTION
+Position=1409,2568,1438,2588
+Item=SEC_JOB_SECTION,INDIVIDUALLFS_DICT
 DataCaptureType=RadioButton
 Form=3
   
 [Text]
-Position=937,2680,1121,2696
-Text=P26. Status in the occupation
+Position=1235,2571,1363,2587
+Text=Second job- Section
+ 
+  
+[Field]
+Name=SEC_JOB_DIVISIONS
+Position=1427,2597,1456,2617
+Item=SEC_JOB_DIVISIONS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=1253,2600,1389,2616
+Text=Second job- Divisions
+ 
+  
+[Field]
+Name=SEC_JOB_GROUPS
+Position=1424,2627,1467,2647
+Item=SEC_JOB_GROUPS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=1258,2630,1383,2646
+Text=Second job- Groups
+ 
+  
+[Field]
+Name=SEC_JOB_CLASS
+Position=1411,2657,1468,2677
+Item=SEC_JOB_CLASS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=1253,2660,1366,2676
+Text=Second job- Class
  
   
 [Field]
@@ -2958,7 +3101,7 @@ Length=2
 Name=BLOCK_SJJ_OCC
 Label=Second job type
 DisplayTogether=Yes
-Position=81
+Position=89
 Length=2
   
 [EndGroup]

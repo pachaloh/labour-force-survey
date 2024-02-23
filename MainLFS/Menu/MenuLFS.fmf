@@ -12,7 +12,7 @@ File=.\MenuLFS.dcf
 [Form]
 Name=FORM000
 Label=MenuLFS Level
-QuestionTextHeight=106
+QuestionTextHeight=181
 Level=1
 Size=706,226
   

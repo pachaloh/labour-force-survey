@@ -14,7 +14,7 @@ PROC GLOBAL
 	alpha(26) alphavar;				   { Alpha working variable used in checking alpha vars }
 	alpha(26) alphanew;                { Alpha working variable used in checking alpha vars }
 	alpha(62) alphalst; 
-	numeric NWAP = 30;
+	numeric NWAP = 15;
 	string worklabel;  
 	string nav_edu_levels;
 	string nav_study_field; //Default ISCED-F
@@ -460,22 +460,6 @@ numeric i;
 	  labels(i) = "";
     enddo;
   end;
-
-
-
-{
-PROC DEM_CCIT
-
-preproc
-	ask if pos("B",DEM_COM)>0 
-}
-
-
-
-
-
-
-
 
 
 
@@ -1499,9 +1483,31 @@ errmsg("Please comfirm if this person is really an albino")
 select("Reenter Albinism",DEM_27,
 		"Continue",Continue);
 endif;
+PROC TU_ELG_LN
+
+preproc
+
+    if visualvalue($) = notappl then
+		
+	valueset numeric eligible_for_time_use;
+	
+	do numeric ctr = 1 while ctr <= totocc(HMPPNO000)
+		if DEM_06(ctr) >= NWAP then
+			eligible_for_time_use.add(DEM_NAME(ctr),ctr)
+		endif;
+	enddo;
+	
+	$ = randomin(eligible_for_time_use);
+	
+	//errmsg("%v is selected for time use",DEM_NAME($));
+	
+	noinput;
+	
+	endif;
 PROC HC01
 
-
+preproc
+	errmsg("%v is selected for time use",DEM_NAME(TU_ELG_LN));
 PROC D00_DWELLING_INTRODUCTION
 preproc
 

@@ -47,7 +47,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <br><p></p>
+            <span style="font-family: Arial; font-size: 20px;">Muli bwanji? Dzina langa ndi<b>&nbsp;</b></span><span style="font-family: Arial; font-size: 20px;"><b>~~MCV_INTERVIEWER_NAME~~.</b> Ndimagwira ntchito ndi&nbsp;</span><b><span class="normal" style="font-family: Arial; font-size: 16pt;">National Statistical Office(NSO)</span></b><span style="font-family: Arial; font-size: 20px;"><b>.</b> Ndingayankhuleko ndi munthu wamkulu wapankhomo pano yemwe angathe kofotokoza zina zokhuzana ndi khomo lino komaso anthu apakhomo pano?</span><p></p>
           ENG: |
             <p class="MsoNormal"><span lang="NO-BOK" style="font-size: 16pt; font-family: Arial;" class="normal">Hello,
             my name is&nbsp;</span><span lang="NO-BOK" style="font-size:
@@ -59,7 +59,7 @@ questions:
             additional interviews with you or other individual members of your household.
             All the information we obtain will remain strictly <span style="font-size: 16pt;">confidential and anonymous.
             If you do not wish to answer a question or stop the interview, please let me
-            know.&nbsp;</span></span></p><p class="MsoNormal"><span style="font-family: Arial; font-size: 20px;">In case you may have any questions or seeking
+            know.&nbsp;</span></span></p><p class="MsoNormal"><span class="normal" style="font-size: 20pt; font-family: Arial;"><br></span><span style="font-family: Arial; font-size: 20px;">In case you may have any questions or seeking
             for the clarification, you may do so now before I start the interview. </span></p><p class="MsoNormal"><span style="font-family: Arial; font-size: 24px;"><span style="font-size: 20px;">May I start the interview?&nbsp;<b> (</b></span><b><i><span style="font-size: 20px;">Yes/No</span></i><span style="font-size: 20px;">)</span></b></span></p><p class="MsoNormal"><span style="font-family: Arial, sans-serif; font-style: italic;"><font color="#0000ff">INTERVIEWER CHECK: IS AN ADULT MEMBER AVAILABLE?&nbsp;</font></span><br></p><p></p>
           TU: |
             <p><span style="font-family: Arial; font-size: 24px;">Odini, zina lane ndine&nbsp;</span><span class="normal" style="font-family: Arial; font-size: 16pt;"><b>~~MCV_INTERVIEWER_NAME~~</b></span><span class="normal" style="font-family: Arial; font-size: 16pt;"><b>.</b>&nbsp;</span><span style="font-family: Arial; font-size: 24px;">&nbsp;Nkhugwira ntchito ku ofesi ya kalembera ya </span><b><span style="font-family: Arial; font-size: 24px;">National Statistical Office</span></b><span style="font-family: Arial; font-size: 24px;">. Tikupanga k</span><span style="font-family: Arial; font-size: 24px;">﻿</span><span style="font-family: Arial; font-size: 24px;">afukufuku wakukhwaskana na kagwiriro ka ntchito kwa wanthu awo wanavyaka vyapakati pa 15 mpaka 64 kweniso ivyo vyikuchitika kwa wana wa vyaka 5 mpaka 17. Nyumba yinu ni yimoza mwa nyumba izo zasankhika mwa mayere umo kafukufuku uyu wachitikirengemo. Kufumba mafumbo uku kutorenge maminisi ghakukwana 40. Pamanyuma pa ivi nipemphengeso kuti nimufumbani mafumbo imwe panyakhe wanthu wanyakhe wa munyumba mwinu. Vyose ivyo tisangenge mu kafukufuku uyu viwenge vya chisisi ndipo palembenge zina la munthu yayi. Usange mukukhumba yayi kuzgola ghanyakhe mwa mafumbo panyakhe kuleka kupanga nawo kafukufuku uyu munganiphalira. Usange muli na mafumbo ghakukhwaskana na kafukufuku uyu munganifumba sono pambele nindayambeko kumufumbani mafumbo.</span></p><p><font face="Arial"><span style="font-size: 24px;">&nbsp;Kasi ningayambapo kumufumbani?</span></font></p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">NTERVIEWER CHECK: IS AN ADULT MEMBER AVAILABLE?&nbsp;</span><font face="Arial"><span style="font-size: 24px;">&nbsp;</span></font><br></p><p></p><p></p>
@@ -100,9 +100,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">You have listed&nbsp;</span><span style="font-weight: bold; font-size: 18px;">~~CapiNumberOfPersons~~</span><span style="font-size: 18px;">&nbsp;person(s):&nbsp;</span></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Aliponso wina?&nbsp;&nbsp;</span><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Monga ana, achibale, wina aliyense amene si wachibale kapena alendo amene anagona usiku wathawu?</span></p><p></p>
+            <p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">You have listed&nbsp;</span><span style="font-weight: bold; font-size: 18px;">~~CapiNumberOfPersons~~</span><span style="font-size: 18px;">&nbsp;person(s):&nbsp;</span></p><p style="font-family: Arial; font-size: 16px;"><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Is there anyone else in this household?&nbsp;&nbsp;</span><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Any (other) children? Relatives? Anyone not related to you (like a servant)? Or any visitors who spent the night?&nbsp;</span></p><p></p>
           ENG: |
-            <p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">You have listed&nbsp;</span><span style="font-weight: bold; font-size: 18px;">~~CapiNumberOfPersons~~</span><span style="font-size: 18px;">&nbsp;person(s):&nbsp;</span></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Is there anyone else in this household?&nbsp;&nbsp;</span><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Any (other) children? Relatives? Anyone not related to you (like a servant)? Or any visitors who spent the night?&nbsp;</span></p><p></p>
+            <p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">You have listed&nbsp;</span><span style="font-weight: bold; font-size: 18px;">~~CapiNumberOfPersons~~</span><span style="font-size: 18px;">&nbsp;person(s):&nbsp;</span></p><p style="font-family: Arial; font-size: 16px;"><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Is there anyone else in this household?&nbsp;&nbsp;</span><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Any (other) children? Relatives? Anyone not related to you (like a servant)? Or any visitors who spent the night?&nbsp;</span></p><p></p>
           TU: |
             <p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">You have listed&nbsp;</span><span style="font-weight: bold; font-size: 18px;">~~CapiNumberOfPersons~~</span><span style="font-size: 18px;">&nbsp;person(s):&nbsp;</span></p><p style="font-family: Arial; font-size: 16px;"><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Is there anyone else in this household?&nbsp;&nbsp;</span><br></p><p style="font-family: Arial; font-size: 16px;"><span style="font-size: 18px;">Any (other) children? Relatives? Anyone not related to you (like a servant)? Or any visitors who spent the night?&nbsp;</span></p><p></p>
           YA: |
@@ -297,18 +297,34 @@ questions:
   - name: HOUSEHOLDLFS_DICT.DEM_13D
     conditions:
       - questionText:
+          CH: |
+            <p><b><span style="font-family: Arial;">DEM13D</span></b><b><span style="font-family: Arial;">.</span></b></p><p><span style="font-family: Arial;">Was the training you attended institution-based (at the Technical college) or work place-based training?</span></p><p></p>
           ENG: |
             <p><b><span style="font-family: Arial;">DEM13D</span></b><b><span style="font-family: Arial;">.</span></b></p><p><span style="font-family: Arial;">Was the training you attended institution-based (at the Technical college) or work place-based training?</span><p></p></p>
+          TU: |
+            <p><b><span style="font-family: Arial;">DEM13D</span></b><b><span style="font-family: Arial;">.</span></b></p><p><span style="font-family: Arial;">Was the training you attended institution-based (at the Technical college) or work place-based training?</span></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_13E
     conditions:
       - questionText:
+          CH: |
+            <p><b><span style="font-family: Arial;">DEM13E</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it provided by the formal TEVET system or informal TEVET system?</font></p><p></p>
           ENG: |
             <p><b><span style="font-family: Arial;">DEM13E</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it provided by the formal TEVET system or informal TEVET system?</font><br></p><p></p>
+          TU: |
+            <p><b><span style="font-family: Arial;">DEM13E</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it provided by the formal TEVET system or informal TEVET system?</font></p><p></p>
+          YA: |
+            <p><b><span style="font-family: Arial;">DEM13E</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it provided by the formal TEVET system or informal TEVET system?</font></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_13F
     conditions:
       - questionText:
+          CH: |
+            <p><b><span style="font-family: Arial;">DEM13F</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it a pre-employment training or in-service training?</font></p><p></p>
           ENG: |
             <p><b><span style="font-family: Arial;">DEM13F</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it a pre-employment training or in-service training?</font><br></p><p></p>
+          TU: |
+            <p><b><span style="font-family: Arial;">DEM13F</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it a pre-employment training or in-service training?</font></p><p></p>
+          YA: |
+            <p><b><span style="font-family: Arial;">DEM13F</span></b><b><span style="font-family: Arial;">.</span></b></p><p><font face="Arial">Was it a pre-employment training or in-service training?</font></p><p></p>
   - name: HOUSEHOLDLFS_DICT.DEM_14
     conditions:
       - questionText:
@@ -434,7 +450,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><span style="font-family: Arial; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(PPNO)~~</span></b><span style="font-family: Arial;">&nbsp;ali ndi vuto ..........................?&nbsp;</span></p><p></p><p></p>
+            <p><span style="font-family: Arial; font-size: 26px; font-weight: 700;">DEM25.</span></p><p><font face="Arial">Kodi (NAME) amavutika kuzisamalira munjira ngati ya kuchapa kapena kuvala?&nbsp;</font></p><p></p><p></p>
           ENG: |
             <p><span style="font-family: Arial; font-size: 20px; font-weight: 700;">DEM25.&nbsp;</span><span style="color: rgb(51, 51, 51);"><br></span></p><p><span style="color: rgb(51, 51, 51); font-family: Arial;">Does&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME~~</span></b><font color="#333333" face="Arial">&nbsp;have difficulty with (self-care such as) washing all over or dressing?&nbsp;</font></p><p></p><p></p>
           TU: |
@@ -1217,7 +1233,7 @@ questions:
           CH: |
             <p><b><span style="font-family: Arial;">E02&nbsp;</span></b></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;ndi wa mwamuna kapena wa mkazi?&nbsp;</span></p><p></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">What is the sex of&nbsp;&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span></p><p></p><p></p>
+            <p><b><span style="font-family: Arial;">E02.</span></b></p><p><span style="font-family: Arial;">Is&nbsp;&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;male or female?</span></p><p></p><p></p>
           TU: |
             <p><b><span style="font-family: Arial;">E02&nbsp;</span></b><br></p><p><span style="font-family: Arial;">Kasi&nbsp;</span><span style="font-weight: 700; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;ni mwanalume panyakhe mwanakazi?&nbsp;</span></p><p></p><p></p>
           YA: |
@@ -1259,7 +1275,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><br></p><p></p>
+            <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Is&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;still in the country of destination?&nbsp;</span><br></p><p><br></p><p></p>
           ENG: |
             <p><b><span style="font-family: Arial;">E05_1.</span></b></p><p><span style="font-family: Arial;">Is&nbsp;</span><span style="font-weight: bold; font-family: Arial;">~~XE01~~</span><span style="font-family: Arial;">&nbsp;still in the country of destination?&nbsp;</span></p><p></p>
           TU: |

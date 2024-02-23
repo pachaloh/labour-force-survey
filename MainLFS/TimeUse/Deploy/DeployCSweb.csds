@@ -1,0 +1,25 @@
+{
+  "fileType": "Application Deployment Specification",
+  "version": "7.7",
+  "name": "Time Use Survey (AA)",
+  "description": "",
+  "files": [
+    {
+      "path": "..\\application\\TimeUse.ent"
+    },
+    {
+      "path": "..\\application\\TimeUse.pff"
+    }
+  ],
+  "dictionaries": [
+    {
+      "path": "..\\application\\TimeUse.dcf",
+      "uploadForSync": true
+    }
+  ],
+  "deployment": {
+    "type": "CSWeb",
+    "cswebUrl": "https:\/\/csprodata.ilo.org\/api\/",
+    "ftpUrl": "ftp:\/\/"
+  }
+}

@@ -1,0 +1,28 @@
+﻿Cluster 0001: Chitipa, TA Mwabulambya (0018)
+-------------------------------------------
+
+Summary Status of Progress for each Staff
+-------------------------------------------
+
+01. PACHALO CHIZALA                                    
+---- --- --- ------------
+01. 000101:Head Name 1-3                (COMPLETED)
+    Individual. 01.HH-NAME                                            (NOT INTERVIEWED)
+02. 000102:Head Name 1-2                                      (NOT VISITED)
+09. 000109:Head Name 1-9                                      (NOT VISITED)
+20. 000120:Head Name 1-20                                     (NOT VISITED)
+----------------------------------------
+
+02. BRIAN                                              
+---- --- --- ------------
+03. 000103:Head Name 1-3                (COMPLETED)
+    Individual. 01.KATAKWE                                            (NOT INTERVIEWED)
+    Individual. 02.MALITA                                             (NOT INTERVIEWED)
+    Child. 02.MALITA                                            (16) (NOT INTERVIEWED)
+----------------------------------------
+
+Cluster Incomplete- 2 of 4 done- (50.00% Complete)
+           Completed  Partial    New     Total
+Household:      2        0        3        5    
+Ind      :      0        0        3        3    
+Child    :      0        0        1        1    

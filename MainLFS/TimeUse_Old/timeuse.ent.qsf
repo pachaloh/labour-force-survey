@@ -1,0 +1,237 @@
+﻿---
+fileType: Question Text
+version: CSPro 7.7
+languages:
+  - name: EN
+    label: English
+styles:
+  - name: Normal
+    className: normal
+    css: |
+      font-family: Arial;font-weight: bold;font-size: 18px;color: #000000;
+  - name: Instruction
+    className: instruction
+    css: |
+      font-family: Arial;font-style: italic;font-weight: normal;font-size: 14px;color: #0000ff;
+  - name: Heading 1
+    className: heading1
+    css: |
+      font-family: Arial;font-size: 36px;
+  - name: Heading 2
+    className: heading2
+    css: |
+      font-family: Arial;font-size: 24px;
+  - name: Heading 3
+    className: heading3
+    css: |
+      font-family: Arial;font-size: 18px;
+questions:
+  - name: TIMEUSE_DICT_B.LDB_TSS
+    conditions:
+      - questionText:
+          EN: |
+            <p>START time:</p>
+  - name: TIMEUSE_DICT_B.LDB_TSE
+    conditions:
+      - questionText:
+          EN: |
+            <p>END time:</p>
+  - name: BLOCK000
+    conditions:
+      - logic: curocc() = 1
+        questionText:
+          EN: |
+            <p><span style="font-weight: normal;">The purpose of the next section of the survey is to create a snapshot of daily life in ~~country~~. That is, how people spend their day – the things they do, the places they go, and the responsibilities they have.</span></p><p><span style="font-weight: normal;">Information about how people spend their time on a day-to-day basis is very important to help plan services needed in the local area, as well as national policies and schemes.</span></p><p><span style="font-weight: normal;">I’m going to ask you about what you did yesterday. We will start with what you were doing at 4am yesterday morning. We begin at 4am because people are often asleep at that time. This allows us to capture the start of the waking day.</span></p><p><span style="font-weight: normal;">Please tell me what you did yesterday in the order that you did it. Try to tell me as much detail as you can about what you were doing, where you were, and who was with you throughout the day.</span></p><p></p>
+      - questionText:
+          EN: |
+            
+  - name: TIMEUSE_DICT_B.LDB_1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Thinking about yesterday, what were you doing at <font color="#ff0000"><b>~~getvaluelabel(LDB_TSS)~~</b></font>?</p>
+  - name: TIMEUSE_DICT_B.LDB_TSE_C
+    conditions:
+      - questionText:
+          EN: |
+            <p>Until when?</p>
+  - name: TIMEUSE_DICT_B.LDB_1_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction">ENTER OTHER MAIN ACTIVITY</span></p>
+  - name: TIMEUSE_DICT_B.LDB_TT
+    conditions:
+      - {}
+  - name: TIMEUSE_DICT_B.LDB_CHK
+    conditions:
+      - questionText:
+          EN: |
+            <p>What time did you wake up yesterday?</p><p><span class="instruction">Enter time in the following format - HH:MM; ENTER 9977 IF DID NOT SLEEP THAT NIGHT (E.G., WORKING NIGHTSHIFT)</span></p>
+  - name: TIMEUSE_DICT_B.LDB_1B
+    conditions:
+      - questionText:
+          EN: |
+            <p>Were you doing anything else at the same time as you were <span style="color: rgb(255, 0, 0);">~~getvaluelabel(LDB_1)[5]~~</span>?</p>
+  - name: TIMEUSE_DICT_B.LDB_1B_OTH
+    conditions:
+      - logic: 4
+        questionText:
+          EN: |
+            <p><span class="instruction">ENTER OTHER ACTIVITY</span></p>
+  - name: TIMEUSE_DICT_B.LDB_1B_T
+    conditions:
+      - questionText:
+          EN: |
+            <p>Until when did you <span style="color: rgb(255, 0, 0);">~~getocclabel()[5]~~</span>?</p>
+  - name: TIMEUSE_DICT_B.LDB_2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Where were you when you were <font color="#ff0000">~~getvaluelabel(LDB_1)[5]~~</font>?</p>
+  - name: TIMEUSE_DICT_B.LDB_2_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic; font-weight: normal;">ENTER OTHER LOCATION</span><br></p><p><p></p></p>
+  - name: TIMEUSE_DICT_B.LDB_2A
+    conditions:
+      - questionText:
+          EN: |
+            <p>What was the main reason for this travel?<br></p>
+  - name: TIMEUSE_DICT_B.LDB_2A_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction">ENTER OTHER REASON</span><br></p>
+  - name: TIMEUSE_DICT_B.LDB_3
+    conditions:
+      - logic: not(LDB_1 in 1, 97, 40) and LDB_2 <> 8
+        questionText:
+          EN: |
+            <p>Who was there with you when you were <font color="#ff0000">~~getvaluelabel(LDB_1)[5]~~</font>? That is, close enough that you could see them, or hear them if they called for you?<br></p><p><span class="heading1 normal"><span class="normal heading3"><span class="instruction"><i>ALL THAT APPLY</i></span><br></span></span></p><p></p><p></p>
+      - logic: not(LDB_1 in 1, 97) and LDB_1=40 and LDB_2=8
+        questionText:
+          EN: |
+            <p>Who was travelling with you?</p><p><p><i style="color: rgb(0, 0, 255); font-size: 14px;">ALL THAT APPLY</i><br></p></p>
+  - name: TIMEUSE_DICT_B.LDB_3A
+    conditions:
+      - questionText:
+          EN: |
+            <p>How old [is/are] [she / he / they]?</p><p><span class="instruction">ALL THAT APPLY</span></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who did you mainly do <font color="#ff0000">~~getvaluelabel(LDB_1)[5]~~</font> for?<span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;">﻿</span></p><p></p><p></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_4_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="color: rgb(0, 0, 255); font-size: 14px; font-weight: normal;" class="instruction">ENTER OTHER</span><br></p><p></p><p></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_4A
+    conditions:
+      - questionText:
+          EN: |
+            <p>How old [is/are] [she / he / they]?</p><p><span class="instruction">ALL THAT APPLY</span></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_5
+    conditions:
+      - questionText:
+          EN: |
+            <p>Are the products from&nbsp;<span style="color: rgb(255, 0, 0);">~~getvaluelabel(LDB_1)[5]~~</span>&nbsp;intended…?<br></p><p></p><p></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_6
+    conditions:
+      - questionText:
+          EN: |
+            <p>Who did you mainly do&nbsp;<font color="#ff0000">~~getocclabel()[5]~~&nbsp;</font>for?<br></p><p></p><p></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_6A
+    conditions:
+      - questionText:
+          EN: |
+            <p>How old [is/are] [she / he / they] for whom you mainly did&nbsp;<span style="color: rgb(255, 0, 0);">~~getocclabel()[5]~~</span>?</p><p><span class="instruction">ALL THAT APPLY</span></p><p></p>
+  - name: TIMEUSE_DICT_B.LDB_7
+    conditions:
+      - questionText:
+          EN: |
+            <p>Are the products from&nbsp;<span style="color: rgb(255, 0, 0);">~~getocclabel()[5]~~</span>&nbsp;intended…?</p><p></p>
+  - name: TIMEUSE_DICT_B.RSB_1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Were there any times yesterday when you were [supervising / minding / watching over] a child aged under 18, staying close by – <i>that is close enough to see or hear them</i> – and ready to respond in case of need?<br></p>
+  - name: TIMEUSE_DICT_B.RSB_2
+    conditions:
+      - questionText:
+          EN: |
+            <p>When was that?</p><p></p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ALL THAT APPLY</span><br></p><p></p>
+  - name: TIMEUSE_DICT_B.RSB_2A
+    conditions:
+      - questionText:
+          EN: |
+            <p>When during&nbsp;<font color="#ff0000">~~getvaluelabel(RSB_1A)[5]~~ </font>was that?</p><p><span class="instruction">SELECT FROM DROP-DOWN LIST OF 15-MINUTE TIMESLOTS</span><br></p><p></p><p></p><p></p>
+  - name: TIMEUSE_DICT_B.RSB_3
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is their relationship to you?&nbsp;</p><p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ALL THAT APPLY</span><br></p></p>
+  - name: TIMEUSE_DICT_B.RSB_3A
+    conditions:
+      - questionText:
+          EN: |
+            <p>How old [is/are] they?</p><p><span class="instruction">ALL THAT APPLY</span></p>
+  - name: TIMEUSE_DICT_B.RSB_4
+    conditions:
+      - questionText:
+          EN: |
+            <p>Were there any times yesterday when you were [supervising / minding / watching over] an adult aged 18 or over who needs help with daily life staying close by – <i>that is close enough to see or hear them</i> – and ready to respond in case of need?<br></p>
+  - name: TIMEUSE_DICT_B.RSB_5
+    conditions:
+      - questionText:
+          EN: |
+            <p>When was that…?<br></p><p><p></p></p>
+  - name: TIMEUSE_DICT_B.RSB_5A
+    conditions:
+      - questionText:
+          EN: |
+            <p>When during&nbsp;<font color="#ff0000">~~getvaluelabel(RSB_1B)[5]~~&nbsp;</font>was that?</p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">SELECT FROM DROP-DOWN LIST OF 15-MINUTE TIMESLOTS</span><br></p><p></p>
+  - name: TIMEUSE_DICT_B.RSB_6
+    conditions:
+      - questionText:
+          EN: |
+            <p>What is their relationship to you?&nbsp;</p><p></p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ALL THAT APPLY</span><br></p><p></p>
+  - name: TIMEUSE_DICT_B.TPL_1A
+    conditions:
+      - questionText:
+          EN: |
+            <p>Was yesterday unusual in any way, such as…?</p><p></p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ALL THAT APPLY</span><br></p><p></p>
+  - name: TIMEUSE_DICT_B.TPL_1A_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ENTER OTHER</span><br></p>
+  - name: TIMEUSE_DICT_B.TPL_1B
+    conditions:
+      - questionText:
+          EN: |
+            <p>You mentioned that yesterday was unusual because a household or family member was (sick / unwell / injured).&nbsp;</p><p>Who was that?&nbsp;</p><div><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ALL THAT APPLY</span><br></div><p></p>
+  - name: TIMEUSE_DICT_B.TAW_1
+    conditions:
+      - questionText:
+          EN: |
+            <p>Just before we finish, do you know what time it is now?</p><p><span class="instruction">Enter time in the following format - HH:MM. Enter 97 for DON’T KNOW.</span><br></p>
+  - name: TIMEUSE_DICT_B.TAW_2
+    conditions:
+      - questionText:
+          EN: |
+            <p>Do you know approximately?</p><p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">Enter time in the following format - HH:MM. Enter 97 for DON’T KNOW.</span><br></p>
+  - name: TIMEUSE_DICT_B.TAW_3
+    conditions:
+      - questionText:
+          EN: |
+            <p><span class="instruction">DO NOT READ: ENUMERATOR TO OBSERVE &amp; CODE</span><br></p>
+  - name: TIMEUSE_DICT_B.TAW_3_OTH
+    conditions:
+      - questionText:
+          EN: |
+            <p><span style="color: rgb(0, 0, 255); font-size: 14px; font-style: italic;" class="instruction">ENTER OTHER</span><br></p>
+...

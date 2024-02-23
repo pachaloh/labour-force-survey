@@ -17,6 +17,7 @@ File=..\Dicts\clusters.dcf
 File=..\ChildLFS\ChildLFS.dcf
 [AppCode]
 File=.\IndividualLFS.ent.apc
+Include=..\..\..\..\MainLFS\Shared Logic\Dynamic Value Set Functions.apc
 [Message]
 File=.\IndividualLFS.ent.mgf
 [Help]

@@ -1,0 +1,8 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+Description=Time Use Survey (AA)
+
+[Files]
+Application=.\TimeUse.ent
+InputData=.\TimeUse.csdb

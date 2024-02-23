@@ -1,0 +1,875 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=Time Use Survey (AA)
+Name=TIMEUSE_DICT_A
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=Yes
+DecimalChar=No
+SecurityOptions=117B1D773D8B33A26EB5B2AE3508266D2C0066FC56444F0A228A8941DD20D29C
+
+[Level]
+Label=TimeUse Level
+Name=TIMEUSE_LEVEL
+
+[IdItems]
+
+[Item]
+Label=TIMEUSE_ID
+Name=TIMEUSE_ID
+Start=2
+Len=5
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=TimeUse Identifier
+Name=TIMEUSE_IDENTIFIER
+RecordTypeValue='3'
+RecordLen=8
+
+[Item]
+Label=TU_PPNO
+Name=TU_PPNO
+Start=7
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=TimeUse Record
+Name=TIMEUSE_REC
+RecordTypeValue='T'
+MaxRecords=96
+RecordLen=256
+
+[Item]
+Label=OPS_TSS
+Name=OPS_TSS
+Start=7
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_TSS
+Name=OPS_TSS_VS1
+Link=160900072
+Value=1;4:00
+Value=2;4:15
+Value=3;4:30
+Value=4;4:45
+Value=5;5:00
+Value=6;5:15
+Value=7;5:30
+Value=8;5:45
+Value=9;6:00
+Value=10;6:15
+Value=11;6:30
+Value=12;6:45
+Value=13;7:00
+Value=14;7:15
+Value=15;7:30
+Value=16;7:45
+Value=17;8:00
+Value=18;8:15
+Value=19;8:30
+Value=20;8:45
+Value=21;9:00
+Value=22;9:15
+Value=23;9:30
+Value=24;9:45
+Value=25;10:00
+Value=26;10:15
+Value=27;10:30
+Value=28;10:45
+Value=29;11:00
+Value=30;11:15
+Value=31;11:30
+Value=32;11:45
+Value=33;12:00
+Value=34;12:15
+Value=35;12:30
+Value=36;12:45
+Value=37;13:00
+Value=38;13:15
+Value=39;13:30
+Value=40;13:45
+Value=41;14:00
+Value=42;14:15
+Value=43;14:30
+Value=44;14:45
+Value=45;15:00
+Value=46;15:15
+Value=47;15:30
+Value=48;15:45
+Value=49;16:00
+Value=50;16:15
+Value=51;16:30
+Value=52;16:45
+Value=53;17:00
+Value=54;17:15
+Value=55;17:30
+Value=56;17:45
+Value=57;18:00
+Value=58;18:15
+Value=59;18:30
+Value=60;18:45
+Value=61;19:00
+Value=62;19:15
+Value=63;19:30
+Value=64;19:45
+Value=65;20:00
+Value=66;20:15
+Value=67;20:30
+Value=68;20:45
+Value=69;21:00
+Value=70;21:15
+Value=71;21:30
+Value=72;21:45
+Value=73;22:00
+Value=74;22:15
+Value=75;22:30
+Value=76;22:45
+Value=77;23:00
+Value=78;23:15
+Value=79;23:30
+Value=80;23:45
+Value=81;0:00
+Value=82;0:15
+Value=83;0:30
+Value=84;0:45
+Value=85;1:00
+Value=86;1:15
+Value=87;1:30
+Value=88;1:45
+Value=89;2:00
+Value=90;2:15
+Value=91;2:30
+Value=92;2:45
+Value=93;3:00
+Value=94;3:15
+Value=95;3:30
+Value=96;3:45
+
+[Item]
+Label=OPS_TSE
+Name=OPS_TSE
+Start=9
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_TSE
+Name=OPS_TSE_VS1
+Link=160911048
+Value=1;4:15
+Value=2;4:30
+Value=3;4:45
+Value=4;5:00
+Value=5;5:15
+Value=6;5:30
+Value=7;5:45
+Value=8;6:00
+Value=9;6:15
+Value=10;6:30
+Value=11;6:45
+Value=12;7:00
+Value=13;7:15
+Value=14;7:30
+Value=15;7:45
+Value=16;8:00
+Value=17;8:15
+Value=18;8:30
+Value=19;8:45
+Value=20;9:00
+Value=21;9:15
+Value=22;9:30
+Value=23;9:45
+Value=24;10:00
+Value=25;10:15
+Value=26;10:30
+Value=27;10:45
+Value=28;11:00
+Value=29;11:15
+Value=30;11:30
+Value=31;11:45
+Value=32;12:00
+Value=33;12:15
+Value=34;12:30
+Value=35;12:45
+Value=36;13:00
+Value=37;13:15
+Value=38;13:30
+Value=39;13:45
+Value=40;14:00
+Value=41;14:15
+Value=42;14:30
+Value=43;14:45
+Value=44;15:00
+Value=45;15:15
+Value=46;15:30
+Value=47;15:45
+Value=48;16:00
+Value=49;16:15
+Value=50;16:30
+Value=51;16:45
+Value=52;17:00
+Value=53;17:15
+Value=54;17:30
+Value=55;17:45
+Value=56;18:00
+Value=57;18:15
+Value=58;18:30
+Value=59;18:45
+Value=60;19:00
+Value=61;19:15
+Value=62;19:30
+Value=63;19:45
+Value=64;20:00
+Value=65;20:15
+Value=66;20:30
+Value=67;20:45
+Value=68;21:00
+Value=69;21:15
+Value=70;21:30
+Value=71;21:45
+Value=72;22:00
+Value=73;22:15
+Value=74;22:30
+Value=75;22:45
+Value=76;23:00
+Value=77;23:15
+Value=78;23:30
+Value=79;23:45
+Value=80;0:00
+Value=81;0:15
+Value=82;0:30
+Value=83;0:45
+Value=84;1:00
+Value=85;1:15
+Value=86;1:30
+Value=87;1:45
+Value=88;2:00
+Value=89;2:15
+Value=90;2:30
+Value=91;2:45
+Value=92;3:00
+Value=93;3:15
+Value=94;3:30
+Value=95;3:45
+Value=96;4:00
+
+[Item]
+Label=OPS_1
+Name=OPS_1
+Start=11
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_1
+Name=OPS_1_EN
+Link=147418440
+Value=1;01. Sleeping or napping
+Value=2;02. Personal hygiene and health
+Value=3;03. Eating or drinking
+Value=4;04. Cooking / baking / preparing / serving food or drinks / cleaning dishes
+Value=5;05. Manufacturing / processing foods, beverages, herbs, medicines, tobacco
+Value=6;06. Cleaning and tidying indoors
+Value=7;07. Outdoor cleaning and upkeep
+Value=8;08. Pet care (includes feeding, exercising, cleaning, grooming)
+Value=9;09. Decorating or minor repairs and maintenance of buildings, durable goods, vehicles, machinery
+Value=10;10. Laundry / repair or maintenance of clothes, textiles, shoes
+Value=11;11. Shopping for/purchasing goods
+Value=12;12. Paying bills, budgeting, administration, planning, organising
+Value=13;13. Providing physical care or comforting children (feeding, cleaning, bathing, giving medical care, soothing…)
+Value=14;14. Teaching, helping, talking with, or reading to children
+Value=15;15. Playing games and sports with children
+Value=16;16. Attending children’s sports or games match, play, dance or talent show, or similar (includes training, practice, rehearsals)
+Value=17;17. [Minding or watching over] children
+Value=18;18. Providing physical care, practical assistance, or emotional support to adults with a disability, illness, or frailty who need assistance
+Value=19;19. [Minding or watching over] adults with a disability, illness, or frailty who need assistance
+Value=20;20. Waged or salaried employment / self-employment / paid traineeship
+Value=21;21. Helping without pay in a family or household business
+Value=22;22. Looking for paid work or setting up a new business
+Value=23;23. Unpaid traineeship or internship
+Value=24;24. Volunteering / community or social organising/ environmental / nature conservation / protection of wild or street animals
+Value=25;25. Studying, learning
+Value=26;26. Growing crops, including kitchen garden, (clearing, planting, fertilising, irrigating, weeding, picking / harvesting)
+Value=27;27. Tending to livestock / Milking / gathering wool / eggs / dung / other animal products
+Value=28;28. Gathering / processing firewood, straw
+Value=29;29. Fetching water from natural and other source
+Value=30;30. Fishing / Aquaculture / Gathering wild products / [Hunting or trapping animals]
+Value=31;31. Forestry / Logging / Mining / Quarrying
+Value=32;32. Construction, major renovations, or major repairs
+Value=33;33. Weaving, knitting, sewing, embroidering, tanning, bead work, textile- / leather- / metal-, wood- / stone- / brickwork
+Value=34;34. Socializing, visiting with, talking to friends / family / neighbours
+Value=35;35. Religious practice (individual or collective)
+Value=36;36. Participating in community festivals, celebrations
+Value=37;37. Attending cultural / entertainment / sports events
+Value=38;38. Playing sports or doing exercise
+Value=39;39. Watching tv shows, movies, online visual media / Reading for leisure / Listening to music, radio, podcasts, online audio media
+Value=40;40. Hobbies, games, pass-times, relaxing
+Value=41;41. Travelling or commuting / Transporting or accompanying people or goods
+Value=42;42. Other: Specify
+Value=97;97. DON’T KNOW
+
+[Item]
+Label=OPS_1_OTH
+Name=OPS_1_OTH
+Start=13
+Len=50
+DataType=Alpha
+
+[Item]
+Label=OPS_TSS_C
+Name=OPS_TSS_C
+Start=63
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_TSS_C
+Name=OPS_TSS_C_VS1
+Link=160900072
+
+[Item]
+Label=OPS_TSE_C
+Name=OPS_TSE_C
+Start=65
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_TSE_C
+Name=OPS_TSE_C_VS1
+Link=160911048
+
+[Item]
+Label=OPS_TT
+Name=OPS_TT
+Start=67
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=OPS_CHK
+Name=OPS_CHK
+Start=71
+Len=5
+DataType=Alpha
+
+[Item]
+Label=OPS_2
+Name=OPS_2
+Start=76
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_2
+Name=OPS_2_VS1
+Value=1;01. OWN HOME (OWN DWELLING OR IMMEDIATE SURROUNDS)
+Value=2;02. OTHER PERSONS' HOME (DWELLING OR IMMEDIATE SURROUNDS)
+Value=3;03. WORKPLACE
+Value=4;04. SCHOOL OR OTHER EDUCATIONAL ESTABLISHMENT
+Value=5;05. RELIGIOUS SITE / PLACE OF WORSHIP (CHURCH, MOSQUE, TEMPLE, SPIRIT HOUSE…)
+Value=6;06. OTHER OUTDOOR SITE (STREET, MARKET, PARK, FIELD, FOREST, POND, LAKE…)
+Value=7;07. OTHER INDOOR SITE (SHOP, BANK, RESTAURANT, CAFÉ, BAR, CINEMA, MUSEUM, HOSPITAL…)
+Value=8;08. IN TRANSIT
+Value=9;09. OTHER (SPECIFY)
+
+[ValueSet]
+Label=OPS_2
+Name=OPS_2_VS2
+Value=99;99. NO CHANGE IN LOCATION SINCE PRIOR ACTIVITY
+Value=1;01. OWN HOME (OWN DWELLING OR IMMEDIATE SURROUNDS)
+Value=2;02. OTHER PERSONS' HOME (DWELLING OR IMMEDIATE SURROUNDS)
+Value=3;03. WORKPLACE
+Value=4;04. SCHOOL OR OTHER EDUCATIONAL ESTABLISHMENT
+Value=5;05. RELIGIOUS SITE / PLACE OF WORSHIP (CHURCH, MOSQUE, TEMPLE, SPIRIT HOUSE…)
+Value=6;06. OTHER OUTDOOR SITE (STREET, MARKET, PARK, FIELD, FOREST, POND, LAKE…)
+Value=7;07. OTHER INDOOR SITE (SHOP, BANK, RESTAURANT, CAFÉ, BAR, CINEMA, MUSEUM, HOSPITAL…)
+Value=8;08. IN TRANSIT
+Value=9;09. OTHER (SPECIFY)
+
+[Item]
+Label=OPS_2_OTH
+Name=OPS_2_OTH
+Start=78
+Len=50
+DataType=Alpha
+
+[Item]
+Label=OPS_2A
+Name=OPS_2A
+Start=128
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_2A
+Name=OPS_2A_VS1
+Value=1;01. COMMUTING FOR WAGED OR SALARIED JOB, OWN/HOUSEHOLD BUSINESS
+Value=2;02. OTHER TRAVEL FOR WAGED OR SALARIED JOB, OWN/HOUSEHOLD BUSINESS
+Value=3;03. TRAVEL RELATED TO UNPAID TRAINEESHIP OR VOLUNTEER WORK
+Value=4;04. TRAVEL RELATED TO STUDIES
+Value=5;05. TRAVEL RELATED TO GROWING CROPS/TENDING LIVESTOCK
+Value=6;06. TRAVEL RELATED TO FETCHING WATER / GATHERING FIREWOOD, FUEL
+Value=7;07. TRAVEL RELATED TO OTHER PRODUCTION OF GOODS
+Value=8;08. TRAVEL RELATED TO HOUSEHOLD SERVICES (SHOPPING, DOING LAUNDRY, PAYING BILLS, RUNNING ERRANDS…)
+Value=9;09. DROPPING OFF / COLLECTING / ACCOMPANYING HOUSEHOLD OR FAMILY CHILDREN
+Value=10;10. DROPPING OFF / COLLECTING / ACCOMPANYING ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value=11;11. TRAVEL RELATED TO SELF-CARE (MEDICAL APPOINTMENTS, HAIRDRESSER / SALON VISITS, SPA TREATMENTS…)
+Value=12;12. TRAVEL RELATED TO SOCIALISING
+Value=13;13. TRAVEL RELATED TO COMMUNITY PARTICIPATION
+Value=14;14. TRAVEL RELATED TO RELIGIOUS PRACTICE
+Value=15;15. TRAVEL RELATED TO CULTURE / LEISURE / SPORTS OR EXERCISE
+Value=16;16. OTHER TRAVEL
+
+[Item]
+Label=OPS_2A_OTH
+Name=OPS_2A_OTH
+Start=130
+Len=50
+DataType=Alpha
+
+[Item]
+Label=OPS_3
+Name=OPS_3
+Start=180
+Len=18
+DataType=Alpha
+
+[ValueSet]
+Label=OPS_3
+Name=OPS_3_VS1
+Value='01                ';01. ALONE (INCLUDES WITH STRANGERS IN PUBLIC SETTING)
+Value='02                ';02. SPOUSE
+Value='03                ';03. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='04                ';04. OTHER ADULTS KNOWN TO RESPONDENT (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES)
+Value='05                ';05. OWN CHILD(REN) AGED UNDER 18
+Value='06                ';06. GRANDCHILD(REN) AGED UNDER 18
+Value='07                ';07. OTHER FAMILY CHILDREN AGED UNDER 18
+Value='08                ';08. OTHER CHILDREN AGED UNDER 18
+
+[ValueSet]
+Label=OPS_3
+Name=OPS_3_VS2
+Value='99                ';99. NO CHANGE IN PERSONS PRESENT SINCE PRIOR ACTIVITY
+Value='01                ';01. ALONE (INCLUDES WITH STRANGERS IN PUBLIC SETTING)
+Value='02                ';02. SPOUSE
+Value='03                ';03. OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='04                ';04. OTHER ADULTS KNOWN TO RESPONDENT (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES)
+Value='05                ';05. OWN CHILD(REN) AGED UNDER 18
+Value='06                ';06. GRANDCHILD(REN) AGED UNDER 18
+Value='07                ';07. OTHER FAMILY CHILDREN AGED UNDER 18
+Value='08                ';08. OTHER CHILDREN AGED UNDER 18
+
+[Item]
+Label=OPS_3A
+Name=OPS_3A
+Start=198
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=OPS_3A
+Name=OPS_3A_VS1
+Value='01    ';01. 0 TO 5 YEARS OLD
+Value='02    ';02. 6 YEARS – 11 YEARS OLD
+Value='03    ';03. 12 YEARS OLD TO 17 YEARS OLD
+
+[Item]
+Label=OPS_4
+Name=OPS_4
+Start=204
+Len=2
+DataType=Numeric
+
+[ValueSet]
+Label=OPS_4
+Name=OPS_4_VS4
+Value=99;99. NO CHANGE SINCE PRIOR ACTIVITY
+Value=6;06. OWN CHILD(REN) AGED UNDER 18
+Value=7;07. GRANDCHILD(REN) AGED UNDER 18
+Value=8;08. OTHER FAMILY CHILDREN AGED UNDER 18
+Value=9;09. OTHER CHILDREN AGED UNDER 18
+
+[ValueSet]
+Label=OPS_4
+Name=OPS_4_VS3
+Value=6;06. OWN CHILD(REN) AGED UNDER 18
+Value=7;07. GRANDCHILD(REN) AGED UNDER 18
+Value=8;08. OTHER FAMILY CHILDREN AGED UNDER 18
+Value=9;09. OTHER CHILDREN AGED UNDER 18
+
+[ValueSet]
+Label=OPS_4
+Name=OPS_4_VS1
+Value=1;01. SELF
+Value=2;02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value=3;03. SPOUSE
+Value=4;04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBER
+Value=5;05. OTHER ADULTS (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES / STRANGERS)
+Value=6;06. OWN CHILD(REN) AGED UNDER 18
+Value=7;07. GRANDCHILD(REN) AGED UNDER 18
+Value=8;08. OTHER FAMILY CHILDREN AGED UNDER 18
+Value=9;09. OTHER CHILDREN AGED UNDER 18
+Value=10;10. WAGED OR SALARIED JOB
+Value=11;11. OWN-BUSINESS OR HOUSEHOLD / FAMILY BUSINESS OR OTHER INCOME GENERATION
+Value=12;12. FOR A CHARITY, COMMUNITY GROUP, OR ORGANISATION
+Value=13;13. HOUSEHOLD OR FAMILY LIVESTOCK
+Value=14;14. HOUSEHOLD OR FAMILY PET
+Value=15;15. WILD OR STREET ANIMALS / NATURAL ENVIRONMENT
+Value=16;16. OTHER: SPECIFY
+
+[ValueSet]
+Label=OPS_4
+Name=OPS_4_VS2
+Value=99;99. NO CHANGE SINCE PRIOR ACTIVITY
+Value=1;01. SELF
+Value=2;02. HOUSEHOLD AS A WHOLE (INCLUDES SELF AND ALL HH MEMBERS)
+Value=3;03. SPOUSE
+Value=4;04. OTHER ADULT HOUSEHOLD OR FAMILY MEMBER
+Value=5;05. OTHER ADULTS (E.G., FRIENDS / NEIGHBOURS / COLLEAGUES / STRANGERS)
+Value=6;06. OWN CHILD(REN) AGED UNDER 18
+Value=7;07. GRANDCHILD(REN) AGED UNDER 18
+Value=8;08. OTHER FAMILY CHILDREN AGED UNDER 18
+Value=9;09. OTHER CHILDREN AGED UNDER 18
+Value=10;10. WAGED OR SALARIED JOB
+Value=11;11. OWN-BUSINESS OR HOUSEHOLD / FAMILY BUSINESS OR OTHER INCOME GENERATION
+Value=12;12. FOR A CHARITY, COMMUNITY GROUP, OR ORGANISATION
+Value=13;13. HOUSEHOLD OR FAMILY LIVESTOCK
+Value=14;14. HOUSEHOLD OR FAMILY PET
+Value=15;15. WILD OR STREET ANIMALS / NATURAL ENVIRONMENT
+Value=16;16. OTHER: SPECIFY
+
+[Item]
+Label=OPS_4_OTH
+Name=OPS_4_OTH
+Start=206
+Len=50
+DataType=Alpha
+
+[Item]
+Label=OPS_5
+Name=OPS_5
+Start=256
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=OPS_5
+Name=OPS_5_VS1
+Value=1;01. …only for sale
+Value=2;02. …mainly for sale
+Value=3;03. …mainly for family use
+Value=4;04. …only for family use
+Value=5;05. NONE OF THE ABOVE 
+
+[Record]
+Label=TimeUse Recovery
+Name=TIMEUSE_RECOVERY
+RecordTypeValue='R'
+RecordLen=406
+
+[Item]
+Label=RSC_1
+Name=RSC_1
+Start=7
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1
+Name=RSC_1_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=RSC_2
+Name=RSC_2
+Start=8
+Len=192
+DataType=Alpha
+
+[Item]
+Label=RSC_3
+Name=RSC_3
+Start=200
+Len=8
+DataType=Alpha
+
+[ValueSet]
+Label=RSC_3
+Name=RSC_3_VS1
+Value='01      ';01. OWN CHILD(REN)
+Value='02      ';02. GRANDCHILD(REN)
+Value='03      ';03. OTHER FAMILY CHILDREN
+
+[Item]
+Label=RSC_4
+Name=RSC_4
+Start=208
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_4
+Name=RSC_4_VS1
+Value=1;YES
+Value=2;NO
+
+[Item]
+Label=RSC_5
+Name=RSC_5
+Start=209
+Len=192
+DataType=Alpha
+
+[Item]
+Label=RSC_6
+Name=RSC_6
+Start=401
+Len=6
+DataType=Alpha
+
+[ValueSet]
+Label=RSC_6
+Name=RSC_6_VS1
+Value='01    ';HOUSEHOLD MEMBER(S)
+Value='02    ';FAMILY MEMBER(S) LIVING IN A SEPERATE HOUSEHOLD
+
+[Record]
+Label=Recovery Roster 1 (Age < 18)
+Name=RECOVERY_ROSTER_1
+RecordTypeValue='1'
+MaxRecords=96
+RecordLen=204
+
+[Item]
+Label=RSC_1A
+Name=RSC_1A
+Start=7
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1A
+Name=RSC_1A_VS1
+Link=147418440
+
+[Item]
+Label=RSC_1A_TSS
+Name=RSC_1A_TSS
+Start=9
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1A_TSS
+Name=RSC_1A_TSS_VS1
+Link=160900072
+
+[Item]
+Label=RSC_1A_TSE
+Name=RSC_1A_TSE
+Start=11
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1A_TSE
+Name=RSC_1A_TSE_VS1
+Link=160911048
+
+[Item]
+Label=RSC_2A
+Name=RSC_2A
+Start=13
+Len=192
+DataType=Alpha
+
+[Record]
+Label=Recovery Roster 2 (Age >= 18)
+Name=RECOVERY_ROSTER_2
+RecordTypeValue='2'
+MaxRecords=96
+RecordLen=204
+
+[Item]
+Label=RSC_1B
+Name=RSC_1B
+Start=7
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1B
+Name=RSC_1B_VS1
+Link=147418440
+
+[Item]
+Label=RSC_1B_TSS
+Name=RSC_1B_TSS
+Start=9
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1B_TSS
+Name=RSC_1B_TSS_VS1
+Link=160900072
+
+[Item]
+Label=RSC_1B_TSE
+Name=RSC_1B_TSE
+Start=11
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=RSC_1B_TSE
+Name=RSC_1B_TSE_VS1
+Link=160911048
+
+[Item]
+Label=RSC_5A
+Name=RSC_5A
+Start=13
+Len=192
+DataType=Alpha
+
+[Record]
+Label=Typical Day
+Name=TYPICAL_DAY
+RecordTypeValue='D'
+RecordLen=81
+
+[Item]
+Label=TPL_1A
+Name=TPL_1A
+Start=7
+Len=20
+DataType=Alpha
+
+[ValueSet]
+Label=TPL_1A
+Name=TPL_1A_VS1
+Value='01                  ';01. You worked more hours than normal in your paid job(s)
+Value='02                  ';02. You worked fewer hours than normal in your paid job(s)
+Value='03                  ';03. It was a festival day or the day of an event (e.g., public holiday, religious festival, wedding, christening, funeral)
+Value='04                  ';04. It was a leave day / holiday from paid work (day-off / annual leave / other leave entitlement)
+Value='05                  ';05. It was a school holiday for children in your care (EXCLUDE WEEKEND)
+Value='06                  ';06. You were sick / unwell / injured
+Value='07                  ';07. A household or family member was sick / unwell / injured
+Value='08                  ';08. You experienced travel disruptions
+Value='09                  ';09. OTHER: SPECIFY
+Value='10                  ';10. NO
+
+[Item]
+Label=TPL_1A_OTH
+Name=TPL_1A_OTH
+Start=27
+Len=50
+DataType=Alpha
+
+[Item]
+Label=TPL_1B
+Name=TPL_1B
+Start=77
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TPL_1B
+Name=TPL_1B_VS1
+Value='1    ';SPOUSE
+Value='2    ';OTHER ADULT HOUSEHOLD OR FAMILY MEMBERS
+Value='3    ';CHILDREN AGED <=5 YEARS OLD
+Value='4    ';CHILDREN AGED 6 - 11 YEARS OLD
+Value='5    ';CHILDREN AGED 12 - 17 YEARS OLD
+
+[Record]
+Label=Time Awareness
+Name=TIME_AWARENESS
+RecordTypeValue='A'
+RecordLen=72
+
+[Item]
+Label=TAW_1
+Name=TAW_1
+Start=7
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TAW_1
+Name=TAW_1_VS1
+Value='     '
+Value='97   ';DON'T KNOW
+
+[Item]
+Label=TAW_1_ACTUAL
+Name=TAW_1_ACTUAL
+Start=12
+Len=5
+DataType=Alpha
+
+[Item]
+Label=TAW_2
+Name=TAW_2
+Start=17
+Len=5
+DataType=Alpha
+
+[ValueSet]
+Label=TAW_2
+Name=TAW_2_VS1
+Value='     '
+Value='97   ';DON'T KNOW
+
+[Item]
+Label=TAW_3
+Name=TAW_3
+Start=22
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[ValueSet]
+Label=TAW_3
+Name=TAW_3_VS1
+Value=1;01. RESPONDENT CONSULTED WRISTWATCH OR POCKET WATCH
+Value=2;02. RESPONDENT CONSULTED MOBILE PHONE / TABLET / COMPUTER
+Value=3;03. RESPONDENT CONSULTED CLOCK
+Value=4;04. RESPONDENT ASKED SOMEONE
+Value=5;05. RESPONDENT ESTIMATED WITH REFERENCE TO WORK / SCHOOL / TEMPLE / TRANSPORT / RADIO/TV SCHEDULE, ETC.,
+Value=6;06. RESPONDENT ESTIMATED BY POSITION OF SUN / DAYLIGHT, ETC.,
+Value=7;07. OTHER, SPECIFY
+
+[Item]
+Label=TAW_3_OTH
+Name=TAW_3_OTH
+Start=23
+Len=50
+DataType=Alpha

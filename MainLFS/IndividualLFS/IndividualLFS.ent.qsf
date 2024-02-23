@@ -728,6 +728,11 @@ questions:
             <b style="font-family: Arial, sans-serif;">E02b.&nbsp;&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi iyo ~~XDEM_NAME~~ mukugwirako ntchito yili na mazaza ghakudumula msonkho wuliwose pa malipiro gha&nbsp; (your/his/her) panyakhe ni udindo wa ~~XDEM_NAME~~?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">E02b.&nbsp;</b><font face="Arial, sans-serif">Ana bizinezi ja kukamula masengo&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;asakola machili gakata msongo kutyochela ku malipilo ga&nbsp; (your/his/her) kapena ayi isawaga mu ukumu wa&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</font><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_1
+    conditions:
+      - questionText:
+          EN: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
   - name: INDIVIDUALLFS_DICT.MJU_INS
     conditions:
       - questionText:

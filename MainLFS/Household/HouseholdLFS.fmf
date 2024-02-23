@@ -79,7 +79,7 @@ Name=FORM002
 Label=Demographics
 QuestionTextHeight=182
 Level=1
-Size=1347,457
+Size=1347,511
   
 Item=PPNO000
   
@@ -97,9 +97,9 @@ Font=-035 0000 0000 0000 0700 0000 0000 0000 0000 0003 0002 0001 0034 Arial
 [Form]
 Name=FORM003
 Label=Dwelling Characteristics
-QuestionTextHeight=162
+QuestionTextHeight=194
 Level=1
-Size=1081,1188
+Size=1376,1188
 CapturePos=203,189
   
 Item=HC16
@@ -161,6 +161,7 @@ Item=LH9
 Item=LH10
 Item=LH11
 Item=HC28A
+Item=TU_ELG_LN
   
 Box=19,11,1011,70,Etched
 Box=18,83,424,1163,Etched
@@ -205,7 +206,7 @@ Name=FORM006
 Label=Emigration
 QuestionTextHeight=127
 Level=1
-Size=1370,554
+Size=1370,549
   
 Item=E00_EMIGRATION_INTRODUCTION
 Item=E01_EMIGRATION
@@ -1525,6 +1526,19 @@ Form=5
 Max=1
   
 [Field]
+Name=TU_ELG_LN
+Position=1322,28,1351,48
+Item=TU_ELG_LN,HOUSEHOLDLFS_DICT
+Protected=Yes
+DataCaptureType=TextBox
+Form=5
+  
+[Text]
+Position=1029,31,1292,47
+Text=Eligible person (line number) for time use
+ 
+  
+[Field]
 Name=HC01
 Position=373,96,402,116
 Item=HC01,HOUSEHOLDLFS_DICT
@@ -2622,13 +2636,13 @@ Text=Value of Goods as Remittances
   
 [Field]
 Name=HH_CONCLUSION
-Position=686,509,701,529
+Position=986,504,1001,524
 Item=HH_CONCLUSION,HOUSEHOLDLFS_DICT
 DataCaptureType=RadioButton
 Form=7
   
 [Text]
-Position=504,512,637,528
+Position=804,507,937,523
 Text=Interview Conclusion
  
 [EndGroup]

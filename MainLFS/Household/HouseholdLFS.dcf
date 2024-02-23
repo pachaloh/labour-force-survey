@@ -3104,7 +3104,7 @@ Value=2;No
 Label=Metadata Record
 Name=METADATA_RECORD
 RecordTypeValue='X'
-RecordLen=261
+RecordLen=263
 
 [Item]
 Label=Unique Identifier
@@ -3426,9 +3426,17 @@ Value=999999998;Don't Know
 Value=999999999;Refused
 
 [Item]
+Label=Eligible person (line number) for time use
+Name=TU_ELG_LN
+Start=260
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
 Label=Respondent ID
 Name=HH_RESP_LN
-Start=260
+Start=262
 Len=2
 DataType=Numeric
 ZeroFill=Yes
