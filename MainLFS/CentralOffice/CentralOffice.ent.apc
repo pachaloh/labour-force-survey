@@ -163,10 +163,10 @@ function eligible_members(valueset string eligible_persons, valueset string elig
 				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
 
 				
-				if loadcase(TIMEUSE_DICT_B,PersonCaseId) and TUS_END <> notappl then	
+				if loadcase(TIMEUSE_DICT_A,PersonCaseId) and TUS_END <> notappl then	
 					eligible_timeuse.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
 				
-				elseif loadcase(TIMEUSE_DICT_B,PersonCaseId) and TUS_END = notappl then
+				elseif loadcase(TIMEUSE_DICT_A,PersonCaseId) and TUS_END = notappl then
 				
 					eligible_timeuse.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
 				
@@ -535,7 +535,7 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncdata(BOTH, TIMEUSE_DICT_B) = 0 then
+		if abortInd = 1 and syncdata(BOTH, TIMEUSE_DICT_A) = 0 then
 			errmsg("Syncing of time use data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
@@ -617,7 +617,7 @@ function syncWithSupervisor() //Funtion to transfer from interviewer to supervis
 			errmsg("Failed to transfer child labour data");
 		endif;
 
-		if syncdata(BOTH, TIMEUSE_DICT_B) = 0 then			//Time use Cases
+		if syncdata(BOTH, TIMEUSE_DICT_A) = 0 then			//Time use Cases
 			errmsg("Failed to transfer Time Use data");
 		endif;
 

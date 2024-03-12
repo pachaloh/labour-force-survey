@@ -7,7 +7,7 @@ FieldEntryFont=0018 0000 0000 0000 0600 0000 0000 0000 0000 0000 0000 0000 0000 
 Type=SystemControlled
   
 [Dictionaries]
-File=.\MenuLFS.dcf
+File=.\CentralOffice.dcf
   
 [Form]
 Name=FORM000
@@ -103,7 +103,7 @@ Item=CENTRAL_OFFICE
 [EndForm]
   
 [Level]
-Name=MENULFS_LEVEL
+Name=CENTRAL_OFFICE_MENU_LEVEL
 Label=MenuLFS Level
   
 [Group]
@@ -116,7 +116,7 @@ Max=1
 [Field]
 Name=TEAMNO
 Position=383,91,412,111
-Item=TEAMNO,MENULFS_DICT
+Item=TEAMNO,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -129,7 +129,7 @@ Text=Team
 [Field]
 Name=LOGIN
 Position=383,121,888,141
-Item=LOGIN,MENULFS_DICT
+Item=LOGIN,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=DropDown
 Form=1
@@ -142,7 +142,7 @@ Text=Login
 [Field]
 Name=PASSCODE
 Position=383,151,440,171
-Item=PASSCODE,MENULFS_DICT
+Item=PASSCODE,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -155,7 +155,7 @@ Text=Passcode
 [Field]
 Name=MCLUSTER
 Position=383,181,440,201
-Item=MCLUSTER,MENULFS_DICT
+Item=MCLUSTER,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=1
@@ -176,7 +176,7 @@ Max=1
 [Field]
 Name=NAME_OF_SUP
 Position=363,87,1064,107
-Item=NAME_OF_SUP,MENULFS_DICT
+Item=NAME_OF_SUP,CENTRAL_OFFICE_MENU_DICT
 UpperCase=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
@@ -190,7 +190,7 @@ Text=Name of supervisor
 [Field]
 Name=PASSWORD_SUP
 Position=363,117,420,137
-Item=PASSWORD_SUP,MENULFS_DICT
+Item=PASSWORD_SUP,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=2
@@ -211,7 +211,7 @@ Max=1
 [Field]
 Name=SUP_CLUSTER
 Position=432,80,489,100
-Item=SUP_CLUSTER,MENULFS_DICT
+Item=SUP_CLUSTER,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=3
@@ -224,7 +224,7 @@ Text=Supervisor cluster
 [Field]
 Name=TEAM_MGT
 Position=432,111,447,131
-Item=TEAM_MGT,MENULFS_DICT
+Item=TEAM_MGT,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3
@@ -237,7 +237,7 @@ Text=Team Management
 [Field]
 Name=EDIT_MEMBERS
 Position=432,145,937,165
-Item=EDIT_MEMBERS,MENULFS_DICT
+Item=EDIT_MEMBERS,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3
@@ -250,7 +250,7 @@ Text=Edit interviwer
 [Field]
 Name=MANAGE_TASKS
 Position=432,175,937,195
-Item=MANAGE_TASKS,MENULFS_DICT
+Item=MANAGE_TASKS,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=3
@@ -271,7 +271,7 @@ Max=1
 [Field]
 Name=ENUM_CODE
 Position=313,129,818,149
-Item=ENUM_CODE,MENULFS_DICT
+Item=ENUM_CODE,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
 Form=4
@@ -284,7 +284,7 @@ Text=Interviewer code
 [Field]
 Name=ENUM_NAME
 Position=313,159,1014,179
-Item=ENUM_NAME,MENULFS_DICT
+Item=ENUM_NAME,CENTRAL_OFFICE_MENU_DICT
 UpperCase=Yes
 FieldLabelType=DictionaryLabel
 DataCaptureType=TextBox
@@ -306,7 +306,7 @@ Max=1
 [Field]
 Name=ASSIGN_HH
 Position=519,171,548,191
-Item=ASSIGN_HH,MENULFS_DICT
+Item=ASSIGN_HH,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
@@ -319,7 +319,7 @@ Text=Assign households
 [Field]
 Name=REM_HH
 Position=519,201,548,221
-Item=REM_HH,MENULFS_DICT
+Item=REM_HH,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=5
@@ -340,7 +340,7 @@ Max=1
 [Field]
 Name=INTERV_MENU
 Position=478,163,493,183
-Item=INTERV_MENU,MENULFS_DICT
+Item=INTERV_MENU,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=6
@@ -361,7 +361,7 @@ Max=1
 [Field]
 Name=INTERVIEW_HH
 Position=539,160,1128,180
-Item=INTERVIEW_HH,MENULFS_DICT
+Item=INTERVIEW_HH,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=7
@@ -374,7 +374,7 @@ Text=Interview household
 [Field]
 Name=INTERVIEW_IN
 Position=539,190,1156,210
-Item=INTERVIEW_IN,MENULFS_DICT
+Item=INTERVIEW_IN,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=7
@@ -387,7 +387,7 @@ Text=Interview Individual
 [Field]
 Name=INTERVIEW_CHILD
 Position=539,225,1156,245
-Item=INTERVIEW_CHILD,MENULFS_DICT
+Item=INTERVIEW_CHILD,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryLabel
 DataCaptureType=RadioButton
 Form=7
@@ -400,7 +400,7 @@ Text=Interview child
 [Field]
 Name=TIME_USE_SURVEY
 Position=539,257,1156,277
-Item=TIME_USE_SURVEY,MENULFS_DICT
+Item=TIME_USE_SURVEY,CENTRAL_OFFICE_MENU_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
 Form=7
@@ -421,7 +421,7 @@ Max=1
 [Field]
 Name=CENTRAL_OFFICE
 Position=623,222,638,242
-Item=CENTRAL_OFFICE,MENULFS_DICT
+Item=CENTRAL_OFFICE,CENTRAL_OFFICE_MENU_DICT
 DataCaptureType=RadioButton
 Form=8
   

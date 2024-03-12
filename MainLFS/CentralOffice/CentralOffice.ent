@@ -23,16 +23,15 @@ File=..\Household\HouseholdLFS.dcf
 File=..\ChildLFS\ChildLFS.dcf
 File=..\TimeUse\timeuse.dcf
 [AppCode]
-File=.\MenuLFS.ent.apc
+File=.\CentralOffice.ent.apc
 Include=..\Shared Logic\ProgressReport.apc
 [Message]
-File=.\MenuLFS.ent.mgf
+File=.\CentralOffice.ent.mgf
 [Help]
-File=.\MenuLFS.ent.qsf
+File=.\CentralOffice.ent.qsf
 [Forms]
-File=.\MenuLFS.fmf
+File=.\CentralOffice.fmf
 [Dictionary Types]
-Dict-Type=.\MenuLFS.dcf,Input,.\MenuLFS.fmf
 Dict-Type=..\Dicts\clusters.dcf,External
 Dict-Type=..\Dicts\teams.dcf,External
 Dict-Type=..\Dicts\hh_database.dcf,External
@@ -41,3 +40,4 @@ Dict-Type=..\IndividualLFS\IndividualLFS.dcf,External
 Dict-Type=..\Household\HouseholdLFS.dcf,External
 Dict-Type=..\ChildLFS\ChildLFS.dcf,External
 Dict-Type=..\TimeUse\timeuse.dcf,External
+Dict-Type=.\CentralOffice.dcf,Input,.\CentralOffice.fmf
