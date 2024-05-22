@@ -31,8 +31,6 @@ File=.\MenuLFS.ent.mgf
 File=.\MenuLFS.ent.qsf
 [Forms]
 File=.\MenuLFS.fmf
-[Resources]
-Folder=.\Resources
 [Dictionary Types]
 Dict-Type=.\MenuLFS.dcf,Input,.\MenuLFS.fmf
 Dict-Type=..\Dicts\clusters.dcf,External

@@ -100,9 +100,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p>Mafunso otsatirawa ndi okhuzana ndi <b>~~XDEM_NAME~~</b>…<br></p><p><b>RSP_AVAIL:&nbsp;</b><font face="Arial, sans-serif">Kodi&nbsp;</font><b>~~XDEM_NAME~~ </b>alipo?</p><p></p><p></p>
+            <p><font color="#0000ff"><i>Mafunso otsatirawa ndi okhuzana ndi <b>~~XDEM_NAME~~</b>…</i></font><br></p><p><i><font color="#0000ff"><font face="Arial, sans-serif">Kodi&nbsp;</font><b>~~XDEM_NAME~~ </b>alipo?</font></i></p><p></p><p></p>
           EN: |
-            <p style="margin-bottom:8pt;"><font face="Arial, sans-serif">The next questions are about </font><b>~~XDEM_NAME~~</b><font face="Arial, sans-serif">…</font></p><p style="margin-bottom:8pt;"><b>RSP_AVAIL.&nbsp;</b>Is <b>~~XDEM_NAME~~ </b>available?&nbsp;</p>
+            <p style="margin-bottom:8pt;"><i><font color="#0000ff"><font face="Arial, sans-serif">The next questions are about </font><b>~~XDEM_NAME~~</b><font face="Arial, sans-serif">…</font></font></i></p><p style="margin-bottom:8pt;"><font color="#0000ff"><i>Is <b>~~XDEM_NAME~~ </b>available?&nbsp;</i></font></p>
         helpText:
           EN: |
             

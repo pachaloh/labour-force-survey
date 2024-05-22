@@ -485,7 +485,7 @@ questions:
           CH: |
             <p><b><span style="font-family: Arial;">HC1.</span></b><br></p><p><span style="font-family: Arial;">Kodi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">&nbsp;ndi wa mpingo wanji?&nbsp;</span></p><p><br></p><p></p>
           ENG: |
-            <p><b><span style="font-family: Arial;">HC1.</span></b><span style="font-family: Arial;"> </span></p><p><span style="font-family: Arial;">What is the denomination of the&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">?</span></p><p></p><p><br></p><p></p>
+            <p><b><span style="font-family: Arial;">HC1.</span></b><span style="font-family: Arial;"> </span></p><p><span style="font-family: Arial;">What is the denomination of&nbsp;&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial;">?</span></p><p></p><p><br></p><p></p>
           TU: |
             <p><b><span style="font-family: Arial;">HC1.</span></b><br></p><p><span style="font-family: Arial, sans-serif;">Kasi&nbsp;</span><b><span style="font-family: Arial;">~~DEM_NAME(1)~~</span></b><span style="font-family: Arial, sans-serif;">&nbsp;ngwa mpingo wuli?&nbsp;</span></p><p>&nbsp;</p><p><br></p><p></p>
           YA: |

@@ -1,0 +1,22 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+[DataEntryInit]
+Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0203
+StartMode=Add
+Lock=CaseListing
+ShowInApplicationListing=Never
+[Files]
+Application=./ChildLFS.ent
+InputData=../Data/Child.csdb
+[ExternalFiles]
+CLUSTERS_DICT=../Lookups/clusters.csdb
+HOUSEHOLDLFS_DICT=../Data/Household.csdb
+INDIVIDUALLFS_DICT=../Data/Individual.csdb
+[Parameters]
+CCLUSTER=0001
+CGHHHNO=02
+CHMPPNO=03
+GHINTID=2492fe67-f139-4960-b733-a0dfb6811e6c
+GHINTNAME=                                                  
+OnExit=../Menu/MenuLFS.pff

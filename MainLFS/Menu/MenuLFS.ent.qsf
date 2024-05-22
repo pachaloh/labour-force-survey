@@ -30,12 +30,12 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <p><i style="color: rgb(0, 0, 255);">Enter your team number</i><br></p><p></p><p></p>
+            <font color="#0000ff"><i>Enter your team number</i></font><p></p>
   - name: MENULFS_DICT.LOGIN
     conditions:
       - questionText:
           EN: |
-            <div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);">National Statistical Office</span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">Labour Force Survey:&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(128, 0, 128);">(Malawi, ~~survey_year~~) &nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px;">Select username or begin as supervisor:</span></div><p></p><p></p>
+            <i><font color="#0000ff">Select your username to login or start work as supervisor</font></i><p></p>
   - name: MENULFS_DICT.PASSCODE
     conditions:
       - logic: LOGIN = "1"

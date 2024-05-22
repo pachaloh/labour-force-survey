@@ -4,6 +4,7 @@ Label=HOUSEHOLDLFS
 Name=HOUSEHOLDLFS
 AppType=DataEntry
 OperatorID=No
+ShowEndCaseDialog=No
 PartialSave=Yes
 CAPI=Yes
 CaseTree=Desktop

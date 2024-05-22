@@ -5,7 +5,7 @@
 PROC GLOBAL
 
 //National Adaptation Variables that are controlled from the National Adaptation Tool (NAT):
-	numeric SurveyYear = 2023;
+	numeric SurveyYear = 2024;
 	numeric SurveyMonth = 5;
 	numeric SurveyDay = 12;
 	numeric SurveyDate;
@@ -99,6 +99,46 @@ PROC GLOBAL
 		  GLO_OPF = 1;
 		endif;
 	end;
+	
+	
+	array string household_summary(20,7);
+	
+	
+	function household_reviews()
+		do varying numeric ctr = 1 while  ctr <= totocc(PPNO000)
+			household_summary(ctr,1) = edit("99",HMPPNO(ctr));
+			household_summary(ctr,2) = DEM_NAME(ctr);
+			household_summary(ctr,3) = getlabel(DEM_01,DEM_01(ctr));
+			household_summary(ctr,4) = edit("999",DEM_06(ctr));
+			
+			if DEM_06(ctr) in 15:64 then
+				household_summary(ctr,5) = "Yes";
+			else
+				household_summary(ctr,5) = "No";
+			endif;
+			
+			if DEM_06(ctr) in 5:17 then
+				household_summary(ctr,6) = "Yes";
+			else
+				household_summary(ctr,6) = "No";
+			endif;
+
+			if DEM_06(ctr) in 15:64 then
+				household_summary(ctr,7) = "Yes";
+			else
+				household_summary(ctr,7) = "No";
+			endif;
+			
+		enddo;
+		
+		showarray("Households",household_summary,title("LN","NAME OF MEMBER","SEX","AGE","IND","CHD","TUS"));
+	end;
+
+	
+	
+	
+	
+	
 
 
 function ShowHidePopulation()
@@ -1479,9 +1519,8 @@ preproc
 PROC DEM_27
 
 if $ = 1 then
-errmsg("Please comfirm if this person is really an albino")
-select("Reenter Albinism",DEM_27,
-		"Continue",Continue);
+	errmsg("Please comfirm if %s is albino",DEM_NAME)
+		select("Reenter Albinism",DEM_27,"Continue",Continue);
 endif;
 PROC TU_ELG_LN
 
@@ -1506,8 +1545,10 @@ preproc
 	endif;
 PROC HC01
 
+{
 preproc
 	errmsg("%v is selected for time use",DEM_NAME(TU_ELG_LN));
+}
 PROC D00_DWELLING_INTRODUCTION
 preproc
 
@@ -1985,6 +2026,7 @@ preproc
 
 	// clear out any response so that they always have to manually accept the case
 	HH_CONCLUSION = notappl;
+	//household_reviews();
 
 onfocus
 
