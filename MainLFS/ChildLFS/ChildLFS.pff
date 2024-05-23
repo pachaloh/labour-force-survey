@@ -2,7 +2,7 @@
 Version=CSPro 7.7
 AppType=Entry
 [DataEntryInit]
-Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0203
+Key=10014c1ebef4-695c-459a-9c89-9989316d0dea0902
 StartMode=Add
 Lock=CaseListing
 ShowInApplicationListing=Never
@@ -14,9 +14,9 @@ CLUSTERS_DICT=../Lookups/clusters.csdb
 HOUSEHOLDLFS_DICT=../Data/Household.csdb
 INDIVIDUALLFS_DICT=../Data/Individual.csdb
 [Parameters]
-CCLUSTER=0001
-CGHHHNO=02
-CHMPPNO=03
-GHINTID=2492fe67-f139-4960-b733-a0dfb6811e6c
-GHINTNAME=                                                  
+CCLUSTER=1001
+CGHHHNO=09
+CHMPPNO=02
+GHINTID=4c1ebef4-695c-459a-9c89-9989316d0dea
+GHINTNAME=NOEL CHISOSO
 OnExit=../Menu/MenuLFS.pff
