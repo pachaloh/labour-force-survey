@@ -202,13 +202,14 @@ Value=5;Grandchild
 Value=6;Parent
 Value=7;Parent-in-law
 Value=8;Brother or sister
-Value=9;Niece or nephew
-Value=10;Co-wife
-Value=11;Other relative
-Value=12;Grandparent
-Value=13;Step-son or Step-daughter
-Value=14;Domestic worker
-Value=15;Not related
+Value=9;Brother-in-law or sister-in-law
+Value=10;Niece or nephew
+Value=11;Co-wife
+Value=12;Other relative
+Value=13;Grandparent
+Value=14;Step-son or Step-daughter
+Value=15;Domestic worker
+Value=16;Not related
 
 [ValueSet]
 Label=Relationship to head/reference person
@@ -221,12 +222,14 @@ Value=5;Grandchild
 Value=6;Parent
 Value=7;Parent-in-law
 Value=8;Brother or sister
-Value=9;Niece or nephew
-Value=10;Co-wife
-Value=12;Grandparent
-Value=13;Step-son or Step-daughter
-Value=14;Domestic worker
-Value=15;Not related
+Value=9;Brother-in-law or sister-in-law
+Value=10;Niece or nephew
+Value=11;Co-wife
+Value=12;Other relative
+Value=13;Grandparent
+Value=14;Step-son or Step-daughter
+Value=15;Domestic worker
+Value=16;Not related
 
 [Item]
 Label=Date of birth
@@ -740,8 +743,8 @@ ZeroFill=Yes
 [ValueSet]
 Label=How the training was acquired
 Name=DEM_13E_VS1
-Value=1;Yes
-Value=2;No
+Value=1;Formal
+Value=2;Informal
 
 [Item]
 Label=Informally acquired trainig

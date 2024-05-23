@@ -1,26 +1,23 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-ShowInApplicationListing=Never
-
 [DataEntryInit]
-Key=00012492fe67-f139-4960-b733-a0dfb6811e6c0203
+Key=10017b5166e2-ef49-436e-9082-8d2f74af2f190301
+StartMode=Add
 Lock=CaseListing
-
+ShowInApplicationListing=Never
 [Files]
-Application=.\IndividualLFS.ent
-InputData=..\Data\Individual.csdb
-
+Application=./IndividualLFS.ent
+InputData=../Data/Individual.csdb
 [ExternalFiles]
-CHILD_LABOUR_DICT=..\Data\Child.csdb
-CLUSTERS_DICT=..\Lookups\clusters.csdb
-HOUSEHOLDLFS_DICT=..\Data\Household.csdb
-
+CHILD_LABOUR_DICT=../Data/Child.csdb
+CLUSTERS_DICT=../Lookups/clusters.csdb
+HOUSEHOLDLFS_DICT=../Data/Household.csdb
 [Parameters]
-OnExit=..\Menu\MenuLFS.pff
-GHINTCODE=2492fe67-f139-4960-b733-a0dfb6811e6c
-XCLUSTER=0001
-XDEM_NAME=JEOFF KAWALE              (PARTIAL)
-XGHHHNO=02
+XCLUSTER=1001
+XGHHHNO=03
+XHMPPNO=01
+XDEM_NAME=PACHALO CHIZALA           (NOT INTERVIEWED)
+GHINTCODE=7b5166e2-ef49-436e-9082-8d2f74af2f19
 XGHINTNAME=PACHALO CHIZALA
-XHMPPNO=03
+OnExit=../Menu/MenuLFS.pff

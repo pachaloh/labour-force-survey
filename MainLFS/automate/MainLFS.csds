@@ -99,9 +99,9 @@
     }
   ],
   "deployment": {
-    "type": "Dropbox",
+    "type": "LocalFolder",
     "cswebUrl": "http:\/\/",
     "ftpUrl": "ftp:\/\/",
-    "localFolderPath": "..\\..\\MainLFSdeployed"
+    "localFolderPath": "..\\..\\LabourForceSurvey2023"
   }
 }

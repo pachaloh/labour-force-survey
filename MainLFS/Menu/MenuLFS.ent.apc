@@ -6,18 +6,39 @@ numeric edit_option;	//
 string  PersonID; 		// Person's line number
 
 
-array string completed_households(30,3);
+array string completed_households(30,7);
 
 function completed_iterviews(numeric work_cluster)
 	numeric ctr = 1;
 	forcase HOUSEHOLDLFS_DICT where CLUSTER = work_cluster do
-		completed_households(ctr,1) = edit("99",GHHHNO);
-		completed_households(ctr,2) = DEM_NAME(1);
-		completed_households(ctr,3) = getlabel(HH_CONCLUSION,HH_CONCLUSION);
-		ctr = ctr + 1;
+			completed_households(ctr,1) = edit("99",GHHHNO);
+			completed_households(ctr,2) = DEM_NAME(1);
+			completed_households(ctr,3) = "";
+			completed_households(ctr,4) = "";
+
+		do varying numeric hh_ctr = 1 while hh_ctr < 30
+			completed_households(hh_ctr,1) = "";
+			completed_households(hh_ctr,2) = "";
+			completed_households(hh_ctr,3) = DEM_NAME(hh_ctr);
+			completed_households(hh_ctr,4) = edit("99",XHMPPNO);
+		enddo;
+
+		{forcase INDIVIDUALLFS_DICT where XCLUSTER = work_cluster and GHINTCODE = GHINTID and XGHHHNO = GHHHNO do
+			{completed_households(ctr,1) = edit("99",GHHHNO);
+			completed_households(ctr,2) = DEM_NAME(1);
+			completed_households(ctr,3) = DEM_NAME(ctr);
+			completed_households(ctr,4) = edit("99",XHMPPNO);}
+			
+			if INDIVEND = 1 then
+				completed_households(ctr,5) = getlabel(INDIVEND,INDIVEND);
+			endif;
+			
+			ctr = ctr + 1;
+		endfor;}
+
 	endfor;
 	
-	showarray("Households",completed_households,title("NUM","Household","Result"));
+	showarray("Households",completed_households,title("HH","HOUSEHOLD","MEMBER NAME","IND","CHD","TUS"));
 end;
 
 
@@ -914,8 +935,8 @@ postproc
 		//ClusterInterviewsProgressReport();	//View assigned households
 		reenter;
 	elseif $ = 7 then
-		ClusterInterviewsProgressReport();
-		//completed_iterviews(MCLUSTER);
+		//ClusterInterviewsProgressReport();
+		completed_iterviews(MCLUSTER);
 		reenter;
 	elseif $ = 8 then
 		reenter MCLUSTER;

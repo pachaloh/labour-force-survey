@@ -96,6 +96,10 @@ questions:
             Line number of eligible indiviual<p></p>
           EN: |
             Line number of eligible indiviual<p></p>
+          TU: |
+            Line number of eligible indiviual<p></p>
+          YA: |
+            Line number of eligible indiviual<p></p>
   - name: INDIVIDUALLFS_DICT.RSP_AVAIL
     conditions:
       - questionText:
@@ -103,6 +107,10 @@ questions:
             <p><font color="#0000ff"><i>Mafunso otsatirawa ndi okhuzana ndi <b>~~XDEM_NAME~~</b>…</i></font><br></p><p><i><font color="#0000ff"><font face="Arial, sans-serif">Kodi&nbsp;</font><b>~~XDEM_NAME~~ </b>alipo?</font></i></p><p></p><p></p>
           EN: |
             <p style="margin-bottom:8pt;"><i><font color="#0000ff"><font face="Arial, sans-serif">The next questions are about </font><b>~~XDEM_NAME~~</b><font face="Arial, sans-serif">…</font></font></i></p><p style="margin-bottom:8pt;"><font color="#0000ff"><i>Is <b>~~XDEM_NAME~~ </b>available?&nbsp;</i></font></p>
+          TU: |
+            <p style="margin-bottom: 8pt;"><i><font color="#0000ff"><font face="Arial, sans-serif">The next questions are about&nbsp;</font><b>~~XDEM_NAME~~</b><font face="Arial, sans-serif">…</font></font></i></p><p style="margin-bottom: 8pt;"><font color="#0000ff"><i>Is&nbsp;<b>~~XDEM_NAME~~&nbsp;</b>available?&nbsp;</i></font></p><p></p>
+          YA: |
+            <p style="margin-bottom: 8pt;"><i><font color="#0000ff"><font face="Arial, sans-serif">The next questions are about&nbsp;</font><b>~~XDEM_NAME~~</b><font face="Arial, sans-serif">…</font></font></i></p><p style="margin-bottom: 8pt;"><font color="#0000ff"><i>Is&nbsp;<b>~~XDEM_NAME~~&nbsp;</b>available?&nbsp;</i></font></p><p></p>
         helpText:
           EN: |
             
@@ -329,18 +337,18 @@ questions:
           TU: |
             <p><b style="font-family: Arial, sans-serif;">C01.&nbsp;</b>Kasi ntchito iyi mwayowoya ili mu….?<br></p><p></p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><br></p><p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">C01.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana masengo gele gagasasilega&nbsp; gawele mu&nbsp; ya……….?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C01.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana masengo gele gagasasilega&nbsp; gawele mu&nbsp; ya……….?</font></p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><font face="Arial, sans-serif"><br></font><p></p></p>
   - name: INDIVIDUALLFS_DICT.AGF_ANY
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">C02.&nbsp;</b>M'asiku asanu ndi awiri apitawa kodi&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwirapo ntchito ya….<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C02.&nbsp;</b>M'asiku asanu ndi awiri apitawa kodi&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwirapo ntchito ya….</p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">C02.&nbsp;</b><span style="font-family: Arial, sans-serif;">In the last seven days,</span>&nbsp;did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;do any work in…<br></p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i></p><p></p>
           TU: |
-            <p><b style="font-family: Arial, sans-serif;">C02.</b>Sabata yajumpha kasi ~~XDEM_NAME~~ mwagwirako ntchio yiliyose mu…</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C02.</b>Sabata yajumpha kasi ~~XDEM_NAME~~ mwagwirako ntchio yiliyose mu…</p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><br></p><p></p><p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">C02.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Nlungu umasilewu ana&nbsp;</font>&nbsp;~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;wakamwile masengo ga………</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C02.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Nlungu umasilewu ana&nbsp;</font>&nbsp;~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;wakamwile masengo ga………</font></p><p><i><font color="#0000ff">READ AND MARK ALL THAT APPLY</font></i><font face="Arial, sans-serif"><br></font><p></p></p>
   - name: INDIVIDUALLFS_DICT.AGF_MKT
     conditions:
       - questionText:
@@ -389,13 +397,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>Mmasiku asanu ndi awiri apitawa, kodi ndi masiku angati amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwira ntchito imeneyi?</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>Mmasiku asanu ndi awiri apitawa, kodi ndi masiku angati amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwira ntchito imeneyi?</p><p><i><font color="#0000ff">ENTER “0” IF ABSENT LAST WEEK</font></i><br></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b><span style="font-family: Arial, sans-serif;">In the last seven days</span>, on how many days did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;do this work?<br></p><p><i><font color="#0000ff">ENTER “0” IF ABSENT LAST WEEK</font></i></p><p></p>
           TU: |
             <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b>Sabata yajumpha, ni madazi ghalinga agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukagwira ntchito iyi?</p><p><i><font color="#0000ff">ENTER “0” IF ABSENT LAST WEEK</font></i><b><br></b></p><p></p><p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">C07.&nbsp;</b><font face="Arial, sans-serif">Nlungu upitewu,ana kwa mowa galingwa ganti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;waliji ali nkutenda gele masengoga?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">C07.&nbsp;</b><font face="Arial, sans-serif">Nlungu upitewu,ana kwa mowa galingwa ganti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;waliji ali nkutenda gele masengoga?</font></p><p><i><font color="#0000ff">ENTER “0” IF ABSENT LAST WEEK</font></i><font face="Arial, sans-serif"><br></font><p></p></p>
   - name: INDIVIDUALLFS_DICT.AGF_HRS
     conditions:
       - questionText:
@@ -581,6 +589,88 @@ questions:
         helpText:
           EN: |
             
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_1
+    conditions:
+      - questionText:
+          CH: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          TU: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          YA: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_2
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_3
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><br><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_4
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><br><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_SECTION
+    conditions:
+      - questionText:
+          EN: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51);">What is the main product, service or activity of&nbsp;<span style="font-weight: bold; color: rgb(0, 0, 0);">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;</span></p><p style="font-size: 16px;">&nbsp;</p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_DIVISIONS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          EN: |
+            <p style="font-size: 16px;"><span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><br></p><p></p>
+          TU: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_GROUPS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_CLASS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
   - name: INDIVIDUALLFS_DICT.MJJ_EMP_REL
     conditions:
       - questionText:
@@ -728,11 +818,6 @@ questions:
             <b style="font-family: Arial, sans-serif;">E02b.&nbsp;&nbsp;</b><font face="Arial, sans-serif">Kasi bizinesi iyo ~~XDEM_NAME~~ mukugwirako ntchito yili na mazaza ghakudumula msonkho wuliwose pa malipiro gha&nbsp; (your/his/her) panyakhe ni udindo wa ~~XDEM_NAME~~?</font><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">E02b.&nbsp;</b><font face="Arial, sans-serif">Ana bizinezi ja kukamula masengo&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;asakola machili gakata msongo kutyochela ku malipilo ga&nbsp; (your/his/her) kapena ayi isawaga mu ukumu wa&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</font><p></p>
-  - name: INDIVIDUALLFS_DICT.MAIN_JOB_OCC_LEVEL_1
-    conditions:
-      - questionText:
-          EN: |
-            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
   - name: INDIVIDUALLFS_DICT.MJU_INS
     conditions:
       - questionText:
@@ -1295,6 +1380,70 @@ questions:
         helpText:
           EN: |
             
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_OCC_LEVEL_1
+    conditions:
+      - questionText:
+          CH: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          TU: |
+            <p style="font-size: 16px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 16px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_OCC_LEVEL_2
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_OCC_LEVEL_3
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_OCC_LEVEL_4
+    conditions:
+      - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          EN: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 16px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_SECTION
+    conditions:
+      - questionText:
+          CH: |
+            <p style="font-size: 16px;"><i style=""><font color="#0000ff">Main product, service or activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;second place of work?&nbsp;</font></i></p><p style="font-size: 16px;">&nbsp;</p><p style="font-size: 16px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 16px;"><font color="#0000ff"><i>Main product, service or activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;second place of work?&nbsp;</i></font></p><p style="font-size: 16px;"><font color="#0000ff"><i>&nbsp;</i></font></p><p style="font-size: 16px;"><font color="#0000ff" style=""><i>Select&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s<span style="font-weight: normal;">&nbsp;</span></span>section of industry.&nbsp;</i></font></p><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_DIVISIONS
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">division of industry for second place of work.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_GROUPS
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">group of industry for second place of work.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.SEC_JOB_CLASS
+    conditions:
+      - questionText:
+          EN: |
+            <span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 16px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 16px; color: rgb(0, 0, 255); font-style: italic;">class of industry for second place of work.&nbsp;</span><p></p>
   - name: INDIVIDUALLFS_DICT.SJJ_IND_MAC
     conditions:
       - questionText:

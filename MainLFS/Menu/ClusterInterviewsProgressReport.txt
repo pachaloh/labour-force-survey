@@ -14,7 +14,7 @@ Summary Status of Progress for each Staff
 02. PACHALO CHIZALA                                    
 ---- --- --- ------------
 03. 100103:Head Name 1001-4             (COMPLETED)
-    Individual. 01.PACHALO CHIZALA                                    (NOT INTERVIEWED)
+    Individual. 01.PACHALO CHIZALA                                    (PARTIALLY SAVED)
     Individual. 02.MARTHA CHIZALA                                     (NOT INTERVIEWED)
     Child. 01.PACHALO CHIZALA                                   (16) (NOT INTERVIEWED)
 05. 100105:Head Name 1001-5                                   (NOT VISITED)
@@ -25,5 +25,5 @@ Summary Status of Progress for each Staff
 Cluster Incomplete- 1 of 3 done- (33.33% Complete)
            Completed  Partial    New     Total
 Household:      1        0        6        7    
-Ind      :      0        0        2        2    
+Ind      :      0        1        1        2    
 Child    :      0        0        1        1    

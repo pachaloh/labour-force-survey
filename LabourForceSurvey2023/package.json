@@ -3,11 +3,11 @@
   "version": "7.7",
   "name": "LabourForceSurvey2023",
   "description": "Malawi Labour Force Survey",
-  "buildTime": "2024-05-21T13:47:52Z",
+  "buildTime": "2024-05-23T08:10:37Z",
   "files": [
     {
       "path": ".\\ChildLFS\\ChildLFS.pen",
-      "signature": "C366D5B1D1768435A5839329FC0DD0D0"
+      "signature": "F3E9F1B8E397FDA9260DF0A2A10C7A10"
     },
     {
       "path": ".\\ChildLFS\\ChildLFS.pff",
@@ -15,23 +15,23 @@
     },
     {
       "path": ".\\Household\\HouseholdLFS.pen",
-      "signature": "B11FDFDD93E29C43C2EC4DA47253159B"
+      "signature": "D1909E274A5AC55032D6D98C53909DDC"
     },
     {
       "path": ".\\Household\\HouseholdLFS.pff",
-      "signature": "8D4C77DDD51878D5472A2A53DBE57867"
+      "signature": "108D73B95B18FAC5ECEE3635453CA6A0"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pen",
-      "signature": "4F33BC0542653DFF627ECA5F9BEBF66A"
+      "signature": "48C7E25323E39473ACEB794CB8817648"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pff",
-      "signature": "454F6BAC9C818FFD8CB1352AF6ED8579"
+      "signature": "7D037E840B59A4EB9CA26D6985BA8379"
     },
     {
       "path": ".\\Lookups\\clusters.csdb",
-      "signature": "B62B24F6B09765006F636179D745FE05"
+      "signature": "DBC481B7BCDA22AE7DE8ADD8AF0155AA"
     },
     {
       "path": ".\\Lookups\\Detailed_field_of_study.csdb",
@@ -51,7 +51,7 @@
     },
     {
       "path": ".\\Menu\\MenuLFS.pen",
-      "signature": "A667190C79848AB58A8FB2C4418D585B"
+      "signature": "FF9EB0FEA9F076D46332D027F4031CAB"
     },
     {
       "path": ".\\Menu\\MenuLFS.pff",
@@ -63,7 +63,7 @@
     },
     {
       "path": ".\\TimeUse\\TimeUse.pen",
-      "signature": "3E2422343606DE8BD3E897F1391B4F0F"
+      "signature": "540756F604BAF61957CD8A0E1182B78A"
     },
     {
       "path": ".\\TimeUse\\TimeUse.pff",
@@ -119,6 +119,6 @@
     "type": "LocalFolder",
     "cswebUrl": "http:\/\/",
     "ftpUrl": "ftp:\/\/",
-    "localFolderPath": "..\\MainLFSdeployed"
+    "localFolderPath": "..\\LabourForceSurvey2023"
   }
 }

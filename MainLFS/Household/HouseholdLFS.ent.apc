@@ -769,11 +769,15 @@ nav_agency = toupper(nav_agency);
 PROC DEM_STR
 
 	// Allow to perform the interview only with an adult
-	if $=2 then
+{	if $=2 then
 		errmsg("Please return to the household and resume the interview when an adult member is available.");
 		reenter;
 	endif;
+}
 
+	if $ = 2 then
+		skip to HH_CONCLUSION;
+	endif;
 
 PROC P_KEEP_ROW
 
