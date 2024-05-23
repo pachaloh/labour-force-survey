@@ -3,11 +3,11 @@
   "version": "7.7",
   "name": "LabourForceSurvey2023",
   "description": "Malawi Labour Force Survey",
-  "buildTime": "2024-05-23T08:10:37Z",
+  "buildTime": "2024-05-23T09:39:09Z",
   "files": [
     {
       "path": ".\\ChildLFS\\ChildLFS.pen",
-      "signature": "F3E9F1B8E397FDA9260DF0A2A10C7A10"
+      "signature": "095AB86DF58544255D66A314B6440D15"
     },
     {
       "path": ".\\ChildLFS\\ChildLFS.pff",
@@ -23,7 +23,7 @@
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pen",
-      "signature": "48C7E25323E39473ACEB794CB8817648"
+      "signature": "4001E2C6C336F0FCC952B4EB5FCB34BC"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pff",
@@ -51,7 +51,7 @@
     },
     {
       "path": ".\\Menu\\MenuLFS.pen",
-      "signature": "FF9EB0FEA9F076D46332D027F4031CAB"
+      "signature": "968691F68A91C73607F964563F275864"
     },
     {
       "path": ".\\Menu\\MenuLFS.pff",
@@ -63,7 +63,7 @@
     },
     {
       "path": ".\\TimeUse\\TimeUse.pen",
-      "signature": "540756F604BAF61957CD8A0E1182B78A"
+      "signature": "DFEBE91412D5C7DBE2497ACCC960F36F"
     },
     {
       "path": ".\\TimeUse\\TimeUse.pff",

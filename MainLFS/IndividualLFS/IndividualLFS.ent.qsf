@@ -744,15 +744,14 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">D06.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;</span>Ndi njira iti imene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>amalandilira malipiro antchito imeneyi?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">D06.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;</span>Ndi njira iti imene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>amalandilira malipiro antchito imeneyi?</p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ AND MARK ALL THAT APPLY&nbsp;</span><br></p><p></p><p></p>
           EN: |
-            <p><b style="font-family: Arial, sans-serif;">D06.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;</span>Which of the following types of pay ~~get_do_does()~~ ~~get_you_name()~~ receive for this work?&nbsp;<br></p>
-            <p>&nbsp;</p>
+            <p><b style="font-family: Arial, sans-serif;">D06.</b><b style="font-family: Arial, sans-serif;">&nbsp;</b><span style="font-family: Arial, sans-serif; font-size: 16px;">&nbsp;</span>Which of the following types of pay ~~get_do_does()~~ ~~get_you_name()~~ receive for this work?&nbsp;&nbsp;</p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">READ AND MARK ALL THAT APPLY&nbsp;</font></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp; ~~XDEM_NAME~~ mukupokera pa ntchito iyi?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Kasi pa mitundu yamalipiro agha ni mtundu wuli uwo&nbsp; ~~XDEM_NAME~~ mukupokera pa ntchito iyi?</font></p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ AND MARK ALL THAT APPLY&nbsp;</span><font face="Arial, sans-serif"><br></font><p></p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Pa mtundu wa malipilo aga ana</font>&nbsp;~~XDEM_NAME~~&nbsp;<font face="Arial, sans-serif">&nbsp;asapochera malipilo ga mtundu wachi pa masengoga?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">D06.&nbsp;</b><font face="Arial, sans-serif">Pa mtundu wa malipilo aga ana</font>&nbsp;~~XDEM_NAME~~&nbsp;<font face="Arial, sans-serif">&nbsp;asapochera malipilo ga mtundu wachi pa masengoga?</font></p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">READ AND MARK ALL THAT APPLY&nbsp;</span><font face="Arial, sans-serif"><br></font><p></p></p>
         helpText:
           EN: |
             
@@ -894,13 +893,11 @@ questions:
       - logic: MJJ_EMP_REL<>2
         questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b>Kodi kwenikweni kumalo kumene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwira ntchito kumachitika chiyani?<br></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b>Kodi kwenikweni kumalo kumene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwira ntchito kumachitika chiyani?</p><p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span><br></p><p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span>&nbsp;</p><p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p><p></p><p></p>
           EN: |
             <p><b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b><span style="font-family: Arial, sans-serif;">What is the main activity of the place where ~~get_you_name()~~ ~~get_work_s()~~?&nbsp;</span><br></p>
-            <p>&nbsp;</p>
-            <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</font></span></p>
-            <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p>
-            <p>&nbsp;</p>
+            <p><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-size: 16px; font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span><br></p>
+            <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span>&nbsp;</p>
             <p><span style="font-style: italic; font-size: 16px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
           TU: |
             <b style="font-family: Arial, sans-serif;">F04a.&nbsp;</b><font face="Arial, sans-serif">Kasi ni ntchito wuli yenecho iyo yikuchitika kumalo agho&nbsp; ~~XDEM_NAME~~ mukugwirako ntchito?</font><p></p>
