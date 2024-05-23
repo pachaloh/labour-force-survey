@@ -5,8 +5,13 @@ string  tempSupID; 		//Temporary supervisor ID
 numeric edit_option;	//
 string  PersonID; 		// Person's line number
 
-
 array string completed_households(30,7);
+
+function assigned_tasks_report(numeric team_id_number)
+	forcase ASSIGNED_HHS_DICT where ACLUSTER = team_id_number do
+		
+	endfor;
+end;
 
 function completed_iterviews(numeric work_cluster)
 	numeric ctr = 1;
@@ -935,8 +940,8 @@ postproc
 		//ClusterInterviewsProgressReport();	//View assigned households
 		reenter;
 	elseif $ = 7 then
-		//ClusterInterviewsProgressReport();
-		completed_iterviews(MCLUSTER);
+		ClusterInterviewsProgressReport();
+		//completed_iterviews(MCLUSTER);
 		reenter;
 	elseif $ = 8 then
 		reenter MCLUSTER;
