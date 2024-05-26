@@ -1,6 +1,6 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=assigned_hhs
+Label=LFS Assigned Households
 Name=ASSIGNED_HHS_DICT
 RecordTypeStart=1
 RecordTypeLen=1

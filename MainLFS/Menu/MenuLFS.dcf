@@ -1,6 +1,6 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=MenuLFS
+Label=LFS Menu
 Name=MENULFS_DICT
 RecordTypeStart=1
 RecordTypeLen=1
@@ -213,7 +213,7 @@ Len=44
 DataType=Alpha
 
 [Item]
-Label=Time Use 
+Label=Time Use
 Name=TIME_USE_SURVEY
 Start=133
 Len=44

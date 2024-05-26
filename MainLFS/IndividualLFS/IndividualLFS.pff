@@ -1,23 +1,26 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
+ShowInApplicationListing=Never
+
 [DataEntryInit]
 Key=10014c1ebef4-695c-459a-9c89-9989316d0dea0801
-StartMode=Add
 Lock=CaseListing
-ShowInApplicationListing=Never
+
 [Files]
-Application=./IndividualLFS.ent
-InputData=../Data/Individual.csdb
+Application=.\IndividualLFS.ent
+InputData=..\Data\Individual.csdb
+
 [ExternalFiles]
-CHILD_LABOUR_DICT=../Data/Child.csdb
-CLUSTERS_DICT=../Lookups/clusters.csdb
-HOUSEHOLDLFS_DICT=../Data/Household.csdb
+CHILD_LABOUR_DICT=..\Data\Child.csdb
+CLUSTERS_DICT=..\Lookups\clusters.csdb
+HOUSEHOLDLFS_DICT=..\Data\Household.csdb
+
 [Parameters]
-XCLUSTER=1001
-XGHHHNO=08
-XHMPPNO=01
-XDEM_NAME=TRANSTONE ZIMKA           (NOT INTERVIEWED)
+OnExit=..\Menu\MenuLFS.pff
 GHINTCODE=4c1ebef4-695c-459a-9c89-9989316d0dea
+XCLUSTER=1001
+XDEM_NAME=TRANSTONE ZIMKA           (NOT INTERVIEWED)
+XGHHHNO=08
 XGHINTNAME=NOEL CHISOSO
-OnExit=../Menu/MenuLFS.pff
+XHMPPNO=01

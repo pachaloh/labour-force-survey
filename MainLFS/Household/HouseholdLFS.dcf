@@ -1,6 +1,6 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=HouseholdLFS
+Label=LFS Household
 Name=HOUSEHOLDLFS_DICT
 RecordTypeStart=1
 RecordTypeLen=1

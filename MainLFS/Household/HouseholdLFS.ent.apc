@@ -1542,7 +1542,7 @@ preproc
 	
 	$ = randomin(eligible_for_time_use);
 	
-	//errmsg("%v is selected for time use",DEM_NAME($));
+	errmsg("%v is selected for time use",DEM_NAME($));
 	
 	noinput;
 	
@@ -1680,6 +1680,11 @@ postproc
 		errmsg("Specify cannot be blank");
 		reenter;
 	endif;
+PROC LH10
+
+preproc
+	
+	//ask if HC39 = 1 or poschar("AD",LH1) or LH5 = 1 or LH5 = 1 or LH6 = 1 or LH7 = 1 or LH8 = 1 or LH9 = 1; 
 PROC WS1
 
 PROC WS2

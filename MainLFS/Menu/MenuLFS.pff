@@ -1,7 +1,7 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-Description=Labour Force Survey- 25Jan
+Description=2024 Malawi Labour Force Survey v1.2
 
 [DataEntryInit]
 StartMode=Add

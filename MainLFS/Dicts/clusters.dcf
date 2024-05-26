@@ -1,6 +1,6 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=Clusters Dictionary
+Label=LFS Clusters
 Name=CLUSTERS_DICT
 RecordTypeStart=0
 RecordTypeLen=0
