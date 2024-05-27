@@ -8428,7 +8428,7 @@ Value=4;Other
 Label=Meta data
 Name=XMETA_DATA
 RecordTypeValue='2'
-RecordLen=67
+RecordLen=80
 
 [Item]
 Label=Region
@@ -8465,9 +8465,17 @@ DataType=Numeric
 ZeroFill=Yes
 
 [Item]
+Label=Start time
+Name=IND_START_TIME
+Start=55
+Len=13
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
 Label=Ind End Time
 Name=IND_END_TIME
-Start=55
+Start=68
 Len=13
 DataType=Numeric
 ZeroFill=Yes

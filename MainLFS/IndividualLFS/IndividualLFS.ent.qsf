@@ -79,6 +79,11 @@ questions:
             Person's line number<p></p>
           EN: |
             Person's line number<p></p>
+  - name: INDIVIDUALLFS_DICT.IND_START_TIME
+    conditions:
+      - questionText:
+          EN: |
+            Start time<p></p>
   - name: INDIVIDUALLFS_DICT.XDEM_NAME
     conditions:
       - questionText:

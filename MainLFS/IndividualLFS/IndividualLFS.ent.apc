@@ -821,6 +821,15 @@ preproc
 		$ = tonumber(sysparm("XHMPPNO"));
 	setproperty($, "Protected", "Yes");
 	endif;
+PROC IND_START_TIME
+
+preproc
+	
+	if IND_START_TIME = notappl then
+		IND_START_TIME = timestamp();
+	endif;
+	
+	setproperty($, "Protected", "Yes");
 PROC XGHVFDT
 
 preproc

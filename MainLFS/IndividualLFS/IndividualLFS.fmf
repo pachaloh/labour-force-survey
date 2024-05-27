@@ -14,7 +14,7 @@ Name=FORM000
 Label=(Id Items)
 QuestionTextHeight=136
 Level=1
-Size=532,294
+Size=407,304
   
 Item=XREGION
 Item=XDISTRICT
@@ -23,6 +23,7 @@ Item=XEA
 Item=XCLUSTER
 Item=XGHHHNO
 Item=XHMPPNO
+Item=IND_START_TIME
   
 [EndForm]
   
@@ -360,6 +361,18 @@ Form=1
 [Text]
 Position=40,218,185,234
 Text=Unique person number
+ 
+  
+[Field]
+Name=IND_START_TIME
+Position=199,259,382,279
+Item=IND_START_TIME,INDIVIDUALLFS_DICT
+DataCaptureType=TextBox
+Form=1
+  
+[Text]
+Position=58,262,168,278
+Text=IND_START_TIME
  
 [EndGroup]
   
