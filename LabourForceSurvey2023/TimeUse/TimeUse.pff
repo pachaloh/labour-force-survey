@@ -4,15 +4,15 @@ AppType=Entry
 ShowInApplicationListing=Never
 [DataEntryInit]
 StartMode=Add
-Key=0001ea56966c-ee20-4657-a90e-d3b77b0a5cc00601
+Key=10014c1ebef4-695c-459a-9c89-9989316d0dea0801
 Lock=CaseListing
 [Files]
 Application=./TimeUse.ent
 InputData=../Data/Timeuse.csdb
 [Parameters]
-TCLUSTER=0001
-TGHHHNO=06
+TCLUSTER=1001
+TGHHHNO=08
 THMPPNO=01
-TGHINTID=ea56966c-ee20-4657-a90e-d3b77b0a5cc0
-TGHINTNAME=PACHALO
+TGHINTID=4c1ebef4-695c-459a-9c89-9989316d0dea
+TGHINTNAME=NOEL CHISOSO
 OnExit=../Menu/MenuLFS.pff

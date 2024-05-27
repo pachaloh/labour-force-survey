@@ -2,36 +2,36 @@
   "fileType": "Application Deployment Specification",
   "version": "7.7",
   "name": "LabourForceSurvey2023",
-  "description": "Malawi Labour Force Survey",
-  "buildTime": "2024-05-23T09:39:09Z",
+  "description": "Malawi Labour Force Survey 27-05-2024",
+  "buildTime": "2024-05-27T03:31:09Z",
   "files": [
     {
       "path": ".\\ChildLFS\\ChildLFS.pen",
-      "signature": "095AB86DF58544255D66A314B6440D15"
+      "signature": "35F5A8903E16B1F4587DDADBAE490EA0"
     },
     {
       "path": ".\\ChildLFS\\ChildLFS.pff",
-      "signature": "75E7F9CC4893CF60668EE37D741DE3FE"
+      "signature": "0486E6B821D7F8BEC1EB39F3FE606F73"
     },
     {
       "path": ".\\Household\\HouseholdLFS.pen",
-      "signature": "D1909E274A5AC55032D6D98C53909DDC"
+      "signature": "DD437F80CB143B582589DDFE42D8F5E3"
     },
     {
       "path": ".\\Household\\HouseholdLFS.pff",
-      "signature": "108D73B95B18FAC5ECEE3635453CA6A0"
+      "signature": "AF1CD6070D556A8F2AF56833892704E7"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pen",
-      "signature": "4001E2C6C336F0FCC952B4EB5FCB34BC"
+      "signature": "26DE227A38F3F21B3CD5EE0068CA4D0D"
     },
     {
       "path": ".\\IndividualLFS\\IndividualLFS.pff",
-      "signature": "7D037E840B59A4EB9CA26D6985BA8379"
+      "signature": "455D4E12BD87479179EF648698A5DE2C"
     },
     {
       "path": ".\\Lookups\\clusters.csdb",
-      "signature": "DBC481B7BCDA22AE7DE8ADD8AF0155AA"
+      "signature": "90EE8023F21BD8B1A067E40338BEA73C"
     },
     {
       "path": ".\\Lookups\\Detailed_field_of_study.csdb",
@@ -51,11 +51,11 @@
     },
     {
       "path": ".\\Menu\\MenuLFS.pen",
-      "signature": "968691F68A91C73607F964563F275864"
+      "signature": "251FD57C4809ED260666F7139715C854"
     },
     {
       "path": ".\\Menu\\MenuLFS.pff",
-      "signature": "6FB62CE67B5A6A9AAE8CA69A143ED816"
+      "signature": "D0411B7FF9F9227A8B94E9A511BB361D"
     },
     {
       "path": ".\\Shared Logic\\GPS.apc",
@@ -63,11 +63,11 @@
     },
     {
       "path": ".\\TimeUse\\TimeUse.pen",
-      "signature": "DFEBE91412D5C7DBE2497ACCC960F36F"
+      "signature": "832CA9F95009AD338270D62A7C4BDCA4"
     },
     {
       "path": ".\\TimeUse\\TimeUse.pff",
-      "signature": "9223F8D56850C9D96986F427ED368E4F"
+      "signature": "FBE15E70598AA9B60367AA4FCE650FFF"
     }
   ],
   "dictionaries": [
@@ -76,7 +76,8 @@
       "uploadForSync": true
     },
     {
-      "path": ".\\Dicts\\assigned_hhs.dcf"
+      "path": ".\\Dicts\\assigned_hhs.dcf",
+      "uploadForSync": true
     },
     {
       "path": ".\\Dicts\\clusters.dcf",
@@ -93,7 +94,8 @@
       "path": ".\\Dicts\\Narrow_field_of_Study.dcf"
     },
     {
-      "path": ".\\Dicts\\teams.dcf"
+      "path": ".\\Dicts\\teams.dcf",
+      "uploadForSync": true
     },
     {
       "path": ".\\Household\\HouseholdLFS.dcf",
@@ -108,7 +110,8 @@
       "uploadForSync": true
     },
     {
-      "path": ".\\TimeUse\\timeuse.dcf"
+      "path": ".\\TimeUse\\timeuse.dcf",
+      "uploadForSync": true
     },
     {
       "path": ".\\TimeUse\\TimeUse.dcf",
