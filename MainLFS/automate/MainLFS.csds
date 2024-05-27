@@ -2,7 +2,7 @@
   "fileType": "Application Deployment Specification",
   "version": "7.7",
   "name": "LabourForceSurvey2023",
-  "description": "Malawi Labour Force Survey 26-05-2024",
+  "description": "Malawi Labour Force Survey 27-05-2024",
   "files": [
     {
       "path": "..\\ChildLFS\\ChildLFS.ent"
@@ -59,7 +59,8 @@
       "uploadForSync": true
     },
     {
-      "path": "..\\Dicts\\assigned_hhs.dcf"
+      "path": "..\\Dicts\\assigned_hhs.dcf",
+      "uploadForSync": true
     },
     {
       "path": "..\\Dicts\\clusters.dcf",
@@ -76,7 +77,8 @@
       "path": "..\\Dicts\\Narrow_field_of_Study.dcf"
     },
     {
-      "path": "..\\Dicts\\teams.dcf"
+      "path": "..\\Dicts\\teams.dcf",
+      "uploadForSync": true
     },
     {
       "path": "..\\Household\\HouseholdLFS.dcf",
@@ -91,7 +93,8 @@
       "uploadForSync": true
     },
     {
-      "path": "..\\TimeUse\\timeuse.dcf"
+      "path": "..\\TimeUse\\timeuse.dcf",
+      "uploadForSync": true
     },
     {
       "path": "..\\TimeUse\\TimeUse.dcf",
