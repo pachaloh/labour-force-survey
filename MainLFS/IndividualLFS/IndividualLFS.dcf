@@ -3860,6 +3860,11 @@ Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=Module start: Second job - Core job characteristics
+Name=SJJ_START_VS1
+Value=1;Continue
+
 [Item]
 Label=Occupation title in second job
 Name=SJJ_OCC_TLE
@@ -8471,7 +8476,7 @@ ZeroFill=Yes
 Label=Tevet
 Name=TEVET_REC
 RecordTypeValue='3'
-RecordLen=139
+RecordLen=110
 
 [Item]
 Label=TVT01. Was this work that you mentioned in
@@ -8622,13 +8627,19 @@ Value=2;No
 Label=TVT09
 Name=TVT09
 Start=82
-Len=30
-DataType=Alpha
+Len=1
+DataType=Numeric
+
+[ValueSet]
+Label=TVT09
+Name=TVT09_VS1
+Value=1;Yes
+Value=2;No
 
 [Item]
 Label=TVT10
 Name=TVT10
-Start=112
+Start=83
 Len=9
 DataType=Alpha
 
@@ -8648,7 +8659,7 @@ Value='Z        ';Other
 [Item]
 Label=TVT11
 Name=TVT11
-Start=121
+Start=92
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -8656,7 +8667,7 @@ ZeroFill=Yes
 [Item]
 Label=D06A
 Name=D06A
-Start=122
+Start=93
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -8671,7 +8682,7 @@ Value=3;Monthly
 [Item]
 Label=D06B
 Name=D06B
-Start=123
+Start=94
 Len=8
 DataType=Numeric
 ZeroFill=Yes
@@ -8679,7 +8690,7 @@ ZeroFill=Yes
 [Item]
 Label=N01A
 Name=N01A
-Start=131
+Start=102
 Len=1
 DataType=Numeric
 ZeroFill=Yes
@@ -8694,7 +8705,7 @@ Value=3;Monthly
 [Item]
 Label=N01B
 Name=N01B
-Start=132
+Start=103
 Len=8
 DataType=Numeric
 ZeroFill=Yes

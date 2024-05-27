@@ -1028,54 +1028,6 @@ Text=Main job- Occupation (unit group)
  
   
 [Field]
-Name=MAIN_JOB_SECTION
-Position=1127,1596,1156,1616
-Item=MAIN_JOB_SECTION,INDIVIDUALLFS_DICT
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=953,1599,1064,1615
-Text=Main job. Section
- 
-  
-[Field]
-Name=MAIN_JOB_DIVISIONS
-Position=1135,1625,1164,1645
-Item=MAIN_JOB_DIVISIONS,INDIVIDUALLFS_DICT
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=961,1628,1080,1644
-Text=Main job. Divisions
- 
-  
-[Field]
-Name=MAIN_JOB_GROUPS
-Position=1127,1652,1170,1672
-Item=MAIN_JOB_GROUPS,INDIVIDUALLFS_DICT
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=961,1655,1069,1671
-Text=Main job. Groups
- 
-  
-[Field]
-Name=MAIN_JOB_CLASS
-Position=1114,1679,1171,1699
-Item=MAIN_JOB_CLASS,INDIVIDUALLFS_DICT
-DataCaptureType=RadioButton
-Form=3
-  
-[Text]
-Position=956,1682,1052,1698
-Text=Main job. Class
- 
-  
-[Field]
 Name=MJJ_EMP_REL
 Position=484,1330,499,1350
 Item=MJJ_EMP_REL,INDIVIDUALLFS_DICT
@@ -1273,6 +1225,54 @@ Form=3
 [Text]
 Position=55,1735,255,1751
 Text=Main activity of unit in main job
+ 
+  
+[Field]
+Name=MAIN_JOB_SECTION
+Position=1127,1596,1156,1616
+Item=MAIN_JOB_SECTION,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=953,1599,1064,1615
+Text=Main job. Section
+ 
+  
+[Field]
+Name=MAIN_JOB_DIVISIONS
+Position=1135,1625,1164,1645
+Item=MAIN_JOB_DIVISIONS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=961,1628,1080,1644
+Text=Main job. Divisions
+ 
+  
+[Field]
+Name=MAIN_JOB_GROUPS
+Position=1127,1652,1170,1672
+Item=MAIN_JOB_GROUPS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=961,1655,1069,1671
+Text=Main job. Groups
+ 
+  
+[Field]
+Name=MAIN_JOB_CLASS
+Position=1114,1679,1171,1699
+Item=MAIN_JOB_CLASS,INDIVIDUALLFS_DICT
+DataCaptureType=RadioButton
+Form=3
+  
+[Text]
+Position=956,1682,1052,1698
+Text=Main job. Class
  
   
 [Field]
@@ -1595,7 +1595,7 @@ Name=SJJ_START
 Position=484,2514,499,2534
 Item=SJJ_START,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryLabel
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=3
   
 [Text]
@@ -1681,6 +1681,20 @@ Text=P25. Occupation (unit group)
  
   
 [Field]
+Name=SJJ_IND_MAC
+Position=484,2604,894,2624
+Item=SJJ_IND_MAC,INDIVIDUALLFS_DICT
+FieldLabelType=DictionaryLabel
+UseUnicodeTextBox=Yes
+DataCaptureType=TextBox
+Form=3
+  
+[Text]
+Position=64,2607,277,2623
+Text=Main activity of unit in second job
+ 
+  
+[Field]
 Name=SEC_JOB_SECTION
 Position=1409,2568,1438,2588
 Item=SEC_JOB_SECTION,INDIVIDUALLFS_DICT
@@ -1696,7 +1710,7 @@ Text=Second job- Section
 Name=SEC_JOB_DIVISIONS
 Position=1427,2597,1456,2617
 Item=SEC_JOB_DIVISIONS,INDIVIDUALLFS_DICT
-DataCaptureType=RadioButton
+DataCaptureType=DropDown
 Form=3
   
 [Text]
@@ -1726,20 +1740,6 @@ Form=3
 [Text]
 Position=1253,2660,1366,2676
 Text=Second job- Class
- 
-  
-[Field]
-Name=SJJ_IND_MAC
-Position=484,2604,894,2624
-Item=SJJ_IND_MAC,INDIVIDUALLFS_DICT
-FieldLabelType=DictionaryLabel
-UseUnicodeTextBox=Yes
-DataCaptureType=TextBox
-Form=3
-  
-[Text]
-Position=64,2607,277,2623
-Text=Main activity of unit in second job
  
   
 [Field]
@@ -3027,10 +3027,9 @@ Text=TVT08
   
 [Field]
 Name=TVT09
-Position=854,5490,1104,5510
+Position=854,5490,869,5510
 Item=TVT09,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-UseUnicodeTextBox=Yes
 DataCaptureType=TextBox
 Form=3
   

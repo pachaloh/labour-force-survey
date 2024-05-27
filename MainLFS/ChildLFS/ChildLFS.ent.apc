@@ -352,7 +352,7 @@ postproc
 		//reenter;
 		
 	endif;
-	
+{	
 	if $ > 17 or $ < 5 then
 		errmsg("Confirm that %s is %d years",A1,A5)
 			select("No, reenter Year",A4_YOB,
@@ -363,6 +363,7 @@ postproc
 		errmsg("Eligibility for %s has changed! Your supervisor MUST approve of this!",A1);
 		skip to CHILD_END_TIME;
 	endif;
+}
 PROC A6A
 
 Preproc

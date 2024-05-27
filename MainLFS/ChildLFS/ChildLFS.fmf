@@ -285,7 +285,7 @@ Text=A1
   
 [Field]
 Name=A2
-Position=374,79,389,99
+Position=374,79,403,99
 Item=A2,CHILD_LABOUR_DICT
 FieldLabelType=DictionaryName
 DataCaptureType=RadioButton
@@ -327,7 +327,7 @@ Name=A4_MOB
 Position=374,169,403,189
 Item=A4_MOB,CHILD_LABOUR_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=2
   
 [Text]
@@ -1120,7 +1120,7 @@ Name=E00_INTRO
 Position=374,1969,389,1989
 Item=E00_INTRO,CHILD_LABOUR_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=2
   
 [Text]

@@ -184,7 +184,7 @@ end;
 	
 	// Set GLO variables based on ATW module:
 	function set_GLO_ATW()
-		if ATW_PAY = 1 or (ATW_PFT = 1 or ATW_FAM = 1) or XDEM_REL = 13 then
+		if ATW_PAY = 1 or (ATW_PFT = 1 or ATW_FAM = 1) or XDEM_REL = 15 then
 		  GLO_EMP = 1;
 		endif;
 	
@@ -1131,7 +1131,7 @@ preproc
 		
 	XDEM_REL = dem_relationship(); //Relationship to head of the household
 	
-	ask if XDEM_REL <> 13;
+	ask if XDEM_REL <> 15;
 	
 PROC ATW_PFT
 
@@ -1222,7 +1222,7 @@ preproc
 
 postproc
 	
-	if pos("a",$) = 0 and pos("b",$) = 0 and pos("c",$) = 0 and pos("d",$) = 0 then
+	if poschar("abcd",$) = 0 then
 		errmsg("Select at least one option");
 		reenter;
 	endif;
@@ -1259,12 +1259,12 @@ preproc
 		noinput; 
 	endif;
 
-	ask if pos("A",AGF_CHK)>0 or 
-		   pos("B",AGF_CHK)>0 or 
-		   pos("C",AGF_CHK)>0 or 
-		   pos("A",AGF_ANY)>0 or 
-		   pos("B",AGF_ANY)>0 or 
-		   pos("C",AGF_ANY)>0 
+	ask if pos("a",AGF_CHK)>0 or 
+		   pos("b",AGF_CHK)>0 or 
+		   pos("c",AGF_CHK)>0 or 
+		   pos("a",AGF_ANY)>0 or 
+		   pos("b",AGF_ANY)>0 or 
+		   pos("c",AGF_ANY)>0 
 	
 PROC AGF_HIS
 
@@ -1310,6 +1310,12 @@ PROC X01
 preproc
 
 
+reset_GLO();
+set_GLO_ATW();
+set_GLO_ABS();
+set_GLO_AGF();
+
+
 ask if GLO_EMP = 0;
 PROC X02
 
@@ -1344,7 +1350,7 @@ set_GLO_ATW();
 set_GLO_ABS();
 set_GLO_AGF();
 
-ask if GLO_EMP=1 and ((GLO_MLT=0 and XDEM_REL <> 13) or GLO_MLT in 1,2,3 or XDEM_REL = 13);
+ask if GLO_EMP=1 and ((GLO_MLT=0 and XDEM_REL <> 15) or GLO_MLT in 1,2,3 or XDEM_REL = 15);
 
 PROC BLOCK_MJJ_OCC
 
@@ -1505,15 +1511,183 @@ postproc
 	endif;
 
 
+PROC MJJ_EMP_REL
+
+preproc
+
+	// Reset global variables based on previous entries
+	reset_GLO();
+	set_GLO_ATW();
+	set_GLO_ABS();
+	set_GLO_AGF();
+
+	ask if GLO_EMP=1;
+
+onfocus
+
+	// Fill in dynamic valueset for 1st and 2nd values
+	numeric numT = 5;
+	do numeric i = 1 while i <= numT
+		vsCodes(i) = i;
+		vsLabels(i) = getlabel(MJJ_EMP_REL_EN,i);
+		if i = 2 then
+			vsLabels(i) = "In " + get_your_his_her() + " own business activity";
+		elseif i = 1 then
+			vsLabels(i) = "As an " + nav_employee;
+		endif;
+	enddo;
+
+	vsCodes(numT + 1) = notappl;
+
+	setvalueset($,vsCodes,vsLabels);
+
+
+PROC MJJ_CFW_CHK
+
+preproc ask if MJJ_EMP_REL=3;
+
+onfocus
+
+	// Fill in dynamic valueset for 1st and 2nd values
+	numeric numT = 4;
+	do numeric i = 1 while i <= numT
+		vsCodes(i) = i;
+		vsLabels(i) = getlabel(MJJ_CFW_CHK_EN,i);
+		if i = 1 then
+			vsLabels(i) = get_c_you_name();
+		elseif i = 2 then
+			vsLabels(i) = get_c_you_name() +" together with others";
+		endif;
+	enddo;
+
+	vsCodes(numT + 1) = notappl;
+
+	setvalueset($,vsCodes,vsLabels);
+
+
+PROC MJJ_HIRES
+
+preproc ask if MJJ_EMP_REL=2 or MJJ_CFW_CHK in 1,2;
+
+PROC MJJ_REM_TYP
+
+preproc ask if MJJ_EMP_REL in 1,4,5 OR (MJJ_EMP_REL=3 and MJJ_CFW_CHK in 3,4);
+
+
+onfocus
+	if getlanguage() = "EN" then
+		setvalueset(MJJ_REM_TYP,MJJ_REM_TYP_EN);
+	elseif getlanguage() = "CH" then
+		setvalueset(MJJ_REM_TYP,MJJ_REM_TYP_CH);
+	endif;
+
+postproc
+
+	// Validate if (i) NOT PAID is selected other options should not be selected
+	if pos("i",$) > 0 and (pos("a",$) > 0 or pos("b",$) > 0 or pos("c",$) > 0 or pos("d",$) > 0 or pos("e",$) > 0 or pos("f",$) > 0 or pos("g",$) > 0 or pos("h",$) > 0) then
+		errmsg("Please enter a valid value! NOT PAID cannot be marked together with other options.");
+		reenter;
+	endif;
+
+NotAllowBlankOtherSpecify($);
+
+
+PROC MJJ_REM_TYP_6_OTHER
+
+preproc ask if pos("h",MJJ_REM_TYP)>0;
+
+PROC D06A
+
+preproc
+	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
+PROC D06B
+
+preproc
+	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
+PROC MJJ_END
+
+preproc $ = 1;
+
+
+
+
+
+
+PROC MJD_WHO_PAYS
+
+preproc 
+	ask if MJJ_EMP_REL in 1,4 or ((MJJ_EMP_REL in 3,5) and (pos("a", MJJ_REM_TYP)>0 or 
+															pos("b", MJJ_REM_TYP)>0 or  
+															pos("c", MJJ_REM_TYP)>0 or 
+															pos("e", MJJ_REM_TYP)>0 or 
+															pos("h", MJJ_REM_TYP)>0));
+PROC MJD_BOSS_TAX
+
+preproc
+	
+		mjd_boss_tax_a = 0;
+		mjd_boss_tax_b = 0;
+		
+		if (MJJ_EMP_REL in 1,4) and (pos("a",MJJ_REM_TYP) = 0 ) and 
+		   (pos("b", MJJ_REM_TYP) > 0 or
+		    pos("c", MJJ_REM_TYP) > 0 or
+			pos("e", MJJ_REM_TYP) > 0 or
+			pos("h", MJJ_REM_TYP) > 0) then
+			
+			mjd_boss_tax_a = 1;
+			
+		endif;
+		
+		if (MJJ_EMP_REL = 3 and (MJJ_CFW_CHK in 3,4)) and pos("a",MJJ_REM_TYP)= 0 and 
+														 (pos("b",MJJ_REM_TYP) > 0 or
+														  pos("c",MJJ_REM_TYP) > 0 or														 
+														  pos("e",MJJ_REM_TYP) > 0 or 
+														  pos("h",MJJ_REM_TYP) > 0 ) then
+			
+			mjd_boss_tax_b = 1;
+			
+		endif;
+		
+		//errmsg("A: %d,  B: %d",mjd_boss_tax_a,mjd_boss_tax_b);
+		
+		ask if mjd_boss_tax_a = 1 or mjd_boss_tax_b = 1;
+
+PROC MJU_START
+
+preproc $ = 1;
+
+PROC MJU_INS
+
+preproc ask if MJJ_EMP_REL in 1,4,5;
+
+PROC MJU_REF
+
+preproc ask if (MJJ_EMP_REL=3) or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
+
+
+
+PROC MJU_NAM
+
+preproc ask if MJU_REF=1 and MJJ_EMP_REL in 1,2,3,4,5;
+
+postproc NotAllowBlankOtherSpecify($);
+
+
+PROC MJU_MAC
+
+preproc ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
+
+postproc NotAllowBlankOtherSpecify($);
+
 PROC MAIN_JOB_SECTION
 
 preproc
-	ask if GLO_EMP = 1 ;
+	ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
 PROC MAIN_JOB_DIVISIONS
 
 
 preproc
-	ask if GLO_EMP = 1 ;	
+	ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2 ;	
 
 onfocus
 
@@ -1566,7 +1740,7 @@ PROC MAIN_JOB_GROUPS
 
 	
 preproc
-	ask if GLO_EMP = 1 ;
+	ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2 ;
 
 onfocus
 
@@ -1753,7 +1927,7 @@ PROC MAIN_JOB_CLASS
 
 preproc
 
-	ask if GLO_EMP = 1 ;
+	ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
 
 onfocus
 
@@ -2236,174 +2410,6 @@ onfocus
 	endif;
 
 
-PROC MJJ_EMP_REL
-
-preproc
-
-	// Reset global variables based on previous entries
-	reset_GLO();
-	set_GLO_ATW();
-	set_GLO_ABS();
-	set_GLO_AGF();
-
-	ask if GLO_EMP=1;
-
-onfocus
-
-	// Fill in dynamic valueset for 1st and 2nd values
-	numeric numT = 5;
-	do numeric i = 1 while i <= numT
-		vsCodes(i) = i;
-		vsLabels(i) = getlabel(MJJ_EMP_REL_EN,i);
-		if i = 2 then
-			vsLabels(i) = "In " + get_your_his_her() + " own business activity";
-		elseif i = 1 then
-			vsLabels(i) = "As an " + nav_employee;
-		endif;
-	enddo;
-
-	vsCodes(numT + 1) = notappl;
-
-	setvalueset($,vsCodes,vsLabels);
-
-
-PROC MJJ_CFW_CHK
-
-preproc ask if MJJ_EMP_REL=3;
-
-onfocus
-
-	// Fill in dynamic valueset for 1st and 2nd values
-	numeric numT = 4;
-	do numeric i = 1 while i <= numT
-		vsCodes(i) = i;
-		vsLabels(i) = getlabel(MJJ_CFW_CHK_EN,i);
-		if i = 1 then
-			vsLabels(i) = get_c_you_name();
-		elseif i = 2 then
-			vsLabels(i) = get_c_you_name() +" together with others";
-		endif;
-	enddo;
-
-	vsCodes(numT + 1) = notappl;
-
-	setvalueset($,vsCodes,vsLabels);
-
-
-PROC MJJ_HIRES
-
-preproc ask if MJJ_EMP_REL=2 or MJJ_CFW_CHK in 1,2;
-
-PROC MJJ_REM_TYP
-
-preproc ask if MJJ_EMP_REL in 1,4,5 OR (MJJ_EMP_REL=3 and MJJ_CFW_CHK in 3,4);
-
-
-onfocus
-	if getlanguage() = "EN" then
-		setvalueset(MJJ_REM_TYP,MJJ_REM_TYP_EN);
-	elseif getlanguage() = "CH" then
-		setvalueset(MJJ_REM_TYP,MJJ_REM_TYP_CH);
-	endif;
-
-postproc
-
-	// Validate if (i) NOT PAID is selected other options should not be selected
-	if pos("i",$) > 0 and (pos("a",$) > 0 or pos("b",$) > 0 or pos("c",$) > 0 or pos("d",$) > 0 or pos("e",$) > 0 or pos("f",$) > 0 or pos("g",$) > 0 or pos("h",$) > 0) then
-		errmsg("Please enter a valid value! NOT PAID cannot be marked together with other options.");
-		reenter;
-	endif;
-
-NotAllowBlankOtherSpecify($);
-
-
-PROC MJJ_REM_TYP_6_OTHER
-
-preproc ask if (MJJ_EMP_REL in 1,4,5 OR (MJJ_EMP_REL=3 and MJJ_CFW_CHK in 3,4)) and pos("h",MJJ_REM_TYP)>0;
-
-PROC D06A
-
-preproc
-	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
-PROC D06B
-
-preproc
-	ask if poschar("abcdeh",MJJ_REM_TYP) > 0;
-PROC MJJ_END
-
-preproc $ = 1;
-
-
-
-
-
-
-PROC MJD_WHO_PAYS
-
-preproc 
-	ask if MJJ_EMP_REL in 1,4 or ((MJJ_EMP_REL in 3,5) and (pos("A", MJJ_REM_TYP)>0 or 
-															pos("B", MJJ_REM_TYP)>0 or  
-															pos("C", MJJ_REM_TYP)>0 or 
-															pos("E", MJJ_REM_TYP)>0 or 
-															pos("H", MJJ_REM_TYP)>0));
-PROC MJD_BOSS_TAX
-
-preproc
-	
-		mjd_boss_tax_a = 0;
-		mjd_boss_tax_b = 0;
-		
-		if (MJJ_EMP_REL in 1,4) and (pos("a",MJJ_REM_TYP) = 0 ) and 
-		   (pos("b", MJJ_REM_TYP) > 0 or
-		    pos("c", MJJ_REM_TYP) > 0 or
-			pos("e", MJJ_REM_TYP) > 0 or
-			pos("h", MJJ_REM_TYP) > 0) then
-			
-			mjd_boss_tax_a = 1;
-			
-		endif;
-		
-		if (MJJ_EMP_REL = 3 and (MJJ_CFW_CHK in 3,4)) and pos("a",MJJ_REM_TYP)= 0 and 
-														 (pos("b",MJJ_REM_TYP) > 0 or
-														  pos("c",MJJ_REM_TYP) > 0 or														 
-														  pos("e",MJJ_REM_TYP) > 0 or 
-														  pos("h",MJJ_REM_TYP) > 0 ) then
-			
-			mjd_boss_tax_b = 1;
-			
-		endif;
-		
-		//errmsg("A: %d,  B: %d",mjd_boss_tax_a,mjd_boss_tax_b);
-		
-		ask if mjd_boss_tax_a = 1 or mjd_boss_tax_b = 1;
-
-PROC MJU_START
-
-preproc $ = 1;
-
-PROC MJU_INS
-
-preproc ask if MJJ_EMP_REL in 1,4,5;
-
-PROC MJU_REF
-
-preproc ask if (MJJ_EMP_REL=3) or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
-
-
-
-PROC MJU_NAM
-
-preproc ask if MJU_REF=1 and MJJ_EMP_REL in 1,2,3,4,5;
-
-postproc NotAllowBlankOtherSpecify($);
-
-
-PROC MJU_MAC
-
-preproc ask if MJJ_EMP_REL=3 or (MJJ_EMP_REL in 1,4,5 and MJU_INS <> 4) or MJJ_EMP_REL=2;
-
-postproc NotAllowBlankOtherSpecify($);
-
 PROC MJU_SIZ
 
 preproc
@@ -2469,6 +2475,12 @@ PROC MJT_SYR
 preproc
 	
 	ask if MJJ_EMP_REL in 1:5;
+
+postproc
+
+	if $ > 2024 then
+		reenter;
+	endif;
 PROC MJT_SMO
 
 preproc
@@ -2667,7 +2679,7 @@ postproc
 
 PROC SEC_JOB_OCC_LEVEL_2
 
-
+{
 preproc
 
 	ask if SEC_JOB_OCC_LEVEL_1 <> notappl and MJJ_MULT=2;
@@ -2697,6 +2709,40 @@ onfocus
 	else
 		setproperty(SEC_JOB_OCC_LEVEL_2,"Protected","No");
 	endif;
+
+}
+
+
+preproc
+
+	ask if SEC_JOB_OCC_LEVEL_1 <> notappl and  MJJ_MULT = 2;
+
+onfocus
+
+	StartVS();
+
+	numeric firstOccupation = SEC_JOB_OCC_LEVEL_1 * 10;
+	numeric lastOccupation = firstOccupation + 9;
+
+	do numeric ctr = firstOccupation while ctr <= lastOccupation
+
+		if invalueset(ctr,SEC_JOB_OCC_LEVEL_2_VS1) then
+			AddNumericVS(ctr,getlabel(SEC_JOB_OCC_LEVEL_2_VS1,ctr));
+		endif;
+
+	enddo;
+
+	EndVS();
+
+	setvalueset(SEC_JOB_OCC_LEVEL_2,vsCodes,vsLabels);
+
+	// this field does not need to be filled for armed services occupations
+	if SEC_JOB_OCC_LEVEL_1 = 0 then
+		setproperty(SEC_JOB_OCC_LEVEL_2,"Protected","Yes");
+	else
+		setproperty(SEC_JOB_OCC_LEVEL_2,"Protected","No");
+	endif;
+
 
 
 PROC SEC_JOB_OCC_LEVEL_3
@@ -2771,6 +2817,12 @@ postproc
 		reenter SEC_JOB_OCC_LEVEL_1;
 	endif;
 
+
+PROC SJJ_IND_MAC
+
+preproc ask if MJJ_MULT=2;
+
+postproc NotAllowBlankOtherSpecify($);
 
 PROC SEC_JOB_SECTION
 
@@ -3504,12 +3556,6 @@ onfocus
 	endif;
 
 
-PROC SJJ_IND_MAC
-
-preproc ask if MJJ_MULT=2;
-
-postproc NotAllowBlankOtherSpecify($);
-
 PROC SJJ_EMP_REL
 
 preproc ask if MJJ_MULT=2;
@@ -3559,14 +3605,21 @@ PROC SJD_REM_TYP
 
 preproc
 	ask if SJJ_EMP_REL in 1,3,4,5;
+	
+	
+postproc
+	if poschar("ABCDEFGHIJK",$) = 0 then
+		errmsg("Select an option");
+		reenter;
+	endif;
 PROC N01A
 
 preproc
-	ask if poschar("abcdeh",SJD_REM_TYP) > 0;
+	ask if poschar("ABCDEFGH",SJD_REM_TYP) > 0;
 PROC N01B
 
 preproc
-	ask if poschar("abcdeh",SJD_REM_TYP) > 0;
+	ask if poschar("ABCDEFGH",SJD_REM_TYP) > 0;
 PROC SJD_BOSS_TAX
 
 preproc

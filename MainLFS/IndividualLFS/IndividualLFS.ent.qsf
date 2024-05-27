@@ -464,7 +464,7 @@ questions:
             <b>X04. </b>Ana ligongo lisyesyene liwalechele masengo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;lyaliji chi?<p></p>
   - name: INDIVIDUALLFS_DICT.MJJ_MULT
     conditions:
-      - logic: XDEM_REL = 13
+      - logic: XDEM_REL = 15
         questionText:
           CH: |
             <p><b style="font-family: Arial, sans-serif;">D01</b><b>e. </b>Kupatula ntchito imene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>&nbsp;amagwira/akugwira pakhomo pano, mmasiku asanu ndi awiri apitawa&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><span style="font-family: Arial, sans-serif;">&nbsp;</span>anagwiranso ntchito ina iliyonse yopezera ndalama?&nbsp;<br></p><p></p><p></p>
@@ -633,44 +633,6 @@ questions:
             <span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;worked?&nbsp;</span><p></p>
           YA: |
             <span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">unit</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic; font-weight: 700;">~~XDEM_NAME~~</span><span style="color: rgb(0, 0, 255); font-size: 24px; font-style: italic;">&nbsp;worked?&nbsp;</span><br><p></p>
-  - name: INDIVIDUALLFS_DICT.MAIN_JOB_SECTION
-    conditions:
-      - questionText:
-          EN: |
-            <p style="font-size: 24px;"><span style="color: rgb(51, 51, 51);">What is the main product, service or activity of&nbsp;<span style="font-weight: bold; color: rgb(0, 0, 0);">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;</span></p><p style="font-size: 24px;">&nbsp;</p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
-  - name: INDIVIDUALLFS_DICT.MAIN_JOB_DIVISIONS
-    conditions:
-      - questionText:
-          CH: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
-          EN: |
-            <p style="font-size: 24px;"><span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><br></p><p></p>
-          TU: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
-          YA: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
-  - name: INDIVIDUALLFS_DICT.MAIN_JOB_GROUPS
-    conditions:
-      - questionText:
-          CH: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
-          EN: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
-          TU: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
-          YA: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
-  - name: INDIVIDUALLFS_DICT.MAIN_JOB_CLASS
-    conditions:
-      - questionText:
-          CH: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
-          EN: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
-          TU: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
-          YA: |
-            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
   - name: INDIVIDUALLFS_DICT.MJJ_EMP_REL
     conditions:
       - questionText:
@@ -772,12 +734,24 @@ questions:
   - name: INDIVIDUALLFS_DICT.D06A
     conditions:
       - questionText:
+          CH: |
+            <p><b>D06A.</b>&nbsp;What is ~~get_you_name()~~&nbsp;current (daily,weekly,monthly) income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           EN: |
-            <p><b>D06A.</b> What is (your/NAME’s) current (daily,weekly,monthly) income for this work? </p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i><br></p><p></p><p></p>
+            <p><b>D06A.</b> What is ~~get_you_name()~~&nbsp;current (daily,weekly,monthly) income for this work? </p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i><br></p><p></p><p></p>
+          TU: |
+            <p><b>D06A.</b>&nbsp;What is ~~get_you_name()~~&nbsp;current (daily,weekly,monthly) income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+          YA: |
+            <p><b>D06A.</b>&nbsp;What is ~~get_you_name()~~&nbsp;current (daily,weekly,monthly) income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.D06B
     conditions:
       - questionText:
+          CH: |
+            <p><b>D06B.</b>&nbsp;What is (your/NAME’s) current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           EN: |
+            <p><b>D06B.</b>&nbsp;What is (your/NAME’s) current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+          TU: |
+            <p><b>D06B.</b>&nbsp;What is (your/NAME’s) current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+          YA: |
             <p><b>D06B.</b>&nbsp;What is (your/NAME’s) current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.MJJ_END
     conditions:
@@ -923,6 +897,50 @@ questions:
         helpText:
           EN: |
             
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_SECTION
+    conditions:
+      - questionText:
+          CH: |
+            <p><i><font color="#0000ff">Description of main activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;&nbsp;</font></i></p><p><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 24px;"><font color="#0000ff"><i>Description of main activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;</i></font>&nbsp;</p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+          TU: |
+            <p><font color="#0000ff"><i>Description of main activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;&nbsp;</i></font></p><p><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+          YA: |
+            <p><font color="#0000ff"><i>Description of main activity of&nbsp;<span style="font-weight: bold;">~~XDEM_NAME~~'s</span>&nbsp;place of work?&nbsp;&nbsp;</i></font></p><p><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_DIVISIONS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          EN: |
+            <p style="font-size: 24px;"><span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><br></p><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_GROUPS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+  - name: INDIVIDUALLFS_DICT.MAIN_JOB_CLASS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          YA: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
   - name: INDIVIDUALLFS_DICT.MJU_SIZ
     conditions:
       - questionText:
@@ -1199,7 +1217,7 @@ questions:
           TU: |
             <p><b>K01.&nbsp;</b>Kasi ntchivichi mwa ivi icho chikukorererana na mgwirizano wasono wa ~~XDEM_NAME~~?</p><p></p><p><span style="color: rgb(0, 0, 255);">READ AND MARK ALL THAT APPLY</span><br></p><p><br></p><p></p>
           YA: |
-            <p><b>K01. </b>Ana mwa indu ayi, yapi ikamulana ni nkamulano wa ~~XDEM_NAME~~ wapanopanowu?</p><div><br></div><p><p><span style="color: rgb(0, 0, 255);">READ AND MARK ALL THAT APPLY</span><br></p></p>
+            <p><b>K01. </b>Ana mwa indu ayi, yapi ikamulana ni nkamulano wa ~~XDEM_NAME~~ wapanopanowu?</p><div><span style="color: rgb(0, 0, 255);">READ AND MARK ALL THAT APPLY</span><br></div><p></p>
   - name: INDIVIDUALLFS_DICT.MCD_PERM
     conditions:
       - questionText:
@@ -1326,22 +1344,22 @@ questions:
           CH: |
             <p><b>M00.</b><b>&nbsp;</b><i><font color="#0000ff">READ:&nbsp;</font></i><font face="Arial, sans-serif">Sopano ndikufunsani zokhuza ntchito kapena bizinezi yachiwiri ya&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>.</p><p></p><p></p>
           EN: |
-            <p><i><font color="#0000ff">READ</font></i>&nbsp;</p><p><b>M00. </b>I am now going to ask you some questions about ~~get_you_name()~~&nbsp; second job or business activity.<br></p><p></p><p></p>
+            <p><b>M00.&nbsp;</b><i><font color="#0000ff">READ</font></i>&nbsp;<b>&nbsp;</b>I am now going to ask you some questions about ~~get_you_name()~~&nbsp; second job or business activity.</p><p></p><p></p>
           TU: |
-            <b>M00.</b><p></p>
+            <b>M00.&nbsp;</b><i><font color="#0000ff">READ:&nbsp;</font></i><font face="Arial, sans-serif">Sopano ndikufunsani zokhuza ntchito kapena bizinezi yachiwiri ya&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>.<p></p>
           YA: |
-            <p><i><font color="#0000ff">READ</font></i>&nbsp;</p><p><b>M00.&nbsp;</b>Sambano tinausye mausyo gakwayana ni masengo gawiri kapena bizinezi jasakamula&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~.</span><p></p></p>
+            <p><b>M00.&nbsp;</b><i><font color="#0000ff">READ</font></i>&nbsp;Sambano tinausye mausyo gakwayana ni masengo gawiri kapena bizinezi jasakamula&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~.</span></p><p></p><p></p>
   - name: BLOCK_SJJ_OCC
     conditions:
       - questionText:
           CH: |
-            <p><b>M01.&nbsp;&nbsp;</b><font face="Arial, sans-serif">Sopano ndikufunsani zokhuza ntchito kapena biziezi yachiwiri ya&nbsp;&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;.</font></p><p>Mu ntchito yachiwiriyi, kodi mumapanga chiyani?&nbsp; &nbsp;&nbsp;<br></p><p></p><p></p><p></p>
+            <p><b>M01.&nbsp;&nbsp;</b>Mu ntchito yachiwiriyi, kodi mumapanga chiyani?&nbsp; &nbsp;&nbsp;</p><p></p><p></p><p></p>
           EN: |
-            <div><b>M01.&nbsp;</b>I am now going to ask you some questions about ~~get_your_names()~~ second job or business activity.&nbsp; &nbsp;</div><div><br></div><div>In this second job, what kind of work ~~get_do_does()~~ ~~get_you_name()~~ do?&nbsp;</div>
+            <div><b>M01.&nbsp;</b>In this second job, what kind of work ~~get_do_does()~~ ~~get_you_name()~~ do?&nbsp;</div>
           TU: |
             <b>M01.&nbsp;&nbsp;</b>Mu ntchito yachiwiri iyi, kasi ni ntchito ya mtundu wuli iyo ~~XDEM_NAME~~ wakugwira?<p></p>
           YA: |
-            <p><b>M01.&nbsp;</b>Sambano tinausye mausyo gakwayana ni masengo gawiri kapena bizinezi jasakamula&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~.</span></p><p><font face="Arial, sans-serif">Mu masengo gawiri ga&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;ana asakamula masengo gantiuli?&nbsp; &nbsp; &nbsp;</font><br></p><p><span style="font-family: Arial, sans-serif;"><br></span></p><p></p><p></p>
+            <p><b>M01.&nbsp;</b><font face="Arial, sans-serif">Mu masengo gawiri ga&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;ana asakamula masengo gantiuli?&nbsp; &nbsp;&nbsp;</font></p><p></p><p></p>
         helpText:
           EN: |
             
@@ -1383,7 +1401,7 @@ questions:
           CH: |
             <p style="font-size: 24px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 24px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
           EN: |
-            <p style="font-size: 24px;"><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~'s</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 24px;"><span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+            <p style="font-size: 24px;"><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~'s</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days</span><span style="font-size: 24px;">&nbsp;&nbsp;</span></span></p><p style="font-size: 24px;"><span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
           TU: |
             <p style="font-size: 24px;"><span style="color: rgb(51, 51, 51); font-size: 24px;">What was&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_you_name()~~</span><span style="color: rgb(51, 51, 51);"><span style="font-size: 24px;">&nbsp;main occupation during the last 7 days or the last time&nbsp;</span><span style="color: rgb(0, 0, 0); font-size: 24px;">he/she</span><span style="font-size: 24px;">&nbsp;worked? &nbsp;</span></span></p><p style="font-size: 24px;"><span style="font-size: 24px;">&nbsp;</span></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255); font-size: 24px;">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
   - name: INDIVIDUALLFS_DICT.SEC_JOB_OCC_LEVEL_2
@@ -1419,6 +1437,23 @@ questions:
             <span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-style: italic;">&nbsp;unit of occupation for the second work</span><span style="color: rgb(0, 0, 255); font-style: italic;">?&nbsp;</span><br><p></p>
           YA: |
             <span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~XDEM_NAME~~'s</span><span style="color: rgb(0, 0, 255); font-style: italic;">&nbsp;unit of occupation for the second work</span><span style="color: rgb(0, 0, 255); font-style: italic;">?&nbsp;</span><br><p></p>
+  - name: INDIVIDUALLFS_DICT.SJJ_IND_MAC
+    conditions:
+      - questionText:
+          CH: |
+            <p><b>M02. </b>Kodi chenicheni chimene chimachitika mu bizinezi kapena ku malo kumene&nbsp;&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;amagwira ntchito ndi chiyani?&nbsp;</p><p>&nbsp;<span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p><p>&nbsp;</p><p></p><p></p>
+          EN: |
+            <p><b>M02.&nbsp;</b><span style="font-size: 24px; font-family: Arial, sans-serif;">What is the main activity of the business or place where <b>~~get_you_name()~~</b>&nbsp;works?&nbsp;</span></p>
+            <p>&nbsp;<span style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px; font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><span style="font-family: Arial; font-size: 24px;">
+            </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><span style="font-family: Arial; font-size: 24px;">
+            </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
+          TU: |
+            <p><b>M02.&nbsp;</b><b>&nbsp;</b>&nbsp;Kasi ni ntchito wuli yenecho iyo yikuchitika ku bizinesi panyakhe malo agho ~~XDEM_NAME~~ wakugwirako ntchito?&nbsp; &nbsp;Mwachiyerezgero: [Ofesi ya polisi, chivikiliro cha wanthu, kunozga na kuperekera chakurya,&nbsp; company - yakunyamuka katundu maulendo yatali] &nbsp;</p><p><p><span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
+          YA: |
+            <p><b>M02.&nbsp;</b>Ana chisyesyene chisatendekwa ku bizinezi kapena malo gasakamula masengo&nbsp; (you/NAME) ni chichi?&nbsp;&nbsp;</p><p><span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
+        helpText:
+          EN: |
+            
   - name: INDIVIDUALLFS_DICT.SEC_JOB_SECTION
     conditions:
       - questionText:
@@ -1463,23 +1498,6 @@ questions:
             <span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="color: rgb(0, 0, 255); font-style: italic;">class of industry for second place of work.&nbsp;</span><p></p>
           YA: |
             <span style="color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-weight: bold;">~~XDEM_NAME~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="color: rgb(0, 0, 255); font-style: italic;">class of industry for second place of work.&nbsp;</span><p></p>
-  - name: INDIVIDUALLFS_DICT.SJJ_IND_MAC
-    conditions:
-      - questionText:
-          CH: |
-            <p><b>M02. </b>Kodi chenicheni chimene chimachitika mu bizinezi kapena ku malo kumene&nbsp;&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;amagwira ntchito ndi chiyani?&nbsp;</p><p>&nbsp;<span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p><p>&nbsp;</p><p></p><p></p>
-          EN: |
-            <p><b>M02.&nbsp;</b><span style="font-size: 24px; font-family: Arial, sans-serif;">What is the main activity of the business or place where <b>~~get_you_name()~~</b>&nbsp;works?&nbsp;</span></p>
-            <p>&nbsp;<span style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px; font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><span style="font-family: Arial; font-size: 24px;">
-            </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><span style="font-family: Arial; font-size: 24px;">
-            </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
-          TU: |
-            <p><b>M02.&nbsp;</b><b>&nbsp;</b>&nbsp;Kasi ni ntchito wuli yenecho iyo yikuchitika ku bizinesi panyakhe malo agho ~~XDEM_NAME~~ wakugwirako ntchito?&nbsp; &nbsp;Mwachiyerezgero: [Ofesi ya polisi, chivikiliro cha wanthu, kunozga na kuperekera chakurya,&nbsp; company - yakunyamuka katundu maulendo yatali] &nbsp;</p><p><p><span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
-          YA: |
-            <p><b>M02.&nbsp;</b>Ana chisyesyene chisatendekwa ku bizinezi kapena malo gasakamula masengo&nbsp; (you/NAME) ni chichi?&nbsp;&nbsp;</p><p><span style="color: rgb(0, 0, 255); font-style: italic;">ENTER MAIN ACTIVITY, GOODS OR SERVICES&nbsp;</span></p><p><span style="font-style: italic;"><font color="#0000ff">(E.G. ~~nav_main_activity_eg~~)&nbsp;</font></span></p><p></p><p><span style="font-style: italic;"><font color="#0000ff">ENTER 997 FOR DON'T KNOW&nbsp;</font></span></p>
-        helpText:
-          EN: |
-            
   - name: INDIVIDUALLFS_DICT.SJJ_EMP_REL
     conditions:
       - questionText:
@@ -1489,9 +1507,9 @@ questions:
             <p><b>M03.&nbsp;</b><span style="font-family: Arial, sans-serif;">In this second job, ~~get_do_does()~~ ~~get_you_name() ~~ work…?&nbsp;</span>&nbsp;<br></p><span style="font-size: 24px;">
             </span><p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">READ&nbsp;</font></span></p>
           TU: |
-            <p><b>M03.&nbsp;&nbsp;</b>Muntchito yinu ya chiwiri, kasi imwe&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukulemba ntchito wanthu awo mukuwalipira mwapafupipafupi<br></p><p></p><p></p>
+            <p><b>M03.&nbsp;&nbsp;</b>Muntchito yinu ya chiwiri, kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukugwira nga ni...?&nbsp;<br></p><p></p><p></p>
           YA: |
-            <b>M03.</b><p></p>
+            <b>M03.&nbsp;</b><font face="Arial, sans-serif">Mu masengo gawiri ga ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><span style="font-family: Arial, sans-serif;">asakamula masengo mpela....?</span><p></p>
         helpText:
           EN: |
             
@@ -1503,7 +1521,7 @@ questions:
           EN: |
             <p><b><span style="font-size: 24px;">M04</span></b><span class="normal" style="font-size: 24px;">﻿</span><b><span style="font-size: 24px;">.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">~~get_c_do_does()~~ </span><span style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">~~get_you_name()~~ hire any</span><span style="font-family: Arial; font-size: 24px;"> paid </span><span style="font-size: 24px;">emplo</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">yees on a regular basis?&nbsp;</span><br></p>
           TU: |
-            
+            <b>M04</b><span class="normal">﻿</span><b>.&nbsp;</b><span style="font-family: Arial, sans-serif;">~~get_c_do_does()~~&nbsp;</span><span style="font-family: Arial, sans-serif;">~~get_you_name()~~ hire any<span style="font-family: Arial;">&nbsp;paid&nbsp;</span>emplo</span><span style="font-family: Arial, sans-serif;">yees on a regular basis?&nbsp;</span><p></p>
         helpText:
           EN: |
             
@@ -1521,13 +1539,25 @@ questions:
   - name: INDIVIDUALLFS_DICT.N01A
     conditions:
       - questionText:
+          CH: |
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           EN: |
-            <p><b>N01A.</b>&nbsp;What is (your/NAME’s) current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+          TU: |
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+          YA: |
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.N01B
     conditions:
       - questionText:
+          CH: |
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           EN: |
-            <p><b>N01B.</b>&nbsp;What is (your/NAME’s) current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+          TU: |
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+          YA: |
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.SJD_BOSS_TAX
     conditions:
       - questionText:
@@ -1568,25 +1598,25 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>O01&nbsp;</b>Tsopano ndikufunsani mafunso okhudzana ndi maola amene ~~XDEM_NAME~~ anagwira, kuyambira ndi ntchito (yanu/yake) yeniyeni yomwe (Inu/Iye) anagwira ngati ~~MJJ_OCC_TLE~~</p><p></p><p></p>
+            <p><b>O01.&nbsp;</b><i style="color: rgb(0, 0, 255);">READ&nbsp;&nbsp;</i><b>&nbsp;</b>Tsopano ndikufunsani mafunso okhudzana ndi maola amene ~~XDEM_NAME~~ anagwira, kuyambira ndi ntchito (yanu/yake) yeniyeni yomwe (Inu/Iye) anagwira ngati ~~MJJ_OCC_TLE~~</p><p></p><p></p>
           EN: |
-            <p><b style="font-family: Arial, sans-serif;">O01.</b><br></p><p><font color="#0000ff"><i>READ</i></font></p><p>Now, I would like to ask some questions about the hours that&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;work(s), starting with (your/his/her) main job as ~~MJJ_OCC_TLE~~&nbsp;…</p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O01.&nbsp;</b><i style="color: rgb(0, 0, 255);">READ&nbsp;&nbsp;</i>Now, I would like to ask some questions about the hours that&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;work(s), starting with (your/his/her) main job as ~~MJJ_OCC_TLE~~&nbsp;…</p><p></p>
           TU: |
-            <b>O01&nbsp;</b>Sono, nimufumbaninge mafumbo ghanyakhe ghakukhwaskana na maola agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukugwira ntchito kwamba na ntchito (your/his/her) yenecho ~~MJJ_OCC_TLE~~.<p></p>
+            <b>O01.&nbsp;</b><i style="color: rgb(0, 0, 255);">READ&nbsp;&nbsp;</i>Sono, nimufumbaninge mafumbo ghanyakhe ghakukhwaskana na maola agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukugwira ntchito kwamba na ntchito (your/his/her) yenecho ~~MJJ_OCC_TLE~~.<p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">O01.&nbsp;</b>Sambano ngusaka nausye iusyo yakwayana ni&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;ya ma awala gasakamula masengo&nbsp; kutandirira ni (your/his/her) masengo gawo gasyesyene.<p></p>
+            <b style="font-family: Arial, sans-serif;">O01.&nbsp;</b><i style="color: rgb(0, 0, 255);">READ&nbsp;</i>Sambano ngusaka nausye iusyo yakwayana ni&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;ya ma awala gasakamula masengo&nbsp; kutandirira ni (your/his/her) masengo gawo gasyesyene.<p></p>
   - name: INDIVIDUALLFS_DICT.WKT_MJ_USHRS
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">O02.&nbsp;</b>Kodi ~~XDEM_NAME~~&nbsp;nthawi zambiri amagwira maola angati pa sabata mu ntchito yake/yanu yeniyeni?</p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O02.&nbsp;</b>Kodi ~~XDEM_NAME~~&nbsp;nthawi zambiri amagwira maola angati pa sabata mu ntchito yake/yanu yeniyeni?</p><p>&nbsp;<span style="color: rgb(0, 0, 255); font-style: italic;">ENTER HOURS PER WEEK; ENTER 997 FOR DON’T KNOW&nbsp; &nbsp;</span><br></p><p></p>
           EN: |
             <p><span style="font-family: Arial, sans-serif;"><b>O02.</b> How many hours ~~get_do_does()~~ ~~get_you_name()~~ usually work per week in ~~get_your_his_her()~~ main job?&nbsp;</span><br></p>
             <p><span style="font-size: 24px; font-family: Arial;">&nbsp;</span><span style="color: rgb(0, 0, 255); font-family: Arial; font-size: 24px; font-style: italic;">ENTER HOURS PER WEEK; ENTER 997 FOR DON’T KNOW&nbsp; &nbsp;</span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif;">O02.&nbsp;</b><font face="Arial, sans-serif"><b>&nbsp;</b>Kasi ni maola ghalinga awo&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;kanandi mukugwira mu (your/his/her) ntchito yinu yenecho?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O02.&nbsp;</b><font face="Arial, sans-serif"><b>&nbsp;</b>Kasi ni maola ghalinga awo&nbsp;</font>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;kanandi mukugwira mu (your/his/her) ntchito yinu yenecho?</font></p><p>&nbsp;<span style="color: rgb(0, 0, 255); font-style: italic;">ENTER HOURS PER WEEK; ENTER 997 FOR DON’T KNOW&nbsp; &nbsp;</span><font face="Arial, sans-serif"><br></font><p></p></p>
           YA: |
-            <b style="font-family: Arial, sans-serif;">O02.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana ma awala galingwa gasakamula&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;</span>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;mwamnopemnope masengo gawo gasyesyene&nbsp; pa mlungu ?</font><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O02.</b><span style="font-family: Arial, sans-serif;">&nbsp;</span><font face="Arial, sans-serif">Ana ma awala galingwa gasakamula&nbsp;</font><span style="font-family: Arial, sans-serif;">&nbsp;</span>~~XDEM_NAME~~<font face="Arial, sans-serif">&nbsp;mwamnopemnope masengo gawo gasyesyene&nbsp; pa mlungu ?</font></p><p>&nbsp;<span style="color: rgb(0, 0, 255); font-style: italic;">ENTER HOURS PER WEEK; ENTER 997 FOR DON’T KNOW&nbsp; &nbsp;</span><font face="Arial, sans-serif"><br></font><p></p></p>
         helpText:
           EN: |
             
@@ -1885,11 +1915,11 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Motero kuphatikiza zonse, zikutanthauza kuti nthawi zambiri ~~XDEM_NAME~~&nbsp; amagwira maola ~~WKT_ACHRSTOT~~ pasabata, kodi ndimomwemo?</font></p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Motero kuphatikiza zonse, zikutanthauza kuti nthawi zambiri ~~XDEM_NAME~~&nbsp; amagwira maola ~~WKT_ACHRSTOT~~ m</font>matsiku asanu ndi awiri apitawa<font face="Arial, sans-serif">, kodi ndimomwemo?</font></p><p></p><p></p>
           EN: |
-            <p><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">O22.</span><span style="font-size: 24px;">&nbsp;</span></b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">And in total, last week, is it correct that ~~get_you_name()~~ worked </span><span style="font-size: 24px;">~~WKT_ACHRSTOT~~ </span><span style="font-family: Arial, sans-serif; font-size: 24px;">hours?&nbsp;</span></p>
+            <p><span style="font-family: Arial, sans-serif;"><b><span style="font-size: 24px;">O22.</span><span style="font-size: 24px;">&nbsp;</span></b></span><span style="font-family: Arial, sans-serif; font-size: 24px;">And in total, in the last seven days, is it correct that ~~get_you_name()~~ worked </span><span style="font-size: 24px;">~~WKT_ACHRSTOT~~ </span><span style="font-family: Arial, sans-serif; font-size: 24px;">hours?&nbsp;</span></p>
           TU: |
-            <span style="font-size: 24px;"><b><span style="font-size: 24px;">O22.&nbsp;</span></b><span style="font-size: 24px;">Ndipo wose pamoza, sabata yajumpha kasi nintheura kuti&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukagwira maola&nbsp;</span><span style="font-family: Arial, sans-serif;">~~WKT_ACHRSTOT~~</span><span style="font-size: 24px;">?&nbsp;</span><p></p>
+            <span style="font-size: 24px;"><b><span style="font-size: 24px;">O22.&nbsp;</span></b><span style="font-size: 24px;">Ndipo wose pamoza, m</span></span><span style="font-family: Arial, sans-serif;">u madazi ghankhonde na ghawiri agho ghajumpha</span><span style="font-size: 24px;"><span style="font-size: 24px;">&nbsp;kasi nintheura kuti&nbsp;</span></span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~</span><span style="font-size: 24px;">&nbsp;mukagwira maola&nbsp;</span><span style="font-family: Arial, sans-serif;">~~WKT_ACHRSTOT~~</span><span style="font-size: 24px;">?&nbsp;</span><p></p>
           YA: |
             <b style="font-family: Arial, sans-serif;">O22.&nbsp;</b><font face="Arial, sans-serif">Kupwatikanya pamo , mlungu umasile, ana yakuona kuti&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;wakamwile masengo ma awala&nbsp;</font>~~WKT_ACHRSTOT~~<font face="Arial, sans-serif">?&nbsp;</font><p></p>
         helpText:
@@ -1915,13 +1945,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.</span></b><font face="Arial, sans-serif">&nbsp;M'masabata anayi apitawa, kuyambira ~~last_4weeks_start_date~~mpakana ~~last_week_end_date~~ kodi~~XDEM_NAME~~anayang'anako ntchito yowonjezera kapena ntchito ina yolandira malipiro?</font></p><p><br></p><p></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.</span></b><font face="Arial, sans-serif">&nbsp;M'masabata anayi apitawa, kodi ~~XDEM_NAME~~ anayang'anako ntchito yowonjezera kapena ntchito ina yolandira malipiro?</font></p><p><br></p><p></p>
           EN: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">During the last four weeks, that is from ~~last_4weeks_start_date~~ up to ~~last_week_end_date~~, did ~~get_you_name()~~ look for additional or other paid work?&nbsp;</span></p><p><font color="#0080ff" style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</span><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">During the last four weeks did ~~get_you_name()~~ look for additional or other paid work?&nbsp;</span></p><p><font color="#0080ff" style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</span><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
           TU: |
-            <b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-size: 24px;">Mu masabata ghanayi agho ghajumpha, apo ni kufuma pa ~~last_4weeks_start_date~~&nbsp; mpaka&nbsp; ~~last_week_end_date~~ kasi ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe yakulipirika?&nbsp;</span><p></p>
+            <b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><span style="font-size: 24px;">Mu masabata ghanayi agho ghajumpha,&nbsp; kasi ~~XDEM_NAME~~ mukapenjapo ntchito yakusazgirapo panyakhe yinyakhe yakulipirika?&nbsp;</span><p></p>
           YA: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><font face="Arial, sans-serif">Mu milungu ncheche perepa kutadiraga&nbsp; [START_DATE] mpaka [last END_DAY/liso] ana (you/NAME) waliji nkusosa masengo gane gakonjechesya kapena gane gakulipidwa?</font></p><p><font face="Arial, sans-serif"><font color="#0080ff">NOTE:</font> The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</font><p></p></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O24.&nbsp;</span></b><font face="Arial, sans-serif">Mu milungu ncheche perepa ana&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span><font face="Arial, sans-serif">&nbsp;waliji nkusosa masengo gane gakonjechesya kapena gane gakulipidwa?</font></p><p><font face="Arial, sans-serif"><font color="#0080ff">NOTE:</font> The option “yesterday” should be displayed when INTREVIEW DAY − 1 = END_DAY</font></p><p></p><p></p>
         helpText:
           EN: |
             
@@ -1929,13 +1959,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b>Kodi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;angafune kugwira ntchito maola ochuluka pasabata kupitiriza m'mene amagwirira, patakhala kuti maola wowonjezerawo alipiridwa?</p><p></p><p></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b>Kodi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;angafune kugwira ntchito maola ochuluka pasabata kupitiriza m'mene amagwirira, patakhala kuti maola wowonjezerawo alipiridwa?</p><p><font style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">NOTE:</font><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">&nbsp;<i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></span><br></p><p></p><p></p>
           EN: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">Would ~~get_you_name()~~ want to work more hours per week than usually worked, provided the extra hours are paid?&nbsp;</span></p><p><font color="#0080ff" style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;<i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></span><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-family: Arial, sans-serif; font-size: 24px;">Would ~~get_you_name()~~ want to work more hours per week than usually worked, provided the extra hours are paid?&nbsp;</span></p><p><font color="#0000ff"><font style="font-family: Arial, sans-serif;">NOTE:</font><span style="font-family: Arial, sans-serif;">&nbsp;<i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></span></font><span style="font-family: Arial, sans-serif; font-size: 24px;"><br></span></p>
           TU: |
-            <b><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 24px;"><span style="font-size: 24px;">mungakhumba kugwira maola ghanandi pasabata kuluska umo mukugwirira nyengo zose, pala maola ghakusazgirapo ghangawa ghakulipirika?&nbsp;</span><b><span style="font-size: 24px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></b></span><p></p>
+            <p><b><span style="font-size: 24px;">O25.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><span style="font-family: Arial, sans-serif; font-size: 24px;">~~XDEM_NAME~~&nbsp;</span><span style="font-size: 24px;"><span style="font-size: 24px;">mungakhumba kugwira maola ghanandi pasabata kuluska umo mukugwirira nyengo zose, pala maola ghakusazgirapo ghangawa ghakulipirika?&nbsp;</span></span></p><p><font style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">NOTE:</font><span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif;">&nbsp;<i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></span><span style="font-size: 24px;"><span style="font-size: 24px;"><br></span><b><span style="font-size: 24px;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span></b></span><p></p></p>
           YA: |
-            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><font face="Arial, sans-serif">Ana&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">&nbsp;atakusaka kamulaga masengo ma awala gejinji pa mlungu kulekagana ni mowa gosope bola kuti ndawi jakonjechesyajo tiwalipileje?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </font></p><p><font face="Arial, sans-serif"><font color="#0080ff">NOTE:</font> <i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></font><p></p></p>
+            <p><b style="font-family: Arial, sans-serif; font-size: 24px;"><span style="font-size: 24px;">O25.&nbsp;</span></b><font face="Arial, sans-serif">Ana&nbsp;&nbsp;</font><span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span><font face="Arial, sans-serif">&nbsp;atakusaka kamulaga masengo ma awala gejinji pa mlungu kulekagana ni mowa gosope bola kuti ndawi jakonjechesyajo tiwalipileje?&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </font></p><p><font face="Arial, sans-serif" color="#0000ff">NOTE: <i>The threshold may be customized to the national context. In all cases it should not be below 30 hours&nbsp;&nbsp;</i></font></p><p></p><p></p>
         helpText:
           EN: |
             
@@ -2066,8 +2096,14 @@ questions:
   - name: INDIVIDUALLFS_DICT.SRH_MTD_14_OTHER
     conditions:
       - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
           EN: |
             <p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER OTHER METHOD TO FIND JOB&nbsp;</font></span></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
         helpText:
           EN: |
             
@@ -2102,8 +2138,14 @@ questions:
   - name: INDIVIDUALLFS_DICT.SRH_OTH_14_OTHER
     conditions:
       - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
           EN: |
             <p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER OTHER METHOD TO FIND JOB&nbsp;</font></span></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER METHOD TO FIND JOB&nbsp;</span><p></p>
         helpText:
           EN: |
             
@@ -2281,8 +2323,14 @@ questions:
   - name: INDIVIDUALLFS_DICT.SRH_MAC_8_OTHER
     conditions:
       - questionText:
+          CH: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER MAIN ACTIVITY AT PRESENT&nbsp;&nbsp;</span><p></p>
           EN: |
             <p><span style="font-style: italic; font-size: 24px; font-family: Arial, sans-serif;"><font color="#0000ff">ENTER OTHER MAIN ACTIVITY AT PRESENT &nbsp;</font></span></p>
+          TU: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER MAIN ACTIVITY AT PRESENT&nbsp;&nbsp;</span><p></p>
+          YA: |
+            <span style="color: rgb(0, 0, 255); font-family: Arial, sans-serif; font-style: italic;">ENTER OTHER MAIN ACTIVITY AT PRESENT&nbsp;&nbsp;</span><p></p>
         helpText:
           EN: |
             
@@ -2429,14 +2477,13 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>R02.</b> M'sabata yapitayi, kuyambira,&nbsp; kodi&nbsp; ~~XDEM_NAME~~ anadzala, kusamalira kapena kukolola mbewu zina zilizonse monga masamba kapena zipatso?&nbsp;<br><p></p><p></p>
+            <b>R02.</b>&nbsp;Mmatsiku asanu ndi awiri apitawa, kodi&nbsp;&nbsp;~~XDEM_NAME~~ anadzala, kusamalira kapena kukolola mbewu zina zilizonse monga masamba kapena zipatso?&nbsp;<br><p></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>R02.&nbsp;</b>Last week, from&nbsp;~~nav_week_start_day~~ up to&nbsp;<span style="font-family: Arial, sans-serif;">~~nav_week_end_day_yesterday~~</span>&nbsp;, did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;plant, maintain or harvest any crops, vegetables or fruits?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>R02.</b> In the last seven days, did ~~get_you_name()~~ plant, maintain or harvest any crops, vegetables or fruits?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
-            <b>R02.&nbsp;&nbsp;</b>Sabata yajumpha, kwamba , kasi ~~XDEM_NAME~~&nbsp;mukapanda, kupwererera panyakhe kuvuna mbuto yiliyose, mphangwe panyakhe vipaso?<p></p>
+            <b>R02.&nbsp;&nbsp;</b><span style="font-family: Arial, sans-serif;">Mu madazi ghankhonde na ghawiri agho ghajumpha, kasi</span>&nbsp;~~XDEM_NAME~~&nbsp;mukapanda, kupwererera panyakhe kuvuna mbuto yiliyose, mphangwe panyakhe vipaso?<p></p>
           YA: |
-            <b>R02.&nbsp;</b>Mlungu umasile kutandira ~~nav_week_start_day~~ mpaka&nbsp; ~~nav_week_end_day_yesterday~~, ana&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wapandile, kusamalira kapena gowola mbeju silisyose, maponda kapena ipaso?<p></p>
+            <b>R02.&nbsp;</b><span style="font-family: Arial, sans-serif;">Masiku nsanu ni gawiri gapitega, ana</span>&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;wapandile, kusamalira kapena gowola mbeju silisyose, maponda kapena ipaso?<p></p>
   - name: INDIVIDUALLFS_DICT.OPC_HPROD
     conditions:
       - questionText:
@@ -2532,10 +2579,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>T01.&nbsp;</b>M'sabata yapitayi, kodi&nbsp;<span style="font-family: Arial, sans-serif;"><b>~~XDEM_NAME~~</b></span>&nbsp;anagwira ntchito inailiyonse yomanga, kukonza kapena kuonjezera nyumba yapabanja pano kapena kuthandiza mmodzi wapabanja pano ndi ntchito yofanana ndi zimenezi?</p><p></p><p></p>
+            <p><b>T01.&nbsp;</b>Mmatsiku asanu ndi awiri apitawa, kodi&nbsp;<span style="font-family: Arial, sans-serif;"><b>~~XDEM_NAME~~</b></span>&nbsp;anagwira ntchito inailiyonse yomanga, kukonza kapena kuonjezera nyumba yapabanja pano kapena kuthandiza mmodzi wapabanja pano ndi ntchito yofanana ndi zimenezi?</p><p></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>T01. </b>In the last seven days, did<b>&nbsp;</b><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><b>&nbsp;</b>do any construction work to build, renovate or extend the family home or help a family member with similar work?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>T01.</b> In the last seven days, did ~~get_you_name()~~ do any construction work to build, renovate or extend the family home or help a family member with similar work?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>T01.&nbsp;</b>Sabata yajumpha, kasi&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;mukatorapo nyengo yiliyose pakupanga katundu wakugwiriska ntchito panyumba pinu panyakhe pa banja nga ni [mphasa, mabasiketi, katundu wa mnyumba na vyakuvwara,....]?<p></p>
           YA: |
@@ -2546,8 +2592,7 @@ questions:
           CH: |
             <p><b>T02.&nbsp;</b>Kodi ndi maola angati amene&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>&nbsp;anagwira ntchito zimenezi m'sabata yapitayi?</p><p></p><p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>T02.&nbsp;</b>How many hours did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend doing this last week?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>T02. </b>How many hours did ~~get_you_name()~~ spend doing this last week?<br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>T02.&nbsp;</b>Kasi ni maola ghalinga agho&nbsp;<b style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</b>mukatora pakugwira ntchito izi musabata yajumpha?<p></p>
           YA: |
@@ -2556,10 +2601,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>U01.&nbsp;</b>M'sabata yapitayi, kodi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anagwira ntchito yopanga katundu wogwiritsa ntchito pa khomo&nbsp; kapena pabanja panu monga [mphasa/mikeka, basiketi, katundu wa m'nyumba, zovala....]?&nbsp;&nbsp;</p><p></p><p></p>
+            <b>U01.</b>&nbsp;Mmatsiku asanu ndi awiri apitawa,, kodi ~~XDEM_NAME~~ anagwira ntchito yopanga katundu wogwiritsa ntchito pa khomo&nbsp; kapena pabanja panu monga [mphasa/mikeka, basiketi, katundu wa m'nyumba, zovala....]?&nbsp;
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><span class="fontstyle1"><b>U01.&nbsp;</b>Last week, did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend any time making goods for use by your household or family such as </span><span class="fontstyle1" style="color: rgb(0, 112, 192);">[mats, baskets, furniture, clothing,..]</span><span class="fontstyle1">?</span><br></p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>U01.</b> Last week, did ~~get_you_name()~~ spend any time making goods for use by your household or family such as [mats, baskets, furniture, clothing,..]?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>U01.&nbsp;</b>Sabata yajumpha, kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukatorapo nyengo yiliyose pakupanga katundu wakugwiriska ntchito panyumba pinu panyakhe pa banja nga ni [mphasa, mabasiketi, katundu wa mnyumba na vyakuvwara,....]?<p></p>
           YA: |
@@ -2568,10 +2612,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>U02.&nbsp;</b>Kodi ndi maola angati amene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;&nbsp;anagwira ntchito zimenezi m'sabata yapitayi?<br></p><p></p><p></p>
+            <b>U02. </b>Kodi ndi maola angati amene ~~XDEM_NAME~~&nbsp; anagwira ntchito zimenezi m'sabata yapitayi?
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>U02.&nbsp;</b>How many hours did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend on these activities last week?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>U02.</b> How many hours did ~~get_you_name()~~ spend on these activities last week?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><b>U02. </b>Kasi ni maola ghalinga agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~&nbsp;</span>&nbsp;mukatora pakugwira ntchito izi musabata yajumpha?</p></td></tr></tbody></table><p></p>
           YA: |
@@ -2580,10 +2623,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>V01.</b> M'sabata yapitayi, kodi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anatunga madzi kuchokera ku kumalo kumene anthu ambiri amatungako madzi wogwiritsa ntchito pa khomo kapena pa banja panu?&nbsp;
+            <b>V01.</b>&nbsp;Mmatsiku asanu ndi awiri apitawa,, kodi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anatunga madzi kuchokera ku kumalo kumene anthu ambiri amatungako madzi wogwiritsa ntchito pa khomo kapena pa banja panu?&nbsp;
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>V01.&nbsp;</b>Last week, did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;fetch water from natural or public sources for use by your household or family?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>V01.</b> Last week, did ~~get_you_name()~~ fetch water from natural or public sources for use by your household or family?<br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>V01.</b>&nbsp;Sabata yajumpha, kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukatekako maji ghakugwiriska ntchito panyumba pinu panyakhe pa banja linu kufuma ku mulonga panyakhe kumalo agho wanthu wanandi wakutekako maji ?<p></p>
           YA: |
@@ -2594,8 +2636,7 @@ questions:
           CH: |
             <b>V02.</b> Kodi ndi maola angati amene ~~XDEM_NAME~~ anatenga potunga m'sabata yapitayi?<p></p>
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>V02.&nbsp;</b>How many hours did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend fetching water last week?</p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>V02.</b> How many hours did ~~get_you_name()~~ spend fetching water last week?<br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>V02.</b>&nbsp;Kasi ni maola ghalinga agho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukatora pakuteka maji musabata yajumpha?<p></p>
           YA: |
@@ -2604,10 +2645,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>W01.&nbsp;</b>M'sabata yapitayi, kodi&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;anatunga madzi kuchokera ku kumalo kumene anthu ambiri amatungako madzi wogwiritsa ntchito pa khomo kapena pa banja panu?</p><p></p><p></p>
+            <b>W01.&nbsp;</b>Mmatsiku asanu ndi awiri apitawa,&nbsp;kodi&nbsp; ~~XDEM_NAME~~ anatunga madzi kuchokera ku kumalo kumene anthu ambiri amatungako madzi wogwiritsa ntchito pa khomo kapena pa banja panu?
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>W01.&nbsp;</b><span class="fontstyle1">Last week, did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;collect any firewood </span><span class="fontstyle1" style="color: rgb(0, 112, 192);">[or other natural products] </span><span class="fontstyle1">for use as fuel by your household or family?</span></p></td></tr></tbody></table> 
-            <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
+            <b>W01.</b> Last week, did ~~get_you_name()~~ collect any firewood [or other natural products] for use as fuel by your household or family?<br><br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><b>W01.&nbsp;</b>Sabata yajumpha, kasi&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;mukathezako nkhuni zilizose&nbsp; [panyakhe vinthu vinyakhe vyakuphikira vya muthondo] zakugwiriska ntchito panyumba pinu panyakhe pa banja linu?</p></td></tr></tbody></table><p></p>
           YA: |
@@ -2616,9 +2656,9 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>W02. </b>M'sabata yapitayi, kodi ndi maola angati amene ~~XDEM_NAME~~ anakatola nkhuni [ kapena zinthu zina zachilengedwe]?
+            <b>W02.&nbsp;</b>Mmatsiku asanu ndi awiri apitawa,, kodi ndi maola angati amene ~~XDEM_NAME~~ anakatola nkhuni [ kapena zinthu zina zachilengedwe]?
           EN: |
-            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>W02.&nbsp;</b><span class="fontstyle1">Last week, how many hours did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend collecting firewood </span><span class="fontstyle1" style="color: rgb(0, 112, 192);">[or other natural products]</span><span class="fontstyle1">?</span></p></td></tr></tbody></table> 
+            <table class="NormalTable"><tbody><tr><td width="200" style="border-left-style:none;border-bottom-style:none;border-right-style:none;border-top-style:none;"><p><b>W02.&nbsp;</b><span class="fontstyle1">In the last seven days, how many hours did&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span>&nbsp;spend collecting firewood </span><span class="fontstyle1" style="color: rgb(0, 112, 192);">[or other natural products]</span><span class="fontstyle1">?</span></p></td></tr></tbody></table> 
             <br style="font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;"><p></p>
           TU: |
             <b>W02.&nbsp;</b><b>&nbsp;</b>Musabata yajumpha, kasi ni maola ghalinga agho&nbsp;&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;&nbsp;mukatora pakutheza nkhuni [panyakhe vinthu vinyakhe vyakuphikira vya muthondo]?<p></p>
@@ -2741,13 +2781,24 @@ questions:
             <b>TVT11</b>. If your job is not closely related to your course of training, why did you choose this employment?&nbsp;<p></p>
           TU: |
             <b>TVT11.</b> Usange ntchito iyi yikukoleranako na padoko wuwo yayi na masambiro agho muli kupanga, kasi ntchifukwa uli mukasankha ntchito iyi? Mazgolo ghanandi ngakuzomerezgeka<p></p>
+  - name: INDIVIDUALLFS_DICT.IND_END_TIME
+    conditions:
+      - questionText:
+          CH: |
+            <i style="color: rgb(0, 0, 255);">End time</i><p></p>
+          EN: |
+            <font color="#0000ff"><i>End time</i></font><p></p>
+          TU: |
+            <i style="color: rgb(0, 0, 255);">End time</i><p></p>
+          YA: |
+            <i style="color: rgb(0, 0, 255);">End time</i><p></p>
   - name: INDIVIDUALLFS_DICT.INDIVEND
     conditions:
       - questionText:
           CH: |
             <p></p><div><i><font color="#0000ff">Result of interview</font></i><br></div>
           EN: |
-            <i><font color="#0000ff">Result of interview</font></i><p></p>
+            <p><i><font color="#0000ff">Result of interview</font></i></p><p><p></p></p>
           TU: |
             <i><font color="#0000ff">Result of interview</font></i><p></p>
           YA: |

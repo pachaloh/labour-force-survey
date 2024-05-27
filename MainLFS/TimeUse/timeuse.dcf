@@ -1,6 +1,6 @@
 ﻿[Dictionary]
 Version=CSPro 7.7
-Label=Time Use Survey (AA)
+Label=LFS Time Use Survey (AA)
 Name=TIMEUSE_DICT_A
 RecordTypeStart=1
 RecordTypeLen=1
