@@ -1,4 +1,4 @@
-﻿Cluster 1001: Chitipa, TA Mwabulambya (0021)
+﻿Cluster 0001: Chitipa, TA Mwabulambya (0019)
 -------------------------------------------
 
 Summary Status of Progress for each Staff
@@ -6,29 +6,24 @@ Summary Status of Progress for each Staff
 
 01. CHISOMO SINGANO                                    
 ---- --- --- ------------
-01. 100101:Head Name 1001-1                                   (NOT VISITED)
-02. 100102:Head Name 1001-2                                   (NOT VISITED)
-04. 100104:Head Name 1001-4                                   (NOT VISITED)
+02. 000102:HILLEN MLUNGU                                      (NOT VISITED)
+04. 000104:HAWARD KAPENDA                                     (NOT VISITED)
+05. 000105:LOYCE SIBALE                                       (NOT VISITED)
+06. 000106:MOSES MTAMBO                                       (NOT VISITED)
+07. 000107:LINESS MWIBA                                       (NOT VISITED)
 ----------------------------------------
 
 02. PACHALO CHIZALA                                    
 ---- --- --- ------------
-03. 100103:Head Name 1001-3             (COMPLETED)
-    Individual. 01.PACHALO CHIZALA                                    (PARTIALLY SAVED)
-    Individual. 02.MARTHA CHIZALA                                     (NOT INTERVIEWED)
-    Child. 01.PACHALO CHIZALA                                   (16) (NOT INTERVIEWED)
-    Child. 01.PACHALO CHIZALA                                   (16) (NOT INTERVIEWED)
-    Child. 02.MARTHA CHIZALA                                    (26) (NOT INTERVIEWED)
-05. 100105:Head Name 1001-5             (PARTIALLY SAVED)
-    Individual. 01.HEAD                                               (NOT INTERVIEWED)
-    Child. 01.HEAD                                              (36) (NOT INTERVIEWED)
-06. 100106:Head Name 1001-6                                   (NOT VISITED)
-07. 100107:Head Name 1001-7                                   (NOT VISITED)
+01. 000101:LINESS MWIBA                 (PARTIALLY SAVED)
+03. 000103:ALEX SIMFUKKWE                                     (NOT VISITED)
+08. 000108:AUGUSTIN MUNKHONDIA                                (NOT VISITED)
+09. 000109:RHODA NYONDO                                       (NOT VISITED)
 ----------------------------------------
 
-Cluster Incomplete- 1 of 27 done- (3.70% Complete)
+Cluster Incomplete- 0 of 30 done- (0.00% Complete)
            Completed  Partial    New     Total
-Household:      1        1        5        7    
-Ind      :      0        1        2        3    
-Child    :      0        0        1        1    
-TimeUse  :      0        0        3        3    
+Household:      0        1        8        9    
+Ind      :      0        0        0        0    
+Child    :      0        0        0        0    
+TimeUse  :      0        0        0        0    

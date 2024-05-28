@@ -23,8 +23,7 @@ file reportfile;
 //Function to be included in the Report function. It just tells w
 function EligibleMembersReport(string CurrentCase)
 	numeric index = 1;
-	//filewrite(reportfile, "");	
-	//Eligible individuals in the household
+
 	do numeric counter = 1 while counter <= GHHHSIZE 								
 		if DEM_06(counter) in 15:64 then
 			if loadcase(INDIVIDUALLFS_DICT,CurrentCase,edit("99",PPNO(counter))) and INDIVEND <> notappl then 
@@ -170,7 +169,7 @@ function ClusterInterviewsProgressReport()
 //########################### EDITS ########################################################################
 	loadcase(CLUSTERS_DICT);
 	NoHHsinCluster = countcases(HH_DATABASE_DICT where HH_CLUSTER = MCLUSTER);
-	errmsg("HHinCluster: %d", NoHHsinCluster);
+	//errmsg("HHinCluster: %d", NoHHsinCluster);
 	numeric AllComplete = HouseholdCompleteCount + IndividualCompleteCount + ChildCompleteCount + TimeuseCompleteCount;
 	numeric AllPartial = IndividualPartialCount + ChildPartialCount + TimeusePartialCount;
 	numeric AllNew = IndividualNewCount + ChildNewCount + TimeuseNewCount;
@@ -201,6 +200,8 @@ function ClusterInterviewsProgressReport()
 	totalInterviews	= TimeuseCompleteCount+TimeusePartialCount+TimeuseNewCount;
 	filewrite(reportfile, "TimeUse  :      %-8d %-8d %-8d %-5d",
 		TimeuseCompleteCount,TimeusePartialCount,TimeuseNewCount,totalInterviews);
+		
+	
 	
 	{
 	filewrite(reportfile, "Household:      %d     %d      %d",HouseholdCompleteCount,HouseholdPartialCount,HouseholdNewCount);

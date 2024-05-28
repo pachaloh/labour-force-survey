@@ -2,7 +2,7 @@
 Version=CSPro 7.7
 AppType=Entry
 [DataEntryInit]
-Key=10017b5166e2-ef49-436e-9082-8d2f74af2f1903
+Key=00017b5166e2-ef49-436e-9082-8d2f74af2f19DE
 StartMode=Add
 Lock=CaseListing
 ShowInApplicationListing=Never
@@ -15,8 +15,8 @@ CLUSTERS_DICT=../Lookups/clusters.csdb
 DETAILED_FIELD_CODES_DICT=../Lookups/Detailed_field_of_study.csdb
 NARROW_FIELD_CODES_DICT=../Lookups/Narrow_field_of_study.csdb
 [Parameters]
-CLUSTER=1001
-GHHHNO=03
+CLUSTER=0001
+GHHHNO=DE
 GHINTID=7b5166e2-ef49-436e-9082-8d2f74af2f19
 GHINTNAME=PACHALO CHIZALA
 OnExit=../Menu/MenuLFS.pff

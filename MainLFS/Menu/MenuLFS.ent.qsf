@@ -1,6 +1,6 @@
 ﻿---
 fileType: Question Text
-version: CSPro 7.7
+version: CSPro 8.0
 languages:
   - name: EN
     label: English
@@ -97,9 +97,13 @@ questions:
             Enter name of your team member<p></p>
   - name: MENULFS_DICT.ASSIGN_HH
     conditions:
+      - logic: LOGIN <> "1"
+        questionText:
+          EN: |
+            Assign households to&nbsp;<b>~~getlabel(MANAGE_TASKS,MANAGE_TASKS)~~</b>&nbsp;for cluster number <font color="#ff0000">~~edit("999",MCLUSTER)~~</font><p></p>
       - questionText:
           EN: |
-            Assign households to&nbsp;<b>~~getlabel(MANAGE_TASKS,MANAGE_TASKS)~~</b><p></p>
+            Assign households to&nbsp;<b>~~getlabel(MANAGE_TASKS,MANAGE_TASKS)~~</b>&nbsp;for cluster number&nbsp;<font color="#ff0000">~~edit("999",SUP_CLUSTER)~~</font><p></p>
   - name: MENULFS_DICT.REM_HH
     conditions:
       - questionText:

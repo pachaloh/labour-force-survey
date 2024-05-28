@@ -5,17 +5,118 @@ string  tempSupID; 		//Temporary supervisor ID
 numeric edit_option;	//
 string  PersonID; 		// Person's line number
 
-array string completed_households(30,7);
+list string months = "Jan","Feb","Mar","Apr","May","Jun" ,"July","Aug","Sep","Oct","Nov","Dec";
+numeric pubdate,pubDay,pubMonth,pubYear,pubHour,pubMin;
 
-function assigned_tasks_report(numeric team_id_number)
-	forcase ASSIGNED_HHS_DICT where ACLUSTER = team_id_number do
-		
-	endfor;
+string survey_year = "2024";
+string capi_pub_date ;
+
+
+function string FormatPubDate()	
+	pubdate = publishdate();
+	pubDay = ((pubdate / 1000000) % 100);
+	pubMonth = ((pubdate / 100000000) % 100);
+	pubYear = int(pubdate / 10000000000);
+	pubHour = ((pubdate / 10000) % 100);
+	pubMin = ((pubdate / 100) % 100);
+    FormatPubDate = maketext("%d-%s-%d: %02d:%02d", pubDay, months(pubMonth), pubYear, pubHour, pubMin);
 end;
 
-function completed_iterviews(numeric work_cluster)
+
+array string completed_households(30,7);
+
+string member_alphabet = "ABCDEFGHIJKLMNOPQRST";
+
+function sup_assigned_tasks_report()
+	numeric tm_ctr = 1;
+	numeric hh_ctr = 1;
+	forcase TEAMS_DICT where TEAM_ID = TEAMNO do
+		
+			completed_households(hh_ctr,1) = member_alphabet[tm_ctr:1];
+			completed_households(hh_ctr,2) = "";
+			completed_households(hh_ctr,3) = INTRV_NAME;
+			completed_households(hh_ctr,4) = "";
+		
+		//errmsg("User id: %s",INTRV_NAME);
+		forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = USER_CODE do
+		
+			hh_ctr = hh_ctr + 1;
+			completed_households(hh_ctr,1) = edit("99",AHH_NO);
+			completed_households(hh_ctr,2) = AHH_NAME;
+			completed_households(hh_ctr,3) = AHH_LABEL;
+			completed_households(hh_ctr,4) = AHH_DESC;
+			
+			//hh_ctr = hh_ctr + 1;
+		endfor;
+		
+		tm_ctr = tm_ctr + 1;
+	endfor;
+	
+	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	
+	showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION"));
+
+end;
+
+
+
+
+function interviewer_assigned_tasks_report()
+	numeric hh_ctr = 1;
+	
+		forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do
+		
+			completed_households(hh_ctr,1) = edit("99",AHH_NO);
+			completed_households(hh_ctr,2) = AHH_NAME;
+			completed_households(hh_ctr,3) = AHH_LABEL;
+			completed_households(hh_ctr,4) = AHH_DESC;
+			
+			hh_ctr = hh_ctr + 1;
+		endfor;
+		
+	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	
+	showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION"));
+
+end;
+
+
+
+
+function interviewer_assigned_tasks_report_assigned()
+	numeric hh_ctr = 1;
+	
+		forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do
+		
+			completed_households(hh_ctr,1) = edit("99",AHH_NO);
+			completed_households(hh_ctr,2) = AHH_NAME;
+			completed_households(hh_ctr,3) = AHH_LABEL;
+			completed_households(hh_ctr,4) = AHH_DESC;
+			
+			loadcase(HOUSEHOLDLFS_DICT,maketext("%v%v%v",edit("9999",MCLUSTER),LOGIN,edit("99",AHH_NO)));
+			
+			if HH_CONCLUSION in 1:9 then
+				errmsg("1 thru 9");
+				completed_households(hh_ctr,5) = "COMPLETE";
+			else
+				errmsg("lokanidwa");
+				completed_households(hh_ctr,5) = "PARTIAL";
+			endif;
+			
+			hh_ctr = hh_ctr + 1;
+		endfor;
+		
+	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	
+	showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION","RESULT"));
+
+end;
+
+
+
+function completed_iterviews()
 	numeric ctr = 1;
-	forcase HOUSEHOLDLFS_DICT where CLUSTER = work_cluster do
+	forcase HOUSEHOLDLFS_DICT where CLUSTER = MCLUSTER do
 			completed_households(ctr,1) = edit("99",GHHHNO);
 			completed_households(ctr,2) = DEM_NAME(1);
 			completed_households(ctr,3) = "";
@@ -27,19 +128,6 @@ function completed_iterviews(numeric work_cluster)
 			completed_households(hh_ctr,3) = DEM_NAME(hh_ctr);
 			completed_households(hh_ctr,4) = edit("99",XHMPPNO);
 		enddo;
-
-		{forcase INDIVIDUALLFS_DICT where XCLUSTER = work_cluster and GHINTCODE = GHINTID and XGHHHNO = GHHHNO do
-			{completed_households(ctr,1) = edit("99",GHHHNO);
-			completed_households(ctr,2) = DEM_NAME(1);
-			completed_households(ctr,3) = DEM_NAME(ctr);
-			completed_households(ctr,4) = edit("99",XHMPPNO);}
-			
-			if INDIVEND = 1 then
-				completed_households(ctr,5) = getlabel(INDIVEND,INDIVEND);
-			endif;
-			
-			ctr = ctr + 1;
-		endfor;}
 
 	endfor;
 	
@@ -72,8 +160,8 @@ end;
 //Funtion to identify eligible members
 function eligibles(valueset string eligible_persons, valueset string eligible_child, valueset string eligible_timeuse)
 	//Loop through household data files and identify eligible members
-	forcase HOUSEHOLDLFS_DICT where CLUSTER = MCLUSTER and GHINTID = LOGIN do   //Fix a household
-		do numeric member_index = 1 while member_index <= GHHHSIZE				//Loop through members of the household
+	forcase HOUSEHOLDLFS_DICT where CLUSTER = MCLUSTER and GHINTID = LOGIN do   					//Fix a household
+		do numeric member_index = 1 while member_index <= GHHHSIZE									//Loop through members of the household
 			if DEM_06(member_index) in 15:64 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
 				
 				eligible_persons.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
@@ -938,13 +1026,14 @@ postproc
 		reenter;
 	elseif $ = 6 then
 		//ClusterInterviewsProgressReport();	//View assigned households
+		sup_assigned_tasks_report();
 		reenter;
 	elseif $ = 7 then
 		ClusterInterviewsProgressReport();
 		//completed_iterviews(MCLUSTER);
 		reenter;
 	elseif $ = 8 then
-		reenter MCLUSTER;
+		move MCLUSTER;
 	elseif $ = 9 then
 		savesetting("teamno", "");
 		savesetting("login", "");
@@ -1195,6 +1284,12 @@ postproc
 		INTERVIEWER_ID = MANAGE_TASKS;		//Interviewer ID
 		AHH_NO         = $;					//Household number
 		AHH_NAME       = getlabel($,$);		//Name of household head
+		
+		if loadcase(HH_DATABASE_DICT,maketext("%v%v",edit("9999",workCluster),edit("99",$))) then
+			AHH_LABEL = HH_LABEL;
+			AHH_DESC  = DESCRIPTION;
+		endif;
+		
 		TIME_ASSIGNED  = timestamp();		//Time created
 		
 		//hh_tasks();
@@ -1320,10 +1415,7 @@ postproc
 		elseif $ = 4 then
 			skip to TIME_USE_SURVEY;	
 		elseif $ = 5 then
-			syncWithSupervisor();
-			reenter;
-		elseif $ = 5 then
-			//	
+			interviewer_assigned_tasks_report();	
 		elseif $ = 6 then
 			reenter MCLUSTER;	
 		elseif $ = 9 then				//Logout
@@ -1341,75 +1433,7 @@ postproc
 PROC INTERVIEW_HH
 
 onfocus
-{	
-	valueset string interv_hh;
-	
-	//Loop through already assigned households for a specific interviewer
-	forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do 
-				interv_hh.add(AHH_NAME,maketext("%v%v",MCLUSTER,AHH_NO));
-	endfor;
-	
-	//setvalueset($,interv_hh);
-	
-	
-	
-	numeric nextEntry = 1, sumCheck;
-	valueset string households;
-	
-	list string workingHHs; 					//To hold a list of opened households (case ids)
-	list string assignedHHs; 					//To hold a list of assigned households (case ids)
 
-	
-	//Keep a list of household numbers (case ids) for a specified cluster in workingHHs
-	keylist(HOUSEHOLDLFS_DICT(startswith,maketext("%v",CLUSTER)), workingHHs);
-	keylist(ASSIGNED_HHS_DICT(startswith,maketext("%v",CLUSTER)), assignedHHs);		//Filling in the household numbers (case ids) 
-
-	//Populate and display households of a specific cluster assigned to a specific interviewer
-	{forcase ASSIGNMENTS_DICT(CaseStatus.Partial) where HCLUSTER = TASK_CLUSTER and LOGIN = INTERVIEWER_ID do}
-	
-	forcase ASSIGNED_HHS_DICT where CLUSTER = ACLUSTER and LOGIN = INTERVIEWER_ID do
-		
-		sumCheck = 0; //Set to restart counting for a different assigned household
-		 
-		do numeric hh_index = 1 while hh_index <=  workingHHs.length()
-		
-			//If a household was opened (exists in the HH dictionary) , check if it completed or partially saved
-			errmsg("Assigned: %s, Opened: %s",assignedHHs(nextEntry),workingHHs(hh_index));
-			if assignedHHs(nextEntry) = workingHHs(hh_index) then
-				
-				errmsg("Assigned: %s equal to Opened: %s",assignedHHs(nextEntry),workingHHs(hh_index));
-				loadcase(HOUSEHOLDLFS_DICT,workingHHs(hh_index));
-					if HH_INTRODUCTION in 1:9 then
-					
-						households.add(maketext("%-25s (COMPLETED)",AHH_NAME),maketext("%v%v",ACLUSTER,AHH_NO));
-						nextEntry = nextEntry + 1;	
-						break;
-					elseif HH_INTRODUCTION = notappl then
-						
-						{errmsg("Partial: %d. Assignment(%s):%d. Household(%s)",nextEntry, assignedHHs(nextEntry),hh_index, workingHHs(hh_index));}
-						households.add(maketext("%v (PARTIALLY SAVED)",AHH_NAME),maketext("%v%v",ACLUSTER,AHH_NO));
-						nextEntry = nextEntry + 1;	
-						break;
-					endif;
-				
-			else
-			
-				sumCheck = sumCheck + 1;	//
-				//errmsg("sumCheck = %d, Number of HHs %d",sumCheck,workingHHs.length())
-			endif;
-			
-
-		enddo;
-		
-		if sumCheck = workingHHs.length() then
-			//inc(HouseholdCompleteCount);
-			households.add(maketext("%v (NOT VISITED)",AHH_NAME),maketext("%v%v",ACLUSTER,AHH_NO));
-			nextEntry = nextEntry + 1;
-		endif;
-		
-		
-	endfor;
-}
 
 	valueset string households;
 		
