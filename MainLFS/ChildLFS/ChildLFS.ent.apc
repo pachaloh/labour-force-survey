@@ -344,8 +344,9 @@ preproc
 
 postproc
 
-	if A5 <> (sysdate("YYYY") - A4_YOB) then
-		errmsg("The entered age is inconsistent with the year and month provided..")
+	if A5 = (sysdate("YYYY") - A4_YOB) or A5 = ((sysdate("YYYY") - A4_YOB) -1) then
+	else
+		errmsg("The entered age is inconsistent! Correct age is %d or %d",(sysdate("YYYY") - A4_YOB),((sysdate("YYYY") - A4_YOB) -1))
 			select("No, reenter Year",A4_YOB,
 				   "No, reenter Month",A4_MOB,
 				   "Reenter age",reenter);

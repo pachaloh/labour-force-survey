@@ -5,6 +5,9 @@ string  tempSupID; 		//Temporary supervisor ID
 numeric edit_option;	//
 string  PersonID; 		// Person's line number
 
+
+map lfs_hh_map;
+
 list string months = "Jan","Feb","Mar","Apr","May","Jun" ,"July","Aug","Sep","Oct","Nov","Dec";
 numeric pubdate,pubDay,pubMonth,pubYear,pubHour,pubMin;
 
@@ -27,7 +30,9 @@ array string completed_households(30,7);
 
 string member_alphabet = "ABCDEFGHIJKLMNOPQRST";
 
+
 function sup_assigned_tasks_report()
+	completed_households.clear();
 	numeric tm_ctr = 1;
 	numeric hh_ctr = 1;
 	forcase TEAMS_DICT where TEAM_ID = TEAMNO do
@@ -62,6 +67,7 @@ end;
 
 
 function interviewer_assigned_tasks_report()
+	completed_households.clear();
 	numeric hh_ctr = 1;
 	
 		forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do
@@ -84,6 +90,7 @@ end;
 
 
 function interviewer_assigned_tasks_report_assigned()
+	completed_households.clear();
 	numeric hh_ctr = 1;
 	
 		forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do
@@ -168,18 +175,16 @@ function eligibles(valueset string eligible_persons, valueset string eligible_ch
 				
 			endif;
 			
-			if DEM_06(member_index) in 15:120 {and HH_CONCLUSION = 1} then								//Identify eligible (15-64) members
+			if DEM_06(member_index) in 15:120 and HH_CONCLUSION = 1 then								//Identify eligible (15-64) members
 				
 				eligible_timeuse.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
 				
 			endif;
 			
 			if DEM_06(member_index) in 5:17 and HH_CONCLUSION = 1 then
-				if DEM_06(member_index) in 5:17 then
 				
 					eligible_child.add(DEM_NAME(member_index),maketext("%v%v%v",CLUSTER,GHHHNO,HMPPNO(member_index)));
 
-				endif;
 			endif;
 		enddo;
 				
@@ -785,10 +790,11 @@ end;
 
 
 
-
-
-
 PROC MENULFS_FF
+
+preproc
+
+	capi_pub_date = FormatPubDate();
 
 PROC TEAMNO
 
@@ -904,7 +910,7 @@ postproc
 	if loadcase(CLUSTERS_DICT,$) then
 		//Ok: Cluster exists in the system
 	else
-		errmsg("Invalid cluster");
+		errmsg("Cluster does not exist in the system");
 		reenter;
 	endif;
 	
@@ -1086,8 +1092,13 @@ postproc
 			
 		elseif edit_option = 2 then
 			
-			if loadcase(TEAMS_DICT,TEAMNO,EDIT_MEMBERS) and MEMBER_ROLE = 1 then
+{			if loadcase(TEAMS_DICT,TEAMNO,EDIT_MEMBERS) and MEMBER_ROLE = 1 then
 				errmsg("You cannot delete a supervisor account");
+				reenter;
+			endif;
+}			
+			if EDIT_MEMBERS = LOGIN then
+				errmsg("You cannot delete your own supervisor account");
 				reenter;
 			endif;
 		
@@ -1396,8 +1407,8 @@ onfocus
 	endif;
 	
 		interviewer_menu.add("Sync data with supervisor",5);
-		interviewer_menu.add("View Assigned tasks",5);
-		interviewer_menu.add("Change cluster",6);
+		interviewer_menu.add("View Assigned tasks",6);
+		interviewer_menu.add("Change cluster",8);
 		interviewer_menu.add("Logout",9);
 	
 	setvalueset($,interviewer_menu);
@@ -1415,8 +1426,11 @@ postproc
 		elseif $ = 4 then
 			skip to TIME_USE_SURVEY;	
 		elseif $ = 5 then
-			interviewer_assigned_tasks_report();	
+			syncWithSupervisor();
 		elseif $ = 6 then
+			interviewer_assigned_tasks_report();
+			reenter;
+		elseif $ = 8 then
 			reenter MCLUSTER;	
 		elseif $ = 9 then				//Logout
 		
@@ -1442,6 +1456,41 @@ onfocus
 	setvalueset($,households);
 
 postproc
+	
+	//View a household on a map
+	numeric view_hh_wmap = accept("Would like to check the household on a map","Yes","No, continue");
+		
+		if view_hh_wmap = 1 then
+			loadcase(HH_DATABASE_DICT,maketext("%v%v",edit("9999",MCLUSTER),INTERVIEW_HH[41:2]));
+			
+			
+			if HH_LONG <> notappl or HH_LONG <> 0 or HH_LAT <> notappl or HH_LAT <> 0 then
+				errmsg("Warning! GPS coordinates (%d,%d) may not be accurate",HH_LONG,HH_LAT);
+				numeric hh_marker = lfs_hh_map.addMarker(HH_LAT,HH_LONG);
+				//lfs_hh_map.setMarkerText("Household");
+				
+				// Set marker popup text
+				lfs_hh_map.setMarkerDescription(hh_marker, getlabel(INTERVIEW_HH,INTERVIEW_HH));
+				// Show the map
+
+				lfs_hh_map.show();
+			else
+				errmsg("GPS coordinates not reliable");
+			endif;
+			
+			numeric launch_hh = accept("Proceed and open household","Yes","No");
+			
+			if launch_hh = 1 then
+			else
+				reenter;
+			endif;
+		else
+		
+		endif;
+		
+		
+
+
 
 	launchHousehold();
 	
@@ -1453,49 +1502,6 @@ onfocus
 	valueset string eligible_persons;
 	valueset string eligible_child;
 	valueset string eligible_timeuse;
-{	
-	eligibles(eligible_persons,eligible_child);
-
-	
-	setvalueset($,eligible_persons);
-}	
-{
-	numeric counter = 1, sumCheck, index = 1;
-	valueset string eligible_person;
-	
-	string PersonCaseId;
-
-	forcase HOUSEHOLDLFS_DICT(startswith,maketext("%v%v",MCLUSTER,LOGIN)) do 
-		do counter = 1 while counter <= GHHHSIZE 
-			
-			//If an eligible adult is found in household datafile, check if interviewed
-			if DEM_06(counter) in 15:64 {and HH_END in 1:9} then
-				
-				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
-				
-				//errmsg("Woman Case: %s", WomanCaseId);
-				
-				if loadcase(INDIVIDUALLFS_DICT,PersonCaseId) and INDIVEND <> notappl then
-	
-					eligible_person.add(maketext("%-25v (COMPLETED)",HMPPNO(counter)),PersonCaseId);
-				
-				elseif loadcase(INDIVIDUALLFS_DICT,PersonCaseId) and INDIVEND = notappl then
-					//caseCode(index) = maketext("%v%v%v%v",CLUSTER_NUMBER,INT_NO,HOUSEHOLD_NUMBER,edit("99",Q1(counter)));		
-
-					eligible_person.add(maketext("%-25v (PARTIAL)",HMPPNO(counter)),PersonCaseId);
-				
-				else
-
-					eligible_person.add(maketext("%-25v (NOT INTERVIEWED)",HMPPNO(counter)),PersonCaseId);
-				
-				endif;
-				
-				index = index + 1; 
-			endif;
-		
-		enddo;
-	endfor;	
-}
 
 
 	eligible_members(eligible_persons, eligible_child, eligible_timeuse);

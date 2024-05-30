@@ -4492,10 +4492,11 @@ preproc
 PROC INDIVEND
 
 onfocus
+{
 	if XDEM_AGE in 15:17 then
 		setvalueset($,INDIVEND_VS3);
 	endif;
-
+}
 postproc
 
 	if RSP_PPNO in 98, 99 and INDIVEND = 1 then

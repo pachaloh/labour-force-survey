@@ -59,18 +59,18 @@ function EligibleMembersReport(string CurrentCase)
 		endif;								
 	enddo;
 	
-	//Eligible children in the household  ####### TIMEUSE_DICT_A  ###  TUS_END ###
+	//Eligible individuals for time use in the household  ####### TIMEUSE_DICT_A  ###  TUS_END ###
 	do numeric counter = 1 while counter <= GHHHSIZE 								
 		if DEM_06(counter) > 15 then
 			if loadcase(TIMEUSE_DICT_A,CurrentCase) and TUS_END <> notappl then 
-				filewrite(reportfile, "    Child. %s.%s(%d) (COMPLETED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
+				filewrite(reportfile, "    Time. %s.%s(%d) (COMPLETED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
 				inc(TimeuseCompleteCount);
 			elseif loadcase(TIMEUSE_DICT_A,CurrentCase) and TUS_END = notappl then 
 				inc(TimeusePartialCount);
-				filewrite(reportfile, "    Child. %s.%s(%d) (PARTIALLY SAVED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
+				filewrite(reportfile, "    Time. %s.%s(%d) (PARTIALLY SAVED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
 			else
 				inc(TimeuseNewCount);
-				filewrite(reportfile, "    Child. %s.%s(%d) (NOT INTERVIEWED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
+				filewrite(reportfile, "    Time. %s.%s(%d) (NOT INTERVIEWED)",edit("99",PPNO(counter)),DEM_NAME(counter),DEM_06(counter));
 			endif;
 		endif;								
 	enddo;
@@ -102,7 +102,7 @@ function ClusterInterviewsProgressReport()
 	filewrite(reportfile, "-------------------------------------------");
 	filewrite(reportfile, "");
 	
-	//Assigned households and their corresponding Women and Biomarker questionnaires
+	//Assigned households and their corresponding individual, child and timeuse questionnaires
 	forcase TEAMS_DICT where TEAM_ID = TEAMNO do
 		userCheck = 0;
 		filewrite(reportfile,"%s. %s ",edit("99",nextEntry),INTRV_NAME);
@@ -201,13 +201,6 @@ function ClusterInterviewsProgressReport()
 	filewrite(reportfile, "TimeUse  :      %-8d %-8d %-8d %-5d",
 		TimeuseCompleteCount,TimeusePartialCount,TimeuseNewCount,totalInterviews);
 		
-	
-	
-	{
-	filewrite(reportfile, "Household:      %d     %d      %d",HouseholdCompleteCount,HouseholdPartialCount,HouseholdNewCount);
-	filewrite(reportfile, "Ind Woman:      %d     %d      %d",IndividualCompleteCount,IndividualPartialCount,IndividualNewCount);
-	filewrite(reportfile, "Biomarker:      %d     %d      %d",ChildCompleteCount,ChildPartialCount,ChildNewCount);
-	}
 	close(reportfile);
 	
 	if getos() = 20 then //Android
@@ -225,7 +218,7 @@ TimeuseCompleteCount = 0; TimeusePartialCount = 0; TimeuseNewCount = 0;
 end;
 
 
-
+{
 function NewClusterInterviewsProgressReport()
 	
 	list string workingHHs; 					//To hold a list of opened households (case ids)
@@ -361,3 +354,4 @@ ChildCompleteCount = 0; ChildPartialCount = 0; ChildNewCount = 0;
 
 
 end;
+}

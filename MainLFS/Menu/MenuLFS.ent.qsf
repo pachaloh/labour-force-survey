@@ -1,6 +1,6 @@
 ﻿---
 fileType: Question Text
-version: CSPro 8.0
+version: CSPro 7.7
 languages:
   - name: EN
     label: English
@@ -30,31 +30,26 @@ questions:
     conditions:
       - questionText:
           EN: |
-            <font color="#0000ff"><i>Enter your team number</i></font><p></p>
+            <div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#0000ff">National Statistical Office</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);"><br></span></div><div style="text-align: center;"><font color="#295218"><span style="font-size: 18px;"><b>Labour Force Survey</b></span><br></font></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#295218">(Malawi, ~~survey_year~~) &nbsp;</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px;">Enter your team number:</span></div><p></p>
   - name: MENULFS_DICT.LOGIN
     conditions:
       - questionText:
           EN: |
-            <i><font color="#0000ff">Select your username to login or start work as supervisor</font></i><p></p>
+            <div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#0000ff">National Statistical Office</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);"><br></span></div><div style="text-align: center;"><font color="#295218"><span style="font-size: 18px;"><b>Labour Force Survey</b></span><br></font></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#295218">(Malawi, ~~survey_year~~) &nbsp;</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px;">Select username or begin as supervisor:</span><br></div><p></p>
   - name: MENULFS_DICT.PASSCODE
     conditions:
       - logic: LOGIN = "1"
         questionText:
           EN: |
-            <i><font color="#0000ff">Enter supervisor passcode</font></i><p></p>
+            <div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#0000ff">National Statistical Office</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);"><br></span></div><div style="text-align: center;"><font color="#295218"><span style="font-size: 18px;"><b>Labour Force Survey</b></span><br></font></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#295218">(Malawi, ~~survey_year~~) &nbsp;</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px;">Enter systems passcode:</span></div><p></p>
       - questionText:
           EN: |
-            <i><font color="#0000ff">Enter your password</font></i><p></p>
+            <div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#0000ff">National Statistical Office</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px; color: rgb(0, 128, 255);"><br></span></div><div style="text-align: center;"><font color="#295218"><span style="font-size: 18px;"><b>Labour Force Survey</b></span><br></font></div><div style="font-size: 16px; text-align: center;"><span style="font-weight: bold; font-size: 18px;"><font color="#295218">(Malawi, ~~survey_year~~) &nbsp;</font></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);">(Publish Date: ~~capi_pub_date~~ )&nbsp;</span></div><div style="font-size: 16px; text-align: center;"><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px; text-align: start;"><b style="">~~getlabel(LOGIN,LOGIN)~~</b></span><span style="font-style: italic; font-size: 12px; color: rgb(0, 128, 255);"><br></span></div><div style="font-size: 16px; text-align: center;"><span style="font-size: 18px;">Enter your pincode:</span></div><p></p>
   - name: MENULFS_DICT.MCLUSTER
     conditions:
-      - logic: LOGIN <> "1"
-        questionText:
+      - questionText:
           EN: |
-            <p><i><font color="#0000ff">You are logged in as <b>~~getlabel(LOGIN,LOGIN)~~</b></font></i></p><p><i><font color="#0000ff">Specify cluster you are working on</font></i></p>
-      - logic: LOGIN = "1"
-        questionText:
-          EN: |
-            <p><i><font color="#0000ff">You are logged in as supervisor</font></i></p><p><i><font color="#0000ff">Specify cluster you are working on</font></i></p><p></p>
+            <span style="font-size: 16px;"><font color="#0000ff">Enter cluster number</font></span>
   - name: MENULFS_DICT.NAME_OF_SUP
     conditions:
       - questionText:
@@ -108,27 +103,32 @@ questions:
     conditions:
       - questionText:
           EN: |
-            Remove households from&nbsp; <b>~~getlabel(MANAGE_TASKS,MANAGE_TASKS)~~</b><p></p>
+            Remove households from&nbsp; <b>~~getlabel(MANAGE_TASKS,MANAGE_TASKS)~~&nbsp;</b>in cluster number&nbsp;<font color="#ff0000">~~edit("999",MCLUSTER)~~</font><p></p>
   - name: MENULFS_DICT.INTERV_MENU
     conditions:
       - questionText:
           EN: |
-            Select an option<p></p>
+            <p>Cluster: <b><font color="#ff0000">~~edit("999",MCLUSTER)~~</font></b></p><p>Select an option</p><p></p><p></p>
   - name: MENULFS_DICT.INTERVIEW_HH
     conditions:
       - questionText:
           EN: |
-            <font color="#0000ff"><i>Select a household to interview</i></font><p></p>
+            <font color="#0000ff"><i>Select a household to interview in cluster&nbsp;</i></font><b><font color="#ff0000"><i>~~edit("999",MCLUSTER)~~</i></font></b><p></p>
   - name: MENULFS_DICT.INTERVIEW_IN
     conditions:
       - questionText:
           EN: |
-            <font color="#0000ff"><i>Select an individual to interview</i></font><p></p>
+            <font color="#0000ff"><i>Select an individual to interview in cluster&nbsp;</i></font><b><font color="#ff0000"><i>~~edit("999",MCLUSTER)~~</i></font></b><p></p>
   - name: MENULFS_DICT.INTERVIEW_CHILD
     conditions:
       - questionText:
           EN: |
-            <font color="#0000ff"><i>Select a child to interview</i></font><p></p>
+            <font color="#0000ff"><i>Select a child to interview in&nbsp;</i></font><b><font color="#ff0000"><i>~~edit("999",MCLUSTER)~~</i></font></b><p></p>
+  - name: MENULFS_DICT.TIME_USE_SURVEY
+    conditions:
+      - questionText:
+          EN: |
+            <font color="#0000ff"><i>Enter individual for time use&nbsp;</i></font><b><font color="#ff0000"><i>~~edit("999",MCLUSTER)~~</i></font></b><p></p>
   - name: MENULFS_DICT.TEAM_NUMBER
     conditions:
       - questionText:

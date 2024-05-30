@@ -3,6 +3,12 @@ PROC GLOBAL
 
 PROC DELETEDATA_FF
 
+PROC DELETEDATA_ID
+
+if $ <> 135975 then
+	errmsg("Wrong password");
+	reenter;
+endif;
 PROC DEL_DATA
 
 onfocus

@@ -19,18 +19,18 @@ Name=DELETEDATA_LEVEL
 Label=deleteData Identification
 Name=DELETEDATA_ID
 Start=2
-Len=1
+Len=6
 DataType=Numeric
 
 [Record]
 Label=deleteData Record
 Name=DELETEDATA_REC
 RecordTypeValue='1'
-RecordLen=3
+RecordLen=8
 
 [Item]
 Label=Delete data
 Name=DEL_DATA
-Start=3
+Start=8
 Len=1
 DataType=Numeric

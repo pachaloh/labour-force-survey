@@ -295,7 +295,7 @@ ZeroFill=Yes
 [ValueSet]
 Label=Year of birth
 Name=DEM_05_VS1
-Value=1903:2023;Year
+Value=1903:2024;Year
 Value=9999;Don't Know
 Name=MISSING,Special
 
@@ -3209,6 +3209,9 @@ ZeroFill=Yes
 Label=Interview Conclusion (Households)
 Name=HH_REGULAR_CONCLUSION_VS
 Value=1;Conclude interview
+Value=5;Vacant structure
+Value=6;Structure destroyed
+Value=7;Refused
 Value=2;Review population section
 Value=3;Review dwelling characteristics section
 Value=4;Review emigration section

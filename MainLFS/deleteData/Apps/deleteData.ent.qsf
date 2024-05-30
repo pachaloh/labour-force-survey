@@ -26,5 +26,14 @@ styles:
     css: |
       font-family: Arial;font-size: 18px;
 questions:
-  []
+  - name: DELETEDATA_DICT.DEL_DATA
+    conditions:
+      - questionText:
+          EN: |
+            Select an option<p></p>
+  - name: DELETEDATA_DICT.DELETEDATA_ID
+    conditions:
+      - questionText:
+          EN: |
+            Enter password<p></p>
 ...

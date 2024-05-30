@@ -12,7 +12,7 @@ File=.\MenuLFS.dcf
 [Form]
 Name=FORM000
 Label=MenuLFS Level
-QuestionTextHeight=106
+QuestionTextHeight=186
 Level=1
 Size=706,226
   
@@ -72,6 +72,7 @@ Item=REM_HH
 [Form]
 Name=FORM006
 Label=Interviewer menu
+QuestionTextHeight=149
 Level=1
 Size=518,208
   

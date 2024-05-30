@@ -2051,8 +2051,14 @@ onfocus
 	//endif;
 
 postproc
-
-	if HH_CONCLUSION = 1 then
+	
+	if DEM_STR = 2 and HH_CONCLUSION = 1 then
+		errmsg("A mismatching option");
+		reenter;
+	endif;
+	
+	
+	if HH_CONCLUSION in 1,5,6,7 then
 		// the program will close after this field
 		HH_END_INTERVIEW_TIME = timestamp();
 
