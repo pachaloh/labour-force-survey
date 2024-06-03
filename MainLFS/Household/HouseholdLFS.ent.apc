@@ -842,6 +842,8 @@ postproc
 
 	// Capitalise the name of the interviewee
 	DEM_NAME = toupper(strip(DEM_NAME));
+	
+	
 
 
 PROC P_MORE_ROWS
@@ -1535,12 +1537,24 @@ preproc
 	valueset numeric eligible_for_time_use;
 	
 	do numeric ctr = 1 while ctr <= totocc(HMPPNO000)
-		if DEM_06(ctr) >= NWAP then
+	
+		//Restrict selection to only those available
+		string hh_member_name = maketext("Is %s available?",DEM_NAME(ctr));
+		numeric member_available = accept(hh_member_name,"Yes","No");
+		
+		if DEM_06(ctr) >= NWAP and member_available = 1 then
 			eligible_for_time_use.add(DEM_NAME(ctr),ctr)
 		endif;
 	enddo;
 	
-	$ = randomin(eligible_for_time_use);
+	//If (by mistake) none is specified as available, select the respondent for time use
+	if eligible_for_time_use.length() = 0 then
+		$ = HH_RESP_LN;
+	else
+		$ = randomin(eligible_for_time_use);
+	endif;
+	
+	//$ = randomin(eligible_for_time_use);
 	
 	errmsg("%v is selected for time use",DEM_NAME($));
 	

@@ -437,7 +437,7 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>X02.&nbsp;</b><br><p></p>
+            <b>X02.&nbsp;</b>Kodi malo amene mukagwirangako ntchito amadziwika ndi dzina lanji?<br><p></p>
           EN: |
             <b><span style="font-size: 24px;">X02.&nbsp;</span></b><span style="font-size: 24px; text-indent: 0in;">What is the name of workplace&nbsp;</span><span style="font-family: Arial, sans-serif;">~~get_you_name()~~</span><span style="font-size: 24px; text-indent: 0in;">&nbsp;ever worked for?</span><p class="MsoNormal" style="margin-top:0in;margin-right:0in;margin-bottom:0in;
             margin-left:.5in;text-indent:0in;line-height:107%"><o:p></o:p></p><p></p>
@@ -449,22 +449,22 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <b>X03.&nbsp;</b><p></p>
+            <b>X03.&nbsp;</b>Kodi&nbsp;<span style="font-family: Arial, sans-serif;"><b>~~X02~~</b>&nbsp;ndi...</span>?&nbsp;<p></p>
           EN: |
             <b>X03.&nbsp;</b>Is&nbsp;<span style="font-family: Arial, sans-serif;"><b>~~X02~~</b> a...</span>?&nbsp;<br><p></p>
           TU: |
             <b>X03. </b>Kasi&nbsp;<b style="font-family: Arial, sans-serif;">~~X02~~ .....</b><span style="font-family: Arial, sans-serif;">?</span><p></p>
           YA: |
-            <b>X03.</b> Ana ge maloga ga.....<p></p>
+            <b>X03.</b> Ana&nbsp;<b style="font-family: Arial, sans-serif;">~~X02~~</b><span style="font-family: Arial, sans-serif;">&nbsp;</span>ge maloga ga.....<p></p>
   - name: INDIVIDUALLFS_DICT.X04
     conditions:
       - questionText:
           CH: |
-            <b>X04.&nbsp;</b><p></p>
+            <b>X04.&nbsp;</b>&nbsp;Kodi ndi chifukwa chani kwenikweni chimene&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~ an</span>alekera ntchito?<p></p>
           EN: |
             <b>X04. </b>What was the main reason&nbsp;<span style="font-family: Arial, sans-serif;">~~get_you_name()~~&nbsp;</span>left your job&nbsp;<p></p>
           TU: |
-            <b>X04.&nbsp;</b>&nbsp;Kasi ntchifukwa wuli cheneko icho mukalekera ntchito?<p></p>
+            <b>X04.&nbsp;</b>&nbsp;Kasi ntchifukwa wuli cheneko icho&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~ wa</span>kalekera ntchito?<p></p>
           YA: |
             <b>X04. </b>Ana ligongo lisyesyene liwalechele masengo&nbsp;<span style="font-family: Arial, sans-serif;">~~XDEM_NAME~~</span>&nbsp;lyaliji chi?<p></p>
   - name: INDIVIDUALLFS_DICT.MJJ_MULT

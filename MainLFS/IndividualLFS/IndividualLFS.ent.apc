@@ -13,7 +13,7 @@ PROC GLOBAL
 }
 
 
-string ViewAllOccupationsSettingKey = "MPHC View All Occupations";
+string ViewAllOccupationsSettingKey = "View All Occupations";
 
 
 

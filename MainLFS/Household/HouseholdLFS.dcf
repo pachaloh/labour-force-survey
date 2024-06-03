@@ -3212,6 +3212,7 @@ Value=1;Conclude interview
 Value=5;Vacant structure
 Value=6;Structure destroyed
 Value=7;Refused
+Value=8;No household member for an extended period of time
 Value=2;Review population section
 Value=3;Review dwelling characteristics section
 Value=4;Review emigration section

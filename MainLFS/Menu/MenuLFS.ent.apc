@@ -193,8 +193,6 @@ end
 
 
 
-
-
 //Function that lists households per cluster for each interviewer and their status of progress
 function tasks_household (valueset string households)
 
@@ -342,57 +340,27 @@ end;
 
 
 function updateAppsCentralOffice()
-		numeric abortInd = 1;
-			// Download latest version of menu application
-		if abortInd = 1 and syncfile(GET, "/LabourForceSurvey2023/Menu/Menu.pen", "./Menu.pen") = 0 then
-			errmsg("Updating of Menu.pen failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
-		if abortInd = 1 and syncfile(GET, "/LabourForceSurvey2023/Menu/Menu.pff", "./Menu.pff") = 0 then
-			errmsg("Updating of Menu.pff failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
-		// Get latest household data entry programs
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/Household/Household.pen","./Household.pen") = 0 then
-			errmsg("Updating of Houseold.pen failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/Household/Household.pff","./Household.pff") = 0 then
-			errmsg("Updating of Houseold.pff failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
 
-		// Get latest Individual data entry programs
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/IndividualLFS/IndividualLFS.pen","./IndividualLFS.pen") = 0 then
-			errmsg("Updating of Woman.pen failed. Syncing aborted. Try again");
-			abortInd = 0;
+	if syncconnect(Dropbox) then
+	
+	// get the latest versions of the application files from the server
+		if syncapp() then
+			errmsg("Update successfully installed! Restart application!");
 		endif;
-		
-		
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/IndividualLFS/IndividualLFS.pff","./IndividualLFS.pff") = 0 then
-			errmsg("Updating of Woman.pff failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
+	syncdisconnect();
+	endif;
 
-		// Get latest Child data entry programs
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/ChildLFS/ChildLFS.pen","./ChildLFS.pen") = 0 then
-			errmsg("Updating of Biomarker.pen failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
-		
-		if abortInd = 1 and syncfile(GET, "LabourForceSurvey2023/ChildLFS/ChildLFS.pff","./ChildLFS.pff") = 0 then
-			errmsg("Updating of Biomarker.pff failed. Syncing aborted. Try again");
-			abortInd = 0;
-		endif;
+
 end;
 
 function updateApps()
-		
+	
+		if syncapp() then
+			errmsg("Update successfully installed! Restart application!");
+		endif;
+
+
+		{
 		numeric abortInd = 1;
 		
 		if abortInd = 1 and syncfile(GET, "./Menu.pen","./Menu.pen") = 0 then
@@ -433,6 +401,7 @@ function updateApps()
 			errmsg("Syncing of ChildLFS.pff failed. Syncing aborted");
 			abortInd = 0;
 		endif;
+		}
 end;
 
 
@@ -687,42 +656,17 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 			abortInd = 0;
 		endif;
 
+		if abortInd = 1 then
+			errmsg("Syncing of data files successfully completed!");
+			abortInd = 0;
+		endif;
 
-{
-		numeric upgradeAppsCentral = accept("Update Applications from Central Office?",
-									 "Yes, update",
-									 "Continue without updating");
-		if upgradeAppsCentral = 1 then 
-			
-			updateAppsCentralOffice();
-			
-		endif;		
-	}	
-		
-		{
-		// Download latest version of menu application
-		syncfile(GET, "LabourForceSurvey2023/Apps/Menu.pen", "./Menu.pen");
-		syncfile(GET, "LabourForceSurvey2023/Apps/Menu.pff", "./Menu.pen");
-		
-		// Get latest household, woman and biomarker data entry programs
-		syncfile(GET, "LabourForceSurvey2023/Apps/Household.pen","./Household.pen");
-		syncfile(GET, "LabourForceSurvey2023/Apps/Household.pff","./Household.pff");
-		
+{			
+		if syncapp() then
+			errmsg("Update successfully installed! Restart application!");
+		endif;
+}			
 
-		// Get latest Woman data entry programs
-		syncfile(GET, "LabourForceSurvey2023/Apps/Woman.pen","./Woman.pen");
-		syncfile(GET, "LabourForceSurvey2023/Apps/Woman.pff","./Woman.pff");
-		
-
-		// Get latest Biomarker data entry programs
-		syncfile(GET, "LabourForceSurvey2023/Apps/Biomarker.pen","./Biomarker.pen");
-		syncfile(GET, "LabourForceSurvey2023/Apps/Biomarker.pff","./Biomarker.pff");
-		}
-		//Send Cluster Progress Report
-		//syncfile(PUT, "LabourForceSurvey2023/Apps/Biomarker.pen","./Biomarker.pen");
-		
-		
-		// Disconnect from the server
 		syncdisconnect();
 	endif;
 end;
@@ -767,15 +711,11 @@ function syncWithSupervisor() //Funtion to transfer from interviewer to supervis
 		endif;
 		
 		
-{		numeric upgradeApps = accept("Update Applications from Supervisor?",
-									 "Yes, update",
-									 "Continue without updating");
-		if upgradeApps = 1 then 
+
 			
 			updateApps();
 			
-		endif;
-}		
+	
 		syncdisconnect();
 	endif;
 end;
@@ -826,6 +766,7 @@ onfocus
 
 	team_members_list(team_members);  //List team members
 	
+	team_members.add("Update programs from server ","3");
 	team_members.add("Transfer data with supervisor ","2");
 	team_members.add("Begin work as supervisor","1");
 	
@@ -849,6 +790,11 @@ postproc
 	
 	if $ = "2" then
 		syncWithSupervisor();
+		reenter;
+	endif;
+	
+	if $ = "3" then
+		updateAppsCentralOffice();
 		reenter;
 	endif;
 PROC PASSCODE

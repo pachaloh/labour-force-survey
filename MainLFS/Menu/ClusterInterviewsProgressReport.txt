@@ -1,29 +1,165 @@
-﻿Cluster 0001: Chitipa, TA Mwabulambya (0004)
+﻿Cluster 0620: Zomba City, Mpira Ward (0002)
 -------------------------------------------
 
 Summary Status of Progress for each Staff
 -------------------------------------------
 
-01. CHISOMO SINGANO                                    
+01. SANKHO BISIKA                                      
 ---- --- --- ------------
-02. 000102:HILLEN MLUNGU                                      (NOT VISITED)
-04. 000104:HAWARD KAPENDA                                     (NOT VISITED)
-05. 000105:LOYCE SIBALE                                       (NOT VISITED)
-06. 000106:MOSES MTAMBO                                       (NOT VISITED)
-07. 000107:LINESS MWIBA                                       (NOT VISITED)
+13. 062013:MASAUTSO MOFATI                                    (NOT VISITED)
+14. 062014:RONARD ELIA                                        (NOT VISITED)
+15. 062015:MERY KAMBENDERA                                    (NOT VISITED)
+16. 062016:KACHINGWE                                          (NOT VISITED)
+17. 062017:KACHINGWE                    (COMPLETED)
+    Individual. 01.PATRICK BONFACE MAKUPETE                           [53] (COMPLETED)
+    Individual. 02.FELISTER HENDERSON                                 [49] (COMPLETED)
+    Individual. 03.BONAFACE MAKUPETE                                  [24] (COMPLETED)
+    Individual. 04.ESSIME MAKUPETE                                    [24] (COMPLETED)
+    Individual. 05.MASTER MAKUPETE                                    [20] (COMPLETED)
+    Individual. 06.KEZIYA MAKUPETE                                    [21] (COMPLETED)
+    Individual. 07.BLESSINGS MAKUPETE                                 [18] (COMPLETED)
+
+    Child. 08.CHISOMO MAKUPETE                                  (14) (COMPLETED)
+    Child. 09.TEREZA MAKUPETE                                   (11) (COMPLETED)
+    Child. 10.ZAKIRA MOFFAT                                     (9) (COMPLETED)
+    Child. 11.SAKINA ANESI                                      (5) (COMPLETED)
+
+    Time. 03.BONAFACE MAKUPETE                                 (24) (PARTIALLY SAVED)
+
 ----------------------------------------
 
-02. PACHALO CHIZALA                                    
+02. QUEEN KADULIRA                                     
 ---- --- --- ------------
-01. 000101:LINESS MWIBA                 (PARTIALLY SAVED)
-03. 000103:ALEX SIMFUKKWE                                     (NOT VISITED)
-08. 000108:AUGUSTIN MUNKHONDIA                                (NOT VISITED)
-09. 000109:RHODA NYONDO                                       (NOT VISITED)
+10. 062010:LICHARD RAMBIKI              (COMPLETED)
+    Individual. 01.RICHARD RAMBIKI                                    [54] (COMPLETED)
+    Individual. 02.BETTY RAMBIKI                                      [54] (COMPLETED)
+    Individual. 03.CHIFUNDO RAMBIKI                                   [27] (COMPLETED)
+    Individual. 04.SOZO RAMBIKI                                       [23] (COMPLETED)
+    Individual. 05.GIFT RAMBIKI                                       [15] (COMPLETED)
+    Individual. 06.RAHIM RAMBIKI                                      [21] (COMPLETED)
+    Individual. 07.POUL ZAKALUYA                                      [19] (COMPLETED)
+
+    Child. 05.GIFT RAMBIKI                                      (15) (COMPLETED)
+
+    Time. 03.CHIFUNDO RAMBIKI                                  (27) (COMPLETED)
+
+11. 062011:INNOCENT                     (COMPLETED)
+    Individual. 01.INNOCENT MWALE                                     [37] (COMPLETED)
+    Individual. 02.ELIZA KAYENDA                                      [25] (COMPLETED)
+    Individual. 03.ESTHER MATOPE                                      [15] (COMPLETED)
+    Individual. 05.MMWATITSA MWALE                                    [23] (COMPLETED)
+
+    Child. 03.ESTHER MATOPE                                     (15) (COMPLETED)
+
+    Time. 02.ELIZA KAYENDA                                     (25) (COMPLETED)
+
+12. 062012:MERIA                        (COMPLETED)
+
+
+    Time. 01.MERIA CHUMACHIYENDA                               (84) (COMPLETED)
+
 ----------------------------------------
 
-Cluster Incomplete- 0 of 30 done- (0.00% Complete)
+03. LEXA SAITI                                         
+---- --- --- ------------
+07. 062007:JAILOSO CHAMBO               (COMPLETED)
+    Individual. 01.JAILOSI CHAMBO                                     [60] (COMPLETED)
+    Individual. 02.AGNESS GEORGE                                      [45] (COMPLETED)
+    Individual. 03.MARTHA CHAMBO                                      [23] (COMPLETED)
+    Individual. 04.ETHEL CHAMBO                                       [22] (COMPLETED)
+
+    Child. 05.ESTHER CHAMBO                                     (12) (COMPLETED)
+    Child. 06.LONJEZO BEYADI                                    (9) (COMPLETED)
+
+    Time. 02.AGNESS GEORGE                                     (45) (NOT INTERVIEWED)
+
+08. 062008:EMANUEL BESTEN               (COMPLETED)
+    Individual. 01.EMMANUEL BESTEN                                    [50] (NOT INTERVIEWED)
+    Individual. 02.ANNE CHAULUKA                                      [44] (COMPLETED)
+    Individual. 03.HAPPINESS BESTEN                                   [22] (NOT INTERVIEWED)
+    Individual. 04.HOPE BESTEN                                        [18] (NOT INTERVIEWED)
+    Individual. 05.GETRUDE KANDAWILE                                  [21] (NOT INTERVIEWED)
+    Individual. 06.CHARITY CHAULUKA                                   [15] (NOT INTERVIEWED)
+    Individual. 07.MISHECK WILSON                                     [19] (COMPLETED)
+    Individual. 08.CHIMWEMWE CHAULUKA                                 [28] (COMPLETED)
+
+    Child. 06.CHARITY CHAULUKA                                  (15) (NOT INTERVIEWED)
+    Child. 09.EMMANUEL BESTON (JUNIOR)                          (10) (PARTIALLY SAVED)
+
+    Time. 04.HOPE BESTEN                                       (18) (NOT INTERVIEWED)
+
+09. 062009:BAISON DEMBA                                       (NOT VISITED)
+----------------------------------------
+
+04. FRANCIS BANDA                                      
+---- --- --- ------------
+04. 062004:MR MITAMBO                   (COMPLETED)
+    Individual. 01.PATRICK MITAMBO                                    [44] (COMPLETED)
+    Individual. 02.DOREEN MITAMBO                                     [39] (COMPLETED)
+    Individual. 03.ENGSON KAPALAMULA                                  [19] (COMPLETED)
+    Individual. 04.SHUCKRAN MALISHE                                   [16] (COMPLETED)
+    Individual. 05.ANNIE MITAMBO                                      [17] (COMPLETED)
+    Individual. 06.JENNIFER CHAULUKA                                  [17] (COMPLETED)
+
+    Child. 04.SHUCKRAN MALISHE                                  (16) (COMPLETED)
+    Child. 05.ANNIE MITAMBO                                     (17) (COMPLETED)
+    Child. 06.JENNIFER CHAULUKA                                 (17) (COMPLETED)
+    Child. 07.RUTH MITAMBO                                      (13) (COMPLETED)
+
+    Time. 03.ENGSON KAPALAMULA                                 (19) (COMPLETED)
+
+05. 062005:IAN KAMBWANI                                       (NOT VISITED)
+06. 062006:PATRICK NZONDE               (COMPLETED)
+    Individual. 01.PATRICK ZUNDE                                      [34] (COMPLETED)
+    Individual. 02.DOREEN KAUNDA                                      [35] (COMPLETED)
+
+    Child. 03.JAILOSI ZUNDE                                     (9) (COMPLETED)
+    Child. 04.SHANTEL ZUNDE                                     (7) (COMPLETED)
+
+    Time. 01.PATRICK ZUNDE                                     (34) (COMPLETED)
+
+----------------------------------------
+
+05. MPHATSO SENEZIO                                    
+---- --- --- ------------
+No household assigned
+----------------------------------------
+
+06. ERICK MANGANI                                      
+---- --- --- ------------
+01. 062001:TIMOTHY MWASETEZA            (COMPLETED)
+    Individual. 01.TIMOTHY MWATSETEZA                                 [41] (COMPLETED)
+    Individual. 02.AGNESS MWATSETEZA                                  [36] (COMPLETED)
+    Individual. 03.JOYCE ZIGWA                                        [20] (COMPLETED)
+
+
+    Time. 03.JOYCE ZIGWA                                       (20) (COMPLETED)
+
+02. 062002:OWEN MACHINJIRI              (COMPLETED)
+    Individual. 01.OWEN MACHINJIRI                                    [45] (COMPLETED)
+    Individual. 02.PATRICIA TCHESA                                    [43] (COMPLETED)
+    Individual. 03.MILICENT TCHESA                                    [22] (COMPLETED)
+
+    Child. 04.STEVE MACHINJIRI                                  (5) (COMPLETED)
+
+    Time. 02.PATRICIA TCHESA                                   (43) (COMPLETED)
+
+03. 062003:JULIANA MAKANDE              (COMPLETED)
+    Individual. 01.JULIANA MAKANDE                                    [47] (COMPLETED)
+    Individual. 02.PRECIOUS BULEYA                                    [27] (COMPLETED)
+    Individual. 03.LINES BULEYA                                       [23] (COMPLETED)
+    Individual. 04.ALEFA BULEYA                                       [17] (COMPLETED)
+
+    Child. 04.ALEFA BULEYA                                      (17) (COMPLETED)
+    Child. 05.GRACE BULEYA                                      (11) (COMPLETED)
+
+    Time. 02.PRECIOUS BULEYA                                   (27) (COMPLETED)
+
+----------------------------------------
+
+Cluster Incomplete- 79 of 108 done- (73.15% Complete)
            Completed  Partial    New     Total
-Household:      0        1        8        9    
-Ind      :      0        0        0        0    
-Child    :      0        0        0        0    
-TimeUse  :      0        0        0        0    
+Household:      11       0        6        17   
+Ind      :      43       0        5        48   
+Child    :      17       1        1        19   
+TimeUse  :      8        1        2        11   

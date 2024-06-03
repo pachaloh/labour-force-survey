@@ -8672,6 +8672,18 @@ Len=1
 DataType=Numeric
 ZeroFill=Yes
 
+[ValueSet]
+Label=TVT11
+Name=TVT11_VS1
+Value=1;My current job is only a temporary stepping stone, I am still searching for professional orientation
+Value=2;I have not found an appropriate job (yet)
+Value=3;I receive a higher salary in my current job
+Value=4;My current job offers more security
+Value=5;My interests have changed
+Value=6;My current job allows a flexible time schedule
+Value=7;My current job allows me to work in a favored geographical place
+Value=8;My current job allows me to take into consideration the interests of my family/children
+
 [Item]
 Label=D06A
 Name=D06A

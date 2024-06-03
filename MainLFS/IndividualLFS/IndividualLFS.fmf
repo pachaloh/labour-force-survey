@@ -3069,7 +3069,7 @@ Name=TVT11
 Position=854,5550,869,5570
 Item=TVT11,INDIVIDUALLFS_DICT
 FieldLabelType=DictionaryName
-DataCaptureType=TextBox
+DataCaptureType=RadioButton
 Form=3
   
 [Text]
