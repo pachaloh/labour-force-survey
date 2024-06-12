@@ -308,7 +308,7 @@ onfocus
 postproc
 
 
-	if $ in {97,} 98,99 then
+	if $ in 97, 98,99 then
 		skip to CHILD_END_TIME;
 	endif;
 

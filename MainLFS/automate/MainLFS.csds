@@ -2,7 +2,7 @@
   "fileType": "Application Deployment Specification",
   "version": "7.7",
   "name": "LabourForceSurvey2023",
-  "description": "Malawi Labour Force Survey 03-06-2024",
+  "description": "Malawi Labour Force Survey 13-06-2024",
   "files": [
     {
       "path": "..\\ChildLFS\\ChildLFS.ent"

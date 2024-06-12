@@ -1217,20 +1217,43 @@ onfocus
 	
 	//Loop through already assigned households for a specific interviewer
 	numeric hh_ctr = 1;
-	forcase HH_DATABASE_DICT(startswith, maketext("%v%v",edit("9999",workCluster),MANAGE_TASKS)) do 
-		completed_households.clear();
+	completed_households.clear();
+	forcase HH_DATABASE_DICT(startswith, maketext("%v",edit("9999",workCluster))) do 
+		//errmsg("Counter %d", hh_ctr);
 		//assigned_hhs.add(AHH_NAME,AHH_NO);
 		completed_households(hh_ctr,1) = edit("99",HH_NUMBER);
 		completed_households(hh_ctr,2) = HH_HEAD;
 		completed_households(hh_ctr,3) = HH_LABEL;
 		completed_households(hh_ctr,4) = DESCRIPTION;
-		completed_households(hh_ctr,5) = "INT NAME";
+		
+		forcase TEAMS_DICT where TEAM_ID = TEAMNO do
+			if loadcase(ASSIGNED_HHS_DICT,edit("9999",workCluster),USER_CODE,edit("99",HH_NUMBER)) and USER_CODE = MANAGE_TASKS then
+				completed_households(hh_ctr,5) = getlabel(MANAGE_TASKS,MANAGE_TASKS);
+				break;
+			elseif loadcase(ASSIGNED_HHS_DICT,edit("9999",workCluster),USER_CODE,edit("99",HH_NUMBER)) then
+				completed_households(hh_ctr,5) = getlabel(MANAGE_TASKS,USER_CODE);
+				break;			
+			endif;
+		endfor;
+		
 		hh_ctr = hh_ctr + 1;
 	endfor;
 	
-	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	string report_heading = maketext("Cluster %v Selected Households", edit("9999",workCluster));
 	
-	showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION","INTERV"));
+	numeric sel_hh_row = showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION","INTERVIEWER"));
+
+	
+	//Write selected household to assigned households file
+	//errmsg("Select row %d",sel_hh_row);
+	
+	//Assign the corresponding household number	
+	$ = tonumber(completed_households(sel_hh_row,1));
+	
+	noinput;
+	
+	
+	
 	
 {	
 	
@@ -1256,23 +1279,23 @@ onfocus
 	
 
 	setvalueset($,assigned_hhs);
+}
 	
 postproc
 
 	if $ = 0 then
-		reenter;
+		reenter MANAGE_TASKS;
 	else
-		errmsg("Add %s's household to %s list?",getlabel($,$),getlabel(MANAGE_TASKS,MANAGE_TASKS))
-			select("Yes",continue,"Cancel",reenter);
+		errmsg("Assign %s's household to %s?",completed_households(sel_hh_row,2),getlabel(MANAGE_TASKS,MANAGE_TASKS))
+			select("Yes",continue,"Cancel",$);
 	endif;
 	
 	
-	//Update list of assigned households for interview
-	
+	//Update list of assigned households for interview	
 		ACLUSTER       = workCluster; 		//Cluster number
 		INTERVIEWER_ID = MANAGE_TASKS;		//Interviewer ID
-		AHH_NO         = $;					//Household number
-		AHH_NAME       = getlabel($,$);		//Name of household head
+		AHH_NO         = tonumber(completed_households(sel_hh_row,1));	//Household number
+		AHH_NAME       = completed_households(sel_hh_row,2);		    //Name of household head
 		
 		
 		if loadcase(HH_DATABASE_DICT,maketext("%v%v",edit("9999",workCluster),edit("99",$))) then
@@ -1283,16 +1306,16 @@ postproc
 		
 		TIME_ASSIGNED  = timestamp();		//Time created
 		
-		//hh_tasks();
 		
 
 	// Case writing to a file
 	
 	if writecase(ASSIGNED_HHS_DICT) then  
-		errmsg("Household added successfully! Add another household?")
-			select("Yes",reenter,"No",MANAGE_TASKS);
+		errmsg("Household added successfully!");
 	endif;
-}
+
+	
+	reenter;
 PROC REM_HH
 
 
