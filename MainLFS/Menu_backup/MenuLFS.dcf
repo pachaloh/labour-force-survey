@@ -1,0 +1,220 @@
+﻿[Dictionary]
+Version=CSPro 7.7
+Label=LFS Menu
+Name=MENULFS_DICT
+RecordTypeStart=1
+RecordTypeLen=1
+Positions=Relative
+ZeroFill=No
+DecimalChar=Yes
+SecurityOptions=E1FE469726F018CED542017863C255BFC63CF05C78E52013D6FE87142F74AC9D
+
+[Level]
+Label=MenuLFS Level
+Name=MENULFS_LEVEL
+
+[IdItems]
+
+[Item]
+Label=MenuLFS Identification
+Name=MENULFS_ID
+Start=2
+Len=1
+DataType=Numeric
+
+[Record]
+Label=MenuLFS Record
+Name=MENULFS_REC
+RecordTypeValue='1'
+RecordLen=48
+
+[Item]
+Label=Team
+Name=TEAMNO
+Start=3
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Login
+Name=LOGIN
+Start=5
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Passcode
+Name=PASSCODE
+Start=41
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Cluster
+Name=MCLUSTER
+Start=45
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Supervisor creation
+Name=SUP_CREATION
+RecordTypeValue='5'
+RecordLen=58
+
+[Item]
+Label=Team Number
+Name=TEAM_NUMBER
+Start=3
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Name of supervisor
+Name=NAME_OF_SUP
+Start=5
+Len=50
+DataType=Alpha
+
+[Item]
+Label=Supervisor password
+Name=PASSWORD_SUP
+Start=55
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Supervisor menu
+Name=SUP_MENU
+RecordTypeValue='2'
+RecordLen=79
+
+[Item]
+Label=Supervisor cluster
+Name=SUP_CLUSTER
+Start=3
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Team Management
+Name=TEAM_MGT
+Start=7
+Len=1
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Edit interviwer
+Name=EDIT_MEMBERS
+Start=8
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Manage tasks
+Name=MANAGE_TASKS
+Start=44
+Len=36
+DataType=Alpha
+
+[Record]
+Label=Interviewer creation
+Name=INTERV_CREATION
+RecordTypeValue='7'
+RecordLen=88
+
+[Item]
+Label=Interviewer code
+Name=ENUM_CODE
+Start=3
+Len=36
+DataType=Alpha
+
+[Item]
+Label=Interviewer name
+Name=ENUM_NAME
+Start=39
+Len=50
+DataType=Alpha
+
+[Record]
+Label=Team management
+Name=TEAM_MNGT
+RecordTypeValue='6'
+RecordLen=2
+
+[Record]
+Label=Interviwer menu
+Name=INT_MENU
+RecordTypeValue='3'
+RecordLen=3
+
+[Item]
+Label=Interviewer menu
+Name=INTERV_MENU
+Start=3
+Len=1
+DataType=Numeric
+
+[Record]
+Label=Assignment
+Name=WORK_ASGN
+RecordTypeValue='4'
+RecordLen=6
+
+[Item]
+Label=Assign households
+Name=ASSIGN_HH
+Start=3
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=Remove assigned households
+Name=REM_HH
+Start=5
+Len=2
+DataType=Numeric
+ZeroFill=Yes
+
+[Record]
+Label=Interviews
+Name=INTERVIEWS
+RecordTypeValue='8'
+RecordLen=176
+
+[Item]
+Label=Interview household
+Name=INTERVIEW_HH
+Start=3
+Len=42
+DataType=Alpha
+
+[Item]
+Label=Interview Individual
+Name=INTERVIEW_IN
+Start=45
+Len=44
+DataType=Alpha
+
+[Item]
+Label=Interview child
+Name=INTERVIEW_CHILD
+Start=89
+Len=44
+DataType=Alpha
+
+[Item]
+Label=Time Use
+Name=TIME_USE_SURVEY
+Start=133
+Len=44
+DataType=Alpha

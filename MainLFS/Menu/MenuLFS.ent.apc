@@ -54,6 +54,7 @@ function sup_assigned_tasks_report()
 			//hh_ctr = hh_ctr + 1;
 		endfor;
 		
+		hh_ctr = hh_ctr + 1;
 		tm_ctr = tm_ctr + 1;
 	endfor;
 	
@@ -354,54 +355,71 @@ function updateAppsCentralOffice()
 end;
 
 function updateApps()
-	
+{	
 		if syncapp() then
 			errmsg("Update successfully installed! Restart application!");
 		endif;
 
-
-		{
+}
+		
 		numeric abortInd = 1;
 		
-		if abortInd = 1 and syncfile(GET, "./Menu.pen","./Menu.pen") = 0 then
-			errmsg("Syncing of Menu.pen failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./Menu/Menu.pen","./Menu/Menu.pen") = 0 then
+			errmsg("Updating of Menu.pen failed. Updating aborted");
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncfile(GET, "./Household.pen","./Household.pen") = 0 then
-			errmsg("Syncing of Household.pen failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./Household/Household.pen","./Household/Household.pen") = 0 then
+			errmsg("Updating of Household.pen failed. Updating aborted");
 		endif;
 		
-		if abortInd = 1 and syncfile(GET, "./IndividualLFS.pen","./IndividualLFS.pen") = 0 then
-			errmsg("Syncing of IndividualLFS.pen failed. Syncing aborted");
-			abortInd = 0;
-		endif;
-		
-		if abortInd = 1 and syncfile(GET, "./ChildLFS.pen","./ChildLFS.pen") = 0 then
-			errmsg("Syncing of Biomarker.pen failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./IndividualLFS/IndividualLFS.pen","./IndividualLFS/IndividualLFS.pen") = 0 then
+			errmsg("Updating of IndividualLFS.pen failed. Updating aborted");
 			abortInd = 0;
 		endif;
 
-		if abortInd = 1 and syncfile(GET, "./Menu.pff","./Menu.pff") = 0 then
-			errmsg("Syncing of Menu.ff failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./TimeUse/TimeUse.pen","./TimeUse/TimeUse.pen") = 0 then
+			errmsg("Updating of Timeuse.pen failed. Updating aborted");
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncfile(GET, "./Household.pff","./Household.pff") = 0 then
-			errmsg("Syncing of Household.pff failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./ChildLFS/ChildLFS.pen","./ChildLFS/ChildLFS.pen") = 0 then
+			errmsg("Updating of ChildLFS.pen failed. Updating aborted");
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncfile(GET, "./IndividualLFS.pff","./IndividualLFS.pff") = 0 then
-			errmsg("Syncing of IndividualLFS.pff failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./Menu/Menu.pff","./Menu/Menu.pff") = 0 then
+			errmsg("Updating of Menu.pff failed. Updating aborted");
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncfile(GET, "./ChildLFS.pff","./ChildLFS.pff") = 0 then
-			errmsg("Syncing of ChildLFS.pff failed. Syncing aborted");
+		if abortInd = 1 and syncfile(GET, "./Household/Household.pff","./Household/Household.pff") = 0 then
+			errmsg("Updating of Household.pff failed. Updating aborted");
+		endif;
+		
+		if abortInd = 1 and syncfile(GET, "./IndividualLFS/IndividualLFS.pff","./IndividualLFS/IndividualLFS.pff") = 0 then
+			errmsg("Updating of IndividualLFS.pff failed. Updating aborted");
 			abortInd = 0;
 		endif;
-		}
+
+		if abortInd = 1 and syncfile(GET, "./TimeUse/TimeUse.pff","./TimeUse/TimeUse.pff") = 0 then
+			errmsg("Updating of Timeuse.pff failed. Updating aborted");
+			abortInd = 0;
+		endif;
+		
+		if abortInd = 1 and syncfile(GET, "./ChildLFS/ChildLFS.pff","./ChildLFS/ChildLFS.pff") = 0 then
+			errmsg("Updating of ChildLFS.pff failed. Updating aborted");
+			abortInd = 0;
+		endif;
+		
+
+		if abortInd = 1 and syncfile(GET, "./Lookups/hh_database.csdb","./Lookups/hh_database.csdb") = 0 then
+			errmsg("Updating of hh_database.csdb failed. Updating aborted");
+			abortInd = 0;
+		endif;	
+
+
+
 end;
 
 
@@ -678,6 +696,8 @@ end;
 
 function syncWithSupervisor() //Funtion to transfer from interviewer to supervisor
 
+	numeric update_from_supervisor = accept("Update programs from supervisor","Yes","No");
+	
 	if syncconnect(bluetooth) then
 		
 		// Sync main data file.
@@ -709,12 +729,14 @@ function syncWithSupervisor() //Funtion to transfer from interviewer to supervis
 		if syncdata(BOTH, ASSIGNED_HHS_DICT) = 0 then		//Work (Household) Assignment Cases
 			errmsg("Failed to transfer Assignments data");
 		endif;
-		
-		
+{		
+		//Update programs from supervisor
+		//numeric update_from_supervisor = accept("Update programs from supervisor","Yes","No");
 
-			
-			updateApps();
-			
+			if update_from_supervisor = 1 then
+				updateApps();
+			endif;
+}			
 	
 		syncdisconnect();
 	endif;
@@ -755,9 +777,14 @@ PROC LOGIN
 
 preproc
 	
-	if loadsetting("login") <> "" then
+	if loadsetting("login") <> ""   then
 		LOGIN = loadsetting("login");
-		noinput;
+		
+		if loadsetting("login") <> "1" or loadsetting("login") <> "2" or loadsetting("login") <> "3" then
+			//Do not proceed
+		else
+			noinput;
+		endif;
 	endif;
 
 onfocus
@@ -1180,49 +1207,54 @@ onfocus
 	
 	valueset numeric assigned_hhs; //Dynamic valueset households
 	
-	//To avoid empty cluster fields, get the value from where it available
-	if SUP_CLUSTER in 1:99999 then
+	//To avoid empty cluster fields, get the value from where it is available
+	if SUP_CLUSTER in 1:9999 then
 		workCluster = SUP_CLUSTER;
 	else
 		workCluster = MCLUSTER;
 	endif;
-	
 
 	
 	//Loop through already assigned households for a specific interviewer
+	numeric hh_ctr = 1;
+	forcase HH_DATABASE_DICT(startswith, maketext("%v%v",edit("9999",workCluster),MANAGE_TASKS)) do 
+		completed_households.clear();
+		//assigned_hhs.add(AHH_NAME,AHH_NO);
+		completed_households(hh_ctr,1) = edit("99",HH_NUMBER);
+		completed_households(hh_ctr,2) = HH_HEAD;
+		completed_households(hh_ctr,3) = HH_LABEL;
+		completed_households(hh_ctr,4) = DESCRIPTION;
+		completed_households(hh_ctr,5) = "INT NAME";
+		hh_ctr = hh_ctr + 1;
+	endfor;
+	
+	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	
+	showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","DESCRIPTION","INTERV"));
+	
+{	
+	
+	//Loop through already assigned households for a specific interviewer
 	forcase ASSIGNED_HHS_DICT where ACLUSTER = workCluster and INTERVIEWER_ID = MANAGE_TASKS do 
-				assigned_hhs.add(AHH_NAME,AHH_NO);
+			assigned_hhs.add(AHH_NAME,AHH_NO);
 	endfor;
 	
 	//Add a separator between assigned and unassigned households 
 	if assigned_hhs.length() > 0 then
-		assigned_hhs.add("---------------------------------",0);
+		assigned_hhs.add("---------------------------------",0, textcolor := "red");
 	endif;
 	
-	//Loop through all households withn a cluster, and remove already assigned households
 	
+	//***************
 	forcase HH_DATABASE_DICT where HH_CLUSTER = workCluster  do  
-		forcase ASSIGNED_HHS_DICT where ACLUSTER = workCluster do
-			
-			//To mark households never assigned to anybody and avoid listing a household more than twice 
-			if AHH_NO = HH_NUMBER then
-				sumCheck = sumCheck + 1; //If household (number) not already assigned 
-			else
-				sumCheck = sumCheck + 0; //If household (number) already already assigned
-			endif; 
+		if HH_NUMBER in assigned_hhs then
+			//Skip household number if already assigned
+		else
+			assigned_hhs.add(HH_HEAD,HH_NUMBER);	
+		endif;
+	endfor;	
+	
 
-		endfor;	
-		
-			if sumCheck = 0 then  		  //A sum of 0 means child not yet entered
-				assigned_hhs.add(HH_HEAD,HH_NUMBER);		
-			endif;
-		
-		sumCheck = 0;
-		
-	endfor;
-	
-	//team_members.add("Begin as supervisor","1");
-	
 	setvalueset($,assigned_hhs);
 	
 postproc
@@ -1242,10 +1274,12 @@ postproc
 		AHH_NO         = $;					//Household number
 		AHH_NAME       = getlabel($,$);		//Name of household head
 		
+		
 		if loadcase(HH_DATABASE_DICT,maketext("%v%v",edit("9999",workCluster),edit("99",$))) then
 			AHH_LABEL = HH_LABEL;
 			AHH_DESC  = DESCRIPTION;
 		endif;
+		
 		
 		TIME_ASSIGNED  = timestamp();		//Time created
 		
@@ -1258,7 +1292,7 @@ postproc
 		errmsg("Household added successfully! Add another household?")
 			select("Yes",reenter,"No",MANAGE_TASKS);
 	endif;
-
+}
 PROC REM_HH
 
 

@@ -1,0 +1,25 @@
+﻿[Run Information]
+Version=CSPro 7.7
+AppType=Entry
+ShowInApplicationListing=Never
+
+[DataEntryInit]
+Key=10014c1ebef4-695c-459a-9c89-9989316d0dea0902
+Lock=CaseListing
+
+[Files]
+Application=.\ChildLFS.ent
+InputData=..\Data\Child.csdb
+
+[ExternalFiles]
+CLUSTERS_DICT=..\Lookups\clusters.csdb
+HOUSEHOLDLFS_DICT=..\Data\Household.csdb
+INDIVIDUALLFS_DICT=..\Data\Individual.csdb
+
+[Parameters]
+OnExit=..\Menu\MenuLFS.pff
+CCLUSTER=1001
+CGHHHNO=09
+CHMPPNO=02
+GHINTID=4c1ebef4-695c-459a-9c89-9989316d0dea
+GHINTNAME=NOEL CHISOSO

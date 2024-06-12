@@ -278,6 +278,46 @@ questions:
             <b><span style="font-size: 24px;">B9.&nbsp;</span></b><span style="font-size: 24px;">Kasi cheneko icho chikuchitika ku malo panyakhe ku bizinesi uko CHILD wakugwira ntchito ntchivichi?</span><p></p>
           YAO: |
             <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><span style="font-size: 24px;"><b>B9.</b>&nbsp;</span></span><span style="font-size: 24px;">Ana chisyesyene chisatendekwa ku malo ga masengo kapena bizinesi ga&nbsp;</span><b style="font-size: 24px;">&nbsp;~~A1~~</b><span style="font-size: 24px;">&nbsp;&nbsp;ni chichi?&nbsp;&nbsp;</span></p><table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0" style="color: rgb(30, 44, 189); font-size: 24px;"><i>For example: Farming – growing cotton; Garment factory– producing shirts; Street restaurant – preparing meals; Bicycle shop – selling and repairing bicycles</i></span></p><div><span class="fontstyle0" style="color: rgb(30, 44, 189); font-size: 24px;"><i><br></i></span></div></td></tr></tbody></table></td></tr></tbody></table><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_CSECTION
+    conditions:
+      - questionText:
+          CH: |
+            <p style="font-size: 24px;"><font color="#0000ff"><i>Description of main activity of&nbsp;<span style="font-weight: bold;">~~A1~~'s</span>&nbsp;place of work?&nbsp;</i></font>&nbsp;</p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 24px;"><font color="#0000ff"><i>Description of main activity of&nbsp;<span style="font-weight: bold;">~~A1~~'s</span>&nbsp;place of work?&nbsp;</i></font>&nbsp;</p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp;<span style="font-weight: bold; font-style: normal; color: rgb(0, 0, 0);">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span>section of industry.&nbsp;</span></p><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_CDIVISIONS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">division of industry.&nbsp;</span><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_CGROUPS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">group of industry.&nbsp;</span><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_CCLASS
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; font-weight: bold;">~~A1~~<span style="color: rgb(51, 51, 51);">'s<span style="font-weight: normal;">&nbsp;</span></span></span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">class of industry.&nbsp;</span><p></p>
   - name: CHILD_LABOUR_DICT.B10
     conditions:
       - questionText:
@@ -289,6 +329,50 @@ questions:
             <p><b><span style="font-size: 24px;">B10.&nbsp;</span></b><span style="font-size: 24px;">Kasi&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;wakugwira ntchito ya mtundu wuli ku malo agha panyakhe ku bizinesi iyo?</span></p><i style="color: rgb(30, 44, 189); font-size: 24px;">For example: Farmer - harvesting crops; Weaver – stitching and folding garments; Waiter – serving meals; Assistant – delivering bicycles; Domestic worker – cleaning garden</i><p><span style="font-size: 24px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><p></p></p>
           YAO: |
             <table class="NormalTable" style="width: 1023px;"><tbody><tr><td width="200" style="border-style: none;"><p><span class="fontstyle0"><b><span style="font-size: 24px;">B10.&nbsp;</span></b></span><span style="font-size: 24px;">Ana masengochi asakamula&nbsp;&nbsp;</span><b style="font-size: 24px;">~~A1~~</b><span style="font-size: 24px;">&nbsp;ku malo gerega kapena ku bizinesi?&nbsp; <b>&nbsp; &nbsp;</b></span></p></td></tr></tbody></table><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_OCC_LEVEL_C1
+    conditions:
+      - questionText:
+          CH: |
+            <p style="font-size: 24px;"><font color="#0000ff">~~A1~~'s&nbsp;main occupation during the last 7 days?&nbsp;&nbsp;</font></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          EN: |
+            <p style="font-size: 24px;"><font color="#0000ff">~~A1~~'s&nbsp;main occupation during the last 7 days?&nbsp;&nbsp;</font></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          TU: |
+            <p style="font-size: 24px;"><font color="#0000ff">~~A1~~'s&nbsp;main occupation during the last 7 days?&nbsp;&nbsp;</font></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+          YAO: |
+            <p style="font-size: 24px;"><font color="#0000ff">~~A1~~'s&nbsp;main occupation during the last 7 days?&nbsp;&nbsp;</font></p><p style="font-size: 24px;"><span style="font-style: italic; color: rgb(0, 0, 255);">Select&nbsp; major group of occupation or view all occupations.&nbsp;</span></p><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_OCC_LEVEL_C2
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;sub major group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_OCC_LEVEL_C3
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;minor group of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+  - name: CHILD_LABOUR_DICT.MAIN_JOB_OCC_LEVEL_C4
+    conditions:
+      - questionText:
+          CH: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">unit</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          EN: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">unit</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          TU: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">unit</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
+          YAO: |
+            <span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">Select&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: bold;">~~A1~~'s</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">unit</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;of occupation during the last 7 days or the last time&nbsp;</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic; font-weight: 700;">~~A1~~</span><span style="font-size: 24px; color: rgb(0, 0, 255); font-style: italic;">&nbsp;worked?</span><p></p>
   - name: CHILD_LABOUR_DICT.B11
     conditions:
       - questionText:

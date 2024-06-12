@@ -7466,34 +7466,9 @@ Name=INDIVEND_VS1
 Value=1;Complete
 Value=2;Member not available
 Value=3;Not eligible
-Value=9;Refused
-
-[ValueSet]
-Label=End of interview
-Name=INDIVEND_VS2
-Value=7;Proceed to Time use
-Value=1;Complete
-Value=2;Member not available
-Value=3;Not eligible
-Value=9;Refused
-
-[ValueSet]
-Label=End of interview
-Name=INDIVEND_VS3
-Value=8;Proceed to Child
-Value=1;Complete
-Value=2;Member not available
-Value=3;Not eligible
-Value=9;Refused
-
-[ValueSet]
-Label=End of interview
-Name=INDIVEND_VS4
-Value=7;Proceed to Time use
-Value=8;Proceed to Child
-Value=1;Complete
-Value=2;Member not available
-Value=3;Not eligible
+Value=4;Postponed
+Value=5;Partly completed
+Value=6;Incapacitated
 Value=9;Refused
 
 [Record]

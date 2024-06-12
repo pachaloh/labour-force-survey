@@ -19,6 +19,7 @@ File=..\Household\HouseholdLFS.dcf
 File=..\IndividualLFS\IndividualLFS.dcf
 [AppCode]
 File=.\ChildLFS.ent.apc
+Include=..\Shared Logic\Dynamic Value Set Functions.apc
 [Message]
 File=.\ChildLFS.ent.mgf
 [Help]
