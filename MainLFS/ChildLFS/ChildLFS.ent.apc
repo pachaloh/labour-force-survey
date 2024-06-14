@@ -668,187 +668,234 @@ preproc
 }
 
 	
+PROC MAIN_JOB_CDIVISIONS
+
+onfocus
+
+	if MAIN_JOB_CSECTION = 01 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS1);
+	elseif MAIN_JOB_CSECTION = 02 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS2);
+	elseif MAIN_JOB_CSECTION = 03 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS3);
+	elseif MAIN_JOB_CSECTION = 04 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS4);
+	elseif MAIN_JOB_CSECTION = 05 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS5);
+	elseif MAIN_JOB_CSECTION = 06 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS6);
+	elseif MAIN_JOB_CSECTION = 07 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS7);
+	elseif MAIN_JOB_CSECTION = 08 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS8);
+	elseif MAIN_JOB_CSECTION = 09 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS9);
+	elseif MAIN_JOB_CSECTION = 10 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS10);
+	elseif MAIN_JOB_CSECTION = 11 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS11);
+	elseif MAIN_JOB_CSECTION = 12 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS12);
+	elseif MAIN_JOB_CSECTION = 13 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS13);
+	elseif MAIN_JOB_CSECTION = 14 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS14);
+	elseif MAIN_JOB_CSECTION = 15 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS15);
+	elseif MAIN_JOB_CSECTION = 16 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS16);
+	elseif MAIN_JOB_CSECTION = 17 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS17);
+	elseif MAIN_JOB_CSECTION = 18 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS18);
+	elseif MAIN_JOB_CSECTION = 19 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS19);
+	elseif MAIN_JOB_CSECTION = 20 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS20);
+	elseif MAIN_JOB_CSECTION = 21 then
+		setvalueset ( $,MAIN_JOB_CDIVISIONS_VS21);
+	endif;
 PROC MAIN_JOB_CGROUPS
 
 
 onfocus
 
-	if MAIN_JOB_DIVISIONS = 01 then
-		setvalueset ($, MAIN_JOB_GROUPS_VS1);
-	elseif MAIN_JOB_DIVISIONS = 02 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS2);
-	elseif MAIN_JOB_DIVISIONS = 03 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS3);
-	elseif MAIN_JOB_DIVISIONS = 05 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS4);
-	elseif MAIN_JOB_DIVISIONS = 06 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS5);
-	elseif MAIN_JOB_DIVISIONS = 07 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS6);
-	elseif MAIN_JOB_DIVISIONS = 08 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS7);
-	elseif MAIN_JOB_DIVISIONS = 09 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS8);
-	elseif MAIN_JOB_DIVISIONS = 10 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS9);
-	elseif MAIN_JOB_DIVISIONS = 11 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS10);
-	elseif MAIN_JOB_DIVISIONS = 12 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS11);
-	elseif MAIN_JOB_DIVISIONS = 13 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS12);
-	elseif MAIN_JOB_DIVISIONS = 14 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS13);
-	elseif MAIN_JOB_DIVISIONS = 15 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS14);
-	elseif MAIN_JOB_DIVISIONS = 16 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS15);
-	elseif MAIN_JOB_DIVISIONS = 17 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS16);
-	elseif MAIN_JOB_DIVISIONS = 18 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS17);
-	elseif MAIN_JOB_DIVISIONS = 19 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS18);
-	elseif MAIN_JOB_DIVISIONS = 20 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS19);
-	elseif MAIN_JOB_DIVISIONS = 21 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS20);
-	elseif MAIN_JOB_DIVISIONS = 22 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS21);
-	elseif MAIN_JOB_DIVISIONS = 23 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS22);
-	elseif MAIN_JOB_DIVISIONS = 24 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS23);
-	elseif MAIN_JOB_DIVISIONS = 25 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS24);
-	elseif MAIN_JOB_DIVISIONS = 26 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS25);
-	elseif MAIN_JOB_DIVISIONS = 27 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS26);
-	elseif MAIN_JOB_DIVISIONS = 28 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS27);
-	elseif MAIN_JOB_DIVISIONS = 29 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS28);
-	elseif MAIN_JOB_DIVISIONS = 30 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS29);
-	elseif MAIN_JOB_DIVISIONS = 31 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS30);
-	elseif MAIN_JOB_DIVISIONS = 32 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS31);
-	elseif MAIN_JOB_DIVISIONS = 33 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS32);
-	elseif MAIN_JOB_DIVISIONS = 35 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS33);
-	elseif MAIN_JOB_DIVISIONS = 36 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS34);
-	elseif MAIN_JOB_DIVISIONS = 37 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS35);
-	elseif MAIN_JOB_DIVISIONS = 38 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS36);
-	elseif MAIN_JOB_DIVISIONS = 39 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS37);
-	elseif MAIN_JOB_DIVISIONS = 41 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS38);
-	elseif MAIN_JOB_DIVISIONS = 42 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS39);
-	elseif MAIN_JOB_DIVISIONS = 43 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS40);
-	elseif MAIN_JOB_DIVISIONS = 45 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS41);
-	elseif MAIN_JOB_DIVISIONS = 46 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS42);
-	elseif MAIN_JOB_DIVISIONS = 47 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS43);
-	elseif MAIN_JOB_DIVISIONS = 49 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS44);
-	elseif MAIN_JOB_DIVISIONS = 50 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS45);
-	elseif MAIN_JOB_DIVISIONS = 51 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS46);
-	elseif MAIN_JOB_DIVISIONS = 52 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS47);
-	elseif MAIN_JOB_DIVISIONS = 53 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS48);
-	elseif MAIN_JOB_DIVISIONS = 55 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS49);
-	elseif MAIN_JOB_DIVISIONS = 56 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS50);
-	elseif MAIN_JOB_DIVISIONS = 58 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS51);
-	elseif MAIN_JOB_DIVISIONS = 59 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS52);
-	elseif MAIN_JOB_DIVISIONS = 60 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS53);
-	elseif MAIN_JOB_DIVISIONS = 61 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS54);
-	elseif MAIN_JOB_DIVISIONS = 62 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS55);
-	elseif MAIN_JOB_DIVISIONS = 63 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS56);
-	elseif MAIN_JOB_DIVISIONS = 64 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS57);
-	elseif MAIN_JOB_DIVISIONS = 65 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS58);
-	elseif MAIN_JOB_DIVISIONS = 66 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS59);
-	elseif MAIN_JOB_DIVISIONS = 68 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS60);
-	elseif MAIN_JOB_DIVISIONS = 69 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS61);
-	elseif MAIN_JOB_DIVISIONS = 70 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS62);
-	elseif MAIN_JOB_DIVISIONS = 71 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS63);
-	elseif MAIN_JOB_DIVISIONS = 72 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS64);
-	elseif MAIN_JOB_DIVISIONS = 73 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS65);
-	elseif MAIN_JOB_DIVISIONS = 74 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS66);
-	elseif MAIN_JOB_DIVISIONS = 75 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS67);
-	elseif MAIN_JOB_DIVISIONS = 77 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS68);
-	elseif MAIN_JOB_DIVISIONS = 78 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS69);
-	elseif MAIN_JOB_DIVISIONS = 79 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS70);
-	elseif MAIN_JOB_DIVISIONS = 80 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS71);
-	elseif MAIN_JOB_DIVISIONS = 81 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS72);
-	elseif MAIN_JOB_DIVISIONS = 82 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS73);
-	elseif MAIN_JOB_DIVISIONS = 84 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS74);
-	elseif MAIN_JOB_DIVISIONS = 85 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS75);
-	elseif MAIN_JOB_DIVISIONS = 86 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS76);
-	elseif MAIN_JOB_DIVISIONS = 87 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS77);
-	elseif MAIN_JOB_DIVISIONS = 88 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS78);
-	elseif MAIN_JOB_DIVISIONS = 90 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS79);
-	elseif MAIN_JOB_DIVISIONS = 91 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS80);
-	elseif MAIN_JOB_DIVISIONS = 92 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS81);
-	elseif MAIN_JOB_DIVISIONS = 93 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS82);
-	elseif MAIN_JOB_DIVISIONS = 94 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS83);
-	elseif MAIN_JOB_DIVISIONS = 95 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS84);
-	elseif MAIN_JOB_DIVISIONS = 96 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS85);
-	elseif MAIN_JOB_DIVISIONS = 97 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS86);
-	elseif MAIN_JOB_DIVISIONS = 98 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS87);
-	elseif MAIN_JOB_DIVISIONS = 99 then
-		setvalueset ($,MAIN_JOB_GROUPS_VS88);
+	if MAIN_JOB_CDIVISIONS = 01 then
+		setvalueset ($, MAIN_JOB_CGROUPS_VS1);
+	elseif MAIN_JOB_CDIVISIONS = 02 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS2);
+	elseif MAIN_JOB_CDIVISIONS = 03 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS3);
+	elseif MAIN_JOB_CDIVISIONS = 05 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS4);
+	elseif MAIN_JOB_CDIVISIONS = 06 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS5);
+	elseif MAIN_JOB_CDIVISIONS = 07 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS6);
+	elseif MAIN_JOB_CDIVISIONS = 08 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS7);
+	elseif MAIN_JOB_CDIVISIONS = 09 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS8);
+	elseif MAIN_JOB_CDIVISIONS = 10 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS9);
+	elseif MAIN_JOB_CDIVISIONS = 11 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS10);
+	elseif MAIN_JOB_CDIVISIONS = 12 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS11);
+	elseif MAIN_JOB_CDIVISIONS = 13 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS12);
+	elseif MAIN_JOB_CDIVISIONS = 14 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS13);
+	elseif MAIN_JOB_CDIVISIONS = 15 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS14);
+	elseif MAIN_JOB_CDIVISIONS = 16 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS15);
+	elseif MAIN_JOB_CDIVISIONS = 17 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS16);
+	elseif MAIN_JOB_CDIVISIONS = 18 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS17);
+	elseif MAIN_JOB_CDIVISIONS = 19 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS18);
+	elseif MAIN_JOB_CDIVISIONS = 20 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS19);
+	elseif MAIN_JOB_CDIVISIONS = 21 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS20);
+	elseif MAIN_JOB_CDIVISIONS = 22 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS21);
+	elseif MAIN_JOB_CDIVISIONS = 23 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS22);
+	elseif MAIN_JOB_CDIVISIONS = 24 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS23);
+	elseif MAIN_JOB_CDIVISIONS = 25 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS24);
+	elseif MAIN_JOB_CDIVISIONS = 26 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS25);
+	elseif MAIN_JOB_CDIVISIONS = 27 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS26);
+	elseif MAIN_JOB_CDIVISIONS = 28 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS27);
+	elseif MAIN_JOB_CDIVISIONS = 29 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS28);
+	elseif MAIN_JOB_CDIVISIONS = 30 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS29);
+	elseif MAIN_JOB_CDIVISIONS = 31 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS30);
+	elseif MAIN_JOB_CDIVISIONS = 32 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS31);
+	elseif MAIN_JOB_CDIVISIONS = 33 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS32);
+	elseif MAIN_JOB_CDIVISIONS = 35 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS33);
+	elseif MAIN_JOB_CDIVISIONS = 36 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS34);
+	elseif MAIN_JOB_CDIVISIONS = 37 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS35);
+	elseif MAIN_JOB_CDIVISIONS = 38 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS36);
+	elseif MAIN_JOB_CDIVISIONS = 39 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS37);
+	elseif MAIN_JOB_CDIVISIONS = 41 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS38);
+	elseif MAIN_JOB_CDIVISIONS = 42 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS39);
+	elseif MAIN_JOB_CDIVISIONS = 43 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS40);
+	elseif MAIN_JOB_CDIVISIONS = 45 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS41);
+	elseif MAIN_JOB_CDIVISIONS = 46 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS42);
+	elseif MAIN_JOB_CDIVISIONS = 47 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS43);
+	elseif MAIN_JOB_CDIVISIONS = 49 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS44);
+	elseif MAIN_JOB_CDIVISIONS = 50 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS45);
+	elseif MAIN_JOB_CDIVISIONS = 51 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS46);
+	elseif MAIN_JOB_CDIVISIONS = 52 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS47);
+	elseif MAIN_JOB_CDIVISIONS = 53 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS48);
+	elseif MAIN_JOB_CDIVISIONS = 55 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS49);
+	elseif MAIN_JOB_CDIVISIONS = 56 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS50);
+	elseif MAIN_JOB_CDIVISIONS = 58 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS51);
+	elseif MAIN_JOB_CDIVISIONS = 59 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS52);
+	elseif MAIN_JOB_CDIVISIONS = 60 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS53);
+	elseif MAIN_JOB_CDIVISIONS = 61 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS54);
+	elseif MAIN_JOB_CDIVISIONS = 62 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS55);
+	elseif MAIN_JOB_CDIVISIONS = 63 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS56);
+	elseif MAIN_JOB_CDIVISIONS = 64 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS57);
+	elseif MAIN_JOB_CDIVISIONS = 65 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS58);
+	elseif MAIN_JOB_CDIVISIONS = 66 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS59);
+	elseif MAIN_JOB_CDIVISIONS = 68 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS60);
+	elseif MAIN_JOB_CDIVISIONS = 69 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS61);
+	elseif MAIN_JOB_CDIVISIONS = 70 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS62);
+	elseif MAIN_JOB_CDIVISIONS = 71 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS63);
+	elseif MAIN_JOB_CDIVISIONS = 72 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS64);
+	elseif MAIN_JOB_CDIVISIONS = 73 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS65);
+	elseif MAIN_JOB_CDIVISIONS = 74 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS66);
+	elseif MAIN_JOB_CDIVISIONS = 75 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS67);
+	elseif MAIN_JOB_CDIVISIONS = 77 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS68);
+	elseif MAIN_JOB_CDIVISIONS = 78 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS69);
+	elseif MAIN_JOB_CDIVISIONS = 79 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS70);
+	elseif MAIN_JOB_CDIVISIONS = 80 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS71);
+	elseif MAIN_JOB_CDIVISIONS = 81 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS72);
+	elseif MAIN_JOB_CDIVISIONS = 82 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS73);
+	elseif MAIN_JOB_CDIVISIONS = 84 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS74);
+	elseif MAIN_JOB_CDIVISIONS = 85 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS75);
+	elseif MAIN_JOB_CDIVISIONS = 86 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS76);
+	elseif MAIN_JOB_CDIVISIONS = 87 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS77);
+	elseif MAIN_JOB_CDIVISIONS = 88 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS78);
+	elseif MAIN_JOB_CDIVISIONS = 90 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS79);
+	elseif MAIN_JOB_CDIVISIONS = 91 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS80);
+	elseif MAIN_JOB_CDIVISIONS = 92 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS81);
+	elseif MAIN_JOB_CDIVISIONS = 93 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS82);
+	elseif MAIN_JOB_CDIVISIONS = 94 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS83);
+	elseif MAIN_JOB_CDIVISIONS = 95 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS84);
+	elseif MAIN_JOB_CDIVISIONS = 96 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS85);
+	elseif MAIN_JOB_CDIVISIONS = 97 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS86);
+	elseif MAIN_JOB_CDIVISIONS = 98 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS87);
+	elseif MAIN_JOB_CDIVISIONS = 99 then
+		setvalueset ($,MAIN_JOB_CGROUPS_VS88);
 	endif;
 
 PROC MAIN_JOB_CCLASS
@@ -856,482 +903,482 @@ PROC MAIN_JOB_CCLASS
 
 onfocus
 
-	if MAIN_JOB_GROUPS = 011 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS1);
-	elseif MAIN_JOB_GROUPS = 012 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS2);
-	elseif MAIN_JOB_GROUPS = 013 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS3);
-	elseif MAIN_JOB_GROUPS = 014 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS4);
-	elseif MAIN_JOB_GROUPS = 015 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS5);
-	elseif MAIN_JOB_GROUPS = 016 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS6);
-	elseif MAIN_JOB_GROUPS = 017 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS7);
-	elseif MAIN_JOB_GROUPS = 021 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS8);
-	elseif MAIN_JOB_GROUPS = 022 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS9);
-	elseif MAIN_JOB_GROUPS = 023 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS10);
-	elseif MAIN_JOB_GROUPS = 024 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS11);
-	elseif MAIN_JOB_GROUPS = 031 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS12);
-	elseif MAIN_JOB_GROUPS = 032 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS13);
-	elseif MAIN_JOB_GROUPS = 051 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS14);
-	elseif MAIN_JOB_GROUPS = 052 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS15);
-	elseif MAIN_JOB_GROUPS = 061 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS16);
-	elseif MAIN_JOB_GROUPS = 062 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS17);
-	elseif MAIN_JOB_GROUPS = 071 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS18);
-	elseif MAIN_JOB_GROUPS = 072 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS19);
-	elseif MAIN_JOB_GROUPS = 081 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS20);
-	elseif MAIN_JOB_GROUPS = 089 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS21);
-	elseif MAIN_JOB_GROUPS = 091 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS22);
-	elseif MAIN_JOB_GROUPS = 099 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS23);
-	elseif MAIN_JOB_GROUPS = 101 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS24);
-	elseif MAIN_JOB_GROUPS = 102 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS25);
-	elseif MAIN_JOB_GROUPS = 103 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS26);
-	elseif MAIN_JOB_GROUPS = 104 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS27);
-	elseif MAIN_JOB_GROUPS = 105 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS28);
-	elseif MAIN_JOB_GROUPS = 106 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS29);
-	elseif MAIN_JOB_GROUPS = 107 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS30);
-	elseif MAIN_JOB_GROUPS = 108 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS31);
-	elseif MAIN_JOB_GROUPS = 110 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS32);
-	elseif MAIN_JOB_GROUPS = 120 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS33);
-	elseif MAIN_JOB_GROUPS = 131 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS34);
-	elseif MAIN_JOB_GROUPS = 139 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS35);
-	elseif MAIN_JOB_GROUPS = 141 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS36);
-	elseif MAIN_JOB_GROUPS = 142 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS37);
-	elseif MAIN_JOB_GROUPS = 143 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS38);
-	elseif MAIN_JOB_GROUPS = 151 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS39);
-	elseif MAIN_JOB_GROUPS = 152 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS40);
-	elseif MAIN_JOB_GROUPS = 161 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS41);
-	elseif MAIN_JOB_GROUPS = 162 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS42);
-	elseif MAIN_JOB_GROUPS = 170 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS43);
-	elseif MAIN_JOB_GROUPS = 181 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS44);
-	elseif MAIN_JOB_GROUPS = 182 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS45);
-	elseif MAIN_JOB_GROUPS = 191 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS46);
-	elseif MAIN_JOB_GROUPS = 192 then
-		setvalueset ( $,MAIN_JOB_CLASS_VS47);
-	elseif MAIN_JOB_GROUPS =	201	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS48);
-	elseif MAIN_JOB_GROUPS =	202	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS49);
-	elseif MAIN_JOB_GROUPS =	203	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS50);
-	elseif MAIN_JOB_GROUPS =	210	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS51);
-	elseif MAIN_JOB_GROUPS =	221	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS52);
-	elseif MAIN_JOB_GROUPS =	222	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS53);
-	elseif MAIN_JOB_GROUPS =	231	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS54);
-	elseif MAIN_JOB_GROUPS =	239	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS55);
-	elseif MAIN_JOB_GROUPS =	241	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS56);
-	elseif MAIN_JOB_GROUPS =	242	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS57);
-	elseif MAIN_JOB_GROUPS =	243	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS58);
-	elseif MAIN_JOB_GROUPS =	251	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS59);
-	elseif MAIN_JOB_GROUPS =	252	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS60);
-	elseif MAIN_JOB_GROUPS =	259	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS61);
-	elseif MAIN_JOB_GROUPS =	261	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS62);
-	elseif MAIN_JOB_GROUPS =	262	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS63);
-	elseif MAIN_JOB_GROUPS =	263	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS64);
-	elseif MAIN_JOB_GROUPS =	264	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS65);
-	elseif MAIN_JOB_GROUPS =	265	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS66);
-	elseif MAIN_JOB_GROUPS =	266	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS67);
-	elseif MAIN_JOB_GROUPS =	267	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS68);
-	elseif MAIN_JOB_GROUPS =	268	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS69);
-	elseif MAIN_JOB_GROUPS =	271	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS70);
-	elseif MAIN_JOB_GROUPS =	272	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS71);
-	elseif MAIN_JOB_GROUPS =	273	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS72);
-	elseif MAIN_JOB_GROUPS =	274	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS73);
-	elseif MAIN_JOB_GROUPS =	275	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS74);
-	elseif MAIN_JOB_GROUPS =	279	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS75);
-	elseif MAIN_JOB_GROUPS =	281	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS76);
-	elseif MAIN_JOB_GROUPS =	282	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS77);
-	elseif MAIN_JOB_GROUPS =	291	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS78);
-	elseif MAIN_JOB_GROUPS =	292	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS79);
-	elseif MAIN_JOB_GROUPS =	293	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS80);
-	elseif MAIN_JOB_GROUPS =	301	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS81);
-	elseif MAIN_JOB_GROUPS =	302	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS82);
-	elseif MAIN_JOB_GROUPS =	303	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS83);
-	elseif MAIN_JOB_GROUPS =	304	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS84);
-	elseif MAIN_JOB_GROUPS =	309	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS85);
-	elseif MAIN_JOB_GROUPS =	310	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS86);
-	elseif MAIN_JOB_GROUPS =	321	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS87);
-	elseif MAIN_JOB_GROUPS =	322	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS88);
-	elseif MAIN_JOB_GROUPS =	323	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS89);
-	elseif MAIN_JOB_GROUPS =	324	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS90);
-	elseif MAIN_JOB_GROUPS =	325	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS91);
-	elseif MAIN_JOB_GROUPS =	329	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS92);
-	elseif MAIN_JOB_GROUPS =	331	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS93);
-	elseif MAIN_JOB_GROUPS =	332	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS94);
-	elseif MAIN_JOB_GROUPS =	351	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS95);
-	elseif MAIN_JOB_GROUPS =	352	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS96);
-	elseif MAIN_JOB_GROUPS =	353	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS97);
-	elseif MAIN_JOB_GROUPS =	360	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS98);
-	elseif MAIN_JOB_GROUPS =	370	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS99);
-	elseif MAIN_JOB_GROUPS =	381	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS100);
-	elseif MAIN_JOB_GROUPS =	382	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS101);
-	elseif MAIN_JOB_GROUPS =	383	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS102);
-	elseif MAIN_JOB_GROUPS =	390	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS103);
-	elseif MAIN_JOB_GROUPS =	410	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS104);
-	elseif MAIN_JOB_GROUPS =	421	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS105);
-	elseif MAIN_JOB_GROUPS =	422	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS106);
-	elseif MAIN_JOB_GROUPS =	429	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS107);
-	elseif MAIN_JOB_GROUPS =	431	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS108);
-	elseif MAIN_JOB_GROUPS =	432	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS109);
-	elseif MAIN_JOB_GROUPS =	433	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS110);
-	elseif MAIN_JOB_GROUPS =	439	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS111);
-	elseif MAIN_JOB_GROUPS =	451	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS112);
-	elseif MAIN_JOB_GROUPS =	452	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS113);
-	elseif MAIN_JOB_GROUPS =	453	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS114);
-	elseif MAIN_JOB_GROUPS =	454	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS115);
-	elseif MAIN_JOB_GROUPS =	461	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS116);
-	elseif MAIN_JOB_GROUPS =	462	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS117);
-	elseif MAIN_JOB_GROUPS =	463	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS118);
-	elseif MAIN_JOB_GROUPS =	464	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS119);
-	elseif MAIN_JOB_GROUPS =	465	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS120);
-	elseif MAIN_JOB_GROUPS =	466	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS121);
-	elseif MAIN_JOB_GROUPS =	469	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS122);
-	elseif MAIN_JOB_GROUPS =	471	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS123);
-	elseif MAIN_JOB_GROUPS =	472	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS124);
-	elseif MAIN_JOB_GROUPS =	473	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS125);
-	elseif MAIN_JOB_GROUPS =	474	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS126);
-	elseif MAIN_JOB_GROUPS =	475	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS127);
-	elseif MAIN_JOB_GROUPS =	476	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS128);
-	elseif MAIN_JOB_GROUPS =	477	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS129);
-	elseif MAIN_JOB_GROUPS =	478	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS130);
-	elseif MAIN_JOB_GROUPS =	479	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS131);
-	elseif MAIN_JOB_GROUPS =	491	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS132);
-	elseif MAIN_JOB_GROUPS =	492	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS133);
-	elseif MAIN_JOB_GROUPS =	493	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS134);
-	elseif MAIN_JOB_GROUPS =	501	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS135);
-	elseif MAIN_JOB_GROUPS =	502	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS136);
-	elseif MAIN_JOB_GROUPS =	511	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS137);
-	elseif MAIN_JOB_GROUPS =	512	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS138);
-	elseif MAIN_JOB_GROUPS =	521	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS139);
-	elseif MAIN_JOB_GROUPS =	522	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS140);
-	elseif MAIN_JOB_GROUPS =	531	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS141);
-	elseif MAIN_JOB_GROUPS =	532	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS142);
-	elseif MAIN_JOB_GROUPS =	551	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS143);
-	elseif MAIN_JOB_GROUPS =	552	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS144);
-	elseif MAIN_JOB_GROUPS =	559	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS145);
-	elseif MAIN_JOB_GROUPS =	561	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS146);
-	elseif MAIN_JOB_GROUPS =	562	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS147);
-	elseif MAIN_JOB_GROUPS =	563	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS148);
-	elseif MAIN_JOB_GROUPS =	581	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS149);
-	elseif MAIN_JOB_GROUPS =	582	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS150);
-	elseif MAIN_JOB_GROUPS =	591	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS151);
-	elseif MAIN_JOB_GROUPS =	592	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS152);
-	elseif MAIN_JOB_GROUPS =	601	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS153);
-	elseif MAIN_JOB_GROUPS =	602	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS154);
-	elseif MAIN_JOB_GROUPS =	611	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS155);
-	elseif MAIN_JOB_GROUPS =	612	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS156);
-	elseif MAIN_JOB_GROUPS =	613	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS157);
-	elseif MAIN_JOB_GROUPS =	619	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS158);
-	elseif MAIN_JOB_GROUPS =	620	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS159);
-	elseif MAIN_JOB_GROUPS =	631	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS160);
-	elseif MAIN_JOB_GROUPS =	639	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS161);
-	elseif MAIN_JOB_GROUPS =	641	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS162);
-	elseif MAIN_JOB_GROUPS =	642	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS163);
-	elseif MAIN_JOB_GROUPS =	643	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS164);
-	elseif MAIN_JOB_GROUPS =	649	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS165);
-	elseif MAIN_JOB_GROUPS =	651	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS166);
-	elseif MAIN_JOB_GROUPS =	652	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS167);
-	elseif MAIN_JOB_GROUPS =	653	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS168);
-	elseif MAIN_JOB_GROUPS =	661	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS169);
-	elseif MAIN_JOB_GROUPS =	662	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS170);
-	elseif MAIN_JOB_GROUPS =	663	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS171);
-	elseif MAIN_JOB_GROUPS =	681	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS172);
-	elseif MAIN_JOB_GROUPS =	682	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS173);
-	elseif MAIN_JOB_GROUPS =	691	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS174);
-	elseif MAIN_JOB_GROUPS =	692	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS175);
-	elseif MAIN_JOB_GROUPS =	701	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS176);
-	elseif MAIN_JOB_GROUPS =	702	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS177);
-	elseif MAIN_JOB_GROUPS =	711	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS178);
-	elseif MAIN_JOB_GROUPS =	712	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS179);
-	elseif MAIN_JOB_GROUPS =	721	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS180);
-	elseif MAIN_JOB_GROUPS =	722	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS181);
-	elseif MAIN_JOB_GROUPS =	731	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS182);
-	elseif MAIN_JOB_GROUPS =	732	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS183);
-	elseif MAIN_JOB_GROUPS =	741	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS184);
-	elseif MAIN_JOB_GROUPS =	742	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS185);
-	elseif MAIN_JOB_GROUPS =	749	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS186);
-	elseif MAIN_JOB_GROUPS =	750	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS187);
-	elseif MAIN_JOB_GROUPS =	771	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS188);
-	elseif MAIN_JOB_GROUPS =	772	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS189);
-	elseif MAIN_JOB_GROUPS =	773	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS190);
-	elseif MAIN_JOB_GROUPS =	774	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS191);
-	elseif MAIN_JOB_GROUPS =	781	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS192);
-	elseif MAIN_JOB_GROUPS =	782	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS193);
-	elseif MAIN_JOB_GROUPS =	783	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS194);
-	elseif MAIN_JOB_GROUPS =	791	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS195);
-	elseif MAIN_JOB_GROUPS =	799	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS196);
-	elseif MAIN_JOB_GROUPS =	801	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS197);
-	elseif MAIN_JOB_GROUPS =	802	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS198);
-	elseif MAIN_JOB_GROUPS =	803	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS199);
-	elseif MAIN_JOB_GROUPS =	811	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS200);
-	elseif MAIN_JOB_GROUPS =	812	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS201);
-	elseif MAIN_JOB_GROUPS =	813	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS202);
-	elseif MAIN_JOB_GROUPS =	821	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS203);
-	elseif MAIN_JOB_GROUPS =	822	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS204);
-	elseif MAIN_JOB_GROUPS =	823	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS205);
-	elseif MAIN_JOB_GROUPS =	829	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS206);
-	elseif MAIN_JOB_GROUPS =	841	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS207);
-	elseif MAIN_JOB_GROUPS =	842	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS208);
-	elseif MAIN_JOB_GROUPS =	843	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS209);
-	elseif MAIN_JOB_GROUPS =	851	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS210);
-	elseif MAIN_JOB_GROUPS =	852	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS211);
-	elseif MAIN_JOB_GROUPS =	853	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS212);
-	elseif MAIN_JOB_GROUPS =	854	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS213);
-	elseif MAIN_JOB_GROUPS =	855	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS214);
-	elseif MAIN_JOB_GROUPS =	861	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS215);
-	elseif MAIN_JOB_GROUPS =	862	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS216);
-	elseif MAIN_JOB_GROUPS =	869	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS217);
-	elseif MAIN_JOB_GROUPS =	871	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS218);
-	elseif MAIN_JOB_GROUPS =	872	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS219);
-	elseif MAIN_JOB_GROUPS =	873	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS220);
-	elseif MAIN_JOB_GROUPS =	879	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS221);
-	elseif MAIN_JOB_GROUPS =	881	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS222);
-	elseif MAIN_JOB_GROUPS =	889	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS223);
-	elseif MAIN_JOB_GROUPS =	900	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS224);
-	elseif MAIN_JOB_GROUPS =	910	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS225);
-	elseif MAIN_JOB_GROUPS =	920	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS226);
-	elseif MAIN_JOB_GROUPS =	931	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS227);
-	elseif MAIN_JOB_GROUPS =	932	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS228);
-	elseif MAIN_JOB_GROUPS =	941	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS229);
-	elseif MAIN_JOB_GROUPS =	942	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS230);
-	elseif MAIN_JOB_GROUPS =	949	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS231);
-	elseif MAIN_JOB_GROUPS =	951	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS232);
-	elseif MAIN_JOB_GROUPS =	952	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS233);
-	elseif MAIN_JOB_GROUPS =	960	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS234);
-	elseif MAIN_JOB_GROUPS =	970	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS235);
-	elseif MAIN_JOB_GROUPS =	981	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS236);
-	elseif MAIN_JOB_GROUPS =	982	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS237);
-	elseif MAIN_JOB_GROUPS =	990	then
-		setvalueset ( $,MAIN_JOB_CLASS_VS238);
+	if MAIN_JOB_CGROUPS = 011 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS1);
+	elseif MAIN_JOB_CGROUPS = 012 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS2);
+	elseif MAIN_JOB_CGROUPS = 013 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS3);
+	elseif MAIN_JOB_CGROUPS = 014 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS4);
+	elseif MAIN_JOB_CGROUPS = 015 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS5);
+	elseif MAIN_JOB_CGROUPS = 016 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS6);
+	elseif MAIN_JOB_CGROUPS = 017 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS7);
+	elseif MAIN_JOB_CGROUPS = 021 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS8);
+	elseif MAIN_JOB_CGROUPS = 022 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS9);
+	elseif MAIN_JOB_CGROUPS = 023 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS10);
+	elseif MAIN_JOB_CGROUPS = 024 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS11);
+	elseif MAIN_JOB_CGROUPS = 031 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS12);
+	elseif MAIN_JOB_CGROUPS = 032 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS13);
+	elseif MAIN_JOB_CGROUPS = 051 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS14);
+	elseif MAIN_JOB_CGROUPS = 052 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS15);
+	elseif MAIN_JOB_CGROUPS = 061 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS16);
+	elseif MAIN_JOB_CGROUPS = 062 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS17);
+	elseif MAIN_JOB_CGROUPS = 071 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS18);
+	elseif MAIN_JOB_CGROUPS = 072 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS19);
+	elseif MAIN_JOB_CGROUPS = 081 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS20);
+	elseif MAIN_JOB_CGROUPS = 089 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS21);
+	elseif MAIN_JOB_CGROUPS = 091 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS22);
+	elseif MAIN_JOB_CGROUPS = 099 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS23);
+	elseif MAIN_JOB_CGROUPS = 101 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS24);
+	elseif MAIN_JOB_CGROUPS = 102 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS25);
+	elseif MAIN_JOB_CGROUPS = 103 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS26);
+	elseif MAIN_JOB_CGROUPS = 104 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS27);
+	elseif MAIN_JOB_CGROUPS = 105 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS28);
+	elseif MAIN_JOB_CGROUPS = 106 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS29);
+	elseif MAIN_JOB_CGROUPS = 107 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS30);
+	elseif MAIN_JOB_CGROUPS = 108 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS31);
+	elseif MAIN_JOB_CGROUPS = 110 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS32);
+	elseif MAIN_JOB_CGROUPS = 120 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS33);
+	elseif MAIN_JOB_CGROUPS = 131 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS34);
+	elseif MAIN_JOB_CGROUPS = 139 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS35);
+	elseif MAIN_JOB_CGROUPS = 141 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS36);
+	elseif MAIN_JOB_CGROUPS = 142 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS37);
+	elseif MAIN_JOB_CGROUPS = 143 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS38);
+	elseif MAIN_JOB_CGROUPS = 151 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS39);
+	elseif MAIN_JOB_CGROUPS = 152 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS40);
+	elseif MAIN_JOB_CGROUPS = 161 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS41);
+	elseif MAIN_JOB_CGROUPS = 162 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS42);
+	elseif MAIN_JOB_CGROUPS = 170 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS43);
+	elseif MAIN_JOB_CGROUPS = 181 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS44);
+	elseif MAIN_JOB_CGROUPS = 182 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS45);
+	elseif MAIN_JOB_CGROUPS = 191 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS46);
+	elseif MAIN_JOB_CGROUPS = 192 then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS47);
+	elseif MAIN_JOB_CGROUPS =	201	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS48);
+	elseif MAIN_JOB_CGROUPS =	202	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS49);
+	elseif MAIN_JOB_CGROUPS =	203	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS50);
+	elseif MAIN_JOB_CGROUPS =	210	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS51);
+	elseif MAIN_JOB_CGROUPS =	221	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS52);
+	elseif MAIN_JOB_CGROUPS =	222	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS53);
+	elseif MAIN_JOB_CGROUPS =	231	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS54);
+	elseif MAIN_JOB_CGROUPS =	239	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS55);
+	elseif MAIN_JOB_CGROUPS =	241	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS56);
+	elseif MAIN_JOB_CGROUPS =	242	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS57);
+	elseif MAIN_JOB_CGROUPS =	243	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS58);
+	elseif MAIN_JOB_CGROUPS =	251	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS59);
+	elseif MAIN_JOB_CGROUPS =	252	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS60);
+	elseif MAIN_JOB_CGROUPS =	259	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS61);
+	elseif MAIN_JOB_CGROUPS =	261	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS62);
+	elseif MAIN_JOB_CGROUPS =	262	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS63);
+	elseif MAIN_JOB_CGROUPS =	263	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS64);
+	elseif MAIN_JOB_CGROUPS =	264	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS65);
+	elseif MAIN_JOB_CGROUPS =	265	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS66);
+	elseif MAIN_JOB_CGROUPS =	266	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS67);
+	elseif MAIN_JOB_CGROUPS =	267	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS68);
+	elseif MAIN_JOB_CGROUPS =	268	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS69);
+	elseif MAIN_JOB_CGROUPS =	271	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS70);
+	elseif MAIN_JOB_CGROUPS =	272	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS71);
+	elseif MAIN_JOB_CGROUPS =	273	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS72);
+	elseif MAIN_JOB_CGROUPS =	274	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS73);
+	elseif MAIN_JOB_CGROUPS =	275	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS74);
+	elseif MAIN_JOB_CGROUPS =	279	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS75);
+	elseif MAIN_JOB_CGROUPS =	281	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS76);
+	elseif MAIN_JOB_CGROUPS =	282	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS77);
+	elseif MAIN_JOB_CGROUPS =	291	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS78);
+	elseif MAIN_JOB_CGROUPS =	292	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS79);
+	elseif MAIN_JOB_CGROUPS =	293	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS80);
+	elseif MAIN_JOB_CGROUPS =	301	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS81);
+	elseif MAIN_JOB_CGROUPS =	302	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS82);
+	elseif MAIN_JOB_CGROUPS =	303	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS83);
+	elseif MAIN_JOB_CGROUPS =	304	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS84);
+	elseif MAIN_JOB_CGROUPS =	309	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS85);
+	elseif MAIN_JOB_CGROUPS =	310	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS86);
+	elseif MAIN_JOB_CGROUPS =	321	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS87);
+	elseif MAIN_JOB_CGROUPS =	322	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS88);
+	elseif MAIN_JOB_CGROUPS =	323	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS89);
+	elseif MAIN_JOB_CGROUPS =	324	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS90);
+	elseif MAIN_JOB_CGROUPS =	325	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS91);
+	elseif MAIN_JOB_CGROUPS =	329	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS92);
+	elseif MAIN_JOB_CGROUPS =	331	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS93);
+	elseif MAIN_JOB_CGROUPS =	332	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS94);
+	elseif MAIN_JOB_CGROUPS =	351	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS95);
+	elseif MAIN_JOB_CGROUPS =	352	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS96);
+	elseif MAIN_JOB_CGROUPS =	353	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS97);
+	elseif MAIN_JOB_CGROUPS =	360	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS98);
+	elseif MAIN_JOB_CGROUPS =	370	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS99);
+	elseif MAIN_JOB_CGROUPS =	381	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS100);
+	elseif MAIN_JOB_CGROUPS =	382	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS101);
+	elseif MAIN_JOB_CGROUPS =	383	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS102);
+	elseif MAIN_JOB_CGROUPS =	390	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS103);
+	elseif MAIN_JOB_CGROUPS =	410	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS104);
+	elseif MAIN_JOB_CGROUPS =	421	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS105);
+	elseif MAIN_JOB_CGROUPS =	422	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS106);
+	elseif MAIN_JOB_CGROUPS =	429	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS107);
+	elseif MAIN_JOB_CGROUPS =	431	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS108);
+	elseif MAIN_JOB_CGROUPS =	432	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS109);
+	elseif MAIN_JOB_CGROUPS =	433	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS110);
+	elseif MAIN_JOB_CGROUPS =	439	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS111);
+	elseif MAIN_JOB_CGROUPS =	451	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS112);
+	elseif MAIN_JOB_CGROUPS =	452	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS113);
+	elseif MAIN_JOB_CGROUPS =	453	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS114);
+	elseif MAIN_JOB_CGROUPS =	454	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS115);
+	elseif MAIN_JOB_CGROUPS =	461	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS116);
+	elseif MAIN_JOB_CGROUPS =	462	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS117);
+	elseif MAIN_JOB_CGROUPS =	463	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS118);
+	elseif MAIN_JOB_CGROUPS =	464	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS119);
+	elseif MAIN_JOB_CGROUPS =	465	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS120);
+	elseif MAIN_JOB_CGROUPS =	466	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS121);
+	elseif MAIN_JOB_CGROUPS =	469	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS122);
+	elseif MAIN_JOB_CGROUPS =	471	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS123);
+	elseif MAIN_JOB_CGROUPS =	472	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS124);
+	elseif MAIN_JOB_CGROUPS =	473	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS125);
+	elseif MAIN_JOB_CGROUPS =	474	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS126);
+	elseif MAIN_JOB_CGROUPS =	475	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS127);
+	elseif MAIN_JOB_CGROUPS =	476	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS128);
+	elseif MAIN_JOB_CGROUPS =	477	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS129);
+	elseif MAIN_JOB_CGROUPS =	478	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS130);
+	elseif MAIN_JOB_CGROUPS =	479	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS131);
+	elseif MAIN_JOB_CGROUPS =	491	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS132);
+	elseif MAIN_JOB_CGROUPS =	492	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS133);
+	elseif MAIN_JOB_CGROUPS =	493	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS134);
+	elseif MAIN_JOB_CGROUPS =	501	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS135);
+	elseif MAIN_JOB_CGROUPS =	502	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS136);
+	elseif MAIN_JOB_CGROUPS =	511	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS137);
+	elseif MAIN_JOB_CGROUPS =	512	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS138);
+	elseif MAIN_JOB_CGROUPS =	521	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS139);
+	elseif MAIN_JOB_CGROUPS =	522	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS140);
+	elseif MAIN_JOB_CGROUPS =	531	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS141);
+	elseif MAIN_JOB_CGROUPS =	532	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS142);
+	elseif MAIN_JOB_CGROUPS =	551	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS143);
+	elseif MAIN_JOB_CGROUPS =	552	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS144);
+	elseif MAIN_JOB_CGROUPS =	559	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS145);
+	elseif MAIN_JOB_CGROUPS =	561	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS146);
+	elseif MAIN_JOB_CGROUPS =	562	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS147);
+	elseif MAIN_JOB_CGROUPS =	563	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS148);
+	elseif MAIN_JOB_CGROUPS =	581	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS149);
+	elseif MAIN_JOB_CGROUPS =	582	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS150);
+	elseif MAIN_JOB_CGROUPS =	591	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS151);
+	elseif MAIN_JOB_CGROUPS =	592	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS152);
+	elseif MAIN_JOB_CGROUPS =	601	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS153);
+	elseif MAIN_JOB_CGROUPS =	602	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS154);
+	elseif MAIN_JOB_CGROUPS =	611	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS155);
+	elseif MAIN_JOB_CGROUPS =	612	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS156);
+	elseif MAIN_JOB_CGROUPS =	613	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS157);
+	elseif MAIN_JOB_CGROUPS =	619	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS158);
+	elseif MAIN_JOB_CGROUPS =	620	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS159);
+	elseif MAIN_JOB_CGROUPS =	631	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS160);
+	elseif MAIN_JOB_CGROUPS =	639	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS161);
+	elseif MAIN_JOB_CGROUPS =	641	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS162);
+	elseif MAIN_JOB_CGROUPS =	642	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS163);
+	elseif MAIN_JOB_CGROUPS =	643	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS164);
+	elseif MAIN_JOB_CGROUPS =	649	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS165);
+	elseif MAIN_JOB_CGROUPS =	651	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS166);
+	elseif MAIN_JOB_CGROUPS =	652	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS167);
+	elseif MAIN_JOB_CGROUPS =	653	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS168);
+	elseif MAIN_JOB_CGROUPS =	661	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS169);
+	elseif MAIN_JOB_CGROUPS =	662	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS170);
+	elseif MAIN_JOB_CGROUPS =	663	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS171);
+	elseif MAIN_JOB_CGROUPS =	681	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS172);
+	elseif MAIN_JOB_CGROUPS =	682	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS173);
+	elseif MAIN_JOB_CGROUPS =	691	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS174);
+	elseif MAIN_JOB_CGROUPS =	692	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS175);
+	elseif MAIN_JOB_CGROUPS =	701	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS176);
+	elseif MAIN_JOB_CGROUPS =	702	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS177);
+	elseif MAIN_JOB_CGROUPS =	711	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS178);
+	elseif MAIN_JOB_CGROUPS =	712	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS179);
+	elseif MAIN_JOB_CGROUPS =	721	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS180);
+	elseif MAIN_JOB_CGROUPS =	722	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS181);
+	elseif MAIN_JOB_CGROUPS =	731	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS182);
+	elseif MAIN_JOB_CGROUPS =	732	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS183);
+	elseif MAIN_JOB_CGROUPS =	741	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS184);
+	elseif MAIN_JOB_CGROUPS =	742	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS185);
+	elseif MAIN_JOB_CGROUPS =	749	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS186);
+	elseif MAIN_JOB_CGROUPS =	750	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS187);
+	elseif MAIN_JOB_CGROUPS =	771	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS188);
+	elseif MAIN_JOB_CGROUPS =	772	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS189);
+	elseif MAIN_JOB_CGROUPS =	773	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS190);
+	elseif MAIN_JOB_CGROUPS =	774	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS191);
+	elseif MAIN_JOB_CGROUPS =	781	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS192);
+	elseif MAIN_JOB_CGROUPS =	782	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS193);
+	elseif MAIN_JOB_CGROUPS =	783	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS194);
+	elseif MAIN_JOB_CGROUPS =	791	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS195);
+	elseif MAIN_JOB_CGROUPS =	799	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS196);
+	elseif MAIN_JOB_CGROUPS =	801	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS197);
+	elseif MAIN_JOB_CGROUPS =	802	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS198);
+	elseif MAIN_JOB_CGROUPS =	803	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS199);
+	elseif MAIN_JOB_CGROUPS =	811	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS200);
+	elseif MAIN_JOB_CGROUPS =	812	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS201);
+	elseif MAIN_JOB_CGROUPS =	813	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS202);
+	elseif MAIN_JOB_CGROUPS =	821	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS203);
+	elseif MAIN_JOB_CGROUPS =	822	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS204);
+	elseif MAIN_JOB_CGROUPS =	823	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS205);
+	elseif MAIN_JOB_CGROUPS =	829	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS206);
+	elseif MAIN_JOB_CGROUPS =	841	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS207);
+	elseif MAIN_JOB_CGROUPS =	842	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS208);
+	elseif MAIN_JOB_CGROUPS =	843	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS209);
+	elseif MAIN_JOB_CGROUPS =	851	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS210);
+	elseif MAIN_JOB_CGROUPS =	852	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS211);
+	elseif MAIN_JOB_CGROUPS =	853	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS212);
+	elseif MAIN_JOB_CGROUPS =	854	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS213);
+	elseif MAIN_JOB_CGROUPS =	855	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS214);
+	elseif MAIN_JOB_CGROUPS =	861	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS215);
+	elseif MAIN_JOB_CGROUPS =	862	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS216);
+	elseif MAIN_JOB_CGROUPS =	869	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS217);
+	elseif MAIN_JOB_CGROUPS =	871	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS218);
+	elseif MAIN_JOB_CGROUPS =	872	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS219);
+	elseif MAIN_JOB_CGROUPS =	873	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS220);
+	elseif MAIN_JOB_CGROUPS =	879	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS221);
+	elseif MAIN_JOB_CGROUPS =	881	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS222);
+	elseif MAIN_JOB_CGROUPS =	889	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS223);
+	elseif MAIN_JOB_CGROUPS =	900	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS224);
+	elseif MAIN_JOB_CGROUPS =	910	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS225);
+	elseif MAIN_JOB_CGROUPS =	920	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS226);
+	elseif MAIN_JOB_CGROUPS =	931	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS227);
+	elseif MAIN_JOB_CGROUPS =	932	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS228);
+	elseif MAIN_JOB_CGROUPS =	941	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS229);
+	elseif MAIN_JOB_CGROUPS =	942	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS230);
+	elseif MAIN_JOB_CGROUPS =	949	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS231);
+	elseif MAIN_JOB_CGROUPS =	951	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS232);
+	elseif MAIN_JOB_CGROUPS =	952	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS233);
+	elseif MAIN_JOB_CGROUPS =	960	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS234);
+	elseif MAIN_JOB_CGROUPS =	970	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS235);
+	elseif MAIN_JOB_CGROUPS =	981	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS236);
+	elseif MAIN_JOB_CGROUPS =	982	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS237);
+	elseif MAIN_JOB_CGROUPS =	990	then
+		setvalueset ( $,MAIN_JOB_CCLASS_VS238);
 	endif;
 
 PROC MAIN_JOB_OCC_LEVEL_C1
