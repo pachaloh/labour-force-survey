@@ -1,25 +1,22 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-ShowInApplicationListing=Never
-
 [DataEntryInit]
-Key=00052e4dbb98-d9aa-4d62-a989-32cd5f3c5c2c0703
+Key=00052e4dbb98-d9aa-4d62-a989-32cd5f3c5c2c0604
+StartMode=Add
 Lock=CaseListing
-
+ShowInApplicationListing=Never
 [Files]
-Application=.\ChildLFS.ent
-InputData=..\Data\Child.csdb
-
+Application=./ChildLFS.ent
+InputData=../Data/Child.csdb
 [ExternalFiles]
-CLUSTERS_DICT=..\Lookups\clusters.csdb
-HOUSEHOLDLFS_DICT=..\Data\Household.csdb
-INDIVIDUALLFS_DICT=..\Data\Individual.csdb
-
+CLUSTERS_DICT=../Lookups/clusters.csdb
+HOUSEHOLDLFS_DICT=../Data/Household.csdb
+INDIVIDUALLFS_DICT=../Data/Individual.csdb
 [Parameters]
-OnExit=..\Menu\MenuLFS.pff
 CCLUSTER=0005
-CGHHHNO=07
-CHMPPNO=03
+CGHHHNO=06
+CHMPPNO=04
 GHINTID=2e4dbb98-d9aa-4d62-a989-32cd5f3c5c2c
 GHINTNAME=BETTER MKANDAWIRE
+OnExit=../Menu/MenuLFS.pff

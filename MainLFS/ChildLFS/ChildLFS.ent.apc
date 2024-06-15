@@ -308,7 +308,7 @@ onfocus
 postproc
 
 
-	if $ in 97, 98,99 then
+	if $ in {97,} 98,99 then
 		skip to CHILD_END_TIME;
 	endif;
 
@@ -363,7 +363,8 @@ preproc
 
 		loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO);	
 		A2 	= DEM_02(CHMPPNO); 	//Copy relationship to head from the household data
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 PROC A3
 
 preproc
@@ -371,7 +372,8 @@ preproc
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 	
 		A3     = DEM_01(CHMPPNO);	//Copy sex
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 		
 	endif;
 PROC A4_DOB
@@ -381,7 +383,8 @@ preproc
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 	
 		A4_MOB = DEM_04(CHMPPNO);	//Month of birth
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 		
 	endif;
 
@@ -392,7 +395,8 @@ preproc
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 
 		A4_MOB = DEM_04(CHMPPNO);	//Month of birth
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 		
 	endif;
 PROC A4_YOB
@@ -401,7 +405,8 @@ preproc
 		if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 
 		A4_YOB = DEM_05(CHMPPNO);	//Year of birth
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 		
 	endif;
 
@@ -425,7 +430,8 @@ preproc
 	
 
 		A5     = DEM_06(CHMPPNO); 	//Age
-		setproperty($,"protected","yes");
+		noinput;
+		//setproperty($,"protected","yes");
 
 		
 	endif;
@@ -460,8 +466,9 @@ preproc
 	if loadcase(HOUSEHOLDLFS_DICT,CCLUSTER,CGHINTID,CGHHHNO) and RESP_LINE_NO = HH_RESP_LN then
 	
 		A6A    = DEM_10(CHMPPNO);	//Highest level of education completed
-		//A6B    = DEM_11(CHMPPNO);	//Highest class completed
-		setproperty($,"protected","yes");
+		A6B    = DEM_11(CHMPPNO);	//Highest class completed
+		noinput;
+		//setproperty($,"protected","yes");
 		
 	endif;
 PROC A6B

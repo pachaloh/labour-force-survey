@@ -1,25 +1,22 @@
 ﻿[Run Information]
 Version=CSPro 7.7
 AppType=Entry
-ShowInApplicationListing=Never
-
 [DataEntryInit]
-Key=00017b5166e2-ef49-436e-9082-8d2f74af2f1903
+Key=00017d48f7a6-fb35-4a01-9719-edbb0dfb68e811
+StartMode=Add
 Lock=CaseListing
-
+ShowInApplicationListing=Never
 [Files]
-Application=.\HouseholdLFS.ent
-InputData=..\Data\Household.csdb
-
+Application=./HouseholdLFS.ent
+InputData=../Data/Household.csdb
 [ExternalFiles]
-CLUSTERS_DICT=..\Lookups\clusters.csdb
-DETAILED_FIELD_CODES_DICT=..\Lookups\Detailed_field_of_study.csdb
-INDIVIDUALLFS_DICT=..\Data\Individual.csdb
-NARROW_FIELD_CODES_DICT=..\Lookups\Narrow_field_of_study.csdb
-
+INDIVIDUALLFS_DICT=../Data/Individual.csdb
+CLUSTERS_DICT=../Lookups/clusters.csdb
+DETAILED_FIELD_CODES_DICT=../Lookups/Detailed_field_of_study.csdb
+NARROW_FIELD_CODES_DICT=../Lookups/Narrow_field_of_study.csdb
 [Parameters]
-OnExit=..\Menu\MenuLFS.pff
 CLUSTER=0001
-GHHHNO=03
-GHINTID=7b5166e2-ef49-436e-9082-8d2f74af2f19
+GHHHNO=11
+GHINTID=7d48f7a6-fb35-4a01-9719-edbb0dfb68e8
 GHINTNAME=PACHALO CHIZALA
+OnExit=../Menu/MenuLFS.pff

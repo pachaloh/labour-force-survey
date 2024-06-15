@@ -8629,14 +8629,26 @@ DataType=Alpha
 [ValueSet]
 Label=TVT10
 Name=TVT10_VS1
-Value='A        ';My current job is only a temporary stepping stone, I am still searching for professional orientation
-Value='B        ';I have not found an appropriate job (yet)
-Value='C        ';I receive a higher salary in my current job
-Value='D        ';My current job offers more security
-Value='E        ';My interests have changed
-Value='F        ';My current job allows a flexible time schedule
-Value='G        ';My current job allows me to work in a favored geographical place
-Value='H        ';My current job allows me to take into consideration the interests of my family/children
+Value='A        ';Automobile Mechanics (AMM)
+Value='B        ';Administrative Studies (AAS)
+Value='C        ';Bricklaying (BRL)
+Value='D        ';Cosmetology (CMG)
+Value='E        ';Carpentry and Joinery (CRJ)
+Value='F        ';Edible Horticulture (EHC)
+Value='G        ';Electrical Installation and Electronics (EIE)
+Value='H        ';Fabrication and Welding (FBW)
+Value='I        ';Food Production (FPR)
+Value='J        ';General Fitting (GFT)
+Value='K        ';Information and Communication Technology (ICT)
+Value='L        ';Motorcycle Mechanics (MCM)
+Value='M        ';Painting and Decoration (PAD)
+Value='N        ';Plumbing (PLB)
+Value='O        ';Refrigeration and Air Conditioning Mechanics (RAM)
+Value='P        ';Solar Photovoltaic Installation (SPV)
+Value='Q        ';Tailoring and Fashion Designing (TFD)
+Value='R        ';Tour Guide (TRG)
+Value='S        ';Wood Work Machining (WWM)
+Value='T        ';Other TEVET related work
 Value='Z        ';Other
 
 [Item]
