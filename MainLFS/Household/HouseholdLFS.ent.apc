@@ -1542,7 +1542,7 @@ preproc
 		string hh_member_name = maketext("Is %s available?",DEM_NAME(ctr));
 		numeric member_available = accept(hh_member_name,"Yes","No");
 		
-		if DEM_06(ctr) >= NWAP and member_available = 1 then
+		if DEM_06(ctr) >= 15 and member_available = 1 then
 			eligible_for_time_use.add(DEM_NAME(ctr),ctr)
 		endif;
 	enddo;
@@ -1555,6 +1555,11 @@ preproc
 	endif;
 	
 	//$ = randomin(eligible_for_time_use);
+	
+	//Claims that it selects underage
+	if DEM_06($) < 15 then
+		$ = HH_RESP_LN;
+	endif;
 	
 	errmsg("%v is selected for time use",DEM_NAME($));
 	

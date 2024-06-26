@@ -193,6 +193,75 @@ function eligibles(valueset string eligible_persons, valueset string eligible_ch
 end
 
 
+//Funtion to identify individual 15 to 64 yrs old members
+function eligibles_individuals()
+	
+	//Loop through household data files and identify eligible members
+	completed_households.clear();
+	numeric tm_ctr = 1;
+	numeric hh_ctr = 1;
+	
+	forcase HOUSEHOLDLFS_DICT where CLUSTER = MCLUSTER and GHINTID = LOGIN do 
+		//errmsg("hctr :%d",hh_ctr);
+		completed_households(hh_ctr,1) = member_alphabet[hh_ctr:1];
+		completed_households(hh_ctr,2) = "";
+		completed_households(hh_ctr,3) = maketext("%s Household",DEM_NAME(1));
+		completed_households(hh_ctr,4) = "";
+		completed_households(hh_ctr,5) = "";
+			
+		do varying numeric member_index = 1 while member_index <= GHHHSIZE and HH_CONCLUSION = 1 									//Loop through members of the household
+			
+			if member_index = 1 and DEM_06(member_index) in 15:64 then
+				tm_ctr = hh_ctr + 1 ;
+				//errmsg("Counter: %d vs %d",hh_ctr,tm_ctr);
+				completed_households(tm_ctr,1) = edit("99",GHHHNO);
+				completed_households(tm_ctr,2) = edit("99",HMPPNO(member_index));
+				completed_households(tm_ctr,3) = DEM_NAME(member_index);
+				//errmsg("Name :%s",completed_households(tm_ctr,3));
+				completed_households(tm_ctr,4) = edit("999",DEM_06(member_index));	
+				
+				//Check if interviewed
+				if loadcase(INDIVIDUALLFS_DICT,edit("9999",MCLUSTER),LOGIN,edit("99",GHHHNO),edit("99",HMPPNO(member_index))) and INDIVEND = 1 then
+					completed_households(tm_ctr,5) = "Completed";
+				else
+					completed_households(tm_ctr,5) = "Incomplete";
+				endif;
+
+			elseif member_index > 1 and DEM_06(member_index) in 15:64 then
+				tm_ctr = tm_ctr + 1 ;
+				//errmsg("Counter: %d vs %d",hh_ctr,tm_ctr);
+				completed_households(tm_ctr,1) = edit("99",GHHHNO);
+				completed_households(tm_ctr,2) = edit("99",HMPPNO(member_index));
+				completed_households(tm_ctr,3) = DEM_NAME(member_index);
+				completed_households(tm_ctr,4) = edit("999",DEM_06(member_index));	
+				
+				//Check if interviewed
+				if loadcase(INDIVIDUALLFS_DICT,edit("9999",MCLUSTER),LOGIN,edit("99",GHHHNO),edit("99",HMPPNO(member_index))) and INDIVEND = 1 then
+					completed_households(tm_ctr,5) = "Completed";
+				else
+					completed_households(tm_ctr,5) = "Incomplete";
+				endif;
+
+			endif;
+			
+
+		enddo;
+
+		hh_ctr = tm_ctr + 1;
+		
+	endfor;
+	
+	string report_heading = maketext("Cluster %v Assigned Households", edit("9999",MCLUSTER));
+	
+	eligibles_individuals = showarray(report_heading,completed_households,title("HH","LN","HH HEAD","AGE","STATUS"));
+
+end;
+		
+
+
+
+
+
 
 //Function that lists households per cluster for each interviewer and their status of progress
 function tasks_household (valueset string households)
@@ -337,6 +406,93 @@ function eligible_members(valueset string eligible_persons, valueset string elig
 	endfor;	
 end;
 
+
+function eligible_members_updated(valueset string eligible_persons, numeric qn_type)
+
+	{qn_type:  1. Individual 
+			   2. Time use 
+			   3. Child}
+	numeric counter = 1, sumCheck, index = 1;
+
+	
+	string PersonCaseId;
+
+	forcase HOUSEHOLDLFS_DICT(startswith,maketext("%v%v",MCLUSTER,LOGIN)) do 
+		eligible_persons.add(maketext("%v Household",strip(DEM_NAME(1))),"0");
+		do counter = 1 while counter <= GHHHSIZE 
+			
+			//If an eligible adult is found in household datafile, check if interviewed
+			if qn_type = 1 and DEM_06(counter) in 15:64 {and HH_END in 1:9} then				
+				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
+				
+				if loadcase(INDIVIDUALLFS_DICT,PersonCaseId) and INDIVEND <> notappl then	
+					eligible_persons.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				elseif loadcase(INDIVIDUALLFS_DICT,PersonCaseId) and INDIVEND = notappl then
+				
+					eligible_persons.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				else
+
+					eligible_persons.add(maketext("%-25v (NOT INTERVIEWED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				endif;
+				
+				index = index + 1; 
+				
+			endif;
+			
+			
+
+		//eligible_timeuse.add(maketext("%v Household",strip(DEM_NAME(1))),"0");
+					
+			//If an eligible adult is found in household datafile, check if interviewed
+			if qn_type = 2 and TU_ELG_LN = HMPPNO(counter) then
+			
+				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",TU_ELG_LN));
+				
+				if loadcase(TIMEUSE_DICT_A,PersonCaseId) and TUS_END <> notappl then	
+					eligible_persons.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				elseif loadcase(TIMEUSE_DICT_A,PersonCaseId) and TUS_END = notappl then
+				
+					eligible_persons.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				else
+
+					eligible_persons.add(maketext("%-25v (NOT INTERVIEWED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				endif;
+				
+				index = index + 1; 
+				
+			endif;
+			
+			
+			
+			//If an eligible child is found in household datafile, check if interviewed
+			if qn_type = 3 and DEM_06(counter) in 5:17 {and HH_END in 1:9} then
+				
+				PersonCaseId = maketext("%v%v%v%v",CLUSTER,GHINTID,GHHHNO,edit("99",HMPPNO(counter)));
+								
+				if loadcase(CHILD_LABOUR_DICT,PersonCaseId) and CHILD_END_RESULT <> notappl then	
+					eligible_persons.add(maketext("%-25v (COMPLETED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				elseif loadcase(CHILD_LABOUR_DICT,PersonCaseId) and CHILD_END_RESULT = notappl then
+					eligible_persons.add(maketext("%-25v (PARTIAL)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				else
+
+					eligible_persons.add(maketext("%-25v (NOT INTERVIEWED)",strip(DEM_NAME(counter))),PersonCaseId);
+				
+				endif;
+				
+				index = index + 1; 
+			endif;
+		
+		enddo;
+	endfor;	
+end;
 
 
 
@@ -644,17 +800,17 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 	
 		numeric abortInd = 1;
 		
-		if abortInd = 1 and syncdata(BOTH, HOUSEHOLDLFS_DICT) = 0 then
+		if abortInd = 1 and syncdata(PUT, HOUSEHOLDLFS_DICT) = 0 then
 			errmsg("Syncing of Household data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
 
-		if abortInd = 1 and syncdata(BOTH, INDIVIDUALLFS_DICT) = 0 then
+		if abortInd = 1 and syncdata(PUT, INDIVIDUALLFS_DICT) = 0 then
 			errmsg("Syncing of individual data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncdata(BOTH, TIMEUSE_DICT_A) = 0 then
+		if abortInd = 1 and syncdata(PUT, TIMEUSE_DICT_A) = 0 then
 			errmsg("Syncing of time use data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
@@ -664,12 +820,12 @@ function syncWithCentralOffice()				//Function for data transfer betwen supervis
 			abortInd = 0;
 		endif;
 		
-		if abortInd = 1 and syncdata(BOTH, ASSIGNED_HHS_DICT) = 0 then
+		if abortInd = 1 and syncdata(PUT, ASSIGNED_HHS_DICT) = 0 then
 			errmsg("Syncing of HH assignments data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
 
-		if abortInd = 1 and syncdata(BOTH, CHILD_LABOUR_DICT) = 0 then
+		if abortInd = 1 and syncdata(PUT, CHILD_LABOUR_DICT) = 0 then
 			errmsg("Syncing of child labour data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
@@ -1291,6 +1447,14 @@ postproc
 	endif;
 	
 	
+	//Make sure to remove a household from an interviewer is a reassignemt is being made	
+	if completed_households(sel_hh_row,5) <> "" then
+		errmsg("Remove %s from %s before assigning it to a different interviewer",completed_households(sel_hh_row,2),completed_households(sel_hh_row,5));
+		reenter;
+	endif;
+	
+	
+	
 	//Update list of assigned households for interview	
 		ACLUSTER       = workCluster; 		//Cluster number
 		INTERVIEWER_ID = MANAGE_TASKS;		//Interviewer ID
@@ -1324,10 +1488,12 @@ onfocus
 
 	
 	valueset numeric assigned_hhs; //Dynamic valueset households
+	//numeric assigned_hhs_ctr = 0;
+	
 	
 	//Loop through already assigned households for a specific interviewer
 	forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = MANAGE_TASKS do 
-				assigned_hhs.add(AHH_NAME,AHH_NO);
+		assigned_hhs.add(AHH_NAME,AHH_NO); 					
 	endfor;
 	
 	if assigned_hhs.length() = 0 then
@@ -1341,7 +1507,7 @@ onfocus
 postproc
 	
 	//If not yet assigned any household
-	if assigned_hhs.length() = 0 then
+	if assigned_hhs.length() = 0  then
 		errmsg("%s is not yet assigned any household! Do you want to assign instead?",getlabel(MANAGE_TASKS,MANAGE_TASKS))
 			select("Yes",ASSIGN_HH,"No",MANAGE_TASKS);
 	endif;
@@ -1360,8 +1526,8 @@ postproc
 	endif;
 	
 	//Deleting a selected household
-	if delcase(ASSIGNED_HHS_DICT,MCLUSTER,MANAGE_TASKS,$) then
-		errmsg("Household deleted");
+	if delcase(HOUSEHOLDLFS_DICT,MCLUSTER,MANAGE_TASKS,$) and delcase(ASSIGNED_HHS_DICT,MCLUSTER,MANAGE_TASKS,$) then
+		errmsg("Household deleted and removed from assignment");
 	else
 		errmsg("Household not deleted");
 	endif;
@@ -1378,24 +1544,28 @@ onfocus
 	valueset string eligible_persons;
 	valueset string eligible_child;
 	valueset string eligible_timeuse;
+	numeric assigned_hhs_ctr = 0;
+	
 
 	
 	//Loop through already assigned households for a specific interviewer
 	forcase ASSIGNED_HHS_DICT where ACLUSTER = MCLUSTER and INTERVIEWER_ID = LOGIN do 
-			assigned_hhs.add(AHH_NAME,AHH_NO);
+			//assigned_hhs.add(AHH_NAME,AHH_NO);			//Old version
+			assigned_hhs_ctr = assigned_hhs_ctr + 1;	//New version 25 June 2024
+			break;
 	endfor;
 	
 
 
-	eligibles(eligible_persons,eligible_child,eligible_timeuse);
+	//eligibles(eligible_persons,eligible_child,eligible_timeuse);
 	
-	if assigned_hhs.length() > 0 then
+	if {assigned_hhs.length() > 0} assigned_hhs_ctr > 0 then
 		interviewer_menu.add("Interview household",1);
 	else
 		errmsg("You must be assigned a household to work in this cluster");
 	endif;
 	
-	
+	{
 	if eligible_persons.length() > 0 then
 		interviewer_menu.add("Interview Individual",2);
 	endif;
@@ -1408,7 +1578,11 @@ onfocus
 	if eligible_timeuse.length() > 0 then
 		interviewer_menu.add("Time Use",4);
 	endif;
-	
+	}	
+		interviewer_menu.add("Interview Individual",2);
+		interviewer_menu.add("Interview Child",3);
+		interviewer_menu.add("Interview Time Use",4);
+		
 		interviewer_menu.add("Sync data with supervisor",5);
 		interviewer_menu.add("View Assigned tasks",6);
 		interviewer_menu.add("Change cluster",8);
@@ -1450,8 +1624,7 @@ postproc
 PROC INTERVIEW_HH
 
 onfocus
-
-
+	
 	valueset string households;
 		
 	tasks_household(households);
@@ -1468,7 +1641,7 @@ postproc
 			
 			
 			if HH_LONG <> notappl or HH_LONG <> 0 or HH_LAT <> notappl or HH_LAT <> 0 then
-				errmsg("Warning! GPS coordinates (%d,%d) may not be accurate",HH_LONG,HH_LAT);
+				errmsg("Warning! GPS coordinates (%f,%f) may not be accurate",HH_LONG,HH_LAT);
 				numeric hh_marker = lfs_hh_map.addMarker(HH_LAT,HH_LONG);
 				//lfs_hh_map.setMarkerText("Household");
 				
@@ -1501,13 +1674,28 @@ PROC INTERVIEW_IN
 
 onfocus
 
-
+{
+	numeric sel_in_row = eligibles_individuals();
+	
+	errmsg("Eligible case: %d",sel_in_row);
+	errmsg("Eligible name: %s",completed_households(sel_in_row,3));
+	
+	INTERVIEW_IN = maketext("%v%v%v%v",
+							edit("9999",MCLUSTER),
+							LOGIN,
+							completed_households(sel_in_row,1),
+							completed_households(sel_in_row,2));
+}	
+	
+	
 	valueset string eligible_persons;
 	valueset string eligible_child;
 	valueset string eligible_timeuse;
 
 
-	eligible_members(eligible_persons, eligible_child, eligible_timeuse);
+	//eligible_members(eligible_persons, eligible_child, eligible_timeuse);
+	
+	eligible_members_updated(eligible_persons,1);
 	
 	setvalueset($,eligible_persons);
 	
@@ -1526,16 +1714,17 @@ PROC INTERVIEW_CHILD
 onfocus
 
 	valueset string eligible_persons;
-	valueset string eligible_child;
-	valueset string eligible_timeuse;
+	//valueset string eligible_child;
+	//valueset string eligible_timeuse;
 {	
 	eligibles(eligible_persons,eligible_child);
 	
 	setvalueset($,eligible_child);
 }
 
-	eligible_members(eligible_persons,eligible_child,eligible_timeuse);
-	setvalueset($,eligible_child);
+	//eligible_members(eligible_persons,eligible_child,eligible_timeuse);
+	eligible_members_updated(eligible_persons,3);
+	setvalueset($,eligible_persons);
 
 	
 postproc
@@ -1552,9 +1741,9 @@ onfocus
 	valueset string eligible_child;
 	valueset string eligible_timeuse;
 
-	eligible_members(eligible_persons, eligible_child, eligible_timeuse);
-	
-	setvalueset($,eligible_timeuse);
+	//eligible_members(eligible_persons, eligible_child, eligible_timeuse);
+	eligible_members_updated(eligible_persons,2);
+	setvalueset($,eligible_persons);
 	
 postproc
 

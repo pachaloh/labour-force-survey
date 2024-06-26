@@ -2,7 +2,7 @@
 Version=CSPro 7.7
 AppType=Entry
 [DataEntryInit]
-Key=00017d48f7a6-fb35-4a01-9719-edbb0dfb68e811
+Key=000533f47f09-03f9-4910-a8bd-4d354315207102
 StartMode=Add
 Lock=CaseListing
 ShowInApplicationListing=Never
@@ -15,8 +15,8 @@ CLUSTERS_DICT=../Lookups/clusters.csdb
 DETAILED_FIELD_CODES_DICT=../Lookups/Detailed_field_of_study.csdb
 NARROW_FIELD_CODES_DICT=../Lookups/Narrow_field_of_study.csdb
 [Parameters]
-CLUSTER=0001
-GHHHNO=11
-GHINTID=7d48f7a6-fb35-4a01-9719-edbb0dfb68e8
-GHINTNAME=PACHALO CHIZALA
+CLUSTER=0005
+GHHHNO=02
+GHINTID=33f47f09-03f9-4910-a8bd-4d3543152071
+GHINTNAME=KENNEDY KATAYA
 OnExit=../Menu/MenuLFS.pff

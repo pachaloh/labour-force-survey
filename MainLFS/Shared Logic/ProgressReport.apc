@@ -67,7 +67,7 @@ function EligibleMembersReport(string CurrentCase)
 	
 	//Eligible individuals for time use in the household  ####### TIMEUSE_DICT_A  ###  TUS_END ###
 								
-	if DEM_06(TU_ELG_LN) > 15 then
+	if DEM_06(TU_ELG_LN) >= 15 then
 		if loadcase(TIMEUSE_DICT_A,maketext("%v%v",CurrentCase,TU_ELG_LN)) and TUS_END <> notappl then 
 			filewrite(reportfile, "    Time. %s.%s(%d) (COMPLETED)",edit("99",PPNO(TU_ELG_LN)),DEM_NAME(TU_ELG_LN),DEM_06(TU_ELG_LN));
 			inc(TimeuseCompleteCount);

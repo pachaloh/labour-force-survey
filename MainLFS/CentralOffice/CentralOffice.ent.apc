@@ -598,6 +598,56 @@ end;
 
 
 
+function downloadDatafromServer()				//Function for data transfer betwen supervisor and Central Office
+// Connect to the webserver
+	if syncconnect(Dropbox) then
+	
+		// Sync cases file with server
+		
+	
+		numeric abortInd = 1;
+		
+		if abortInd = 1 and syncdata(GET, HOUSEHOLDLFS_DICT) = 0 then
+			errmsg("Syncing of Household data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(GET, INDIVIDUALLFS_DICT) = 0 then
+			errmsg("Syncing of individual data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+		
+		if abortInd = 1 and syncdata(GET, TIMEUSE_DICT_A) = 0 then
+			errmsg("Syncing of time use data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(GET, TEAMS_DICT) = 0 then
+			errmsg("Syncing of team file failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+		
+		if abortInd = 1 and syncdata(GET, ASSIGNED_HHS_DICT) = 0 then
+			errmsg("Syncing of HH assignments data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+		if abortInd = 1 and syncdata(GET, CHILD_LABOUR_DICT) = 0 then
+			errmsg("Syncing of child labour data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+
+
+
+		// Disconnect from the server
+		syncdisconnect();
+	endif;
+end;
+
+
+
+
+
 
 
 function syncWithSupervisor() //Funtion to transfer from interviewer to supervisor
@@ -693,6 +743,7 @@ onfocus
 
 	team_members_list(team_members);  //List team members
 	
+	team_members.add("Download data from server ","3");
 	team_members.add("Transfer data with supervisor ","2");
 	team_members.add("Begin work as supervisor","1");
 	
@@ -719,6 +770,11 @@ postproc
 	
 	if $ = "2" then
 		syncWithSupervisor();
+		reenter;
+	endif;
+	
+	if $ = "3" then
+		downloadDatafromServer();
 		reenter;
 	endif;
 	
