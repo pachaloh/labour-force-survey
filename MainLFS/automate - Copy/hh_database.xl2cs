@@ -1,0 +1,15 @@
+﻿Excel=..\Lookups\lookupLFS.xlsx
+InputDict=..\Dicts\hh_database.dcf
+OutputData=..\Lookups\hh_database.csdb
+StartingRow=2
+CaseManagement=CreateNewFile
+RunOnlyIfNewer=No
+
+Mapping=HH_DATABASE_REC;@2;hh_database
+Mapping=HH_DATABASE_REC.HH_CLUSTER;@1
+Mapping=HH_DATABASE_REC.HH_NUMBER;@2
+Mapping=HH_HEAD;@3
+Mapping=HH_LABEL;@4
+Mapping=DESCRIPTION;@5
+Mapping=HH_LONG;@6
+Mapping=HH_LAT;@7

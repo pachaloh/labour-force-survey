@@ -775,6 +775,19 @@ postproc
 	
 	if $ = "3" then
 		downloadDatafromServer();
+		
+		//Copy the files to a folder
+		string datapath = path.concat(pathname(Application),"../Data");  //Specify folder for main data collection  
+		string data_collection_folder = "C:/Users/pacha/Documents/GitHub/lfs-analysis/data collection/data";
+		//string data_collection_folder = path.concat(pathname(Application),"../copyData");
+		
+		errmsg("Data path: %s",datapath);
+		
+		if filecopy(pathconcat(datapath, "*.csdb"), data_collection_folder) then
+			errmsg("Files copied to %s",data_collection_folder);
+		else
+			errmsg("Files not copied");
+		endif;
 		reenter;
 	endif;
 	

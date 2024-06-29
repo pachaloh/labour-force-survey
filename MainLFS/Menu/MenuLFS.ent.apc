@@ -1526,7 +1526,7 @@ postproc
 	endif;
 	
 	//Deleting a selected household
-	if delcase(HOUSEHOLDLFS_DICT,MCLUSTER,MANAGE_TASKS,$) and delcase(ASSIGNED_HHS_DICT,MCLUSTER,MANAGE_TASKS,$) then
+	if {delcase(HOUSEHOLDLFS_DICT,MCLUSTER,MANAGE_TASKS,$) and} delcase(ASSIGNED_HHS_DICT,MCLUSTER,MANAGE_TASKS,$) then
 		errmsg("Household deleted and removed from assignment");
 	else
 		errmsg("Household not deleted");
