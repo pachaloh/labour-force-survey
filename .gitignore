@@ -1,0 +1,22 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+# Working Data
+data/processed/*
+data/raw/*
+outputs/*
+data_reports/*
+HHFA_Data/*
+
+# any .csv or .xlxs or .xls files
+*.csv
+*.CSV
+*.Rmd
+*.RMD
+*.rmd
+*.dta
+
+# don't ignore this file
+!data/causes.csv

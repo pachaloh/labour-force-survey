@@ -2,7 +2,7 @@
   "fileType": "Application Deployment Specification",
   "version": "7.7",
   "name": "LabourForceSurvey2023",
-  "description": "Malawi Labour Force Survey 14-06-2024",
+  "description": "Malawi Labour Force Survey 28-07-2024",
   "files": [
     {
       "path": "..\\ChildLFS\\ChildLFS.ent"
@@ -112,7 +112,7 @@
     }
   ],
   "deployment": {
-    "type": "LocalFolder",
+    "type": "Dropbox",
     "cswebUrl": "http:\/\/",
     "ftpUrl": "ftp:\/\/",
     "localFolderPath": "..\\..\\..\\..\\..\\..\\..\\LabourForceSurvey2023"

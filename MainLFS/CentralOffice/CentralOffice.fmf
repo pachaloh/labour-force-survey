@@ -96,9 +96,12 @@ Item=TIME_USE_SURVEY
 Name=FORM007
 Label=Central Office
 Level=1
-Size=663,267
+Size=665,391
   
 Item=CENTRAL_OFFICE
+Item=LFS_CLUSTER_REPORT
+Item=LFS_HH_REPORT
+Item=HQ_CLUSTER
   
 [EndForm]
   
@@ -428,6 +431,42 @@ Form=8
 [Text]
 Position=441,225,555,241
 Text=CENTRAL_OFFICE
+ 
+  
+[Field]
+Name=HQ_CLUSTER
+Position=574,259,631,279
+Item=HQ_CLUSTER,CENTRAL_OFFICE_MENU_DICT
+DataCaptureType=TextBox
+Form=8
+  
+[Text]
+Position=416,262,483,278
+Text=HQ Cluster
+ 
+  
+[Field]
+Name=LFS_CLUSTER_REPORT
+Position=603,281,618,301
+Item=LFS_CLUSTER_REPORT,CENTRAL_OFFICE_MENU_DICT
+DataCaptureType=RadioButton
+Form=8
+  
+[Text]
+Position=421,284,544,300
+Text=LFS CLuster Report
+ 
+  
+[Field]
+Name=LFS_HH_REPORT
+Position=625,346,640,366
+Item=LFS_HH_REPORT,CENTRAL_OFFICE_MENU_DICT
+DataCaptureType=RadioButton
+Form=8
+  
+[Text]
+Position=443,349,536,365
+Text=LFS HH Report
  
 [EndGroup]
   

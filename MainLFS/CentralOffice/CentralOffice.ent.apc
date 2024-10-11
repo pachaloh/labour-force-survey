@@ -5,6 +5,7 @@ string  tempSupID; 		//Temporary supervisor ID
 numeric edit_option;	//
 string  PersonID; 		// Person's line number
 
+array string completed_households(1000,7);
 
 {
 forcase CENSUS_DICT(CaseStatus.Partial) do
@@ -117,6 +118,61 @@ function tasks_household (valueset string households)
 		
 	endfor;
 end
+
+
+function export_data(export_select)
+    // change the following filename to your desired output 
+	//1. Assignments
+	//2.
+	//3.
+	//4.
+	//5.
+	//6.
+	//7. 
+	
+	
+	if export_select = 1 then
+		
+	elseif export_select = 2 then
+	elseif export_select = 3 then
+	elseif export_select = 4 then
+	elseif export_select = 5 then
+	elseif export_select = 6 then
+	elseif export_select = 7 then
+	endif;
+	
+    string pff_filename = path.concat(Application, "assignments.exf.pff"); 
+
+    file dynamic_pff; 
+    setfile(dynamic_pff, pff_filename, create); 
+
+    filewrite(dynamic_pff, "[Run Information]"); 
+    filewrite(dynamic_pff, "Version=CSPro 7.7"); 
+    filewrite(dynamic_pff, "AppType=Export"); 
+
+    filewrite(dynamic_pff, "[Files]"); 
+    filewrite(dynamic_pff, "Application=%v", "./assignments.exf"); 
+    filewrite(dynamic_pff, "InputData=%v", "./assigned_hh_databse.csdb"); 
+    filewrite(dynamic_pff, "ExportedData=%v", "./assignments.dat"); 
+    filewrite(dynamic_pff, "SPSSDescFile=%v", "./assignments.sps"); 
+    filewrite(dynamic_pff, "SASDescFile=%v", "./assignments.sas"); 
+    filewrite(dynamic_pff, "STATADescFile=%v", "./assignments.dct"); 
+    filewrite(dynamic_pff, "STATALabelsFile=%v", "./assignments.do"); 
+    filewrite(dynamic_pff, "RDescFile=%v", "./assignments.R"); 
+    filewrite(dynamic_pff, "Listing=%v", "./assignments.exf.lst"); 
+
+    filewrite(dynamic_pff, "[Parameters]"); 
+    filewrite(dynamic_pff, "Language=%v", "EN"); 
+    filewrite(dynamic_pff, "ViewListing=Always"); 
+    filewrite(dynamic_pff, "ViewResults=Yes"); 
+    filewrite(dynamic_pff, "InputOrder=Sequential"); 
+
+    close(dynamic_pff); 
+
+    execpff(filename(dynamic_pff)); 
+
+end; 
+
 
 
 
@@ -611,17 +667,17 @@ function downloadDatafromServer()				//Function for data transfer betwen supervi
 			errmsg("Syncing of Household data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
-
-		if abortInd = 1 and syncdata(GET, INDIVIDUALLFS_DICT) = 0 then
-			errmsg("Syncing of individual data failed! Syncing aborted");
-			abortInd = 0;
-		endif;
 		
 		if abortInd = 1 and syncdata(GET, TIMEUSE_DICT_A) = 0 then
 			errmsg("Syncing of time use data failed! Syncing aborted");
 			abortInd = 0;
 		endif;
 
+		if abortInd = 1 and syncdata(GET, INDIVIDUALLFS_DICT) = 0 then
+			errmsg("Syncing of individual data failed! Syncing aborted");
+			abortInd = 0;
+		endif;
+		
 		if abortInd = 1 and syncdata(GET, TEAMS_DICT) = 0 then
 			errmsg("Syncing of team file failed! Syncing aborted");
 			abortInd = 0;
@@ -637,11 +693,13 @@ function downloadDatafromServer()				//Function for data transfer betwen supervi
 			abortInd = 0;
 		endif;
 
-
-
 		// Disconnect from the server
+		
+		downloadDatafromServer = abortInd;
 		syncdisconnect();
 	endif;
+	
+	
 end;
 
 
@@ -774,21 +832,26 @@ postproc
 	endif;
 	
 	if $ = "3" then
-		downloadDatafromServer();
+		numeric datadownload = downloadDatafromServer();
 		
 		//Copy the files to a folder
-		string datapath = path.concat(pathname(Application),"../Data");  //Specify folder for main data collection  
-		string data_collection_folder = "C:/Users/pacha/Documents/GitHub/lfs-analysis/data collection/data";
-		//string data_collection_folder = path.concat(pathname(Application),"../copyData");
-		
-		errmsg("Data path: %s",datapath);
-		
-		if filecopy(pathconcat(datapath, "*.csdb"), data_collection_folder) then
-			errmsg("Files copied to %s",data_collection_folder);
-		else
-			errmsg("Files not copied");
+		if datadownload then
+			string datapath = path.concat(pathname(Application),"../Data");  //Specify folder for main data collection  
+			string data_collection_folder = "C:/Users/luhan/Documents/GitHub/lfs-analysis/data collection/data";
+			//string data_collection_folder = path.concat(pathname(Application),"../copyData");
+			
+			//errmsg("Data path: %s",datapath);
+			
+			if filecopy(pathconcat(datapath, "*.csdb"), data_collection_folder) then
+				errmsg("Files copied to %s",data_collection_folder);
+			else
+				errmsg("Files not copied");
+			endif;
+			reenter;
 		endif;
+		
 		reenter;
+		
 	endif;
 	
 	//If central Office, go to approprite functionality
@@ -1605,7 +1668,148 @@ onfocus
 		
 	endif;
 	
+PROC LFS_CLUSTER_REPORT
+
+
+onfocus
+
+
+	//Loop through already assigned households for a specific interviewer
+	numeric hh_ctr = 1;
+	numeric duplicates_hh = 0;
+	string report_heading;
+	
+	completed_households.clear();
+	numeric number_of_hh_cases = countcases(ASSIGNED_HHS_DICT where HH_CLUSTER = HQ_CLUSTER);
 
 	
 
+	
+	
+	forcase CLUSTERS_DICT {where TEAM_ID = TEAMNO} do
+		
+		numeric number_of_hh_assigned = countcases(ASSIGNED_HHS_DICT where ACLUSTER = CLUSTERNO);
+		numeric number_of_hh_interviews = countcases(HOUSEHOLDLFS_DICT where CLUSTER = CLUSTERNO);
+		
+		completed_households(hh_ctr,1) = edit("9999",CLUSTERNO);
+		completed_households(hh_ctr,2) = edit("99",number_of_hh_assigned);
+		completed_households(hh_ctr,3) = edit("9999",number_of_hh_interviews);
+		
+		hh_ctr = hh_ctr + 1;
+	endfor;
+	
+	//hh_ctr = hh_ctr + 1;
+	
+	completed_households(hh_ctr,1) = "X";
+	completed_households(hh_ctr,2) = "GO BACK";
+	
+	if duplicates_hh > 1 then
+		report_heading = maketext("Cluster %v: %d Assigned Households. Data has duplicates", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	else
+		report_heading = maketext("Cluster %v: %d Assigned Households.", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	endif;
+	//string report_heading = maketext("Cluster %v: %d Assigned Households.", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	
+	numeric sel_hh_row = showarray(report_heading,completed_households,title("CLUSTER","TASKS","HH DONE","IND","CHLD","TUS","STATUS"));
+
+
+	if completed_households(sel_hh_row,1)= "X" then
+		reenter TEAM_MGT;
+	endif;
+
+postproc
+
+	if completed_households(sel_hh_row,1)= "X" then
+		reenter TEAM_MGT;
+	endif;
+	
+PROC LFS_HH_REPORT
+
+
+
+onfocus
+
+
+	//Loop through already assigned households for a specific interviewer
+	numeric hh_ctr = 1;
+	numeric duplicates_hh = 0;
+	string report_heading;
+	
+	completed_households.clear();
+	numeric number_of_hh_cases = countcases(ASSIGNED_HHS_DICT where HH_CLUSTER = HQ_CLUSTER);
+
+	
+	{
+	numeric number_of_hh_cases = countcases(ASSIGNED_HHS_DICT where ASSIGN_HH_CLUSTER = HQ_CLUSTER);
+	
+	//Check for dubplicates in households
+	
+		do varying numeric dup_ctr = 1 while dup_ctr <= 40
+			duplicates_hh = 0;
+			forcase HOUSEHOLDLFS_DICT where HOUSEHOLD_CLUSTER = HQ_CLUSTER do
+				if HOUSEHOLD_ID = dup_ctr then
+					duplicates_hh = duplicates_hh + 1;
+					
+					if duplicates_hh > 1 then
+						break;
+					endif;
+				endif;
+			endfor;
+			
+			if duplicates_hh > 1 then
+				break;
+			endif;
+		enddo;
+		}
+	
+	
+	
+	forcase TEAMS_DICT {where TEAM_ID = TEAMNO} do
+		forcase ASSIGNED_HHS_DICT(startswith, maketext("%v%v",edit("9999",HQ_CLUSTER),USER_CODE)) do 
+			//errmsg("Counter %d", hh_ctr);
+			//assigned_hhs.add(AHH_NAME,AHH_NO);
+			completed_households(hh_ctr,1) = edit("99",AHH_NO);
+			completed_households(hh_ctr,2) = AHH_NAME;
+			completed_households(hh_ctr,3) = AHH_LABEL;
+			completed_households(hh_ctr,4) = INTRV_NAME;
+			
+						
+			if loadcase(HOUSEHOLDLFS_DICT,edit("9999",HQ_CLUSTER),USER_CODE,edit("99",AHH_NO)) then
+				if HH_CONCLUSION = 1 then
+					completed_households(hh_ctr,5) = "COMPLETED";
+				else
+					completed_households(hh_ctr,5) = "PARTIAL";
+				endif;	
+			else
+					completed_households(hh_ctr,5) = "NOT VISITED";
+			endif;
+			
+			hh_ctr = hh_ctr + 1;
+		endfor;
+	endfor;
+	
+	//hh_ctr = hh_ctr + 1;
+	
+	completed_households(hh_ctr,1) = "X";
+	completed_households(hh_ctr,2) = "GO BACK";
+	
+	if duplicates_hh > 1 then
+		report_heading = maketext("Cluster %v: %d Assigned Households. Data has duplicates", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	else
+		report_heading = maketext("Cluster %v: %d Assigned Households.", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	endif;
+	//string report_heading = maketext("Cluster %v: %d Assigned Households.", edit("9999",HQ_CLUSTER),number_of_hh_cases);
+	
+	numeric sel_hh_row = showarray(report_heading,completed_households,title("NO","HOUSEHOLD","HH LABEL","INTERVIEWER","STATUS"));
+
+
+	if completed_households(sel_hh_row,1)= "X" then
+		reenter TEAM_MGT;
+	endif;
+
+postproc
+
+	if completed_households(sel_hh_row,1)= "X" then
+		reenter TEAM_MGT;
+	endif;
 	

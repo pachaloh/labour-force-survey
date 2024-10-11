@@ -1545,22 +1545,22 @@ questions:
     conditions:
       - questionText:
           CH: |
-            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names()~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           EN: |
-            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names()~~ current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           TU: |
-            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names()~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
           YA: |
-            <p><b>N01A.</b>&nbsp;What is ~~get_your_names~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
+            <p><b>N01A.</b>&nbsp;What is ~~get_your_names()~~&nbsp;current monthly income for this work?</p><p><i><font color="#0000ff">Select unit: daily, weekly or monthly basis</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.N01B
     conditions:
       - questionText:
           CH: |
-            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names()~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           EN: |
-            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names()~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           TU: |
-            <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
+            <p><b>N01B.</b>&nbsp;What is ~~get_your_names()~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
           YA: |
             <p><b>N01B.</b>&nbsp;What is ~~get_your_names~~&nbsp;current daily, weekly, monthly income for this work?</p><p><i><font color="#0000ff">Record the amount in Malawi Kwacha (MK)</font></i></p><p></p>
   - name: INDIVIDUALLFS_DICT.SJD_BOSS_TAX

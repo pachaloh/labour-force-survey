@@ -1,9 +1,8 @@
-﻿Application     C:\Users\pacha\Documents\GitHub\labour-force-survey\MainLFS\IndividualLFS\IndividualLFS.ent
+﻿Application     C:\Users\luhan\Documents\GitHub\labour-force-survey\MainLFS\IndividualLFS\IndividualLFS.ent
 Type            Entry
-Date            Jun 28, 2024
-Time            13:37:01
+Date            Aug 04, 2024
+Time            09:50:43
 
 CSPro Error Summary
 
-WARNING(<CAPI Text>, 0): Starting in CSPro 7.6, you must specify the () after a function call in CAPI text; please change this from get_your_names to get_your_names() as this will not work in a future version of CSPro.
 WARNING(<CAPI Text>, 0): Starting in CSPro 7.6, you must specify the () after a function call in CAPI text; please change this from get_your_names to get_your_names() as this will not work in a future version of CSPro.

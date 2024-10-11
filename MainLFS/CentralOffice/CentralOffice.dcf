@@ -223,7 +223,7 @@ DataType=Alpha
 Label=Central Office Menu
 Name=CENTRAL_OFFICE_MENU
 RecordTypeValue='9'
-RecordLen=3
+RecordLen=9
 
 [Item]
 Label=Central Office
@@ -237,3 +237,25 @@ Label=Central Office
 Name=CENTRAL_OFFICE_VS1
 Value=1;Report by Cluster
 Value=2;Report by Team
+
+[Item]
+Label=HQ Cluster
+Name=HQ_CLUSTER
+Start=4
+Len=4
+DataType=Numeric
+ZeroFill=Yes
+
+[Item]
+Label=LFS CLuster Report
+Name=LFS_CLUSTER_REPORT
+Start=8
+Len=1
+DataType=Numeric
+
+[Item]
+Label=LFS HH Report
+Name=LFS_HH_REPORT
+Start=9
+Len=1
+DataType=Numeric
